@@ -7,16 +7,20 @@
             </tr>
         </thead>
         <tbody>
-            <tr v-for="(value, key) in mapping">
+            <tr v-for="(key, index) in keys">
                 <td>{{key}}</td>
-                <td>{{value}}</td>
+                <td>{{values[index]}}</td>
             </tr>
         </tbody>
     </table>
 </template>
 
 <script setup>
-const props = defineProps(['mapping']);
+const props = defineProps(['mapping'])
+
+//for display purposes reverse the order of the data of the mapping object
+let keys = Object.keys(props.mapping).slice().reverse()
+let values = Object.values(props.mapping).slice().reverse()
 </script>
 
 <style scoped>

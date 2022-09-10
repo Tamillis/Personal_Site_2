@@ -1,17 +1,16 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img alt="Vue logo" class="logo" src="/favicon.png" width="25" height="25" />
 
     <div class="wrapper">
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/Dnd">Dnd</RouterLink>
+        <RouterLink to="/Dnd">D&D</RouterLink>
       </nav>
     </div>
   </header>
@@ -22,7 +21,7 @@ import HelloWorld from './components/HelloWorld.vue'
 <style scoped>
 .logo {
   display: block;
-  margin: 0 auto 2rem;
+  margin: 4px auto;
 }
 
 nav {

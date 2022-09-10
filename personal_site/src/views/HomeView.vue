@@ -1,9 +1,16 @@
 <script setup>
-import HelloWorld from '../components/HelloWorld.vue';
+
 </script>
 
 <template>
   <main>
-    <HelloWorld />
+    <h1 class="title">Hello</h1>
   </main>
 </template>
+
+<style scope>
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+</style>

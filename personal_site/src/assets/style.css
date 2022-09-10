@@ -1,5 +1,7 @@
 /* This is the first style sheet I wrote and so its awful and unorganized and I'm sorry */
 
+@import url("base.css");
+
 :root {
   --text-color: #f1faee;
   --color: #008f11;
@@ -49,6 +51,10 @@ body {
 
 .bg-black-transparent-0p5 {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text-centre {
+  text-align: center;
 }
 
 .underline {
@@ -234,28 +240,28 @@ body {
 
 .main-title {
   text-decoration: underline;
-  font-size: max(5vw, 2em);
+  font-size: max(5vw, 2rem);
   text-align: center;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .subtitle {
   text-decoration: underline;
-  font-size: max(2.5vw, 1.5em);
+  font-size: max(2.5vw, 1.5rem);
   text-indent: 1.5rem;
-  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .subtitle-synopsis {
   text-indent: 3em;
-  font-size: max(2vw, 1em);
+  font-size: max(2vw, 1rem);
 }
 
 .subsubtitle {
   text-decoration: underline;
-  font-size: max(2vw, 1.25em);
+  font-size: max(2vw, 1.25rem);
   text-indent: 1.5rem;
-  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .main-text {
@@ -287,8 +293,6 @@ body {
 }
 
 .intext-link:hover {
-  text-decoration: underline;
-  font-style: inherit;
   font-weight: bolder;
 }
 
@@ -386,22 +390,6 @@ body {
 
 .intro-text p {
   font-style: italic;
-}
-
-#globe-canvas {
-
-  position: fixed;
-  display: inline;
-
-  width: 33vw;
-  height: 33vw;
-  top: 0px;
-  right: 0px;
-
-  padding: 0px 2px;
-  margin: 0px;
-  border: none;
-
 }
 
 /* Programming page unique CSS */
@@ -626,40 +614,4 @@ input[type=number] {
   display: flex;
   justify-content: flex-end;
   margin: 10px auto;
-}
-
-/* React App classes */
-.app-body {
-  background-color: #2a2e31;
-  border: groove 4px var(--contrastColor);
-
-  margin: 5px;
-  padding: 1em;
-}
-
-.app-main {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-
-  align-items: stretch;
-
-  padding: 5px;
-}
-
-.calculator-body {
-  flex-basis: max(16rem, 20vw);
-  /* border: 2px var(--color) groove; */
-  margin: 0px 1em;
-}
-
-.app-table {
-  flex-basis: max(16rem, 20vw);
-  margin: 5px 1em;
-  border-color: var(--contrastColor);
-}
-
-.app-table td,
-.app-table th {
-  border-color: var(--contrastColor);
 }
