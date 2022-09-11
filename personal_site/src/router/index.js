@@ -19,8 +19,13 @@ const router = createRouter({
     },
     {
       path: '/dnd',
-      name:'/dnd',
+      name:'dnd',
       component: () => import('../views/DndView.vue')
+    },
+    {
+      path: '/mewiki',
+      name: 'mewiki',
+      component: () => import('../views/WikiView.vue')
     }
   ]
 })

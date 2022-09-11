@@ -1,31 +1,4 @@
-/* This is the first style sheet I wrote and so its awful and unorganized and I'm sorry */
-
 @import url("base.css");
-
-:root {
-  --text-color: #f1faee;
-  --color: #008f11;
-  --background: #2a312d;
-  --backgroundAlt: #111;
-  --highlight: #00d435;
-  --contrastColor: #007e8f;
-  --sidebarWidth: 145px;
-  --sectionMargin: 5vw;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: var(--background);
-  color: var(--text-color);
-
-  height: min(auto, 80vh);
-}
 
 /* Generic utility classes for easy modification when writting the HTML */
 
@@ -35,6 +8,10 @@ body {
 
 .ml0 {
   margin-left: 0px !important;
+}
+
+.mb0 {
+  margin-bottom: 0px !important;
 }
 
 .no-bg {
@@ -59,6 +36,10 @@ body {
 
 .underline {
   text-decoration: underline;
+}
+
+.no-decoration {
+  text-decoration: none !important;
 }
 
 .italic {
@@ -240,16 +221,16 @@ body {
 
 .main-title {
   text-decoration: underline;
-  font-size: max(5vw, 2rem);
+  font-size: clamp(1.5rem, 5vw, 4rem);
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .subtitle {
   text-decoration: underline;
-  font-size: max(2.5vw, 1.5rem);
+  font-size: clamp(1.25rem, 3.5vw, 2.5rem);
   text-indent: 1.5rem;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 
 .subtitle-synopsis {
@@ -259,9 +240,8 @@ body {
 
 .subsubtitle {
   text-decoration: underline;
-  font-size: max(2vw, 1.25rem);
+  font-size: clamp(1rem, 2vw, 1.5rem);
   text-indent: 1.5rem;
-  margin-bottom: 5px;
 }
 
 .main-text {
@@ -323,73 +303,6 @@ body {
 
 #terminal-section {
   border: none;
-}
-
-#p5js-canvas>canvas {
-  display: block;
-  width: 100%;
-  margin: 2em auto;
-  border: 4px var(--highlight) groove;
-  border-radius: 25px 0px 25px 0px;
-}
-
-/* Marquee taken from stackoverflow and edited*/
-.marquee-wrapper {
-  max-width: 60%;
-
-  margin: 0px 20%;
-
-  overflow: hidden;
-
-  border-left: 2px groove var(--color);
-  border-right: 2px groove var(--color);
-}
-
-.marquee {
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  animation: marquee 15s linear infinite;
-}
-
-.marquee p {
-  display: inline-block;
-  font-size: 1.25em;
-  font-style: italic;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-
-  100% {
-    transform: translate3d(-33.334%, 0, 0);
-  }
-}
-
-/*  About page unique CSS */
-.profile-pic {
-  width: 70vw;
-  height: 70vw;
-  border-radius: 50%;
-  border: 2px var(--highlight) groove;
-}
-
-@media screen and (min-width: 600px) {
-  .profile-pic {
-    width: 300px;
-    height: 300px;
-  }
-}
-
-.profile-pic-container {
-  display: flex;
-  justify-content: center;
-}
-
-.intro-text p {
-  font-style: italic;
 }
 
 /* Programming page unique CSS */
@@ -539,44 +452,6 @@ input[type=number] {
 .error-text {
   color: red;
   font-weight: bold;
-}
-
-/* TODO fix up styling for Materium Existantiae page */
-/* Materium Existentiae unique CSS */
-
-.background-image {
-  z-index: -1;
-
-  position: absolute;
-  width: 100vw;
-  height: inherit;
-}
-
-.bg-img-pineforest {
-  background: none;
-  background-image: url("assets/pine-forest-bg.jpg");
-  alt: "A misty pine forest seen across a lake.";
-
-  height: 100%;
-  background-size: 100vw;
-  background-position: 0px -20vh;
-  background-repeat: no-repeat;
-}
-
-.search-bar {
-  width: auto;
-  height: 2rem;
-
-  text-indent: 0.5rem;
-  margin: 5px auto;
-
-  background-color: var(--backgroundAlt);
-  color: var(--text-color);
-  border: none;
-}
-
-.search-bar:focus {
-  outline: var(--highlight) 4px groove;
 }
 
 /* Generic Footer classes */
