@@ -5,19 +5,12 @@
 </template>
 
 <script setup>
-import { marked } from 'marked';
 import { onMounted } from 'vue';
-
-const getMd = async (path, elementId) => {
-    let res = await fetch(path);
-    let content = await res.text();
-    document.getElementById(elementId).innerHTML = marked.parse(content);
-}
+import { putMdinElement } from '../assets/functionality';
 
 onMounted(() => {
-    getMd('src/assets/wiki/wikiRoot.md', "wiki");
+    putMdinElement('src/assets/wiki/wikiRoot.md', "wiki");
 });
-
 </script>
 
 <style lang="css">

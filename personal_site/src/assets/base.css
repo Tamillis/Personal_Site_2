@@ -59,6 +59,7 @@
   --color: var(--vt-c-indigo);
   --background: #2a312d;
   --backgroundAlt: #111;
+  --background-transparent: rgba(0,0,0,0.3);
   /* --highlight: #00d435; */
   --highlight: var(--color-highlight);
   --contrastColor: #007e8f;
@@ -85,7 +86,7 @@ body {
   line-height: 1.6;
   font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -94,17 +95,4 @@ body {
 
 ul {
   padding-left: 1rem;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: var(--color-highlight);
-  transition: 0.2s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
 }

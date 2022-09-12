@@ -2,7 +2,8 @@
   <section class="section bg-black-transparent-0p3">
     <!-- Taken from the Joplin document, manually for now -->
     <!-- One day I'll automate that process, cause it should be relatively easy -->
-    <h1 class="main-title">Dungeons & Dragons At My Table</h1>
+    <h1 class="main-title">Dungeons & Dragons</h1>
+    <h2 class="subsubtitle text-centre no-decoration">At My Table</h2>
     <h2 class="subtitle">Introduction</h2>
     <div class="quote">“Make your choices wisely, apprentice, for you will find they come to define you.”</div>
     <div class="quote-source">– Unknown</div>
