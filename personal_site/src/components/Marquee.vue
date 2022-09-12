@@ -35,8 +35,8 @@ onMounted(() => {
 
     overflow: hidden;
 
-    border-left: 2px groove var(--color);
-    border-right: 2px groove var(--color);
+    border-left: 4px groove var(--highlight);
+    border-right: 4px groove var(--highlight);
 }
 
 .marquee {

@@ -199,7 +199,11 @@ hr {
 }
 
 .intext-link:hover {
-  font-weight: bolder;
+  font-style: italic;
+}
+
+.inset {
+  margin: 0px 2rem;
 }
 
 .table {

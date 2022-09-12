@@ -15,7 +15,7 @@ import Profile from '../components/Profile.vue';
   </section>
 </template>
 
-<style>
+<style scoped>
 .profile-pic {
   width: 70vw;
   height: 70vw;
@@ -33,9 +33,5 @@ import Profile from '../components/Profile.vue';
 .profile-pic-container {
   display: flex;
   justify-content: center;
-}
-
-.inset {
-  margin: 0px 2rem;
 }
 </style>

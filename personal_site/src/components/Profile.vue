@@ -13,7 +13,7 @@ onMounted(() => {
 });
 </script>
 
-<style lang="css" scoped>
+<style lang="css">
 #profile p {
   line-height: 1.2rem;
   margin-bottom: 0.33rem;
@@ -21,10 +21,16 @@ onMounted(() => {
 
 #profile h2 {
   text-decoration: underline;
-  margin: 0.5rem 0px;
+  margin: 0.5rem 0px 0px 0px;
 }
 
 #profile h3 {
-  margin: 0.5rem 0px;
+  margin: 1rem 0px 0px 0px;
+}
+
+#profile em {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.3rem;
 }
 </style>

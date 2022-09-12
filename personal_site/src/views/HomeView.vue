@@ -12,11 +12,17 @@
 <script setup>
 import Marquee from '../components/Marquee.vue'
 import p5 from 'p5'
-import { onMounted } from 'vue'
+import { onMounted, onBeforeUnmount } from 'vue'
 
 //make terminal interaction integral to site navigation?
 onMounted(() => {
   new p5(terminalSketch, "terminal-canvas");
+});
+
+onBeforeUnmount(() => {
+  //this code is written due a weird bug where the p5js canvas remains but empty, and only on the production build
+  let canvases = document.getElementById('terminal-canvas').childNodes;
+  for(let el of canvases) el.remove();
 });
 
 const terminalSketch = t => {

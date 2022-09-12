@@ -24,14 +24,14 @@ If you have any questions or enquiries, please feel free to contact me via e-mai
 ## Qualifications & Education
 ### *The official certificates and education that I possess.*
 
-_**Full-stack Web Development**_: where I taught myself using online tools and
+- _**Full-stack Web Development**_: where I taught myself using online tools and
 practice over the course of half a year, building on a foundation of hobbyist interest in programming since university.
 
-An _**OCR Level 3 Diploma in Business Administration**_ during a commercial business apprenticeship with ZF Friedrichshafen AG, educated by Solihull College, where I developed a wide base of business skills alongside practical experience managing accounts of cart part manufacturing and supply for various big-names; Jaguar Landrover, Honda, Toyota and others. (Oct 2017 – Oct 2018)
+- An _**OCR Level 3 Diploma in Business Administration**_ during a commercial business apprenticeship with ZF Friedrichshafen AG, educated by Solihull College, where I developed a wide base of business skills alongside practical experience managing accounts of cart part manufacturing and supply for various big-names; Jaguar Landrover, Honda, Toyota and others. (Oct 2017 – Oct 2018)
 
-A _**Trinity College London TESOL**_ certificate for teaching English as a foreign language, received from Universal Language Training, a 6 month course condensed into the busiest 1 month of my life. Well worth it, however, and it sparked my passion for teaching. (July 2015)
+- A _**Trinity College London TESOL**_ certificate for teaching English as a foreign language, received from Universal Language Training, a 6 month course condensed into the busiest 1 month of my life. Well worth it, however, and it sparked my passion for teaching. (July 2015)
 
-A _**Certificate of Higher Education in Physics**_ from Royal Holloway University of London’s physics department. (September 2012 – June 2015)
+- A _**Certificate of Higher Education in Physics**_ from Royal Holloway University of London’s physics department. (September 2012 – June 2015)
 
 For a complete list of my secondary education please contact me.
 
@@ -76,8 +76,7 @@ I have a wide base of skills to pull on and am capable of quickly and efficientl
 
 *Job Title:* English Teacher
 
-*Details of position:* I am a full time teacher of English, with a focus on
-conversational skills as well as general language acquisition, primarily using the Four Corners and Viewpoint textbooks, but also TOEIC and business English texts. Pulling on the 3+ years of teaching experience and technical knowledge of the English language, I guide and lead students through their studies not just in general English, but in exam preparation (primarily for TOEIC but also for Eiken or IELTS), business English, and any other language goal they may have.
+*Details of position:* I am a full time teacher of English, with a focus on conversational skills as well as general language acquisition, primarily using the Four Corners and Viewpoint textbooks, but also TOEIC and business English texts. Pulling on the 3+ years of teaching experience and technical knowledge of the English language, I guide and lead students through their studies not just in general English, but in exam preparation (primarily for TOEIC but also for Eiken or IELTS), business English, and any other language goal they may have.
 
 ### _**Studying Japanese in Sapporo, Japan**_
 
