@@ -38,9 +38,10 @@ onMounted(() => putMdinElement('src/assets/playerbrief.md', 'player-brief'));
 }
 
 #player-brief blockquote {
-  margin-left: 2rem;
+  margin-left: var(--textindent);
   background-color: rgba(0,0,0,0.3);
   width: fit-content;
+  padding-right: 1.5rem;
   border-top: 2px solid var(--highlight);
   border-bottom: 2px solid var(--highlight);
 }
@@ -64,5 +65,32 @@ onMounted(() => putMdinElement('src/assets/playerbrief.md', 'player-brief'));
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.3rem;
+}
+
+#player-brief strong {
+  font-weight: 700;
+}
+
+#player-brief table {
+  border: 2px var(--highlight) groove;
+  margin-top: 1rem;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+#player-brief table td,
+#player-brief table th {
+  padding: 2px 5px;
+  border-right: 2px var(--highlight) groove;
+}
+
+#player-brief table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#player-brief table th {
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
 }
 </style>

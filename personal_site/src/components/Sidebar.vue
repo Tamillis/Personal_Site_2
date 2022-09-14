@@ -89,7 +89,7 @@ a {
 
 .shiftBack {
     transform: translateX(0%);
-    background-color: var(--background);
+    background-color: var(--backgroundDark);
 }
 
 .nav-item {

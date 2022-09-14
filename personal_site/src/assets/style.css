@@ -15,7 +15,7 @@
 }
 
 .no-bg {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 .bg-black-transparent-0p1 {
@@ -74,10 +74,6 @@
   border: none !important;
 }
 
-.no-indent {
-  text-indent: 0px !important;
-}
-
 .inline {
   display: inline !important;
 }
@@ -89,6 +85,10 @@
 .square-20px {
   width: 20px;
   height: 20px;
+}
+
+.no-indent {
+  text-indent: 0px !important;
 }
 
 .no-border-top {
@@ -120,11 +120,11 @@
 .section {
   width: auto;
   margin: 0px var(--sectionMargin);
-
   padding: 1em;
   transition: 0.5s;
   border: var(--highlight) 4px groove;
   border-radius: 25px 0px 25px 0px;
+  background-color: var(--backgroundDark);
 }
 
 /* old school HD pixel width I think makes for nice reading */
@@ -147,26 +147,26 @@ hr {
 
 .main-title {
   text-decoration: underline;
-  font-size: clamp(1.5rem, 5vw, 4rem);
+  font-size: var(--main-title-size);
   text-align: center;
   margin-bottom: 1rem;
 }
 
 .subtitle {
   text-decoration: underline;
-  font-size: clamp(1.25rem, 3.5vw, 2.5rem);
+  font-size: var(--subtitle-size);
   text-indent: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
 .subtitle-synopsis {
   text-indent: 3em;
-  font-size: max(2vw, 1rem);
+  font-size: var(--subtitle-size);
 }
 
 .subsubtitle {
   text-decoration: underline;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: var(--subsubtitle-size);
   text-indent: 1.5rem;
 }
 
@@ -174,8 +174,13 @@ hr {
   display: block;
   padding: 0.5em 0em;
   font-size: 1em;
-  text-indent: 1.5rem;
+  text-indent: var(--textindent);
   text-rendering: optimizeLegibility;
+}
+
+.main-text ul {
+  text-indent: 0px;
+  margin-left: var(--subtitle-size);
 }
 
 .main-text p {
@@ -203,7 +208,7 @@ hr {
 }
 
 .inset {
-  margin: 0px 2rem;
+  margin: 0px var(--textindent);
 }
 
 .table {
@@ -227,12 +232,6 @@ hr {
   font-style: italic;
   font-weight: bold;
   text-decoration: underline;
-}
-
-/* Index / Landing page unique CSS */
-
-#terminal-section {
-  border: none;
 }
 
 /* Programming page unique CSS */

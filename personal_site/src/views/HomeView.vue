@@ -1,7 +1,7 @@
 <template>
   <main class="">
 
-    <section class="section no-border">
+    <section id="terminal-section" class="section no-border no-bg">
       <div id="terminal-canvas"></div>
     </section>
 
