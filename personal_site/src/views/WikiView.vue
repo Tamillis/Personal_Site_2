@@ -4,15 +4,18 @@
     <h2 class="subsubtitle text-centre no-decoration">My D&D Setting & Worldbuilding Project</h2>
 
     <!-- List of articles on the wiki, doubling as route and link -->
-    <ul>
-      <li><a class="intext-link" @click="setPath('src/assets/wiki/wikiRoot.md')">Wiki Root</a></li>
-      <li><a class="intext-link" @click="setPath('src/assets/wiki/CoreSetting&PlayerOptions.md')">Core Setting & Player Options</a></li>
+    <ul class="triangle-points">
+      <li class="triangle-points"><RouterLink class="intext-link" to="/mewiki/CoreSetting&PlayerOptions">Core Setting & Player Options</RouterLink></li>
     </ul>
-    
+
     <!-- Search bar for unique terms to jump to article it's associated to -->
+    <!-- <div class="flex gap-1r">
+      <input type="text" v-model="fileName">
+      <button class="btn inline" @click="">Go</button>
+    </div> -->
 
     <div class="main-text inset">
-      <div id="wiki" :key="wikiKey"></div>
+      <div id="wiki"></div>
     </div>
   </div>
 </template>
@@ -20,19 +23,17 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { putMdinElement } from '../assets/functionality';
+import { useRouter, RouterLink } from 'vue-router'
 
-let path = ref('src/assets/wiki/wikiRoot.md');
-let wikiKey = ref(0);
+const router = useRouter();
+
+const basepath = 'src/assets/wiki/'
+let file = ref(basepath + 'wikiRoot.md');
+let fileName = ref("Mitteland");
 
 onMounted(() => {
-  putMdinElement(path.value, 'wiki');
+  putMdinElement(file.value, 'wiki');
 });
-
-function setPath(newPath) {
-  wikiKey++;
-  path.value = newPath;
-  putMdinElement(path.value, 'wiki');
-}
 
 </script>
 
@@ -60,7 +61,7 @@ function setPath(newPath) {
 }
 
 #wiki h3 {
-  margin: 1rem 0px -0.5rem 0rem;
+  margin: 1rem 0px 0rem 0rem;
   text-decoration: underline;
 }
 

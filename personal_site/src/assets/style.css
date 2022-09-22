@@ -82,6 +82,14 @@
   display: flex;
 }
 
+.justify-left {
+  justify-content: start;
+}
+
+.gap-1r {
+  gap: 1rem;
+}
+
 .square-20px {
   width: 20px;
   height: 20px;
@@ -106,15 +114,17 @@
   padding: 5px 10px;
 
   display: block;
-  margin: 0px auto;
-
   border: solid 2px var(--highlight);
-
   cursor: pointer;
 }
 
 .btn:active {
   transform: translate(0, 3px);
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section {
@@ -211,6 +221,14 @@ hr {
   margin: 0px var(--textindent);
 }
 
+.inline {
+  display: inline-block;
+}
+
+.triangle-points {
+  list-style: "▷ " inside;
+}
+
 .table {
   border: 2px var(--color) groove;
 
@@ -232,6 +250,14 @@ hr {
   font-style: italic;
   font-weight: bold;
   text-decoration: underline;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.w-fit {
+  width: fit-content;
 }
 
 /* Programming page unique CSS */

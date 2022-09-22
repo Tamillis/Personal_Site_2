@@ -2,6 +2,10 @@
     <nav class="sidebar">
         <div class="btn-list-container">
             <ul id="links" class="shiftBack" @click="toggleNav()">
+
+                <RouterLink class="btn w-fit inline" to="/mewiki" v-if="route.path.includes('/mewiki/')">Back
+                </RouterLink>
+
                 <li class="nav-item">
                     <RouterLink to="/">Home</RouterLink>
                 </li>
@@ -25,7 +29,9 @@
 </template>
 
 <script setup>
-import { RouterLink } from 'vue-router';
+import { useRoute, RouterLink } from 'vue-router';
+
+const route = useRoute();
 
 let out = false;
 function toggleNav() {

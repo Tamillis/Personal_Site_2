@@ -5,10 +5,10 @@
 if (empty($_POST)) return;
 
 //Load dbConn connection config
-include "src/surveyTableConfig.php";
+include "surveyTableConfig.php";
 
 //extracting and processing the POST data into more usable php variables
-$handle = clean_input($_POST["handle"]);    //as this is a raw text field it needs to be made safe vs CSR attacks (although the front end should also prevent non alphabetical characters anyway)
+$handle = clean_input($_POST["handle"]);    //as this is a raw text field it needs to be made safe vs CSR attacks
 $country = $_POST["country"];
 $age = $_POST["age"];
 $gender = $_POST["gender"];

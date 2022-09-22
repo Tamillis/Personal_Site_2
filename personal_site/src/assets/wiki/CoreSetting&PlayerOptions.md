@@ -1,5 +1,4 @@
 # Core Setting & Player Options
-
 > “Make your choices wisely, apprentice, for you will find they come to define you.”
 > 
 > – Unknown

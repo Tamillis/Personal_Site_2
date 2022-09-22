@@ -26,6 +26,11 @@ const router = createRouter({
       path: '/mewiki',
       name: 'mewiki',
       component: () => import('../views/WikiView.vue')
+    },
+    {
+      path: '/mewiki/:file+',
+      name: 'mewiki-page',
+      component: () => import('../views/WikiPageView.vue')
     }
   ]
 })
