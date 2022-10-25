@@ -60,8 +60,14 @@ I have a wide base of skills to pull on and am capable of quickly and efficientl
 ***
 
 ## Work/Travel History
+### _**Teaching Assistant at SpartaGlobal**_
+*Dates:* May 2022 to present
+
+*Job Title:* Teaching Assistant for the C# Stream
+
+*Details of position:* I train new spartan cohorts in the C# Streams, both development and SDET, getting them up to snuff to become valuable consultants to our clients across the country and making them invaluable members that after their 2 year contracts clients are happy to take on as permenant employees. We teach C# basics and advanced concepts, SQL, Entity Framework, NUnit Testing, API development & testing, web development & testing as well as Agile, Scrum and the soft skills needed to be a modern developer.
 ### _**Freelance Full Stack Web Developer**_
-*Dates:* April 2022 to present
+*Dates:* April 2022
 
 *Job Title:* Full Stack Web Developer
 
@@ -72,8 +78,6 @@ I have a wide base of skills to pull on and am capable of quickly and efficientl
 
 *Company*: Language House, Co&Co
 
-*Address*: Japan, 〒060-0002 Hokkaido, Sapporo, Chuo Ward, Kita2, Nishi3, 1-29 Takesato Bldg. 2F
-
 *Job Title:* English Teacher
 
 *Details of position:* I am a full time teacher of English, with a focus on conversational skills as well as general language acquisition, primarily using the Four Corners and Viewpoint textbooks, but also TOEIC and business English texts. Pulling on the 3+ years of teaching experience and technical knowledge of the English language, I guide and lead students through their studies not just in general English, but in exam preparation (primarily for TOEIC but also for Eiken or IELTS), business English, and any other language goal they may have.
@@ -83,8 +87,6 @@ I have a wide base of skills to pull on and am capable of quickly and efficientl
 *Dates*: January 2019 to March 2019
 
 *Company*: Language House, Co&Co
-
-*Address*: Japan, 〒060-0002 Hokkaido, Sapporo, Chuo Ward, Kita2, Nishi3, 1-29 Takesato Bldg. 2F
 
 *Details of travels*: Arriving in the heavy snows of mid-winter Sapporo, I finally was able to follow my passion for Japanese again, joining a school I found recommended online. Having already visited the country in summer in the very hot and humid Kyoto for a month, this time I wanted a winter adventure. Not sure when I would be leaving, I bought a one way ticket. In the end I found a company willing to sponsor me for a visa to be a teacher, the same company in fact that I had studied at, and so changed my life.
 
@@ -100,8 +102,6 @@ I have a wide base of skills to pull on and am capable of quickly and efficientl
 
 *Company*: ZF Friedrichshafen AG
 
-*Address*: Stratford Rd, Shirley, Solihull, B90 4AX, UK
-
 *Job Title*: Commercial Business Apprentice
 
 *Details of position*: I spent a quarter of my time educating myself for the various business units of the apprenticeship, receiving no direct learning, and preparing material as proof. For the company I assisted the global key account manager look after the state of the accounts, tracking missing product and ensuring our commercial customers had their concerns addressed, and received orders correctly and on time. The large bulk of goods and high values required responsibility, due care & attention, and professionalism
@@ -112,9 +112,9 @@ I have a wide base of skills to pull on and am capable of quickly and efficientl
 
 *Company*: Uppsala International Summer Session
 
-*Address*: Kungsängsgatan 12, 753 22 Uppsala, Sweden
+*Details of travel:* For two months I studied Swedish with UISS, experiencing the language and culture, and getting the opportunity to enjoy Midsommar and many other excursions. Easily one of the best summers of my life, and brought me up to a conversational level of Swedish.
 
-*Details of travel:* TODO
+Men jag tror att jag har gloemt mesta av det!
 
 ### _**English Teaching at Sym Levice, Slovakia**_
 
@@ -122,9 +122,7 @@ I have a wide base of skills to pull on and am capable of quickly and efficientl
 
 *Company*: Speak Your Mind Levice
 
-*Address*: J.Bottu 3232, 934 01 Levice, Slovakia
-
-*Job Title*: Lektor (Lecturer / Teacher)
+*Job Title*: Lektor (Teacher)
 
 *Details of position*: using the Speak Your Mind method I taught all of our students, from children of 8 years to adults in their twilight years, to attain a high level of fluency in English from beginning levels all the way up to professional business English. This method affords me a complete technical understanding of English grammar as well as the ability to easily and clearly communicate and teach to others, regardless of their native language and English ability, as well as teaching other skills and effectively communicate ideas. I was also often responsible for extra classes in local schools, at no extra charge, and was in charge of pronunciation education across the area.
 
@@ -132,8 +130,6 @@ I have a wide base of skills to pull on and am capable of quickly and efficientl
 *Dates:* July 2015 to August 2015 and July 2016 to August 2016
 
 *Company:* Oxford House College
-
-*Address:* 8 Tiddington Road, Stratford-upon-Avon, CV37 7AE
 
 *Job Title:* Residential Teacher and Activity Leader
 
@@ -145,8 +141,6 @@ I have a wide base of skills to pull on and am capable of quickly and efficientl
 
 *Company:* Academia de Ingles Number 16 School
 
-*Address:* Number 16 School, San Miguel 7, 50 001, Zaragoza, Spain
-
 *Job Title:* English Teacher
 
 *Details of position:* using the Speak Your Mind method in which they trained me, I taught children from as young as 10 to adults of all ages. Whilst with Number 16 School I trained extensively to perfect my knowledge of English grammar and pronunciation, particularly in regards to teaching these aspects, and on several occasions was offered promotion to position of team leader. There I taught also my fellow teachers about the I.P.A. and its use as a teaching tool and grew into the teacher that I am today, solidifying the training and practice I had earned earlier in the year.
@@ -156,8 +150,6 @@ I have a wide base of skills to pull on and am capable of quickly and efficientl
 *Dates*: October 2014 to May 2015
 
 *Company*: Off To Work (working primarily at Coworth Park hotel)
-
-*Address*: Blacknest Road, Ascot, Berkshire, SL5 7SE UK
 
 *Job Title:* Banqueting waiter & front of house runner.
 
