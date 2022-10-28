@@ -1,6 +1,7 @@
 <template>
     <div class="section bg-black-transparent-0p3">
         <div class="main-text inset">
+            <li class="triangle-points-reverse"><RouterLink class="intext-link" to="/mewiki">Back</RouterLink></li>
             <div id="wiki-page"></div>
         </div>
     </div>

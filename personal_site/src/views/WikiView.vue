@@ -4,7 +4,7 @@
     <h2 class="subsubtitle text-centre no-decoration">My D&D Setting & Worldbuilding Project</h2>
 
     <!-- List of articles on the wiki, doubling as route and link -->
-    <ul class="triangle-points">
+    <ul class="">
       <li class="triangle-points"><RouterLink class="intext-link" to="/mewiki/CoreSetting&PlayerOptions">Core Setting & Player Options</RouterLink></li>
     </ul>
 

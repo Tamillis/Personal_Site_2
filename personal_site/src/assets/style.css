@@ -229,6 +229,12 @@ hr {
   list-style: "▷ " inside;
 }
 
+.triangle-points-reverse {
+  list-style: "◁ " inside;
+  margin-bottom: -1.5rem;
+  z-index: 2;
+}
+
 .table {
   border: 2px var(--color) groove;
 

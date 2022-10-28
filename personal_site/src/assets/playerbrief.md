@@ -65,7 +65,7 @@ https://1drv.ms/w/s!Aq2B34oritBLnj8-HQVw6hqZGfYc?e=YTcIEA
 
 https://1drv.ms/w/s!Aq2B34oritBLmwCCFfCDkprcPJr6?e=EtBUdW 
 
-**Magus** - WIP, mostly done (bother me if you want to playtest early)
+**Magus** - My own take on the popular Magus, a WIP that's mostly done (bother me if you want to playtest early)
 
 **Potion Maker** - very much a WIP
 
@@ -84,11 +84,11 @@ The act of consuming or administering any potion/poison/etc., like normal drinki
 
 **No Colossal Flanking** – Flanking cannot be earned on creatures two or more sizes larger than you. 
 
-**Flanking, theatre of the mind** – when engaging a creature in melee you are said to be ‘facing’ that creature. When attacking a creature in melee who is not facing you, you gain advantage due to flanking. Creatures not already engaged automatically ‘face’ the incoming attacker. At the end of the turn creatures declare who they face until the start of their next turn, if not immediately obvious. Players with the *Extra Attack* feature and creatures with *Multi-attack* can face a number of creatures at once equal to their total number of attacks (effectively requiring a number of attackers equal to the number of their attacks for an additional attacker to gain advantage from flanking). Note that only the creature/s not being faced gain advantage.
+**Flanking from Facing** – when engaging a creature in melee you are said to be ‘facing’ that creature. When attacking a creature in melee who is not facing you, you gain advantage due to flanking. Creatures not already engaged automatically ‘face’ the incoming attacker. At the end of the turn creatures declare who they face until the start of their next turn, if not immediately obvious. Players with the *Extra Attack* feature and creatures with *Multi-attack* can face a number of creatures at once equal to their total number of attacks (effectively requiring a number of attackers equal to the number of their attacks for an additional attacker to gain advantage from flanking). Note that only the creature/s not being faced gain advantage.
 
 **Hitting Cover** – Ranged attacks against creatures in cover hit the cover if the player rolls the cover value or below on the dice (so 1-2 for half cover and 1-5 in three quarter cover). Creatures in 5ft with creatures of their size or larger are treated as being in half cover (+2 bonus to AC) by their enemy, meaning creatures in melee provide cover for each other. Creatures in 5ft with creatures two sizes larger (or bigger) are in three-quarters cover (+5 bonus to AC). Don’t shoot your allies now!  
 
-**Improved Standard Array** – we will be using my version of the standard array. I find the original a little underwhelming for Heroic Adventuring, and also poorly balanced between odd and even values. So, we will use; 
+**Improved Standard Array*** – we will be using my version of the standard array. I find the original a little underwhelming for Heroic Adventuring, and also poorly balanced between odd and even values. So, we will use; 
 16, 14, 13, 11, 10, 9 
 This array also modifies the total points for those using Point Buy to 30. Feel free to use the calculator below to help you out if using Point Buy instead.
 
@@ -106,17 +106,17 @@ Meanwhile, chases and chasing another creature is a skill challenge and is not i
 
 ***
 
-**First Level Features** - With your 1st level feat you could choose to take as your feat (instead of from the normal and expanded feat lists) one of the secondary features listed below from the other classes which you qualify for (as per the Prestigious D&D rules); 
+**First Level Features** - With your background feat you could choose to take as your feat (instead of from the normal and expanded feat lists) one of the class features listed below but using sane prerequisites (this is the very first part of a total rework I have planned of the class system); 
 
 Class | Feature | Prerequisite
 ---|---|---
-Barbarian | Unarmored Defense | Strength 13
+Barbarian | Unarmored Defense (Barbarian) | Constitution 13
 Fighter | Fighting Style | Strength 13 or Dexterity 13
-Fighter | Second Wind | Strength 13 or Dexterity 13
+Fighter | Second Wind | Constitution 13
 Monk | Unarmored Defense (Monk)| Dexterity 13 and Wisdom 13
-Paladin | Divine Sense| Strength 13 and Charisma 13
-Paladin | Lay on Hands | Strength 13 and Charisma 13
-Revised Ranger | Favored Enemy|Dexterity 13 and Wisdom 13
-Rogue|Expertise I|Dexterity 13
-Rogue|Thieves Cant|Dexterity 13
-Wizard|Arcane Recovery|Intelligence 13
+Paladin | Divine Sense | Wisdom 13 and religion proficiency
+Paladin | Lay on Hands | Charisma 13 and religion proficiency
+Revised Ranger | Favored Enemy | none
+Rogue | Expertise I | Intelligence 13
+Rogue | Thieves Cant | Charisma 13
+Wizard | Arcane Recovery | Intelligence 13
