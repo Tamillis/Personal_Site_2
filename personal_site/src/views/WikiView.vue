@@ -4,9 +4,7 @@
     <h2 class="subsubtitle text-centre no-decoration">My D&D Setting & Worldbuilding Project</h2>
 
     <!-- List of articles on the wiki, doubling as route and link -->
-    <ul class="">
-      <li class="triangle-points"><RouterLink class="intext-link" to="/mewiki/CoreSetting&PlayerOptions">Core Setting & Player Options</RouterLink></li>
-    </ul>
+    <WikiRoutes />
 
     <!-- Search bar for unique terms to jump to article it's associated to -->
     <!-- <div class="flex gap-1r">
@@ -21,18 +19,15 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import { putMdinElement } from '../assets/functionality';
-import { useRouter, RouterLink } from 'vue-router'
+import { ref, onMounted } from 'vue'
+import { putMdinElement } from '../assets/functionality'
+import WikiRoutes from '../components/WikiRoutes.vue'
 
-const router = useRouter();
-
-const basepath = 'src/assets/wiki/'
-let file = ref(basepath + 'wikiRoot.md');
-let fileName = ref("Mitteland");
+const basepath = 'src/assets/'
+let file = ref(basepath + 'wikiRoot.md')
 
 onMounted(() => {
-  putMdinElement(file.value, 'wiki');
+  putMdinElement(file.value, 'wiki')
 });
 
 </script>
@@ -49,6 +44,13 @@ onMounted(() => {
 #wiki h3 {
   font-size: var(--subsubtitle-size);
 }
+
+#wiki h4 {
+  font-size: var(--subsubtitle-size);
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+
 
 #wiki p {
   line-height: 1.2rem;

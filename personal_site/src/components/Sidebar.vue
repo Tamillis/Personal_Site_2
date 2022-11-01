@@ -3,9 +3,6 @@
         <div class="btn-list-container">
             <ul id="links" class="shiftBack" @click="toggleNav()">
 
-                <RouterLink class="btn w-fit inline" to="/mewiki" v-if="route.path.includes('/mewiki/')">Back
-                </RouterLink>
-
                 <li class="nav-item">
                     <RouterLink to="/">Home</RouterLink>
                 </li>

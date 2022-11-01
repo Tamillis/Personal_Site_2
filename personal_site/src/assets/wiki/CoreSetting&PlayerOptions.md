@@ -95,7 +95,7 @@ d8|Example Mutation|Potential Effects
 8|Tail|A long tail sprouts from the base of your spine, granting balance.
 
 ### Mage Hunter
-> "It was men like you who brought the Empire and its people to it's knees. Now I will bring you to yours." 
+> "It was men like you who brought the Empire and its people to its knees. Now I will bring you to yours." 
 > 
 > – The Marquis Bertholdt Von Komreig, licensed mage hunter
 
