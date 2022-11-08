@@ -10,6 +10,9 @@
                     <RouterLink to="/about">About</RouterLink>
                 </li>
                 <li class="nav-item">
+                    <RouterLink to="/programming">Programming</RouterLink>
+                </li>
+                <li class="nav-item">
                     <RouterLink to="/dnd">D&D</RouterLink>
                 </li>
                 <li class="nav-item">
@@ -17,6 +20,9 @@
                 </li>
                 <li class="nav-item"><a href="https://www.github.com/Tamillis" class="nav-item-a"
                         target="_blank">Github</a>
+                </li>
+                <li class="nav-item"><a href="https://www.linkedin.com/in/peter-bellaby-40b93022b/" class="nav-item-a"
+                        target="_blank">LinkedIn</a>
                 </li>
                 <li class="nav-item"><a href="mailto:bellaby1993@gmail.com?subject=Enquiry for Peter Bellaby"
                         class="nav-item-a">Email Me</a></li>

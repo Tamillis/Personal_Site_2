@@ -70,27 +70,4 @@ onMounted(() => putMdinElement('src/assets/playerbrief.md', 'player-brief'));
 #player-brief strong {
   font-weight: 700;
 }
-
-#player-brief table {
-  border: 2px var(--highlight) groove;
-  margin-top: 1rem;
-  text-align: center;
-  border-collapse: collapse;
-}
-
-#player-brief table td,
-#player-brief table th {
-  padding: 2px 5px;
-  border-right: 2px var(--highlight) groove;
-}
-
-#player-brief table tr:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-#player-brief table th {
-  font-style: italic;
-  font-weight: bold;
-  text-decoration: underline;
-}
 </style>
