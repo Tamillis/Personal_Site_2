@@ -35,6 +35,11 @@ onMounted(() => {
     font-size: var(--subsubtitle-size);
 }
 
+#wiki-page h4 {
+    font-size: var(--para-size);
+    font-weight: 700;
+}
+
 #wiki-page p {
     line-height: 1.2rem;
     margin-bottom: 0.33rem;
