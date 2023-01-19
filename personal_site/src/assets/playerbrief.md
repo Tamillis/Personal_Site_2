@@ -65,7 +65,11 @@ https://1drv.ms/w/s!Aq2B34oritBLnj8-HQVw6hqZGfYc?e=YTcIEA
 
 https://1drv.ms/w/s!Aq2B34oritBLmwCCFfCDkprcPJr6?e=EtBUdW 
 
-**Magus** - My own take on the popular Magus, a WIP that's mostly done (bother me if you want to playtest early)
+**Free Mage** - Those called Free Mages are able to tug on mana and shape it to produce spell-like effects, these folks are often mistaken for sorcerers. Unlike sorcerers, however, who have a native ability to accrue and apply spell weaves, free magi employ pure mana, their own or the raw caustic stuff of the weave. Without any intervening or structuring spell, they shape it in each moment with deft acuity and precision, using their mind alone. These broad effects can be spell-like and brutally effective, but dangerous in the extreme, lacking the complexity, finesse and failsafes of structured spells. Not to mention the Soul Burn effect of using unfiltered raw mana not acclimatised to one’s own lifeforce. 
+
+https://1drv.ms/w/s!Aq2B34oritBLkibbbOc8gfxWQpLJ?e=Ic3EJj
+
+**Magus** - My own take on the popular Magus, a WIP that's mechanically done but not yet undergone the process of converting it to the clear consistent language of the PHB and surrounding flavour text. Let me know if you're interested.
 
 **Potion Maker** - very much a WIP
 
