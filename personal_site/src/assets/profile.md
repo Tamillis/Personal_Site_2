@@ -4,7 +4,7 @@
 
 Hi, my name is Peter Bellaby, as you might have already seen on the landing page's mock terminal. 
 
-I'm a C# Trainer at Sparta Global, and also a self-taught Full Stack developer, a former English Foreign Language teacher, a fluent speaker of Japanese and dabbler in various other languages, a happily married man to a lovely wife, a world traveller (places I've lived in highlighted red on the globe there) and a massive Dungeons & Dragons geek, primarily in the role as forever-DM (so please let me know if you need a player!) As you can probably see, I'm also a corgi owner and dog-person.
+I'm a C# Trainer at Sparta Global, and also a self-taught Full Stack developer, a former English Foreign Language teacher, a fluent speaker of Japanese and dabbler in various other languages, a happily married man to a lovely wife, a world traveller (places I've been in highlighted red on the globe there) and a massive Dungeons & Dragons geek, primarily in the role as forever-DM (so please let me know if you need a player!) As you can probably see, I'm also a corgi owner and dog-person.
 
 Programming is one of my passions and the internet is my second home. Before becoming a trainer at SpartaGlobal, I freelanced web development which I'd entirely taught to myself using free resources on the internet. I'm sure I still make many common mistakes on that front!
 
@@ -24,8 +24,10 @@ If you have any questions or enquiries, please feel free to contact me via e-mai
 ## Qualifications & Education
 ### *The official certificates and education that I possess.*
 
+- _**ISTQB Certification**_: while working with SpartaGlobal I teach the ISTQB Certificate in testing, which is an industry standard in software testing and a major feature of our SDET C# and Java courses. It provides a thorough framework to express testing concepts and be that common language between all people involved in testing, which in any good project is near everyone.
+
 - _**Full-stack Web Development**_: where I taught myself using online tools and
-practice over the course of half a year, building on a foundation of hobbyist interest in programming since university.
+practice over the course of half a year, building on a foundation of hobbyist interest in programming since university. This site is the proof of that.
 
 - An _**OCR Level 3 Diploma in Business Administration**_ during a commercial business apprenticeship with ZF Friedrichshafen AG, educated by Solihull College, where I developed a wide base of business skills alongside practical experience managing accounts of cart part manufacturing and supply for various big-names; Jaguar Landrover, Honda, Toyota and others. (Oct 2017 – Oct 2018)
 
