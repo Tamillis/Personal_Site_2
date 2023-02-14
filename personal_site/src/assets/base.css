@@ -99,7 +99,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-ul {
+ul, ol {
   padding-left: 1rem;
 }
 

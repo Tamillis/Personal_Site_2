@@ -4,6 +4,8 @@ The MEW is an online repository for my worldbuilding project I call the 'Materiu
 
 #### The goals of the project are:
 - To provide easy access to setting information for players
-- To be thoroughly cross-linked (any mention of a person, place or fact that has its own article, will be automatically linked to)
-- For previews of the articles to be accessed by middle-clicking, with previews visible within previews as deep as you want to go
-- And for one day enable the addition of player-written articles, by posting to the Wiki through profiles and as their characters
+- To be thoroughly cross-linked (any mention of a person, place or fact will be automatically highlighted)
+- Any highlights can be delved into via tooltips
+- Tooltips themselves will contain highlights, with tooltips appearing on top of tooltips.
+- To be thoroughly cross-navigable (any highlighted term that relates to a full page will have a link to that page in its tooltip)
+- And for one day soon enable the addition of player-written articles via an entry form, by posting to the Wiki as their characters

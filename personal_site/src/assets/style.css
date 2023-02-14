@@ -193,7 +193,7 @@ hr {
   text-rendering: optimizeLegibility;
 }
 
-.main-text ul {
+.main-text ul, .main-text ol {
   text-indent: 0px;
   margin-left: var(--subtitle-size);
 }

@@ -61,6 +61,11 @@ onMounted(() => putMdinElement('src/assets/playerbrief.md', 'player-brief'));
   text-decoration: underline;
 }
 
+#player-brief h4 {
+  margin: 1rem 0px 0.5rem 0rem;
+  text-decoration: underline;
+}
+
 #player-brief em {
   font-size: 1.1rem;
   font-weight: 500;
