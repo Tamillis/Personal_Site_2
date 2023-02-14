@@ -64,4 +64,16 @@ onMounted(() => {
 #wiki-page strong {
     font-weight: 700;
 }
+
+#wiki-page img {
+    border: 4px groove var(--color-highlight);
+    width: 100%;
+}
+
+#wiki-page .img-wrap {
+    margin: 0px auto;
+    text-indent: 0px;
+    width: 100%;
+    padding-top: 1em;
+}
 </style>

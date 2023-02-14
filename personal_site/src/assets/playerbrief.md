@@ -59,7 +59,7 @@ The compendiums are high-quality compilations of whole swathes of options in the
 
 **Armouries of the Second Empire** – should we be playing in the Age of Man setting, or something similar, the following are a list of firearms, firearms rules, and items from the Second Empire; 
 
-https://1drv.ms/w/s!Aq2B34oritBLnj8-HQVw6hqZGfYc?e=YTcIEA 
+<a href="./mewiki/ArmouriesOfTheSecondEmpire">Armouries of the Second Empire</a>
 
 **Dryad Prestige Class** – it is a work in progress, but needs testing to find the feel of it. Characters who have had their soul bonded to a tree by a powerful fey start to become dryads, and as they indulge in their new nature, they grow into the powers described within. This is a "Prestige Class" that only goes up to level 10 and is intended to be taken through multiclassing. You may take dryad as your first level, perhaps that is indeed how your adventuring career started. 
 
@@ -110,7 +110,17 @@ Meanwhile, chases and chasing another creature is a skill challenge and is not i
 
 ***
 
-**First Level Features** - With your background feat you could choose to take as your feat (instead of from the normal and expanded feat lists) one of the class features listed below but using sane prerequisites (this is the very first part of a total rework I have planned of the class system); 
+## Pete's Edition of Dungeons & Dragons (PEDD)
+(A remake of 5e)
+
+If I were to make a radical 6e of a fashion that suited my tastes and mechanical areas to explore, reformulate and refine, while keeping as much as I could, this would be that. Starting with just the content of the player handbook, PEDD seeks to apply three major changes: abolishment of the class and levelling system (including updates to nearly all features, feats and spells), a rework of the character creation system and ability score system to be easier for new players and more sensible, and a rework of the action economy and combat to make it snappier yet more tactical. 
+
+Anything not mentioned is not changed as while this is a total homebrew makeover the base is still D&D 5e and you know what, that’s OK. It's a good base, and one we are all familiar with, and extension means no need to repeat good material. It's all already there.
+
+The following is the first forays into that.
+
+### *First Level Features* 
+With your background feat you could choose to take as your feat (instead of from the normal and expanded feat lists) one of the class features listed below but using the prerequisites; 
 
 Class | Feature | Prerequisite
 ---|---|---
@@ -124,3 +134,30 @@ Revised Ranger | Favored Enemy | none
 Rogue | Expertise I | Intelligence 13
 Rogue | Thieves Cant | Charisma 13
 Wizard | Arcane Recovery | Intelligence 13
+
+### Ability Statistics and Resistances, and Health and Defence
+The modifier into score system is a vestige. It is removed. All characters have ability statistics, a single value from -5 to +5 (or more, for monsters). When creating characters, any ability score increase features are remapped to two +1's in the stated abilities. Any base-races/subraces with 3 or more abilities increased increase 3 statistics by +1. Humans (which in PEDD are the "Human+" from the homebrew above) can choose +1 to any three statistics.
+
+The base statistics of a character are [-2, -1, 0, +1, +2, +3]. Alternatively dice rollers can roll 6(d6-3), record each value and increase one value of their choice by one.
+
+*Resistances and Statistics*
+A line is drawn between your active statistics, and your passive resistances.
+
+There are six statistics (note the changes):
+- Strength - used in melee attacks, and feats of brawn
+- Accuracy - used in ranged attacks, and feats of precision
+- Dexterity - used in many skills, for feats of action
+- Intelligence - used in knowledge and understanding, for feats of alacrity
+- Perception - used to sense the world, spot hidden things, read others and see far
+- Charisma - used to affect others through force of personality
+
+And three resistances (used in saves):
+- Constitution - the ability of the body to throw off ills
+- Reflex - the ability of the body to avoid harms
+- Willpower - the ability of the mind to resist
+
+Each Race and Background has a "Resistance Profile", where your final resistance values are the combination of the two. For example, Elves have a Constitution of -1, and Protector's a Constitution of +3, meaning an Elf Protector starts with a Constitution of +2.
+
+*Health*
+HP is relabelled to "Health", and is calculated from: racial “Baseline Health” (a 4/6/8/10) + background bonus (a mage's 6 / an artisan and hunter's 8 / a brawler's 10 / a protector's 12) + Constitution (physical fortitude) + Willpower (mental fortitude). 
+
