@@ -155,14 +155,21 @@ There are six statistics (note the changes):
 
 And three resistances (used in saves):
 - **Constitution** - the ability of the body to throw off ills
-- **Reflex** - the ability of the body to avoid harms
+- **Reflexes** - the ability of the body to avoid harms
 - **Willpower** - the ability of the mind to resist
 
-Each Race and Background has a "Resistance Profile", where your final resistance values are the combination of the two. For example, Elves have a Constitution of -1, and Protector's a Constitution of +3, meaning an Elf Protector starts with a Constitution of +2.
+Each Race and Background has a "Resistance Profile", where your final resistance values are the combination of the two. For example, Elves have a Constitution of -1, and Soldier's a Constitution of +3, meaning an Elf Protector starts with a Constitution of +2.
 
 For those hankering for a sense of “wise” there is the Learned Power for wisdom in the sense of knowledgable, and the “Wisened” background that is wisdom in the sense of a wide body of practiced wisdom coming from aged experienced, the non-academic sage. 
 
 **Initiative** - incidentally initiative is calculated from Dexterity + Perception as a base, with certain Powers affecting it further.
+
+#### *Proficiency Bonuses and Expertise*
+**Bonus** - Proficiency Bonus is simply "Bonus", which means +2, and is typically derived from Proficiency and Powers, a characters skill in an area. Having "proficiency" in a tool or skill means gaining a Bonus to rolls made with that tool/skill.
+
+A Power, “Aptitude I/II”, increases that to +3/+4. Bonus applies to more than just proficiencies, many Powers now key off it explicitly. That being said any reference to being “Proficient” still means having a Bonus. 
+
+**Expertise** - Abilities with Bonus can gain Expertise to be grant effectively a double Bonus. Every area of the game that grants Expertise should only do so when that area already has a Bonus, otherwise it is treated as a Bonus. An area of the game which already benefits from Expertise cannot benefit from it again.
 
 ### Combat Rework
 The goal is to make combat more consistently dangerous: low level combat was too dangerous but quickly combat became trivial, characters were health sponges that you end up playing whack-a-mole with.
@@ -174,13 +181,17 @@ The goal is to make combat more consistently dangerous: low level combat was too
 Another goal is to make combat snappier. This lead to "One Action All At Once".
 
 Also, if 5e made the math linear, PEDD seeks to make the math flat (as part of removing classes): with the following assumptions;
-- "peasants" face an average dc of 10, hit at +0/+3 (unskilled, skilled, unskilled being the norm), have 10 defence and have 10 health. 
-- "adventurers" face an average dc of 15, hit at +2/+5 (unskilled, skilled, skilled being the norm), have 15 defence, and have 20 health. 
+- "peasants" face an average dc of 10, hit at +0/+3 (unskilled, skilled, unskilled being the norm), have 10 defence and have 8-12 health. 
+- "adventurers" face an average dc of 15, hit at +2/+5 (unskilled, skilled, skilled being the norm), have 15 defence, and have 20-30 health. 
 
-#### *Health & Hit Dice*
-HP is relabelled to "Health", and is calculated from: racial “Baseline Health” (a 4/6/8/10) + background bonus (a mage's 4 / an artisan and hunter's 6 / a brawler's 8 / a protector's 10) + Constitution (physical fortitude) + Willpower (mental fortitude). Health is explicitely a combination of physical and emotional wear and tear.
+#### *Health & Recovery*
+**Health** - HP is relabelled to "Health", and is calculated from: racial “Baseline Health” (a 4/6/8/10) + background bonus (another 4/6/8/10) + Constitution (physical fortitude) + Willpower (mental fortitude). Health is explicitely a combination of physical and emotional wear and tear as well as the idea of "experience" that allows you to avoid, roll with and carry on from blows.
 
-Hit Dice are also an older mechanic that is mostly vestigal. It too is removed. Resting (short or long) recovers your Baseline Health. Long rests do not fully heal (also only recovering Baseline Health), but are otherwise unchanged.
+**Recovery** - Hit Dice are also an older mechanic that is mostly vestigal. It too is removed. Resting (short or long) recovers your Baseline Health, until your Health is back at its maximum. Long rests also only recover your Baseline Health, but are otherwise unchanged.
+
+Once you have regained health from a short rest, you cannot regain health again until you have completed a long rest. 
+
+That means, at a maximum, you can gain your Baseline Health (without modification from Powers) twice, once from a short rest and once from a long rest, per day. If you seek medical attention or healing spells, however, you may yet recover a lot more Health in a day.
 
 #### *Wounds*
 "Wounded X" is a new condition. When your Health is reduced to 0 or below for the first time in a fight, you go Unconsciouss and you gain the Wounded 1 condition. Each time you go down, your Wounded condition increases by one. When you make Death Saves, the DC is instead your Wounded condition value x5, so at Wounded I Death Saves are made against a DC of 5.
@@ -241,6 +252,59 @@ How do you avoid a long conga-line chain of awkwardly connected characters fight
 **Flanking** works by being the one in an engagement who the foe isn’t engaging. Though, like my original homebrew, you cannot flank a creature 2 or more sizes larger than you.
 
 ### Class & Levelling Rework
-An abolishment of classes and levelling, replaced with "Powers" (i.e. Features and Feats) with a more story-driven Power by Power development system.
+An abolishment of all classes and the system of levelling, replaced with "Powers" (created from Features and Feats) with a more story-driven Power by Power development system.
 
-A WIP.
+Progression, then, is the acquisition of more Powers and proficiencies. Certain Powers will be stronger than others, so they will key off of prerequisites, typically Stats, other powers and also “After n or more Powers”, or "Once every n<sup>th</sup> Power". These are noted in brackets before the description of the Power.
+
+"Once every n<sup>th</sup> Power" means n number of other Powers must be taken before this Power can be taken, and the same again if taking this power again. This has nothing to do with other Powers that also have this prerequisite, so they may be "interleaved".
+
+Powers taken more than once should be noted what "Rank" they are at; such as "Hale I" or "Hale IV", to show that they are technically two separate powers.
+
+This means (as both Hearty and Hale are "Once every 2<sup>nd</sup> Power" Powers) the following is a valid combination of Powers:
+1. Brawler
+2. Hearty I
+3. Hale I
+4. Hearty II
+5. Hale II
+
+Powers have some meta categories:
+- Innate Powers – cannot be trained in normal progression
+- Unique Powers - can only be taken once
+- Difficult - Powers that take longer than usual to learn
+
+Powers are “in training” before coming online, to encourage roleplay of skill acquisition. E.g. a character at the start of each session declares what Power/s they are training towards and when the when the group / DM feels its appropriate, characters gain that Power.
+
+For the intended "power level" of a Power, take any Feat from the PHB which has a Stat increase component, and remove the Stat increase.
+
+Spellcasting is a Feature that has had to receive major reworking, and is still WIP.
+
+#### *Example Powers*
+**Artisan** – gain proficiency in a Tool Set and proficiency in a Skill. You also gain Expertise in a Tool Set. When not at Disadvantage, you can choose to not roll when making any Tool Set check and instead assume you rolled a 10, adding Stat and any Bonus to that as normal.
+
+**Brawler** – (Unique) Your Unarmed Attacks contain the Block I, Finesse and Parry (bludgeoning) properties. Your Unarmed Attacks deal d4 damage.
+
+**Combat Expert** – (Proficiency with a martial weapon) You can Engage one more enemy, up to the maximum number possible for your Size
+
+**Hale** – (Once per 2 Powers) Rests grant an additional Constitution + Willpower (to a minimum of 1) as well to Health recovery.
+
+**Hardy** - (Once per 2 Powers) Add your Constitution & Willpower (to a minimum of 1) to your Health total
+
+**Hunter** – (Unique) You can Aim as a bonus action, granting a Bonus to the next Ranged Weapon Attack you make this turn.
+
+**Innate Spells** – (Spellcasting Initiate I), learn two spells from your known spell lists. You cannot learn spells of a Circle you cannot yet cast.
+
+**Learned** power – gain expertise in history, arcana or religion.
+
+**Magical Reserve** Power – determines spell slots. “Once Every 2nd Power”. Progression down the old spell slot table but with relabelled terms; spell casts, magnitude. Explicitly state all higher magnitude casts can be “down cast”, and that certain spells can be “Up Cast” as described in their spell description.
+
+**Protector** – (Unique) You can make the Block action with Shields as a Bonus action. You can instead block for an ally within 5ft of you. They gain the benefits of the block as if they themselves blocked.
+
+**Quick Recovery** – when Resting regain Baseline Health x2 Health. Can be taken again for x3 after 5 or more Powers, then finally once more for x4 affect after 10 or more Powers.
+
+**Resistance Increase** – (Once every 5<sup>th</sup> Power), increase a Resistance by +2
+
+**Run and Gun** – (Unique) you can Run and Gun as an action, where you can make a ranged weapon attack at disadvantage after making a move action as a bonus action. You may instead fire and then move.
+
+**Spellcasting Initiate** – choose a Sphere of Magic: Arcane, Divine, Occult or Primal. You gain 2 cantrips and a 1st Circle spell from that list. You also gain the Spellcasting Power for that Sphere. You can take this Power again if you can and do choose a different Sphere of Magic.
+
+**Stat Increase** – (Once every 5<sup>th</sup> Power), increase a Statistic by +1
