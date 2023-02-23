@@ -37,6 +37,16 @@ const router = createRouter({
       name: 'mewiki-page',
       component: () => import('../views/WikiPageView.vue')
     },
+    {
+      path: '/statistics',
+      name: 'statistics',
+      component: () => import('../views/Statistics.vue')
+    },
+    {
+      path: '/survey',
+      name: 'survey',
+      component: () => import('../views/Survey.vue')
+    },
     //redirect all non-routes to the index
     { path: '/:pathMatch(.*)*', 
       redirect: '/' }

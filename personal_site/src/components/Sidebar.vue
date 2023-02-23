@@ -18,6 +18,12 @@
                 <li class="nav-item">
                     <RouterLink to="/mewiki">M.E. Wiki</RouterLink>
                 </li>
+                <li class="nav-item">
+                    <RouterLink to="/survey">Survey</RouterLink>
+                </li>
+                <li class="nav-item">
+                    <RouterLink to="/statistics">Statistics</RouterLink>
+                </li>
                 <li class="nav-item"><a href="https://www.github.com/Tamillis" class="nav-item-a"
                         target="_blank">Github</a>
                 </li>
