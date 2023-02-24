@@ -24,7 +24,7 @@
                 <div id="handles-canvas"></div>
             </div>
 
-            <p>The handles of everyone in the database, drawn using P5JS using my very own pseudo-logographic elvish script. Hover over them to see
+            <p>The handles of everyone in the database, drawn using P5JS using my very own pseudo-logographic script. Hover over them to see
                 the original Handle.</p>
         </div>
 
@@ -32,7 +32,9 @@
 </template>
 
 <script setup>
-let showGraph = true;
+import { ref } from 'vue';
+
+let showGraph = ref(true);
 
 // ONLOAD, fetch database data via simple php get script
 
