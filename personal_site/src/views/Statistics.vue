@@ -5,7 +5,7 @@
         <p id="descr" class="">This page is built using plotly.js. Below is a dynamic display for each set of data.</p>
 
         <button @click="showGraph = !showGraph" class="btn mx-auto mt-gap">Show {{ showGraph ? "Handles" : "Graphs" }}</button>
-        <div id="graph-wrapper" v-if="showGraph">
+        <div id="graph-wrapper" v-show="showGraph">
 
             <p class="subsubtitle">Original Question</p>
 
@@ -16,7 +16,7 @@
             <button @click="nextGraph()" class="btn">Next</button>
             <p id="expText">Explanation Text Here</p>
         </div>
-        <div id="handle-canvas-wrapper" v-if="!showGraph">
+        <div id="handle-canvas-wrapper" v-show="!showGraph">
             <div class="subsubtitle">
                 <p>Handle Glyphs</p>
             </div>
