@@ -28,6 +28,11 @@ const router = createRouter({
       component: () => import('../views/DndView.vue')
     },
     {
+      path: '/pedd',
+      name:'pedd',
+      component: () => import('../views/PEDDView.vue')
+    },
+    {
       path: '/mewiki',
       name: 'mewiki',
       component: () => import('../views/WikiView.vue')
