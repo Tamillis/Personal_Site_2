@@ -24,13 +24,16 @@
                 <li class="nav-item">
                     <RouterLink to="/statistics">Statistics</RouterLink>
                 </li>
+                <li class="nav-item">
+                    <RouterLink to="/transissional">Transissional English</RouterLink>
+                </li>
                 <li class="nav-item"><a href="https://www.github.com/Tamillis" class="nav-item-a"
                         target="_blank">Github</a>
                 </li>
                 <li class="nav-item"><a href="https://www.linkedin.com/in/peter-bellaby-40b93022b/" class="nav-item-a"
                         target="_blank">LinkedIn</a>
                 </li>
-                <li class="nav-item"><a href="mailto:peter@bellaby.com?subject=Enquiry for Peter Bellaby"
+                <li class="nav-item"><a href="mailto:peter@bellaby.co.uk?subject=Enquiry for Peter Bellaby"
                         class="nav-item-a">Email Me</a></li>
             </ul>
         </div>

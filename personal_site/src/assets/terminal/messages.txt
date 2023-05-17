@@ -1,13 +1,13 @@
 Hi, my name is Peter Bellaby, and this is my website, resume and personal portfolio. 
 It's here to display my various projects, passions and business information. 
-This site is built primarily with VueJS, markedjs and P5JS (with a little bit of threejs thrown in) 
-For example, the fractal snowflake storm that runs seemlesly behind every page is the power of P5JS and Vue working together. 
+This site is built primarily with JavaScript (Vue, marked, p5, three, plotly), a smidge of python, and the api at /surveydata with php
+For example, the fractal snowflake storm that runs seemlessly behind every page is the power of P5JS and Vue working together. 
 Feel free to inspect the sourcecode, and other projects, at my github: https://github.com/tamillis/
 ***Loading further witticisms*** 
 Roses are red, violets are blue, mental that one, I'm telling you. 
 From where I now stand, I can sometimes see the peak, and it is still far. 
 If it is true, I desire to believe that it is true. If it is false, I desire to not. Let my beliefs reflect reality. 
-, and Dean Thomas roared the words like they had been written in letters of fire... 
+, and he roared the words like they had been written in letters of fire... 
 No, no, no. If anyone asks, you kicked their asses with butterflies. 
 Please, Harry! Headmaster sounds so formal, just call me Heh for short. 
 Aim for the stars, even if you miss it'll be out of this world. 
@@ -19,6 +19,8 @@ Oh would some power give us the gift, to see ourselves as others see us.
 What is true is already so. Owning up to it doesn't make it worse. Not being open about it doesn't make it go away. 
 People say nothing is impossible, but I do nothing everyday. 
 Well, hello there! 
-Works on Chromium, Firefox, Opera and even Edge! (who uses that again?) 
+Works on Chromium, Firefox, Opera and even Edge! (who uses that again?) Probably works on safari too, difficult for me to check.
 Legend says the fairies and elves of Wales used the Corgi as steeds for fey warriors. 
 This site utilizes Responsive Web Design! Try changing the window size and check it out! 
+I have my own English spelling reform, a problem that if you've heard of you know is pointless, and if you haven't will think is pointless.
+I bett that you can reed this júst fine, yven tho it luks a bitt od to you. This is the power of Transissional Inglish.

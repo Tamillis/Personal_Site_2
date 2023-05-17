@@ -36,7 +36,7 @@ import { ref } from 'vue';
 
 let showGraph = ref(true);
 
-// ONLOAD, fetch database data via simple php get script
+// ONLOAD, fetch data via exposed API endpoints provided at ./surveydata, as written in php :3
 
 function nextGraph() {
     alert("Go to next graph");

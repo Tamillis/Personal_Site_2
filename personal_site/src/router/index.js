@@ -52,9 +52,19 @@ const router = createRouter({
       name: 'survey',
       component: () => import('../views/Survey.vue')
     },
-    //redirect all non-routes to the index
+    {
+      path: '/transissional',
+      name: 'transissional',
+      component: () => import('../views/TransissionalView.vue')
+    },
+    {
+      path: '/404',
+      name: '404',
+      component: () => import('../views/404.vue')
+    },
+    //redirect all non-routes to the 404 page
     { path: '/:pathMatch(.*)*', 
-      redirect: '/' }
+      redirect: '/404' }
   ]
 })
 
