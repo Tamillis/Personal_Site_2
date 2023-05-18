@@ -50,10 +50,13 @@ onMounted(() => putMdinElement('src/assets/transissional.md', 'transissional'));
 
 #transissional h2 {
     font-size: var(--subtitle-size);
+    text-align: center;
+    margin: 1rem 0px;
 }
 
 #transissional h3 {
-    font-size: var(--subsubtitle-size);
+    font-size: var(--para-size);
+    text-decoration: underline;
 }
 
 #transissional h4 {

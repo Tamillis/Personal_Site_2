@@ -1,7 +1,7 @@
 <template>
-    <nav class="sidebar">
+    <nav class="sidebar" id="nav" @click="toggleNav()">
         <div class="btn-list-container">
-            <ul id="links" class="shiftBack" @click="toggleNav()">
+            <ul id="links" class="shiftBack">
 
                 <li class="nav-item">
                     <RouterLink to="/">Home</RouterLink>
@@ -48,14 +48,19 @@ const route = useRoute();
 let out = false;
 function toggleNav() {
     let links = document.getElementById("links");
+    let nav = document.getElementById("nav");
 
     //if the display of the sidebar is nill or none move items sidebar amount to the side
     //and set the display to block, or do the reverse
     if (out) {
+        nav.classList.add("z3");
+        nav.classList.remove("z1");
         links.classList.remove("shiftOut");
         links.classList.add("shiftBack");
     }
     else {
+        nav.classList.remove("z3");
+        nav.classList.add("z1");
         links.classList.remove("shiftBack");
         links.classList.add("shiftOut");
     }
@@ -64,6 +69,7 @@ function toggleNav() {
 </script>
 
 <style lang="css" scoped>
+
 nav a.router-link-exact-active {
     color: var(--text-color);
 }
@@ -83,12 +89,13 @@ a {
 
     width: fit-content;
     height: 100vh;
-    z-index: 5;
+
     transition: ease-in;
     transform: 0.5s;
 }
 
 #links {
+    position: relative;
     transition: transform 0.33s ease-in-out, background-color 0.5s ease-in-out;
     padding: 1rem;
     border-radius: 0px 10px 10px 0px;
@@ -96,18 +103,24 @@ a {
     border-left: none;
 }
 
-#links:hover {
+RouterLink, li {
+    width: 100%;
+}
+
+RouterLink:hover {
     cursor: pointer;
 }
 
 .shiftOut {
     transform: translateX(-80%);
     background-color: var(--background-transparent);
+    z-index: 1 !important;
 }
 
 .shiftBack {
     transform: translateX(0%);
     background-color: var(--backgroundDark);
+    z-index: 5 !important;
 }
 
 .nav-item {

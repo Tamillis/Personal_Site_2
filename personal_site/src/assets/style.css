@@ -152,13 +152,14 @@
 }
 
 .section {
-  width: auto;
-  margin: 0px var(--sectionMargin);
-  padding: 1em;
+  width: 90%;
+  margin: 1rem var(--sectionMargin);
+  padding: 1rem;
   transition: 0.5s;
   border: var(--highlight) 4px groove;
   border-radius: 25px 0px 25px 0px;
   background-color: var(--backgroundDark);
+  overflow: auto;
 }
 
 /* old school HD pixel width I think makes for nice reading */
@@ -346,4 +347,45 @@
   display: flex;
   justify-content: flex-end;
   margin: 10px auto;
+}
+
+.q {
+  border: none;
+  border-radius: 0px;
+
+  margin-left: 2em;
+  padding: 4px 2px;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 66%;
+
+  font-size: var(--para-size);
+}
+
+.q-label {
+  text-indent: 0px !important;
+}
+
+.checkBoxQ,
+.radioQ {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: white solid 1px;
+
+  margin: 2px 5px 0px 5px;
+
+  transition: 0.2s all linear;
+}
+
+.checkBoxQ:checked,
+.radioQ:checked {
+  background: white;
 }

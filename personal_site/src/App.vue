@@ -32,8 +32,8 @@ const sketch = s => {
 
 <template>
   <div id="background-canvas" class="z-1 no-border"></div>
-  <Sidebar />
-  <RouterView />
+  <Sidebar class="z3"/>
+  <RouterView class="z2"/>
   <!-- Footer worth putting back in? -->
 </template>
 

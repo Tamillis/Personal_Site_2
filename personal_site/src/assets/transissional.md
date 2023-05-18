@@ -1,14 +1,20 @@
 # Transissionel Inglish 
 
-### New Edition 
+## An English Spelling Reform
 
-This is a condensed and edited version of Transissionel Inglish, effectively edition four due to the addition of fourth amendment details, presented in a more consistent and logical fashion than the initial document which was more of a design as you went mess. 
+> #### New Edition 
+>
+> This is a condensed and edited version of my various bits of work on an English Spelling reform I call Transissionel Inglish, effectively now edition five due to the addition of four previous versions and now this online one. The 4th iteration presented the reform in a more consistent and logical fashion than the initial document which was more of a design as you went mess, and now this online version is the authorative version that is also publicy facing. 😱
 
 ### Mission 
 
 The mission of Transissionel Inglish is to be a writing system that provides a transition point between current English orthography, and one to one phonetic orthography (such as the I.P.A.), which can be very hard for current readers of English to understand. As such Transissionel Inglish is highly readable to current speakers (in fact all of its constructions par a few exceptions, follow common current orthographic patterns), whilst being almost perfectly decoding (i.e. it can always be read without ambiguity) and also highly consistently encoding by following a set of exclusive logical rules for determining which spelling conventions to use when. Very little knowledge of current standard English orthography is needed, though there are many pairs or triplets of conventions with the same pronunciation where current spelling is used to know which to use, for example; the ir/ur/er in “bird”, “nurse” and “verb”.  
 
-Part of this mission included only making use of current English letters, in other words to avoid the insertion of new symbols or accents (which may put off current readers who don’t know their values). The one exception to this rule is the optional use of á, é and ú in polysyllabic words to eliminate specific cases of ambiguity where following double consonants are impossible. As such the rules that do not employ an accent always take precedent. This focus on use in-extremis also means even when in use, accents are not common.  
+In the counter-factual world where this spelling system was the one children learned and adults used, there would still be a level of memorisation needed, which pattern of a pair or triplet to use for which word. Still, it would be far less memorisation than currently, and be far easier to teach children and use internationally.
+
+Part of this mission included only making use of current English letters, in other words to avoid the insertion of new symbols or accents (which may put off current readers who don’t know their values). The one exception to this rule is the optional use of á, é, ó and ú, mostly in polysyllabic words to eliminate specific cases of ambiguity where following double consonants are impossible. As these accents are optional, the rules that do not employ an accent always take precedent. This focus on use in-extremis also means even when in use, accents are not common. It is my recommendation that accents only be used in formal documentation as a matter of extreme clarity, and in early learning material to help children parse their own spoken language into writing. 
+
+The "Transissionel" part of the Mission of this reform is to be the first of a series of steps towards total regularisation of English spelling. As such the system should only be adopted with the understanding that further changes, particularly over time as the common language evolves across the world, be adopted. Though not detailed, the first changes I would recommend is the removal of all pairs/triplets of spelling conventions and all of the Irregular Spellings group.
 
 This document refers to original orthography as “Standard English” or “[SE]”, and prefixes any original orthography with “SE”, such as “[SE] English” vs “Inglish”. 
 
@@ -16,11 +22,11 @@ This document refers to original orthography as “Standard English” or “[SE
 
 Transissionel Inglish can be learnt in three parts; the vowels, the consonants, and common constructions. 
 
-After this a series of bulk examples are available in Transissionel Inglish, for reference. 
+After this, a series of bulk examples are available in Transissionel Inglish for reference. 
 
 ### Method 
 
-- Transissionel Inglish derives its orthography from the phonetics of words as spoken in Received Pronunciation, while maintaining the rhoticity (r sound) of General American and other rhotic accents.  
+- Transissionel Inglish derives its orthography from the phonetics of words as spoken in Received Pronunciation, while maintaining the rhoticity (r sound) of General American and other rhotic accents. This should provide a sort of "trans-atlantic" standard applicable to all, but I acknowledge the bias towards British English as, well, I too am British.
 - Each syllable of a word is spelled according to the following orthographic rules mostly independently of each other, and effects on pronunciation from neighbouring words (such as intrusive r) are ignored.  
 - Stress patterns also follow Received Pronunciation, and need to be known in order to correctly employ schwa e.  
 - Otherwise syllables are spelt on a per syllable basis. 
@@ -40,7 +46,7 @@ The common vowels, as identified by their lexical sets, are used when no other r
 
 The TRAP, DRESS and STRUT vowels make use of doubled following singular consonants to differentiate them from other vowels, hence the “(cc)” notation. If accents are in use, they are used to differentiate between the vowels when doubling the consonants is not possible, due to the absence of following consonants or the presence of a following consonant cluster. 
 
-Short vowels; TRAP “a(cc)” or “á”, DRESS “e(cc)” or “é”, KIT “i”, LOT “o”, FOOT “u”, STRUT “u(cc)” or “ú”. 
+Short vowels; TRAP “a(cc)” or “á”, DRESS “e(cc)” or “é”, KIT “i”, LOT “o(cc)” or "ó", FOOT “u”, STRUT “u(cc)” or “ú”. 
 
 Long vowels; BATH and PALM “a”, THOUGHT “oa” or “aw” (where SE uses an “au” or “aw”, except in cases where the next consonant is “w” again, in which case “oa” is used by default), FLEECE “y” or “ee” (where used in SE as “ee” or “ea”, or by default when fronted by the “y” consonant as in “yeeld”), GOOSE “ue” or “oo/ew” (where used in SE). 
 
@@ -48,7 +54,7 @@ R-coloured Vowels; START “ar”, NURSE “er” or “ir/ur” (where used in 
 
 Diphthongs; PRICE “ai” or “ye” (where used in SE. The “e” at the end counts as a Magic E or Schwa E for suffix purposes, and may be absorbed by suffixes such as in “crying”), FACE “ei” or “ay” (where used in SE), CHOICE “oi” or “oy” (where used in SE), MOUTH “au” or “ow” (where "ow” or “ou” in SE), GOAT “ou” or “o” if there is no coda in a syllable (Motto vs. Moto GP).  
 
-R-coloured Diphthongs; SQUARE “ear”, NEAR “iar” or “eer” (when “eer” or “ear” in SE), CURE “uar” (though speakers of the FORCE CURE merger, where those vowels are pronounced the same, can write both using “or”). 
+R-coloured Diphthongs; SQUARE “ear”, NEAR “iar” or “eer” (when “eer” or “ear” in SE), CURE “uar”. 
 
 Glide Vowels; vowels that palatalise the previous consonant, such as the difference in pronunciation between [SE] “pure” and [SE] “poor”. These are formed by “i” + the vowel, and in these cases supersede “i” as KIT or an unstressed “i”. The Glide Vowels are; 
 - TUESDAY “iu” 
@@ -201,6 +207,8 @@ The following root words retain their [SE] spellings, due to their frequency and
 A, and, at, be, by, do, go, have, he, I, of, off, she, they,  to, up, we, what, when, where, which, who, why, you.  
 
 All of their derivative words (such as plural forms, possessive forms, past forms, perfect forms and any others) also maintain their [SE] irregular spellings. 
+
+***
 
 ## Example Texts 
 

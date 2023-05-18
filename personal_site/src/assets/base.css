@@ -32,10 +32,13 @@
   padding: 0;
   position: relative;
   font-weight: normal;
+  
 }
 
 /* Element styles, site-wide */
-
+html {
+  overflow: auto;
+}
 body {
   min-height: 100vh;
 
@@ -50,6 +53,8 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  overflow: auto;
 }
 
 ul, ol {
