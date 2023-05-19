@@ -1,13 +1,12 @@
 <template>
     <div class="main-text">
-        <form @submit.prevent="handleSubmit" action="/surveydata" target="" method="POST" v-if="firstTimeSubmit==null" class="subsection">
+        <form @submit="handleSubmit" action="/surveydata" target="" method="POST" v-if="firstTimeSubmit==null" class="subsection">
             <TextInput question="What's your online handle?" name="handle" content="" :unavailable="takenHandles" class="subsection"></TextInput><br />
             <SelectBoxQ question="What country are you from?" name="country" :content="countriesArray" class="subsection"></SelectBoxQ><br />
             <NumericQ name="age" question="How old are you?"></NumericQ><br />
             <RadioQ :content="genderOptions" question="What's your gender?" name="gender"></RadioQ><br />
-            <!--
-            <CheckBoxQ question="Which D&D class would you be? (Choose 1 or up to 3 for a multi-class)" content={{dndClassList}} name="class"></CheckBoxQ><br /> 
-            -->
+            <CheckBoxQ question="Which D&D class would you be? (Choose 1 or up to 3 for a multi-class)" :content="dndClassList" name="class"></CheckBoxQ><br /> 
+            
             <input type="submit" value="Submit Survey" class="btn z-1" />
         </form>
         <div v-else>
@@ -23,6 +22,7 @@ import TextInput from '../components/TextInput.vue';
 import SelectBoxQ from '../components/SelectBoxQ.vue';
 import NumericQ from '../components/NumericQ.vue';
 import RadioQ from '../components/RadioQ.vue';
+import CheckBoxQ from '../components/CheckBoxQ.vue';
 
 let countriesArrayData = await fetch("src/assets/countries.json").then(res => res.json());
 let countriesArray = ref(countriesArrayData);
@@ -33,13 +33,12 @@ let countriesArray = ref(countriesArrayData);
 let takenHandles = ref([]);
 
 const dndClassList = ["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Paladin", "Monk", "Ranger", "Rogue", "Sorcerer", "Wizard", "Warlock"];
-let multiClassLimit = 3;
 let genderOptions = ["Male", "Female", "Other", "Rather not say"];
 
 const firstTimeSubmit = localStorage.getItem("submitted");
 
 function handleSubmit(event) {
-  console.log(event);
+  localStorage.setItem("submitted", true);
 }
 
 </script>

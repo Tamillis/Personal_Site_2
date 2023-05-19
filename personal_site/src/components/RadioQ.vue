@@ -5,7 +5,7 @@
 
             <input type="radio" :id="'radio-q-' + index" :name="props.name" :value="value"
                 :checked="index === 0 ? true : null" class="radioQ" />
-            <label :for="'radio-q-' + index" class="q radioQ-label">{{ value }}</label>
+            <label :for="'radio-q-' + index" class="radioQ-label">{{ value }}</label>
 
         </div>
 
