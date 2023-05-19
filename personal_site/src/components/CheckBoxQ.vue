@@ -2,7 +2,7 @@
     <div>
         <p>{{props.question}}</p>
         <div v-for="dndClass in props.content">
-            <input type="checkbox" :id="dndClass" :name="dndClass" :value="dndClass" v-model="classes" class="checkBoxQ" />
+            <input type="checkbox" :id="dndClass" name="class" :value="dndClass" v-model="classes" class="checkBoxQ" />
             <label :for="dndClass" class="q-label">{{dndClass}}</label>
         </div>
     </div>
