@@ -47,6 +47,14 @@ function handleSubmit(event) {
   //localStorage.setItem("submitted", true);
 
   const data = new FormData(document.getElementById("survey-form"));
+
+  const jsonData = {};
+  jsonData["handle"] = data.get("handle");
+  jsonData["country"] = data.get("country");
+  jsonData["age"] = data.get("age");
+  jsonData["gender"] = data.get("gender");
+  jsonData["class"] = data.getAll("class");
+
   //make post submition using fetch, adding necessary secret X-API-KEY header
 
   //return out of submitting with invalid data
@@ -54,11 +62,11 @@ function handleSubmit(event) {
     console.log("Invalid data");
     return;
   }
-  fetch(window.location.origin + '/surveydata', {
+  fetch(window.location.origin + '/surveydata/', {
     method: 'POST',
-    body: data,
+    body: JSON.stringify(jsonData),
     headers: {
-      'X-API-KEY':dbsettings['X-API-KEY']
+      'X-API-KEY': dbsettings['X-API-KEY']
     }
   });
 }
@@ -129,4 +137,5 @@ input[type=number] {
 .checkBoxQ:checked,
 .radioQ:checked {
   background: white;
-}</style>
+}
+</style>
