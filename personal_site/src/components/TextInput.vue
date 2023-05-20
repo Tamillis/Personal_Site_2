@@ -45,16 +45,4 @@ function onlyAlphaNumeric(string) {
 </script>
 
 <style scoped>
-
-
-.error-box {
-  border: red 2px solid;
-  width: fit-content;
-  padding-right: 2rem;
-}
-
-.error-text {
-  color: red;
-  font-weight: bold;
-}
 </style>
