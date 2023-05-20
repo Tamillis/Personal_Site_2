@@ -5,8 +5,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import routes from '../../wikiroutes.json'
+import routes from '../assets/wikiroutes.json'
 
 const configuredRoutes = [];
 
