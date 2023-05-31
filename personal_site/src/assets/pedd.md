@@ -1,21 +1,51 @@
 ## A remake of 5e
 
-If I were to make a radical 6e of a fashion that suited my tastes and mechanical areas to explore, reformulate and refine, while keeping as much as I could, this would be that. Starting with just the content of the player handbook, PEDD seeks to apply three major changes: abolishment of the class and levelling system (including updates to nearly all features, feats and spells), a rework of the character creation system and ability score system to be easier for new players to parse and understand (and be more balanced), and a rework of the action economy and combat to make it snappy yet tactical. 
+If I were to make a radical 5.5e of a fashion that suited my tastes and mechanical areas to explore, reformulate and refine, while keeping as much as I could, this would be that. 
 
-Anything not mentioned is not changed as while this is a total homebrew makeover the base is still D&D 5e and you know what, that’s OK. It's a good base, and one we are all familiar with, and extension means no need to repeat good material. It's all already there.
+Taking the content of the Fifth Edition Player's Handbook as a base (meaning assume normal 5e D&D unless otherwise redefined), PEDD applies three major changes: a rework of the character creation system and ability score system to be easier for new players to parse and understand (and be more in tune with my sensibilities) known as *Character Creation 5.P*, abolishment of the class and levelling system (including updates to nearly all features, feats and spells) known as *Power Progression*, and a rework of the action economy and combat to increase table-engagement, speed up combat and yet also make it more tactical, known as *Combat 5.P*. 
 
-The following is the first forays into that.
+Anything not mentioned is not changed as while this is a total homebrew makeover the base is still D&D 5e and you know what, that’s OK. It's a good base, and one we are all familiar with and that does a damn fine job, and by extending it it means no need to repeat good material. It's all already there.
 
-## Character Creation Rework
+***
 
-### *Ability Statistics*
+## Character Creation 5.P
 
-The ability score into modifier system is a vestige. It is removed. All characters have ability statistics, a.k.a. "Stats", a single value from -5 to +5 (or more, for monsters and "Super humans"). When creating characters, any ability score increase features are remapped to two +1's in the stated abilities. Any base-races/subraces with 3 or more abilities increased increase 3 statistics by +1. Humans (which in PEDD are the "Human+" from the homebrew above) can choose +1 to any three statistics.
+Step-By-Step Character creation in PEDD looks like this:
+1. *Create a Character Concept* - in a phrase, define the core of your character.
+2. *Determine Ability Statistics & Resistances* - these values will be modified by Race, Background and Archetype
+3. *Choose a Race* - all handbook races, and some more, are available below. See "Converting Races, Background and Classes" section for details on 5e content that doesn't appear here.
+4. *Choose a Background* - all handbook backgrounds, and some more, are available below.
+5. *Choose your Archetype and initial Powers* - choose an Archetype and corresponding number and kind of Powers (see [Powers Progression](#powers-progression)).
+6. *Finalize Equipment* - chose and collate the starting Equipment you have from your Background and Archetype.
+7. *Come Together* - [just like the base game](https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#6ComeTogether)
 
-The base statistics of a character are [-2, -1, 0, +1, +2, +3]. Alternatively dice rollers can roll 6(d6-3), record each value and increase one value of their choice by one.
+### Character Concept
+While not new, I ask players to think of a core character concept, a fantasy person they would like to be, as the very firs step of character creation. This is a fluid thing, and is expected to change as you go through character creation, choose slightly different options and redefine your character as you go. I expect players to be constantly updating their *Core Concept* as they go.
 
-### *Resistances and Statistics*
-A line is drawn between your active statistics used for actions, and your passive resistances used to not be affected by harms.
+As they do, they can add to their **Flaws**, **Bonds** and **Ideals** as they go through each step, but again thinking of these as part of the first step of character creation.
+
+### Races
+WIP
+<div id="races-container"></div>
+
+### Racial Powers
+WIP
+<div id="racial-powers-container"></div>
+
+### Backgrounds
+WIP
+<div id="backgrounds-container"></div>
+
+### Ability Statistics
+
+The ability score into modifier system is a vestige. It is removed. All characters have ability statistics, a.k.a. "Stats", a single value from -5 to +5 (or more, for monsters and "Super humans"). 
+
+The base statistics of a character are [-2, -1, 0, 0, +1, +2]. Alternatively, dice rollers can roll 6d6, reducing each result by -3 (a 6 is 3, a 2 is -1 etc.) and record each value.
+
+Stats can be increased from Race, Background, Archetype and also during Progression. During character creation no Statistic can be increased beyond +4, unless explicitly stated.
+
+#### Resistances and Statistics
+A line is drawn between your active Statistics used for actions, and your passive Resistances which are used to mitigate harms. Resistances are calculated values, from Statistics, Race and Background.
 
 There are six **Statistics** (used in checks):
 - **Strength** - used in melee attacks, and feats of brawn
@@ -26,58 +56,101 @@ There are six **Statistics** (used in checks):
 - **Charisma** - used to affect others through force of personality
 
 And three **Resistances** (used in saves):
-- **Constitution** - the ability of the body to throw off ills
-- **Reflexes** - the ability of the body to avoid harms
-- **Willpower** - the ability of the mind to resist
+- **Constitution** - the ability of the body to throw off ills. Calculated from **Strength** + **Dexterity**.
+- **Reflexes** - the ability of the body to avoid harms. Calculated from **Accuracy** + **Perception**.
+- **Willpower** - the ability of the mind to resist. Calculated from **Intelligence** + **Charisma**.
 
-Each Race and Background has a "Resistance Profile", where your final resistance values are the combination of the two. For example, Elves have a Constitution of -1, and Soldier's a Constitution of +3, meaning an Elf Protector starts with a Constitution of +2.
+Additionally, each Race and Background has a "Resistance Profile", modifiers to your character's Resistance values. For example, Elves have a Constitution of -1, and Soldier's a Constitution of +2, meaning an Elf Soldier starts with a Constitution of **Strength**+**Dexterity**+1.
 
-For those hankering for a sense of “wise” there is the Learned Power for wisdom in the sense of knowledgable, and the “Wisened” background that is wisdom in the sense of a wide body of practiced wisdom coming from aged experienced, the non-academic sage. 
+#### Resistance DC's
+Sometimes enemy attacks and other effects are made against your "Resistance DC", this is 8 + the Resistance value.
 
-**Initiative** - incidentally initiative is calculated from Dexterity + Perception as a base, with certain Powers affecting it further.
+#### Converting Saves
+Whenever 5e asks for a save of a certain kind, using the following conversion:
+- Strength Saves -> Constitution Saves
+- Dexterity Saves -> Reflex Saves
+- Constitution Saves -> Constitution Saves
+- Intelligence Saves -> Willpower Saves
+- Wisdom Saves -> Willpower Saves / Perception Saves*
+- Charisma Saves -> Willpower Saves
 
-### *Proficiency Bonuses and Expertise*
-**Bonus** - Proficiency Bonus is simply "Bonus", which means +2, and is typically derived from Proficiency and Powers, a characters skill in an area. Having "proficiency" in a tool or skill means gaining a Bonus to rolls made with that tool/skill.
+*Wisdom, being poorly understood by perhaps even the designers of 5e themselves, is an odd one. See "Where's Wisdom?" for my thoughts on that. By default use Willpower, but if Perception would be more appropriate, use that.
 
-A Power, “Aptitude I/II”, increases that to +3/+4. Bonus applies to more than just proficiencies, many Powers now key off it explicitly. That being said any reference to being “Proficient” still means having a Bonus. 
+#### Secondary Statistics
 
-**Expertise** - Abilities with Bonus can gain Expertise to be grant effectively a double Bonus. Every area of the game that grants Expertise should only do so when that area already has a Bonus, otherwise it is treated as a Bonus. An area of the game which already benefits from Expertise cannot benefit from it again.
+- **Health** - how much damage you can take before entering the Dying state. Race, Background and Archetype all provide initial Health, and finally **Constitution** + **Willpower** is added on top. See "Health" in "Combat 5.P". Health is explicitly a combination of physical and emotional wear and tear, rolling with and carrying on from blows.
+- **Defence** - how difficult you are to harm. **Base Defence** + **Armour** + **Evasion**
+  - **Base Defence** - determined by your Race (default 8), or overridden by some Powers.
+  - **Armour** - determined by the sum Defence of worn equipment.
+  - **Evasion** - your Dexterity value (min 0), can be modified by some Powers, can be limited by worn equipment.
+- **Speed** - unchanged, determined by Race
+- **Passive Statistics** - sometimes Powers or play require a value to compare against. The DM can ask you to make a roll that then represents that value, and sometimes they will ask for your "Passive Strength" etc. This is 8 + the Stat Value.
 
-### Combat Rework
-The goal is to make combat more consistently dangerous: low level combat was too dangerous but quickly combat became trivial, characters were health sponges that you end up playing whack-a-mole with.
+#### Where's Wisdom?
+Generally speaking Wisdom has been removed, with all of the D&D weirdness about 'connection' and 'perception' being part of Wisdom, even though most people use Wisdom like willpower, and it just generally having a very poorly defined and understood area of concern. It gets especially odd when many people's definitions of Wisdom start to sound a lot like Intelligence, such as having the wherewithal to notice something isn't real but is in fact an illusion. Which the game itself calls an Intelligence save!
 
-- Health progression starts higher and progresses in smaller steps naturally due to only being increased through Powers (no levels after all).
-- Damage is also “brought in line”. 15 damage is enough to one shot a peasant, 30 an adventurer. All damage sources need to be recalibrated; various high-level spells and large monsters are brought down, melee attacks should be ok as they stand. Two sword strikes, a fireball, or a headshot (e.g. a critical) will kill you.
-- The Defence rework makes it more likely for a character to be hit if they do nothing (lower base, active shielding etc), but through equipment (armour), defence boosting powers (Int/Will/Per) and action (parry/dodge/block) defence can be actively boosted for smart application allowing for higher average applied defence than old AC. 
+To address these issues, I've split Wisdom in twain. Willpower is willpower, everyone gets that. The coverage of Wisdom over connections and empathy is now under Charisma, and perception is under the new Stat Perception. 
 
-Another goal is to make combat snappier. This lead to "One Action All At Once".
+This does leave the window open for those hankering for a sense of “wise”. Characters still have the various Knowledge skills, and there is now the "Learned" Power for wisdom in the sense of being broadly knowledgeable, educated, well-read, etc., and the “Wisened” background that is wisdom in the sense of a wide body of practiced wisdom coming from age and life experience; the non-academic sage. 
 
-Also, if 5e made the math linear, PEDD seeks to make the math flat (as part of removing classes): with the following assumptions;
-- "peasants" face an average dc of 10, hit at +0/+3 (unskilled, skilled, unskilled being the norm), have 10 defence and have 8-12 health. 
-- "adventurers" face an average dc of 15, hit at +2/+5 (unskilled, skilled, skilled being the norm), have 15 defence, and have 20-30 health. 
+### Converting Races, Backgrounds and Classes
 
-### *Health & Recovery*
-**Health** - HP is relabelled to "Health", and is calculated from: racial “Baseline Health” (a 4/6/8/10) + background bonus (another 4/6/8/10) + Constitution (physical fortitude) + Willpower (mental fortitude). Health is explicitely a combination of physical and emotional wear and tear as well as the idea of "experience" that allows you to avoid, roll with and carry on from blows.
+#### Features
+First, any and all Features can be taken as written so long as any areas of the game they touch haven't been effected by changes in PEDD. Those that do will need adjusting, and some Features have been rewritten wholesale. See the points below.
 
-**Recovery** - Hit Dice are also an older mechanic that is mostly vestigal. It too is removed. Resting (short or long) recovers your Baseline Health, until your Health is back at its maximum. Long rests also only recover your Baseline Health, but are otherwise unchanged.
+**Ability Score Increases** - any "Ability Score Increase" features are constrained to, at maximum, two +1's in the stated abilities. Any base-race - subrace combinations with 3 or more ability score increases only increase 2 Stats by +1, and you can choose which two. Any increases to Dexterity can instead be increases to Accuracy. Any increases to Wisdom can instead be increases to Perception or Willpower.
 
-Once you have regained health from a short rest, you cannot regain health again until you have completed a long rest. 
+**Perception Proficiency** - any feature that gives proficiency in perception instead grants +1 to the Perception Stat to a maximum of +4. Any feature that gives expertise in perception instead grants +1 to the Perception Stat to a maximum of +5.
+
+**Saving Throw Proficiency** - any feature that gives a saving throw proficiency instead gives +1 to the corresponding Resistance stat to a maximum of +4 (see [Converting Saves](#converting-saves))
+
+#### Races
+Introduce Baseline Health and Base Defence statistics for a Race.
+
+***
+
+## Combat 5.P
+The goal is to make combat more consistently dangerous and snappier. Low level combat was too dangerous but quickly combat became trivial, with characters that were health sponges that you end up playing whack-a-mole with. And I wanted to erase the issue of players switching off when its not their turn, which lead to the "One Action All At Once" system (see [below](#one-action-all-at-once)).
+
+- Thus the changes to HP as Health, with progression starting higher and progressing in naturally smaller steps due to only being increased when being purposefully taken as a Power.
+- Thus [Flat Maths](#flat-maths), where Damage and other numbers are flattened and easier to parse
+- Thus the AC rework as Defence, see [Character Creation](#secondary-statistics), which makes it more likely for a character to be hit (with the lower base defence, necessity of raising shields, Stationary Defence, etc.), unless they do something like take Defence boosting Powers (Int/Cha/Per) or defensive actions (parry/dodge/block).
+
+#### Flat Maths
+If 5e made the math linear from quadratic 3.Xe, PEDD seeks to make the math flat, making it easier to predict and interpret, and also aiding with the level-less system.
+
+The Maths is calculated with the following assumptions:
+- "*peasants*" face an average dc of 10, hit at +0/+3 (unskilled, skilled, unskilled being the norm), have 10 defence and have 8-12 health. 
+- "*adventurers*" face an average dc of 15, hit at +2/+5 (unskilled, skilled, skilled being the norm), have 15 defence, and have 20-30 health. 
+
+As such, all damage sources need to be re-calibrated; various high-level spells and large monsters are brought down, making the face-value of such abilities easier for newer players to read. ("Oh my go, a D12 of damage!?" Vs the relatively opaque 4d6 damage of a fireball). Two sword strikes, a fireball, or a headshot (e.g. a critical) will drop you to 0 Health.
+
+#### Recovery
+Hit Dice are also an older mechanic that is mostly vestigial. It too is removed. Resting (short or long) recovers your Race's Baseline Health, until your Health is back at its maximum. Long rests also only recover your Baseline Health, but are otherwise unchanged.
+
+Once you have regained Health from Short Rests twice, you cannot regain Health from a third Short Rest until you have completed a Long Rest. Meaning, per day, you can at maximum regain 3 × your Race's Baseline Health.
 
 That means, at a maximum, you can gain your Baseline Health (without modification from Powers) twice, once from a short rest and once from a long rest, per day. If you seek medical attention or healing spells, however, you may yet recover a lot more Health in a day.
 
-### *Wounds*
-"Wounded X" is a new condition. When your Health is reduced to 0 or below for the first time in a fight, you go Unconsciouss and you gain the Wounded 1 condition. Each time you go down, your Wounded condition increases by one. When you make Death Saves, the DC is instead your Wounded condition value x5, so at Wounded I Death Saves are made against a DC of 5.
+#### Wounds
+**Wounded X** - When your Health is reduced to 0 and you don't already have the Wounded condition, you go Unconscious as usual and you gain the Wounded 1 condition. Each time you go Unconscious from your Health dropping to 0, your Wounded condition increases by 1. 
 
-The wounded condition loses one rank per long rest, and one rank per successful Medicine DC Wounded rank x5 check. This Medicine check can be made once per day on a character. (My own Injury Risk is updated to use Wounded X to calculate Injury Risk).
+When you make Death Saves, the DC is not 10, it is your Wounded condition rank × 5. So at Wounded I, Death Saves are made against a DC of 5.
 
-### *Defence, Armour and Evasion*
-AC is recalculated and relabelled to "Defence".
+The wounded condition loses one rank per Long Rest, and one rank per successful Medicine check made against a DC of the Wounded condition rank × 5 (the same like a Death Save). This Medicine check can be made once per day on a character, regardless of success or failure.
 
-The Defence Stat is more flexible and is made of three parts: a base value of 8, an Armour value and an Evasion value. By default Evasion is Dexterity to a minimum of 0, but Armour can limit it to a maximum (noted in the armour). This gives us three kinds of Defence. Normal Defence, and:
+### Full, Unarmoured and Stationary Defence
+The Defence Stat is more flexible than being a flat value made of three parts: 
+- a base value from your Race (typically 8)
+- an Armour value determined by worn Equipment
+- an Evasion value, Dexterity to a minimum of 0 which can be limitted by worn Equipment. 
+  
+Instead Defence is calculated when required from these three parts, depending on what parts are in play. This gives us three kinds of Defence;
+- **Full Defence** - Defence with Armour and Evasion
+- **Unarmoured Defense** - Defence without Armour, armour limits on Evasion are still applied
+- **Stationary Defense** - Defence without the benefit of Evasion, often called "touch AC" in other systems.
 
-- **Unarmoured Defense** - Defence without Armour, armour limits on Dexterity are still applied
-
-- **Stationary Defense** - Defence without Evasion, often called "touch AC" in other systems
+Remember that the Armour value also changes during play as you don and doff Equipment, and especially based on whether you Raise your Shield or not!
 
 ### *One Action All At Once*
 A major change I've experimented a little with is a radical change where, simply, all characters in a round of combat have one action, and everyone "acts" at once, no initiative.
@@ -123,7 +196,9 @@ How do you avoid a long conga-line chain of awkwardly connected characters fight
 
 **Flanking** works by being the one in an engagement who the foe isn’t engaging. Though, like my original homebrew, you cannot flank a creature 2 or more sizes larger than you.
 
-## Class & Levelling Rework
+***
+
+## Power Progression
 An abolishment of all classes and the system of levelling, replaced with "Powers" (created from Features and Feats) with a more story-driven Power by Power development system.
 
 Progression, then, is the acquisition of more Powers and proficiencies. Certain Powers will be stronger than others, so they will key off of prerequisites, typically Stats, other powers and also “After n or more Powers”, or "Once every n<sup>th</sup> Power". These are noted in brackets before the description of the Power.
@@ -149,6 +224,13 @@ Powers are “in training” before coming online, to encourage roleplay of skil
 For the intended "power level" of a Power, take any Feat from the PHB which has a Stat increase component, and remove the Stat increase.
 
 Spellcasting is a Feature that has had to receive major reworking, and is still WIP.
+
+#### Proficiency Bonuses and Expertise
+**Bonus** - Proficiency Bonus is simply "Bonus", which means +2, and is typically derived from Proficiency and Powers, a characters skill in an area. Having "proficiency" in a tool or skill means gaining a Bonus to rolls made with that tool/skill.
+
+A Power, “Aptitude I/II”, increases that to +3/+4. Bonus applies to more than just proficiencies, many Powers now key off it explicitly. That being said any reference to being “Proficient” still means having a Bonus. 
+
+**Expertise** - Abilities with Bonus can gain Expertise to be grant effectively a double Bonus. Every area of the game that grants Expertise should only do so when that area already has a Bonus, otherwise it is treated as a Bonus. An area of the game which already benefits from Expertise cannot benefit from it again.
 
 ### *Example Powers*
 **Artisan** – gain proficiency in a Tool Set and proficiency in a Skill. You also gain Expertise in a Tool Set. When not at Disadvantage, you can choose to not roll when making any Tool Set check and instead assume you rolled a 10, adding Stat and any Bonus to that as normal.
