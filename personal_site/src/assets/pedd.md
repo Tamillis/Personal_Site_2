@@ -84,6 +84,7 @@ Whenever 5e asks for a save of a certain kind, using the following conversion:
   - **Armour** - determined by the sum Defence of worn equipment.
   - **Evasion** - your Dexterity value (min 0), can be modified by some Powers, can be limited by worn equipment.
 - **Speed** - unchanged, determined by Race
+- **Initiative** - **Perception** + **Dexterity**
 - **Passive Statistics** - sometimes Powers or play require a value to compare against. The DM can ask you to make a roll that then represents that value, and sometimes they will ask for your "Passive Strength" etc. This is 8 + the Stat Value.
 
 #### Where's Wisdom?
@@ -112,18 +113,9 @@ Introduce Baseline Health and Base Defence statistics for a Race.
 ## Combat 5.P
 The goal is to make combat more consistently dangerous and snappier. Low level combat was too dangerous but quickly combat became trivial, with characters that were health sponges that you end up playing whack-a-mole with. And I wanted to erase the issue of players switching off when its not their turn, which lead to the "One Action All At Once" system (see [below](#one-action-all-at-once)).
 
-- Thus the changes to HP as Health, with progression starting higher and progressing in naturally smaller steps due to only being increased when being purposefully taken as a Power.
-- Thus [Flat Maths](#flat-maths), where Damage and other numbers are flattened and easier to parse
-- Thus the AC rework as Defence, see [Character Creation](#secondary-statistics), which makes it more likely for a character to be hit (with the lower base defence, necessity of raising shields, Stationary Defence, etc.), unless they do something like take Defence boosting Powers (Int/Cha/Per) or defensive actions (parry/dodge/block).
-
-#### Flat Maths
-If 5e made the math linear from quadratic 3.Xe, PEDD seeks to make the math flat, making it easier to predict and interpret, and also aiding with the level-less system.
-
-The Maths is calculated with the following assumptions:
-- "*peasants*" face an average dc of 10, hit at +0/+3 (unskilled, skilled, unskilled being the norm), have 10 defence and have 8-12 health. 
-- "*adventurers*" face an average dc of 15, hit at +2/+5 (unskilled, skilled, skilled being the norm), have 15 defence, and have 20-30 health. 
-
-As such, all damage sources need to be re-calibrated; various high-level spells and large monsters are brought down, making the face-value of such abilities easier for newer players to read. ("Oh my go, a D12 of damage!?" Vs the relatively opaque 4d6 damage of a fireball). Two sword strikes, a fireball, or a headshot (e.g. a critical) will drop you to 0 Health.
+- Thus the changes to HP (as Health), Recovery, and Wounds, with Health starting higher and progressing in naturally smaller steps due to only being increased when being purposefully taken as a Power, Recovery being slower and entering the dying condition creating lasting Wounds.
+- Thus [Flat Maths](#flat-maths), where Damage and other numbers are flattened and easier to parse, and a sword and other such things will always be dangerous, to the same degree.
+- Thus the AC rework as Defence, see [Character Creation](#secondary-statistics), which makes it more likely for a character to be hit (with the lower base defence, necessity of raising shields, Stationary Defence, etc.), unless they do something like defensive actions (parry/dodge/block/raise shield) or take Defence boosting Powers (Int/Cha/Per).
 
 #### Recovery
 Hit Dice are also an older mechanic that is mostly vestigial. It too is removed. Resting (short or long) recovers your Race's Baseline Health, until your Health is back at its maximum. Long rests also only recover your Baseline Health, but are otherwise unchanged.
@@ -139,62 +131,80 @@ When you make Death Saves, the DC is not 10, it is your Wounded condition rank �
 
 The wounded condition loses one rank per Long Rest, and one rank per successful Medicine check made against a DC of the Wounded condition rank × 5 (the same like a Death Save). This Medicine check can be made once per day on a character, regardless of success or failure.
 
-### Full, Unarmoured and Stationary Defence
+#### Flat Maths
+If 5e made the math linear from quadratic 3.Xe, PEDD seeks to make the math flat, making it easier to predict and interpret, and also aiding with the level-less system. It also has the added benefit of making something that was dangerous, always dangerous. Flat Maths means nothing "falls off".
+
+To aid in the caluclation of the Maths, the following assumptions are kept to:
+- "*peasants*" face an average DC of 10, hit at +0/+3 (unskilled, skilled, unskilled being the norm), have 10 Defence and have 8-12 Health. 
+- "*adventurers*" face an average DC of 15, hit at +2/+5 (unskilled, skilled, skilled being the norm), have 15 Defence, and have 20-30 health. 
+
+As such, all damage sources need to be re-calibrated; various high-level spells and large monsters are brought down, making the face-value of such abilities easier for newer players to read. ("Oh my go, a D12 of damage!?" Vs the relatively opaque 4d6 damage of a fireball). Two sword strikes, a fireball, or a headshot (e.g. a critical) will drop you to 0 Health.
+
+#### Full, Unarmoured and Stationary Defence
 The Defence Stat is more flexible than being a flat value made of three parts: 
 - a base value from your Race (typically 8)
 - an Armour value determined by worn Equipment
 - an Evasion value, Dexterity to a minimum of 0 which can be limitted by worn Equipment. 
   
 Instead Defence is calculated when required from these three parts, depending on what parts are in play. This gives us three kinds of Defence;
-- **Full Defence** - Defence with Armour and Evasion
-- **Unarmoured Defense** - Defence without Armour, armour limits on Evasion are still applied
-- **Stationary Defense** - Defence without the benefit of Evasion, often called "touch AC" in other systems.
+- **Full Defence** - Defence with both Armour and Evasion
+- **Unarmoured Defence** - Defence without Armour, armour limits on Evasion are still applied. A few effects target Unarmoured Defence.
+- **Stationary Defence** - Defence without the benefit of Evasion, often called "touch AC" in other systems. Some effects target Stationary Defence.
 
 Remember that the Armour value also changes during play as you don and doff Equipment, and especially based on whether you Raise your Shield or not!
 
-### *One Action All At Once*
-A major change I've experimented a little with is a radical change where, simply, all characters in a round of combat have one action, and everyone "acts" at once, no initiative.
+### One Action All At Once
+A major change I've experimented a little with is a radical change to basic combat where, simply, all characters in a round of combat have one action, and everyone "acts" at once, no initiative.
 
-All enemies in the scene declare their intentions, just as their movements would give away what they're about to do. Then all players decide among themselves what they're going to do that round.
+How on Earth does that work? You might be thinking.
 
-For any situations where the order of actions matters, the two characters involved roll of with initiative, or for "slow" enemies / mooks the GM will just let the players go first.
+All enemies in the scene declare their intentions, just as their movements would give away what they're about to do. Then all players decide among themselves what they're going to do that round. When everyone is happy with their actions, you "resolve" the round in whatever order works.
+
+For any situations where the order of actions matters, the two characters involved roll off with initiative, or for "slow" enemies / mooks the GM will just let the players go first, player's advantage.
 
 Most actions, however, can be resolved simultaneously. Attacks for example; two people just try to hit each other, damage each other, and collapse wounded at the same time.
 
-For smaller groups (that is, of players & enemies) it worked quite well. We'll see with larger groups.
+Since everyone gets only one action, the action bonus-action movement economy of 5e is radically simplified. Movement is simply another action, making the "Dash" action the "Movement Action" synonymous. Bonus actions are mostly unchanged but are best thought of as 'concurrent actions' happening at the same time and therefore not significantly interrupting the character's main action. Reactions, interestingly, disappear. 
 
-Since everyone gets only one action, the action bonus-action movement economy of 5e is radically changed.
+**Converting Reactions** - Any "Reactions" are considered "Actions".
 
-Movement is simply another action. Bonus actions are revamped, and any bonus-action can be "promoted" to an action, if a characters wants to do two bonus actions in a round. Reactions, interestingly, disappear.
+#### Engagement
+To help with handling fights with little to no initiative and create a natural ebb-and-flow to combat, combatants are "paired off" in **Engagements**. These are the momentary pairs or small groups that naturally form in the middle of any chaotic fight, and allows us as the players to "zoom in" on little microcosms of fights with the camera, as it were, focusing on pairing after pairing.
 
-Also, to make martial combat spicier a variety of generally available tactical basic combat actions are added; 
-- **Charge** - a linear move that allows 1 attack at advantage as a bonus action
-- **Dodge** - as an action to being attacked, make a dexterity save throw and if the result is higher than your Defense, it replaces your defence value for the rest of the round
-- **Block** - as a bonus action, raise your weapon or shield to gain the block value as Armour to your defence. This prevents you using that item as a weapon to attack. Both effects last for the rest of the round
-- **Parry** - if your weapon has the parry property, as an action to being attacked in melee, make an attack action. The roll is your Defense for the rest of this round, and also functions as a normal attack action
-- **Step** - as a bonus action, move 5ft without triggering attacks of opportunity
-- **Stand** - a bonus action. 
-- **Go to cover / Go prone** - as a bonus action make yourself Prone, or enter adjacent cover. The Prone condition or being in cover uses Stationary Defence. As before prone makes being shot at occur at disadvantage, and cover is +2/+5 to Defence for half / ¾ cover.
-- **Disengage** is a bonus action for anyone
-- **Attack of Opportunity** - as a bonus action to an enemy you're engaged with moving away from you without Disengaging from you, you can make an attack action on them 
-
-### *Engagement*
-To help with handling fights with little to no initiative, combatants are "paired off". These are the momentary pairs or small groups that naturally form in the middle of any chaotic fight, and allows us as the players to "zoom in" on little microcosms of fights with the camera focusing on pairing after pairing.
-
-Engagements are resolved effectively simultaneously and the order of engagements doesn’t matter. With only 1 action per turn melees can’t effect each other. In cases where order of action is important characters “roll off” using their initiative. 
+Engagements are resolved effectively simultaneously and the order of Engagements doesn’t matter, as with only 1 action per turn melees rarely effect each other.
 
 All combat is resolved in two simple steps:
 
-1. **Determine Engagements** - where combatents “pair off”. “Pulling” and “turning” if in conflict are rolled off. Any who intend to move do, engaging if necessary.
-2. **Resolve Engagements** - resolving pairs/groups in a sensible/cinematic sequence. Melee conflicts are easily resolved. Ranged attacks naturally involve unpaired individuals; resolve simultaneously with everyone else. Resolve conflicts of interest with a roll off like normal (I try to grab the bag of gold before him, for example). 
+1. **Determine Engagements** - where combatents, according to their ["Zone of Engagement"](#zone-of-engagement) “pair off”. “Pulling” and “turning” if in conflict are rolled off. Any who intend to move do, engaging if necessary.
+2. **Resolve Engagements** - resolving pairs/groups in a sensible/cinematic sequence. Melee conflicts are easily resolved. Ranged attacks naturally involve unpaired individuals; resolve simultaneously with everyone else. Resolve conflicts of interest with an Initiative roll off like normal (I try to grab the bag of gold before him, for example). 
 
-If it makes sense to resolve conflicts of interest using appropriate skill checks rather than Initiative (i.e. speed), then do so.
+If it makes sense to resolve conflicts of interest using appropriate skill checks rather than Initiative (i.e. Athletics), then do so.
 
-**Zone of Engagement** – the rules of pairing off, pulling and turning. 
+#### Zone of Engagement
+The rules of pairing off, pulling and turning. 
 
-How do you avoid a long conga-line chain of awkwardly connected characters fighting each other? "Pairing off", where a character can only be engaged by a number of characters equal to their size (1 for tiny/small, 2 for medium, 4 for large, 8 for gargantuan). A character can only attempt to engage one character at a time. You can only melee attack someone you’re engaged with. Being next to someone who is already fully engaged is “crowding” giving all attackers disadvantage. Conga-lines break; if you who are engaging someone who is engaging someone else are engaged by a fourth, you must “turn” and engage your attacker, with the attacker “pulling”. I.e., you cannot be "pulled" if you are engaged with someone who is engaged with you.
+How do you avoid a long conga-line chain of awkwardly connected characters fighting each other? "Pairing off". Sometimes even if you want to attack Mr A, even if they're attacking Mr B, because Mr C is attacking you and is otherwise unengaged, you have no choice but to "**Turn**" and "**Pair Off**" with them. 
 
-**Flanking** works by being the one in an engagement who the foe isn’t engaging. Though, like my original homebrew, you cannot flank a creature 2 or more sizes larger than you.
+A character can only attempt to engage one character at a time. You can only melee attack someone you’re engaged with. Conga-lines break as if you, who are engaging someone who is engaging someone else, are engaged by a fourth, you must “turn” and engage your attacker, with the attacker **“Pulling”**. I.e., you cannot be "pulled" if you are engaged with someone who is engaged with you.
+
+Additionally, a character can only be engaged by a maximum number of characters according to their size. Sometimes someone is surrounded by attackers, and even if you wanted to join in on the bullying, you're crowded out. The maximum number of opponents a character of a given size can have is:
+- tiny/small - 1
+- medium - 2
+- large - 4
+- gargantuan - 8
+
+**Flanking** - changed. You are "Flanking" when you are the one in an Engagement who the foe isn’t engaging. You cannot flank a creature 2 or more sizes larger than you.
+
+#### Additional Actions
+Also, to make martial combat spicier a variety of generally available tactical basic combat actions are added; 
+- **Charge** - a linear move that allows 1 attack at advantage as a bonus action if over half your movement was traversed.
+- **Dodge** - an action where you make a Reflex Saving Throw and if the result is higher than your Defence, it replaces your Defence value for the rest of the round
+- **Block** - as a Bonus Action, you raise your weapon or shield to gain the item's block value as Armour. This prevents you using that item as a weapon to attack. The Armour bonus lasts for the rest of the round
+- **Parry** - if your weapon has the Parry Property, you make an Attack Action against an enemy who is making a melee attack against you. The roll is your Defense for the rest of this round, and also functions as a normal attack action.
+- **Disengage** - as a Bonus Action, move 5ft without triggering Attacks of Opportunity. (Functionally "Step" from pathfinder, replaces 5e Feature "Disengage")
+- **Stand** - a Bonus Action to go from Prone to Standing.
+- **Go to cover / Go prone** - as a Bonus Action make yourself Prone, or enter adjacent cover. The Prone condition or being in cover uses Stationary Defence. As before Prone makes being shot at occur at disadvantage, and cover is +2/+5 to Defence for half / ¾ cover.
+- **Attack of Opportunity** - as a Bonus Action to an enemy you're engaged with moving away from you without Disengaging from you, you can make an attack action on them, after which they have moved away and are no longer engaged with you for that Round.
 
 ***
 
