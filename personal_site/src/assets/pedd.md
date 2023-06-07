@@ -2,9 +2,14 @@
 
 If I were to make a radical 5.5e of a fashion that suited my tastes and mechanical areas to explore, reformulate and refine, while keeping as much as I could, this would be that. 
 
-Taking the content of the Fifth Edition Player's Handbook as a base (meaning assume normal 5e D&D unless otherwise redefined), PEDD applies three major changes: a rework of the character creation system and ability score system to be easier for new players to parse and understand (and be more in tune with my sensibilities) known as *Character Creation 5.P*, abolishment of the class and levelling system (including updates to nearly all features, feats and spells) known as *Power Progression*, and a rework of the action economy and combat to increase table-engagement, speed up combat and yet also make it more tactical, known as *Combat 5.P*. 
+"One D&D" is coming and Wizards of the Coast really put their PR foot in it with the licensing changes so we're all ready to jump ship. I instead find myself remaking the ship, taking what I think works well, and changing, exchanging and adding in what I would like it to have. A lot of the changes I've made are minor tweaks I've done over the years as I've found myself the DM for a group of newbies who I've coaxed into the hobby or given at last an outlet for their pent-up interest, and these changes better enable newer folks to enjoy the hobby without needing to work their way past legacy systems and jargon.
 
-Anything not mentioned is not changed as while this is a total homebrew makeover the base is still D&D 5e and you know what, that’s OK. It's a good base, and one we are all familiar with and that does a damn fine job, and by extending it it means no need to repeat good material. It's all already there.
+Taking the content of the Fifth Edition Player's Handbook as a base (meaning assume normal 5e D&D unless otherwise redefined), PEDD applies changes in three major categories: 
+- a rework of the character creation system and core ability scores known as *Character Creation 5.P* 
+- abolishment of the class and levelling system (including updates to nearly all features, feats and spells) known as *Power Progression*
+- and a rework of the action economy and combat to increase table-engagement, speed up & simplify the work of combat and yet also enable it to be more tactical, known as *Combat 5.P*
+
+Anything not mentioned is not changed as while this is a total homebrew makeover the base is still D&D 5e and you know what, that’s OK. It's a good base, and one we are all familiar with and that does a damn fine job, and by extending it, it means there's no need to repeat good material. It's all already there.
 
 ***
 
@@ -16,75 +21,90 @@ Step-By-Step Character creation in PEDD looks like this:
 3. *Choose a Race* - all handbook races, and some more, are available below. See "Converting Races, Background and Classes" section for details on 5e content that doesn't appear here.
 4. *Choose a Background* - all handbook backgrounds, and some more, are available below.
 5. *Choose your Archetype and initial Powers* - choose an Archetype and corresponding number and kind of Powers (see [Powers Progression](#powers-progression)).
-6. *Finalize Equipment* - chose and collate the starting Equipment you have from your Background and Archetype.
+6. *Finalize Equipment* - chose and collate the starting Equipment you have from your Background and Archetype. Otherwise equipment is identical to 5e.
 7. *Come Together* - [just like the base game](https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#6ComeTogether)
 
+As you work your way through these steps, select or input your inputs. This document doubles as a character creator for PEDD!
+
 ### Character Concept
-While not new, I ask players to think of a core character concept, a fantasy person they would like to be, as the very firs step of character creation. This is a fluid thing, and is expected to change as you go through character creation, choose slightly different options and redefine your character as you go. I expect players to be constantly updating their *Core Concept* as they go.
+While not new, I ask players to think of a core character concept (a fantasy person they would like to play, to inhabit and act out) as the very first step of character creation, to form a basis they can build on and have the basis of their character be an idea, not a race or class as the old way lent itself to be (I've seen many, many newbies open the book and then go "I want to be a Dwarf Ranger", or what have you. That's not a character, that's a video game protagonist). Of course, this is a fluid thing, and is expected to change as you go through character creation and, choosing slightly different options as you go, you redefine your character's core concept. I expect players to be constantly updating their *Core Concept* based on their mechanical choices, but not for the mechanical choices to be the basis.
 
 As they do, they can add to their **Flaws**, **Bonds** and **Ideals** as they go through each step, but again thinking of these as part of the first step of character creation.
 
-### Races
-WIP
-<div id="races-container"></div>
+#### Name
+<div id="character-name"></div>
 
-### Racial Powers
-WIP
-<div id="racial-powers-container"></div>
-
-### Backgrounds
-WIP
-<div id="backgrounds-container"></div>
+#### Concept
+<div id="character-concept"></div>
 
 ### Ability Statistics
 
-The ability score into modifier system is a vestige. It is removed. All characters have ability statistics, a.k.a. "Stats", a single value from -5 to +5 (or more, for monsters and "Super humans"). 
+The ability score into modifier system was vestigial so I removed it. All characters have "Ability Statistics", a.k.a. "Stats", a single value ranging from -3 to +5 for humanoid and player characters (higher and lower for monsters and "Super humans").
 
-The base statistics of a character are [-2, -1, 0, 0, +1, +2]. Alternatively, dice rollers can roll 6d6, reducing each result by -3 (a 6 is 3, a 2 is -1 etc.) and record each value.
+Stat Value | Meaning
+--- | ---
+-3 | Severely Handicapped - even menial tasks are difficult
+-2 | Handicapped - most basic tasks are difficult
+-1 | Below Average - you fail to overcome most challenges
+0 | Average - unremarkable, equivalent to an unskilled labourer
+1 | Capable - you're more capable than the unskilled
+2 | Professional - you're trusted to succeed
+3 | Exceptional - you're renowned within the region
+4 | World-class - few in the nation can best you
+5 | Legendary - your capability is on the level of the myths of the Gods
 
-Stats can be increased from Race, Background, Archetype and also during Progression. During character creation no Statistic can be increased beyond +4, unless explicitly stated.
+The base statistics of a character are [-2, -1, 0, 0, +1, +2]. Alternatively, dice rollers can roll 6d6, reducing each result by -3 (a 6 is 3, a 2 is -1 etc.) and record each value. If the Stats add up to more than 3 or less than 3, reroll.
+
+Stats can be increased from Race, Background, Archetype and also during Progression. During character creation no Statistic can be increased beyond +4, unless explicitly stated. If a Race, Background or Archetype would raise a Stat above 4, instead you may raise a different Stat (again, not above 4).
 
 #### Resistances and Statistics
-A line is drawn between your active Statistics used for actions, and your passive Resistances which are used to mitigate harms. Resistances are calculated values, from Statistics, Race and Background.
+A line is drawn between your active Statistics used for actions, and your passive Resistances which are used to mitigate harms. Resistances are calculated values, from Statistics, Race and Background. They can be above 4 or below -3, they are whatever the calculation comes out as.
 
 There are six **Statistics** (used in checks):
-- **Strength** - used in melee attacks, and feats of brawn
-- **Accuracy** - used in ranged attacks, and feats of precision
-- **Dexterity** - used in many skills, for feats of action
-- **Intelligence** - used in knowledge and understanding, for feats of alacrity
-- **Perception** - used to sense the world, spot hidden things, read others and see far
-- **Charisma** - used to affect others through force of personality
+- **[S]trength** - used in melee attacks, and feats of brawn
+- **[D]exterity** - used in many skills, for feats of deftness
+- **[A]ccuracy** - used in ranged attacks, and feats of precision
+- **[P]erception** - used to sense the world, spot hidden things, and read others
+- **[I]ntelligence** - used in knowledge and understanding, for feats of alacrity
+- **[Ch]arisma** - used to affect others through force of personality, empathy and displays of emotion
 
 And three **Resistances** (used in saves):
-- **Constitution** - the ability of the body to throw off ills. Calculated from **Strength** + **Dexterity**.
-- **Reflexes** - the ability of the body to avoid harms. Calculated from **Accuracy** + **Perception**.
-- **Willpower** - the ability of the mind to resist. Calculated from **Intelligence** + **Charisma**.
+- **[C]onstitution** - the ability of the body to throw off ills. Calculated from **Strength** + **Dexterity**.
+- **[R]eflexes** - the ability of the body to avoid harms. Calculated from **Accuracy** + **Perception**.
+- **[W]illpower** - the ability of the mind to resist. Calculated from **Intelligence** + **Charisma**.
 
-Additionally, each Race and Background has a "Resistance Profile", modifiers to your character's Resistance values. For example, Elves have a Constitution of -1, and Soldier's a Constitution of +2, meaning an Elf Soldier starts with a Constitution of **Strength**+**Dexterity**+1.
+Additionally, each Race and Background has a "Resistance Profile", modifiers to your character's Resistance values. For example, Elves have a Constitution of -1, and Soldiers a Constitution of +2, meaning an Elf Soldier starts with a Constitution of **Strength**+**Dexterity**-1+2.
 
 #### Resistance DC's
 Sometimes enemy attacks and other effects are made against your "Resistance DC", this is 8 + the Resistance value.
 
+#### Stats
+WIP - Assign your Stats. (Resistances and Resistance DC's calculated from Race and Background chosen below)
+
+<div id="stats"></div>
+
 #### Converting Saves
 Whenever 5e asks for a save of a certain kind, using the following conversion:
 - Strength Saves -> Constitution Saves
-- Dexterity Saves -> Reflex Saves
+- Dexterity Saves -> Reflex Saves / Constitution Saves*
 - Constitution Saves -> Constitution Saves
 - Intelligence Saves -> Willpower Saves
-- Wisdom Saves -> Willpower Saves / Perception Saves*
+- Wisdom Saves -> Willpower Saves / Perception Saves**
 - Charisma Saves -> Willpower Saves
 
-*Wisdom, being poorly understood by perhaps even the designers of 5e themselves, is an odd one. See "Where's Wisdom?" for my thoughts on that. By default use Willpower, but if Perception would be more appropriate, use that.
+*Dexterity is somewhat redefined as the agility and capability of one's body irrespective of their physical Strength or Accuracy. Pure dodging, then, (as most old Dexterity saves were) are covered by Reflex saves, however those old Dexterity saves that were more about the capability of the victim's body (such as jumping high enough) would now be covered by Constitution saves, which represent more one's physical ability to avoid damage. 
+
+**Wisdom, being poorly understood by perhaps even the designers of 5e themselves, is an odd one. See "Where's Wisdom?" for my thoughts on that. By default use Willpower, but if Perception would be more appropriate, use that.
 
 #### Secondary Statistics
 
-- **Health** - how much damage you can take before entering the Dying state. Race, Background and Archetype all provide initial Health, and finally **Constitution** + **Willpower** is added on top. See "Health" in "Combat 5.P". Health is explicitly a combination of physical and emotional wear and tear, rolling with and carrying on from blows.
+- **[H]ealth** - how much damage you can take before entering the Dying state. Race, Background and Archetype all provide initial Health, and finally **Constitution** + **Willpower** is added on top. See "Health" in "Combat 5.P". Health is explicitly a combination of physical and emotional wear and tear, and the ability to roll with and carry on from blows.
 - **Defence** - how difficult you are to harm. **Base Defence** + **Armour** + **Evasion**
   - **Base Defence** - determined by your Race (default 8), or overridden by some Powers.
   - **Armour** - determined by the sum Defence of worn equipment.
-  - **Evasion** - your Dexterity value (min 0), can be modified by some Powers, can be limited by worn equipment.
+  - **Evasion** - your **Dexterity** value (min 0), can be modified by some Powers, can be limited by worn equipment.
 - **Speed** - unchanged, determined by Race
-- **Initiative** - **Perception** + **Dexterity**
+- **Initiative** - **Perception** + **Dexterity** (+ a bonus from some Powers)
 - **Passive Statistics** - sometimes Powers or play require a value to compare against. The DM can ask you to make a roll that then represents that value, and sometimes they will ask for your "Passive Strength" etc. This is 8 + the Stat Value.
 
 #### Where's Wisdom?
@@ -93,6 +113,45 @@ Generally speaking Wisdom has been removed, with all of the D&D weirdness about 
 To address these issues, I've split Wisdom in twain. Willpower is willpower, everyone gets that. The coverage of Wisdom over connections and empathy is now under Charisma, and perception is under the new Stat Perception. 
 
 This does leave the window open for those hankering for a sense of “wise”. Characters still have the various Knowledge skills, and there is now the "Learned" Power for wisdom in the sense of being broadly knowledgeable, educated, well-read, etc., and the “Wisened” background that is wisdom in the sense of a wide body of practiced wisdom coming from age and life experience; the non-academic sage. 
+
+### Races
+WIP - this will be a browse-able scrolling list of the races.
+
+<div id="races-container"></div>
+
+### Racial Powers
+WIP - this will be a browse-able scrolling list of Powers available to your Race, representing inborn abilities (some are generically available, some are race-specific, all can only be chosen during character creation).
+
+Honestly might just remove.
+<div id="racial-powers-container"></div>
+
+### Backgrounds
+WIP - this will be a browse-able scrolling list of the Backgrounds.
+
+Backgrounds will be where Characters choose their skills from the given list.
+<div id="backgrounds-container"></div>
+
+### Background Powers
+WIP - a shortlist of all Powers that can be taken as your Background Power (again, might just remove). 
+
+Choose a Power from your time as your background. It must be related to the activities of your background, so confer with your DM (me).
+<div id="background-powers-container"></div>
+
+### Archetypes
+V.WIP - choose your Archetype, what forms the seed of your adventuring capabilities.
+
+Attribute Increase
+Resistance Profiles
+Health Bonus
+Archetype | Stat Increases | Resistance Profile | Bonus Health | Bonus Skills | Power
+--- | --- | --- | --- | --- | ---
+**Brawler** | S +1, A +1 | R +1 | H +4 | Athletics, Body, Knives any 1 | Your Unarmed Attacks contain the Block I, Finesse and Parry (Bludgeoning) properties. Your Unarmed Attacks deal 1d4 damage. 
+**Hunter** | A +1, P +1 | R +1 | H +2 | Bows, Survival, Tools (any 1), any 1 | You can Aim as a bonus action, granting a Bonus to the next Ranged Weapon Attack you make this turn. 
+**Protector** | S +1, D +1 | C +1 | H +4 | You can make the Block action with Shields as a Bonus action. You can instead Block for an ally within 5ft of you. They gain the benefits of the Block as if they themselves blocked.
+**Adept** | S +1, D +1 | C +1 | H +4 | Skill monkey. Expertise in two Skills of your choice.
+**Artisan** | P +1, Ch +1 | W +1 | H +0 | You gain Proficiency in a Tool Set and Proficiency in a Skill. You also gain Expertise in a Tool Set. When not at Disadvantage, you can choose to not roll when making any Tool Set check and instead assume you rolled a 10, adding Stat and any Bonus to that as normal. 
+**Mage** | S +1, D +1 | C +1 | H +0 | choose a Sphere of Magic: you gain 2 cantrips and a 1st Circle spell from that list. You also gain the Spellcasting Power for that Sphere.  
+
 
 ### Converting Races, Backgrounds and Classes
 
@@ -234,6 +293,53 @@ Powers are “in training” before coming online, to encourage roleplay of skil
 For the intended "power level" of a Power, take any Feat from the PHB which has a Stat increase component, and remove the Stat increase.
 
 Spellcasting is a Feature that has had to receive major reworking, and is still WIP.
+
+### Proficiencies Rework; PEDD Skills
+A subset of Powers Progression is flattening the odd little distinct yet related categories of "Skills, Tools, Languages and Weapon & Armor Proficiencies". They are now flattened, and all are now "Skills". Weapons have also been regrouped into "Weapon Classes", no longer "Simple" and "Martial" and no longer taken for Proficiency individually, as that's too fine-grained. That, and the fact that in PEDD no skill is automatically associated with a Stat, gives us the flat list:
+
+(And yes, due to being promoted to a Stat, Perception is removed)
+
+<div class="proficiencies-list">
+
+- Acrobatics
+- Animal Handling
+- Arcana
+- Athletics
+- Axes
+- Battle-Axes
+- Blades
+- Body
+- Bows
+- Clubs
+- Deception
+- Firearms
+- Heavy Armour
+- History
+- Insight
+- Intimidation
+- Investigation
+- Knives
+- Languages (one of)
+- Light Armour
+- Mauls
+- Medicine
+- Medium Armour
+- Nature
+- Persuasion
+- Pistols
+- Pole-Arms
+- Religion
+- Shields
+- Sleight of Hand
+- Spears
+- Stealth
+- Survival
+- Thrown
+- Tools (one set of)
+
+- Custom - for unique weapons, and skills not defined in the list.
+
+</div>
 
 #### Proficiency Bonuses and Expertise
 **Bonus** - Proficiency Bonus is simply "Bonus", which means +2, and is typically derived from Proficiency and Powers, a characters skill in an area. Having "proficiency" in a tool or skill means gaining a Bonus to rolls made with that tool/skill.

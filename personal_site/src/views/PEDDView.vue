@@ -57,11 +57,16 @@ onMounted(() => putMdinElement('src/assets/pedd.md', 'pedd'));
 
 #pedd h3 {
     font-size: var(--subsubtitle-size);
+    text-decoration: underline;
+    margin-top: 1rem;
+    margin-bottom: -0.33rem;
 }
 
 #pedd h4 {
     font-size: var(--para-size);
     font-weight: 700;
+    margin-top: 0.75rem;
+    margin-bottom: -0.33rem;
 }
 
 #pedd em {
@@ -72,5 +77,10 @@ onMounted(() => putMdinElement('src/assets/pedd.md', 'pedd'));
 
 #pedd strong {
     font-weight: 700;
+}
+
+.proficiencies-list ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 </style>
