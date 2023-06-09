@@ -47,6 +47,10 @@
   margin-right: auto;
 }
 
+.width-fit {
+  width: fit-content;
+}
+
 .underline {
   text-decoration: underline;
 }

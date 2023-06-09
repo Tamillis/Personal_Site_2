@@ -3,8 +3,17 @@
         <h1 class="main-title">P.E.D.D.</h1>
         <h2 class="subsubtitle text-centre no-decoration">Pete's Edition of Dungeons & Dragons</h2>
 
-        <div class="main-text inset">
+        <div class="centre width-fit">
+            <input type="checkbox" id="creator" class="radioQ" :value="creatorMode" @change="toggleCreator">
+            <label for="creator"> - Character Creator Mode</label>
+        </div>
+
+        <div class="main-text inset" v-show="!creatorMode">
             <div id="pedd"></div>
+        </div>
+
+        <div class="main-text inset" v-show="creatorMode">
+            <p>TODO: setup divs here so that it functions like the character creator standalone</p>
         </div>
 
     </section>
@@ -12,9 +21,16 @@
   
 <script setup>
 import { putMdinElement } from '../assets/functionality';
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
+
+let creatorMode = ref(false);
 
 onMounted(() => putMdinElement('src/assets/pedd.md', 'pedd'));
+
+function toggleCreator() {
+    creatorMode.value = !creatorMode.value;
+    console.log(creatorMode.value);
+}
 </script>
   
 <style>
@@ -79,8 +95,21 @@ onMounted(() => putMdinElement('src/assets/pedd.md', 'pedd'));
     font-weight: 700;
 }
 
+#pedd table {
+    margin: 0.5rem auto;
+}
+
 .proficiencies-list ul {
+    margin-top: 0.5rem;
     display: grid;
-    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.proficiencies-list li {
+    list-style: none;
+    border-left: 2px groove var(--highlight);
+    border-right: 2px groove var(--highlight);
+    padding: 0px 1rem;
 }
 </style>
