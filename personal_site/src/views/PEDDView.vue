@@ -25,7 +25,7 @@ import { onMounted, ref } from 'vue';
 
 let creatorMode = ref(false);
 
-onMounted(() => putMdinElement('src/assets/pedd.md', 'pedd'));
+onMounted(() => putMdinElement('src/assets/pedd/pedd.md', 'pedd'));
 
 function toggleCreator() {
     creatorMode.value = !creatorMode.value;

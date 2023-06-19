@@ -141,16 +141,9 @@ Choose a Power from your time as your background. It must be related to the acti
 <div id="background-powers-container"></div>
 
 ### Archetypes
-V.WIP - choose your Archetype, what forms the seed of your adventuring capabilities.
+WIP - choose your Archetype, what forms the seed of your adventuring capabilities.
 
-Archetype | Stat Increases | Resistance Profile | Bonus Health | Bonus Skills | Power
---- | --- | --- | --- | --- | ---
-**Brawler** | S +1, A +1 | R +1 | H +4 | Athletics, Body, Knives any 1 | Your Unarmed Attacks contain the Block I, Finesse and Parry (Bludgeoning) properties. Your Unarmed Attacks deal 1d4 damage. 
-**Hunter** | A +1, P +1 | R +1 | H +2 | Bows, Survival, Tools (any 1), any 1 | You can Aim as a bonus action, granting a Bonus to the next Ranged Weapon Attack you make this turn. 
-**Protector** | S +1, D +1 | C +1 | H +4 | You can make the Block action with Shields as a Bonus action. You can instead Block for an ally within 5ft of you. They gain the benefits of the Block as if they themselves blocked.
-**Adept** | S +1, D +1 | C +1 | H +4 | Skill monkey. Expertise in two Skills of your choice.
-**Artisan** | P +1, Ch +1 | W +1 | H +0 | You gain Proficiency in a Tool Set and Proficiency in a Skill. You also gain Expertise in a Tool Set. When not at Disadvantage, you can choose to not roll when making any Tool Set check and instead assume you rolled a 10, adding Stat and any Bonus to that as normal. 
-**Mage** | S +1, D +1 | C +1 | H +0 | choose a Sphere of Magic: you gain 2 cantrips and a 1st Circle spell from that list. You also gain the Spellcasting Power for that Sphere.  
+<div id="archetypes-container"></div>
 
 
 ### Converting Races, Backgrounds and Classes
@@ -319,15 +312,16 @@ Body, representing proficiency with unarmed combat, has been introduced as a sim
 - Animal Handling
 - Arcana
 - Athletics
-- Battle-Axes
-- Blades
+- Battle-Axes*
+- Blades*
 - Body
 - Bows
 - Clubs & Axes
+- Crafting
 - Deception
 - Firearms & Pistols
-- Heavy Armour
-- Heavy Blades
+- Heavy Armour*
+- Heavy Blades*
 - History
 - Insight
 - Intimidation
@@ -335,12 +329,12 @@ Body, representing proficiency with unarmed combat, has been introduced as a sim
 - Knives
 - Languages (one of)
 - Light Armour
-- Mauls
+- Mauls*
 - Medicine
-- Medium Armour
+- Medium Armour*
 - Nature
 - Persuasion
-- Pole-Arms
+- Pole-Arms*
 - Religion
 - Shields
 - Sleight of Hand
@@ -351,17 +345,23 @@ Body, representing proficiency with unarmed combat, has been introduced as a sim
 - Thrown
 - Tools (one set of)
 
-- Custom - for unique weapons, and skills not defined in the list.
+- Custom - for unique undefined weapons and skills
 
 </div>
 
 For ease of use, skills are separated into four groups; 
-- **General Skills** - which most of the time anyone can attempt the actions that would be governed by this skill even if they're not proficient
+- **General Skills** - which most of the time anyone can attempt the actions that would be governed by this skill even if they're not proficient.
 - **Simple Weapons** - a subset of general skills for "general" weapons, and includes light-armour and shields.
-- **Trained Skills** - which most of the time you cannot attempt the actions governed by this skill unless proficient
-- **Martial Skills** - a subset of trained skills for "trained" weapon & armour classes, simply for ease of use. Counts as "Trained".
+- **Trained Skills** - which most of the time you cannot attempt the actions that would be governed by this skill unless proficient.
+- **Martial Skills** - a subset of Trained Skills for "Trained" weapon & armour classes.
 
-This is not to say anyone can attempt all general skill checks (proficient or not) or that without proficiency you can never attempt a trained skill check, as it depends on the scenario and is a DM (me) call, which players can argue in either direction as best fits the understanding of the table.
+This is not to say anyone can attempt all General Skill checks (proficient or not) or that without proficiency you can never attempt any Trained Skill check, as it depends on the scenario and is a DM (me) call, which players can argue in either direction as best fits the understanding of the table.
+
+*Certain Martial Skills marked with an * require proficiency in other skills before they can be taken. 
+- Heavy Armour requires Medium Armour which requires Light Armour. 
+- Battle-Axes and Mauls require Clubs & Axes.
+- Heavy Blades requires Blades which requires Knives.
+- Pole-Arms requires Spears
 
 #### General Skills
 
@@ -405,6 +405,7 @@ This is not to say anyone can attempt all general skill checks (proficient or no
 
 - Acrobatics
 - Arcana
+- Crafting
 - History
 - Investigation
 - Languages (one of)
@@ -421,17 +422,19 @@ This is not to say anyone can attempt all general skill checks (proficient or no
 
 <div class="proficiencies-list">
 
-- Battle-Axes
-- Blades
+- Battle-Axes*
+- Blades*
 - Bows
-- Heavy Armour
-- Heavy Blades
-- Mauls
-- Medium Armour
-- Pole-Arms
+- Heavy Armour*
+- Heavy Blades*
+- Mauls*
+- Medium Armour*
+- Pole-Arms*
 - Custom - for martial skills not defined in the list
 
 </div>
+
+
 
 #### Proficiency Bonuses and Expertise
 **Proficiency a.k.a. Bonus** - having Proficiency is also known as having a "Bonus" in a skill check, which means a +2, and is typically derived from having Proficiency in a Skill from your Race, Background, Archetype or Power, or as a Bonus in a certain scenario earned directly from a Power. This replaces 5e 'Proficiency bonus'. Every Proficiency is a Bonus, not all Bonuses are from Proficiencies, to be clear.
