@@ -1,12 +1,14 @@
 ## Introduction
 
-*[Updated 11<sup>th</sup> September 2022]*
+*[WIP 22<sup>nd</sup> June 2023]*
 
 Hi, my name is Peter Bellaby, as you might have already seen on the landing page's mock terminal. 
 
-I'm a C# Trainer at Sparta Global, and also a self-taught Full Stack developer, a former English Foreign Language teacher, a fluent speaker of Japanese and dabbler in various other languages, a happily married man to a lovely wife, a world traveller (places I've been in highlighted red on the globe there) and a massive Dungeons & Dragons geek, primarily in the role as forever-DM (so please let me know if you need a player!) As you can probably see, I'm also a corgi owner and dog-person.
+I'm a C# Trainer at Sparta Global, and also a self-taught Full Stack developer (currently my stack being Vue, raw PHP [with some Laravel historically], and MySQL); a former English Foreign Language teacher of 7 years; a fluent speaker of Japanese and conversational Swedish speaker, and dabbler in various other languages; a happily married man to a lovely wife; a world traveller (places I've been in highlighted red on the globe there); and a massive Dungeons & Dragons geek, primarily in the role as forever-DM (so please let me know if you need a player!) 
 
-Programming is one of my passions and the internet is my second home. Before becoming a trainer at SpartaGlobal, I freelanced web development which I'd entirely taught to myself using free resources on the internet. I'm sure I still make many common mistakes on that front!
+As you can probably see, I'm also a corgi owner and dog-person.
+
+Programming is one of my passions and the internet is my second home. Before becoming a trainer at Sparta Global, I freelanced full-stack web development which I'd entirely taught to myself using free resources on the internet. I'm sure I still make many common mistakes on that front!
 
 I also used to teach English as a secondary language in the northern island of Hokkaido in Japan, as well as doing translation and various other odd jobs here and there to do with languages or computers, or both.
 
