@@ -1,12 +1,9 @@
 <template>
-  <main class="">
+  <section id="terminal-section" class="section no-border no-bg">
+    <div id="terminal-canvas"></div>
+  </section>
 
-    <section id="terminal-section" class="section no-border no-bg">
-      <div id="terminal-canvas"></div>
-    </section>
-
-    <Marquee />
-  </main>
+  <Marquee />
 </template>
 
 <script setup>

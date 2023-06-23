@@ -1,35 +1,27 @@
 ## Introduction
 
-*[WIP 22<sup>nd</sup> June 2023]*
+*[23<sup>rd</sup> June 2023]*
 
-Hi, my name is Peter Bellaby, as you might have already seen on the landing page's mock terminal. 
+Hi, my name is Peter Bellaby, as you might have already seen on the landing page's faux-terminal. 
 
-I'm a C# Trainer at Sparta Global, and also a self-taught Full Stack developer (currently my stack being Vue, raw PHP [with some Laravel historically], and MySQL); a former English Foreign Language teacher of 7 years; a fluent speaker of Japanese and conversational Swedish speaker, and dabbler in various other languages; a happily married man to a lovely wife; a world traveller (places I've been in highlighted red on the globe there); and a massive Dungeons & Dragons geek, primarily in the role as forever-DM (so please let me know if you need a player!) 
+I'm a C# ASP.NET Trainer at Sparta Global, training cohorts of fresh-faced devs and testers C#, .NET, and a host of tools and frameworks to be effective on-site devs and testers after only 2 months of gruelling and intense training. 
+
+I'm also a self-taught Full Stack developer (currently my stack being Vue, raw PHP [with some Laravel historically], and MySQL); a former English Foreign Language teacher of 6 years; a fluent speaker of Japanese (having worked as a translator) and conversational Swedish speaker, and dabbler in many other various languages. 
+
+Personally, I'm a happily married man to a lovely wife, a world traveller (places I've been in highlighted red on the globe there) and a massive Dungeons & Dragons geek, primarily in the role as forever-DM (so please let me know if you need a player!). 
 
 As you can probably see, I'm also a corgi owner and dog-person.
 
-Programming is one of my passions and the internet is my second home. Before becoming a trainer at Sparta Global, I freelanced full-stack web development which I'd entirely taught to myself using free resources on the internet. I'm sure I still make many common mistakes on that front!
+I like to call myself a generalist. With a wide base of skills to pull on, I am capable of quickly and efficiently learning new skills or applying skills to new areas of work. I have a strong scientific background while also being capable and experienced in the humanities, where I have many years of professional experience. Now, I also have a strong technical capability and depth of knowledge. I strongly believe; the power of a generalist is the ability to specialise anywhere. 
 
-I also used to teach English as a secondary language in the northern island of Hokkaido in Japan, as well as doing translation and various other odd jobs here and there to do with languages or computers, or both.
-
-I've taught ever since completing a TESOL course after graduation from Royal Holloway University of London, where I studied
-Physics at an undergraduate level.
-
-I’m aware that my focus is pretty scattered, but I like to consider myself a generalist able to tackle and take
-on any kind of task and excel. A generalist is someone who can specialise anywhere.
-
-If you have any questions or enquiries, please feel free to contact me via e-mail (link in sidebar) or <a href="skype:p.t.bellaby?userinfo" class="intext-link" target="_blank">here</a> on Skype or 
-<a href="https://www.linkedin.com/in/peter-bellaby-40b93022b/" class="intext-link" target="_blank">here</a> on LinkedIn.
+If you have any questions or enquiries, please feel free to contact me via e-mail or on LinkedIn (links in sidebar).
 
 ***
 
 ## Qualifications & Education
 ### *The official certificates and education that I possess.*
 
-- _**ISTQB Certification**_: while working with SpartaGlobal I teach the ISTQB Certificate in testing, which is an industry standard in software testing and a major feature of our SDET C# and Java courses. It provides a thorough framework to express testing concepts and be that common language between all people involved in testing, which in any good project is near everyone.
-
-- _**Full-stack Web Development**_: where I taught myself using online tools and
-practice over the course of half a year, building on a foundation of hobbyist interest in programming since university. This site is the proof of that.
+- _**ISTQB® Certified Tester**_: while working with Sparta Global I earned the ISTQB® Certified Tester qualification to teach it to our trainees, which is an industry standard in software testing and a major feature of our C# and Java Test courses. It provides a thorough framework to express testing concepts and be that common language between all people involved in testing, which in any good project is near everyone.
 
 - An _**OCR Level 3 Diploma in Business Administration**_ during a commercial business apprenticeship with ZF Friedrichshafen AG, educated by Solihull College, where I developed a wide base of business skills alongside practical experience managing accounts of cart part manufacturing and supply for various big-names; Jaguar Landrover, Honda, Toyota and others. (Oct 2017 – Oct 2018)
 
@@ -44,33 +36,34 @@ For a complete list of my secondary education please contact me.
 ## Personal Skills
 ### *The skills and abilities I bring to a table that haven't been printed on a paper first.*
 
-_**Teaching**_: for six years since leaving University I've travelled the world and taught. Now I work at SpartaGlobal as a trainer teaching trainees how to become business level software engineers using C# and .NET. Teaching is a career that is incredibly rewarding and uniquely positioned to help people, not because they are in need, but because they wish to learn. I'm always honoured to have such a privilage.
+_**Teaching and Training, Leadership and Teamwork**_: for six years since leaving University I've travelled the world and taught. Now I work at Sparta Global as a trainer teaching trainees how to become business level software engineers using C# and .NET. Teaching is a career that is incredibly rewarding and uniquely positioned to help people, not because they are in need, but because they wish to learn. I'm always honoured to have such a privilage. It also furnishes me with strong leadership and team skills, soft skills and a rock-solid knowledge basis. You cannot teach something well without really knowing it.
 
-_**Programming, Software Development**_: in no particular order, I am capable of coding in C#, .NET, Laravel, PHP, JavaScript, HTML, CSS, MySQL, React, Vue, Java, Basic, Python, and even a little C++. I'm confident I can quickly pick up any other programming language. I've used these both solo and as part of a team using Git version control and AGILE development techniques to produce websites, applications and test frameworks.
+_**Programming, Software Development**_: in no particular order, I am capable of coding in C#, .NET, Laravel, PHP, JavaScript, HTML, CSS, SQL (MySQL, SQLite, ANSI etc), React, Vue, Java, Basic, Python, Node.js, Apache, Nginx, and even a little C++. I'm confident I can quickly pick up any other programming language. I've used these both solo and as part of a team using Git version control and Agile development, with Scrum and Kanban techniques, to produce websites, applications, APIs and test frameworks.
 
-I'm a stickler for best practices, such as SOLID, DRY, KISS and YAGNI. Any software or framework I need to learn to produce projects I'm happy to do, and I love to work at a project from ideation to deployment.
+I'm a stickler for best practices, such as SOLID, Design Patterns (used appropriately!), DRY & DAMP, and especially KISS. Any software or framework I need to learn to produce projects I'm happy to do, and I love to work at a project from ideation to deployment.
 
-Whilst primarily a Windows 10 user (11 when I must), I've also flirted with Linux (both Debian and Arch based distros) and putting Lubuntu on an old Windows Surface Pro was a fun project I underwent once. I also build computers as a hobby, and know them literally inside and out.  My personal computer is a frankenstein creation of parts that have gone through a steady cycle of upgrades, and the chip shortage really hurts me.
+Whilst primarily a Windows 10 user (11 when I must), I'm also very comfortable on Linux (both Debian and Arch based distros), as a desktop or as a headless server interacting purely through the terminal and bash scripting. Putting Lubuntu on an old Windows Surface Pro was a fun project I underwent once. I also build computers as a hobby, and know them literally inside and out.  My personal computer is a Frankensteinian creation of parts that have gone through a steady cycle of upgrades, and the chip price hikes really hurt me.
 
-_**Languages**_: Another passion of mine, I speak Japanese fluently, Swedish conversationally and I'm working on French. I hold a JLPT N1 level equivalent level of Japanese, conversing at a native level (literally at a business level for the last 3 years), and a B1+ (CEFR) level in Swedish. Through past endeavours I in theory also have a foundational understanding of Spanish, German, Esperanto and academic linguistics.
+_**Languages**_: Another passion of mine, I speak Japanese fluently, Swedish conversationally and I'm working on French. I hold a JLPT N1 level equivalent level of Japanese, conversing at a native level (literally at a business level for the last 3 years), and a B1+ (CEFR) level in Swedish. Through past endeavours I in theory also have a foundational understanding of Spanish, German, Chinese, Russian, Esperanto and academic linguistics.
 
 
-I have _**Public liason experience**_. I worked as a waiter in a 5-star hotel for a year
-and in various London-wide events as event staff while studying at university. Thanks to this experience I learned to be unfailingly polite, and honed many other soft skills. I pride myself on my professional attitude in work.
+***Public Facing***: from working in a 5-star hotel, to presenting language workshops to members of the public, to liaising with clients, I am unfailingly polite and communicate well, having honed many other people and soft skills extensively in the teaching industry. I pride myself on my professional attitude in work, and my charming and approachable manner.
 
-### A Generalist
-I have a wide base of skills to pull on and am capable of quickly and efficiently learning new skills or applying skills to new areas of work. I have a strong scientific background while also being capable and experienced in the humanities, where I have spent most of my working life. I firmly believe the power of a generalist is the ability to specialise anywhere.
+***Media Production***: in my most recent position I have been heavily involved in producing professional quality educational videos for internal and external use, producing the entire process of scripting, filming and editing. I have also written articles to be published by the company for tech interest.
 
 ***
 
 ## Work/Travel History
-### _**Teaching Assistant at SpartaGlobal**_
+### _**Junior Trainer at Sparta Global, UK**_
 *Dates:* May 2022 to present
 
-*Job Title:* Teaching Assistant for the C# Stream
+*Company*: Sparta Global
 
-*Details of position:* I train new spartan cohorts in the C# Streams, both development and SDET, getting them up to snuff to become valuable consultants to our clients across the country and making them invaluable members that after their 2 year contracts clients are happy to take on as permenant employees. We teach C# basics and advanced concepts, SQL, Entity Framework, NUnit Testing, API development & testing, web development & testing as well as Agile, Scrum and the soft skills needed to be a modern developer.
-### _**Freelance Full Stack Web Developer**_
+*Job Title:* Junior Trainer
+
+*Details of position:* I teach the C# Developer and C# SDET / Testing Automation courses, taking groups through an intensive 2 months of training and teaching them from practically zero programming skill to business level competence able to produce and test APIs and Web Apps running on ASP.NET. Students are taught from 9:30 to 16:30, working through projects near the end of the course. I also produce curriculum materials, educational videos and other material, and run social events in the Birmingham office.
+
+### _**Freelance Full Stack Web Developer, UK**_
 *Dates:* April 2022
 
 *Job Title:* Full Stack Web Developer
