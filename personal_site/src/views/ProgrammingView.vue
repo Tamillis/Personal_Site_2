@@ -5,18 +5,27 @@
         <div class="main-text">
             <p>
                 Over the years I've dabbled in various programming languages and environments. For me it started back in
-                sixth-form where I took my first Computing class that used BASIC as its language of instruction
-                and I was welcomed into the wonderful world of computer programming. Within I
-                learned first to make my form fullscreen and flash random colours. It’s been my way of saying Hello World
-                ever since.<br><br>
-                These days I instruct others in how to use C# from near-zero up to business level tools of ASP.NET and Entity Framework, but I can’t say I’m an "industry expert" at it or any of the languages I use, I’ll let you be the judge of that. In addition to C#, I have
-                managed to drag myself to a level of familiarity with JavaScript (including React and Vue, which this site is built in), as well as Python, Java, C++, HLSL and PHP.
-                Technically languages, though I don't personally count them as such, I also taught myself HTML and CSS.<br><br>
-                Below you will find iframes of some sketches written in the handy library of P5JS, as they're easy to demo and its the library I really learned JavaScript, and relearned programming, in after coming back to it during my long hiatus as a teacher. I’m afraid my old PyGame ventures in python2
-                from 16 year old me are lost to the void. Thankfully, haha.<br><br>
-                Anyway, here’s a showcase, if you want to take a peak at any of the code open up the P5JS programs in a
-                new tab and take a look at the online editor there. Everything is on show. If you have any other questions
-                please feel free to contact me.
+                sixth-form when I was 16 where I took my first Computing class that used BASIC as its language of
+                instruction and I was welcomed into the wonderful world of computer programming. Within I learned first to
+                make my form fullscreen and flash random colours. It’s been my way of saying Hello World ever since.
+            </p>
+            <p>
+                These days my language of professional capability is C#, where I would train others from near-zero up to
+                business level in ASP.NET with
+                Entity Framework. In addition to C#, I have managed to drag myself to a level of familiarity with JavaScript
+                (including React, but primarily with Vue which this site
+                is built in), as well as PHP (including with Laravel), Python, Java, C++ and many, many related tools and
+                frameworks.
+                As for my level of HTML and CSS ability, judge that for yourself by this very site!
+            </p>
+            <p>
+                Below you will find iframes of some sketches written in the handy library of P5JS, as they're easy to demo
+                and its the library I really learned JavaScript with, and relearned programming, in after coming back to it
+                during my long hiatus as a teacher. I’m afraid my old PyGame ventures in python2
+                from 16 year old me are lost to the void. Thankfully, haha.</p>
+            <p>
+                I am also working on producing a portfolio of professional level demonstrations with my C# abilities, see <a
+                    href="/portfolio">/portfolio</a> for that :) Anyway, enjoy the sketches!
             </p>
         </div>
 
@@ -24,8 +33,7 @@
 
         <h2 class="subtitle">Randomly Coloring Tiles</h2>
         <p class="main-text">As noted, my first foray into something nearly always involves filling the screen with
-            random
-            colours. Like this.</p>
+            random colours. Like this.</p>
 
         <button type="button" class="btn centre" id="randomly-coloring-tiles-btn"
             @click="toggleIframe('randomly-coloring-tiles', 'https://preview.p5js.org/Tamillis/embed/Os9tzE3r-')">Open</button>
@@ -33,18 +41,16 @@
 
         <h2 class="subtitle">Smokey Wanderer</h2>
         <p class="main-text">This was another of the first forays into JavaScript, this time primarily to familiarise
-            myself
-            with array functions and make something pretty. Click to pause.</p>
+            myself with array functions and make something pretty. Click to pause.</p>
         <button type="button" class="btn centre" id="smokey-wanderer-btn"
             @click="toggleIframe('smokey-wanderer', 'https://preview.p5js.org/Tamillis/embed/EJ8E8twVF')">Open</button>
         <div class="wrap" id="smokey-wanderer"></div>
 
         <h2 class="subtitle">Boids</h2>
         <p class="main-text">Following along with Daniel Schiffman's videos I decided to implement the flocking
-            algorithm,
-            setting this up. It also makes use of DOM elements generated from inside the script that dynamically effect
-            the
-            simulation. Also they flee the mouse, which I thought was cute.</p>
+            algorithm, setting this up. It also makes use of DOM elements generated from inside the script that dynamically
+            effect
+            the simulation. Also they flee the mouse, which I thought was cute.</p>
         <button type="button" class="btn centre" id="boids-btn"
             @click="toggleIframe('boids', 'https://preview.p5js.org/Tamillis/embed/_zCa9LADT')">Open</button>
         <div class="wrap" id="boids"></div>
@@ -55,7 +61,9 @@
             of zero player simulator of agents on a tiled world. For now, I busied myself with this generator that
             randomly
             creates continents using voronoi cells with a randomised distance function. Left and right arrow keys allow
-            scrolling, to show that it is left-right wrappable. Click to generate a new set.</p>
+            scrolling, to show that it is left-right wrappable. Click to generate a new set. Update: this content is now
+            part of the much larger project I'm currently calling 4x44, find <a
+                href="https://github.com/Tamillis/4x44">here!</a></p>
         <button type="button" class="btn centre" id="continent-generator-btn"
             @click="toggleIframe('continent-generator', 'https://preview.p5js.org/Tamillis/embed/6j5IixBqc')">Open</button>
         <div class="wrap" id="continent-generator"></div>
@@ -82,12 +90,14 @@
         <div class="wrap" id="no-overlap"></div>
 
         <h2 class="subtitle">Growth by random particles</h2>
-        <p class="main-text">This sketch was an idle moment where I wanted to explore an algorithm idea I had, to see what structures it would organically form.
-            It starts with a single fixed particle at the bottom of the screen, and any particle that touches it "sticks", itself becoming collidable. These interesting branches form quite naturally.
+        <p class="main-text">This sketch was an idle moment where I wanted to explore an algorithm idea I had, to see what
+            structures it would organically form.
+            It starts with a single fixed particle at the bottom of the screen, and any particle that touches it "sticks",
+            itself becoming collidable. These interesting branches form quite naturally.
         </p>
         <button type="button" class="btn centre" id="random-growth-btn"
             @click="toggleIframe('random-growth', 'https://preview.p5js.org/Tamillis/embed/qwEB2PNNO')">Open</button>
-        <div class="wrap" id="random-growth" ></div>
+        <div class="wrap" id="random-growth"></div>
     </section>
 </template>
 
@@ -138,6 +148,4 @@ function destroyIframe(divId) {
 }
 </script>
 
-<style lang="css" scoped>
-
-</style>
+<style lang="css" scoped></style>

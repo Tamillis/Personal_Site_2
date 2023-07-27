@@ -10,6 +10,9 @@
                     <RouterLink to="/about">About</RouterLink>
                 </li>
                 <li class="nav-item">
+                    <RouterLink to="/portfolio">Portfolio</RouterLink>
+                </li>
+                <li class="nav-item">
                     <RouterLink to="/programming">Programming</RouterLink>
                 </li>
                 <li class="nav-item">
