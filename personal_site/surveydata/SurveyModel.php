@@ -7,6 +7,7 @@ class SurveyModel {
         public string $handle = "",
         public string $country = "",
         public string $gender = "",
+        public int $age = 0,
         public bool $barbarian = false,
         public bool $bard = false,
         public bool $cleric = false,
@@ -29,11 +30,11 @@ class SurveyModel {
     }
 
     public static function parameters() : array {
-        return [":handle", ":country", ":gender", ":Barbarian", ":Bard", ":Cleric", ":Druid", ":Fighter", ":Paladin", ":Monk", ":Ranger", ":Rogue", ":Sorcerer", ":Wizard", ":Warlock"];
+        return [":handle", ":country", ":gender", ":age", ":Barbarian", ":Bard", ":Cleric", ":Druid", ":Fighter", ":Paladin", ":Monk", ":Ranger", ":Rogue", ":Sorcerer", ":Wizard", ":Warlock"];
     }
 
     public function values() : string {
-        return "$this->handle, $this->country, $this->gender, $this->barbarian, $this->bard, $this->cleric, $this->druid, $this->fighter, $this->paladin, $this->monk, $this->ranger, $this->rogue, $this->sorcerer, $this->wizard, $this->warlock";
+        return "$this->handle, $this->country, $this->gender, $this->age, $this->barbarian, $this->bard, $this->cleric, $this->druid, $this->fighter, $this->paladin, $this->monk, $this->ranger, $this->rogue, $this->sorcerer, $this->wizard, $this->warlock";
     }
 
     public static function dndClasses() : array {

@@ -59,7 +59,8 @@ class SurveyGateway {
         foreach(SurveyModel::parameters() as $param) {
             $column = substr($param, 1);
 
-            if ($param == ":handle" || $param == ":country") $pdoStatement->bindValue($param, $data[$column], PDO::PARAM_STR);
+            if ($param == ":handle" || $param == ":country" || $param == ":gender") $pdoStatement->bindValue($param, $data[$column], PDO::PARAM_STR);
+            elseif ($param == ":age") $pdoStatement->bindValue($param, $data[$column], PDO::PARAM_INT);
             else $pdoStatement->bindValue($param, $data[$column] ?? false, PDO::PARAM_BOOL);
         }
 
