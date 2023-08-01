@@ -11,7 +11,7 @@
 import { putMdinElement } from '../assets/functionality';
 import { onMounted } from 'vue';
 
-onMounted(() => putMdinElement('src/assets/transissional.md', 'transissional'));
+onMounted(() => putMdinElement('src/assets/articles/transissional.md', 'transissional'));
 </script>
   
 <style>

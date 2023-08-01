@@ -299,7 +299,58 @@ Powers are “in training” before coming online, to encourage roleplay of skil
 For the intended "power level" of a Power, take any Feat from the PHB which has a Stat increase component, and remove the Stat increase.
 
 ### Spheres of Magic
-Spellcasting is a Feature that had to receive major reworking, and is still WIP.
+Spellcasting has undergone a serious remake. Gone are spell casting classes, of course, and spell lists for each class. Now all spell lists are combined into 4 “Spheres of Magic”; Arcane, Divine, Primal and Occult. The nebulous "Spellcasting" feature has been separated into 5 different spellcasting Powers, one for each Sphere as well as one for Pact Magic. Each are fundamentally unique and not just because of the associated spell list, adding both flavour and mechanical differentiation. Note that there is significant overlap for the spheres, many spells belong to, and are usable by, more than one sphere.
+
+#### Mana Magnitude and Reserve
+Spell levels and spell slots have also received a semantic rework, as the naming convention is old and counter-productive. Countless times I've had new players get confused about levels, spell levels and how spell slots work. Spell levels are relabelled to "Magnitude" and spell slots to "Reserve". A spellcaster has a "Mana Reserve of X Magnitude Y Casts", with one spell cast being simply known as a "Cast". This also translates well when talking about "up-casting".
+
+#### Innate Spells, and Prepared Spells & Sources
+Another semantic rework is "Prepared" spellcasting and spellcasting with "Known spells". Now there are explicit Innate and Prepared Spells. "Innate spells" are learned spells memorised or made reflexive by the caster, they never need to be prepared. All Cantrips, for example, are Innate (and also take 0 Reserve to Cast). Prepared spells then, to Spheres that can, allow a spell caster to Prepare a spell they don't otherwise have ready for use. The manner and method a spell is Prepared depends on the Sphere, but it means the caster can choose from any Spell they have access to in their "Source":
+
+- The source of Arcane spells is the wizard’s spellbook, which they accrue over time by writing down Arcane Sphere spells they encounter and invent.
+- The source of Divine spells are that devotee's deity. This is a spell list which the deity, in all their wisdom and might, chooses for the day from all the Divine Sphere spells. Ultimately the DM, somewhat knowing the future with their preparation and who acts as the deity in question, produces a subset of the divine sphere which the character can then choose from. Alternatively the DM and player check whether the spell list the player wants for that day is OK by the Diety (the DM). It might be that, for a given day, a deity requires a character to prepare a particular spell.
+- Primal spells can be sourced from the entire primal sphere of magic, but it is fundamentally limited in breadth and scope compared to the others so this seeming advantage is still balanced.
+
+#### The Arcane Sphere
+(All Wizard spell list spells are available to the Arcane Sphere)
+
+Arcane magic practitioners, commonly called wizards, are your typical learned mage. They collect a large repertoire of Prepared spells in their Spellbook; and through intense study can memorise the immense complexities of a select few spells, making that spell Innate for them. Famously, wizards are known to invent spells [choosing any spell from the Arcane Sphere or working with the GM to craft custom spells] as a down time activity.
+
+See the Arcane Spellcasting Power (which is largely unchanged from Wizard's Spellcasting).
+
+#### The Divine Sphere
+(All Cleric & Paladin spell lists spells are available )
+Divine Magic can have innate spells and prepared spells. Divine spells are cast using Faith*, a new Stat for them. It starts a +2 but due to character actions with player collaboration the DM can choose to increase or decrease the Stat, typically by 1 in either direction though monumental actions may have monumental consequences. 
+
+#### The Primal Sphere
+(Druid & Ranger spell lists)
+
+#### The Occult Sphere
+(Bard, Sorcerer & Warlock spell lists)
+
+
+
+#### Pact Magic
+Pact Magic is a separate Power which is the Break recharging, snowflake spellslot progression bastard child of Occult magic which requires the Patron Power. By default it has access to the Occult Sphere but Patrons are known to plug their warlocks with all sorts of spells. They have a few innate spells and smaller than normal Reserve known as their “Stipend” that “Recharges” after a Break and they cast using Charisma/Perception/Intelligence (Patron dependent). 
+
+Occult spells are always innate, esoteric knowledge plugged into the mind/body of the Sorcerer. It keys off Charisma. 
+
+
+
+
+Primal Magic can have innate spells as well as prepared spells which the caster can freely choose from the entire Primal Sphere at the end of each Rest where they also must commune with nature. This establishes their connection with nature that powers their magic, granting a value from +0 to +5. 
+•	For locations bursting with nature (forests, coasts, swamps etc) their Spellcasting modifier might be +4/+5. 
+•	For locations with a fair amount of nature (harvested fields, open sea, mushroom caves) its + 2/+3. 
+•	For locations with a low amount of nature (urban sprawl, empty caves, barren deserts, deep snow) it would be +1. 
+•	For utterly barren locations it would be 0.
+
+Life is consistent in its tenacity, so is life magic. Limited in scope and steady in power. 
+
+
+
+
+#### Spell Schools
+Spell schools are another vestigial part of the D&D system, but I think they're actually quite interesting and deserve a bit more love. Now many Powers key specifically off a spell's school, hopefully making them more interesting and useful!
 
 ### Proficiencies Rework; PEDD Skills
 A part of Powers Progression is the flattening of the odd little distinct yet related categories of "Skills, Tools, Languages and Weapon & Armor Proficiencies". They all are now "Skills". Weapons have also been regrouped into "Weapon Classes", no longer "Simple" and "Martial" and no longer taken for Proficiency individually, as that's too fine-grained, or gained as one of the massive sets "Simple" and "Martial" as they were far too broad. 

@@ -4,7 +4,7 @@
 
 > #### New Edition 
 >
-> This is a condensed and edited version of my various bits of work on an English Spelling reform I call Transissionel Inglish, effectively now edition five due to the addition of four previous versions and now this online one. The 4th iteration presented the reform in a more consistent and logical fashion than the initial document which was more of a design as you went mess, and now this online version is the authorative version that is also publicy facing. 😱
+> This is a condensed and edited version of my various bits of work on an English Spelling reform I call Transissionel Inglish, effectively now edition five due to the addition of four previous versions and now this online one. The 4th iteration presented the reform in a more consistent and logical fashion than the initial document which was more of a design as you went mess, and now this online version is the authoritative version that is also public facing. 😱
 
 ### Mission 
 

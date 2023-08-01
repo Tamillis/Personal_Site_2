@@ -9,7 +9,7 @@ import { putMdinElement } from '../assets/functionality'
 import { onMounted } from 'vue';
 
 onMounted(() => {
-    putMdinElement('src/assets/profile.md', 'profile');
+    putMdinElement('src/assets/articles/profile.md', 'profile');
 });
 </script>
 

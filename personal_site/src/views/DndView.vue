@@ -19,7 +19,7 @@ import PointBuyCalculator from '../components/PointBuyCalculator.vue';
 import { putMdinElement } from '../assets/functionality';
 import { onMounted } from 'vue';
 
-onMounted(() => putMdinElement('src/assets/playerbrief.md', 'player-brief'));
+onMounted(() => putMdinElement('src/assets/articles/playerbrief.md', 'player-brief'));
 </script>
 
 <style>
