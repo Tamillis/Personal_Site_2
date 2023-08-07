@@ -319,8 +319,11 @@ Arcane magic practitioners, commonly called wizards, are your typical learned ma
 See the Arcane Spellcasting Power (which is largely unchanged from Wizard's Spellcasting).
 
 #### The Divine Sphere
-(All Cleric & Paladin spell lists spells are available )
-Divine Magic can have innate spells and prepared spells. Divine spells are cast using Faith*, a new Stat for them. It starts a +2 but due to character actions with player collaboration the DM can choose to increase or decrease the Stat, typically by 1 in either direction though monumental actions may have monumental consequences. 
+(All Cleric & Paladin spell lists spells are available to the Divine Sphere)
+
+Divine Magic is that which is bestowed upon loyal followers by divine beings and auspicious fates. Divine spell casters can have innate spells, their so-called "domain" spells, and prepared spells. Uniquely, Divine spells are cast using an entirely separate statistic: Faith, which becomes a new Stat for characters with access to the Divine Sphere. 
+
+When a character takes any Power that gives them access to Divine spells, they must add a Faith Stat to their character sheet. They must also note to which deity or cause their Faith belongs, and therefore have a rough idea of what it means to be faithful to that cause. It starts at +2, but due to character actions, with player collaboration, the DM can choose to increase or decrease the Stat, typically by 1 in either direction though monumental actions that go for or against the faith.
 
 #### The Primal Sphere
 (Druid & Ranger spell lists)
