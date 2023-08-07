@@ -328,29 +328,27 @@ When a character takes any Power that gives them access to Divine spells, they m
 #### The Primal Sphere
 (Druid & Ranger spell lists)
 
+Primal Magic is driven by the user's connection to, and the power of, Nature. At the end of each Rest the caster must, in addition to preparing spells, commune with nature. This establishes their connection to primal power, granting them a value from +0 to +5.
+
+Which of the four categories the current environ is, is dictated by the DM. 
+•	For locations bursting with nature (forests, coasts, swamps etc) their Spellcasting modifier might be +4/+5. 
+•	For locations with a fair amount of nature (harvested fields, open sea, mushroom caves) its +2/+3. 
+•	For locations with a low amount of nature (urban sprawl, empty caves, desert oases, cold tundra), it would be +1. 
+•	For utterly barren locations like the deep desert or polar wastes, it would be 0.
+
+When the power is one of two values, the caster makes a DC 10 Nature check to see if they get the higher value.
+
+The Primal Mage can freely choose from the entire Primal Sphere when preparing spells, limited as it is. Life is consistent in its tenacity, so is life magic. Limited in scope and steady in power.
+
 #### The Occult Sphere
 (Bard, Sorcerer & Warlock spell lists)
 
-
+Occult spells are always innate, esoteric knowledge plugged into the mind/body of the Sorcerer, and uses Charisma, one's force of personality, to wield the magic.
 
 #### Pact Magic
-Pact Magic is a separate Power which is the Break recharging, snowflake spellslot progression bastard child of Occult magic which requires the Patron Power. By default it has access to the Occult Sphere but Patrons are known to plug their warlocks with all sorts of spells. They have a few innate spells and smaller than normal Reserve known as their “Stipend” that “Recharges” after a Break and they cast using Charisma/Perception/Intelligence (Patron dependent). 
+Pact Magic while clearly is occult in nature, functions quite differently to other spellcasting Powers, as fundamentally the magic is derived from some other powerful individual known as a *Patron*. Not all who have the Patron power are provided with magic, the Pact Magic Power, but one needs a Patron to have Pact Magic.
 
-Occult spells are always innate, esoteric knowledge plugged into the mind/body of the Sorcerer. It keys off Charisma. 
-
-
-
-
-Primal Magic can have innate spells as well as prepared spells which the caster can freely choose from the entire Primal Sphere at the end of each Rest where they also must commune with nature. This establishes their connection with nature that powers their magic, granting a value from +0 to +5. 
-•	For locations bursting with nature (forests, coasts, swamps etc) their Spellcasting modifier might be +4/+5. 
-•	For locations with a fair amount of nature (harvested fields, open sea, mushroom caves) its + 2/+3. 
-•	For locations with a low amount of nature (urban sprawl, empty caves, barren deserts, deep snow) it would be +1. 
-•	For utterly barren locations it would be 0.
-
-Life is consistent in its tenacity, so is life magic. Limited in scope and steady in power. 
-
-
-
+Patrons are known to plug their warlocks with all sorts of spells, with each Patron presenting a unique spell list (often using one of the Spheres as a basis) including innate spells. Warlocks may have a few extra innate spells they pick up from Eldritch Invocations, other Spellcasting or so on, but generally Pact Magic is much more limited. The Reserve of Pact Magic is also known as their “Stipend” that “Recharges” after a Break, unlike other Spellcasting which requires a Rest, and the mental Stat that governs the magic casting is also dictated by the Patron; Charisma, Perception or Intelligence. 
 
 #### Spell Schools
 Spell schools are another vestigial part of the D&D system, but I think they're actually quite interesting and deserve a bit more love. Now many Powers key specifically off a spell's school, hopefully making them more interesting and useful!
