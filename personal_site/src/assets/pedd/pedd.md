@@ -214,18 +214,20 @@ To make characters easier to strike, meaning less spongey, and also to make cmob
 - an Evasion value, Reflexes to a minimum of 0 which can be limited by worn Equipment. 
   
 Instead Defence is calculated when required from these three parts, depending on what parts are in play. This gives us three kinds of Defence;
-- **Full Defence** - Defence with both Armour and Evasion
+- **Full Defence** - Defence with both Armour and Evasion. Often shortened to just 'Defence'
 - **Unarmoured Defence** - Defence without Armour, armour limits on Evasion are still applied. A few effects target Unarmoured Defence.
 - **Stationary Defence** - Defence without the benefit of Evasion, often called "touch AC" in other systems. Some effects target Stationary Defence, and surprised targets only get their Stationary Defence.
 
 Remember that the Armour value also changes during play as you don and doff Equipment, and especially based on whether you Raise your Shield or not!
 
 ### One Action All At Once
-A radical change I've experimented a little with is to basic combat where, simply, all characters in a round of combat have one action, and everyone "acts" at once, no initiative.
+A radical change I've experimented a little with is to basic combat where, simply, all characters in a **Round** of combat have one action (and a Bonus Action, if they have any), and everyone "acts" at once, no initiative. No taking "Turns".
 
 How on Earth does that work? You might be thinking.
 
-All enemies in the scene declare their intentions, just as their movements would give away what they're about to do. Then all players decide among themselves what they're going to do that round. When everyone is happy with their actions, you "resolve" the round in whatever order works.
+The GM declares the intentions of most enemies in the scene, just as their movements would give away what they're about to do. Then all players decide among themselves what they're going to do that Round. When everyone is happy with their actions, you "resolve" the round in whatever order works.
+
+Only powerful or well-trained enemies will be capable of **Hidden Actions** where their intentions are not stated by the GM but kept secret until after players commit to their own actions, but player characters can always attempt to **Discern** their moves anyway (see [Additional Actions](#-Additional-Actions)).
 
 **Initiative Contest** - For any situations where the order of actions matters, the two characters involved roll off with their initiative to see who can get the higher value. If it makes sense to resolve such conflicts of interest using appropriate skill checks rather than Initiative (i.e. Athletics), then do so. For "slow" enemies / mooks the DM will just let the players go first, player's advantage.
 
@@ -270,6 +272,7 @@ Also, to make martial combat spicier a variety of generally available tactical b
 - **Stand** - a Bonus Action to go from Prone to Standing.
 - **Go to cover / Go prone** - as a Bonus Action make yourself Prone, or enter adjacent cover. The Prone condition or being in cover uses Stationary Defence. As before Prone makes being shot at occur at disadvantage, and cover is +2/+5 to Defence for half / ¾ cover.
 - **Attack of Opportunity** - as a Bonus Action to an enemy you're engaged with moving away from you without Disengaging from you, you can make an attack action on them, after which they have moved away and are no longer engaged with you for that Round.
+- **Discern** - as an Action, you can make a Perception check against the enemy who's action has not been revealed. If successful (the GM will decide the difficulty), their action is no longer hidden and everyone in the party can know.
 
 ***
 
@@ -292,6 +295,8 @@ As has already been listed, some Powers have some meta categories:
 - Background Powers - so called "simpler" Powers that can be taken as part of your Background
 - Unique Powers - those that can only be taken once
 - Difficult - Powers that take longer than usual to learn
+
+Some Powers, like Invocations and Miracles, form natural categories of their own and are tagged for ease of access.
 
 #### Powers In Training
 Powers are “in training” before coming online, to encourage roleplay of skill acquisition. E.g. a character at the start of each session declares what Power/s they are training towards and when the when the group / DM feels its appropriate, characters gain that Power.
@@ -323,7 +328,7 @@ See the Arcane Spellcasting Power (which is largely unchanged from Wizard's Spel
 
 Divine Magic is that which is bestowed upon loyal followers by divine beings and auspicious fates. Divine spell casters can have innate spells, their so-called "domain" spells, and prepared spells. Uniquely, Divine spells are cast using an entirely separate statistic: Faith, which becomes a new Stat for characters with access to the Divine Sphere. 
 
-When a character takes any Power that gives them access to Divine spells, they must add a Faith Stat to their character sheet. They must also note to which deity or cause their Faith belongs, and therefore have a rough idea of what it means to be faithful to that cause. It starts at +2, but due to character actions, with player collaboration, the DM can choose to increase or decrease the Stat, typically by 1 in either direction though monumental actions that go for or against the faith.
+When a character takes any Power that gives them access to Divine spells, they must add the Faith Stat to their character sheet. They must also note to which deity or cause their Faith belongs, and therefore have a rough idea of what it means to be faithful to that cause, to uphold its virtues and abhor its vices. It starts at +2, but due to character actions, with player collaboration, the DM can choose to increase or decrease the Stat, typically by 1 in either direction during monumental actions that go for or against the faith. It is expected for Faith to change every few sessions.
 
 #### The Primal Sphere
 (Druid & Ranger spell lists)
@@ -331,10 +336,10 @@ When a character takes any Power that gives them access to Divine spells, they m
 Primal Magic is driven by the user's connection to, and the power of, Nature. At the end of each Rest the caster must, in addition to preparing spells, commune with nature. This establishes their connection to primal power, granting them a value from +0 to +5.
 
 Which of the four categories the current environ is, is dictated by the DM. 
-•	For locations bursting with nature (forests, coasts, swamps etc) their Spellcasting modifier might be +4/+5. 
-•	For locations with a fair amount of nature (harvested fields, open sea, mushroom caves) its +2/+3. 
-•	For locations with a low amount of nature (urban sprawl, empty caves, desert oases, cold tundra), it would be +1. 
-•	For utterly barren locations like the deep desert or polar wastes, it would be 0.
+- For locations bursting with nature (forests, coasts, swamps etc) their Spellcasting modifier might be +4/+5. 
+- For locations with a fair amount of nature (harvested fields, open sea, mushroom caves) its +2/+3. 
+- For locations with a low amount of nature (urban sprawl, empty caves, desert oases, cold tundra), it would be +1. 
+- For utterly barren locations like the deep desert or polar wastes, it would be 0.
 
 When the power is one of two values, the caster makes a DC 10 Nature check to see if they get the higher value.
 
@@ -354,7 +359,7 @@ Patrons are known to plug their warlocks with all sorts of spells, with each Pat
 Spell schools are another vestigial part of the D&D system, but I think they're actually quite interesting and deserve a bit more love. Now many Powers key specifically off a spell's school, hopefully making them more interesting and useful!
 
 ### Proficiencies Rework; PEDD Skills
-A part of Powers Progression is the flattening of the odd little distinct yet related categories of "Skills, Tools, Languages and Weapon & Armor Proficiencies". They all are now "Skills". Weapons have also been regrouped into "Weapon Classes", no longer "Simple" and "Martial" and no longer taken for Proficiency individually, as that's too fine-grained, or gained as one of the massive sets "Simple" and "Martial" as they were far too broad. 
+A part of Powers Progression is the flattening of the odd little distinct yet related categories of "Skills, Tools, Languages and Weapon & Armor Proficiencies". They all are now "Skills". Weapons have also been regrouped into "Weapon Classes", no longer "Simple" and "Martial" and no longer taken for Proficiency individually, as that's too fine-grained, or gained as one of the massive sets "Simple" and "Martial", as they were far too broad. 
 
 Body, representing proficiency with unarmed combat, has been introduced as a simple weapon skill; and yes, due to being promoted to a Stat, Perception is removed. This, and the fact that in PEDD no skill is automatically associated with a Stat, gives us the flat list:
 
@@ -524,6 +529,6 @@ A special Power, “Aptitude I/II”, increases the value of a Bonus to +3/+4.
 
 **Spellcasting Initiate** – choose a Sphere of Magic: Arcane, Divine, Occult or Primal. You gain 2 cantrips and a 1st Circle spell from that list. You also gain the Spellcasting Power for that Sphere. You can take this Power again if you can and do choose a different Sphere of Magic.
 
-**Stat Increase** – (Once every 5<sup>th</sup> Power), increase a Statistic by +1
+**Stat Increase** – (Once every 5<sup>th</sup> Power), increase a Statistic by +1 to a maximum of +5.
 
 **Aptitude I/II** - (once every 5<sup>th</sup> Power), Bonus is increased to +3, or +4 if taken twice. Cannot be taken more than twice.
