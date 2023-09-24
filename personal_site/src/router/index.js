@@ -35,7 +35,22 @@ const router = createRouter({
     {
       path: '/pedd',
       name:'pedd',
-      component: () => import('../views/PEDDView.vue')
+      component: () => import('../views/PEDD/PEDD.vue')
+    },
+    {
+      path: '/pedd/combat',
+      name:'pedd-combat',
+      component: () => import('../views/PEDD/PEDDCombat.vue')
+    },
+    {
+      path: '/pedd/character-creation',
+      name:'pedd-character-creation',
+      component: () => import('../views/PEDD/PEDDCharacterCreation.vue')
+    },
+    {
+      path: '/pedd/powers',
+      name:'pedd-powers',
+      component: () => import('../views/PEDD/PEDDPowers.vue')
     },
     {
       path: '/mewiki',

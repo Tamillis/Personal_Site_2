@@ -20,7 +20,7 @@
 </template>
   
 <script setup>
-import { putMdinElement } from '../assets/functionality';
+import { putMdinElement } from '../../assets/functionality';
 import { onMounted, ref } from 'vue';
 
 let creatorMode = ref(false);
