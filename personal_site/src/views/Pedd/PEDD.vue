@@ -3,34 +3,21 @@
         <h1 class="main-title">P.E.D.D.</h1>
         <h2 class="subsubtitle text-centre no-decoration">Pete's Edition of Dungeons & Dragons</h2>
 
-        <div class="centre width-fit">
-            <input type="checkbox" id="creator" class="radioQ" :value="creatorMode" @change="toggleCreator">
-            <label for="creator"> - Character Creator Mode</label>
-        </div>
+        <PeddLinks />
 
-        <div class="main-text inset" v-show="!creatorMode">
+        <div class="main-text inset">
             <div id="pedd"></div>
         </div>
-
-        <div class="main-text inset" v-show="creatorMode">
-            <p>TODO: setup divs here so that it functions like the character creator standalone</p>
-        </div>
-
     </section>
 </template>
   
 <script setup>
 import { putMdinElement } from '../../assets/functionality';
-import { onMounted, ref } from 'vue';
-
-let creatorMode = ref(false);
+import { onMounted } from 'vue';
+import PeddLinks from '../../components/PeddLinks.vue';
 
 onMounted(() => putMdinElement('src/assets/pedd/pedd.md', 'pedd'));
 
-function toggleCreator() {
-    creatorMode.value = !creatorMode.value;
-    console.log(creatorMode.value);
-}
 </script>
   
 <style>
