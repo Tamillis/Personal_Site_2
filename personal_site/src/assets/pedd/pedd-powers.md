@@ -1,4 +1,4 @@
-## Power Progression
+## Power Progression & Magic
 In a move I've wanted to do since I've ever started tweaking 5e and messing around with my own RPG's, I introduce an abolishment of all classes and the system of levelling, replacing it with "Powers" (created from Features and Feats). The intent is to allow for any combination of Features to be allowed for all sorts of different and unique characters, and to replace levelling with a more story-driven Power by Power progression system.
 
 Certain Powers will be stronger than others, so they will key off of prerequisites, typically Stats, the presence of other Powers, and also “After n or more Powers” or "Once every n<sup>th</sup> Power", meaning n number of other Powers must be taken before this Power can be taken, and the same again if taking this power again. This has nothing to do with other Powers that also have this prerequisite, so they may be "interleaved".
@@ -23,7 +23,7 @@ Some Powers, like Invocations and Miracles, form natural categories of their own
 #### Powers In Training
 Powers are “in training” before coming online, to encourage roleplay of skill acquisition. E.g. a character at the start of each session declares what Power/s they are training towards and when the when the group / DM feels its appropriate, characters gain that Power.
 
-For the intended "power level" of a Power, take any Feat from the PHB which has a Stat increase component, and remove the Stat increase.
+The amount of time needed for a Power is thematic, and depends on the pace of the game being played, its place on the game-to-simulation scale, and of course the Power itself. Many PEDD Powers also refer to being able to learn other Powers at an "increased rate". By default you can think of this as halving the amount of time, though again it depends on the table and style of play at hand.
 
 ### Spheres of Magic
 Spellcasting has undergone a serious remake. Gone are spell casting classes, of course, and spell lists for each class. Now all spell lists are combined into 4 “Spheres of Magic”; Arcane, Divine, Primal and Occult. The nebulous "Spellcasting" feature has been separated into 5 different spellcasting Powers, one for each Sphere as well as one for Pact Magic. Each are fundamentally unique and not just because of the associated spell list, adding both flavour and mechanical differentiation. Note that there is significant overlap for the spheres, many spells belong to, and are usable by, more than one sphere.
@@ -55,22 +55,22 @@ When a character takes any Power that gives them access to Divine spells, they m
 #### The Primal Sphere
 (Druid & Ranger spell lists)
 
-Primal Magic is driven by the user's connection to, and the power of, Nature. At the end of each Rest the caster must, in addition to preparing spells, commune with nature. This establishes their connection to primal power, granting them a value from +0 to +5.
+Primal Magic is driven by the user's connection to the power of nature, wherever it is they find themselves. At the end of each Long Rest the caster must, in addition to preparing spells, commune with nature to be empowered by the 'Verdance' of the current locale. Consult the Verdance table below, also found in the "Primal Spellcasting" Power, and your DM to calculate the Verdance you use for your Primal Spells in the coming day, as well as any Powers that modify the Verdance you can access.
 
-Which of the four categories the current environ is, is dictated by the DM. 
-- For locations bursting with nature (forests, coasts, swamps etc) their Spellcasting modifier might be +4/+5. 
-- For locations with a fair amount of nature (harvested fields, open sea, mushroom caves) its +2/+3. 
-- For locations with a low amount of nature (urban sprawl, empty caves, desert oases, cold tundra), it would be +1. 
-- For utterly barren locations like the deep desert or polar wastes, it would be 0.
+| Verdance | Boreal | Coastal | Deserts | Forests | Jungles | Plains | Mountains | Swamps | Underground |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Barren   | -1 | 1 | -1 | 0 | 1 | 1 | 0 | 0 | -1 |
+| Poor     | 0 | 2 | 0 | 1 | 2 | 2 | 1 | 1 | 0 |
+| Middling | 1 | 3 | 1 | 2 | 3 | 3 | 2 | 2 | 1 |
+| Rich     | 2 | 3 | 2 | 3 | 3 | 3 | 3 | 3 | 2 |
+| Abundant | 4 | 5 | 4 | 4 | 5 | 5 | 4 | 4 | 4 |
 
-When the power is one of two values, the caster makes a DC 10 Nature check to see if they get the higher value.
-
-The Primal Mage can freely choose from the entire Primal Sphere when preparing spells, limited as it is. Life is consistent in its tenacity, so is life magic. Limited in scope and steady in power.
+The Primal Mage can freely choose from the entire Primal Sphere when preparing spells, limited as it is. Life is consistent in its tenacity, so is life magic. Limited in scope but steady in power, caring little for the whims of the individual, but implaccable in its march.
 
 #### The Occult Sphere
 (Bard, Sorcerer & Warlock spell lists)
 
-Occult spells are always innate, esoteric knowledge plugged into the mind/body of the Sorcerer, and uses Charisma, one's force of personality, to wield the magic.
+Occult magic is that which refutes study, bends logic and breaks minds. Those that practice it rarely chose to do so, or came to use it through a myriad of unorthodox ways. Such spells are always Innate; esoteric knowledge carved into the mind and body of the Sorcerer. Occult spellcasting uses Charisma, one's force of personality, to wield the magic.
 
 #### Pact Magic
 Pact Magic while clearly is occult in nature, functions quite differently to other spellcasting Powers, as fundamentally the magic is derived from some other powerful individual known as a *Patron*. Not all who have the Patron power are provided with magic, the Pact Magic Power, but one needs a Patron to have Pact Magic.

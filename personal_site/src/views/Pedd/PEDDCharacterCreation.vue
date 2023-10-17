@@ -24,6 +24,7 @@
             <div id="racial-powers-container"></div>
             <div id="backgrounds-container"></div>
             <div id="background-powers-container"></div>
+            <div class="proficiencies-list"></div>
             <div id="role-container"></div>
         </div>
 

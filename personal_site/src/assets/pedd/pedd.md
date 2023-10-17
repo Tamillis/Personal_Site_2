@@ -11,3 +11,4 @@ Taking the content of the Fifth Edition Player's Handbook as a base (meaning, as
 
 Anything not mentioned is not changed as while this is a total homebrew makeover the base is still D&D 5e and you know what, that’s OK. It's a good base, and one we are all familiar with and that does a damn fine job, and by extending it, it means there's no need to repeat good material. It's all already there.
 
+Note that all in-game terms as defined in PEDD are capitalised, like 'Action', and that a corresponding entry in the Index (WIP) can be quickly found, but not necessarily all capitalised words are in-game terms. If I get the implementation going, each term's index entry will be quickly visible via pop-up.
