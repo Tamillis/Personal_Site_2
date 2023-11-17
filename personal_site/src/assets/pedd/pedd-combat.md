@@ -19,14 +19,16 @@ Health starts higher than HP that it replaces, and purposefuly progressely in sm
 ### Recovery
 There are a few changes to recovery.
 
-#### Short and Long Rests, and Sleep
+#### Short and Long Rests, Sleep and Downtime
 Short Rests and Long Rests are mostly unchanged, with the caveat that explicitely, yes, a Long Rest counts as a Short Rest. For this reason all Powers that key off of "A Short or Long Rest" now simply state "Short Rest". 
 
-Short Rests are 1 hour periods of light activity or rest.
+**Short Rests** are 1 hour periods of light activity or rest.
 
-Long Rests are 8 hour periods of light activity or rest.
+**Long Rests** are 8 hour periods of light activity or rest.
 
-Every Character must sleep for at least 6 hours every 24 hour period, unless some Power or racial feature says otherwise (such as Elves, who cannot sleep). Failure to do so means you gain a point of Exhuastion. Sleeping counts as resting, though not all rest needs to be sleep.
+Every Character must, in addition, **Sleep** for at least 6 hours every 24 hour period, unless some Power or racial feature says otherwise (such as Elves, who cannot sleep). Failure to do so means you gain a point of Exhaustion. Sleeping counts as Resting, though not all Rest needs to be sleep; say if you were keeping watch.
+
+**Downtime** - a third level of resting exists, Downtime, which is a 2 day+ period of non-adventuring activity. As Short Rests are part of Long Rests, Long Rests are part of Downtime, though many other activities can be gotten up to during Downtime. Just as in the base game, feel free to pursue professions, craft, carouse, or any other Downtime Activity.
 
 #### Recovering Health
 Hit Dice are also an older mechanic that is mostly vestigial. It too is removed. Instead, when Resting (Short or Long), you recover your Race's Baseline Health as a flat amount to your current Health, no more or no less.
@@ -48,7 +50,7 @@ The more you're knocked down, the more likely you are to stay down, forever.
 
 ### Defence
 To make characters easier to strike, meaning less spongey, and also to make combat more proactive and engaging; the Defence Stat replaces AC and is more flexible than a flat value, being made of three parts: 
-- a Base Defence value from your Race (typically 8)
+- a Base Defence value of 8 for Medium characters and 10 for Small characters.
 - an Armour value determined by worn Equipment
 - an Evasion value, your Reflexes to a minimum of 0 (which can be limited by worn Equipment).
 
@@ -60,6 +62,53 @@ Instead Defence is calculated when required from these three parts, depending on
 - **Stationary Defence** - Defence without the benefit of Evasion, often called "Touch AC" in other systems. Some effects target Stationary Defence, and surprised or unmoving targets only get their Stationary Defence.
 
 Remember that the Armour value also changes during play as you don and doff Equipment, and especially based on whether you Block with your Shield or not!
+
+#### Natural Armour
+Many creatures have Natural Armour, and so might you through strange Powers. Natural Armour grants an armour value, cannot be doffed and is always 'light', i.e. never limits Evasion. As per usual with armour, it does not stack, so to benefit from greater armour values, one must wear armour with a greater value than your natural armour.
+
+#### Weapons and Armour
+Weapons are a well known weakpoint of 5e and have been addressed many times. In fact, I'm more than happy to continue to use the homebrew I've long pinned to my own games; Weapon's Revised. PEDD uses it too. https://www.gmbinder.com/share/-NF9U-94H07DIQEtDu3-
+
+Armour is changed to the following:
+| Name | Cost | Armour | Property |
+| --- | --- | --- | --- |
+| Padded | 5gp | 1 | Light, Loud | 
+| Leather | 10gp | 1 | Light | 
+| Studded Leather | 45gp | 2 | Light | 
+| **Medium Armour** |
+| Hide | 10gp | 2 | Medium |
+| Chain shirt | 50gp | 3 | Medium |
+| Scale mail | 50gp | 4 | Medium, Loud |
+| Breastplate | 400gp | 4 | Medium |
+| Half plate | 750gp | 5 | Medium, Loud |
+| **Heavy Armour** |
+| Ring mail | 30gp | 4 | Heavy, Loud |
+| Chain mail | 75gp | 6 | Heavy, Loud |
+| Splint | 200gp | 7 | Heavy, Loud |
+| Plate mail | 1,500gp | 8 | Heavy, Loud |
+| **Auxilliary** |
+| Lobster Pot | 15gp | +1 | Medium, Helmet |
+| Great Helm | 15gp | +2 | Blinkered, Heavy, Helmet |
+| Buckler | 5gp | +1 | Light, Shield |
+| Shield | 10gp | +2 | Medium, Shield |
+| Tower Shield | 75gp | +3 | Heavy, Loud, Shield |
+
+**Light** - no limit on Evasion
+
+**Medium** - your Evasion cannot be greater than 2.
+
+**Heavy** - you cannot use Evasion in calculations of Defence.
+
+**Loud** - you have Disadvantage on Stealth checks.
+
+**Helmet** - worn on the head, you can only wear one helmet at a time
+
+**Blinkered** - you have Disadvantage on Perception checks
+
+**Shield** - equipped in the hand, you must use a Quick Action to Block to gain the bonus to Armour
+
+#### Cover
+Cover is unchanged from the base game, but worth re-iterating here. Cover is a bonus to your Defence, a +2 for 'Half Cover' and a +5 for 'Three Quarters Cover'. This is independent of Armour and Evasion, so consider it part of your Base Defence. Additionally, don't forget that these bonuses apply to Dexterity Saves as well! 
 
 ### One Action All At Once
 A radical change I've experimented a little with is to basic combat where, simply, all characters in a **Round** of combat have one **Action** (and a Bonus Action), and everyone "acts" at once, no initiative. No taking "Turns".
@@ -108,7 +157,7 @@ Also, to make martial combat spicier a variety of generally available tactical b
 - **Charge** - when you use your Action to Move half your Speed or more, and you turn no greater than 90 degrees, at the end of the Move you can make 1 Weapon Attack at Advantage as a Bonus Action.
 - **Run and Gun** - when you use your Action to Move, you can make 1 Ranged Weapon Attack as a Bonus Action at Disadvantage.
 - **Dodge** - as an action, you make a Reflex Saving Throw and if the result is higher than your Defence, it replaces your Defence value for the rest of the round
-- **Block** - as a Bonus Action, you raise your weapon or shield to gain the item's block value as Armour. This prevents you using that item as a weapon to attack. The Armour bonus lasts for the rest of the round
+- **Block** - as a Bonus Action, you raise your weapon or shield to gain the item's block value as Armour. This prevents you using that item as a weapon to attack. The Armour bonus lasts for the rest of the round.
 - **Parry** - if your weapon has the Parry Property, you make an attack action against an enemy who is making a melee attack against you. The roll is your Defense for the rest of this round, and also functions as a normal attack action. Resolve the enemy's attack against your new Defence, if its higher or even lower.
 - **Disengage** - as a Bonus Action, move 5ft without triggering Attacks of Opportunity. (Replaces 5e action "Disengage")
 - **Stand** - a Bonus Action to go from Prone to Standing.

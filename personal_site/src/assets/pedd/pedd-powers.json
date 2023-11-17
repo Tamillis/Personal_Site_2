@@ -1,0 +1,468 @@
+[
+    {
+        "name": "Action Surge",
+        "tag": [
+            "combat",
+            "utility"
+        ],
+        "preq": [
+            "Dexterity +1",
+            "Willpower +1"
+        ],
+        "desc": "You can push yourself beyond your normal limits for a moment. After your Action, you can take one additional Action.\n\nOnce you use this Power, you must finish a Short Rest before you can use it again."
+    },
+    {
+        "name": "Arcane Recovery",
+        "tag": [
+            "recovery",
+            "universal"
+        ],
+        "preq": [
+            "Arcane Spellcasting"
+        ],
+        "desc": "You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a Short Rest, you can choose expended Mana Reserve to recover. The Reserve can have a combined value that is equal to your highest available Magnitude, to a maximum of 6.\n\nFor example, if you have Mana III, you can recover up to three points of Reserve, such as three Magnitude I Reserve, or one Magnitude II Reserve and one Magnitude I Reserve, or one Magnitude III Reserve."
+    },
+    {
+        "name": "Bardic Inspiration",
+        "tag": [
+            "combat",
+            "social",
+            "utility",
+            "roll-effecting"
+        ],
+        "preq": [
+            "Charisma +1"
+        ],
+        "desc": "You can inspire others through stirring words or music. To do so, you use your bonus action to choose one character other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.\n\nOnce within the next 10 minutes, the character can roll the die and add the number rolled to one ability check, attack roll, or saving throw they make. The character can wait until after they roll the d20 before deciding to use the Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A character can have only one Bardic Inspiration die at a time.\n\nYou can use this Power a number of times equal to your Charisma. You regain any expended uses when you finish a Rest."
+    },
+    {
+        "name": "Blessed Warrior",
+        "tag": [
+            "cantrip",
+            "fighting-style",
+            "universal",
+            "utility"
+        ],
+        "preq": [
+            "Faith +1",
+            "Fighting Style"
+        ],
+        "desc": "You learn two cantrips of your choice from the divine sphere. Faith is your spellcasting ability for them."
+    },
+    {
+        "name": "Bountiful Luck",
+        "tag": [
+            "roll-effecting",
+            "universal"
+        ],
+        "preq": [
+            "Lucky"
+        ],
+        "desc": "Your people have extraordinary luck, which you have learned to mystically lend to your companions whenever you see them falter. You're not sure how you do it, you just wish it, and it happens. Surely a sign of fortune's favor!\n\nWhen an ally you can see within 30 feet of you rolls a 1 on the d20 for an attack roll, an ability check, or a saving throw, you can use your Bonus Action to let the ally reroll the die. The ally must use the new roll.\n\nWhen you use this Power, you can't use your Lucky racial trait before the end of your next turn."
+    },
+    {
+        "name": "Combat Expert",
+        "tag": [
+            "combat",
+            "utility"
+        ],
+        "preq": [
+            "Dexterity +1"
+        ],
+        "desc": "You can Engage one more enemy at a time, up to the maximum number possible for your Size. You can take this power 4 more times, for a total of 5. The Dexterity prerequisite increases by 1 each time."
+    },
+    {
+        "name": "Cunning Action",
+        "tag": [
+            "combat",
+            "movement",
+            "utility"
+        ],
+        "preq": [
+            "Dexterity +1"
+        ],
+        "desc": "Your quick thinking and agility allow you to move and act quickly. You can take the Dash, Disengage, or Hide actions as Bonus Actions instead."
+    },
+    {
+        "name": "Danger Sense",
+        "tag": [
+            "background",
+            "combat",
+            "exploration",
+            "roll-effecting",
+            "sense",
+            "defensive"
+        ],
+        "preq": [
+            "Perception +1"
+        ],
+        "desc": "You gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger. You have Advantage on Reflex saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be blinded, deafened, or incapacitated."
+    },
+    {
+        "name": "Darkvision",
+        "tag": [
+            "exploration",
+            "racial",
+            "sense"
+        ],
+        "preq": [
+            ""
+        ],
+        "desc": "You can see in dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+    },
+    {
+        "name": "Deepened Ki",
+        "tag": [
+            "combat",
+            "ki",
+            "utility"
+        ],
+        "preq": [
+            "After 6 Powers",
+            "Every 4th Power",
+            "Ki"
+        ],
+        "desc": "Increase the number of ki points you have access to by your Bonus. Your Ki save DC is also increased by your Bonus. If your Bonus is increased at some other point, remember to update the Ki gained from this Power. You can take this Power two more times for a total of 3 times, increasing your Ki and Ki Save DC by your Bonus each time."
+    },
+    {
+        "name": "Druidic Warrior",
+        "tag": [
+            "cantrip",
+            "fighting-style"
+        ],
+        "preq": [
+            "Faith +1",
+            "Fighting Style"
+        ],
+        "desc": "You learn two cantrips of your choice from the nature sphere. Your spellcasting ability for these spells is Verdance, as detailed in the [Verdance Table](/PEDD/Powers#Verdance-Table)."
+    },
+    {
+        "name": "Favoured Enemy",
+        "tag": [
+            "combat",
+            "exploration",
+            "roll-effecting",
+            "skill",
+            "utility",
+            "offensive",
+            "social"
+        ],
+        "preq": [
+            ""
+        ],
+        "desc": "You have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.\n\nChoose a type of favoured enemy: aberrations, beasts, celestials, constructs, dragons, demons, elementals, fell, fey, fiends, giants, jurors, lycanthropes, monstrosities, oozes, plants, sprites or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favoured enemies. You gain the following benefits:\n\n- You gain your Bonus to damage rolls with weapon attacks against characters of the chosen type. Additionally, you have Advantage on Survival checks to track your favoured enemies, as well as on Intelligence checks to recall information about them.\n- When you gain this Power, your studies in the language of choice spoken by your favoured enemies (or reasonable alternative) comes to fruition and you become fluent in it. You gain proficiency in that language skill.\n\nYou can take this Power two more times, choosing a different enemy type and language each time."
+    },
+    {
+        "name": "Fighting Style",
+        "tag": [
+            "combat",
+            "crowd-control",
+            "defensive",
+            "movement",
+            "offensive",
+            "resource",
+            "utility"
+        ],
+        "preq": [
+            ""
+        ],
+        "desc": "You adopt a particular style of fighting as your specialty. Choose one Fighting Style Power you have the prerequisites for. You can't take the same Fighting Style Power more than once, but if you take this Power again you can choose a different Fighting Style."
+    },
+    {
+        "name": "Finder's Magic",
+        "tag": [
+            "background",
+            "combat",
+            "exploration",
+            "offensive",
+            "spellcasting",
+            "utility"
+        ],
+        "preq": [
+            "Perception +1"
+        ],
+        "desc": "You learn the Hunter's Mark and Locate Object spells that you can cast without expending Mana. Once you cast either spell with this trait, you can't cast that spell again until you finish a Long Rest. Perception is your Spellcasting Ability for these spells."
+    },
+    {
+        "name": "Grudge Bearer",
+        "tag": [
+            "background",
+            "combat",
+            "exploration",
+            "racial",
+            "roll-effecting",
+            "utility"
+        ],
+        "preq": [],
+        "desc": "You have a deep hatred for a particular kind of creature. Choose your foes, a type of creature to bear the burden of your wrath: aberrations, beasts, celestials, constructs, dragons, demons, elementals, fell, fey, fiends, giants, lycanthropes, monstrosities, oozes, plants, sprites or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs). You gain the following benefits:\n\n- During the first round of any combat against your chosen foes, your attack rolls against any of them have Advantage.\n- When any of your chosen foes makes an opportunity attack against you, it makes the attack roll with Disadvantage.\n- Whenever you make an Arcana, History, Nature, or Religion check to recall information about your chosen foes, you gain Proficiency in the roll if you don't already, Expertise if you are Proficient, or Advantage if you have Expertise."
+    },
+    {
+        "name": "Improved Minor Illusion",
+        "tag": [
+            "exploration",
+            "cantrip"
+        ],
+        "preq": [
+            "Savant - Illusion"
+        ],
+        "desc": "You learn the Minor Illusion cantrip. If you already know this cantrip, you learn a different Arcane Sphere cantrip of your choice. When you cast Minor Illusion, you can create both a sound and an image with a single casting of the spell."
+    },
+    {
+        "name": "Improved Rage",
+        "tag": [
+            "combat",
+            "offensive",
+            "utility"
+        ],
+        "preq": [
+            "After 3 Powers",
+            "Once every 4th Power",
+            "Rage",
+            "Strength +2"
+        ],
+        "desc": "While raging, when you make a melee weapon attack using Strength, you gain a +2 Bonus to the damage roll, and your Rage doesn't end early unless you will it to with a Bonus Action.\n\nEvery time you take this power again, the bonus to damage, duration and strength prerequisite increase by 1."
+    },
+    {
+        "name": "Learned",
+        "tag": [
+            "background",
+            "exploration",
+            "skill"
+        ],
+        "preq": [
+            "History / Arcana / Religion Proficiency"
+        ],
+        "desc": "You gain Expertise in History, Arcana and Religion if you had Proficiency with each. As you gain Proficiency with each of these skills later, you also gain Expertise in them from Learned."
+    },
+    {
+        "name": "Mariner",
+        "tag": [
+            "combat",
+            "defensive",
+            "fighting-style",
+            "utility"
+        ],
+        "preq": [
+            "Fighting Style",
+            "Strength +1"
+        ],
+        "desc": "As long as you are not wearing heavy armour or using a shield, you gain the following benefits:\n\n- fighting in water does not confer Disadvantage to your attacks.\n- your swim speed and climbing speed is doubled to a maximum of your Speed (by default your swim and climbing peeds are 1/4 of your Speed).\n- you gain a +1 Bonus to your Evasion."
+    },
+    {
+        "name": "Minor Alchemy",
+        "tag": [
+            "exploration"
+        ],
+        "preq": [
+            "Savant - Transmutation"
+        ],
+        "desc": "When you studied transmutation, you learned to temporarily alter the physical properties of one nonmagical object, changing it from one substance into another. You perform a special alchemical procedure on one object composed entirely of wood, stone (but not a gemstone), lead, iron or other common metals, or silver, transforming it into a different one of those materials. For each 10 minutes you spend performing the procedure, you can transform up to 1 cubic foot of material. After 1 hour, or until you lose your concentration (as if you were concentrating on a spell), the material reverts to its original substance."
+    },
+    {
+        "name": "Minor Conjuration",
+        "tag": [
+            "exploration"
+        ],
+        "preq": [
+            "Savant - Conjuration"
+        ],
+        "desc": "You can use your Action to conjure up an inanimate object in your hand or on the ground in an unoccupied space that you can see within 10ft of you. This object can be no larger than 3ft on a side and weigh no more than 10lbs, and its form must be that of a nonmagical object that you have seen. The object is visibly magical, radiating dim light out to 5ft.\n\nThe object disappears after 1 hour, when you use this Power again, or if it takes or deals any damage, after that damage has been taken / dealt."
+    },
+    {
+        "name": "Mist Mad",
+        "tag": [
+            "cantrip",
+            "combat",
+            "defensive",
+            "exploration",
+            "movement",
+            "offensive",
+            "racial",
+            "skill",
+            "stat",
+            "utility"
+        ],
+        "preq": [],
+        "desc": "Many Gnomes are cautioned to avoid the Mists at all costs, and many heed those wise words. Those that don't are often doomed to be hypnotized by the Mist's maddening swirls, and be drawn deep within. Those that survive are inevitably deeply changed, and far from home. You have several major mutations warping and twisting your body in many locations, which have a collective effect. The effect of these mutations is not only to make you look like the horror that peasants tell tales of to frighten their children, enough to even make Mistdivers flinch at your visage, but one of the following;\n- **Bulging Skin-Bursting Muscles** - you ignore the heavy property of weapons, you gain proficiency in Athletics, and your Strength is increased by 1\n- **Pawed digitigrade Hooves and Tail** - your movement speed is now 35ft, you gain proficiency in Acrobatics, and your Dexterity is increased by 1\n- **Armoured Shell and Scales** - you gain Natural Armour of 5. You are resistant to Slashing damage, and your Fortitude is increased by 1.\n- **Headful of Mismatched Eyes** - your passive perception is increased by 5, you gain proficiency in Observation, and your Perception score is increased by 1.\n- **Hypnotic Bioluminescence** - you know the Friends cantrip, using your Charisma to cast the spell, you gain proficiency in Persuasion, and your Charisma score is increased by 1."
+    },
+    {
+        "name": "Natural Explorer",
+        "tag": [
+            "combat",
+            "exploration",
+            "roll-effecting",
+            "utility"
+        ],
+        "preq": [
+            "Perception +1"
+        ],
+        "desc": "You are a master of navigating one type of natural environment, and you react with swift and decisive action when attacked in such regions. Choose one type of favoured terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or underground. When in such terrain you have the following benefits:\n\n- You ignore difficult natural terrain of that environment.\n- You have Advantage on Initiative rolls.\n- Your first Attack in a combat has Advantage.\n- Verdance is one higher for you in your terrain, if you have Primal Spellcasting (up to a maximum of 5).\n\nWhile traveling in your favoured terrain, you gain the following benefits:\n\n- Difficult terrain doesn't slow your group's travel, and your group can move stealthily at a normal pace.\n- Your group can't become lost except by magical means.\n- Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.\n- When you forage, you find twice as much food as you normally would.\n- While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area."
+    },
+    {
+        "name": "Rage",
+        "tag": [
+            "combat",
+            "damage-reduction",
+            "offensive",
+            "roll-effecting",
+            "utility"
+        ],
+        "preq": [
+            "Strength +1, Willpower +1"
+        ],
+        "desc": "In battle, you fight with primal ferocity. You can enter a rage as a Bonus Action.\n\nWhile raging, you gain the following benefits if you aren't wearing heavy armor:\n\n- You have advantage on Strength checks and Fortitude saving throws.\n- When you make a melee weapon attack using Strength, you gain a +1 Bonus to the damage roll.\n- You have resistance to bludgeoning, piercing, and slashing damage.\n- If you are able to cast spells, you can't cast them or concentrate on them while raging.\n- Your Rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a Bonus Action.\n\nOnce you have raged a number of teams equal to your Willpower, you must finish a Long Rest before you can Rage again."
+    },
+    {
+        "name": "Sculpt Spells",
+        "tag": [
+            "combat",
+            "utility"
+        ],
+        "preq": [
+            "Savant - Evocation"
+        ],
+        "desc": "You can create pockets of relative safety within the effects of your evocation spells. When you cast an evocation spell that affects other characters that you can see, you can choose a number of them equal to 1 + the spell's Magnitude. The chosen characters automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save."
+    },
+    {
+        "name": "Second Wind",
+        "tag": [
+            "combat",
+            "healing"
+        ],
+        "preq": [
+            "Fortitude +1"
+        ],
+        "desc": "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a Bonus Action to regain Health equal to 1d10 + your Bonus.\n\nOnce you use this Power, you must finish a Short Rest before you can use it again."
+    },
+    {
+        "name": "Secrets of the Land",
+        "tag": [
+            "exploration",
+            "recovery",
+            "spellcasting",
+            "utility"
+        ],
+        "preq": [
+            "Primal Spellcasting"
+        ],
+        "desc": "Your magic is influenced by the druidic practicies, mysterious rites and primal secrets of a land that you bind yourself to, even as you carry its power wherever you go.\n\n**Land Spells** - Choose 2 Primal sphere spells you can cast that represent the land that you bound yourself to, they are now Innate Spells for you.\n\n**Natural Recovery** - You can regain some of your magical energy by sitting in meditation and communing with nature. During a Short Rest, you choose expended Mana to recover up to a third of your rank in the Mana Power, rounded up. If you're Rank 3 in Mana, you recover Rank 1 Mana, that is to say 2 Magnitude I points. If you're Rank 7 in Mana, you recover Rank 2 Mana: 4 Magnitude I points and 2 Magnitude II points. You can't use this Power again until you finish a Long Rest.\n\nWhen you take this Power again, you gain the benefit of Land Spells. You can take this Power 2 more times, up to 3 times."
+    },
+    {
+        "name": "Stout Resiliance",
+        "tag": [
+            "damage-reduction",
+            "exploration",
+            "racial",
+            "utility"
+        ],
+        "preq": [],
+        "desc": "You have advantage on saving throws against poison, and you have resistance to poison damage."
+    },
+    {
+        "name": "Swift",
+        "tag": [
+            "combat",
+            "exploration",
+            "movement",
+            "utility"
+        ],
+        "preq": [
+            "Dexterity +1"
+        ],
+        "desc": "You're faster on your feet, or however else it is you locomote, than others. Increase your Speed by 10ft and your travel speed by 1 mile. When you take this Power again, increase the Dexterity prerequise by 1 for each Rank you have in this Power. You can take this Power 2 more times, up to 3 times, though each time you take this Power the Dexterity prerequisite increases by one."
+    },
+    {
+        "name": "Tactical Wit",
+        "tag": [
+            "combat",
+            "stat",
+            "utility"
+        ],
+        "preq": [
+            "Intelligence +1"
+        ],
+        "desc": "Your keen ability to assess tactical situations allows you to act quickly in battle. You can give yourself a bonus to your initiative rolls equal to your Intelligence."
+    },
+    {
+        "name": "Tinkerer",
+        "tag": [
+            "background",
+            "exploration",
+            "racial",
+            "skill",
+            "utility"
+        ],
+        "preq": [],
+        "desc": "You gain proficiency with Skill Tinker's Tools. Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (1 Health, 5 Defence). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your Action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose one of the following options:\n\n- **Clockwork Toy**. This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents.\n- **Fire Starter**. The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.\n- **Music Box**. When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.\n- At your DM's discretion, you may make other objects with effects similar in power to these. The Prestidigitation cantrip is a good baseline for such effects."
+    },
+    {
+        "name": "Turn Undead",
+        "tag": [
+            "combat",
+            "miracle",
+            "utility"
+        ],
+        "preq": [
+            "Divine Domain"
+        ],
+        "desc": "As an Action, you Channel Divinity and present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30ft of you must make a Willpower saving throw. If the undead fails its saving throw, it is turned for 1 minute or until it takes any damage.\n\nA turned undead must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30ft of you. For its Action, it can only Move or try to escape from an effect that prevents it from Moving. If there's nowhere to move, the undead can use the Dodge action."
+    },
+    {
+        "name": "Unleashed Wild Shape",
+        "tag": [
+            "combat",
+            "exploration",
+            "utility"
+        ],
+        "preq": [
+            "After 3 Powers",
+            "Once every 4th Power",
+            "Wild Shape",
+            "Willpower +3"
+        ],
+        "desc": "You dive more deeply into the power of the animal wild, and you gain the following benefits:\n\n- Increase Challenge Rating limit of your Wild Shape by 1/2, to a maximum of 3\n- Increase the number of hours you can stay in Wild Shape by 1, to a maximum of 6\n- Choose one category: flying speed, burrowing speed, swimming speed, dragon, elemental, fell, fey, giant, lycanthrope, monstrosity, ooze, plant. You can now Wild Shape into a creature that has this kind of movement that belongs to a category you can Wild Shape into, or belongs to the new category, that you have studied, as with normal Wild Shape."
+    },
+    {
+        "name": "Warding Flare",
+        "tag": [
+            "combat",
+            "miracle",
+            "offensive",
+            "roll-effecting",
+            "utility"
+        ],
+        "preq": [
+            "Divine Domain"
+        ],
+        "desc": "You gain the Light cantrip. If you already know this cantrip, you learn a different Divine Sphere cantrip of your choice.\n\nYou can Channel Divinity and interpose divine light between yourself and an attacking enemy. When you are attacked by a character within 30ft of you that you can see, you can use your Bonus Action and impose Disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be blinded is immune to this Miracle.\n\nYou can use this Miracle a number of times equal to your Faith (a minimum of once). You regain all expended uses when you finish a Rest."
+    },
+    {
+        "name": "Weapon Mastery",
+        "tag": [
+            "background",
+            "combat",
+            "skill",
+            "utility"
+        ],
+        "preq": [
+            ""
+        ],
+        "desc": "You have practiced extensively with a variety of weapons. You gain proficiency with three Martial Skills of your choice. You can take this Power any number of times."
+    },
+    {
+        "name": "Wild Shape",
+        "tag": [
+            "combat",
+            "exploration",
+            "movement",
+            "sense",
+            "spell-like",
+            "utility"
+        ],
+        "preq": [
+            "Primal Spellcasting",
+            "Willpower +1"
+        ],
+        "desc": "You can use your Action to magically assume the shape of a Beast that you have learned before (what constitutes 'learning a creature' depends on the creature and the circumstances, typically an hour of unobtrusive observation).\n\n- You can use this Power a number of times equal to your Willpower. You regain expended uses when you finish a Short Rest.\n- You can transform into any beast that has a Challenge Rating of 1/2 or lower that doesn't have a flying, burrowing or swimming speed.\n- You can stay in a wild shape for 1 hour. You then revert to your normal form unless you expend another use of this Power. You can revert to your normal form earlier by using a Bonus Action. You automatically revert if you fall unconscious, drop to 0 Health, or die.\n\nWhile you are transformed, the following rules apply:\n\n- Your Strength, Dexterity, Accuracy and Perception statistics are replaced by those of the Creature. You retain your Intelligence and Charisma statistics, and also retain all of your skill and saving throw proficiencies, in addition to gaining those of the Creature. If the Creature has the same Proficiency Bonus as you, but the Bonus in its stat block is higher than yours, use the Creature's Bonus instead of yours. If the Creature has any legendary or lair actions, you can't use them.\n- When you transform, you assume the beast's full Health. When you revert to your normal form, you return to the Health value you had before you transformed. However, if you revert as a result of dropping to 0 Health, any excess damage carries over to your normal form, For example, if you take 10 damage in a form that has only 1 Health left, you revert and take 9 damage. As long as the excess damage doesn't reduce your normal form to 0 Health, you aren't knocked unconscious.\n- You can't cast spells, and your ability to speak or take any action that requires hands or humanoid mouth is limited to the capabilities of your form. Transforming doesn't break your Concentration on a spell you've already cast, however, or prevent you from taking actions that are part of a spell, such as Call Lightning, that you've already cast.\n- You retain the benefit of any Powers and can use them if the new form is physically capable of doing so. However, as your senses are replaced, you can't use any of your special senses, such as darkvision, unless your new form also has them.\n- You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the GM decides whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form."
+    }
+]

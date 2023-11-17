@@ -2,12 +2,24 @@
 
 Step-By-Step Character creation in PEDD looks like this:
 1. *Create a Character Concept* - in a phrase, define the core of your character.
-2. *Determine Initial Statistics & Resistances* - the capabilities of your character's body and mind
-3. *Choose a Race* - the circumstances of your being, primarily affects Stats. All handbook races, and some more, are available below. See "Converting Races, Background and Classes" section for details on 5e content that doesn't appear here.
-4. *Choose a Background* - the circumstances of your way of life, primarily affects Skills. All handbook backgrounds, and some more, are available below.
-5. *Choose your Role* - the way that you adventure and tackle the world. You define your Role with a phrase and a vision, and through it choose your initial Equipment and Powers (see [Powers Progression](https://bellaby.co.uk/pedd/pedd-powers)).
-6. *Finalize Equipment* - chose and collate the starting Equipment you have from your Background and Role. The use of equipment is identical to 5e.
-7. *Come Together* - [just like the base game](https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#6ComeTogether)
+2. *Determine Initial Statistics & Resistances* - the capabilities of your character's body and mind, assigning an even spread of initial values: -2, -1, 0, 0, 1, 2.
+3. *Choose a Race* - the circumstances of your being. Choose one of the Race cards below, which gives the following base statistics and features:
+   1. Stat (or Resistance) changes - typically a +2, +1 and -1 
+   2. Base Health, Age, Size, Speed and Senses characteristics, and perhaps a few racial abilities
+   3. A pick of 2 of the Racial Powers available to that Race
+   4. You also get 2 general skills and one language of your choice - your childhood skills and native language.
+4. *Choose a Background* - the circumstances of your way of life. All handbook backgrounds, and some more, are available as Background cards below. 
+   1. Stat (or Resistance) Increases - typically +1 to 2 Stats
+   2. 6 Trained Skills
+   3. Initial equipment
+   4. One "Background Power" you can freely chose from the list of Background Powers, with one suggested.
+5. *Choose your Role* - the way that you adventure and tackle the world. You define your Role with a phrase and a vision, and this could be the same or similar to your Concept
+   1.  Final Stat increases - +1 to a Stat and +1 to a Resistance of your choice
+   2.  Final Skills - a number of Skills of your choice equal to your Character's final Intelligence
+   3.  A set of 4 Martial Skills to equip your Character with.
+   4.  Your initial 3 adventuring Powers (see [Powers Progression](https://bellaby.co.uk/pedd/pedd-powers)), chosen from any non-racial Power. 
+6. *Finalize Equipment* - after Race, Background and Role all that is left is to chose your starting Equipment from one of the starting collections and a pack of your choice that you find yourself with just before the game begins. The use of equipment is identical to 5e.
+7. *Come Together* - last but not least, you put everything together [just like the base game](https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#6ComeTogether)
 
 As you work your way through these steps, select or input your inputs. This document doubles as a character creator for PEDD!
 
@@ -94,7 +106,7 @@ Whenever 5e asks for a save of a certain kind, using the following conversion:
 
 - **Health** - how much damage you can take before entering the Dying state. Your Race provides your **Base Health** and your **Fortitude** + **Willpower** is added on top to determine your total Health. Health is explicitly a combination of physical and emotional wear and tear, and the ability to roll with and carry on from blows.
 - **Defence** - how difficult you are to harm. **Base Defence** + **Armour** + **Evasion**
-  - **Base Defence** - determined by your Race (around 8), or overridden by some Powers.
+  - **Base Defence** - 8 for Medium characters and 10 for Small characters.
   - **Armour** - determined by the sum Defence of worn equipment.
   - **Evasion** - your **Reflex** value to a minimum of 0, can be modified by some Powers, can be limited by worn equipment.
 - **Speed** - unchanged, determined by Race
@@ -127,24 +139,25 @@ WIP - this will be a browse-able scrolling list of Powers available to your Race
 
 <div id="racial-powers-container"></div>
 
-#### Racial Skills
+#### Childhood Skills & Language
 Freely pick 2 general skills, representing your childhood skills, from the Skills & Proficiency section below, and additionally take the 'Language, one of' Skill, noting your Childhood Language on your character sheet. By default in my games in the Materium Existentiae, your Childhood Language will be Imperial Common.
 
 ### Backgrounds
 WIP - this will be a browse-able scrolling list of the Backgrounds.
 
-Backgrounds will be where Characters choose their skills from the given list.
+Backgrounds are the primary source of non-martial skills, as they're literally the skills you pursued professionally.
+
 <div id="backgrounds-container"></div>
+
+#### Background Stats
+As part of your background, you will gain +1 to two Stats.
 
 #### Background Powers
 WIP - a shortlist of all Powers that can be taken as your Background Power.
 
-Choose a Power from your time as your background. It must be related to the activities of your background, so confer with your DM (me).
+Choose a Power from your time as your background. It must be related to the activities of your background.
 
 <div id="background-powers-container"></div>
-
-#### Background Skills
-Pick 4 trained skills & 2 tool/weapon skills, any of which can be "down traded" for general skills, and your Intelligence x number of additional skills (min 0) from the Skills & Proficiency section below.
 
 ### Skills & Proficiency
 Another part of PEDD is the flattening of the odd little distinct yet related categories of "Skills, Tools, Languages and Weapon & Armor Proficiencies". They all are now "Skills" in which you have "Proficiency", or not. Being Proficienct means being able to apply your Bonus.
@@ -155,7 +168,7 @@ Body, representing proficiency with unarmed combat, has been introduced as a Sim
 
 In PEDD no Skill is automatically associated with a Stat, though there are suggestions as naturally certain Skills tend to be handled by certain Stats. However if played well, you can Intimidate with Charisma using guile, Stealth with Intelligence using knowledge of the terrain and the enemy, and do Acrobatics with Accuracy while juggling, depending on how you use the Skill. The GM and the table will decide if a combination is valid, or if another combination would be better.
 
-**Note** for weapon attacks, the Stat used is fixed: Strength for Melee, Accuracy for Ranged (unless a property of the weapon or some Power allows you to choose another Stat).
+**Note** for weapon attacks, the Stats used are fixed: Strength for Melee, Accuracy for Ranged (unless a property of the weapon or some Power allows you to choose another Stat).
 
 Skills are primarily earned by your Background, the skills you learned to do during your profession, but also from your Role: and some racial Powers also give skills, those in born natural abilities of a race.
 
@@ -203,21 +216,27 @@ WIP - turn the below into a list of selectable skills / automatically selected b
 
 </div>
 
+#### General, Trained and Martial Skills
 For ease of use, skills are separated into four groups; 
 - **General Skills** - which most of the time anyone can attempt the actions that would be governed by this skill even if they're not proficient.
-- **Simple Weapons** - a subset of general skills for "general" weapons, and includes light-armour and shields.
 - **Trained Skills** - which most of the time you cannot attempt the actions that would be governed by this skill unless proficient.
-- **Martial Skills** - a subset of Trained Skills for "Trained" weapon & armour classes.
+- **Martial Skills** - skills with weapons, armour and shields. A subset exists for General Skills, i.e. "Simple Weapons", and for Trained Skills, i.e. "Skilled Weapons".
 
 This is not to say anyone can attempt all General Skill checks (proficient or not) or that without proficiency you can never attempt any Trained Skill check, as it depends on the scenario and is a DM (me) call, which players can argue in either direction as best fits the understanding of the table.
 
+If you gain a Skill that you already have proficiency in, you can pick a different skill of that category (General, Trained, or Martial).
+
+#### Martial Skill Prerequisites and Downgrading Skills
 *Certain Martial Skills marked with an * require proficiency in other skills before they can be taken. 
 - Heavy Armour requires Medium Armour which requires Light Armour. 
 - Battle-Axes and Mauls require Clubs & Axes.
 - Heavy Blades requires Blades which requires Knives.
 - Pole-Arms requires Spears
 
-#### General Skills (Suggested Stat)
+If a Background grants you a skill proficiency in a Skill you don't have the prerequisites for, "downgrade" the Skill to its prerequisite (unless, during character creation, you get the Skill from elsewhere).
+
+#### General Skills 
+The suggested stat to base the skill check with is in brackets, though this is merely a suggestion.
 
 <div class="proficiencies-list">
 
@@ -235,7 +254,8 @@ This is not to say anyone can attempt all General Skill checks (proficient or no
 
 </div>
 
-#### Simple Weapons
+#### General Martial Skills
+"Simple Weapons"
 
 <div class="proficiencies-list">
 
@@ -272,7 +292,8 @@ This is not to say anyone can attempt all General Skill checks (proficient or no
 
 </div>
 
-#### Martial Skills
+#### Trained Martial Skills
+"Martial Weapons"
 
 <div class="proficiencies-list">
 
@@ -293,12 +314,12 @@ This is not to say anyone can attempt all General Skill checks (proficient or no
 
 A special Power, “Aptitude I/II/III”, increases the value of your Bonus to +3/+4/+5.
 
-**Expertise** - Abilities with Bonus can gain Expertise to be grant effectively a double Bonus. Every area of the game that grants Expertise should only do so when that area already has a Bonus, otherwise it is treated as a Bonus. An area of the game which already benefits from Expertise cannot benefit from it again.
+**Expertise** - Abilities with Bonus can gain Expertise to be grant effectively a double Bonus. Every area of the game that grants Expertise should only do so when that area already has a Bonus, otherwise it is treated as a Bonus. An area of the game which already benefits from Expertise cannot benefit from it again. As weapons are just another kind of Skill, Martial Skills, you can benefit from Expertise with them.
 
 In other words, on a roll, you will never get more than your Bonus or Expertise in addition to your Stat increase, and the maximum possible increase to a dice roll is +15 (+5 Stat, +5 Bonus x2 from Expertise).
 
 ### Role
-Define your Role, a single evocative phrase or demonym that is the sum of what it is that you *do* as an adventurer.
+Define your Role, a single evocative phrase or demonym that is the sum of what it is that you *do* as an adventurer.  This might well be the same as or a subset of your Concept.
 
 For example:
  - The Mage of Iron
@@ -312,24 +333,65 @@ For example:
 WIP - Role input
 <div id="role-container"></div>
 
-And choose 3 Role powers from PEDD Powers: one of which must be a `combat` Power, and one of which must be an `exploration` Power. Use the tags to help you.
+#### Role Statistics
+You get one final Stat increase from your Role, a +1 to one Stat of your choice and a +1 to one Resistance of your choice.
+
+#### Role Powers
+The main purpose of a Role is to embody what kind of Adventurer you are, and the powers to facilitate that are paramount. As such for your Role choose 3 Powers from PEDD any non-racial Powers: one of which must be a `combat` Power, and one of which must be an `exploration` Power. Use the tags to help you.
+
+<div id="role-picker-container"></div>
+
+
+#### Role Martial Skills
+Combat is an inevitable part of adventure. In addition to any racial or background skills, as part of your Role you may freely choose 4 Martial Skills that you have the prerequisites for. These are the arms and armour of your Role, so be thematic.
+
+#### Intelligence Skills
+Including the skills granted by your race, background and role so-far, you also gain proficiency in a number of Skills equal to your Intelligence, to a minimum of 0. This is done now as your Intelligence Stat is now fixed, but consider these extra skills you've gained across your entire life, through childhood, your background and even recently as an adventuerer. 
+
+You can pick freely from the Skills & Proficiency section.
 
 ### Equipment
 Take a note of the equipment you already have from your background, and then choose one set of equipment that fits the image of your Role:
+
+Note that any martial weapon choice can be downgraded to a simple weapon, and chain mail can be downgraded to leather armour.
 
 WIP - selectable cards where each card lists what equipment choices the set has
 <div id="equipment-list">
 
 - The Fighter
+  - Chainmail, a shield, 3 Martial Weapons of your choice, 2 Simple weapons of your choice
 - The Rogue
+  - Leather Armour, a melee martial weapon of your choice, a ranged martial weapon of your choice, a simple weapon of your choice, Tools (Thieves' / Leatherworker's / Woodcarver's)
 - The Wizard
+  - a staff, a wand, spellcasting components, Tools (Alchemist's / Herbalist's)
 - The Tinker
+  - Light armour, Simple Weapon, Tools, Money
 - The Destitute
+  - a knife, nothing extra
 - The Cleric
+  - medium armour, simple weapon, holy symbol
 - The Druid
+  - medium armour, shield, simple weapon, druidic focus
 - The Warlock
+  - light armour, martial weapon, occult wand
 
 </div>
+
+And, a pack of your choice:
+
+<div class="proficiencies-list">
+
+- Burglar's Pack
+- Diplomat's Pack
+- Dungeoneer's Pack
+- Entertainers's Pack
+- Explorer's Pack
+- Priest's Pack
+- Scholar's Pack
+
+</div>
+
+Weapons and armour are covered in [Weapons & Armour in PEDD/Combat](bellaby.co.uk/pedd/combat#weapons-and-armour)
 
 ### Converting Races, Backgrounds and Classes
 
@@ -338,9 +400,7 @@ First, any and all Features can be taken as written so long as any areas of the 
 
 **Ability Score Increases** - any "Ability Score Increase" features are constrained to, at maximum, two +1's in the stated abilities. Any base-race - subrace combinations with 3 or more ability score increases only increase 2 Stats by +1, and you can choose which two. Any increases to Dexterity can instead be increases to Accuracy. Any increases to wisdom are instead increases to your choice of Perception or Willpower.
 
-**Perception Proficiency** - any feature that gives proficiency in perception instead grants the Keen Sense Power:
-
-**Keen Senses** - choose one of the senses (sight, hearing, touch, taste, smell or psychic). You add your Bonus to any Perception checks for this sense, when no Skill is in use. You can take this Power again for different senses.
+**Perception Proficiency** - any feature that gives proficiency in perception instead grants the Keen Sense Power.
 
 **Saving Throw Proficiency** - any feature that gives a saving throw proficiency instead gives +1 to the corresponding Resistance (see [Converting Saves](#converting-saves))
 
@@ -350,7 +410,7 @@ Races have been tweaked in a number of ways. Go through the following steps to c
 1. Use the original Age, Size and Speed. Add a description for the race in the Materium Existentiae.
 2. Adjust the Attribute Increase feature to reflect the pattern: ["A Stat +2", "Another Stat +1", "A third Stat -1", "A Resistance +1"]. Adjust using other races as examples if necessary. Combine sub-races if necessary.
 3. Add Senses, this may include darkvision if it is a required part of the fantasy of the race.
-4. Introduce Baseline Health (default: 6 base, -1 for small, +1 for large, -2 for weak, +2 for strong) and Base Defence statistics (default 8, +2 for small, -2 for large, +1 for evasive, -1 for clumsy/slow)
+4. Introduce Baseline Health (default: 6 base, -1 for small, +1 for large, -2 for weak, +2 for strong) and Evasion bonus or malus for graceful / bulky races respectively.
 5. Remove any Skill proficiencies not distinctly tied to the physicality of the race (such as weapon or tool proficiencies)
 6. Remove all other features and make them the Racial Powers options for that Race, including from all sub-races.
 7. Create a list of Racial Powers from the removed Features, converting each Feature to a Power, and include any other racial powers to that list that should apply (check with your GM). If a Racial Power is iconic (it cannot be removed without intrinsically damaging the fantasy of the race), keep it as a named feature of the race. (Such as Lucky, for the Halfling).
