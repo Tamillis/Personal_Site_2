@@ -21,7 +21,9 @@
             <div id="bonds-ideals-flaws"></div>
             <div id="stats"></div>
             <div id="races-container"></div>
-            <div id="racial-powers-container"></div>
+            <div id="racial-powers-container">
+                <PEDDPower :powers="racialPowers" />
+            </div>
             <div id="backgrounds-container"></div>
             <div id="background-powers-container"></div>
             <div class="proficiencies-list"></div>
@@ -35,10 +37,16 @@
 import { putMdinElement } from '../../assets/functionality';
 import { onMounted, ref } from 'vue';
 import PeddLinks from '../../components/PeddLinks.vue';
+import PEDDPower from './PEDDPower.vue';
+import powers from '../../assets/pedd/pedd-powers.json';
+
+let racialPowers = powers.filter(p => p.tag.includes("racial"));
 
 let creatorMode = ref(false);
 
-onMounted(() => putMdinElement('../src/assets/pedd/pedd-character-creation.md', 'pedd'));
+onMounted(() => {
+    putMdinElement('../src/assets/pedd/pedd-character-creation.md', 'pedd')
+});
 
 function toggleCreator() {
     creatorMode.value = !creatorMode.value;
