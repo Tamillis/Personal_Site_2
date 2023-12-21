@@ -2,7 +2,7 @@
     <section class="section bg-black-transparent-0p3">
         <h1 class="main-title">P.E.D.D.</h1>
         <h2 class="subsubtitle text-centre no-decoration">Character Creation</h2>
-        
+
         <div class="centre width-fit">
             <input type="checkbox" id="creator" class="radioQ" :value="creatorMode" @change="toggleCreator">
             <label for="creator"> - Character Creator Mode</label>
@@ -15,14 +15,39 @@
         </div>
 
         <div class="main-text inset" v-show="creatorMode">
-            <p>TODO: setup divs here so that it functions like the character creator standalone</p>
-            <div id="character-name"></div>
-            <div id="character-concept"></div>
-            <div id="bonds-ideals-flaws"></div>
-            <div id="stats"></div>
-            <div id="races-container"></div>
-            <div id="racial-powers-container">
-                <PEDDPower :powers="racialPowers" />
+            <div id="character-name">
+                <h2>Character Name: </h2>
+                <input id="character-name" placeholder="..." />
+            </div>
+            <div id="character-concept">
+                <h2>Character Concept: </h2>
+                <input id="character-name" placeholder="..." />
+            </div>
+            <div id="bonds-ideals-flaws" class="flex gap-1r">
+                <div>
+                    <h2>Bond/s: </h2>
+                    <input id="character-name" placeholder="..." />
+                </div>
+                <div>
+                    <h2>Ideal/s: </h2>
+                    <input id="character-name" placeholder="..." />
+                </div>
+                <div>
+                    <h2>Flaw/s: </h2>
+                    <input id="character-name" placeholder="..." />
+                </div>
+            </div>
+            <div id="stats">
+                <h2>Stats</h2>
+                <textarea cols="100" rows="1">Here be, in time, automatic stats</textarea>
+            </div>
+            <h2>Races: <span id="chosen-race">{{ chosenRace }}</span></h2>
+            <div id="races-container" class="card-container">
+                <PEDDRace v-for="race in raceCards" style="width:50%" :race="race" @click="chooseRace(race)"/>
+            </div>
+            <h2>Racial Powers:</h2>
+            <div id="racial-powers-container" class="card-container" :key="key">
+                <PEDDPower v-for="power in racialPowers" style="width:30%" :power="power" />
             </div>
             <div id="backgrounds-container"></div>
             <div id="background-powers-container"></div>
@@ -35,22 +60,54 @@
   
 <script setup>
 import { putMdinElement } from '../../assets/functionality';
-import { onMounted, ref } from 'vue';
-import PeddLinks from '../../components/PeddLinks.vue';
+import { onMounted, ref, reactive } from 'vue';
+import PeddLinks from './PeddLinks.vue';
 import PEDDPower from './PEDDPower.vue';
+import PEDDRace from './PEDDRace.vue';
 import powers from '../../assets/pedd/pedd-powers.json';
-
-let racialPowers = powers.filter(p => p.tag.includes("racial"));
-
-let creatorMode = ref(false);
-
+import races from '../../assets/pedd/pedd-races.json';
 onMounted(() => {
     putMdinElement('../src/assets/pedd/pedd-character-creation.md', 'pedd')
 });
 
-function toggleCreator() {
-    creatorMode.value = !creatorMode.value;
-}
+let racialPowers = ref(powers.filter(p => p.tag.includes("racial")));
+let raceCards = races.map(p=> {return {...p, expanded: false}});
+
+let creatorMode = ref(false);
+let chosenRace = ref("");
+let key = ref(0);
+
+let toggleCreator = () => creatorMode.value = !creatorMode.value;
+
+let selectedRaces = [];
+let chooseRace = (race) => {
+    let raceName = race.name;
+    key.value++;
+    if (!selectedRaces.includes(raceName)) {
+        chosenRace.value = raceName;
+        selectedRaces.push(raceName);
+        racialPowers.value = powers.filter(p => p.tag.includes("racial") && p.tag.includes(raceName.toLowerCase()));
+        race.expanded = true;
+    }
+    else if (chosenRace.value !== raceName) {
+        chosenRace.value = raceName;
+        racialPowers.value = powers.filter(p => p.tag.includes("racial") && p.tag.includes(raceName.toLowerCase()));
+    }
+    else {
+        selectedRaces = selectedRaces.filter(r => r !== raceName);
+        race.expanded = false;
+        if (selectedRaces.length > 0) {
+            chosenRace.value = selectedRaces[selectedRaces.length - 1];
+            racialPowers.value = powers.filter(p => p.tag.includes("racial") && p.tag.includes(chosenRace.value.toLowerCase()));
+        }
+        else {
+            chosenRace.value = "";
+            racialPowers.value = powers.filter(p => p.tag.includes("racial"));
+        }
+    }
+};
+
+
 </script>
   
 <style>
@@ -131,5 +188,11 @@ function toggleCreator() {
     border-left: 2px groove var(--highlight);
     border-right: 2px groove var(--highlight);
     padding: 0px 1rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 </style>

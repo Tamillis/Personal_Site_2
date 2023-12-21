@@ -19,4 +19,18 @@
 
 </script>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+#pedd a,
+#pedd a:link,
+#pedd a:visited {
+    text-decoration: none;
+    color: var(--text-color);
+    font-style: normal;
+    font-weight: bold;
+    overflow-wrap: break-word;
+}
+
+#pedd a:hover {
+    font-style: italic;
+}
+</style>

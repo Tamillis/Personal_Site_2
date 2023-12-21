@@ -2,6 +2,11 @@
 
 /* Generic utility classes for easy modification when writting the HTML */
 
+.accordion {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
 .align-right {
   text-align: right;
 }
@@ -61,6 +66,10 @@
 
 .italic {
   font-style: italic;
+}
+
+.overflow-wrap {
+  overflow: overflow-wrap;
 }
 
 .z1 {

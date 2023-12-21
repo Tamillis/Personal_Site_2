@@ -15,7 +15,7 @@
 <script setup>
 import { putMdinElement } from '../../assets/functionality';
 import { onMounted } from 'vue';
-import PeddLinks from '../../components/PeddLinks.vue';
+import PeddLinks from './PeddLinks.vue';
 
 onMounted(() => putMdinElement('../src/assets/pedd/pedd-powers.md', 'pedd'));
 
