@@ -50,7 +50,7 @@ The more you're knocked down, the more likely you are to stay down, forever.
 
 ### Defence
 To make characters easier to strike, meaning less spongey, and also to make combat more proactive and engaging; the Defence Stat replaces AC and is more flexible than a flat value, being made of three parts: 
-- a Base Defence value of 8 for Medium characters and 10 for Small characters.
+- a Base Defence value of 8 for Medium characters, 10 for Small characters and 6 for Large characters. Should it be relevant, Huge characters have a base defence of 2 and Tiny a base defence of 14.
 - an Armour value determined by worn Equipment
 - an Evasion value, your Reflexes to a minimum of 0 (which can be limited by worn Equipment).
 

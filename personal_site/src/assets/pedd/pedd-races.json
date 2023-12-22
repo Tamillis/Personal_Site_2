@@ -7,7 +7,7 @@
     "size" : "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.",
     "speed" : "Your base walking speed is 30ft",
     "senses" : "You have the typical 5 senses of touch, taste, sight, sound and smell.",
-    "powers" : ["Extra Language", "Prodigy", "Natural Aptitude", "Determination", "Arcane Aptitude", "Mana", "Psychic Sense"]
+    "powers" : ["Extra Language", "Prodigy", "Natural Aptitude", "Determination", "Arcane Aptitude", "Mana", "Psychic Sense", "Tinkerer"]
 },
 {
     "name": "Dwarf",
@@ -18,7 +18,7 @@
     "size" : "Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium",
     "speed" : "Your base walking speed is 25ft. Your speed is not reduced by wearing heavy armor.",
     "senses" : "You have the typical 5 senses of touch, taste, sight, sound and smell.\n\n**Darkvision** - You can see in dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey.\n\n**Stone sense** - You have Tremorsense up to a 15ft radius through earth & stone, when standing on connected ground",
-    "powers" : ["Superior Darkvision & Sunlight Sensitivity", "Stout Resilience", "Stonecunning", "Dwarven Toughness", "Ancestors of Stone", "Squat & Nimble", "Grudge Bearer", "Weapon Mastery"]
+    "powers" : ["Superior Darkvision & Sunlight Sensitivity", "Stout Resilience", "Stonecunning", "Dwarven Toughness", "Ancestors of Stone", "Squat and Nimble", "Grudge Bearer", "Relentless Endurance"]
 },
 {
     "name": "Elf",
@@ -31,7 +31,7 @@
     "senses" : "You have the typical 5 senses of touch, taste, sight, sound and smell.\n\n**Keen Senses (Sight)** - You can see further and clearer than other races, details rising to notice faster. You add your Bonus to any Perception checks for sight, when no Skill is in use.",
     "trance" : "Elves cannot sleep. Their blood is severed from dreams. Instead they meditate deeply, remaining conscious. While meditating, Elves make a pale attempt at dreaming; such dreams are actually mental exercises that have become reflexive after years of practice. After resting in this way, you gain the same benefit a human would from 8 hours of sleep.",
     "feyAncestry" : "You have advantage on saving throws against being Charmed, and magic can't put you to Sleep.",
-    "powers" : ["Darkvision", "Superior Darkvision & Sunlight Sensitivity", "Drow Magic", "Arcane Aptitude", "Fleet of Foot", "Natural Camouflage", "Heritage of the Sea", "Elven Accuracy", "Fey Teleportation", "Wood Elf Magic", "Everchanging Nature", "Mana"]
+    "powers" : ["Darkvision", "Superior Darkvision & Sunlight Sensitivity", "Drow Magic", "Arcane Aptitude", "Fleet of Foot", "Natural Camouflage", "Heritage of the Sea", "Elven Accuracy", "Fey Teleportation", "Wood Elf Magic", "Everchanging Nature", "Mana", "Natural Illusionist"]
 },
 {
     "name": "Gnome",
@@ -43,7 +43,7 @@
     "speed" : "Your base walking speed is 25ft.",
     "senses" : "You have the typical 5 senses of touch, taste, sight, sound and smell.",
     "gnomeCunning" : "Magic and formulae comes to your people easily, and can be just as easily refuted. You have advantage on all Willpower saves against magic and memetics",
-    "powers" : ["Darkvision", "Fey Ancestry", "Speak with Small Beasts", "Natural Illusionist", "Natural Artifice", "Tinkerer", "Wonder Maker", "Scribe's Insight", "Svirfneblin Magic", "Squat & Nimble", "Psychic Sense", "Mist Mad", "Everchanging Nature", "Arcane Aptitude", "Mana", "Superior Darkvision & Sunlight Sensitivity"]
+    "powers" : ["Darkvision", "Fey Ancestry", "Speak with Small Beasts", "Natural Illusionist", "Natural Artifice", "Tinkerer", "Wonder Maker", "Scrivener's Magic", "Svirfneblin Magic", "Squat and Nimble", "Psychic Sense", "Mist Mad", "Everchanging Nature", "Arcane Aptitude", "Mana", "Superior Darkvision & Sunlight Sensitivity"]
 },
 {
     "name": "Halfling",
@@ -56,19 +56,19 @@
     "senses" : "You have the typical 5 senses of touch, taste, sight, sound and smell.",
     "lucky" : "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die. You must use the new result, even if it is a 1.",
     "brave" : "You have advantage on saving throws against being Frightened.",
-    "powers" : ["Extra Language", "Fleet of Foot", "Squat & Nimble", "Naturally Stealthy", "Stout Resilliance", "Psychic Sense", "Bountiful Luck", "Second Chance"]
+    "powers" : ["Extra Language", "Fleet of Foot", "Squat and Nimble", "Naturally Stealthy", "Stout Resilience", "Psychic Sense", "Bountiful Luck", "Second Chance"]
 },
 {
     "name": "Half-Elf",
-    "desc" : "One of the most common and well known of the bloodlines are the Fey Touched of the green blood, the Half Elves. Having had their bloodline meddled by fey powers, they bare resemblance to the folk that hail from there. Ever since the green flight and Elves flocked to the cities and courts, they've become a fairly common member of many a shard.\n\nWalking in two worlds but truly belonging to neither, half-elves combine what some say are the best qualities of their elf and human parents: human industriousnous, inventiveness, and ambition tempered by the refined senses, love of subtlety, and artistic tastes of the elves.",
+    "desc" : "One of the most common and well known of the bloodlines are the Fey Touched of the green blood, the Half-Elves. Having had their bloodline meddled by fey powers, they bare resemblance to the folk that hail from there. Ever since the green flight and Elves flocked to the cities and courts, they've become a fairly common member of many a shard.\n\nWalking in two worlds but truly belonging to neither, Half-Elves combine what some say are the best qualities of their Elf and Human parents: Human industriousnous, inventiveness, and ambition tempered by the refined senses, love of subtlety, and artistic tastes of the Elves.",
     "stats" : ["Charisma +2", "Any Stat +1", "Any Stat -1", "Reflexes +1"],
     "baseHealth": 6,
-    "age" : "Half-elves age at much the same rate as humans, reaching adulthood in their late teens. Depending on the strength of the Fae-Touch, they live much longer than humans, exceeding 3 centuries.",
-    "size" : "Half-elves are more or less the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium.",
+    "age" : "Half-Elves age at much the same rate as humans, reaching adulthood in their late teens. Depending on the strength of the Fae-Touch, they can live much longer than Humans, exceeding 3 centuries.",
+    "size" : "Half-Elves are more or less the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium.",
     "speed" : "Your base walking speed is 30ft",
     "senses" : "You have the typical 5 senses of touch, taste, sight, sound and smell.",
     "versatileHeritage" : "Your people pull on a broad history of mixing between human and fae, and each Half-Elf is as distinct from each other as an elf is to a man. You pick 3 Racial Powers instead of 2.",
-    "powers" : ["Keen Senses", "Fey Ancestry", "Extra Language", "Darkvision", "Prodigy", "Drow Magic",  "Arcane Aptitude", "Fleet of Foot", "Natural Camouflage", "Heritage of the Sea", "Elven Accuracy", "Drow High Magic", "Fey Teleportation", "Wood Elf Magic", "Mana", "Psychic Sense"]
+    "powers" : ["Keen Senses", "Fey Ancestry", "Extra Language", "Darkvision", "Prodigy", "Drow Magic",  "Arcane Aptitude", "Fleet of Foot", "Natural Camouflage", "Heritage of the Sea", "Elven Accuracy", "Drow High Magic", "Fey Teleportation", "Wood Elf Magic", "Mana", "Psychic Sense", "Natural Illusionist"]
 },
 {
     "name": "Tuskman",
@@ -80,7 +80,7 @@
     "speed" : "Your base walking speed is 30ft",
     "senses" : "You have the typical 5 senses of touch, taste, sight, sound and smell.\n\n**Keen Hearing and Smell** - You have advantage on Perception checks that rely on hearing or smell.",
     "redRage" : "Even now your people bear Grummsh' mark, and though any tuskman can throw off the yolk, sometimes they choose to indulge. In addition to your Racial Power choices, you can also take either: Aggression, Menacing, Relentless Endurance, Savage Attacks or Savage Magic.",
-    "powers" : ["Extra Language", "Keen Senses", "Stout Resiliance", "Natural Camouflage", "Darkvision", "Gruumsh's Fury", "Aggression", "Menacing", "Relentless Endurance", "Savage Attacks", "Savage Magic", "Cursed"]
+    "powers" : ["Extra Language", "Keen Senses", "Stout Resiliance", "Natural Camouflage", "Darkvision", "Gruumsh's Fury", "Aggression", "Menacing", "Relentless Endurance", "Savage Attacks", "Savage Magic", "Cursed", "Grudge Bearer", "Naturally Stealthy"]
 },
 {
     "name": "Dragonborn",
@@ -88,9 +88,10 @@
     "stats" : ["Strength +2", "Charisma +1", "Accuracy -1", "Willpower +1"],
     "baseHealth": 8,
     "age" : "Young dragonborn grow quickly. They walk hours after leaving the pouch, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 14. Draconic energy sets them apart, and they don't grow old, only slowly increasing in size year by year until death takes them, typically violence from the fearful or starvation from lack of sustanence for the constant growth.",
-    "size" : "Young dragonborn are on par with humans in height and weight, but adult dragonborn are taller and heavier, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium. Rare senior Dragonborn stand over 9 feet tall and their size is Large, in which case their Base Defence is 6 and their Base Health is 9. Mythical Ancient Dragonborn are said to be as tall as giants, their size being Huge, but such rare and terrible creatures are not fit for Player Characters.",
+    "size" : "Young dragonborn are on par with humans in height and weight with adult dragonborn being taller and heavier, standing well over 6 feet tall and averaging almost 250 pounds. Your size if you're a young or adult Dragonborn is Medium. \n\nRarer to find senior Dragonborn stand over 9 feet tall and if you are senior your size is Large and your Base Health is instead 9. Note that as a Large character, your Base Defence is now 6. \n\n Some mythical 'ancient' Dragonborn are said to be as tall as giants, their size being Huge or greater, but such rare and terrible creatures are not fit for Player Characters.",
     "speed" : "Your base walking speed is 30ft.",
     "senses" : "You have the typical 5 senses of touch, taste, sight, sound and smell.",
-    "draconicAncestry" : "You are distantly related to a particular kind of dragon. Choose a type of dragon from the table below; this determines the effect, area and type of your breath weapon.\n\n| Dragon Ancestry | Effect | Area | Save |\n| --- | --- | --- | --- |\n| Black | Acid - 1d10 fire damage on a failed save, and half as much damage on a successful one. | 5ft by 30ft line | Reflex save |\n| Blue | Lightning - 1d10 lightning damage on a failed save, and half as much damage on a successful one. | 5ft by 30ft line | Reflex save |\n| Brass | Sleep - On a failed save, the character falls unconscious for 1 minute. This effect ends for a character if the character takes damage or someone uses an Action to wake it.| 5ft by 30ft line | Willpower save |\n| Bronze | Repulsion - On a failed save, the character is pushed to the nearest free space at the end of the effect's line area. | 5ft by 30ft line | Reflex save |\n| Copper | Slow - On a failed save, the character's speed is halved, and it can't make more than one attack in the Round, and they can use either an Action or a Bonus Action in the Round, but not both. These effects last for 1 minute. The character can repeat the saving throw at the end of each Round, ending the effect on with a successful save. | 5ft by 30ft line | Willpower save |\n| Green | Poison - 1d6 poison damage and suffer the Poison condition on a failed save, or half as much damage on a successful one. | 15ft cone | Fortitude save |\n| Gold | Weaken - On a failed save, the character has disadvantage on Strength-based attack rolls, Strength checks, and Fortitude saving throws for 1 minute. A character can repeat the saving throw at the end of each Round, ending the effect on itself on a success. | 15ft cone | Fortitude save |\n| Red | Fire - 1d10 fire damage on a failed save, and half as much damage on a successful one. | 15ft cone | Reflex save |\n| Silver | Paralyse - on a failed save, the character is paralyzed for the next Round. | 15ft cone | Fortitude save |\n| White | Cold - 1d10 cold damage on a failed save, and half as much damage on a successful one. | 15ft cone | Fortitude save |\n\n**Breath Weapon** - You can use your Action to exhale primeval draconic energy. When you use your breath weapon, all characters in the area must make a saving throw, the type of which is determined by the Ancestry table above, against the effect described. The DC of the save is 8 + your Fortitude + your Bonus. You may use your breath weapon a number of times equal to your Fortitude (minimum 1). You regain expended uses on a Short Rest.",
-    "powers" : ["Darkvision", "Draconic Language", "Draconic Resistance", "Greater Breath Weapon", "Dragon Wings", "Dragon Fear", "Dragon Hide", "Arcane Aptitude", "Mana", "Cursed"]
+    "draconicAncestry" : "You are distantly related to a particular kind of dragon. Choose a type of dragon from the table below; this determines the effect, area and type of your breath weapon.\n\n| Dragon Ancestry | Effect | Area | Save |\n| --- | --- | --- | --- |\n| Black | Acid - 1d10 fire damage on a failed save, and half as much damage on a successful one. | 5ft by 30ft line | Reflex save |\n| Blue | Lightning - 1d10 lightning damage on a failed save, and half as much damage on a successful one. | 5ft by 30ft line | Reflex save |\n| Brass | Sleep - On a failed save, the character falls unconscious for 1 minute. This effect ends for a character if the character takes damage or someone uses an Action to wake it.| 5ft by 30ft line | Willpower save |\n| Bronze | Repulsion - On a failed save, the character is pushed to the nearest free space at the end of the effect's line area. | 5ft by 30ft line | Reflex save |\n| Copper | Slow - On a failed save, the character's speed is halved, and it can't make more than one attack in the Round, and they can use either an Action or a Bonus Action in the Round, but not both. These effects last for 1 minute. The character can repeat the saving throw at the end of each Round, ending the effect on with a successful save. | 5ft by 30ft line | Willpower save |\n| Green | Poison - 1d6 poison damage and suffer the Poison condition on a failed save, or half as much damage on a successful one. | 15ft cone | Fortitude save |\n| Gold | Weaken - On a failed save, the character has disadvantage on Strength-based attack rolls, Strength checks, and Fortitude saving throws for 1 minute. A character can repeat the saving throw at the end of each Round, ending the effect on itself on a success. | 15ft cone | Fortitude save |\n| Red | Fire - 1d10 fire damage on a failed save, and half as much damage on a successful one. | 15ft cone | Reflex save |\n| Silver | Paralyse - on a failed save, the character is paralyzed for the next Round. | 15ft cone | Fortitude save |\n| White | Cold - 1d10 cold damage on a failed save, and half as much damage on a successful one. | 15ft cone | Fortitude save |",
+    "breathWeapon" : "You can use your Action to exhale primeval draconic energy. When you use your breath weapon, all characters in the area must make a saving throw, the type of which is determined by the Ancestry table above, against the effect described. The DC of the save is 8 + your Fortitude + your Bonus. You may use your breath weapon a number of times equal to your Fortitude (minimum 1). You regain expended uses on a Short Rest.",
+    "powers" : ["Darkvision", "Draconic Language", "Draconic Resistance", "Greater Breath Weapon", "Dragon Wings", "Dragon Fear", "Dragon Hide", "Arcane Aptitude", "Mana", "Cursed", "Menacing"]
 }]

@@ -1,7 +1,7 @@
 <template>
     <div class="container">
-        <h3 class="accordian" @click="toggleBody()">{{ power.name }}<span v-if="!showBody" style="float:right;margin-right:1rem;">▼</span></h3>
-        <div id="body" v-if="showBody">
+        <h3 class="accordian" @click="$emit('chosen')">{{ power.name }}<span v-if="!expanded" class="arrow">▼</span><span class="arrow" v-else>▲</span></h3>
+        <div id="body" v-if="expanded">
             <h4>Tags:</h4>
             <ul>
                 <li v-for="tag in power.tag">{{ tag }}</li>
@@ -17,13 +17,9 @@
 
 <script setup>
 import { ref } from 'vue';
-const props = defineProps({ power: Object });
+const props = defineProps({ power: Object, expanded: Boolean });
 
 let power = ref(props.power);
-let showBody = ref(false);
-
-let toggleBody = () => showBody.value = !showBody.value;
-
 </script>
 
 <style lang="css" scoped>
@@ -33,6 +29,7 @@ let toggleBody = () => showBody.value = !showBody.value;
     justify-content: start;
     border: 2px groove var(--highlight);
     height: fit-content;
+    padding: 0px 0.5rem;
 }
 
 ul {
@@ -50,5 +47,10 @@ ul li {
 
 h4 {
     font-weight: bold;
+}
+
+.arrow {
+    float:right;
+    margin-right:1rem;
 }
 </style>

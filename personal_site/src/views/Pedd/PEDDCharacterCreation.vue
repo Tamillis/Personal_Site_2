@@ -5,7 +5,7 @@
 
         <div class="centre width-fit">
             <input type="checkbox" id="creator" class="radioQ" :value="creatorMode" @change="toggleCreator">
-            <label for="creator"> - Character Creator Mode</label>
+            <label for="creator" style="display:inline;"> - Character Creator Mode</label>
         </div>
 
         <PeddLinks />
@@ -15,44 +15,78 @@
         </div>
 
         <div class="main-text inset" v-show="creatorMode">
-            <div id="character-name">
-                <h2>Character Name: </h2>
-                <input id="character-name" placeholder="..." />
+            <div class="flex gap-1r">
+                <div>
+                    <label for="character-name">Character Name: </label>
+                    <input id="character-name" class="text-entry w100" placeholder="..." />
+                </div>
+                <div>
+                    <label for="character-concept">Character Concept: </label>
+                    <input id="character-concept" class="text-entry w100" placeholder="..." />
+                </div>
             </div>
-            <div id="character-concept">
-                <h2>Character Concept: </h2>
-                <input id="character-name" placeholder="..." />
+            <div>
+                <label for="character-bonds">Bond/s: </label>
+                <textarea id="character-bonds" class="text-entry" placeholder="..."></textarea>
             </div>
-            <div id="bonds-ideals-flaws" class="flex gap-1r">
-                <div>
-                    <h2>Bond/s: </h2>
-                    <input id="character-name" placeholder="..." />
-                </div>
-                <div>
-                    <h2>Ideal/s: </h2>
-                    <input id="character-name" placeholder="..." />
-                </div>
-                <div>
-                    <h2>Flaw/s: </h2>
-                    <input id="character-name" placeholder="..." />
-                </div>
+            <div>
+                <label for="character-ideals">Ideal/s: </label>
+                <textarea id="character-ideals" class="text-entry" placeholder="..."></textarea>
+            </div>
+            <div>
+                <label for="character-flaws">Flaw/s: </label>
+                <textarea id="character-flaws" class="text-entry" placeholder="..."></textarea>
             </div>
             <div id="stats">
-                <h2>Stats</h2>
-                <textarea cols="100" rows="1">Here be, in time, automatic stats</textarea>
+                <label>Stats</label>
+                <textarea class="text-entry">Here be, in time, automatic stats</textarea>
             </div>
-            <h2>Races: <span id="chosen-race">{{ chosenRace }}</span></h2>
+            <h2>Race: <span>{{ chosen.race }}</span></h2>
             <div id="races-container" class="card-container">
-                <PEDDRace v-for="race in raceCards" style="width:50%" :race="race" @click="chooseRace(race)"/>
+                <PEDDRace v-for="race in races" style="width:50%" :race="race"
+                    @race-chosen="() => openedRaceCards = chooseValue(race, 'race', openedRaceCards)"
+                    :expanded="openedRaceCards.includes(race.name)" />
             </div>
-            <h2>Racial Powers:</h2>
-            <div id="racial-powers-container" class="card-container" :key="key">
-                <PEDDPower v-for="power in racialPowers" style="width:30%" :power="power" />
+            <div v-if="openedRaceCards.length !== 0">
+                <h2>Racial Powers: <span>{{ chosen.racialPowers.join(', ') }}</span></h2>
+                <div id="racial-powers-container" class="card-container" :key="key">
+                    <PEDDPower v-for="power in racialPowers" style="width:30%" :power="power"
+                        @chosen="() => openedRacialPowerCards = choosePower(power, 'racialPowers', openedRacialPowerCards, 2)"
+                        :expanded="openedRacialPowerCards.includes(power.name)" />
+                </div>
             </div>
-            <div id="backgrounds-container"></div>
-            <div id="background-powers-container"></div>
-            <div class="proficiencies-list"></div>
-            <div id="role-container"></div>
+
+            <h2>Upbringing</h2>
+            <p>2 General Skills and 1 Language Skill</p>
+
+            <h2>Background: <span>{{ chosen.background }}</span></h2>
+            <div id="backgrounds-container">
+
+            </div>
+
+            <h3>Background Skills</h3>
+            <p>Background Stat Increases (automate as they're fixed?)</p>
+            <p>Background 6 General Skills</p>
+
+            <h2>Background Power: <span>{{ chosen.backgroundPower }}</span></h2>
+            <div id="background-powers-container" class="card-container" :key="key">
+                <PEDDPower v-for="power in backgroundPowers" style="width:30%" :power="power"
+                        @chosen="() => openedBackgroundPowerCards = choosePower(power, 'racialPowers', openedBackgroundPowerCards, 1)"
+                        :expanded="openedBackgroundPowerCards.includes(power.name)" />
+            </div>
+
+            <h2>Role Powers: <span>{{ chosen.rolePowers.join(', ') }}</span></h2>
+            <p>One day the below will be properly automatically filtered by prerequisites</p>
+            <div id="role-powers-container" class="card-container" :key="key">
+                <PEDDPower v-for="power in rolePowers" style="width:30%" :power="power"
+                        @chosen="() => openedRolePowerCards = choosePower(power, 'racialPowers', openedRolePowerCards, 2)"
+                        :expanded="openedRolePowerCards.includes(power.name)" />
+            </div>
+            <h3>Role Stat increases</h3>
+            <h3>4 Role Martial Skills</h3>
+
+            <h2>Equipment Collections</h2>
+            <p>Port this over from w/e</p>
         </div>
 
     </section>
@@ -60,7 +94,7 @@
   
 <script setup>
 import { putMdinElement } from '../../assets/functionality';
-import { onMounted, ref, reactive } from 'vue';
+import { onMounted, ref, computed } from 'vue';
 import PeddLinks from './PeddLinks.vue';
 import PEDDPower from './PEDDPower.vue';
 import PEDDRace from './PEDDRace.vue';
@@ -70,44 +104,78 @@ onMounted(() => {
     putMdinElement('../src/assets/pedd/pedd-character-creation.md', 'pedd')
 });
 
-let racialPowers = ref(powers.filter(p => p.tag.includes("racial")));
-let raceCards = races.map(p=> {return {...p, expanded: false}});
+let racialPowers = computed(
+    () => powers.filter(p => p.tag.includes("racial") && p.tag.includes(chosen.value.race.toLowerCase()))
+);
+let backgroundPowers = computed(() => powers.filter(p => p.tag.includes("background")));
+let rolePowers = computed(() => powers.filter(p => !p.tag.includes("racial") || (p.tag.includes("racial") && p.tag.includes("background"))));
 
 let creatorMode = ref(false);
-let chosenRace = ref("");
+let chosen = ref({
+    race: "",
+    racialPowers: [],
+    background: "",
+    backgroundPower: "",
+    rolePowers: []
+});
 let key = ref(0);
+
+let openedRaceCards = [];
+let openedRacialPowerCards = [];
+let openedBackgroundPowerCards = [];
+let openedRolePowerCards = [];
 
 let toggleCreator = () => creatorMode.value = !creatorMode.value;
 
-let selectedRaces = [];
-let chooseRace = (race) => {
-    let raceName = race.name;
+// choose(race, "race", openedRaceCards) and return selection otherwise the seemingly passed by value array will be lost! hahahaha
+let chooseValue = (card, attribute, opened) => {
     key.value++;
-    if (!selectedRaces.includes(raceName)) {
-        chosenRace.value = raceName;
-        selectedRaces.push(raceName);
-        racialPowers.value = powers.filter(p => p.tag.includes("racial") && p.tag.includes(raceName.toLowerCase()));
-        race.expanded = true;
+    if (!opened.includes(card.name)) {
+        //clicking an un-opened card
+        chosen.value[attribute] = card.name;
+        opened.push(card.name);
     }
-    else if (chosenRace.value !== raceName) {
-        chosenRace.value = raceName;
-        racialPowers.value = powers.filter(p => p.tag.includes("racial") && p.tag.includes(raceName.toLowerCase()));
+    else if (chosen.value[attribute] !== card.name) {
+        //clicking an open card that is not the current selection
+        chosen.value[attribute] = card.name;
     }
     else {
-        selectedRaces = selectedRaces.filter(r => r !== raceName);
-        race.expanded = false;
-        if (selectedRaces.length > 0) {
-            chosenRace.value = selectedRaces[selectedRaces.length - 1];
-            racialPowers.value = powers.filter(p => p.tag.includes("racial") && p.tag.includes(chosenRace.value.toLowerCase()));
-        }
-        else {
-            chosenRace.value = "";
-            racialPowers.value = powers.filter(p => p.tag.includes("racial"));
-        }
+        //clicking the opened and selected card, i.e. deselect and close it
+        opened = opened.filter(r => r !== card.name);
+        if (opened.length > 0) chosen.value[attribute] = opened[opened.length - 1];
+        else chosen.value[attribute] = "";
     }
+
+    return opened;
 };
 
+let choosePower = (power, attribute, opened, max) => {
+    key.value++;
+    if (!opened.includes(power.name)) {
+        //clicking an un-opened card must open it
+        opened.push(power.name);
 
+        if (chosen.value[attribute].length < max) {
+            //and it can be added to selected list if there's room
+            chosen.value[attribute].push(power.name);
+        }
+    }
+    else {
+        //clicking an opened card
+        //if the opened card is not in the selected list and there is room, add it
+        if (!chosen.value[attribute].includes(power.name) && chosen.value[attribute].length < max) {
+            chosen.value[attribute].push(power.name);
+        }
+        else {
+            //remove it from the selected list
+            chosen.value[attribute] = chosen.value[attribute].filter(r => r !== power.name);
+            //and close that card
+            opened = opened.filter(r => r !== power.name);
+        }
+    }
+
+    return opened;
+};
 </script>
   
 <style>
@@ -194,5 +262,31 @@ let chooseRace = (race) => {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.text-entry {
+    border: none;
+    border-radius: 0px;
+
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 4px 2px;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 80%;
+    font-size: var(--para-size);
+}
+
+textarea {
+    height: 2rem;
+}
+
+label {
+    font-weight: bold;
+    font-size: larger;
+    display: block;
 }
 </style>

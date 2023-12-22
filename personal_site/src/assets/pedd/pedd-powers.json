@@ -16,7 +16,8 @@
         "tag": [
             "combat",
             "movement",
-            "racial"
+            "racial",
+            "tuskman"
         ],
         "preq": [
             "Strength +1"
@@ -54,10 +55,13 @@
             "combat",
             "damage-reduction",
             "defensive",
+            "dwarf",
             "racial",
             "spell-like"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "As an Action you make your flesh turn as hard as stone. For 1 minute you Concentrate as if on a spell, and while concentrating you have resistance to nonmagical physical damage and a +2 Bonus to Armour."
     },
     {
@@ -76,13 +80,13 @@
         "name": "Arcane Aptitude",
         "tag": [
             "cantrip",
-            "racial",
-            "universal",
-            "human",
+            "dragonborn",
             "elf",
             "gnome",
             "half-elf",
-            "dragonborn"
+            "human",
+            "racial",
+            "universal"
         ],
         "preq": [
             ""
@@ -339,12 +343,12 @@
         "name": "Cursed",
         "tag": [
             "background",
+            "dragonborn",
             "racial",
             "roll-effecting",
             "skill",
-            "universal",
             "tuskman",
-            "dragonborn"
+            "universal"
         ],
         "preq": [
             "each",
@@ -370,15 +374,15 @@
     {
         "name": "Darkvision",
         "tag": [
+            "dragonborn",
+            "elf",
             "exploration",
+            "gnome",
+            "half-elf",
             "racial",
             "sense",
-            "utility",
-            "dragonborn",
             "tuskman",
-            "half-elf",
-            "gnome",
-            "elf"
+            "utility"
         ],
         "preq": [
             ""
@@ -429,10 +433,10 @@
     {
         "name": "Determination",
         "tag": [
+            "human",
             "racial",
             "roll-effecting",
-            "universal",
-            "human"
+            "universal"
         ],
         "preq": [
             ""
@@ -549,10 +553,10 @@
     {
         "name": "Draconic Language",
         "tag": [
+            "dragonborn",
             "racial",
             "roll-effecting",
-            "social",
-            "dragonborn"
+            "social"
         ],
         "preq": [
             ""
@@ -565,9 +569,9 @@
             "combat",
             "damage-reduction",
             "defensive",
+            "dragonborn",
             "exploration",
-            "racial",
-            "dragonborn"
+            "racial"
         ],
         "preq": [
             "Draconic Ancestry"
@@ -593,9 +597,9 @@
         "tag": [
             "combat",
             "crowd-control",
+            "dragonborn",
             "racial",
-            "social",
-            "dragonborn"
+            "social"
         ],
         "preq": [
             "Draconic Ancestry"
@@ -607,9 +611,9 @@
         "tag": [
             "combat",
             "defensive",
+            "dragonborn",
             "offensive",
-            "racial",
-            "dragonborn"
+            "racial"
         ],
         "preq": [
             ""
@@ -619,10 +623,10 @@
     {
         "name": "Dragon Wings",
         "tag": [
+            "dragonborn",
             "exploration",
             "movement",
-            "racial",
-            "dragonborn"
+            "racial"
         ],
         "preq": [
             ""
@@ -647,11 +651,11 @@
         "tag": [
             "background",
             "cantrip",
-            "exploration",
-            "racial",
-            "spellcasting",
             "elf",
-            "half-elf"
+            "exploration",
+            "half-elf",
+            "racial",
+            "spellcasting"
         ],
         "preq": [
             ""
@@ -688,11 +692,11 @@
     {
         "name": "Dwarven Toughness",
         "tag": [
+            "dwarf",
             "health",
             "racial",
             "stat",
-            "universal",
-            "dwarf"
+            "universal"
         ],
         "preq": [
             ""
@@ -750,11 +754,11 @@
         "name": "Elven Accuracy",
         "tag": [
             "combat",
+            "elf",
+            "half-elf",
             "offensive",
             "racial",
-            "roll-effecting",
-            "ef",
-            "half-elf"
+            "roll-effecting"
         ],
         "preq": [
             ""
@@ -776,10 +780,11 @@
         "name": "Everchanging Nature",
         "tag": [
             "cantrip",
+            "elf",
+            "gnome",
             "racial",
             "spell-like",
-            "universal",
-            "gnome"
+            "universal"
         ],
         "preq": [
             ""
@@ -832,10 +837,16 @@
     {
         "name": "Extra Language",
         "tag": [
+            "half-elf",
+            "human",
             "racial",
-            "social"
+            "social",
+            "halfling",
+            "tuskman"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "You were raised in an environment that required you to become bilingual, and you've gained an aptitude for languages. You know one more Childhood Language, and you learn other languages at twice the usual rate."
     },
     {
@@ -864,20 +875,26 @@
         "name": "Fey Ancestry",
         "tag": [
             "exploration",
+            "gnome",
+            "half-elf",
             "racial",
             "roll-effecting",
             "social"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "By ancient decree, your blood has been severed from the realm of dreams and cannot sleep. You have Advantage on saving throws against being charmed, and magic can't put you to sleep."
     },
     {
         "name": "Fey Teleportation",
         "tag": [
             "combat",
+            "elf",
             "movement",
             "racial",
-            "spellcasting"
+            "spellcasting",
+            "half-elf"
         ],
         "preq": [
             "Fey Ancestry"
@@ -944,11 +961,16 @@
         "name": "Fleet of Foot",
         "tag": [
             "combat",
+            "elf",
             "exploration",
             "movement",
-            "racial"
+            "racial",
+            "halfling",
+            "half-elf"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "By foot, claw or wing, you're swifter than others. Increase your Speed by 5ft and your Travel Speed by 800 yards."
     },
     {
@@ -1027,7 +1049,8 @@
         "tag": [
             "combat",
             "offensive",
-            "racial"
+            "racial",
+            "dragonborn"
         ],
         "preq": [
             "Draconic Ancestry"
@@ -1063,12 +1086,16 @@
         "tag": [
             "background",
             "combat",
+            "dwarf",
             "exploration",
             "racial",
             "roll-effecting",
-            "utility"
+            "utility",
+            "tuskman"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "You have a deep hatred for a particular kind of creature. Choose your foes, a type of creature to bear the burden of your wrath: aberrations, beasts, celestials, constructs, dragons, demons, elementals, fell, fey, fiends, giants, lycanthropes, monstrosities, oozes, plants, sprites or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs). You gain the following benefits:\n\n- During the first round of any combat against your chosen foes, your attack rolls against any of them have Advantage.\n- When any of your chosen foes makes an opportunity attack against you, it makes the attack roll with Disadvantage.\n- Whenever you make an Arcana, History, Nature, or Religion check to recall information about your chosen foes, you gain Proficiency in the roll if you don't already, Expertise if you are Proficient, or Advantage if you have Expertise."
     },
     {
@@ -1076,7 +1103,8 @@
         "tag": [
             "combat",
             "offensive",
-            "racial"
+            "racial",
+            "tuskman"
         ],
         "preq": [
             ""
@@ -1148,11 +1176,15 @@
         "name": "Heritage of the Sea",
         "tag": [
             "combat",
+            "elf",
             "exploration",
             "movement",
-            "racial"
+            "racial",
+            "half-elf"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "Adapted to life on the coasts and in the waters, you have a swimming speed of 30ft and can hold your breath for 1 hour."
     },
     {
@@ -1241,9 +1273,13 @@
             "background",
             "exploration",
             "racial",
-            "sense"
+            "sense",
+            "half-elf",
+            "tuskman"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "One of your senses is more accute than the average human's. Choose one of the senses (sight, hearing, touch, taste, smell or psychic). You add your Bonus to any Perception checks for this sense, when no Skill is in use. You can take this Power again for different senses."
     },
     {
@@ -1320,6 +1356,11 @@
     {
         "name": "Mana",
         "tag": [
+            "dragonborn",
+            "elf",
+            "gnome",
+            "half-elf",
+            "human",
             "racial",
             "spellcasting",
             "universal"
@@ -1396,9 +1437,13 @@
         "tag": [
             "racial",
             "skill",
-            "social"
+            "social",
+            "tuskman",
+            "dragonborn"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "Your visage is naturally intimidating. You gain proficiency in the Intimidation skill."
     },
     {
@@ -1446,9 +1491,12 @@
             "racial",
             "skill",
             "stat",
-            "utility"
+            "utility",
+            "gnome"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "Many Gnomes are cautioned to avoid the Mists at all costs, and many heed those wise words. Those that don't are often doomed to be hypnotized by the Mist's maddening swirls, and be drawn deep within. Those that survive are inevitably deeply changed, and far from home. You have several major mutations warping and twisting your body in many locations, which have a collective effect. The effect of these mutations is not only to make you look like the horror that peasants tell tales of to frighten their children, enough to even make Mistdivers flinch at your visage, but one of the following;\n- **Bulging Skin-Bursting Muscles** - you ignore the heavy property of weapons, you gain proficiency in Athletics, and your Strength is increased by 1\n- **Pawed digitigrade Hooves and Tail** - your movement speed is now 35ft, you gain proficiency in Acrobatics, and your Dexterity is increased by 1\n- **Armoured Shell and Scales** - you gain Natural Armour of 5. You are resistant to Slashing damage, and your Fortitude is increased by 1.\n- **Headful of Mismatched Eyes** - your passive perception is increased by 5, you gain proficiency in Observation, and your Perception score is increased by 1.\n- **Hypnotic Bioluminescence** - you know the Friends cantrip, using your Charisma to cast the spell, you gain proficiency in Persuasion, and your Charisma score is increased by 1."
     },
     {
@@ -1464,30 +1512,41 @@
     {
         "name": "Natural Aptitude",
         "tag": [
+            "human",
             "racial",
             "universal"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "This race has a natural aptitude for picking up abilities quickly, weilding them as well as other Races are born to their own natural abilities. Choose any non-racial Power where the Statistic Prerequisites do not total above 1 and you qualify for that Power, and take that Power as your Natural Aptitude.\n\nThis Power can be taken twice, choosing a different non-racial Power each time."
     },
     {
         "name": "Natural Artifice",
         "tag": [
             "exploration",
+            "gnome",
             "racial",
             "skill"
         ],
-        "preq": [],
-        "desc": "You gain the benefits of the Artificer's Lore Power, only for you such knowledge is instinctual than learned."
+        "preq": [
+            ""
+        ],
+        "desc": "You gain the benefits of the Artificer's Lore Power, only for you such knowledge is instinctual rather than learned."
     },
     {
         "name": "Natural Camouflage",
         "tag": [
+            "elf",
             "exploration",
             "racial",
-            "roll-effecting"
+            "roll-effecting",
+            "half-elf",
+            "tuskman"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "You can try to hide by pressing yourself up against a solid surface as an Action, such as a tree or wall, that is at least as tall and wide as you are, or against the ground by going Prone. You gain a +10 bonus to Stealth checks as long as you remain there without moving or taking Actions. Once you move or take an action or bonus action, you must camouflage yourself again to gain this benefit."
     },
     {
@@ -1507,10 +1566,15 @@
         "name": "Natural Illusionist",
         "tag": [
             "exploration",
+            "gnome",
             "racial",
-            "spellcasting"
+            "spellcasting",
+            "elf",
+            "half-elf"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "You know the Minor Illusion cantrip and the Silent Image spell, which you can cast once without expending Mana. You regain the ability to cast it in this way when you finish a Short Rest. Intelligence is your spellcasting attack modifier for it.\n\nAdditionally, you learn illusion school spells at twice the usual rate."
     },
     {
@@ -1520,10 +1584,14 @@
             "exploration",
             "movement",
             "racial",
-            "skill"
+            "skill",
+            "halfling",
+            "tuskman"
         ],
-        "preq": [],
-        "desc": "You can move through the space of any character that is of a size larger than yours. You gain profiency in Stealth, and you can attempt to hide even when you are only obscured by a character that is at least one size larger than you."
+        "preq": [
+            ""
+        ],
+        "desc": "You gain profiency in Stealth, and you can attempt to hide even when you are only obscured by an object or character that is the same size as you."
     },
     {
         "name": "Occult Spellcasting",
@@ -1595,11 +1663,15 @@
         "name": "Prodigy",
         "tag": [
             "exploration",
+            "human",
             "racial",
             "skill",
-            "social"
+            "social",
+            "half-elf"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "You have a knack for learning new things. You gain the following benefits:\n\n- You gain proficiency in a Tool Skill of your choice, one additional Skill proficiency of your choice, and proficiency in one language of your choice.\n- Choose one Skill in which you have proficiency. You gain Expertise with that Skill.\n- You learn languages and skills at quicker than the usual rate."
     },
     {
@@ -1631,11 +1703,17 @@
     {
         "name": "Psychic Sense",
         "tag": [
+            "human",
             "racial",
             "sense",
-            "universal"
+            "universal",
+            "gnome",
+            "halfling",
+            "half-elf"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "You gain the Psychic sense, and you can speak in a language of your choice telepathically to any character within 30ft of you, and if you maintain the connection they may speak back. You can speak telepathically in this way to one character at a time."
     },
     {
@@ -1680,7 +1758,9 @@
         "tag": [
             "combat",
             "healing",
-            "racial"
+            "racial",
+            "tuskman",
+            "dwarf"
         ],
         "preq": [
             ""
@@ -1704,7 +1784,8 @@
         "tag": [
             "combat",
             "offensive",
-            "racial"
+            "racial",
+            "tuskman"
         ],
         "preq": [
             "Strength +1"
@@ -1717,7 +1798,8 @@
             "combat",
             "offensive",
             "racial",
-            "spellcasting"
+            "spellcasting",
+            "tuskman"
         ],
         "preq": [
             "Spellcasting"
@@ -1743,9 +1825,12 @@
             "cantrip",
             "exploration",
             "racial",
-            "spellcasting"
+            "spellcasting",
+            "gnome"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "You learn the magic of the learned scribe. You learn the Message cantrip. You also learn the Comprehend Languages and Illusory Script spells, each of which you can cast once without expending Mana or requiring components. You regain the ability to cast these two spells in this way when you finish a Long Rest. Intelligence is your spellcasting ability for all three spells."
     },
     {
@@ -1765,7 +1850,8 @@
             "combat",
             "defensive",
             "racial",
-            "roll-effecting"
+            "roll-effecting",
+            "halfling"
         ],
         "preq": [
             ""
@@ -1861,7 +1947,8 @@
             "background",
             "racial",
             "resource",
-            "universal"
+            "universal",
+            "any-race"
         ],
         "preq": [
             "Occult Spellcasting*"
@@ -1871,24 +1958,32 @@
     {
         "name": "Speak with Small Beasts",
         "tag": [
+            "gnome",
             "racial",
             "skill",
             "social"
         ],
-        "preq": [],
-        "desc": "You learn the Skill Language - Sylvan, and through this language, sounds and gestures, you may communicate simple ideas to Small or smaller beasts and receive simple information from them, although they cannot speak back."
+        "preq": [
+            ""
+        ],
+        "desc": "You learn the secret language of Sylvan, the skill Language (Sylvan), and through this language, sounds and gestures, you may communicate simple ideas to Small or smaller beasts and receive simple information from them as appropriate to the beast in question, although they cannot speak back."
     },
     {
         "name": "Squat and Nimble",
         "tag": [
             "combat",
+            "dwarf",
             "exploration",
             "movement",
             "racial",
             "roll-effecting",
-            "skill"
+            "skill",
+            "gnome",
+            "halfling"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "You can move through the space of any character that is of a size larger than yours, and you gain proficiency in Acrobatics or Athletics (your choice). You have Advantage on Athletics or Acrobatics (depending on which you chose) checks to escape being Grappled."
     },
     {
@@ -1906,24 +2001,31 @@
     {
         "name": "Stonecunning",
         "tag": [
+            "dwarf",
             "exploration",
             "racial",
             "roll-effecting",
             "skill",
             "social"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "Whenever you make an History check related to the origin of stonework, you are considered Proficient in the History skill if you are not, or to have Expertise if you're Proficient. If you have Expertise in History, you make History checks related to the origin of stonework with Advantage."
     },
     {
         "name": "Stout Resiliance",
         "tag": [
             "damage-reduction",
+            "dwarf",
             "exploration",
             "racial",
-            "utility"
+            "utility",
+            "halfling"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "You have advantage on saving throws against poison, and you have resistance to poison damage."
     },
     {
@@ -1940,12 +2042,17 @@
     {
         "name": "Superior Darkvision & Sunlight Sensitivity",
         "tag": [
+            "dwarf",
+            "elf",
             "exploration",
             "racial",
             "roll-effecting",
-            "sense"
+            "sense",
+            "gnome"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "You gain the Power Darkvision but to a range of 120ft, instead of 60ft. However, you have Disadvantage on attack rolls and Perception checks that rely on sight when you, the target of the attack, or whatever you are trying to perceive is in direct sunlight."
     },
     {
@@ -1955,7 +2062,8 @@
             "cantrip",
             "exploration",
             "racial",
-            "spellcasting"
+            "spellcasting",
+            "gnome"
         ],
         "preq": [
             "Intelligence +2"
@@ -2015,11 +2123,15 @@
         "tag": [
             "background",
             "exploration",
+            "gnome",
             "racial",
             "skill",
-            "utility"
+            "utility",
+            "human"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "You gain proficiency with Skill Tinker's Tools. Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (1 Health, 5 Defence). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your Action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose one of the following options:\n\n- **Clockwork Toy**. This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents.\n- **Fire Starter**. The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.\n- **Music Box**. When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.\n- At your DM's discretion, you may make other objects with effects similar in power to these. The Prestidigitation cantrip is a good baseline for such effects."
     },
     {
@@ -2153,15 +2265,32 @@
         "desc": "You can use your Action to magically assume the shape of a Beast that you have learned before (what constitutes 'learning a creature' depends on the creature and the circumstances, typically an hour of unobtrusive observation).\n\n- You can use this Power a number of times equal to your Willpower. You regain expended uses when you finish a Short Rest.\n- You can transform into any beast that has a Challenge Rating of 1/2 or lower that doesn't have a flying, burrowing or swimming speed.\n- You can stay in a wild shape for 1 hour. You then revert to your normal form unless you expend another use of this Power. You can revert to your normal form earlier by using a Bonus Action. You automatically revert if you fall unconscious, drop to 0 Health, or die.\n\nWhile you are transformed, the following rules apply:\n\n- Your Strength, Dexterity, Accuracy and Perception statistics are replaced by those of the Creature. You retain your Intelligence and Charisma statistics, and also retain all of your skill and saving throw proficiencies, in addition to gaining those of the Creature. If the Creature has the same Proficiency Bonus as you, but the Bonus in its stat block is higher than yours, use the Creature's Bonus instead of yours. If the Creature has any legendary or lair actions, you can't use them.\n- When you transform, you assume the beast's full Health. When you revert to your normal form, you return to the Health value you had before you transformed. However, if you revert as a result of dropping to 0 Health, any excess damage carries over to your normal form, For example, if you take 10 damage in a form that has only 1 Health left, you revert and take 9 damage. As long as the excess damage doesn't reduce your normal form to 0 Health, you aren't knocked unconscious.\n- You can't cast spells, and your ability to speak or take any action that requires hands or humanoid mouth is limited to the capabilities of your form. Transforming doesn't break your Concentration on a spell you've already cast, however, or prevent you from taking actions that are part of a spell, such as Call Lightning, that you've already cast.\n- You retain the benefit of any Powers and can use them if the new form is physically capable of doing so. However, as your senses are replaced, you can't use any of your special senses, such as darkvision, unless your new form also has them.\n- You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the GM decides whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form."
     },
     {
+        "name": "Wonder Maker",
+        "tag": [
+            "background",
+            "exploration",
+            "gnome",
+            "racial"
+        ],
+        "preq": [
+            "Tinkerer"
+        ],
+        "desc": "You master the techniques of tinkering. You gain Expertise with Tinker's Tools.\n\nWhen you make a device with your Tinker Power, you have the following additional options for what you make:\n- **Alarm**: This device senses when a charater moves to within 15ft of it without speaking aloud a password chosen when you create it. One round after a character moves into range, the alarm makes a shrill ringing that lasts for 1 minute and can be heard from up to 300ft away.\n- **Mechanical Calculator**: This device makes doing sums trivial.\n- **Lifter**: This device can be used as a block and tackle, allowing its user to hoist five times the weight the user can normally lift.\n - **Timekeeper**: This pocket watch keeps accurate time.\n - **Weather Sensor**: When used as an action, this device predicts weather conditions in a 1-mile radius over the next 4 hours, showing one symbol (clouds, sun/moon, rain, or snow) for each hour"
+    },
+    {
         "name": "Wood Elf Magic",
         "tag": [
             "background",
             "cantrip",
+            "elf",
             "exploration",
             "racial",
-            "spellcasting"
+            "spellcasting",
+            "half-elf"
         ],
-        "preq": [],
+        "preq": [
+            ""
+        ],
         "desc": "You learn the magic of the primeval woods, which are revered and protected by your people. You learn one Primal Sphere cantrip of your choice. You also learn the Longstrider and Pass Without Trace spells, each of which you can cast once without expending Mana. You regain the ability to cast these two spells in this way when you finish a Long Rest. The Verdance of your locale is your spellcasting ability for all three spells. See the Verdance table."
     }
 ]

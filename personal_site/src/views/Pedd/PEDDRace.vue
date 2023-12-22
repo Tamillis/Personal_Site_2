@@ -1,25 +1,27 @@
 <template>
     <div class="container">
-        <h3 class="accordian">{{ race.name }}<span v-if="!race.expanded" style="float:right;margin-right:1rem;">▼</span></h3>
-        <div id="body" v-if="race.expanded">
+        <h3 class="accordian" @click="$emit('raceChosen')">{{ race.name }}<span v-if="!expanded" class="arrow">▼</span><span class="arrow" v-else>▲</span></h3>
+        <div id="body" v-if="expanded">
             <h4>Description:</h4>
             <p>{{ race.desc }}</p>
             <h4>Stats: </h4>
-            <ul class="stats">
+            <ul class="data">
                 <li v-for="stat in race.stats">{{ stat }}</li>
             </ul>
-            <ul class="data">
-                <li>Base Health: {{ race.baseHealth }}</li>
-                <li>Age: <span v-html="marked.parse(race.age)"></span></li>
-                <li>Size: <span v-html="marked.parse(race.size)"></span></li>
-                <li>Speed: <span v-html="marked.parse(race.speed)"></span></li>
-                <li>Senses: <span v-html="marked.parse(race.senses)"></span></li>
-                <li v-for="extra in extras">{{ format(extra) }}: <span v-html="marked.parse(race[extra])"></span></li>
-            </ul>
-            <h4>Racial Powers: </h4>
-            <ul>
-                <li v-for="power in race.powers">{{ power }}</li>
-            </ul>
+            
+            <h4>Base Health: <span>{{ race.baseHealth }}</span></h4>
+            <h4>Age: </h4>
+            <div v-html="marked.parse(race.age)"></div>
+            <h4>Size: </h4>
+            <div v-html="marked.parse(race.size)"></div>
+            <h4>Speed: </h4>
+            <div v-html="marked.parse(race.speed)"></div>
+            <h4>Senses: </h4>
+            <div v-html="marked.parse(race.senses)"></div>
+            <div v-for="extra in extras">
+                <h4>{{ format(extra) }}: </h4>
+                <div v-html="marked.parse(race[extra])"></div>
+            </div>
         </div>
     </div>
 </template>
@@ -27,7 +29,7 @@
 <script setup>
 import { ref } from 'vue';
 import {marked} from 'marked';
-const props = defineProps({ race: Object});
+const props = defineProps({ race: Object, expanded: Boolean});
 
 let standardHeadings = ["name", "desc", "stats", "baseHealth", "age", "size", "speed", "senses", "powers", "expanded"]
 let extras = Object.keys(props.race).filter(key => !standardHeadings.includes(key));
@@ -51,16 +53,12 @@ function capitalize(word) {
     justify-content: start;
     border: 2px groove var(--highlight);
     height:fit-content;
+    padding: 0px 0.5rem;
 }
 
-.stats {
+ul {
     display: flex;
     flex-wrap: wrap;
-}
-
-.data {
-    display: flex;
-    flex-direction: column;
 }
 
 ul li {
@@ -73,5 +71,10 @@ ul li {
 
 h4, strong {
     font-weight: bold;
+}
+
+.arrow {
+    float:right;
+    margin-right:1rem;
 }
 </style>
