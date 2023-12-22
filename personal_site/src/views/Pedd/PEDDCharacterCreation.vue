@@ -43,14 +43,14 @@
             </div>
             <h2>Race: <span>{{ chosen.race }}</span></h2>
             <div id="races-container" class="card-container">
-                <PEDDRace v-for="race in races" style="width:50%" :race="race"
+                <PEDDRace v-for="race in races" :race="race"
                     @race-chosen="() => openedRaceCards = chooseValue(race, 'race', openedRaceCards)"
                     :expanded="openedRaceCards.includes(race.name)" />
             </div>
             <div v-if="openedRaceCards.length !== 0">
                 <h2>Racial Powers: <span>{{ chosen.racialPowers.join(', ') }}</span></h2>
                 <div id="racial-powers-container" class="card-container" :key="key">
-                    <PEDDPower v-for="power in racialPowers" style="width:30%" :power="power"
+                    <PEDDPower v-for="power in racialPowers" :power="power"
                         @chosen="() => openedRacialPowerCards = choosePower(power, 'racialPowers', openedRacialPowerCards, 2)"
                         :expanded="openedRacialPowerCards.includes(power.name)" />
                 </div>
@@ -70,7 +70,7 @@
 
             <h2>Background Power: <span>{{ chosen.backgroundPower }}</span></h2>
             <div id="background-powers-container" class="card-container" :key="key">
-                <PEDDPower v-for="power in backgroundPowers" style="width:30%" :power="power"
+                <PEDDPower v-for="power in backgroundPowers" :power="power"
                         @chosen="() => openedBackgroundPowerCards = choosePower(power, 'racialPowers', openedBackgroundPowerCards, 1)"
                         :expanded="openedBackgroundPowerCards.includes(power.name)" />
             </div>
@@ -78,7 +78,7 @@
             <h2>Role Powers: <span>{{ chosen.rolePowers.join(', ') }}</span></h2>
             <p>One day the below will be properly automatically filtered by prerequisites</p>
             <div id="role-powers-container" class="card-container" :key="key">
-                <PEDDPower v-for="power in rolePowers" style="width:30%" :power="power"
+                <PEDDPower v-for="power in rolePowers" :power="power"
                         @chosen="() => openedRolePowerCards = choosePower(power, 'racialPowers', openedRolePowerCards, 2)"
                         :expanded="openedRolePowerCards.includes(power.name)" />
             </div>
@@ -260,8 +260,7 @@ let choosePower = (power, attribute, opened, max) => {
 
 .card-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .text-entry {
