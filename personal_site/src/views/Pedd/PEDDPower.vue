@@ -1,7 +1,8 @@
 <template>
-    <div :class="{container: expanded, header: !expanded}">
-        <h3 style="width:15rem;" @click="$emit('chosen')">{{ power.name }} <span v-if="!expanded" class="arrow">▼</span><span class="arrow" v-else>▲</span></h3>
-        
+    <div :class="{ container: expanded, header: !expanded }">
+        <h3 style="width:15rem;" @click="$emit('chosen')">{{ power.name }} <span v-if="!expanded"
+                class="arrow">▼</span><span class="arrow" v-else>▲</span></h3>
+
         <div id="body" v-if="expanded" class="inner-container" style="flex-grow:4">
             <h4>Tags:</h4>
             <ul>
@@ -11,19 +12,26 @@
             <ul>
                 <li v-for="preq in power.preq">{{ preq }}</li>
             </ul>
-            <p>{{ power.desc }}</p>
+            <div v-html="marked.parse(power.desc)"></div>
         </div>
     </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
+import { marked } from 'marked';
 const props = defineProps({ power: Object, expanded: Boolean });
 
 let power = ref(props.power);
 </script>
 
 <style lang="css" scoped>
+@media only screen and (max-width: 599px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
 .container {
     display: flex;
     border: 2px groove var(--highlight);
@@ -39,6 +47,13 @@ let power = ref(props.power);
     justify-content: start;
     padding: 0px 0.5rem;
     border-left: 2px groove var(--highlight);
+}
+
+@media only screen and (max-width: 599px) {
+    .inner-container {
+        border-left: none;
+        border-top: 2px groove var(--highlight);
+    }
 }
 
 .header {
@@ -66,7 +81,7 @@ h4 {
 }
 
 .arrow {
-    float:right;
-    margin-right:1rem;
+    float: right;
+    margin-right: 1rem;
 }
 </style>

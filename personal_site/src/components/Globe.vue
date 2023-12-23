@@ -70,7 +70,7 @@ function setViewPort() {
 
 onMounted(() => {
     document.getElementById("globe-canvas").append(renderer.domElement)
-})
+});
 
 </script>
 
@@ -88,6 +88,5 @@ onMounted(() => {
     padding: 0px 2px;
     margin: 0px;
     border: none;
-
 }
 </style>

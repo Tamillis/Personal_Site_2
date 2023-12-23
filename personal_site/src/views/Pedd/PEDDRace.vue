@@ -1,7 +1,7 @@
 <template>
-    <div class="container">
-        <h3 class="accordian" @click="$emit('raceChosen')">{{ race.name }}<span v-if="!expanded" class="arrow">▼</span><span class="arrow" v-else>▲</span></h3>
-        <div id="body" v-if="expanded">
+    <div :class="{ container: expanded, header: !expanded }">
+        <h3 style="width:15rem;" @click="$emit('raceChosen')">{{ race.name }}<span v-if="!expanded" class="arrow">▼</span><span class="arrow" v-else>▲</span></h3>
+        <div id="body" v-if="expanded" class="inner-container" style="flex-grow:4">
             <h4>Description:</h4>
             <p>{{ race.desc }}</p>
             <h4>Stats: </h4>
@@ -47,13 +47,41 @@ function capitalize(word) {
 </script>
 
 <style lang="css" scoped>
+@media only screen and (max-width: 599px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
 .container {
     display: flex;
+    border: 2px groove var(--highlight);
+    height: fit-content;
+    text-align: center;
+}
+
+.inner-container {
+    text-align: left;
+    display: flex;
+    flex-basis: 15rem;
     flex-direction: column;
     justify-content: start;
-    border: 2px groove var(--highlight);
-    height:fit-content;
     padding: 0px 0.5rem;
+    border-left: 2px groove var(--highlight);
+}
+
+@media only screen and (max-width: 599px) {
+    .inner-container {
+        border-left: none;
+        border-top: 2px groove var(--highlight);
+    }
+}
+
+.header {
+    text-align: center;
+    border: 2px groove var(--highlight);
+    width: fit-content;
+    min-width: 15rem;
 }
 
 ul {

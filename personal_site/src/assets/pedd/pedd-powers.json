@@ -351,10 +351,9 @@
             "universal"
         ],
         "preq": [
-            "each",
-            "prerequisite"
+            ""
         ],
-        "desc": "When you roll a 20 on an attack roll, ability check, or saving throw, you must reroll the die and use the new result, even if it is a 20.\n\nThankfully this misfortune has a habit of spreading, even to your enemies. Once per Long Rest you can turn one successful attack roll, skill check or saving throw of an enemy you can see into a failure."
+        "desc": "When you roll a 20 on an attack roll, ability check, or saving throw, you must reroll the die and use the new result, including if it is a 20.\n\nThankfully this misfortune has a habit of spreading, even to your enemies. Once per Long Rest you can turn one successful attack roll, skill check or saving throw of an enemy you can see into a failure."
     },
     {
         "name": "Danger Sense",
