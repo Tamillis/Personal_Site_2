@@ -159,27 +159,30 @@
   margin-right: auto;
 }
 
+.section {
+  z-index: 2;
+  transition: 0.5s;
+  overflow: auto;
+}
+
 @media only screen and (min-width: 600px) {
   .section {
     width: 90%;
     margin: 1rem var(--sectionMargin);
     padding: 1rem;
-    transition: 0.5s;
     border: var(--highlight) 4px groove;
     border-radius: 25px 0px 25px 0px;
-    overflow: auto;
+    
   }
 }
 
 @media only screen and (max-width: 599px) {
   .section {
     width: 100%;
-    transition: 0.5s;
+    padding-top:1rem;
     border: var(--highlight) 2px groove;
     border-top: none;
     border-bottom: none;
-    overflow: auto;
-    padding-top:1rem;
   }
 }
 

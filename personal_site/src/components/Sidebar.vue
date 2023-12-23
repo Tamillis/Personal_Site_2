@@ -55,14 +55,14 @@ function toggleNav() {
     //if the display of the sidebar is nill or none move items sidebar amount to the side
     //and set the display to block, or do the reverse
     if (out) {
-        nav.classList.remove("z3");
-        nav.classList.add("z1");
+        nav.classList.remove("z1");
+        nav.classList.add("z3");
         links.classList.remove("shiftOut");
         links.classList.add("shiftBack");
     }
     else {
-        nav.classList.remove("z1");
-        nav.classList.add("z3");
+        nav.classList.remove("z3");
+        nav.classList.add("z1");
         links.classList.remove("shiftBack");
         links.classList.add("shiftOut");
     }
