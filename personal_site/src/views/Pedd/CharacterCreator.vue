@@ -24,7 +24,70 @@
         </div>
         <div id="stats">
             <label>Stats</label>
-            <textarea class="text-entry">Here be, in time, automatic stats</textarea>
+            <table>
+                <tr>
+                    <td>
+                        <p>Strength: <span></span></p>
+                    </td>
+                    <td></td>
+                    <td>
+                        <p>Dexterity: <span></span></p>
+                    </td>
+                    <td></td>
+                    <td>
+                        <p>Accuracy: <span></span></p>
+                    </td>
+                    <td></td>
+                    <td>
+                        <p>Perception: <span></span></p>
+                    </td>
+                    <td></td>
+                    <td>
+                        <p>Intelligence: <span></span></p>
+                    </td>
+                    <td></td>
+                    <td>
+                        <p>Charisma: <span></span></p>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+            <label>Resistances</label>
+            <table>
+                <tr>
+                    <td>
+                        <p>Fortitude:</p>
+                    </td>
+                    <td></td>
+                    <td>
+                        <p>Reflexes: <span></span></p>
+                    </td>
+                    <td></td>
+                    <td>
+                        <p>Willpower: <span></span></p>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+            <label>Tertiaries</label>
+            <p>Don't forget these are just for flavour.</p>
+            <table>
+                <tr>
+                    <td>
+                        <p>Appearance (Strength + Charisma): <span></span></p>
+                    </td>
+                    <td></td>
+                    <td>
+                        <p>Agility (Dexterity + Accuracy): <span></span></p>
+                    </td>
+                    <td></td>
+                    <td>
+                        <p>Foresight (Perception + Intelligence): <span></span></p>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+            <StatPicker />
         </div>
         <h2>Race: <span>{{ chosen.race }}</span></h2>
         <PEDDCard v-for="race in races" :name="race.name" :expanded="openedRaceCards.includes(race.name)" :class="{highlight: chosen.race == race.name}"
@@ -93,6 +156,7 @@ import PEDDRace from './PEDDRace.vue';
 import PEDDCard from './PEDDCard.vue';
 import powers from '../../assets/pedd/pedd-powers.json';
 import races from '../../assets/pedd/pedd-races.json';
+import StatPicker from './StatPicker.vue';
 
 let racialPowers = computed(
     () => powers.filter(p => p.tag.includes("racial") && p.tag.includes(chosen.value.race.toLowerCase()))
@@ -175,20 +239,6 @@ let highlight = (tag) => {
 </script>
 
 <style lang="css" scoped>
-.proficiencies-list ul {
-    margin-top: 0.5rem;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.proficiencies-list li {
-    list-style: none;
-    border-left: 2px groove var(--highlight);
-    border-right: 2px groove var(--highlight);
-    padding: 0px 1rem;
-}
-
 .text-entry {
     border: none;
     border-radius: 0px;

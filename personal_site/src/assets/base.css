@@ -13,7 +13,7 @@
   --backgroundDark: #1d221f;
   /* --highlight: #00d435; */
   --highlight: var(--color-highlight);
-  --contrastColor: #007e8f;
+  --contrastColor: #23585f99; /*#007e8f;*/
   --sidebarWidth: 145px;
   --sectionMargin: 5vw;
   --textindent: 1.5rem;

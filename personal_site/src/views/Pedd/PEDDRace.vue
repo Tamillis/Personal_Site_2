@@ -6,7 +6,7 @@
         <ul>
             <li v-for="stat in stats">
                 <PEDDAnyStat v-if="stat.stat.includes('Any')" :val="stat.val" />
-                <p v-else>{{ stat.stat }} <span>{{ stat.val >= 0 ? "+" + stat.val : stat.val }}</span></p>
+                <p v-else style="margin:0">{{ stat.stat }} <span>{{ stat.val >= 0 ? "+" + stat.val : stat.val }}</span></p>
             </li>
         </ul>
         <h4>Base Health: <span>{{ race.baseHealth }}</span></h4>
