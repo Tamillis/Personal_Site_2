@@ -1,68 +1,23 @@
 <template>
-    <div :class="{ container: expanded, header: !expanded }">
-        <h3 style="width:15rem;" @click="$emit('chosen')">{{ power.name }} <span v-if="!expanded"
-                class="arrow">▼</span><span class="arrow" v-else>▲</span></h3>
-
-        <div id="body" v-if="expanded" class="inner-container" style="flex-grow:4">
-            <h4>Tags:</h4>
-            <ul>
-                <li v-for="tag in power.tag">{{ tag }}</li>
-            </ul>
-            <h4>Preqs:</h4>
-            <ul>
-                <li v-for="preq in power.preq">{{ preq }}</li>
-            </ul>
-            <div v-html="marked.parse(power.desc)"></div>
-        </div>
+    <div>
+        <h4>Tags:</h4>
+        <ul>
+            <li v-for="tag in power.tag" @click="$emit('highlight', tag)"><a>{{ tag }}</a></li>
+        </ul>
+        <h4>Prerequisites:</h4>
+        <ul>
+            <li v-for="preq in power.preq">{{ preq }}</li>
+        </ul>
+        <div v-html="marked.parse(power.desc)"></div>
     </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
 import { marked } from 'marked';
-const props = defineProps({ power: Object, expanded: Boolean });
-
-let power = ref(props.power);
+const props = defineProps({ power: Object });
 </script>
 
 <style lang="css" scoped>
-@media only screen and (max-width: 599px) {
-    .container {
-        flex-direction: column;
-    }
-}
-
-.container {
-    display: flex;
-    border: 2px groove var(--highlight);
-    height: fit-content;
-    text-align: center;
-}
-
-.inner-container {
-    text-align: left;
-    display: flex;
-    flex-basis: 15rem;
-    flex-direction: column;
-    justify-content: start;
-    padding: 0px 0.5rem;
-    border-left: 2px groove var(--highlight);
-}
-
-@media only screen and (max-width: 599px) {
-    .inner-container {
-        border-left: none;
-        border-top: 2px groove var(--highlight);
-    }
-}
-
-.header {
-    text-align: center;
-    border: 2px groove var(--highlight);
-    width: fit-content;
-    min-width: 15rem;
-}
-
 ul {
     display: flex;
     flex-wrap: wrap;
@@ -78,10 +33,5 @@ ul li {
 
 h4 {
     font-weight: bold;
-}
-
-.arrow {
-    float: right;
-    margin-right: 1rem;
 }
 </style>

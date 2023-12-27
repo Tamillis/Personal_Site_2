@@ -50,7 +50,7 @@ The more you're knocked down, the more likely you are to stay down, forever.
 
 ### Defence
 To make characters easier to strike, meaning less spongey, and also to make combat more proactive and engaging; the Defence Stat replaces AC and is more flexible than a flat value, being made of three parts: 
-- a Base Defence value of 8 for Medium characters, 10 for Small characters and 6 for Large characters. Should it be relevant, Huge characters have a base defence of 2 and Tiny a base defence of 14.
+- a Base Defence value of 8 for Medium characters, 10 for Small characters and 6 for Large characters. Should it be relevant, Huge characters have a Base Defence of 2 and Tiny a Base Defence of 14.
 - an Armour value determined by worn Equipment
 - an Evasion value, your Reflexes to a minimum of 0 (which can be limited by worn Equipment).
 
@@ -108,7 +108,7 @@ Armour is changed to the following:
 **Shield** - equipped in the hand, you must use a Quick Action to Block to gain the bonus to Armour
 
 #### Cover
-Cover is unchanged from the base game, but worth re-iterating here. Cover is a bonus to your Defence, a +2 for 'Half Cover' and a +5 for 'Three Quarters Cover'. This is independent of Armour and Evasion, so consider it part of your Base Defence. Additionally, don't forget that these bonuses apply to Dexterity Saves as well! 
+Cover is functionally unchanged from the base game, but translates like so. Cover is a bonus to your Defence, a +2 for 'Half Cover' and a +5 for 'Three Quarters Cover'. This is independent of Armour and Evasion, so consider it part of your Base Defence. Additionally, don't forget that these bonuses apply to Reflex Saves as well, just as they apply to Dexterity Saves in 5e!
 
 ### One Action All At Once
 A radical change I've experimented a little with is to basic combat where, simply, all characters in a **Round** of combat have one **Action** (and a Bonus Action), and everyone "acts" at once, no initiative. No taking "Turns".
@@ -144,11 +144,12 @@ How do you avoid a long conga-line chain of awkwardly connected characters fight
 
 A character can only attempt to engage one character at a time. You can only melee attack someone you’re engaged with. Conga-lines break as if you, who are engaging someone who is engaging someone else, are engaged by a fourth, you must “turn” and engage your attacker, with the attacker **“Pulling”**. I.e., you cannot be "pulled" if you are engaged with someone who is engaged with you.
 
-Additionally, a character can only be engaged by a maximum number of characters according to their size. Sometimes someone is surrounded by attackers, and even if you wanted to join in on the bullying, you're crowded out. The maximum number of opponents a character of a given size can have is:
-- tiny/small - 1
-- medium - 2
-- large - 4
-- gargantuan - 8
+Additionally, a character can only be engaged by a maximum number of characters according to their relative size. Sometimes someone is surrounded by attackers, and even if you wanted to join in on the bullying, you're crowded out. The maximum number of opponents a character of a given relative size can have is:
+- smaller - 1
+- same - 2
+- larger - 4
+- 2 sizes larger - 8
+- 3 sizes+ larger - any
 
 **Flanking** - is changed. You are "Flanking" when you are the one in an Engagement who the foe isn’t Engaging. You cannot flank a creature 2 or more sizes larger than you.
 

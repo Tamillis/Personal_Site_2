@@ -27,18 +27,21 @@
             <textarea class="text-entry">Here be, in time, automatic stats</textarea>
         </div>
         <h2>Race: <span>{{ chosen.race }}</span></h2>
-        <div id="races-container" class="card-container">
-            <PEDDRace v-for="race in races" :race="race"
-                @race-chosen="() => openedRaceCards = chooseValue(race, 'race', openedRaceCards)"
-                :expanded="openedRaceCards.includes(race.name)" />
-        </div>
+        <PEDDCard v-for="race in races" :name="race.name" :expanded="openedRaceCards.includes(race.name)" :class="{highlight: chosen.race == race.name}"
+            @chosen="() => openedRaceCards = chooseValue(race, 'race', openedRaceCards)">
+            <PEDDRace :race="race" />
+        </PEDDCard>
+
         <div v-if="openedRaceCards.length !== 0">
             <h2>Racial Powers: <span>{{ chosen.racialPowers.join(', ') }}</span></h2>
-            <div id="racial-powers-container" class="card-container" :key="key">
-                <PEDDPower v-for="power in racialPowers" :power="power"
-                    @chosen="() => openedRacialPowerCards = choosePower(power, 'racialPowers', openedRacialPowerCards, 2)"
-                    :expanded="openedRacialPowerCards.includes(power.name)" />
-            </div>
+            <div class="cards">
+            <PEDDCard v-for="(power, i) in racialPowers" :name="power.name" :class="{highlight: chosen.racialPowers.includes(power.name)}"
+                :expanded="openedRacialPowerCards.includes(power.name)"
+                @chosen="() => openedRacialPowerCards = choosePower(power, 'racialPowers', openedRacialPowerCards, 2)"
+                :key="`rcpc-${i}-${key}`">
+                <PEDDPower :power="power"  @highlight="(tag) => highlight(tag)"/>
+            </PEDDCard>
+        </div>
         </div>
 
         <h2>Upbringing</h2>
@@ -54,22 +57,27 @@
         <p>Background 6 General Skills</p>
 
         <h2>Background Power: <span>{{ chosen.backgroundPower }}</span></h2>
-        <div id="background-powers-container" class="card-container" :key="key">
-            <PEDDPower v-for="power in backgroundPowers" :power="power"
-                @chosen="() => openedBackgroundPowerCards = choosePower(power, 'racialPowers', openedBackgroundPowerCards, 1)"
-                :expanded="openedBackgroundPowerCards.includes(power.name)" />
-        </div>
+        <div class="cards">
+        <PEDDCard v-for="(power, i) in backgroundPowers" :name="power.name" :class="{highlight: chosen.backgroundPower == power.name}"
+            :expanded="openedBackgroundPowerCards.includes(power.name)"
+            @chosen="() => openedBackgroundPowerCards = chooseValue(power, 'backgroundPower', openedBackgroundPowerCards, 1)"
+            :key="`bgpc-${i}-${key}`">
+            <PEDDPower :power="power"  @highlight="(tag) => highlight(tag)"/>
+        </PEDDCard>
+    </div>
 
         <h2>Role Powers: <span>{{ chosen.rolePowers.join(', ') }}</span></h2>
         <p>One day the below will be properly automatically filtered by prerequisites</p>
         <select class="tag-select" v-model="roleTag">
             <option v-for="tag in tags">{{ tag }}</option>
         </select>
-        <div id="role-powers-container" class="card-container" :key="key">
-            <PEDDPower v-for="power in rolePowers" :power="power"
-                @chosen="() => openedRolePowerCards = choosePower(power, 'racialPowers', openedRolePowerCards, 2)"
-                :expanded="openedRolePowerCards.includes(power.name)" />
+        <div class="cards">
+        <PEDDCard v-for="(power, i) in rolePowers" :name="power.name" :expanded="openedRolePowerCards.includes(power.name)" :class="{highlight: chosen.rolePowers.includes(power.name)}"
+            @chosen="() => openedRolePowerCards = choosePower(power, 'rolePowers', openedRolePowerCards, 3)" :key="`rlpc-${i}-${key}`">
+            <PEDDPower :power="power" @highlight="(tag) => highlight(tag)" />
+        </PEDDCard>
         </div>
+
         <h3>Role Stat increases</h3>
         <h3>4 Role Martial Skills</h3>
 
@@ -82,6 +90,7 @@
 import { ref, computed } from 'vue';
 import PEDDPower from './PEDDPower.vue';
 import PEDDRace from './PEDDRace.vue';
+import PEDDCard from './PEDDCard.vue';
 import powers from '../../assets/pedd/pedd-powers.json';
 import races from '../../assets/pedd/pedd-races.json';
 
@@ -111,7 +120,6 @@ let openedRacialPowerCards = [];
 let openedBackgroundPowerCards = [];
 let openedRolePowerCards = [];
 
-// choose(race, "race", openedRaceCards) and return selection otherwise the seemingly passed by value array will be lost! hahahaha
 let chooseValue = (card, attribute, opened) => {
     key.value++;
     if (!opened.includes(card.name)) {
@@ -160,6 +168,10 @@ let choosePower = (power, attribute, opened, max) => {
 
     return opened;
 };
+
+let highlight = (tag) => {
+    roleTag.value = tag;
+};
 </script>
 
 <style lang="css" scoped>
@@ -175,11 +187,6 @@ let choosePower = (power, attribute, opened, max) => {
     border-left: 2px groove var(--highlight);
     border-right: 2px groove var(--highlight);
     padding: 0px 1rem;
-}
-
-.card-container {
-    display: flex;
-    flex-direction: column;
 }
 
 .text-entry {
@@ -230,4 +237,5 @@ label {
 
     font-size: var(--para-size);
 }
+
 </style>

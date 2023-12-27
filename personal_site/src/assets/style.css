@@ -135,6 +135,12 @@
   margin-top: none !important;
 }
 
+.no-btn {
+  background: none;
+  border: none;
+  outline: none;
+}
+
 /* General styling classes, for a site-wide aesthetic */
 .btn {
   text-align: center;

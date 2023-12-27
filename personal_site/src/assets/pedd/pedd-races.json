@@ -1,7 +1,7 @@
 [{
     "name": "Human",
     "desc" : "Humans represent the best and worst of civilization, and every other part of the spectrum, and are known primarily for their short lives, industriousness, and their lasting institutions.\n\nThat they are productive, conscientious, and promiscuous is without doubt, for human nations rule much of all the known Materiae, and even in wild and primal Tlancayo the greatest tribal territories and nations are governed, at least partially, by a human hand.\n\nBut \"Humanity\" is not a term usually used to mean the modern human race alone. Any and all of the races that descend from the First Men fall under the umbrella of humanity, be they a \"touched\" bloodline or descendant race. Even the haughty and capricious Eladrin, dwellers and custodians of the Fae Wyld, acknowledge this origin.\n\nHumans, as in modern humans, are said by some to be the purest and most direct descendant of the First Men. The Religion of the Father, and the successor faith, the Everlight, both preach this as fact and unalienable right. Others say that humans are just as corrupted from the First Men as any of the other bloodlines, as they are not capable of the feats the First Men were described as accomplishing.",
-    "stats" : ["Any Stat +2", "Any Stat +1", "Any Stat -1", "Willpower +1"],
+    "stats" : ["Any +2", "Any +1", "Any -1", "Willpower +1"],
     "baseHealth": 6,
     "age" : "Humans reach adulthood in their late teens and live less than a century.",
     "size" : "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.",
@@ -61,7 +61,7 @@
 {
     "name": "Half-Elf",
     "desc" : "One of the most common and well known of the bloodlines are the Fey Touched of the green blood, the Half-Elves. Having had their bloodline meddled by fey powers, they bare resemblance to the folk that hail from there. Ever since the green flight and Elves flocked to the cities and courts, they've become a fairly common member of many a shard.\n\nWalking in two worlds but truly belonging to neither, Half-Elves combine what some say are the best qualities of their Elf and Human parents: Human industriousnous, inventiveness, and ambition tempered by the refined senses, love of subtlety, and artistic tastes of the Elves.",
-    "stats" : ["Charisma +2", "Any Stat +1", "Any Stat -1", "Reflexes +1"],
+    "stats" : ["Charisma +2", "Any +1", "Any -1", "Reflexes +1"],
     "baseHealth": 6,
     "age" : "Half-Elves age at much the same rate as humans, reaching adulthood in their late teens. Depending on the strength of the Fae-Touch, they can live much longer than Humans, exceeding 3 centuries.",
     "size" : "Half-Elves are more or less the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium.",
