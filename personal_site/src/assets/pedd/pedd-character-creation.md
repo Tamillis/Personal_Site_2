@@ -355,29 +355,30 @@ Take a note of the equipment you already have from your background, and then cho
 
 Note that any martial weapon choice can be downgraded to a simple weapon, and chain mail can be downgraded to leather armour.
 
-WIP - selectable cards where each card lists what equipment choices the set has
 <div id="equipment-list">
 
 - The Fighter
-  - Chainmail, a shield, 3 Martial Weapons of your choice, 2 Simple weapons of your choice
+  - Chainmail, a shield, 3 Martial Weapons of your choice, 2 Simple weapons of your choice, a pouch with 10gp, a dungeoneer's/explorer's pack
 - The Rogue
-  - Leather Armour, a melee martial weapon of your choice, a ranged martial weapon of your choice, a simple weapon of your choice, Tools (Thieves' / Leatherworker's / Woodcarver's)
+  - Leather Armour, a melee martial weapon of your choice, a ranged martial weapon of your choice, a simple weapon of your choice, a set of tools (suggested: Thieves' / Alchemist's / Tinker's / Smith's), a pouch with 15gp, any one pack
 - The Wizard
-  - a staff, a wand, spellcasting components, Tools (Alchemist's / Herbalist's)
+  - a staff, a wand, a component pouch full of arcane spellcasting components, a set of tools (suggested: Alchemist's / Herbalist's), a pouch with 15gp, a diplomat's/entertainer's/explorer's/scholar's pack
 - The Tinker
-  - Light armour, Simple Weapon, Tools, Money
+  - Leather armour, a Simple Weapon of your choice, a set of tools (suggested: Tinker's, Woodcarver's, Painter's, Jeweler's, Caligrapher's), a pouch with 15gp
 - The Destitute
-  - a knife, nothing extra
+  - a knife, the clothes on your back, and nothing extra
 - The Cleric
-  - medium armour, simple weapon, holy symbol
+  - Chain Shirt, a simple weapon of your choice, a holy symbol of your faith, a pouch with 10gp
 - The Druid
-  - medium armour, shield, simple weapon, druidic focus
+  - Hide or Leather Armour, a bronze embossed shield, a simple weapon of your choice, a druidic focus, a component pouch full of natural components, a pouch with 25sp
 - The Warlock
-  - light armour, martial weapon, occult wand
+  - padded armour, a martial weapon of your choice representative of your patron, an occult spellcasting wand, a pouch with 15gp
+- The Bard
+  - padded armour, an elegant martial or simple weapon of your choice, a knife, a musical instrument (suggested: lute / horn / drum / viol), a pouch with 15gp, a burglar's/diplomat's/entertainer's/explorer's pack 
 
 </div>
 
-And, a pack of your choice:
+Pack's, for reference (you may with your DM's permission swap your pack for any other pack):
 
 <div class="proficiencies-list">
 

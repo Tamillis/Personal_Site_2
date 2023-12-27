@@ -27,29 +27,33 @@
             <table>
                 <tr>
                     <td>
-                        <p>Strength: <span></span></p>
+                        <p>Strength: </p>
                     </td>
-                    <td></td>
+                    <td>{{ player.strength }}</td>
                     <td>
-                        <p>Dexterity: <span></span></p>
+                        <p>Dexterity: </p>
                     </td>
-                    <td></td>
+                    <td>{{ player.dexterity }}</td>
                     <td>
-                        <p>Accuracy: <span></span></p>
+                        <p>Accuracy: </p>
                     </td>
-                    <td></td>
+                    <td>{{ player.accuracy }}</td>
                     <td>
-                        <p>Perception: <span></span></p>
+                        <p>Perception: </p>
                     </td>
-                    <td></td>
+                    <td>{{ player.perception }}</td>
                     <td>
-                        <p>Intelligence: <span></span></p>
+                        <p>Intelligence: </p>
                     </td>
-                    <td></td>
+                    <td>{{ player.intelligence }}</td>
                     <td>
-                        <p>Charisma: <span></span></p>
+                        <p>Charisma: </p>
                     </td>
-                    <td></td>
+                    <td>{{ player.charisma }}</td>
+                    <td v-if="player.faith">
+                        <p>Faith: </p>
+                    </td>
+                    <td  v-if="player.faith">{{ player.faith }}</td>
                 </tr>
             </table>
             <label>Resistances</label>
@@ -58,40 +62,74 @@
                     <td>
                         <p>Fortitude:</p>
                     </td>
-                    <td></td>
+                    <td>{{ player.fortitude }}</td>
                     <td>
-                        <p>Reflexes: <span></span></p>
+                        <p>Reflexes:</p>
                     </td>
-                    <td></td>
+                    <td>{{ player.reflexes }}</td>
                     <td>
-                        <p>Willpower: <span></span></p>
+                        <p>Willpower:</p>
                     </td>
-                    <td></td>
+                    <td>{{ player.willpower }}</td>
                 </tr>
             </table>
-            <label>Tertiaries</label>
-            <p>Don't forget these are just for flavour.</p>
+            <label>Secondary Stats</label>
             <table>
                 <tr>
                     <td>
-                        <p>Appearance (Strength + Charisma): <span></span></p>
+                        <p>Health:</p>
                     </td>
-                    <td></td>
+                    <td>{{ player.fortitude + player.willpower + chosen.race.baseHealth }}</td>
                     <td>
-                        <p>Agility (Dexterity + Accuracy): <span></span></p>
+                        <p>Defence:</p>
                     </td>
-                    <td></td>
                     <td>
-                        <p>Foresight (Perception + Intelligence): <span></span></p>
+                        <table>
+                            <tr>
+                                <td>Base </td>
+                                <td>{{ baseDefence[chosen.race.sizeVal] }}</td>
+                                <td> + Armour</td>
+                                <td>{{ player.armour }}</td>
+                                <td> + Evasion</td>
+                                <td>{{ player.evasion }}</td>
+                                <td>=</td>
+                                <td>{{ baseDefence[chosen.race.sizeVal] + player.armour + player.evasion }}</td>
+                            </tr>
+                        </table>
                     </td>
-                    <td></td>
+                    <td>
+                        <p>Speed: </p>
+                    </td>
+                    <td>{{ chosen.race.speed }}</td>
+                    <td>
+                        <p>Initiative: </p>
+                    </td>
+                    <td>{{ player.initiative }}</td>
+                </tr>
+            </table>
+            <label>Tertiaries</label>
+            <p><small>Don't forget these are just for flavour.</small></p>
+            <table>
+                <tr>
+                    <td>
+                        <p>Appearance (Str. + Cha.):</p>
+                    </td>
+                    <td>{{ player.appearance }}</td>
+                    <td>
+                        <p>Agility (Dex. + Acc.):</p>
+                    </td>
+                    <td>{{ player.agility }}</td>
+                    <td>
+                        <p>Foresight (Per. + Int.):</p>
+                    </td>
+                    <td>{{ player.foresight }}</td>
                 </tr>
             </table>
             <StatPicker />
         </div>
-        <h2>Race: <span>{{ chosen.race }}</span></h2>
-        <PEDDCard v-for="race in races" :name="race.name" :expanded="openedRaceCards.includes(race.name)" :class="{highlight: chosen.race == race.name}"
-            @chosen="() => openedRaceCards = chooseValue(race, 'race', openedRaceCards)">
+        <h2>Race: <span>{{ chosen.race.name }}</span></h2>
+        <PEDDCard v-for="race in races" :name="race.name" :expanded="openedRaceCards.includes(race.name)" :class="{highlight: chosen.race.name == race.name}"
+            @chosen="() => openedRaceCards = chooseRace(race)">
             <PEDDRace :race="race" />
         </PEDDCard>
 
@@ -159,7 +197,7 @@ import races from '../../assets/pedd/pedd-races.json';
 import StatPicker from './StatPicker.vue';
 
 let racialPowers = computed(
-    () => powers.filter(p => p.tag.includes("racial") && p.tag.includes(chosen.value.race.toLowerCase()))
+    () => powers.filter(p => p.tag.includes("racial") && p.tag.includes(chosen.value.race.name.toLowerCase()))
 );
 let backgroundPowers = computed(() => powers.filter(p => p.tag.includes("background")));
 let rolePowers = computed(() => {
@@ -171,18 +209,64 @@ let tags = ["All"].concat(Array.from(new Set(powers.map(p => p.tag).flat().sort(
 let roleTag = ref("All");
 
 let chosen = ref({
-    race: "",
+    race: false,
     racialPowers: [],
     background: "",
     backgroundPower: "",
     rolePowers: []
 });
 let key = ref(0);
+let player = ref({
+    strength: 2,
+    dexterity: 1,
+    accuracy: 0,
+    perception: 0,
+    intelligence: -1,
+    charisma: -2,
+    faith: 2,
+    armour: 0,
+    get evasion() {return this.dexterity < 0 ? 0 : this.dexterity},
+    get fortitude() {return this.strength + this.dexterity},
+    get reflexes() {return this.accuracy + this.perception},
+    get willpower() {return this.intelligence + this.charisma},
+    get appearance() {return this.strength + this.charisma},
+    get agility() {return this.accuracy + this.dexterity},
+    get foresight() {return this.intelligence + this.perception},
+    get initiative() {return this.dexterity + this.perception},
+});
+let baseDefence = {
+    tiny: 16,
+    small: 10,
+    medium: 8,
+    large: 6,
+    huge: 2
+}
 
 let openedRaceCards = [];
 let openedRacialPowerCards = [];
 let openedBackgroundPowerCards = [];
 let openedRolePowerCards = [];
+
+let chooseRace = (race) => {
+    key.value++;
+    if (!openedRaceCards.includes(race.name)) {
+        //clicking an un-opened card
+        chosen.value.race = race;
+        openedRaceCards.push(race.name);
+    }
+    else if (chosen.value.race && chosen.value.race.name !== race.name) {
+        //clicking an open card that is not the current selection
+        chosen.value.race = race;
+    }
+    else {
+        //clicking the opened and selected card, i.e. deselect and close it
+        openedRaceCards = openedRaceCards.filter(r => r !== race.name);
+        if (openedRaceCards.length > 0) chosen.value.race = races.filter(r => r.name == openedRaceCards[openedRaceCards.length - 1])[0];
+        else chosen.value.race = false;
+    }
+
+    return openedRaceCards;
+};
 
 let chooseValue = (card, attribute, opened) => {
     key.value++;

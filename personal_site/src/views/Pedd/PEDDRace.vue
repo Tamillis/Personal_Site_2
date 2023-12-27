@@ -38,7 +38,7 @@ let stats = props.race.stats.map(stat => {
         val: Number(parts[1])
     }
 });
-console.log(stats);
+
 let extras = Object.keys(props.race).filter(key => !standardHeadings.includes(key));
 
 function format(name) {
