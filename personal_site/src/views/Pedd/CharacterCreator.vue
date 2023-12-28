@@ -22,115 +22,15 @@
             <label for="character-flaws">Flaw/s: </label>
             <textarea id="character-flaws" class="text-entry" placeholder="..."></textarea>
         </div>
-        <div id="stats">
-            <label>Stats</label>
-            <table>
-                <tr>
-                    <td>
-                        <p>Strength: </p>
-                    </td>
-                    <td>{{ player.strength }}</td>
-                    <td>
-                        <p>Dexterity: </p>
-                    </td>
-                    <td>{{ player.dexterity }}</td>
-                    <td>
-                        <p>Accuracy: </p>
-                    </td>
-                    <td>{{ player.accuracy }}</td>
-                    <td>
-                        <p>Perception: </p>
-                    </td>
-                    <td>{{ player.perception }}</td>
-                    <td>
-                        <p>Intelligence: </p>
-                    </td>
-                    <td>{{ player.intelligence }}</td>
-                    <td>
-                        <p>Charisma: </p>
-                    </td>
-                    <td>{{ player.charisma }}</td>
-                    <td v-if="player.faith">
-                        <p>Faith: </p>
-                    </td>
-                    <td  v-if="player.faith">{{ player.faith }}</td>
-                </tr>
-            </table>
-            <label>Resistances</label>
-            <table>
-                <tr>
-                    <td>
-                        <p>Fortitude:</p>
-                    </td>
-                    <td>{{ player.fortitude }}</td>
-                    <td>
-                        <p>Reflexes:</p>
-                    </td>
-                    <td>{{ player.reflexes }}</td>
-                    <td>
-                        <p>Willpower:</p>
-                    </td>
-                    <td>{{ player.willpower }}</td>
-                </tr>
-            </table>
-            <label>Secondary Stats</label>
-            <table>
-                <tr>
-                    <td>
-                        <p>Health:</p>
-                    </td>
-                    <td>{{ player.fortitude + player.willpower + chosen.race.baseHealth }}</td>
-                    <td>
-                        <p>Defence:</p>
-                    </td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td>Base </td>
-                                <td>{{ baseDefence[chosen.race.sizeVal] }}</td>
-                                <td> + Armour</td>
-                                <td>{{ player.armour }}</td>
-                                <td> + Evasion</td>
-                                <td>{{ player.evasion }}</td>
-                                <td>=</td>
-                                <td>{{ baseDefence[chosen.race.sizeVal] + player.armour + player.evasion }}</td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td>
-                        <p>Speed: </p>
-                    </td>
-                    <td>{{ chosen.race.speed }}</td>
-                    <td>
-                        <p>Initiative: </p>
-                    </td>
-                    <td>{{ player.initiative }}</td>
-                </tr>
-            </table>
-            <label>Tertiaries</label>
-            <p><small>Don't forget these are just for flavour.</small></p>
-            <table>
-                <tr>
-                    <td>
-                        <p>Appearance (Str. + Cha.):</p>
-                    </td>
-                    <td>{{ player.appearance }}</td>
-                    <td>
-                        <p>Agility (Dex. + Acc.):</p>
-                    </td>
-                    <td>{{ player.agility }}</td>
-                    <td>
-                        <p>Foresight (Per. + Int.):</p>
-                    </td>
-                    <td>{{ player.foresight }}</td>
-                </tr>
-            </table>
-            <StatPicker />
-        </div>
+
+        <StatDisplay :player="player" :race="chosen.race" :key="'sd-'+key"/>
+
+        <StatPicker />
+
         <h2>Race: <span>{{ chosen.race.name }}</span></h2>
         <PEDDCard v-for="race in races" :name="race.name" :expanded="openedRaceCards.includes(race.name)" :class="{highlight: chosen.race.name == race.name}"
             @chosen="() => openedRaceCards = chooseRace(race)">
-            <PEDDRace :race="race" />
+            <PEDDRace :race="race" @selected-stats="(stats) => {chosen.stats = stats;updatePlayerStats(race);}"/>
         </PEDDCard>
 
         <div v-if="openedRaceCards.length !== 0">
@@ -194,6 +94,7 @@ import PEDDRace from './PEDDRace.vue';
 import PEDDCard from './PEDDCard.vue';
 import powers from '../../assets/pedd/pedd-powers.json';
 import races from '../../assets/pedd/pedd-races.json';
+import StatDisplay from './StatDisplay.vue';
 import StatPicker from './StatPicker.vue';
 
 let racialPowers = computed(
@@ -213,9 +114,19 @@ let chosen = ref({
     racialPowers: [],
     background: "",
     backgroundPower: "",
-    rolePowers: []
+    rolePowers: [],
+    stats: []
 });
+
 let key = ref(0);
+let selectedStats = ref({
+    strength: 2,
+    dexterity: 1,
+    accuracy: 0,
+    perception: 0,
+    intelligence: -1,
+    charisma: -2
+})
 let player = ref({
     strength: 2,
     dexterity: 1,
@@ -225,22 +136,15 @@ let player = ref({
     charisma: -2,
     faith: 2,
     armour: 0,
-    get evasion() {return this.dexterity < 0 ? 0 : this.dexterity},
-    get fortitude() {return this.strength + this.dexterity},
-    get reflexes() {return this.accuracy + this.perception},
-    get willpower() {return this.intelligence + this.charisma},
-    get appearance() {return this.strength + this.charisma},
-    get agility() {return this.accuracy + this.dexterity},
-    get foresight() {return this.intelligence + this.perception},
-    get initiative() {return this.dexterity + this.perception},
+    evasion: 0,
+    fortitude: 0,
+    reflexes: 0,
+    willpower: 0,
+    appearance: 0,
+    agility: 0,
+    foresight: 0,
+    initiative: 0
 });
-let baseDefence = {
-    tiny: 16,
-    small: 10,
-    medium: 8,
-    large: 6,
-    huge: 2
-}
 
 let openedRaceCards = [];
 let openedRacialPowerCards = [];
@@ -252,11 +156,13 @@ let chooseRace = (race) => {
     if (!openedRaceCards.includes(race.name)) {
         //clicking an un-opened card
         chosen.value.race = race;
+        updatePlayerStats(race);
         openedRaceCards.push(race.name);
     }
     else if (chosen.value.race && chosen.value.race.name !== race.name) {
         //clicking an open card that is not the current selection
         chosen.value.race = race;
+        updatePlayerStats(race);
     }
     else {
         //clicking the opened and selected card, i.e. deselect and close it
@@ -319,6 +225,40 @@ let choosePower = (power, attribute, opened, max) => {
 
 let highlight = (tag) => {
     roleTag.value = tag;
+};
+
+let updatePlayerStats = (race) => {
+    //set base stats from selections
+    for(let stat in selectedStats.value) {
+        player.value[stat] = selectedStats.value[stat];
+    }
+    
+    player.value.evasion = 0;
+    player.value.fortitude = 0;
+    player.value.reflexes = 0;
+    player.value.willpower = 0;
+    player.value.appearance = 0;
+    player.value.agility = 0;
+    player.value.foresight = 0; 
+    player.value.initiative = 0;
+    player.value.faith = 2;
+
+    //race increases
+    //console.log(race.stats.map(s => s.desc + " " + s.val));
+    for(let stat of race.stats) {
+        if(stat.desc.toLowerCase() == "any") continue;
+        player.value[stat.desc.toLowerCase()] += stat.val;
+    }
+
+    //calc using new stats secondaries
+    player.value.evasion += player.value.dexterity < 0 ? 0 : player.value.dexterity;
+    player.value.fortitude += player.value.strength + player.value.dexterity;
+    player.value.reflexes += player.value.accuracy + player.value.perception;
+    player.value.willpower += player.value.intelligence + player.value.charisma;
+    player.value.appearance += player.value.strength + player.value.charisma;
+    player.value.agility += player.value.accuracy + player.value.dexterity;
+    player.value.foresight += player.value.intelligence + player.value.perception;
+    player.value.initiative += player.value.dexterity + player.value.perception;
 };
 </script>
 
