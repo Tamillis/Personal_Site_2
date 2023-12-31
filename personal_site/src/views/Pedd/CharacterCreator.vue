@@ -23,26 +23,55 @@
             <textarea id="character-flaws" class="text-entry" placeholder="..."></textarea>
         </div>
 
-        <StatDisplay :player="player" :race="chosen.race" :key="'sd-'+key"/>
+        <StatDisplay :player="player" :key="'sd-' + key" />
 
-        <StatPicker />
+        <h2>Initial Stat Selection: </h2>
+        <div class="flex">
+            <div>
+                <label>
+                    <select class="no-btn" :value="majorIncrease"
+                        @change="(event) => majorIncreaseChange(event.target.value)">
+                        <option v-for="stat in stats">{{ stat }}</option>
+                    </select>
+                    +2</label>
+            </div>
+            <div>
+                 <label>+1</label> <!--TODO -->
+                <select class="no-btn" :value="minorIncrease" @change="(event) => minorIncreaseChange(event.target.value)">
+                    <option v-for="stat in stats">{{ stat }}</option>
+                </select>
+            </div>
+            <div>
+                <label>-1</label>
+                <select class="no-btn" :value="minorDecrease" @change="(event) => minorDecreaseChange(event.target.value)">
+                    <option v-for="stat in stats">{{ stat }}</option>
+                </select>
+            </div>
+            <div>
+                <label>-2</label>
+                <select class="no-btn" :value="majorDecrease" @change="(event) => majorDecreaseChange(event.target.value)">
+                    <option v-for="stat in stats">{{ stat }}</option>
+                </select>
+            </div>
+        </div>
 
         <h2>Race: <span>{{ chosen.race.name }}</span></h2>
-        <PEDDCard v-for="race in races" :name="race.name" :expanded="openedRaceCards.includes(race.name)" :class="{highlight: chosen.race.name == race.name}"
-            @chosen="() => openedRaceCards = chooseRace(race)">
-            <PEDDRace :race="race" @selected-stats="(stats) => {chosen.stats = stats;updatePlayerStats(race);}"/>
+        <PEDDCard v-for="race in races" :name="race.name" :expanded="openedRaceCards.includes(race.name)"
+            :class="{ highlight: chosen.race.name == race.name }" @chosen="() => openedRaceCards = chooseRace(race)">
+            <PEDDRace :race="race" @selected-stats="(stats) => { chosen.stats = stats; updatePlayerStats(race); }" />
         </PEDDCard>
 
         <div v-if="openedRaceCards.length !== 0">
             <h2>Racial Powers: <span>{{ chosen.racialPowers.join(', ') }}</span></h2>
             <div class="cards">
-            <PEDDCard v-for="(power, i) in racialPowers" :name="power.name" :class="{highlight: chosen.racialPowers.includes(power.name)}"
-                :expanded="openedRacialPowerCards.includes(power.name)"
-                @chosen="() => openedRacialPowerCards = choosePower(power, 'racialPowers', openedRacialPowerCards, 2)"
-                :key="`rcpc-${i}-${key}`">
-                <PEDDPower :power="power"  @highlight="(tag) => highlight(tag)"/>
-            </PEDDCard>
-        </div>
+                <PEDDCard v-for="(power, i) in racialPowers" :name="power.name"
+                    :class="{ highlight: chosen.racialPowers.includes(power.name) }"
+                    :expanded="openedRacialPowerCards.includes(power.name)"
+                    @chosen="() => openedRacialPowerCards = choosePower(power, 'racialPowers', openedRacialPowerCards, 2)"
+                    :key="`rcpc-${i}-${key}`">
+                    <PEDDPower :power="power" @highlight="(tag) => highlight(tag)" />
+                </PEDDCard>
+            </div>
         </div>
 
         <h2>Upbringing</h2>
@@ -59,13 +88,14 @@
 
         <h2>Background Power: <span>{{ chosen.backgroundPower }}</span></h2>
         <div class="cards">
-        <PEDDCard v-for="(power, i) in backgroundPowers" :name="power.name" :class="{highlight: chosen.backgroundPower == power.name}"
-            :expanded="openedBackgroundPowerCards.includes(power.name)"
-            @chosen="() => openedBackgroundPowerCards = chooseValue(power, 'backgroundPower', openedBackgroundPowerCards, 1)"
-            :key="`bgpc-${i}-${key}`">
-            <PEDDPower :power="power"  @highlight="(tag) => highlight(tag)"/>
-        </PEDDCard>
-    </div>
+            <PEDDCard v-for="(power, i) in backgroundPowers" :name="power.name"
+                :class="{ highlight: chosen.backgroundPower == power.name }"
+                :expanded="openedBackgroundPowerCards.includes(power.name)"
+                @chosen="() => openedBackgroundPowerCards = chooseValue(power, 'backgroundPower', openedBackgroundPowerCards, 1)"
+                :key="`bgpc-${i}-${key}`">
+                <PEDDPower :power="power" @highlight="(tag) => highlight(tag)" />
+            </PEDDCard>
+        </div>
 
         <h2>Role Powers: <span>{{ chosen.rolePowers.join(', ') }}</span></h2>
         <p>One day the below will be properly automatically filtered by prerequisites</p>
@@ -73,10 +103,13 @@
             <option v-for="tag in tags">{{ tag }}</option>
         </select>
         <div class="cards">
-        <PEDDCard v-for="(power, i) in rolePowers" :name="power.name" :expanded="openedRolePowerCards.includes(power.name)" :class="{highlight: chosen.rolePowers.includes(power.name)}"
-            @chosen="() => openedRolePowerCards = choosePower(power, 'rolePowers', openedRolePowerCards, 3)" :key="`rlpc-${i}-${key}`">
-            <PEDDPower :power="power" @highlight="(tag) => highlight(tag)" />
-        </PEDDCard>
+            <PEDDCard v-for="(power, i) in rolePowers" :name="power.name"
+                :expanded="openedRolePowerCards.includes(power.name)"
+                :class="{ highlight: chosen.rolePowers.includes(power.name) }"
+                @chosen="() => openedRolePowerCards = choosePower(power, 'rolePowers', openedRolePowerCards, 3)"
+                :key="`rlpc-${i}-${key}`">
+                <PEDDPower :power="power" @highlight="(tag) => highlight(tag)" />
+            </PEDDCard>
         </div>
 
         <h3>Role Stat increases</h3>
@@ -95,7 +128,6 @@ import PEDDCard from './PEDDCard.vue';
 import powers from '../../assets/pedd/pedd-powers.json';
 import races from '../../assets/pedd/pedd-races.json';
 import StatDisplay from './StatDisplay.vue';
-import StatPicker from './StatPicker.vue';
 
 let racialPowers = computed(
     () => powers.filter(p => p.tag.includes("racial") && p.tag.includes(chosen.value.race.name.toLowerCase()))
@@ -105,7 +137,8 @@ let rolePowers = computed(() => {
     key.value++;
     return powers.filter(p => roleTag.value == "All" || p.tag.includes(roleTag.value));
 });
-let tags = ["All"].concat(Array.from(new Set(powers.map(p => p.tag).flat().sort()))); //don't you just love javascript?
+let tags = ["All"].concat(Array.from(new Set(powers.map(p => p.tag).flat())).sort()); //don't you just love javascript?
+let stats = ["strength", "dexterity", "accuracy", "perception", "intelligence", "charisma"];
 
 let roleTag = ref("All");
 
@@ -118,32 +151,97 @@ let chosen = ref({
     stats: []
 });
 
+let majorIncrease = ref("strength");
+let minorIncrease = ref("dexterity");
+let minorDecrease = ref("intelligence");
+let majorDecrease = ref("charisma");
+
+let majorIncreaseChange = (val) => {
+    //swap around if selecting what is already selected elsewhere
+    if (majorDecrease.value == val) {
+        majorDecrease.value = majorIncrease.value;
+    }
+    else if (minorIncrease.value == val) {
+        minorIncrease.value = majorIncrease.value;
+    }
+    else if (minorDecrease.value == val) {
+        minorDecrease.value = majorIncrease.value;
+    }
+    majorIncrease.value = val;
+}
+
+let minorIncreaseChange = (val) => {
+    //swap around if selecting what is already selected elsewhere
+    if (majorIncrease.value == val) {
+        majorIncrease.value = minorIncrease.value;
+    }
+    else if (majorDecrease.value == val) {
+        majorDecrease.value = minorIncrease.value;
+    }
+    else if (minorDecrease.value == val) {
+        minorDecrease.value = minorIncrease.value;
+    }
+    minorIncrease.value = val;
+}
+
+let minorDecreaseChange = (val) => {
+    //swap around if selecting what is already selected elsewhere
+    if (majorIncrease.value == val) {
+        majorIncrease.value = minorDecrease.value;
+    }
+    else if (minorIncrease.value == val) {
+        minorIncrease.value = minorDecrease.value;
+    }
+    else if (majorDecrease.value == val) {
+        majorDecrease.value = minorDecrease.value;
+    }
+    minorDecrease.value = val;
+}
+
+let majorDecreaseChange = (val) => {
+    //swap around if selecting what is already selected elsewhere
+    if (majorIncrease.value == val) {
+        majorIncrease.value = majorDecrease.value;
+    }
+    else if (minorIncrease.value == val) {
+        minorIncrease.value = majorDecrease.value;
+    }
+    else if (minorDecrease.value == val) {
+        minorDecrease.value = majorDecrease.value;
+    }
+    majorDecrease.value = val;
+}
+
 let key = ref(0);
-let selectedStats = ref({
-    strength: 2,
-    dexterity: 1,
-    accuracy: 0,
-    perception: 0,
-    intelligence: -1,
-    charisma: -2
-})
-let player = ref({
-    strength: 2,
-    dexterity: 1,
-    accuracy: 0,
-    perception: 0,
-    intelligence: -1,
-    charisma: -2,
-    faith: 2,
-    armour: 0,
-    evasion: 0,
-    fortitude: 0,
-    reflexes: 0,
-    willpower: 0,
-    appearance: 0,
-    agility: 0,
-    foresight: 0,
-    initiative: 0
+let selectedStats = computed(() => {
+    let ss = {};
+    ss[majorIncrease.value] = 2;
+    ss[minorIncrease.value] = 1;
+    ss[minorDecrease.value] = -1;
+    ss[majorDecrease.value] = -2;
+    for (let s of stats) {
+        if (!ss.hasOwnProperty(s)) ss[s] = 0;
+    }
+
+    return ss
+}
+);
+let player = computed(() => {
+    let p = {};
+    p.strength = selectedStats.value.strength;
+    p.dexterity = selectedStats.value.dexterity;
+    p.accuracy = selectedStats.value.accuracy;
+    p.perception = selectedStats.value.perception;
+    p.intelligence = selectedStats.value.intelligence;
+    p.charisma = selectedStats.value.charisma;
+    p.faith = 2;
+    p.race = chosen.value.race;
+    if (p.race) {
+        for (let stat of p.race.stats) {
+            if (stats.includes(stat.desc.toLowerCase())) p[stat.desc.toLowerCase()] += stat.val;
+        }
+    }
+    return p;
 });
 
 let openedRaceCards = [];
@@ -151,22 +249,22 @@ let openedRacialPowerCards = [];
 let openedBackgroundPowerCards = [];
 let openedRolePowerCards = [];
 
-let chooseRace = (race) => {
+let chooseRace = (chosenRace) => {
     key.value++;
-    if (!openedRaceCards.includes(race.name)) {
+    if (!openedRaceCards.includes(chosenRace.name)) {
         //clicking an un-opened card
-        chosen.value.race = race;
-        updatePlayerStats(race);
-        openedRaceCards.push(race.name);
+        chosen.value.race = chosenRace;
+        updatePlayerStats(chosenRace);
+        openedRaceCards.push(chosenRace.name);
     }
-    else if (chosen.value.race && chosen.value.race.name !== race.name) {
+    else if (chosen.value.race && chosen.value.race.name !== chosenRace.name) {
         //clicking an open card that is not the current selection
-        chosen.value.race = race;
-        updatePlayerStats(race);
+        chosen.value.race = chosenRace;
+        updatePlayerStats(chosenRace);
     }
     else {
         //clicking the opened and selected card, i.e. deselect and close it
-        openedRaceCards = openedRaceCards.filter(r => r !== race.name);
+        openedRaceCards = openedRaceCards.filter(r => r !== chosenRace.name);
         if (openedRaceCards.length > 0) chosen.value.race = races.filter(r => r.name == openedRaceCards[openedRaceCards.length - 1])[0];
         else chosen.value.race = false;
     }
@@ -229,24 +327,24 @@ let highlight = (tag) => {
 
 let updatePlayerStats = (race) => {
     //set base stats from selections
-    for(let stat in selectedStats.value) {
+    for (let stat in selectedStats.value) {
         player.value[stat] = selectedStats.value[stat];
     }
-    
+
     player.value.evasion = 0;
     player.value.fortitude = 0;
     player.value.reflexes = 0;
     player.value.willpower = 0;
     player.value.appearance = 0;
     player.value.agility = 0;
-    player.value.foresight = 0; 
+    player.value.foresight = 0;
     player.value.initiative = 0;
     player.value.faith = 2;
 
     //race increases
     //console.log(race.stats.map(s => s.desc + " " + s.val));
-    for(let stat of race.stats) {
-        if(stat.desc.toLowerCase() == "any") continue;
+    for (let stat of race.stats) {
+        if (stat.desc.toLowerCase() == "any") continue;
         player.value[stat.desc.toLowerCase()] += stat.val;
     }
 
@@ -283,10 +381,17 @@ textarea {
     height: 1.5rem;
 }
 
-label {
+label,
+h2 {
     font-weight: bold;
     font-size: larger;
     display: block;
+}
+
+select {
+    appearance: none;
+    color: var(--text-color);
+    display: inline;
 }
 
 .name-and-concept {
@@ -311,5 +416,4 @@ label {
 
     font-size: var(--para-size);
 }
-
 </style>

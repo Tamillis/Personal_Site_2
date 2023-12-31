@@ -10,16 +10,15 @@ Step-By-Step Character creation in PEDD looks like this:
    4. You also get 2 general skills and one language of your choice - your childhood skills and native language.
 4. *Choose a Background* - the circumstances of your way of life. All handbook backgrounds, and some more, are available as Background cards below. 
    1. Stat (or Resistance) Increases - typically +1 to 2 Stats
-   2. 6 Trained Skills
-   3. Initial equipment
-   4. One "Background Power" you can freely chose from the list of Background Powers, with one suggested.
+   2. 4 General & Trained Skills, the skills of your background.
+   3. 2 + a number of Skills equal to your Character's (now final) Intelligence of your choice of General & Trained Skills.
+   4. Some initial equipment you've kept from your background days
+   5. One "Background Power" you can freely chose from the list of Background Powers, with one suggested.
 5. *Choose your Role* - the way that you adventure and tackle the world. You define your Role with a phrase and a vision, and this could be the same or similar to your Concept
-   1.  Final Stat increases - +1 to a Stat and +1 to a Resistance of your choice
-   2.  Final Skills - a number of Skills of your choice equal to your Character's final Intelligence
-   3.  A set of 4 Martial Skills to equip your Character with.
-   4.  Your initial 3 adventuring Powers (see [Powers Progression](https://bellaby.co.uk/pedd/pedd-powers)), chosen from any non-racial Power. 
-6. *Finalize Equipment* - after Race, Background and Role all that is left is to chose your starting Equipment from one of the starting collections and a pack of your choice that you find yourself with just before the game begins. The use of equipment is identical to 5e.
-7. *Come Together* - last but not least, you put everything together [just like the base game](https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#6ComeTogether)
+   1.  A set of 3 Martial Skills that your Role uses to combat the world
+   2.  Your initial 3 adventuring Powers (see [Powers Progression](https://bellaby.co.uk/pedd/pedd-powers)), chosen from any non-racial Power. 
+   3. *Role Equipment* - chose your Role's Equipment from one of the collections; the equipment that you find yourself with just before the game begins. The use of equipment is identical to 5e.
+6. *Come Together* - last but not least, you put everything together [just like the base game](https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#6ComeTogether)
 
 As you work your way through these steps, select or input your inputs. This document doubles as a character creator for PEDD!
 
@@ -152,171 +151,20 @@ Backgrounds are the primary source of non-martial skills, as they're literally t
 #### Background Stats
 As part of your background, you will gain +1 to two Stats.
 
+#### Background Skills
+As part of your background, you will gain 4 General and/or Trained Skills.
+
+You may also take 2 + your (now final) Intelligence number of extra Skills that you may choose freely.
+
+#### Background Equipment
+You retain some equipment from your background days, that listed.
+
 #### Background Powers
 WIP - a shortlist of all Powers that can be taken as your Background Power.
 
 Choose a Power from your time as your background. It must be related to the activities of your background.
 
 <div id="background-powers-container"></div>
-
-### Skills & Proficiency
-Another part of PEDD is the flattening of the odd little distinct yet related categories of "Skills, Tools, Languages and Weapon & Armor Proficiencies". They all are now "Skills" in which you have "Proficiency", or not. Being Proficienct means being able to apply your Bonus.
-
-Weapons have also been regrouped into "Weapon Classes", no longer "Simple" and "Martial" and no longer taken for Proficiency individually. The old system was too fine-grained as well as bizarrely too broad as most gained weapon proficiencies through the massive sets "Simple" and "Martial" via their classes. 
-
-Body, representing proficiency with unarmed combat, has been introduced as a Simple Weapon Skill, to remove Unarmed Combat from its odd state of limbo. And yes, due to being promoted to a Stat, Perception is no longer a Skill.
-
-In PEDD no Skill is automatically associated with a Stat, though there are suggestions as naturally certain Skills tend to be handled by certain Stats. However if played well, you can Intimidate with Charisma using guile, Stealth with Intelligence using knowledge of the terrain and the enemy, and do Acrobatics with Accuracy while juggling, depending on how you use the Skill. The GM and the table will decide if a combination is valid, or if another combination would be better.
-
-**Note** for weapon attacks, the Stats used are fixed: Strength for Melee, Accuracy for Ranged (unless a property of the weapon or some Power allows you to choose another Stat).
-
-Skills are primarily earned by your Background, the skills you learned to do during your profession, but also from your Role: and some racial Powers also give skills, those in born natural abilities of a race.
-
-WIP - turn the below into a list of selectable skills / automatically selected based on other character choices, and custom to have a text input. Prompt for the number of untrained/trained free picks left.
-<div class="proficiencies-list">
-
-- Acrobatics
-- Animal Handling
-- Arcana
-- Athletics
-- Battle-Axes*
-- Blades*
-- Body
-- Bows
-- Clubs & Axes
-- Crafting
-- Deception
-- Firearms & Pistols
-- Heavy Armour*
-- Heavy Blades*
-- History
-- Insight
-- Intimidation
-- Investigation
-- Knives
-- Languages (one of)
-- Light Armour
-- Mauls*
-- Medicine
-- Medium Armour*
-- Nature
-- Persuasion
-- Pole-Arms*
-- Religion
-- Shields
-- Sleight of Hand
-- Slings
-- Spears
-- Stealth
-- Survival
-- Thrown
-- Tools (one set of)
-
-- Custom - for unique undefined weapons and skills
-
-</div>
-
-#### General, Trained and Martial Skills
-For ease of use, skills are separated into four groups; 
-- **General Skills** - which most of the time anyone can attempt the actions that would be governed by this skill even if they're not proficient.
-- **Trained Skills** - which most of the time you cannot attempt the actions that would be governed by this skill unless proficient.
-- **Martial Skills** - skills with weapons, armour and shields. A subset exists for General Skills, i.e. "Simple Weapons", and for Trained Skills, i.e. "Skilled Weapons".
-
-This is not to say anyone can attempt all General Skill checks (proficient or not) or that without proficiency you can never attempt any Trained Skill check, as it depends on the scenario and is a DM (me) call, which players can argue in either direction as best fits the understanding of the table.
-
-If you gain a Skill that you already have proficiency in, you can pick a different skill of that category (General, Trained, or Martial).
-
-#### Martial Skill Prerequisites and Downgrading Skills
-*Certain Martial Skills marked with an * require proficiency in other skills before they can be taken. 
-- Heavy Armour requires Medium Armour which requires Light Armour. 
-- Battle-Axes and Mauls require Clubs & Axes.
-- Heavy Blades requires Blades which requires Knives.
-- Pole-Arms requires Spears
-
-If a Background grants you a skill proficiency in a Skill you don't have the prerequisites for, "downgrade" the Skill to its prerequisite (unless, during character creation, you get the Skill from elsewhere).
-
-#### General Skills 
-The suggested stat to base the skill check with is in brackets, though this is merely a suggestion.
-
-<div class="proficiencies-list">
-
-- Animal Handling (Perception)
-- Athletics (Strength)
-- Deception (Charisma)
-- Insight (Perception)
-- Intimidation (Strength)
-- Persuasion (Charisma)
-- Sleight of Hand (Dexterity)
-- Stealth (Dexterity)
-- Survival (Intelligence)
-
-- Custom - for general skills not defined in the list.
-
-</div>
-
-#### General Martial Skills
-"Simple Weapons"
-
-<div class="proficiencies-list">
-
-- Body
-- Clubs & Axes
-- Firearms & Pistols
-- Knives
-- Light Armour
-- Shields
-- Slings
-- Spears
-- Thrown
-
-- Custom - for unique simple weapons not defined in the list.
-
-</div>
-
-#### Trained Skills (Suggested Stat)
-
-<div class="proficiencies-list">
-
-- Acrobatics (Dexterity)
-- Arcana (Intelligence)
-- Crafting (Dexterity)
-- History (Intelligence)
-- Investigation (Perception)
-- Languages, one of (Charisma)
-- Medicine (Intelligence)
-- Nature (Intelligence)
-- Religion (Intelligence)
-- Tools, one set of (Strength / Dexterity)
-
-- Custom - for trained skills not defined in the list.
-
-</div>
-
-#### Trained Martial Skills
-"Martial Weapons"
-
-<div class="proficiencies-list">
-
-- Battle-Axes*
-- Blades*
-- Bows
-- Heavy Armour*
-- Heavy Blades*
-- Mauls*
-- Medium Armour*
-- Pole-Arms*
-- Custom - for martial skills not defined in the list
-
-</div>
-
-#### Proficiency Bonuses and Expertise
-**Proficiency a.k.a. Bonus** - having Proficiency is also known as having a "Bonus" in a skill check, which means a +2, and is typically derived from having Proficiency in a Skill from your Race, Background, Role or Power, or as a Bonus in a certain scenario earned directly from a Power. This replaces 5e 'Proficiency bonus'. Every Proficiency is a Bonus, not all Bonuses are from Proficiencies, to be clear.
-
-A special Power, “Aptitude I/II/III”, increases the value of your Bonus to +3/+4/+5.
-
-**Expertise** - Abilities with Bonus can gain Expertise to be grant effectively a double Bonus. Every area of the game that grants Expertise should only do so when that area already has a Bonus, otherwise it is treated as a Bonus. An area of the game which already benefits from Expertise cannot benefit from it again. As weapons are just another kind of Skill, Martial Skills, you can benefit from Expertise with them.
-
-In other words, on a roll, you will never get more than your Bonus or Expertise in addition to your Stat increase, and the maximum possible increase to a dice roll is +15 (+5 Stat, +5 Bonus x2 from Expertise).
 
 ### Role
 Define your Role, a single evocative phrase or demonym that is the sum of what it is that you *do* as an adventurer.  This might well be the same as or a subset of your Concept.
