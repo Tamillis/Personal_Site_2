@@ -143,9 +143,8 @@
                                     <td> + Evasion</td>
                                     <td>{{ player.evasion }}</td>
                                     <td>=</td>
-                                    <td class="border-none">{{ baseDefence[player.race.size.val] + player.armour + player.evasion
-                                    }}
-                                    </td>
+                                    <td class="border-none">
+                                        {{ baseDefence[player.race.size.val] + player.armour + (player.evasion) }} </td>
                                 </tr>
                             </table>
                         </td>
@@ -156,7 +155,7 @@
                         <td>
                             <p>Initiative: </p>
                         </td>
-                        <td>{{ player.initiative }}</td>
+                        <td>{{ player.perception + player.dexterity }}</td>
                     </tr>
                 </table>
                 <table class="mobile">
@@ -182,9 +181,8 @@
                                     <td> + Evasion</td>
                                     <td>{{ player.evasion }}</td>
                                     <td>=</td>
-                                    <td class="border-none">{{ baseDefence[player.race.size.val] + player.armour + player.evasion
-                                    }}
-                                    </td>
+                                    <td class="border-none">
+                                        {{ baseDefence[player.race.size.val] + player.armour + player.evasion }} </td>
                                 </tr>
                             </table>
                         </td>
@@ -199,7 +197,7 @@
                         <td>
                             <p>Initiative: </p>
                         </td>
-                        <td>{{ player.initiative }}</td>
+                        <td>{{ player.perception + player.dexterity }}</td>
                     </tr>
                 </table>
             </div>
@@ -212,15 +210,15 @@
                             <td>
                                 <p>Appearance (Str. + Cha.):</p>
                             </td>
-                            <td>{{ player.appearance }}</td>
+                            <td>{{ player.strength + player.charisma }}</td>
                             <td>
                                 <p>Agility (Dex. + Acc.):</p>
                             </td>
-                            <td>{{ player.agility }}</td>
+                            <td>{{ player.dexterity + player.accuracy }}</td>
                             <td>
                                 <p>Foresight (Per. + Int.):</p>
                             </td>
-                            <td>{{ player.foresight }}</td>
+                            <td>{{ player.perception + player.intelligence }}</td>
                         </tr>
                     </table>
                     <table class="mobile">
@@ -228,20 +226,20 @@
                             <td>
                                 <p>Appearance (Str. + Cha.):</p>
                             </td>
-                            <td>{{ player.appearance }}</td>
+                            <td>{{ player.strength + player.charisma }}</td>
 
                         </tr>
                         <tr>
                             <td>
                                 <p>Agility (Dex. + Acc.):</p>
                             </td>
-                            <td>{{ player.agility }}</td>
+                            <td>{{ player.dexterity + player.accuracy }}</td>
                         </tr>
                         <tr>
                             <td>
                                 <p>Foresight (Per. + Int.):</p>
                             </td>
-                            <td>{{ player.foresight }}</td>
+                            <td>{{ player.perception + player.intelligence }}</td>
                         </tr>
                     </table>
                 </div>

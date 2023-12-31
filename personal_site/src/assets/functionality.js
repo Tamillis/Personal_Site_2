@@ -4,3 +4,7 @@ export const putMdinElement = async (path, elementId) => {
     let content = await res.text();
     document.getElementById(elementId).innerHTML = marked.parse(content);
 };
+
+export function capitalize(word) {
+    return word.charAt(0).toUpperCase() + word.substring(1);
+}

@@ -25,40 +25,12 @@
 
         <StatDisplay :player="player" :key="'sd-' + key" />
 
-        <h2>Initial Stat Selection: </h2>
-        <div class="flex">
-            <div>
-                <label>
-                    <select class="no-btn" :value="majorIncrease"
-                        @change="(event) => majorIncreaseChange(event.target.value)">
-                        <option v-for="stat in stats">{{ stat }}</option>
-                    </select>
-                    +2</label>
-            </div>
-            <div>
-                 <label>+1</label> <!--TODO -->
-                <select class="no-btn" :value="minorIncrease" @change="(event) => minorIncreaseChange(event.target.value)">
-                    <option v-for="stat in stats">{{ stat }}</option>
-                </select>
-            </div>
-            <div>
-                <label>-1</label>
-                <select class="no-btn" :value="minorDecrease" @change="(event) => minorDecreaseChange(event.target.value)">
-                    <option v-for="stat in stats">{{ stat }}</option>
-                </select>
-            </div>
-            <div>
-                <label>-2</label>
-                <select class="no-btn" :value="majorDecrease" @change="(event) => majorDecreaseChange(event.target.value)">
-                    <option v-for="stat in stats">{{ stat }}</option>
-                </select>
-            </div>
-        </div>
+        <InitialStatSelector :stats="stats" @initial-stat-change="(initialStatsSelection) => initialStats = initialStatsSelection"/>
 
         <h2>Race: <span>{{ chosen.race.name }}</span></h2>
         <PEDDCard v-for="race in races" :name="race.name" :expanded="openedRaceCards.includes(race.name)"
             :class="{ highlight: chosen.race.name == race.name }" @chosen="() => openedRaceCards = chooseRace(race)">
-            <PEDDRace :race="race" @selected-stats="(stats) => { chosen.stats = stats; updatePlayerStats(race); }" />
+            <PEDDRace :race="race" @selected-stats="(stats) => { updateChosenRaceWith(stats) }" />
         </PEDDCard>
 
         <div v-if="openedRaceCards.length !== 0">
@@ -128,6 +100,9 @@ import PEDDCard from './PEDDCard.vue';
 import powers from '../../assets/pedd/pedd-powers.json';
 import races from '../../assets/pedd/pedd-races.json';
 import StatDisplay from './StatDisplay.vue';
+import InitialStatSelector from './InitialStatSelector.vue';
+
+//TODO MOVE CHOSEN RACE INTO PLAYER DAMNIT, CHANGE CHOSEN TO OPENED AND DELINIATE PLAYER STATE FROM OPENED / CLOSED STATE
 
 let racialPowers = computed(
     () => powers.filter(p => p.tag.includes("racial") && p.tag.includes(chosen.value.race.name.toLowerCase()))
@@ -147,78 +122,18 @@ let chosen = ref({
     racialPowers: [],
     background: "",
     backgroundPower: "",
-    rolePowers: [],
-    stats: []
+    rolePowers: []
 });
 
-let majorIncrease = ref("strength");
-let minorIncrease = ref("dexterity");
-let minorDecrease = ref("intelligence");
-let majorDecrease = ref("charisma");
-
-let majorIncreaseChange = (val) => {
-    //swap around if selecting what is already selected elsewhere
-    if (majorDecrease.value == val) {
-        majorDecrease.value = majorIncrease.value;
-    }
-    else if (minorIncrease.value == val) {
-        minorIncrease.value = majorIncrease.value;
-    }
-    else if (minorDecrease.value == val) {
-        minorDecrease.value = majorIncrease.value;
-    }
-    majorIncrease.value = val;
-}
-
-let minorIncreaseChange = (val) => {
-    //swap around if selecting what is already selected elsewhere
-    if (majorIncrease.value == val) {
-        majorIncrease.value = minorIncrease.value;
-    }
-    else if (majorDecrease.value == val) {
-        majorDecrease.value = minorIncrease.value;
-    }
-    else if (minorDecrease.value == val) {
-        minorDecrease.value = minorIncrease.value;
-    }
-    minorIncrease.value = val;
-}
-
-let minorDecreaseChange = (val) => {
-    //swap around if selecting what is already selected elsewhere
-    if (majorIncrease.value == val) {
-        majorIncrease.value = minorDecrease.value;
-    }
-    else if (minorIncrease.value == val) {
-        minorIncrease.value = minorDecrease.value;
-    }
-    else if (majorDecrease.value == val) {
-        majorDecrease.value = minorDecrease.value;
-    }
-    minorDecrease.value = val;
-}
-
-let majorDecreaseChange = (val) => {
-    //swap around if selecting what is already selected elsewhere
-    if (majorIncrease.value == val) {
-        majorIncrease.value = majorDecrease.value;
-    }
-    else if (minorIncrease.value == val) {
-        minorIncrease.value = majorDecrease.value;
-    }
-    else if (minorDecrease.value == val) {
-        minorDecrease.value = majorDecrease.value;
-    }
-    majorDecrease.value = val;
-}
-
+let initialStats = ref(["strength", "dexterity", "intelligence", "charisma"]);
 let key = ref(0);
+
 let selectedStats = computed(() => {
     let ss = {};
-    ss[majorIncrease.value] = 2;
-    ss[minorIncrease.value] = 1;
-    ss[minorDecrease.value] = -1;
-    ss[majorDecrease.value] = -2;
+    ss[initialStats.value[0]] = 2;
+    ss[initialStats.value[1]] = 1;
+    ss[initialStats.value[2]] = -1;
+    ss[initialStats.value[3]] = -2;
     for (let s of stats) {
         if (!ss.hasOwnProperty(s)) ss[s] = 0;
     }
@@ -226,6 +141,7 @@ let selectedStats = computed(() => {
     return ss
 }
 );
+
 let player = computed(() => {
     let p = {};
     p.strength = selectedStats.value.strength;
@@ -234,11 +150,21 @@ let player = computed(() => {
     p.perception = selectedStats.value.perception;
     p.intelligence = selectedStats.value.intelligence;
     p.charisma = selectedStats.value.charisma;
+    p.fortitude = p.strength + p.dexterity;
+    p.reflexes = p.accuracy + p.perception;
+    p.willpower = p.intelligence + p.charisma;
+    p.evasion = p.dexterity < 0 ? 0 : p.dexterity;
     p.faith = 2;
+    p.armour = 0;
     p.race = chosen.value.race;
     if (p.race) {
         for (let stat of p.race.stats) {
+            console.log("Updating player with race stats", stat)
             if (stats.includes(stat.desc.toLowerCase())) p[stat.desc.toLowerCase()] += stat.val;
+            else if(stat.desc.toLowerCase() == "fortitude") p.fortitude += stat.val;
+            else if(stat.desc.toLowerCase() == "reflexes") p.reflexes += stat.val;
+            else if(stat.desc.toLowerCase() == "willpower") p.willpower += stat.val;
+            else if(stat.desc.toLowerCase() == "evasion") p.evasion += stat.val;
         }
     }
     return p;
@@ -254,13 +180,11 @@ let chooseRace = (chosenRace) => {
     if (!openedRaceCards.includes(chosenRace.name)) {
         //clicking an un-opened card
         chosen.value.race = chosenRace;
-        updatePlayerStats(chosenRace);
         openedRaceCards.push(chosenRace.name);
     }
     else if (chosen.value.race && chosen.value.race.name !== chosenRace.name) {
         //clicking an open card that is not the current selection
         chosen.value.race = chosenRace;
-        updatePlayerStats(chosenRace);
     }
     else {
         //clicking the opened and selected card, i.e. deselect and close it
@@ -325,39 +249,45 @@ let highlight = (tag) => {
     roleTag.value = tag;
 };
 
-let updatePlayerStats = (race) => {
-    //set base stats from selections
-    for (let stat in selectedStats.value) {
-        player.value[stat] = selectedStats.value[stat];
-    }
-
-    player.value.evasion = 0;
-    player.value.fortitude = 0;
-    player.value.reflexes = 0;
-    player.value.willpower = 0;
-    player.value.appearance = 0;
-    player.value.agility = 0;
-    player.value.foresight = 0;
-    player.value.initiative = 0;
-    player.value.faith = 2;
-
-    //race increases
-    //console.log(race.stats.map(s => s.desc + " " + s.val));
-    for (let stat of race.stats) {
-        if (stat.desc.toLowerCase() == "any") continue;
-        player.value[stat.desc.toLowerCase()] += stat.val;
-    }
-
-    //calc using new stats secondaries
-    player.value.evasion += player.value.dexterity < 0 ? 0 : player.value.dexterity;
-    player.value.fortitude += player.value.strength + player.value.dexterity;
-    player.value.reflexes += player.value.accuracy + player.value.perception;
-    player.value.willpower += player.value.intelligence + player.value.charisma;
-    player.value.appearance += player.value.strength + player.value.charisma;
-    player.value.agility += player.value.accuracy + player.value.dexterity;
-    player.value.foresight += player.value.intelligence + player.value.perception;
-    player.value.initiative += player.value.dexterity + player.value.perception;
+let updateChosenRaceWith = (stats) => {
+    console.log(stats);
+    console.log(chosen.value.race.stats);
+    chosen.value.race.stats = stats;
+    console.log(player.value.race.stats)
 };
+
+// let updatePlayerStats = (race) => {
+//     //set base stats from selections
+//     for (let stat in selectedStats.value) {
+//         player.value[stat] = selectedStats.value[stat];
+//     }
+
+//     player.value.evasion = 0;
+//     player.value.fortitude = 0;
+//     player.value.reflexes = 0;
+//     player.value.willpower = 0;
+//     player.value.appearance = 0;
+//     player.value.agility = 0;
+//     player.value.foresight = 0;
+//     player.value.initiative = 0;
+//     player.value.faith = 2;
+
+//     //race increases
+//     for (let stat of race.stats) {
+//         if (stat.desc.toLowerCase() == "any") continue;
+//         player.value[stat.desc.toLowerCase()] += stat.val;
+//     }
+
+//     //calc using new stats secondaries
+//     player.value.evasion += player.value.dexterity < 0 ? 0 : player.value.dexterity;
+//     player.value.fortitude += player.value.strength + player.value.dexterity;
+//     player.value.reflexes += player.value.accuracy + player.value.perception;
+//     player.value.willpower += player.value.intelligence + player.value.charisma;
+//     player.value.appearance += player.value.strength + player.value.charisma;
+//     player.value.agility += player.value.accuracy + player.value.dexterity;
+//     player.value.foresight += player.value.intelligence + player.value.perception;
+//     player.value.initiative += player.value.dexterity + player.value.perception;
+// };
 </script>
 
 <style lang="css" scoped>
@@ -386,12 +316,7 @@ h2 {
     font-weight: bold;
     font-size: larger;
     display: block;
-}
-
-select {
-    appearance: none;
-    color: var(--text-color);
-    display: inline;
+    text-indent: 0px;
 }
 
 .name-and-concept {
