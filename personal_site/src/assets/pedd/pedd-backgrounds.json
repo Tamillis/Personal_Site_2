@@ -1,0 +1,153 @@
+[
+{
+    "name": "Custom",
+    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
+    "stats": ["Any +1", "Any +1"],
+    "skills": ["Any 4"],
+    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
+    "suggestedPower": "Any"
+},
+{
+    "name": "Acolyte",
+    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
+    "stats": ["Any +1", "Any +1"],
+    "skills": ["Animal Handling", "Suvival", "Tools, Artisan's", "Tools, Land Vehicle", "Medium Armour", "Blades"],
+    "equipment": ["A set of artisan's tools (one of your choice)", "a shovel", "an iron pot", "a set of common clothes", "a pouch containing 10gp"],
+    "suggestedPower": "Any"
+},
+{
+    "name": "Charlatan",
+    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
+    "stats": ["Any +1", "Any +1"],
+    "skills": ["Any 4"],
+    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
+    "suggestedPower": "Any"
+},
+{
+    "name": "Criminal",
+    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
+    "stats": ["Any +1", "Any +1"],
+    "skills": ["Any 4"],
+    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
+    "suggestedPower": "Any"
+},
+{
+    "name": "Spy",
+    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
+    "stats": ["Any +1", "Any +1"],
+    "skills": ["Any 4"],
+    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
+    "suggestedPower": "Any"
+},
+{
+    "name": "Entertainer",
+    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
+    "stats": ["Any +1", "Any +1"],
+    "skills": ["Any 4"],
+    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
+    "suggestedPower": "Any"
+},
+{
+    "name": "Folk Hero",
+    "desc": "You come from a humble social rank, but you are destined for so much more. Already the people of your home village or district regard you as their champion, and your destiny calls you to stand against the tyrants and monsters that threaten the common folk everywhere.",
+    "stats": ["Strength +1", "Charisma +1"],
+    "skills": ["Tools, Artisan's", "Tools, Land Vehicle", "Medium Armour", "Blades"],
+    "equipment": ["A set of artisan's tools (one of your choice)", "a shovel", "an iron pot", "a set of common clothes", "a pouch containing 10gp"],
+    "suggestedPower": "Brawler"
+},
+{
+    "name": "Gladiator",
+    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
+    "stats": ["Any +1", "Any +1"],
+    "skills": ["Any 4"],
+    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
+    "suggestedPower": "Any"
+},
+{
+    "name": "Guild Artisan",
+    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
+    "stats": ["Any +1", "Any +1"],
+    "skills": ["Any 4"],
+    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
+    "suggestedPower": "Any"
+},
+{
+    "name": "Guild Merchant",
+    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
+    "stats": ["Any +1", "Any +1"],
+    "skills": ["Any 4"],
+    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
+    "suggestedPower": "Any"
+},
+{
+    "name": "Hermit",
+    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
+    "stats": ["Any +1", "Any +1"],
+    "skills": ["Any 4"],
+    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
+    "suggestedPower": "Any"
+},
+{
+    "name": "Knight",
+    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
+    "stats": ["Any +1", "Any +1"],
+    "skills": ["Any 4"],
+    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
+    "suggestedPower": "Any"
+},
+{
+    "name": "Noble",
+    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
+    "stats": ["Any +1", "Any +1"],
+    "skills": ["Any 4"],
+    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
+    "suggestedPower": "Any"
+},
+{
+    "name": "Outlander",
+    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
+    "stats": ["Any +1", "Any +1"],
+    "skills": ["Any 4"],
+    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
+    "suggestedPower": "Any"
+},
+{
+    "name": "Pirate",
+    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
+    "stats": ["Any +1", "Any +1"],
+    "skills": ["Any 4"],
+    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
+    "suggestedPower": "Any"
+},
+{
+    "name": "Sage",
+    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
+    "stats": ["Any +1", "Any +1"],
+    "skills": ["Any 4"],
+    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
+    "suggestedPower": "Any"
+},
+{
+    "name": "Sailor",
+    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
+    "stats": ["Any +1", "Any +1"],
+    "skills": ["Any 4"],
+    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
+    "suggestedPower": "Any"
+},
+{
+    "name": "Soldier",
+    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
+    "stats": ["Any +1", "Any +1"],
+    "skills": ["Any 4"],
+    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
+    "suggestedPower": "Any"
+},
+{
+    "name": "Urchin",
+    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
+    "stats": ["Any +1", "Any +1"],
+    "skills": ["Any 4"],
+    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
+    "suggestedPower": "Any"
+}]

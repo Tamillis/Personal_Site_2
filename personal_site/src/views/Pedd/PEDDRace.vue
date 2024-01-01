@@ -27,6 +27,7 @@
 
 <script setup>
 import {marked} from 'marked';
+import { format } from '../../assets/functionality';
 import PEDDAnyStat from './PEDDAnyStat.vue';
 const props = defineProps({ race: Object});
 const emit = defineEmits(["selectedStats"]);
@@ -34,16 +35,6 @@ const emit = defineEmits(["selectedStats"]);
 let standardHeadings = ["name", "desc", "stats", "baseHealth", "age", "size", "speed", "senses", "powers"]
 
 let extras = Object.keys(props.race).filter(key => !standardHeadings.includes(key));
-
-function format(name) {
-    var words = name.match(/[A-Za-z][a-z]*/g) || [];
-
-    return words.map(capitalize).join(" ");
-}
-
-function capitalize(word) {
-    return word.charAt(0).toUpperCase() + word.substring(1);
-}
 
 function statChosen(stat, priorStat, val, race) {
     race.stats = race.stats.filter(s => !(s.desc == priorStat && s.val == val));

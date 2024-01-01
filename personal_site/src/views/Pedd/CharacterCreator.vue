@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="name-and-concept">
+        <div class="summary">
             <div>
                 <label for="character-name">Character Name: </label>
                 <input id="character-name" class="text-entry w100" placeholder="..." />
@@ -23,13 +23,48 @@
             <textarea id="character-flaws" class="text-entry" placeholder="..."></textarea>
         </div>
 
-        <StatDisplay :player="player" :key="'sd-' + key" />
+        <div class="summary gap-1r">
+            <div class="flex">
+                <h2>Race</h2>
+                <p>{{ player.race ? player.race.name : "None chosen" }}</p>
+            </div>
 
-        <InitialStatSelector :stats="stats" @initial-stat-change="(initialStatsSelection) => initialStats = initialStatsSelection"/>
+            <div class="flex">
+                <h2>Background</h2>
+                <p>{{ player.background ? player.background.name : "None chosen" }}</p>
+            </div>
+
+            <div>
+                <p>
+                <h2 class="inline">Racial Powers</h2>: {{ player.racialPowers.length == 0 ? "None chosen" :
+                    player.racialPowers.join(", ")
+                }}</p>
+                <p>
+                <h2 class="inline">Background Power</h2>: {{ player.backgroundPower == "" ? "None chosen" :
+                    player.backgroundPower.name }}
+                </p>
+                <p>
+                <h2 class="inline">Role Powers</h2>: {{ player.rolePowers.length == 0 ? "None chosen" :
+                    player.rolePowers.join(", ") }}</p>
+            </div>
+
+            <div class="flex">
+                <h2>Equipment</h2>
+                <p>TODO</p>
+            </div>
+        </div>
+
+        <StatDisplay :player="player" :key="'sd-' + key" style="margin-top: 1rem" />
+
+        <hr />
+
+        <InitialStatSelector :stats="stats"
+            @initial-stat-change="(initialStatsSelection) => { initialStats = initialStatsSelection; buildPlayer(); }" />
 
         <h2>Race: <span>{{ chosen.race.name }}</span></h2>
         <PEDDCard v-for="race in races" :name="race.name" :expanded="openedRaceCards.includes(race.name)"
-            :class="{ highlight: chosen.race.name == race.name }" @chosen="() => openedRaceCards = chooseRace(race)">
+            :class="{ highlight: player.race && player.race.name == race.name }"
+            @chosen="() => openedRaceCards = chooseRace(race)">
             <PEDDRace :race="race" @selected-stats="(stats) => { updateChosenRaceWith(stats) }" />
         </PEDDCard>
 
@@ -49,9 +84,13 @@
         <h2>Upbringing</h2>
         <p>2 General Skills and 1 Language Skill</p>
 
-        <h2>Background: <span>{{ chosen.background }}</span></h2>
+        <h2>Background: <span>{{ chosen.background.name }}</span></h2>
         <div id="backgrounds-container">
-
+            <PEDDCard v-for="bg in backgrounds" :name="bg.name" :expanded="openedBackgroundCards.includes(bg.name)"
+                :class="{ highlight: player.background && player.background.name == bg.name }"
+                @chosen="() => openedBackgroundCards = chooseBackground(bg)">
+                <PEDDBackground :bg="bg" />
+            </PEDDCard>
         </div>
 
         <h3>Background Skills</h3>
@@ -97,12 +136,12 @@ import { ref, computed } from 'vue';
 import PEDDPower from './PEDDPower.vue';
 import PEDDRace from './PEDDRace.vue';
 import PEDDCard from './PEDDCard.vue';
+import PEDDBackground from './PEDDBackground.vue';
 import powers from '../../assets/pedd/pedd-powers.json';
+import backgrounds from '../../assets/pedd/pedd-backgrounds.json';
 import races from '../../assets/pedd/pedd-races.json';
 import StatDisplay from './StatDisplay.vue';
 import InitialStatSelector from './InitialStatSelector.vue';
-
-//TODO MOVE CHOSEN RACE INTO PLAYER DAMNIT, CHANGE CHOSEN TO OPENED AND DELINIATE PLAYER STATE FROM OPENED / CLOSED STATE
 
 let racialPowers = computed(
     () => powers.filter(p => p.tag.includes("racial") && p.tag.includes(chosen.value.race.name.toLowerCase()))
@@ -120,7 +159,7 @@ let roleTag = ref("All");
 let chosen = ref({
     race: false,
     racialPowers: [],
-    background: "",
+    background: false,
     backgroundPower: "",
     rolePowers: []
 });
@@ -137,64 +176,107 @@ let selectedStats = computed(() => {
     for (let s of stats) {
         if (!ss.hasOwnProperty(s)) ss[s] = 0;
     }
-
     return ss
-}
-);
+});
 
-let player = computed(() => {
-    let p = {};
-    p.strength = selectedStats.value.strength;
-    p.dexterity = selectedStats.value.dexterity;
-    p.accuracy = selectedStats.value.accuracy;
-    p.perception = selectedStats.value.perception;
-    p.intelligence = selectedStats.value.intelligence;
-    p.charisma = selectedStats.value.charisma;
-    p.fortitude = p.strength + p.dexterity;
-    p.reflexes = p.accuracy + p.perception;
-    p.willpower = p.intelligence + p.charisma;
-    p.evasion = p.dexterity < 0 ? 0 : p.dexterity;
-    p.faith = 2;
-    p.armour = 0;
-    p.race = chosen.value.race;
-    if (p.race) {
-        for (let stat of p.race.stats) {
-            console.log("Updating player with race stats", stat)
-            if (stats.includes(stat.desc.toLowerCase())) p[stat.desc.toLowerCase()] += stat.val;
-            else if(stat.desc.toLowerCase() == "fortitude") p.fortitude += stat.val;
-            else if(stat.desc.toLowerCase() == "reflexes") p.reflexes += stat.val;
-            else if(stat.desc.toLowerCase() == "willpower") p.willpower += stat.val;
-            else if(stat.desc.toLowerCase() == "evasion") p.evasion += stat.val;
+let player = ref({});
+let buildPlayer = () => {
+    player.value = {};
+    player.value.race = chosen.value.race;
+    player.value.racialPowers = chosen.value.racialPowers;
+    player.value.background = chosen.value.background;
+    player.value.backgroundPower = chosen.value.backgroundPower;
+    player.value.rolePowers = chosen.value.rolePowers;
+
+    player.value.strength = selectedStats.value.strength;
+    player.value.dexterity = selectedStats.value.dexterity;
+    player.value.accuracy = selectedStats.value.accuracy;
+    player.value.perception = selectedStats.value.perception;
+    player.value.intelligence = selectedStats.value.intelligence;
+    player.value.charisma = selectedStats.value.charisma;
+    if (player.value.race) {
+        for (let stat of player.value.race.stats) {
+            if (stats.includes(stat.desc.toLowerCase())) player.value[stat.desc.toLowerCase()] += stat.val;
         }
     }
-    return p;
-});
+    if (player.value.background) {
+        for (let statDesc of player.value.background.stats) {
+            let stat = statDesc.toLowerCase().slice(0, -3);
+            if (stats.includes(stat)) player.value[stat]++;
+        }
+    }
+
+    player.value.fortitude = player.value.strength + player.value.dexterity;
+    player.value.reflexes = player.value.accuracy + player.value.perception;
+    player.value.willpower = player.value.intelligence + player.value.charisma;
+    player.value.evasion = player.value.dexterity < 0 ? 0 : player.value.dexterity;
+    player.value.faith = 2;
+    player.value.armour = 0;
+    if (player.value.race) {
+        for (let stat of player.value.race.stats) {
+            if (stat.desc.toLowerCase() == "fortitude") player.value.fortitude += stat.val;
+            else if (stat.desc.toLowerCase() == "reflexes") player.value.reflexes += stat.val;
+            else if (stat.desc.toLowerCase() == "willpower") player.value.willpower += stat.val;
+            else if (stat.desc.toLowerCase() == "evasion") {
+                player.value.evasion += stat.val;
+                if (player.value.evasion < 0) player.value.evasion = 0;
+            }
+        }
+    }
+
+    return player.value;
+};
+buildPlayer();
 
 let openedRaceCards = [];
 let openedRacialPowerCards = [];
+let openedBackgroundCards = [];
 let openedBackgroundPowerCards = [];
 let openedRolePowerCards = [];
 
 let chooseRace = (chosenRace) => {
     key.value++;
     if (!openedRaceCards.includes(chosenRace.name)) {
-        //clicking an un-opened card
+        //clicking an un-opened card, opening it and making it the player race
         chosen.value.race = chosenRace;
         openedRaceCards.push(chosenRace.name);
     }
     else if (chosen.value.race && chosen.value.race.name !== chosenRace.name) {
-        //clicking an open card that is not the current selection
+        //clicking an open card that is not the current player race
         chosen.value.race = chosenRace;
     }
     else {
-        //clicking the opened and selected card, i.e. deselect and close it
+        //clicking the opened and player race card, i.e. set player race to prior open race card and close it
         openedRaceCards = openedRaceCards.filter(r => r !== chosenRace.name);
         if (openedRaceCards.length > 0) chosen.value.race = races.filter(r => r.name == openedRaceCards[openedRaceCards.length - 1])[0];
         else chosen.value.race = false;
     }
 
+    buildPlayer();
     return openedRaceCards;
 };
+
+let chooseBackground = (chosenBg) => {
+    key.value++;
+    if (!openedBackgroundCards.includes(chosenBg.name)) {
+        //clicking an un-opened card, opening it and making it the player race
+        chosen.value.background = chosenBg;
+        openedBackgroundCards.push(chosenBg.name);
+    }
+    else if (chosen.value.background && chosen.value.background.name !== chosenBg.name) {
+        //clicking an open card that is not the current player race
+        chosen.value.background = chosenBg;
+    }
+    else {
+        //clicking the opened and player race card, i.e. set player race to prior open race card and close it
+        openedBackgroundCards = openedBackgroundCards.filter(r => r !== chosenBg.name);
+        if (openedBackgroundCards.length > 0) chosen.value.background = races.filter(r => r.name == openedBackgroundCards[openedBackgroundCards.length - 1])[0];
+        else chosen.value.background = false;
+    }
+
+    buildPlayer();
+    return openedBackgroundCards;
+}
 
 let chooseValue = (card, attribute, opened) => {
     key.value++;
@@ -214,6 +296,7 @@ let chooseValue = (card, attribute, opened) => {
         else chosen.value[attribute] = "";
     }
 
+    buildPlayer();
     return opened;
 };
 
@@ -242,6 +325,7 @@ let choosePower = (power, attribute, opened, max) => {
         }
     }
 
+    buildPlayer();
     return opened;
 };
 
@@ -250,10 +334,8 @@ let highlight = (tag) => {
 };
 
 let updateChosenRaceWith = (stats) => {
-    console.log(stats);
-    console.log(chosen.value.race.stats);
     chosen.value.race.stats = stats;
-    console.log(player.value.race.stats)
+    buildPlayer();
 };
 
 // let updatePlayerStats = (race) => {
@@ -319,13 +401,13 @@ h2 {
     text-indent: 0px;
 }
 
-.name-and-concept {
+.summary {
     display: flex;
     gap: var(--gap);
 }
 
-@media screen and (max-width: 599px) {
-    .name-and-concept {
+@media screen and (max-width: 1050px) {
+    .summary {
         flex-direction: column;
     }
 }

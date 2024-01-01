@@ -7,7 +7,7 @@ Step-By-Step Character creation in PEDD looks like this:
    1. Stat (or Resistance) changes - typically a +2, +1 and -1 
    2. Base Health, Age, Size, Speed and Senses characteristics, and perhaps a few racial abilities
    3. A pick of 2 of the Racial Powers available to that Race
-   4. You also get 2 general skills and one language of your choice - your childhood skills and native language.
+   4. You also get 2 general skills and one language of your choice - the childhood skills and native language of your 'Upbringing'
 4. *Choose a Background* - the circumstances of your way of life. All handbook backgrounds, and some more, are available as Background cards below. 
    1. Stat (or Resistance) Increases - typically +1 to 2 Stats
    2. 4 General & Trained Skills, the skills of your background.

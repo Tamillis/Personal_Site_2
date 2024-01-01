@@ -128,6 +128,10 @@
   justify-content: center;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-1r {
   gap: 1rem;
 }

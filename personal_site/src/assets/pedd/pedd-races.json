@@ -215,7 +215,7 @@
                 "smell"
             ]
         },
-        "gnomeCunning": "Magic and formulae comes to your people easily, and can be just as easily refuted. You have advantage on all Willpower saves against magic and memetics",
+        "gnomeCunning": "Magic and formulae comes to your people easily, and can be just as easily refuted. You have Advantage on all Willpower saves against memetics and magic spells, but not spell-like effects",
         "powers": [
             "Darkvision",
             "Fey Ancestry",

@@ -153,6 +153,10 @@
                         </td>
                         <td>{{ player.race.speed.val }}</td>
                         <td>
+                            <p>Size: </p>
+                        </td>
+                        <td>{{ capitalize(player.race.size.val) }}</td>
+                        <td>
                             <p>Initiative: </p>
                         </td>
                         <td>{{ player.perception + player.dexterity }}</td>
@@ -195,6 +199,12 @@
                     </tr>
                     <tr>
                         <td>
+                            <p>Size: </p>
+                        </td>
+                        <td>{{ capitalize(player.race.size.val) }}</td>
+                    </tr>
+                    <tr>
+                        <td>
                             <p>Initiative: </p>
                         </td>
                         <td>{{ player.perception + player.dexterity }}</td>
@@ -208,15 +218,15 @@
                     <table>
                         <tr>
                             <td>
-                                <p>Appearance (Str. + Cha.):</p>
+                                <p>Appearance <small>(Str. + Cha.)</small>:</p>
                             </td>
                             <td>{{ player.strength + player.charisma }}</td>
                             <td>
-                                <p>Agility (Dex. + Acc.):</p>
+                                <p>Agility <small>(Dex. + Acc.)</small>:</p>
                             </td>
                             <td>{{ player.dexterity + player.accuracy }}</td>
                             <td>
-                                <p>Foresight (Per. + Int.):</p>
+                                <p>Foresight <small>(Per. + Int.)</small>:</p>
                             </td>
                             <td>{{ player.perception + player.intelligence }}</td>
                         </tr>
@@ -224,20 +234,20 @@
                     <table class="mobile">
                         <tr>
                             <td>
-                                <p>Appearance (Str. + Cha.):</p>
+                                <p>Appearance <small>(Str. + Cha.)</small>:</p>
                             </td>
                             <td>{{ player.strength + player.charisma }}</td>
 
                         </tr>
                         <tr>
                             <td>
-                                <p>Agility (Dex. + Acc.):</p>
+                                <p>Agility <small>(Dex. + Acc.)</small>:</p>
                             </td>
                             <td>{{ player.dexterity + player.accuracy }}</td>
                         </tr>
                         <tr>
                             <td>
-                                <p>Foresight (Per. + Int.):</p>
+                                <p>Foresight <small>(Per. + Int.)</small>:</p>
                             </td>
                             <td>{{ player.perception + player.intelligence }}</td>
                         </tr>
@@ -249,6 +259,8 @@
 </template>
 
 <script setup>
+import { capitalize } from '../../assets/functionality';
+
 const props = defineProps(["player"]);
 
 let baseDefence = {
@@ -264,6 +276,10 @@ let baseDefence = {
 h3 {
     font-weight: bold;
     font-size: larger;
+}
+
+p {
+    font-weight: 600;
 }
 
 table {
