@@ -4,11 +4,11 @@
         <h2 class="subsubtitle text-centre no-decoration">Character Creation</h2>
 
         <div class="centre width-fit">
-            <input type="checkbox" id="creator" class="radioQ" :value="creatorMode" @change="creatorMode = !creatorMode">
+            <input type="checkbox" id="creator" class="radioQ" @change="creatorMode = !creatorMode">
             <label for="creator" style="display:inline;"> - Character Creator Mode</label>
         </div>
 
-        <PeddLinks />
+        <Links />
 
         <div class="main-text inset">
             <div id="pedd" v-show="!creatorMode"></div>
@@ -22,8 +22,8 @@
 <script setup>
 import { putMdinElement } from '../../assets/functionality';
 import { onMounted, ref } from 'vue';
-import PeddLinks from './PeddLinks.vue';
-import CharacterCreator from './CharacterCreator.vue';
+import Links from '../../components/PEDD/Links.vue';
+import CharacterCreator from '../../components/PEDD/CharacterCreator.vue';
 
 onMounted(() => {
     putMdinElement('../src/assets/pedd/pedd-character-creation.md', 'pedd')

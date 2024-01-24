@@ -1,19 +1,19 @@
 [
 {
     "name": "Custom",
-    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
+    "desc": "It is up to you to say where you come from, and what you did before you took on the mantle of the adventurer.",
     "stats": ["Any +1", "Any +1"],
-    "skills": ["Any 4"],
+    "skills": ["Any 6"],
     "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
     "suggestedPower": "Any"
 },
 {
     "name": "Acolyte",
-    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
-    "stats": ["Any +1", "Any +1"],
-    "skills": ["Animal Handling", "Suvival", "Tools, Artisan's", "Tools, Land Vehicle", "Medium Armour", "Blades"],
-    "equipment": ["A set of artisan's tools (one of your choice)", "a shovel", "an iron pot", "a set of common clothes", "a pouch containing 10gp"],
-    "suggestedPower": "Any"
+    "desc": "You have spent your life in the service of a temple, god, divine-path or philosophy. You act as an intermediary between the realm of the holy and the mortal world, performing sacred rites and offering sacrifices in order to conduct worshipers into the presence of the divine.",
+    "stats": ["Perception +1", "Charisma +1"],
+    "skills": ["Insight", "Persuasion", "Religion", "Languages - Any", "Medium Armour", "Clubs & Axes"],
+    "equipment": ["A holy symbol (a gift to you when you entered your society)", "a prayer book or equivalent", "5 sticks of incense", "vestments", "a set of common clothes", "a pouch containing 15gp"],
+    "suggestedPower": "Divine Domain"
 },
 {
     "name": "Charlatan",
@@ -121,11 +121,11 @@
 },
 {
     "name": "Sage",
-    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
-    "stats": ["Any +1", "Any +1"],
-    "skills": ["Any 4"],
+    "desc": "You spent years learning the lore of the multiverse. You scoured manuscripts, studied scrolls, and listened to the greatest experts on the subjects that interest you. Your efforts have made you a master in your fields of study. When you attempt to learn or recall a piece of lore, if you do not know that information, you often know where and from whom you can obtain it. Usually, this information comes from a library, scriptorium, university, or a sage or other learned person or creature.",
+    "stats": ["Accuracy +1", "Intelligence +1"],
+    "skills": ["Arcana", "History", "Knives", "Investigation", "Languages - Any", "Languages - Any"],
     "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
-    "suggestedPower": "Any"
+    "suggestedPower": "Journeyman Mage"
 },
 {
     "name": "Sailor",
@@ -145,9 +145,9 @@
 },
 {
     "name": "Urchin",
-    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
-    "stats": ["Any +1", "Any +1"],
-    "skills": ["Any 4"],
-    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
-    "suggestedPower": "Any"
+    "desc": "You grew up on the streets alone, orphaned, and poor, You had no one to watch over you or to provide for you, so you learned to provide for yourself. You fought fiercely over food and kept a constant watch out for other desperate souls who might steal from you. You slept on rooftops and in alleyways, exposed to the elements, and endured sickness without the advantage of medicine or a place to recuperate. You've survived despite all odds, and did so through cunning, strength, speed, or some combination of each. You know the secret patterns and flow to cities and can find passages through the urban sprawl that others would miss. When you are not in combat, you (and companions you lead) can travel between any two locations in the city twice as fast as your speed would normally allow.",
+    "stats": ["Dexterity +1", "Charisma +1"],
+    "skills": ["Knives", "Clubs & Axes", "Deception", "Tools - Thieve's", "Sleight of Hand", "Stealth"],
+    "equipment": ["A small knife", "a map of the city you grew up in", "a pet critter", "a token to remember your parents by", "a set of common clothes", "a pouch ontaining 10gp"],
+    "suggestedPower": "Skulker"
 }]

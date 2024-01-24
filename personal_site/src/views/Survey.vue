@@ -16,7 +16,7 @@
 
 <script setup>
 import { RouterLink } from 'vue-router';
-import SurveyForm from '../components/SurveyForm.vue';
+import SurveyForm from '../components/Survey/SurveyForm.vue';
 
 // ON SUBMIT make post fetch to ./surveydata endpoint, where a php script will handle it :3
 </script>

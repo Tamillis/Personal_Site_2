@@ -5,7 +5,7 @@
         <h4>Stats: </h4>
         <ul>
             <li v-for="stat in race.stats">
-                <PEDDAnyStat v-if="stat.desc == 'Any'" :val="stat.val" @stat-chosen="(stat, priorStat, val) => statChosen(stat, priorStat, val, race)"/>
+                <AnyStatSelector v-if="stat.desc == 'Any'" :val="stat.val" @stat-chosen="(stat, priorStat, val) => statChosen(stat, priorStat, val, race)"/>
                 <p v-else style="margin:0">{{ stat.desc }} <span>{{ stat.val >= 0 ? "+" + stat.val : stat.val }}</span></p>
             </li>
         </ul>
@@ -28,7 +28,7 @@
 <script setup>
 import {marked} from 'marked';
 import { format } from '../../assets/functionality';
-import PEDDAnyStat from './PEDDAnyStat.vue';
+import AnyStatSelector from './AnyStatSelector.vue';
 const props = defineProps({ race: Object});
 const emit = defineEmits(["selectedStats"]);
 

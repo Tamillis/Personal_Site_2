@@ -16,7 +16,9 @@
 </template>
 
 <script setup>
+import { useRoute, RouterLink } from 'vue-router';
 
+const route = useRoute();
 </script>
 
 <style lang="css" scoped>
