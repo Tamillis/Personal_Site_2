@@ -52,7 +52,7 @@ A line is drawn between your active Statistics used for Actions, and your passiv
 
 There are six **Statistics** (used in checks):
 - **Strength** - used in melee attacks, and feats of brawn
-- **Dexterity** - used to calculate Evasion, and in many skills, for feats of deftness
+- **Dexterity** - used in many skills, for feats of deftness
 - **Accuracy** - used in ranged attacks, and feats of precision
 - **Perception** - used to sense the world, spot hidden things, and read others
 - **Intelligence** - used in knowledge and understanding, for feats of alacrity
