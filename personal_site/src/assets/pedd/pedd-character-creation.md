@@ -66,7 +66,7 @@ A line is drawn between your active Statistics used for Actions, and your passiv
 
 There are six **Statistics** (used in checks):
 - **Strength** - used in melee attacks, and feats of brawn
-- **Dexterity** - used in many skills, for feats of deftness
+- **Dexterity** - used to calculate Evasion, and in many skills, for feats of deftness
 - **Accuracy** - used in ranged attacks, and feats of precision
 - **Perception** - used to sense the world, spot hidden things, and read others
 - **Intelligence** - used in knowledge and understanding, for feats of alacrity
@@ -180,9 +180,6 @@ For example:
 
 WIP - Role input
 <div id="role-container"></div>
-
-#### Role Statistics
-You get one final Stat increase from your Role, a +1 to one Stat of your choice and a +1 to one Resistance of your choice.
 
 #### Role Powers
 The main purpose of a Role is to embody what kind of Adventurer you are, and the powers to facilitate that are paramount. As such for your Role choose 3 Powers from PEDD any non-racial Powers: one of which must be a `combat` Power, and one of which must be an `exploration` Power. Use the tags to help you.

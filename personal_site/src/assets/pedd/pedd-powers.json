@@ -998,6 +998,18 @@
         "desc": "Your ability to read and predict your foes makes you harder to hit. When not wearing medium or heavy armour or using a shield, your Evasion is replaced by your Foresight (Perception + Intelligence) when calculating Defence."
     },
     {
+        "name": "Agile Defence",
+        "tag": [
+            "combat",
+            "defensive"
+        ],
+        "preq": [
+            "Accuracy +1",
+            "Dexterity +1"
+        ],
+        "desc": "Your ability to precisely and rapidly control the twists and bends your body makes, makes you harder to hit. When not wearing medium or heavy armour or using a shield, your Evasion is replaced by your Agility (Accuracy + Dexterity) when calculating Defence."
+    },
+    {
         "name": "Gaze of Two Minds",
         "tag": [
             "invocation",
