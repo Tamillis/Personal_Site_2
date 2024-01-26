@@ -3,7 +3,7 @@
         <h1 class="main-title">P.E.D.D.</h1>
         <h2 class="subsubtitle text-centre no-decoration">Combat</h2>
         
-        <PeddLinks />
+        <Links />
 
         <div class="main-text inset">
             <div id="pedd"></div>
@@ -15,7 +15,7 @@
 <script setup>
 import { putMdinElement } from '../../assets/functionality';
 import { onMounted } from 'vue';
-import PeddLinks from './PeddLinks.vue';
+import Links from '../../components/PEDD/Links.vue';
 
 onMounted(() => putMdinElement('../src/assets/pedd/pedd-combat.md', 'pedd'));
 

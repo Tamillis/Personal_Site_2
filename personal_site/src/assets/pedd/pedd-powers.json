@@ -1379,7 +1379,7 @@
         "preq": [
             "Once every 4th Power"
         ],
-        "desc": "You're able to tap into a well of mystical energy within yourself known to practitioners as Mana. Your Mana comes in a Reserve, of which portions, or 'points', are at a certain Magnitude. Higher Magnitude Reserve can always be used at a lower Magnitude, though it still only counts as 1 point. Consult the table below by your rank in this Power to see what your Reserve is per Mag. (Magnitude).\n\nAdditionally, as you gain mana your natural aptitude for magic increases. You gain bonus Cantrips according to the Bonus Cantrips column, choosing them from the spell spheres you have access to. You may choose from; Druidcraft, Prestidigitation or Thaumaturgy, if for example don't have access to any spell spheres.\n\n| Bonus Cantrips | Mag. I | Mag. II | Mag. III | Mag. IV | Mag. V | Mag. VI | Mag. VII | Mag. VIII | Mag. IX |\n| -------------- | ------ | ------- | -------- | ------- | ------ | ------- | -------- | --------- | ------- |\n| 0              | 2      | -       | -        | -       | -      | -       | -        | -         | -       |\n| 1              | 4      | 2       | -        | -       | -      | -       | -        | -         | -       |\n| 1              | 4      | 3       | 2        | -       | -      | -       | -        | -         | -       |\n| 1              | 4      | 3       | 3        | 1       | -      | -       | -        | -         | -       |\n| 2              | 4      | 3       | 3        | 3       | 1      | -       | -        | -         | -       |\n| 2              | 4      | 3       | 3        | 3       | 2      | 1       | -        | -         | -       |\n| 2              | 4      | 3       | 3        | 3       | 2      | 1       | 1        | -         | -       |\n| 2              | 4      | 3       | 3        | 3       | 2      | 1       | 1        | 1         | -       |\n| 3              | 4      | 3       | 3        | 3       | 3      | 1       | 1        | 1         | 1       |\n| 3              | 4      | 3       | 3        | 3       | 3      | 2       | 2        | 1         | 1       |"
+        "desc": "You're able to tap into a well of mystical energy within yourself known to practitioners as Mana. Your Mana comes in a Reserve, of which portions, or 'points', are at a certain Magnitude. Higher Magnitude Reserve can always be used at a lower Magnitude, though it still only counts as 1 point. Consult the table below by your rank in this Power to see what your Reserve is per Mag. (Magnitude). \n\nYour Reserve replenishes after a Long Rest.\n\nAdditionally, as you gain mana your natural aptitude for magic increases. You gain bonus Cantrips according to the Bonus Cantrips column, choosing them from the spell sphere lists you have access to. You may choose from; Druidcraft, Prestidigitation or Thaumaturgy, if for example don't have access to any spell spheres.\n\n| Bonus Cantrips | Mag. I | Mag. II | Mag. III | Mag. IV | Mag. V | Mag. VI | Mag. VII | Mag. VIII | Mag. IX |\n| -------------- | ------ | ------- | -------- | ------- | ------ | ------- | -------- | --------- | ------- |\n| 0              | 2      | -       | -        | -       | -      | -       | -        | -         | -       |\n| 1              | 4      | 2       | -        | -       | -      | -       | -        | -         | -       |\n| 1              | 4      | 3       | 2        | -       | -      | -       | -        | -         | -       |\n| 1              | 4      | 3       | 3        | 1       | -      | -       | -        | -         | -       |\n| 2              | 4      | 3       | 3        | 3       | 1      | -       | -        | -         | -       |\n| 2              | 4      | 3       | 3        | 3       | 2      | 1       | -        | -         | -       |\n| 2              | 4      | 3       | 3        | 3       | 2      | 1       | 1        | -         | -       |\n| 2              | 4      | 3       | 3        | 3       | 2      | 1       | 1        | 1         | -       |\n| 3              | 4      | 3       | 3        | 3       | 3      | 1       | 1        | 1         | 1       |\n| 3              | 4      | 3       | 3        | 3       | 3      | 2       | 2        | 1         | 1       |"
     },
     {
         "name": "Mana Manipulation",
@@ -1668,7 +1668,7 @@
             "Mana",
             "Perception +1"
         ],
-        "desc": "**Cantrips** - You know two cantrips of your choice from the Primal Sphere.\n\n**Preparing and Casting Spells** - You use your Reserve of Mana to cast spells. In addition to any Innate spells you know, you prepare a list of primal spells that are available for you to cast each day. To do so, choose a number of spells from the Primal Sphere spell list. The spells must be of a Magnitude that you have the Reserve for. You can change your list of prepared spells when you finish a Long Rest. Preparing a new list of primal spells requires time spent communing with nature and absorbing the instincts and hidden wisdom needed to cast the spells: at least 1 minute per spell Magnitude for each spell.\n\n**Spellcasting Ability** - Your spellcasting ability is determined by the current Verdance of nature where you are, as detailed in the [Verdance table](/PEDD/Powers#Verdance-Table). You use Verdance whenever a spell refers to your spellcasting ability. In addition, you use Verdance when setting the saving throw DC for a primal spell you Cast and when making an attack roll with one.\n\n**Spell save DC** - 8 + your Bonus + Verdance\n\n**Spell attack modifier** - your Bonus + Verdance\n\n**Ritual Casting** - You can cast a primal spell as a ritual if that spell has the ritual tag and you have the spell prepared.\n\n**Spellcasting Focus** - You can use a druidic focus as a spellcasting focus for your Primal spells."
+        "desc": "**Cantrips** - You know two cantrips of your choice from the Primal Sphere.\n\n**Preparing and Casting Spells** - You use your Reserve of Mana to cast spells. In addition to any Innate spells you know, you prepare a list of primal spells that are available for you to cast each day. To do so, choose a number of spells from the Primal Sphere spell list. The spells must be of a Magnitude that you have the Reserve for. You can change your list of prepared spells when you finish a Long Rest. Preparing a new list of primal spells requires time spent communing with nature and absorbing the instincts and hidden wisdom needed to cast the spells: at least 1 minute per spell Magnitude for each spell.\n\n**Spellcasting Ability** - Your spellcasting ability is determined by the current Verdance of nature where you are, as detailed in the Verdance table below. You use Verdance whenever a spell refers to your spellcasting ability. In addition, you use Verdance when setting the saving throw DC for a primal spell you Cast and when making an attack roll with one.\n\n**Spell save DC** - 8 + your Bonus + Verdance\n\n**Spell attack modifier** - your Bonus + Verdance\n\n**Ritual Casting** - You can cast a primal spell as a ritual if that spell has the ritual tag and you have the spell prepared.\n\n**Spellcasting Focus** - You can use a druidic focus as a spellcasting focus for your Primal spells.\n\n| Verdance | Boreal | Coastal | Deserts | Forests | Jungles | Plains | Mountains | Swamps | Underground |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Barren   | -1 | 1 | -1 | 0 | 1 | 1 | 0 | 0 | -1 |\n| Poor     | 0 | 2 | 0 | 1 | 2 | 2 | 1 | 1 | 0 |\n| Middling | 1 | 3 | 1 | 2 | 3 | 3 | 2 | 2 | 1 |\n| Rich     | 2 | 3 | 2 | 3 | 3 | 3 | 3 | 3 | 2 |\n| Abundant | 4 | 5 | 4 | 4 | 5 | 5 | 4 | 4 | 4 |"
     },
     {
         "name": "Prodigy",
@@ -1915,6 +1915,16 @@
         "desc": "If you make an attack roll for a spell and miss, you can spend 2 Magnitude I Reserve to reroll the d20, and you must use the new roll."
     },
     {
+        "name": "Skulker",
+        "tag": [
+            "background", "exploration"
+        ],
+        "preq": [
+            "Dexterity +1"
+        ],
+        "desc": "You are an expert at slinking through shadows. You gain the following benefits:\n\n- You can try to hide when you are lightly obscured from the character from which you are hiding.\n- When you are hidden from a character and miss it with a ranged weapon attack, making the attack doesn't reveal your position.\n- Dim light doesn't impose disadvantage on your Perception checks relying on sight."
+    },
+    {
         "name": "Sneak Attack",
         "tag": [
             "combat",
@@ -2037,7 +2047,7 @@
         "preq": [
             ""
         ],
-        "desc": "You have advantage on saving throws against poison, and you have resistance to poison damage."
+        "desc": "You have Advantage on saving throws against poison, and you have Resistance to poison damage."
     },
     {
         "name": "Subtle Spell",
@@ -2204,7 +2214,20 @@
             "Fighting Style",
             "Strength +1"
         ],
-        "desc": "You've trained extensively in unarmed combat, gaining the following benefits:\n\n- Your Unarmed Attacks can deal bludgeoning damage equal to 1d4 + your Strength on a hit. If you aren't wielding any weapons or a shield when you make the attack roll, the d4 becomes a d6.\n- Your Unarmed Attacks contain the Block I, Finesse and Parry (Bludgeoning) properties.\n- At the start of each Round, you can deal 1d4 bludgeoning damage to one character grappled by you."
+        "desc": "You've trained extensively in unarmed combat, gaining the following benefits:\n\n- You gain Proficiency in Body and Improvised Weapons if you were not already.\n- Your Unarmed Attacks can deal bludgeoning damage equal to 1d4 + your Strength on a hit. If you aren't wielding any weapons or a shield when you make the attack roll, the d4 becomes a d6.\n- Your Unarmed and Improvised Attacks contain the Block I, Finesse and Parry (Bludgeoning) properties.\n- At the start of each Round, you can deal 1d4 bludgeoning damage to one character grappled by you."
+    },
+    {
+        "name": "Grappler",
+        "tag": [
+            "combat",
+            "fighting-style",
+            "offensive"
+        ],
+        "preq": [
+            "Fighting Style",
+            "Dexterity +1"
+        ],
+        "desc": "You've developed the skills necessary to hold your own in close-quarters grappling. You gain the following benefits:\n\n- When you hit a character with an unarmed strike or an improvised weapon on your turn, you can use a bonus action to attempt to grapple the target.\n- You have advantage on attack rolls against a character you are grappling.\n- You can use your action to try to pin a character grappled by you. To do so, make another grapple check. If you succeed, you and the creature are both restrained until the grapple ends."
     },
     {
         "name": "Unleashed Wild Shape",
@@ -2247,6 +2270,20 @@
             ""
         ],
         "desc": "You have practiced extensively with a variety of weapons. You gain proficiency with three Martial Skills of your choice. You can take this Power any number of times."
+    },
+    {
+        "name": "Resilient",
+        "tag": [
+            "background",
+            "combat",
+            "exploration",
+            "defensive",
+            "roll-effecting"
+        ],
+        "preq": [
+            ""
+        ],
+        "desc": "You gain your Bonus on saving throws with your choice of Fortitude, Reflexes or Willpower. You can take this Power again, chosing a different Resistance each time."
     },
     {
         "name": "Wild Magic",

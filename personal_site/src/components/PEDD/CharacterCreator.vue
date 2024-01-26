@@ -10,17 +10,19 @@
                 <input id="character-concept" class="text-entry w100" placeholder="..." />
             </div>
         </div>
-        <div>
-            <label for="character-bonds">Bond/s: </label>
-            <textarea id="character-bonds" class="text-entry" placeholder="..."></textarea>
-        </div>
-        <div>
-            <label for="character-ideals">Ideal/s: </label>
-            <textarea id="character-ideals" class="text-entry" placeholder="..."></textarea>
-        </div>
-        <div>
-            <label for="character-flaws">Flaw/s: </label>
-            <textarea id="character-flaws" class="text-entry" placeholder="..."></textarea>
+        <div class="summary justify-around w100">
+            <div class="w100">
+                <label for="character-bonds">Bond/s: </label>
+                <textarea id="character-bonds" class="text-entry" placeholder="..."></textarea>
+            </div>
+            <div class="w100">
+                <label for="character-ideals">Ideal/s: </label>
+                <textarea id="character-ideals" class="text-entry" placeholder="..."></textarea>
+            </div>
+            <div class="w100">
+                <label for="character-flaws">Flaw/s: </label>
+                <textarea id="character-flaws" class="text-entry" placeholder="..."></textarea>
+            </div>
         </div>
 
         <div class="summary gap-1r">
@@ -41,7 +43,7 @@
                 }}</p>
                 <p>
                 <h2 class="inline">Background Power</h2>: {{ player.backgroundPower == "" ? "None chosen" :
-                    player.backgroundPower.name }}
+                    player.backgroundPower }}
                 </p>
                 <p>
                 <h2 class="inline">Role Powers</h2>: {{ player.rolePowers.length == 0 ? "None chosen" :
@@ -52,60 +54,58 @@
                 <h2>Equipment</h2>
                 <p>TODO</p>
             </div>
+
+            <div class="flex">
+                <h2>Skills</h2>
+                <p>TODO</p>
+            </div>
         </div>
 
         <StatDisplay :player="player" :key="'sd-' + key" style="margin-top: 1rem" />
 
         <hr />
 
-        <InitialStatSelector :stats="stats"
-            @initial-stat-change="(initialStatsSelection) => { initialStats = initialStatsSelection; buildPlayer(); }" />
-
         <h2>Race: <span>{{ chosen.race.name }}</span></h2>
-        <PEDDCard v-for="race in races" :name="race.name" :expanded="openedRaceCards.includes(race.name)"
+        <CardContainer v-for="race in races" :name="race.name" :expanded="openedRaceCards.includes(race.name)"
             :class="{ highlight: player.race && player.race.name == race.name }"
             @chosen="() => openedRaceCards = chooseRace(race)">
-            <PEDDRace :race="race" @selected-stats="(stats) => { updateChosenRaceWith(stats) }" />
-        </PEDDCard>
+            <RaceContent :race="race" @selected-stats="(stats) => { updateChosenRaceWith(stats) }" />
+        </CardContainer>
 
         <div v-if="openedRaceCards.length !== 0">
             <h2>Racial Powers: <span>{{ chosen.racialPowers.join(', ') }}</span></h2>
             <div class="cards">
-                <PEDDCard v-for="(power, i) in racialPowers" :name="power.name"
+                <CardContainer v-for="(power, i) in racialPowers" :name="power.name"
                     :class="{ highlight: chosen.racialPowers.includes(power.name) }"
                     :expanded="openedRacialPowerCards.includes(power.name)"
                     @chosen="() => openedRacialPowerCards = choosePower(power, 'racialPowers', openedRacialPowerCards, 2)"
                     :key="`rcpc-${i}-${key}`">
-                    <PEDDPower :power="power" @highlight="(tag) => highlight(tag)" />
-                </PEDDCard>
+                    <PowerContent :power="power" @highlight="(tag) => highlight(tag)" />
+                </CardContainer>
             </div>
         </div>
 
-        <h2>Upbringing</h2>
-        <p>2 General Skills and 1 Language Skill</p>
+        <h3>Upbringing</h3>
+        <p>2 Non-Martial Skills and Language - Any, your native language.</p>
 
         <h2>Background: <span>{{ chosen.background.name }}</span></h2>
         <div id="backgrounds-container">
-            <PEDDCard v-for="bg in backgrounds" :name="bg.name" :expanded="openedBackgroundCards.includes(bg.name)"
+            <CardContainer v-for="bg in backgrounds" :name="bg.name" :expanded="openedBackgroundCards.includes(bg.name)"
                 :class="{ highlight: player.background && player.background.name == bg.name }"
                 @chosen="() => openedBackgroundCards = chooseBackground(bg)">
-                <PEDDBackground :bg="bg" />
-            </PEDDCard>
+                <BackgroundContent :bg="bg" />
+            </CardContainer>
         </div>
-
-        <h3>Background Skills</h3>
-        <p>Background Stat Increases (automate as they're fixed?)</p>
-        <p>Background 6 General Skills</p>
 
         <h2>Background Power: <span>{{ chosen.backgroundPower }}</span></h2>
         <div class="cards">
-            <PEDDCard v-for="(power, i) in backgroundPowers" :name="power.name"
+            <CardContainer v-for="(power, i) in backgroundPowers" :name="power.name"
                 :class="{ highlight: chosen.backgroundPower == power.name }"
                 :expanded="openedBackgroundPowerCards.includes(power.name)"
                 @chosen="() => openedBackgroundPowerCards = chooseValue(power, 'backgroundPower', openedBackgroundPowerCards, 1)"
                 :key="`bgpc-${i}-${key}`">
-                <PEDDPower :power="power" @highlight="(tag) => highlight(tag)" />
-            </PEDDCard>
+                <PowerContent :power="power" @highlight="(tag) => highlight(tag)" />
+            </CardContainer>
         </div>
 
         <h2>Role Powers: <span>{{ chosen.rolePowers.join(', ') }}</span></h2>
@@ -114,17 +114,19 @@
             <option v-for="tag in tags">{{ tag }}</option>
         </select>
         <div class="cards">
-            <PEDDCard v-for="(power, i) in rolePowers" :name="power.name"
+            <CardContainer v-for="(power, i) in rolePowers" :name="power.name"
                 :expanded="openedRolePowerCards.includes(power.name)"
                 :class="{ highlight: chosen.rolePowers.includes(power.name) }"
                 @chosen="() => openedRolePowerCards = choosePower(power, 'rolePowers', openedRolePowerCards, 3)"
                 :key="`rlpc-${i}-${key}`">
-                <PEDDPower :power="power" @highlight="(tag) => highlight(tag)" />
-            </PEDDCard>
+                <PowerContent :power="power" @highlight="(tag) => highlight(tag)" />
+            </CardContainer>
         </div>
 
-        <h3>Role Stat increases</h3>
-        <h3>4 Role Martial Skills</h3>
+        <StatSelector :stats="stats"
+            @stat-change="(statsSelection) => { roleStats = statsSelection; buildPlayer(); }" />
+
+        <h3>Role Skills</h3>
 
         <h2>Equipment Collections</h2>
         <p>Port this over from w/e</p>
@@ -133,22 +135,21 @@
 
 <script setup>
 import { ref, computed } from 'vue';
-import PEDDPower from './PEDDPower.vue';
-import PEDDRace from './PEDDRace.vue';
-import PEDDCard from './PEDDCard.vue';
-import PEDDBackground from './PEDDBackground.vue';
+import PowerContent from './PowerContent.vue';
+import RaceContent from './RaceContent.vue';
+import CardContainer from './CardContainer.vue';
+import BackgroundContent from './BackgroundContent.vue';
 import powers from '../../assets/pedd/pedd-powers.json';
 import backgrounds from '../../assets/pedd/pedd-backgrounds.json';
 import races from '../../assets/pedd/pedd-races.json';
 import StatDisplay from './StatDisplay.vue';
-import InitialStatSelector from './InitialStatSelector.vue';
+import StatSelector from './StatSelector.vue';
 
 let racialPowers = computed(
     () => powers.filter(p => p.tag.includes("racial") && p.tag.includes(chosen.value.race.name.toLowerCase()))
 );
 let backgroundPowers = computed(() => powers.filter(p => p.tag.includes("background")));
 let rolePowers = computed(() => {
-    key.value++;
     return powers.filter(p => roleTag.value == "All" || p.tag.includes(roleTag.value));
 });
 let tags = ["All"].concat(Array.from(new Set(powers.map(p => p.tag).flat())).sort()); //don't you just love javascript?
@@ -164,15 +165,13 @@ let chosen = ref({
     rolePowers: []
 });
 
-let initialStats = ref(["strength", "dexterity", "intelligence", "charisma"]);
+let roleStats = ref(["strength", "dexterity", "intelligence", "charisma"]);
 let key = ref(0);
 
 let selectedStats = computed(() => {
     let ss = {};
-    ss[initialStats.value[0]] = 2;
-    ss[initialStats.value[1]] = 1;
-    ss[initialStats.value[2]] = -1;
-    ss[initialStats.value[3]] = -2;
+    ss[roleStats.value[0]] = 2;
+    ss[roleStats.value[1]] = 1;
     for (let s of stats) {
         if (!ss.hasOwnProperty(s)) ss[s] = 0;
     }
@@ -209,13 +208,17 @@ let buildPlayer = () => {
     player.value.fortitude = player.value.strength + player.value.dexterity;
     player.value.reflexes = player.value.accuracy + player.value.perception;
     player.value.willpower = player.value.intelligence + player.value.charisma;
-    player.value.evasion = player.value.dexterity < 0 ? 0 : player.value.dexterity;
+    player.value.evasion = player.value.reflexes < 0 ? 0 : player.value.reflexes;
     player.value.faith = 2;
     player.value.armour = 0;
     if (player.value.race) {
         for (let stat of player.value.race.stats) {
             if (stat.desc.toLowerCase() == "fortitude") player.value.fortitude += stat.val;
-            else if (stat.desc.toLowerCase() == "reflexes") player.value.reflexes += stat.val;
+            else if (stat.desc.toLowerCase() == "reflexes") {
+                player.value.reflexes += stat.val;
+                player.value.evasion += stat.val;
+                if (player.value.evasion < 0) player.value.evasion = 0;
+            }
             else if (stat.desc.toLowerCase() == "willpower") player.value.willpower += stat.val;
             else if (stat.desc.toLowerCase() == "evasion") {
                 player.value.evasion += stat.val;
@@ -337,39 +340,6 @@ let updateChosenRaceWith = (stats) => {
     chosen.value.race.stats = stats;
     buildPlayer();
 };
-
-// let updatePlayerStats = (race) => {
-//     //set base stats from selections
-//     for (let stat in selectedStats.value) {
-//         player.value[stat] = selectedStats.value[stat];
-//     }
-
-//     player.value.evasion = 0;
-//     player.value.fortitude = 0;
-//     player.value.reflexes = 0;
-//     player.value.willpower = 0;
-//     player.value.appearance = 0;
-//     player.value.agility = 0;
-//     player.value.foresight = 0;
-//     player.value.initiative = 0;
-//     player.value.faith = 2;
-
-//     //race increases
-//     for (let stat of race.stats) {
-//         if (stat.desc.toLowerCase() == "any") continue;
-//         player.value[stat.desc.toLowerCase()] += stat.val;
-//     }
-
-//     //calc using new stats secondaries
-//     player.value.evasion += player.value.dexterity < 0 ? 0 : player.value.dexterity;
-//     player.value.fortitude += player.value.strength + player.value.dexterity;
-//     player.value.reflexes += player.value.accuracy + player.value.perception;
-//     player.value.willpower += player.value.intelligence + player.value.charisma;
-//     player.value.appearance += player.value.strength + player.value.charisma;
-//     player.value.agility += player.value.accuracy + player.value.dexterity;
-//     player.value.foresight += player.value.intelligence + player.value.perception;
-//     player.value.initiative += player.value.dexterity + player.value.perception;
-// };
 </script>
 
 <style lang="css" scoped>
@@ -385,7 +355,7 @@ let updateChosenRaceWith = (stats) => {
     -webkit-appearance: none;
     appearance: none;
 
-    width: 80%;
+    width: 90%;
     font-size: smaller;
 }
 

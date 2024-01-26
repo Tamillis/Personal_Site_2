@@ -22,13 +22,13 @@
 
 <script setup>
 import { ref } from 'vue';
-import TextInput from '../components/TextInput.vue';
-import SelectBoxQ from '../components/SelectBoxQ.vue';
-import NumericQ from '../components/NumericQ.vue';
-import RadioQ from '../components/RadioQ.vue';
-import CheckBoxQ from '../components/CheckBoxQ.vue';
-import dbsettings from '../assets/dbsettings.json';
-import countriesData from '../assets/countries.json';
+import TextInput from './TextInput.vue';
+import SelectBoxQ from './SelectBoxQ.vue';
+import NumericQ from './NumericQ.vue';
+import RadioQ from './RadioQ.vue';
+import CheckBoxQ from './CheckBoxQ.vue';
+import dbsettings from '../../assets/dbsettings.json';
+import countriesData from '../../assets/countries.json';
 
 let countriesArray = ref(countriesData);
 
