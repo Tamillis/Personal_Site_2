@@ -1,75 +1,99 @@
-## Combat 5.P
-The goal is to make combat more consistently dangerous and snappier. Low level combat was too dangerous but quickly combat became trivial, with characters that were health sponges that you end up playing whack-a-mole with. This lead to the various minor tweaks below. 
+## Combat
+The goal was to make combat more consistently dangerous, and the seemingly incompatible: more tactical and snappier. 
 
-And I wanted to erase the issue of players switching off when its not their turn, which lead to the "One Action All At Once" system (see [below](#one-action-all-at-once)).
+Low level combat was too dangerous but quickly combat became trivial and/or very slow, with characters that were health sponges that you end up playing whack-a-mole with, and monsters much the same. Getting rid of Health scaling (starting higher but not going up unless explicitely empowered) fixes this.
 
-### Flat Maths
-If 5e made the math linear from quadratic 3.Xe, PEDD seeks to make the math flat, making it easier to predict and interpret, and also aiding with the level-less system. It also has the added benefit of making something that was dangerous, always dangerous. Flat Maths means nothing "falls off".
-
-To aid in the caluclation of the Maths, the following assumptions are kept to:
-- "*peasants*" face an average DC of 10, act at +0/+3 (unskilled/skilled, unskilled being the norm), have 10 Defence and have 8-12 Health. 
-- "*adventurers*" face an average DC of 15, act at +2/+5 (unskilled/skilled, skilled being the norm), have 15 Defence, and have 20-30 Health.
-- "*heroes*" face an average DC of 20, act at +4/+8 (unskilled/skilled, nearly always skilled), have 20 Defence, and have 30-50 Health.
-
-As such, all damage sources need to be re-calibrated; various high-level spells and large monsters are brought down (typically by simply reducing the multiples of dice to a single dice of the corresponding size), making the face-value of such abilities easier for newer players to read. ("Oh my go, a D12 of damage!?" Vs the relatively opaque 3d10 damage of a giant). Two sword strikes, a fireball, or a headshot (e.g. a critical) will drop most to 0 Health.
+I also wanted to erase the issue of players switching off when its not their turn, so I got rid of turns. The "One Action All At Once" system (see [below](#one-action-all-at-once)), which is also part of making the combat more tactical. Giving players more to do with their single Action also furthers this goal. This is also a much quicker system. Everyone is playing all at once, getting rid of the slow round-the-robin of turn based combat, and everyone only having one Action means each round is resolved more quickly.
 
 ### Health
-Health starts higher than HP that it replaces, and purposefuly progressely in smaller steps, avoiding the health sponge issue of later level 5e. Due to only being increased when being purposefully taken as a Power, it is naturally restrained and reserved for those that invest in it, those ineffible heroes who seem to be able to take punch after punch where others would fall to the first blow.
+Health starts higher than the HP that it replaces, the name also shaking out the video game connetations and helping players who don't come from a video-game background. It purposefuly does not progress unless specifically empowered, avoiding the health sponge issue of later level 5e. Health is naturally restrained and reserved for those that invest in it: those ineffible heroes who seem to be able to take punch after punch where others would fall to the first blow no matter how many fights they'd been in.
 
 ### Recovery
-There are a few changes to recovery.
+On the topic of health, there are a few changes to recovery.
 
 #### Short and Long Rests, Sleep and Downtime
-Short Rests and Long Rests are mostly unchanged, with the caveat that explicitely, yes, a Long Rest counts as a Short Rest. For this reason all Powers that key off of "A Short or Long Rest" now simply state "Short Rest". 
+Short Rests and Long Rests are mostly unchanged, with the caveat that explicitely, yes, a Long Rest counts as a Short Rest. For this reason all Powers that key off of "A Short or Long Rest" now simply state "Short Rest". Simplifying and unifying that odd system.
 
 **Short Rests** are 1 hour periods of light activity or rest.
 
 **Long Rests** are 8 hour periods of light activity or rest.
 
-Every Character must, in addition, **Sleep** for at least 6 hours every 24 hour period, unless some Power or racial feature says otherwise (such as Elves, who cannot sleep). Failure to do so means you gain a point of Exhaustion. Sleeping counts as Resting, though not all Rest needs to be sleep; say if you were keeping watch.
+Every Character must, in addition, **Sleep** for at least 6 reasonably-continuous hours every 24 hour period, unless some Power or racial feature says otherwise (such as Elves, who cannot sleep). Failure to do so means you gain a point of Exhaustion. Sleeping counts as Resting, though not all Rest needs to be sleep; say if you were keeping watch.
 
-**Downtime** - a third level of resting exists, Downtime, which is a 2 day+ period of non-adventuring activity. As Short Rests are part of Long Rests, Long Rests are part of Downtime, though many other activities can be gotten up to during Downtime. Just as in the base game, feel free to pursue professions, craft, carouse, or any other Downtime Activity.
+**Downtime** - PEDD introduces a third level of resting, Downtime, which is a 2 day+ period of non-adventuring activity. As Short Rests are part of Long Rests, Long Rests are part of Downtime, though many other activities can be gotten up to during Downtime. Just as in the base game, feel free to pursue professions, craft, carouse, or any other Downtime Activity.
 
-#### Recovering Health
-Hit Dice are also an older mechanic that is mostly vestigial. It too is removed. Instead, when Resting (Short or Long), you recover your Race's Baseline Health as a flat amount to your current Health, no more or no less.
+#### Recovering Health, removing Hit Dice
+Hit Dice are also an older mechanic that is mostly vestigial. It is removed. Instead, when Resting (Short or Long), you recover your Race's Baseline Health as a flat amount to your current Health, no more or no less.
 
-Once you have regained Health from Short Rests twice, you cannot regain Health from a third Short Rest until you have completed a Long Rest. Meaning, per day, you can at maximum regain 3 × your Race's Baseline Health.
+Once you have regained Health from Short Rests twice, you cannot regain Health from a third Short Rest until you have completed a Long Rest. Meaning, per day, you can at maximum regain 3 × your Race's Baseline Health, unless your ability to recover is further empowered of course.
 
-If you seek medical attention or healing spells, however, you may yet recover a lot more Health in a day, but this is fine since it is an investment of other resources.
+If you seek medical attention or healing spells, you may yet recover a lot more Health in a day, but this is fine since it is an investment of other resources.
 
-#### Wounds
-Entering the Dying state is now inheritantly dangerous. When you enter the Dying state you gain the new condition, "Wounded X":
+#### Dying and Wounds
+(This is completely true for 5e as well but) When you reach 0 Health, you enter the "Dying" state. You collapse Unconscious (or dramatically conscious, functionally unconscious, if you will), and cannot take Actions. What is new, is that you gain a rank of the Wounded condition as well.
 
-**Wounded X** - When your Health is reduced to 0 and you don't already have the Wounded condition, you go Unconscious and you gain the Wounded 1 condition. Each time you go Unconscious from your Health dropping to 0, your Wounded condition increases by 1. 
+**Wounded** - another addressment of the wack-a-mole issue is the Wounded condition. Entering the Dying state is now cumulatively dangerous as when you enter the Dying state you gain a rank in the Wounded condition (Wounded I, initially).
 
-When you make Death Saves, the DC is not 10, it is your Wounded condition's rank × 5. So at Wounded I, Death Saves are made against a DC of 5, at Wounded II a DC of 10, Wounded III at DC 15 etc.
+**Wounded [Rank]** - When your Health is reduced to 0 and you don't already have the Wounded condition, you go Unconscious and you gain the Wounded 1 condition. Each time you go Unconscious from your Health dropping to 0, your Wounded condition increases by 1. Wounds are severe physical and mental damage that threatens your continued existence. The Wounded X condition loses one rank per Long Rest, and one rank per successful Medicine check made against a DC of the Wounded condition rank × 5 (the same like a Death Save). This Medicine check can be made once per day per character, regardless of success or failure.
 
-The Wounded X condition loses one rank per Long Rest, and one rank per successful Medicine check made against a DC of the Wounded condition rank × 5 (the same like a Death Save). This Medicine check can be made once per day on a character, regardless of success or failure.
+**Dying** - now when you are Dying and you make Death Saves, the DC is not 10, it is your Wounded condition's rank × 5. So at Wounded I, Death Saves are made against a DC of 5, at Wounded II a DC of 10, Wounded III at DC 15 etc. Otherwise Dying is unchanged (3 saves to stabilise, 3 failed saves and death, coming conscious erases all death saves)*.
 
 The more you're knocked down, the more likely you are to stay down, forever.
 
-### Defence
-To make characters easier to strike, meaning less spongey, and also to make combat more proactive and engaging; the Defence Stat replaces AC and is more flexible than a flat value, being made of three parts: 
-- a Base Defence value of 8 for Medium characters, 10 for Small characters and 6 for Large characters. Should it be relevant, Huge characters have a Base Defence of 2 and Tiny a Base Defence of 14.
-- an Armour value determined by worn Equipment
-- an Evasion value, your Reflexes to a minimum of 0 (which can be limited by worn Equipment).
+*I actually would like to experiment with keeping failed death saves but fewer changes are better for now I believe.
 
-Powers can affect all three categories.
+### Defence
+To make characters easier to strike, meaning less spongey, and also to make combat more proactive and engaging; the Defence Stat replaces AC (a simple rename for ease of understanding. AC really is an odd term), and is more flexible than a flat value, being made of three parts:
+- a Base Defence value of 8 for Medium characters, 10 for Small characters and 6 for Large characters. Should it be relevant, Huge characters have a Base Defence of 2 and Tiny a Base Defence of 14. (Smaller characters are harder to hit).
+- an Armour value determined by worn Equipment (see [Armour](./pedd/combat#armour))
+- an Evasion value, your Reflexes to a minimum of 0 (which can be limited by worn Equipment).
   
 Instead Defence is calculated when required from these three parts, depending on what parts are in play. This gives us three kinds of Defence;
 - **Defence** - Defence with both Armour and Evasion.
 - **Unarmoured Defence** - Defence without Armour, armour limits on Evasion are still applied. A few effects target Unarmoured Defence.
 - **Stationary Defence** - Defence without the benefit of Evasion, often called "Touch AC" in other systems. Some effects target Stationary Defence, and surprised or unmoving targets only get their Stationary Defence.
 
-Remember that the Armour value also changes during play as you don and doff Equipment, and especially based on whether you Block with your Shield or not!
+Remember that the Armour value also changes during play as you don and doff Equipment, and especially based on whether you Block with your Shield or not! Armour Piercing strikes ignore some or all of your Armour as well, such as guns.
 
 #### Natural Armour
-Many creatures have Natural Armour, and so might you through strange Powers. Natural Armour grants an armour value, cannot be doffed and is always 'light', i.e. never limits Evasion. As per usual with armour, it does not stack, so to benefit from greater armour values, one must wear armour with a greater value than your natural armour.
+Many creatures have Natural Armour, and so might you through strange Powers. Natural Armour grants an armour value, cannot be doffed and is always 'light', i.e. never limits Evasion. Like other abse armour, it does not stack, so to benefit from greater armour values, one must wear armour with a greater value than your natural armour.
 
 #### Weapons and Armour
-Weapons are a well known weakpoint of 5e and have been addressed many times. In fact, I'm more than happy to continue to use the homebrew I've long pinned to my own games; Weapon's Revised. PEDD uses it too. https://www.gmbinder.com/share/-NF9U-94H07DIQEtDu3-
+Weapons are a well known weakpoint of 5e and have been addressed many times. In fact, I used to use, and continue to take heavy inspiration form, the homebrew; Weapon's Revised https://1drv.ms/b/s!Aq2B34oritBLmmrdNLmMeUrxi5kM
 
-Armour is changed to the following:
+PEDD makes use of the following modified list of weapon attributes, [TODO: create my own weapons list, incorporating the properties better and including the block property], the guns can be found in my [Armouries of the Second Empire](/mewiki/ArmouriesOfTheSecondEmpire).
+
+#### Weapon Properties
+- Ammunition - You can use a weapon that has the Ammunition property to make a ranged attack only if you have Ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a weapon). Expended arrows and bolts can be recovered, by taking a minute to search the battlefield, but guns that use paper cartridges cannot.
+- **Armour Piercing** & **Light Armour Piercing** – the weapon ignores some benefit of Armour to a target's Defence. The target's Armour is reduced, to a minimum of 0, by 2 for Light Armour Piercing and by 6 for Armour Piercing.
+- **Block** - You can raise this weapon like a shield, using your Bonus Action to Block, gaining a bonus to Defence equal to the value of the Block property.
+- **Ensnaring** - When you hit an attack with an ensnaring weapon, you may use your Bonus Action to attempt the Grapple action on the target or Shove them Prone, using your weapon attack modifier in place of Strength. If you grapple a target with an ensnaring weapon, the grapple is automatically ended if you make another attack roll with that weapon.
+- **Finesse** - The weapon lends itself to dexterous combat due to features that make it more reliant on technique than brute force. When attacking with a finesse weapon, you use your choice of your
+Strength or Dexterity for the attack and damage rolls. You must use the same modifier for both rolls.
+- **Finisher** - Finisher weapons are well-suited to executing enemies that are at your mercy. When you make an attack against a Prone character, you roll one additional damage die.
+- **Heavy** - These weapons are larger and unwieldier than most, lending them unique advantages and challenges: 
+  - Small characters make attacks with heavy weapons at Disadvantage.*
+  - A heavy weapon allows you to make an attack relying upon on raw strength instead of technique. When you attack with a heavy weapon that you're proficient in, you can forego adding
+your proficiency bonus to the attack roll. If the attack hits, you add that proficiency bonus to the damage roll instead. You must decide to do this before making the attack roll. 
+- **Light** - A light weapon is small and easy to handle. When you take the Attack action and attack with a light melee weapon that you’re holding in one hand, you can use a Bonus Action to attack with a different light melee weapon that you’re holding in the other hand. You don’t add your Stat to the damage of the bonus attack, unless that modifier is negative. 
+- **Loading** & **Slow Loading** - due to the elaborate procedure of preparing the weapon for its next shot, it takes an Attack, Action or Bonus Action to reload, and a free hand. Slow Loading weapons take an Attack or Action to reload.
+Nonlethal - The weapon is designed to incapacitate or is otherwise capable of delivering a hit that does not kill the target. Non-lethal Strikes can be made with normal damage rolls.
+- **Parry** - The weapon has some weapon catching or deflecting feature, allowing it to be used to take the Parry Action.
+- **Prone Fighting** - When you are prone and make a melee attack with this weapon, you do not suffer Disadvantage for being prone.
+- **Reach** - This weapon's extended length adds 5 ft to your Reach when you attack with it. 
+- **Special** - Special weapons have some entirely unique property. These are detailed in the weapon section for the individual weapons they apply to.
+- **Bleed** - critical hits with this weapon inflict gaping wounds and profuse bleeding, inflicting additional slashing damage equal to your Bonus. Non-living character types are immune to this damage.
+- **Daze** - critical hits with this weapon hit with a singularly boneshaking blow, dazing the target. The target's next attack roll is made with Disadvantage. 
+- **Sundering** - The weapon features qualities that crush, pierce, or penetrate armor. When you attack a target wearing a breastplate, half plate, splint, or plate mail, you ignore 2 of the target's Armour. You may also gain this bonus against creatures with thick shells, stiff carapaces, metallic hides, and other creatures at the discretion of your DM.
+- **Sweeping** - These weapons strike in broad, sweeping motions. When you make an attack with a sweeping weapon that deals slashing damage, you may use a Bonus Action to deal the weapon's damage die in damage against a second target within your reach that is adjacent to the first, provided that your attack roll would also hit that target.
+- **Versatile** - This weapon can be used with one or two hands. A damage value in parentheses appears with the property–the damage when the weapon is used with two hands.
+- **Wind-up** - The weapon can be used to spend time preparing an attack to be even more effective. On your turn you can use an attack or Bonus Action to swing up or set your weapon. On the next attack you make that Round with the weapon you can add an additional weapon die to that attack if it hits. A weapon can only add one such damage die in this way.
+- **Winged** - These weapons have specially-shaped heads that halt the movement of their target toward the user and can also be used to catch shields and weapons. When you deal piercing damage against a character one size larger than you, or less, with a winged weapon, that character cannot move toward you that Round.
+
+*This property of Heavy Weapons is a consequence of using a weapon of a size larger than your own. [A system that is TODO]
+
+#### Armour
+Armour is changed to the following (+ values can be taken in addition):
 | Name | Cost | Armour | Property |
 | --- | --- | --- | --- |
 | Padded | 5gp | 1 | Light, Loud | 
@@ -105,7 +129,7 @@ Armour is changed to the following:
 
 **Blinkered** - you have Disadvantage on Perception checks
 
-**Shield** - equipped in the hand, you must use a Quick Action to Block to gain the bonus to Armour
+**Shield** - equipped in 1 hand, you must use a Bonus Action to Block to gain the bonus to Armour
 
 #### Cover
 Cover is functionally unchanged from the base game, but translates like so. Cover is a bonus to your Defence, a +2 for 'Half Cover' and a +5 for 'Three Quarters Cover'. This is independent of Armour and Evasion, so consider it part of your Base Defence. Additionally, don't forget that these bonuses apply to Reflex Saves as well, just as they apply to Dexterity Saves in 5e!
@@ -117,9 +141,9 @@ How on Earth does that work? You might be thinking.
 
 The GM declares the intentions of most enemies in the scene at the start of a Round, just as their movements would give away what they're about to do. Then all players decide among themselves what they're going to do that Round. When everyone is happy with their Actions, you "resolve" the round in whatever order works.
 
-Only powerful or well-trained enemies will be capable of **Hidden Actions**, where their intentions are not stated by the GM but kept secret until after players commit to their own Actions, but player characters can always attempt to **Discern** enemy moves anyway (see [Additional Actions](#-Additional-Actions)).
+Only powerful or well-trained enemies will be capable of **Hidden Actions**, where their intentions are not stated by the GM but kept secret until after players commit to their own Actions, but player characters can always attempt to **Discern** enemy moves anyway (see [Additional Actions](#additional-actions)).
 
-**Initiative Contest** - For any situations where the order of actions matters, the two characters involved roll off with their Initiative, the secondary statistic that starts as your Perception and Dexterity, to see who can get the higher value. If it makes sense to resolve such conflicts of interest using appropriate skill checks rather than Initiative (i.e. Athletics), then do so. For "slow" enemies / mooks the DM will just let the players go first, so-called "player's advantage".
+**Initiative Contest** - For any situations where the order of actions matters, the two characters involved roll off with their Initiative, the secondary statistic that starts as your Perception and Dexterity, to see who can get the higher value. If it makes sense to resolve such conflicts of interest using appropriate skill checks rather than Initiative (i.e. Athletics), then do so. For "slow" enemies / mooks the DM will just let the players go first, so-called "player's advantage". For example; "I try to grab the bag of gold before him", "OK, you and the white dragon need to make an Initiative Contest."
 
 Most Actions, however, can be resolved simultaneously. Attacks for example; two people just try to hit each other, damage each other, and collapse wounded at the same time if that is what happens.
 
@@ -134,15 +158,13 @@ Engagements are resolved effectively simultaneously and the order of Engagements
 
 All combat is resolved in two simple steps:
 
-1. **Determine Engagements** - where combatents, according to their ["Zone of Engagement"](#zone-of-engagement), “pair off”. “Pulling” and “turning”, if in conflict, are an Initiative Contest. Any who intend to Move do, Engaging as necessary.
-2. **Resolve Engagements** - resolving pairs/groups in a sensible/cinematic sequence. Melee conflicts are easily resolved. Ranged attacks naturally involve unpaired individuals; resolve simultaneously with everyone else. Resolve conflicts of interest with an Initiative Contest. For example; "I try to grab the bag of gold before him", "OK, you and the white dragon need to make an Initiative Contest."
+1. **Determine Engagements** - where combatents, according to their ["Zone of Engagement"](#zone-of-engagement), “pair off”. “Pulling” and “turning”, if in conflict, are an Initiative Contest. Any who intend to Move do, Engaging as necessary. This may seem complex at the outset, but these rules mostly only exist to resolve edge-cases and cases of conflict. 9 times out of 10 the GM simply needs to ask "OK, so who's fighting the Ogre and who's shooting back at the goblins?".
+2. **Resolve Engagements** - resolving pairs/groups in a sensible/cinematic sequence. Melee conflicts are easily resolved in their engagements. Ranged attacks naturally involve unpaired individuals but often can be smoothly resolved at the start or end of a Round. Resolve conflicts of interest with an Initiative Contest.
 
 #### Zone of Engagement
 The rules of pairing off, pulling and turning. 
 
-How do you avoid a long conga-line chain of awkwardly connected characters fighting each other? "Pairing off". Sometimes if you want to attack Mr A, even if they're attacking Mr B, because Mr C is attacking you and is otherwise unengaged, you have no choice but to "**Turn**" and "**Pair Off**" with them. 
-
-A character can only attempt to engage one character at a time. You can only melee attack someone you’re engaged with. Conga-lines break as if you, who are engaging someone who is engaging someone else, are engaged by a fourth, you must “turn” and engage your attacker, with the attacker **“Pulling”**. I.e., you cannot be "pulled" if you are engaged with someone who is engaged with you.
+How do you avoid a long conga-line chain of awkwardly connected characters fighting each other? "Pairing off". Sometimes if you want to attack Mr A, even if they're attacking Mr B, because Mr C is attacking you and is otherwise unengaged, you have no choice but to "**Turn**" from your initial intended target, who is said to "**Pull**" you, and "**Pair Off**" with them. I.e., you cannot be "pulled" if you are engaged with someone who is engaged with you.
 
 Additionally, a character can only be engaged by a maximum number of characters according to their relative size. Sometimes someone is surrounded by attackers, and even if you wanted to join in on the bullying, you're crowded out. The maximum number of opponents a character of a given relative size can have is:
 - smaller - 1
@@ -151,18 +173,21 @@ Additionally, a character can only be engaged by a maximum number of characters 
 - 2 sizes larger - 8
 - 3 sizes+ larger - any
 
-**Flanking** - is changed. You are "Flanking" when you are the one in an Engagement who the foe isn’t Engaging. You cannot flank a creature 2 or more sizes larger than you.
+**Flanking** - replacing the popular alternate rule of 5e, when you are the one in an Engagement who the foe isn’t Engaging, you have Advantage on your waepon attack rolls. You cannot flank a creature 2 or more sizes larger than you.
 
 #### Additional Actions
-Also, to make martial combat spicier a variety of generally available tactical basic combat actions are added; 
-- **Charge** - when you use your Action to Move half your Speed or more, and you turn no greater than 90 degrees, at the end of the Move you can make 1 Weapon Attack at Advantage as a Bonus Action.
+The other facet of making combat more tactical, beside the radical change of One Action All At Once, is what that one action can do. A variety of generally available tactical basic combat actions are added; 
+- **Charge** - when you use your Action to Move, moving at least 15ft, at the end of the Move you can make 1 Weapon Attack at Advantage as a Bonus Action.
 - **Run and Gun** - when you use your Action to Move, you can make 1 Ranged Weapon Attack as a Bonus Action at Disadvantage.
-- **Dodge** - as an action, you make a Reflex Saving Throw and if the result is higher than your Defence, it replaces your Defence value for the rest of the round
-- **Block** - as a Bonus Action, you raise your weapon or shield to gain the item's block value as Armour. This prevents you using that item as a weapon to attack. The Armour bonus lasts for the rest of the round.
-- **Parry** - if your weapon has the Parry Property, you make an attack action against an enemy who is making a melee attack against you. The roll is your Defense for the rest of this round, and also functions as a normal attack action. Resolve the enemy's attack against your new Defence, if its higher or even lower.
+- **Dodge** - as an Action, you make a Reflex Saving Throw and if the result is higher than your Defence, it replaces your Defence value for the rest of the Round
+- **Block** - as a Bonus Action, you raise your shield, or weapon if it has the Block property, to gain the item's Armour bonus. This prevents you using that item as a weapon to attack. The Armour bonus lasts for the rest of the round.
+- **Parry** - if your weapon has the Parry Property, when you make an attack action against an enemy who is making a melee attack against you use your weapon attack roll as your Defense for the enemy's attack resolution, and it also functions as a normal attack action. Resolve the enemy's attack against your new Defence, if its higher or even if it's lower.
 - **Disengage** - as a Bonus Action, move 5ft without triggering Attacks of Opportunity. (Replaces 5e action "Disengage")
 - **Stand** - a Bonus Action to go from Prone to Standing.
-- **Go to cover / Go prone** - as a Bonus Action make yourself Prone, or enter adjacent cover. The Prone condition or being in cover uses Stationary Defence. As before Prone makes being shot at occur at disadvantage, and cover is +2/+5 to Defence for half / ¾ cover.
+- **Go to Cover / Go Prone** - as a Bonus Action make yourself Prone, or enter adjacent cover. The Prone condition or being in cover uses Stationary Defence. As before Prone makes being shot at occur at disadvantage, and cover is +2/+5 to Defence for half / ¾ cover.
 - **Attack of Opportunity** - as a Bonus Action to an enemy you're engaged with moving away from you without Disengaging from you, you can make an attack action on them, after which they have moved away and are no longer engaged with you for that Round.
-- **Discern** - as an Action, you can make a Perception check against one enemy whose has a Hidden Action. If successful (the GM will decide the DC), their Action is no longer hidden and everyone in the combat can know.
-- **Disarm** - as an Action against an enemy in your Reach holding a weapon, you can make a contested Dexterity check against the enemy's Weapon Attack Roll. If you beat them, you rip the weapon from their grasp and throw it 30ft in a direction of your choice (this does not count as a thrown weapon attack), or equip it an empty hand of yours.
+- **Discern** - as an Attack or Action, you can make a Perception check against one enemy whose has a Hidden Action. If successful (the GM will decide the DC), their Action is no longer hidden and everyone in the combat can know.
+- **Disarm** - as an Attack or Action against an enemy in your Reach holding a weapon, you can make a Dexterity check against the enemy's passive Reflexes. If you succeed, you rip the weapon from their grasp and throw it 20ft in a direction of your choice (this does not count as a thrown weapon attack), or equip it an empty hand of yours.
+- **Shove** - as an Attack or Action you attempt to make an Enemy Prone or move 10ft directly away from you. You make a Strength check against their passive Fortitude.
+- **Grapple** - as an Attack or Action you attempt to Restrain an character. You make a Strength check against their passive Fortitude. If you succeed both the character is Restrained. On subsequent turns you can maintain the grapple or end the grapple (no additional action or roll needed), and you can only use your Move action, if you do, to Move yourself and the enemy as if going through Difficult Terrain (typically, at half Speed). The grappled character can use their Action to attempt to escape the Grapple, making a Strength or Dexterity check (their choice) vs your passive Fortitude, ending the grapple on a success.
+- **Non-lethal Strike** - you attack with the weapon with the intention to knock unconscious rather than kill. Don't roll for Damage, instead take each dice roll to have been a 1.

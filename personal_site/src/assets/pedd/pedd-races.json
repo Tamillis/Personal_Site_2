@@ -126,10 +126,6 @@
             {
                 "desc": "Reflexes",
                 "val": 1
-            },
-            {
-                "desc": "Evasion",
-                "val": 1
             }
         ],
         "baseHealth": 5,
@@ -152,7 +148,7 @@
                 "smell"
             ]
         },
-        "trance": "Elves cannot sleep. Their blood is severed from dreams. Instead they meditate deeply, remaining conscious. While meditating, Elves make a pale attempt at dreaming; such dreams are actually mental exercises that have become reflexive after years of practice. After resting in this way, you gain the same benefit a human would from 8 hours of sleep.",
+        "trance": "Elves cannot sleep. Their blood is severed from dreams. Instead they meditate deeply, remaining conscious but unobservant. While meditating, Elves make a pale attempt at dreaming; such dreams are actually mental exercises that have become reflexive after years of practice. After resting in this way, you gain the same benefit a human would from 8 hours of sleep.",
         "feyAncestry": "You have advantage on saving throws against being Charmed, and magic can't put you to Sleep.",
         "powers": [
             "Darkvision",
@@ -379,7 +375,7 @@
             "val": 30
         },
         "senses": {
-            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.\n\n**Keen Hearing and Smell** - You have advantage on Perception checks that rely on hearing or smell.",
+            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.\n\n**Keen Hearing and Smell** - You add your Bonus to any Perception checks for hearing or smell, when no Skill is in use.",
             "val": [
                 "touch",
                 "taste",

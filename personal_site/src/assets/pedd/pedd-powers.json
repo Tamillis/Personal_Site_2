@@ -1697,7 +1697,7 @@
             "Dexterity +1",
             "Fighting Style"
         ],
-        "desc": "When a character you can see attacks a target other than you that is within 5 feet of you, you can use your Bonus Action to impose Disadvantage on the attack roll. You must be wielding a Shield or a weapon with the Block property."
+        "desc": "When a character you can see attacks a target other than you that is within 5ft of you, you can use your Bonus Action to impose Disadvantage on the attack roll. You must be wielding a Shield or a weapon with the Block property."
     },
     {
         "name": "Psychic Sense",

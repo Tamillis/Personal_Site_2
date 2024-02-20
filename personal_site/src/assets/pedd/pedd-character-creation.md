@@ -17,7 +17,7 @@ Step-By-Step Character creation in PEDD looks like this:
    2.  Role Skills - 4 + a number of Skills equal to your Character's (now final) Intelligence, of your choice, of Skills.
    3.  Your initial 3 adventuring Powers (see [Powers Progression](/pedd/powers)), chosen from any non-racial Power: one of which must be a `combat` Power, and one of which must be an `exploration` Power. 
 5. *Adventuring Equipment* - chose your Equipment from one of the collections; the equipment that you find yourself with just before the game begins. The use of equipment is identical to 5e.
-6. *Come Together* - last but not least, you put everything together [just like the base game](https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#6ComeTogether)
+6. *Come Together* - last but not least, you put everything together. Calculate your final Statistics (remember you cannot go over 4 in any, put overflow Stat increases into other Stats), Resistances and Secondary Characteristics, collate your Skills, Equipment and Powers for convenience, and [just like the base game - bring it together](https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#6ComeTogether)
    - Add "Common", "Imperial Common" if playing in the Materium Existentiae, as a language at the end if you don't have it, but make a point of this being mostly functional and that the character comes from a walk of life that meant they never learnt the common tongue of where they currently are.
 
 Go to the "Character Creator Mode" (button above &uarr;) to make your character along with these steps!

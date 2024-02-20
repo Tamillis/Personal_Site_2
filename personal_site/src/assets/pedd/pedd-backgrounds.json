@@ -9,7 +9,7 @@
 },
 {
     "name": "Acolyte",
-    "desc": "You have spent your life in the service of a temple, god, divine-path or philosophy. You act as an intermediary between the realm of the holy and the mortal world, performing sacred rites and offering sacrifices in order to conduct worshipers into the presence of the divine.",
+    "desc": "You have spent your life in the service of a temple, god, divine-path or philosophy. You act as an intermediary between the realm of the holy and the mortal world, performing sacred rites and offering sacrifices in order to conduct worshipers into the presence of the divine. You and your adventuring companions can expect to receive free healing and care at places of your worship, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.",
     "stats": ["Perception +1", "Charisma +1"],
     "skills": ["Insight", "Persuasion", "Religion", "Languages - Any", "Medium Armour", "Clubs & Axes"],
     "equipment": ["A holy symbol (a gift to you when you entered your society)", "a prayer book or equivalent", "5 sticks of incense", "vestments", "a set of common clothes", "a pouch containing 15gp"],
@@ -124,7 +124,7 @@
     "desc": "You spent years learning the lore of the multiverse. You scoured manuscripts, studied scrolls, and listened to the greatest experts on the subjects that interest you. Your efforts have made you a master in your fields of study. When you attempt to learn or recall a piece of lore, if you do not know that information, you often know where and from whom you can obtain it. Usually, this information comes from a library, scriptorium, university, or a sage or other learned person or creature.",
     "stats": ["Accuracy +1", "Intelligence +1"],
     "skills": ["Arcana", "History", "Knives", "Investigation", "Languages - Any", "Languages - Any"],
-    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
+    "equipment": ["A bottle of black ink", "a quill", "a small knife", "a letter from a dead colleague posing a question you have not yet been able to answer", "a set of common clothes", "a belt pouch containing 10gp"],
     "suggestedPower": "Journeyman Mage"
 },
 {

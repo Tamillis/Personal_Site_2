@@ -20,6 +20,8 @@ Powers taken more than once should be noted what "Rank" they are at; such as "Ha
 
 Unless a Power is labelled with "Once every nth Power" or "Repeatable" it cannot be taken more than once. It is unique. (TODO - make sure this is the case)
 
+<div id="powers-list"></div>
+
 #### Tags
 Powers come with tags for ease of perusal and understanding. Here they are, explained:
 - **Racial** – Powers that can only be gained from being a certain Race, representing in-born racial abilities that you couldn't gain no matter how much you train, and can only be taken during character creation. Some Powers a race can choose from as a Racial power are Background Powers, as conceivably any race if in a position (i.e. background) to study them could do so and could learn them, then they ought not be racial powers.

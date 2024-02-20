@@ -1,30 +1,22 @@
 <template>
     <section class="section bg-black-transparent-0p3">
         <h1 class="main-title">P.E.D.D.</h1>
-        <h2 class="subsubtitle text-centre no-decoration">Powers</h2>
-        
+        <h2 class="subsubtitle text-centre no-decoration">Skills</h2>
         <Links />
-
         <div class="main-text inset">
-            <PowersList/>
             <div id="pedd"></div>
         </div>
-
     </section>
 </template>
   
 <script setup>
 import { putMdinElement } from '../../assets/functionality';
-import { onMounted } from 'vue';
-import PowersList from '../../components/PEDD/PowersList.vue';
+import { onMounted, ref } from 'vue';
 import Links from '../../components/PEDD/Links.vue';
 
-onMounted(async () => {
-    await putMdinElement('../src/assets/pedd/pedd-powers.md', 'pedd');
-    //attach powerslist.vue component to element with id "powers-list"
-    //let powersList = document.createElement("PowersList");
+onMounted(() => {
+    putMdinElement('../src/assets/pedd/pedd-skills.md', 'pedd')
 });
-
 </script>
   
 <style>
@@ -91,19 +83,5 @@ onMounted(async () => {
 
 #pedd table {
     margin: 0.5rem auto;
-}
-
-.proficiencies-list ul {
-    margin-top: 0.5rem;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.proficiencies-list li {
-    list-style: none;
-    border-left: 2px groove var(--highlight);
-    border-right: 2px groove var(--highlight);
-    padding: 0px 1rem;
 }
 </style>
