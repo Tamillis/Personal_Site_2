@@ -138,7 +138,26 @@ For example:
  - Ashen priestess
  - The Twin-swords of Tarentaise
 
+<<<<<<< HEAD
+WIP - Role input
+<div id="role-container"></div>
+
+#### Role Powers
+The main purpose of a Role is to embody what kind of Adventurer you are, and the powers to facilitate that are paramount. As such for your Role choose 3 Powers from PEDD any non-racial Powers: one of which must be a `combat` Power, and one of which must be an `exploration` Power. Use the tags to help you.
+
+<div id="role-picker-container"></div>
+
+
+#### Role Martial Skills
+Combat is an inevitable part of adventure. In addition to any racial or background skills, as part of your Role you may freely choose 4 Martial Skills that you have the prerequisites for. These are the arms and armour of your Role, so be thematic.
+
+#### Intelligence Skills
+Including the skills granted by your race, background and role so-far, you also gain proficiency in a number of Skills equal to your Intelligence, to a minimum of 0. This is done now as your Intelligence Stat is now fixed, but consider these extra skills you've gained across your entire life, through childhood, your background and even recently as an adventuerer. 
+
+You can pick freely from the Skills & Proficiency section.
+=======
 Your Role grants you your initial capabilities as an Adventurer, hence its emphasis on Powers, 3 of them, but also you gain your final Stat increases and your last skills, this time freely chosen as you bring about the Role mechanically. Your Role will only grow as you play, gaining more Powers, and therefore Skills and Stats.
+>>>>>>> 8a4d415f1ec9bd5dbdf403c4fc4a9562db735cbd
 
 ### Equipment
 Finally, the possessions you have on you at the start of your adventure. Take a note of the equipment you already have from your background, and then choose one set of equipment that fits the image of your Role:
