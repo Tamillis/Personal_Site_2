@@ -1,13 +1,15 @@
 ## Introduction
-> “Make your choices wisely, apprentice, for you will find they come to define you.”
+> "If anything, a game is a demonstration that even if you know all the rules, you'll never know who'll win and lose for certain, or even what directions you'll take and of course, not a clue as to what state you'll end up in.”
 > 
-> \- Unknown
+> \- Torhez 'Tormaline' Zoghett, dwarven philospher of the Djalkhoz Family in Yontervaland, while smoking an exceedingly long pipe.
 
 I run D&D pretty much everywhere I go, as it's one of my favourite and deepest passions. A table-top roleplaying game is unlike anything else, a piece of live theatre, boardgame, and creative co-operative story telling all in one. I never can find the words to describe it properly.
 
-I've been running it for over 10 years since I was 16, and by far the most popular system at my tables has been Dungeons and Dragons 5th Edition. My grandest of world building projects, also visible on this site, is my go to setting for it, and itself was built around the assumed setting that D&D functions around.
+I've been running it for over 10 years since I was 16, and by far the most popular system at my tables has been Dungeons and Dragons 5th Edition. My grandest of world building projects, [also visible on this site](/mewiki), is my go to setting for it, and itself was built around the assumed setting that D&D functions around.
 
-For players in my games, this page is a starting point of any campaign for them to dig into the slight changes I often use, and for any visitors I hope it can give you ideas and perhaps even introduce you to some new and exciting content. While I use the base game mostly as is, I have this following collection of homebrew that I have curated from the internet or on occasion come up with myself.
+For players in my D&D games, this page is a starting point of any campaign for them to dig into the slight changes I often use, and for any visitors I hope it can give you ideas and perhaps even introduce you to some new and exciting content. While I use the base game mostly as is, I have this following collection of homebrew that I have curated from the internet or on occasion come up with myself.
+
+As an aside, I now run my own D&D overhaul which I call, uncreatively I know, Pete's Edition of Dungeons and Dragons (PEDD), which you can find here: [PEDD](/pedd).
 
 ## Master Player Brief 
 
@@ -122,11 +124,5 @@ Revised Ranger | Favored Enemy | none
 Rogue | Expertise I | Intelligence 13
 Rogue | Thieves Cant | Charisma 13
 Wizard | Arcane Recovery | Intelligence 13
-
-### Personal Homebrew System
-
-I have recently started experimenting with some homebrew rules for D&D that drastically overhaul how the base game runs, in both character creation, combat and progression. To the point where I've started calling it "Pete's Edition of Dungeons & Dragons". If I'm using it in your game, I'll let you know to what degree, but all of the various changes made so far can be found here:
-
-[P.E.D.D.](./pedd)
 
 ***

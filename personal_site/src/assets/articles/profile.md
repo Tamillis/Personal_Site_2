@@ -1,12 +1,12 @@
 ## Introduction
 
-*[23<sup>rd</sup> June 2023]*
+*[27<sup>th</sup> February 2024]*
 
 Hi, my name is Peter Bellaby, as you might have already seen on the landing page's faux-terminal. 
 
-I'm a C# ASP.NET Trainer at Sparta Global, training cohorts of fresh-faced devs and testers C#, .NET, and a host of tools and frameworks to be effective on-site devs and testers after only 2 months of gruelling and intense training. 
+I'm a C# ASP.NET Web Developer at Downey Designs bespoke jewellery makers. I also train others in how to program in C# up to and including deploying websites via [ClassGap](https://www.classgap.com/me/peter-bellaby) as a side gig.
 
-I'm also a self-taught Full Stack developer (currently my stack being Vue, raw PHP [with some Laravel historically], and MySQL); a former English Foreign Language teacher of 6 years; a fluent speaker of Japanese (having worked as a translator) and conversational Swedish speaker, and dabbler in many other various languages. 
+I'm formerly a trainer at Sparta Global, where I trained cohorts of fresh-faced devs and testers in C#, .NET, and a host of tools and frameworks to be effective on-site team members after only 2 months of gruelling and intense training. I'm also a self-taught Full Stack developer (currently my stack being Vue, raw PHP [with some Laravel historically], and MySQL); a former English Foreign Language teacher of 6 years; a fluent speaker of Japanese (having worked as a translator) and conversational Swedish speaker, and dabbler in many other various languages. 
 
 Personally, I'm a happily married man to a lovely wife, a world traveller (places I've been in highlighted red on the globe there) and a massive Dungeons & Dragons geek, primarily in the role as forever-DM (so please let me know if you need a player!). 
 
@@ -14,7 +14,7 @@ As you can probably see, I'm also a corgi owner and dog-person.
 
 I like to call myself a generalist. With a wide base of skills to pull on, I am capable of quickly and efficiently learning new skills or applying skills to new areas of work. I have a strong scientific background while also being capable and experienced in the humanities, where I have many years of professional experience. Now, I also have a strong technical capability and depth of knowledge. I strongly believe; the power of a generalist is the ability to specialise anywhere. 
 
-If you have any questions or enquiries, please feel free to contact me via e-mail or on LinkedIn (links in sidebar).
+If you have any questions or enquiries, please feel free to contact me via e-mail at [peter@bellaby.co.uk](mailto:peter@bellaby.co.uk) or on LinkedIn (links in sidebar).
 
 ***
 
@@ -54,8 +54,17 @@ _**Languages**_: Another passion of mine, I speak Japanese fluently, Swedish con
 ***
 
 ## Work/Travel History
+### ***Web Developer at Downey Designs, UK***
+*Dates:* August 2023 to present
+
+*Company*: Downey Designs
+
+*Job Title:* Web Developer
+
+*Details of position:* I'm the sole developer for the company's B2B and administration website, also doubling as IT support and administration both on-site and for our clients for our services. I maintain the server for our business and my main task currently is updating and overhauling the current site to use mondern tools and techniques, as well as continue to provide functionality and fixes on a request basis.
+
 ### _**Junior Trainer at Sparta Global, UK**_
-*Dates:* May 2022 to present
+*Dates:* May 2022 to July 2023
 
 *Company*: Sparta Global
 

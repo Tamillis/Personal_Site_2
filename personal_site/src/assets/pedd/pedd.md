@@ -18,9 +18,11 @@ Note that all in-game terms as defined in PEDD are capitalised, like 'Action', a
 A large part of the rewrite focuses on getting the maths right for the sweeping changes being made. It does this by making the maths "flat". This makes it easier to predict and interpret, and aids with the level-less design. It also has the added benefit of making something that was dangerous, always dangerous. Flat Maths means nothing "falls off".
 
 To aid in the caluclation of the Maths, the following assumptions are kept to:
-- "*peasants*" face an average DC of 10, act at +0/+3 (unskilled/skilled, unskilled being the norm), have 10 Defence and have 10 Health. 
-- "*adventurers*" face an average DC of 15, act at +2/+5 (unskilled/skilled, skilled being the norm), have 15 Defence, and have 20 Health.
-- "*heroes*" face an average DC of 20, act at +4/+8 (unskilled/skilled, nearly always skilled), with +12 in their focus due to Expertise, have 20 Defence, and have 30 Health.
+- "*peasants*" face an average DC of 10, act at +0/+3 (unskilled/skilled, unskilled being the norm), have 8 Defence (unarmoured and no bonuses) and have 6 Health. 
+- "*adventurers*" face an average DC of 15, act at +2/+5 (unskilled/skilled, skilled being the norm), have 15 Defence (armoured and/or with decent reflexes), and have 14 Health (having Hardy I).*
+- "*heroes*" face an average DC of 18, act at +4/+8 (unskilled/skilled, nearly always skilled), with +12 in their focus due to Expertise, have 18 Defence (high armour and/or reflexes), and have 30 Health (having Hardy II+).*
+
+*Note that the numbers here are slightly skewed high, as I'm assuming that characters will naturally specialise and specialists will nearly-always being the one to attempt their field. For example, the health and defence numbers are what I expect for front-line characters that are supposed to take hits.
 
 As such, all damage sources are [TODO: need to be] re-calibrated; various high-level spells and large monsters are brought down (typically by simply reducing the multiples of dice to a single dice of the corresponding size), making the face-value and value-spread of such abilities easier for newer players to read. Two sword strikes, a fireball, or a headshot (e.g. a critical) will drop most to 0 Health.
 
@@ -36,6 +38,8 @@ DC's are relatively unchanged, but again become more consistant and easier to re
 | 25 | Legend |
 | 30 | Superhuman (as no non-superhuman can reach above +15 on a D20) |
 | 40 | Godlike (as a theoretical cap to even the most powerful beings, a bonus to a D20 of +30) |
+
+You'll note that the numbers don't progress "cleanly" such as 5, 10, 15, 20... etc. That's because these numbers have been calculated rather than thrown out there as a target or rough guide. Hopefully as I test the system, I can adjust these numbers to reflect not just predictions, but empirical results.
 
 ### Miscellaneous Changes
 Changes to D&D 5e that don't fit in one of the four major categories above.

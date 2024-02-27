@@ -1,3 +1,5 @@
+# Beliefs of the Materiae
+
 ## Beliefs of the Materiae
 As with all cultures across time, an innumerable collection of ideas and understandings abound. However, some common threads can be found enough to the point where perhaps there's more to them than just folklore, superstition and local culture. The theories and thoughts of the materiae include the following.
 
@@ -29,7 +31,11 @@ The braid gives the elemental rainbow colour theory (which, depending on the Sha
 The cosmological colour theory holds there are six colours. White (Good), Black (Evil), Blue (Logic), Red (Passion), Green (Reason) and Yellow (Chaos). That this clashes with the mana theorists quite awkwardly is often an area for argument, for debate is too polite and constructive a word, and neither group agrees with the rainbow theorists that black is the absence of anything, for the Shadow is most certainly an active, and not passive, force.
 
 ## Physical Theory
-The fundamental forces of this universe cleave across two paradigms. The first is the understanding that there are four states of matter, which correspond to the four classical elements told of in Creation, and that magical practitioners call on to this day; Earth, Water, Air, and Fire. Modern scholars prefer to describe these categories as Solid, Liquid, Gas and Energy respectively, to get away from the confusion between elemental Earth and dirt, and so on. The other paradigm is the Realite Fondamentale, the fundamental different designs of matter as crafted / intended / come upon by the Prime, each of which has a unique blend of properties such as; charge, magnetism, acidity, dimensions, moment, potential, mana, organic profile and so on. In descending order of magnitude these properties carry weight on the four states of matter, with "Energy" being the least differentiated, and "Solids" being the most.
+The fundamental forces of this universe cleave across two paradigms. The first is the understanding that there are four states of matter, which correspond to the four classical elements told of in Creation, and that magical practitioners call on to this day; Earth, Water, Air, and Fire. 
+
+Modern scholars prefer to describe these categories as Solid, Liquid, Gas and Energy respectively, to get away from the confusion between elemental Earth and dirt, and so on.
+
+The other paradigm is the Realite Fondamentale, the fundamental different designs of matter as crafted / intended / come upon by the Prime, each of which has a unique blend of properties such as; charge, magnetism, acidity, dimensions, moment, potential, mana, organic profile and so on. In descending order of magnitude these properties carry weight on the four states of matter, with "Energy" being the least differentiated, and "Solids" being the most.
 
 However not all in the universe is made of matter. In fact, matter only mostly matters within the core of the universe. The closer to the edge one wanders the further “energy” begins to only matter. The physical energies, core to the function of matter, mean less and the importance of mystical energies takes over. Typically, these are classed also in two; positive energy and negative energy, two sides to the same coin. However, on a technical basis the raw force of arcane, confusingly labelled “Force”, is also a mystical force, making a trifecta. And as many know, 3 is the number of creation.
 
