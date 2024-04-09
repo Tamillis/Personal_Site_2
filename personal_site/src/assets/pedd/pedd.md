@@ -14,6 +14,11 @@ As this is not a complete system rewrite, more of an overhaul, anything not ment
 
 Note that all in-game terms as defined in PEDD are capitalised, like 'Action', and that a corresponding entry in the Index (WIP) can be quickly found, but not necessarily all capitalised words are in-game terms. If I get the implementation going, each term's index entry will be quickly visible via pop-up.
 
+### Thoughts on Pedd
+Having played a recent game for a group of newbies I've noticed that there is *still* a lot of up-front work even with the presentation of cards for easy pick-and-mix character creation. The main issue was with the presentation and determination of stats, which makes me want to simplify them. In retrospect, I've ended up with a system of 11 Stats! 15 (!) if you count Health, Defence, Speed and Initiative, which in a way my players did. They're all just terms given the same amount of attention to them. Which, to be fair, is a bit mental. If you get really gnarly, you can add Armour and Base Defence in there too. As such I've removed all non-stat increases from the racial options (so resistances are purely derived), I've axed initiative (to be determined by Dex / Per depending on the context pre-fight / whatever the roll-off should be dictated by). Defence complexity is intended so that's staying. Base Health, Speed and Size are unchanged, tacked on to race as really that's all they are anyway. Evasion was given its own name to help diffentiate it from Reflexes as a "reflexes value capped by armour and a minimum of 0" but that sort of just didn't work with new folks oddly enough. I'll try using just Reflexes next and see if that works out better.
+
+On an unrelated note, one was to communicate the ideas behind the Primary Stats are the following groupings of worldy-interaction: contact (Str and Dex), remote (Acc and Per), and mental (int and cha). This helps delineate between the potentially confusing Dexterity and Accuracy. Strength and Dexterity can be seen as two very different ways to physically interact with the environment: brute force and subtlety: flow and redirection. 
+
 ### Flat Maths
 A large part of the rewrite focuses on getting the maths right for the sweeping changes being made. It does this by making the maths "flat". This makes it easier to predict and interpret, and aids with the level-less design. It also has the added benefit of making something that was dangerous, always dangerous. Flat Maths means nothing "falls off".
 
@@ -41,6 +46,13 @@ DC's are relatively unchanged, but again become more consistant and easier to re
 | 40 | Godlike (as a theoretical cap to even the most powerful beings, a bonus to a D20 of +30) |
 
 You'll note that the numbers don't progress "cleanly" such as 5, 10, 15, 20... etc. That's because these numbers have been calculated rather than thrown out there as a target or rough guide. Hopefully as I test the system, I can adjust these numbers to reflect not just predictions, but empirical results.
+
+### Where's Wisdom?
+Generally speaking wisdom has been removed, with all of the D&D weirdness about 'connection' and 'perception' being part of wisdom, even though most people use wisdom like willpower, and it just generally having a very poorly defined and understood area of concern. It gets especially odd when many people's definitions of wisdom start to sound a lot like Intelligence, such as having the wherewithal to notice something isn't real but is in fact an illusion. Which the game itself calls an Intelligence save!
+
+To address these issues, I've split wisdom in twain. Willpower is willpower, everyone gets that. The coverage of wisdom over connections, in terms of human relations, and empathy is now under Charisma, and perception is under the new Stat Perception. Connection to divine power is covered by Faith, and to primal power via the unerelated-to-the-character Verdance table.
+
+This does leave the window open for those hankering for a sense of “wise”, as in an individual who has a broad body of experience to call upon and errs on the side of patience. Characters still have the various Knowledge skills, and there is now the "Learned" Power for wisdom in the sense of being broadly knowledgeable, educated, well-read, etc., and the “Wisened” background that is wisdom in the sense of a wide body of practiced wisdom coming from age and life experience; the non-academic sage. It is also, I find, mostly simply a matter of role-play.
 
 ## Miscellaneous Changes
 Changes to D&D 5e that don't fit in one of the four major categories above.
@@ -75,3 +87,44 @@ There are many subcategories that the Character Types can be grouped with:
 - **Natural creatures**: beasts, elementals, giants, humanoids, oozes, plants
 - **Dark creatures**: aberrations, demons, fiends, lycanthropes, monstrosities (debated), fell, undead.
 - **Outsiders**: Aberrations, Celestials, (Outsider) Constructs, Demons, Fiends, Jurors, Sprites
+
+### Converting from 5e
+
+#### Features
+First, any and all Features can be taken as written so long as any areas of the game they touch haven't been effected by changes in PEDD. Those that do will need adjusting, and some Features have been rewritten wholesale, such as Spellcasting (which has its own section in powers [here](#spheres-of-magic)). See the points below.
+
+**Ability Score Increases** - any "Ability Score Increase" features are constrained to, at maximum, two +1's in the stated abilities. Any base-race - subrace combinations with 3 or more ability score increases only increase 2 Stats by +1, and you can choose which two. Any increases to Dexterity can instead be increases to Accuracy. Any increases to wisdom are instead increases to your choice of Perception or Willpower.
+
+**Perception Proficiency** - any feature that gives proficiency in perception instead grants the Keen Sense Power.
+
+**Saving Throw Proficiency** - any feature that gives a saving throw proficiency instead gives +1 to the corresponding Resistance (see [Converting Saves](#converting-saves))
+
+#### Spells and Flat Math Damage Rescaling
+Number of dice based on size, x1 for small/medium, x2 for large, x3 for huge, x4 for gargantuan.
+
+Size of dice based on intended damage, 1 for pittance, d4 for non-lethal, d6 for serious (50/50 on killing a Health 4 peasant...), d8 for lethal, d10 for highly lethal, d12 for massive damage.
+
+#### Converting Saves
+Whenever 5e asks for a save of a certain kind, using the following conversion:
+- Strength Saves -> Fortitude Saves
+- Dexterity Saves -> Reflex Saves / Fortitude Saves*
+- Constitution Saves -> Fortitude Saves
+- Intelligence Saves -> Willpower Saves
+- Wisdom Saves -> Willpower Saves / Reflex Saves**
+- Charisma Saves -> Willpower Saves
+
+*Dexterity is somewhat redefined as the agility and capability of one's body irrespective of their physical Strength or Accuracy. Pure dodging, then, (as most old Dexterity saves were) are covered by Reflex saves, however those old Dexterity saves that were more about the capability of the victim's body (such as jumping high enough) would now be covered by Fortitude saves, which represent more one's physical ability to mitigate damage. 
+
+**Wisdom, being poorly understood by perhaps even the designers of 5e themselves, is an odd one. See ["Where's Wisdom?"](#wheres-wisdom) for my thoughts on that. By default use Willpower, but if Perception would be more appropriate, use a Reflex Save instead.
+
+#### Races
+Races have been tweaked in a number of ways. Go through the following steps to convert a Race:
+
+1. Use the original Age, Size and Speed. Add a description for the race in the Materium Existentiae.
+2. Adjust the Attribute Increase feature to reflect the pattern: ["A Stat +2", "Another Stat +1", "A third Stat -1"]. Adjust using other races as examples if necessary. Combine sub-races if necessary.
+3. Add Senses, this may include darkvision if it is a required part of the fantasy of the race. Note that Low-light vision is back, so that might be more appropriate (like Elves, Gnomes, Dragonborn etc.).
+4. Introduce Baseline Health (default: 6 base, -1 for small, +1 for large, -2 for weak, +2 for strong)
+5. Remove any Skill proficiencies not distinctly tied to the physicality of the race (such as weapon or tool proficiencies)
+6. Remove all other non-iconic features and make them the Racial Powers options for that Race, including from all sub-races.
+7. If a Racial Power is iconic (it cannot be removed without intrinsically damaging the fantasy of the race), keep it as a named feature of the race. (Such as Lucky, for the Halfling). Try to balance power through tempering racial powers for that race, or introduce a malus elsewhere (such as lowered baseHealth like Elves)
+8. Create a list of Racial Powers from the removed Features, converting each Feature to a Power, and include any other racial powers to that list that should apply (check with your GM). 

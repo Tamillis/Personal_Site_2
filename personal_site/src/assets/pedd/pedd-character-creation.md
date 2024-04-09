@@ -6,7 +6,7 @@ Step-By-Step Character creation in PEDD looks like this:
    1. Stats - typically a +2, +1 and -1 to Stats, though Resistances or Evasion can be effected
    2. Base Health, Age, Size, Speed and Senses characteristics, and perhaps a few racial abilities
    3. A pick of 2 of the Racial Powers available to that Race
-   4. Upbringing - You also get 2 general skills and one language of your choice - the childhood skills and native language of your upbringing.
+   4. Upbringing - You also get 2 non-martial skills and one language of your choice - the childhood skills and native language of your upbringing.
 3. *Choose a Background* - the circumstances of your way of life. All handbook backgrounds, and some more, are available as Background cards. They give the following:
    1. Stat Increases - +1 to 2 Stats
    2. 6 Skills - the skills of your background.
@@ -17,8 +17,6 @@ Step-By-Step Character creation in PEDD looks like this:
    2.  Role Skills - 4 + a number of Skills equal to your Character's (now final) Intelligence, of your choice, of Skills.
    3.  Your initial 3 adventuring Powers (see [Powers Progression](/pedd/powers)), chosen from any non-racial Power: one of which must be a `combat` Power, and one of which must be an `exploration` Power. 
 5. *Adventuring Equipment* - chose your Equipment from one of the collections; the equipment that you find yourself with just before the game begins. The use of equipment is identical to 5e.
-6. *Come Together* - last but not least, you put everything together. Calculate your final Statistics (remember you cannot go over 4 in any, put overflow Stat increases into other Stats), Resistances and Secondary Characteristics, collate your Skills, Equipment and Powers for convenience, and [just like the base game - bring it together](https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#6ComeTogether)
-   - Add "Common", "Imperial Common" if playing in the Materium Existentiae, as a language at the end if you don't have it, but make a point of this being mostly functional and that the character comes from a walk of life that meant they never learnt the common tongue of where they currently are.
 
 Go to the "Character Creator Mode" (button above &uarr;) to make your character along with these steps!
 
@@ -41,7 +39,7 @@ Stat Value | Meaning
 2 | Professional - you're trusted to succeed
 3 | Exceptional - you're renowned within the region
 4 | World-class - few in the nation can best you
-5 | Legendary - your capability is on the level of the myths of the Gods
+5 | Legendary - your capability is on the level of myth
 
 Stats are determined by your Race, Background and Role, which produces a meaningful spread of Stats. There is no system for rolling stats. 
 
@@ -51,10 +49,16 @@ During character creation no Statistic can be increased beyond +4, unless explic
 A line is drawn between your active Statistics used for Actions, and your passive Resistances which are used to mitigate harms. Resistances are calculated values, from Statistics, Race and Background. They can be above 4 or below -3, they are whatever the calculation comes out as.
 
 There are six **Statistics** (used in checks):
-- **Strength** - used in melee attacks, and feats of brawn
-- **Dexterity** - used in many skills, for feats of deftness
+
+*Physical Ability*
+- **Strength** - used in melee attacks, and feats of brawn - your body's physical ability to force your way to victory
+- **Dexterity** - used in many skills, for feats of deftness - your body's phsyical ability to apply subtle power, bending yourself and redirecting the world to your whims
+
+*Remote Ability*
 - **Accuracy** - used in ranged attacks, and feats of precision
 - **Perception** - used to sense the world, spot hidden things, and read others
+
+*Mental Ability*
 - **Intelligence** - used in knowledge and understanding, for feats of alacrity
 - **Charisma** - used to affect others through force of personality, empathy and displays of emotion
 
@@ -71,19 +75,6 @@ A term I've carried over is "Difficulty Class", a.k.a. "DC", meaning the target 
 
 Sometimes enemy attacks and other effects are made against your "Resistance DC", this is 8 + the Resistance value.
 
-#### Converting Saves
-Whenever 5e asks for a save of a certain kind, using the following conversion:
-- Strength Saves -> Fortitude Saves
-- Dexterity Saves -> Reflex Saves / Fortitude Saves*
-- Constitution Saves -> Fortitude Saves
-- Intelligence Saves -> Willpower Saves
-- Wisdom Saves -> Willpower Saves / Reflex Saves**
-- Charisma Saves -> Willpower Saves
-
-*Dexterity is somewhat redefined as the agility and capability of one's body irrespective of their physical Strength or Accuracy. Pure dodging, then, (as most old Dexterity saves were) are covered by Reflex saves, however those old Dexterity saves that were more about the capability of the victim's body (such as jumping high enough) would now be covered by Fortitude saves, which represent more one's physical ability to mitigate damage. 
-
-**Wisdom, being poorly understood by perhaps even the designers of 5e themselves, is an odd one. See ["Where's Wisdom?"](#wheres-wisdom) for my thoughts on that. By default use Willpower, but if Perception would be more appropriate, use a Reflex Save instead.
-
 #### Secondary Statistics
 
 - **Health** - how much damage you can take before entering the Dying state. Your Race provides your **Base Health** and your **Fortitude** + **Willpower** is added on top to determine your total Health. Health is explicitly a combination of physical and emotional wear and tear, and the ability to roll with and carry on from blows.
@@ -92,8 +83,18 @@ Whenever 5e asks for a save of a certain kind, using the following conversion:
   - **Armour** - determined by the sum Defence of worn equipment.
   - **Evasion** - your **Reflex** value to a minimum of 0, can be modified by some Powers and Races, can be limited by worn equipment.
 - **Speed** - unchanged, determined by Race
-- **Initiative** - **Perception** + **Dexterity** (+ a bonus from some Powers)
 - **Passive Statistics** - sometimes Powers or play require a value to compare against. The DM can ask you to make a roll that then represents that value, and sometimes they will ask for your "Passive Strength" etc. This is 8 + the Stat Value.
+
+#### Simple Character Sheet Grid
+
+| | | | | |  | | |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Acc. | | Str.  | | Int. | | | | 
+| Per. | | Dex.  | | Cha. | | | | 
+| Ref. | | Fort. | | Will. | | B.H. | | 
+| Size | | Health | | | | | | 
+| Arm. | | Def. | | | | | | |
+| Spd. | | Bonus | +2 | | | | | |
 
 #### Tertiary Statistics
 These 'Statistics' are not used in the game explicitely, but are a fun little aside for calculating ancilliary values for your character. Feel free to skip this step if you're not interested, or completely ignore its results.
@@ -104,13 +105,6 @@ These 'Statistics' are not used in the game explicitely, but are a fun little as
 
 A few Powers and corners may use these Stats, but only explicitely as the combination of normal Stats that define them, such as with "Foresigthed Defence" which is built upon Perception and Intelligence.
 
-#### Where's Wisdom?
-Generally speaking wisdom has been removed, with all of the D&D weirdness about 'connection' and 'perception' being part of wisdom, even though most people use wisdom like willpower, and it just generally having a very poorly defined and understood area of concern. It gets especially odd when many people's definitions of wisdom start to sound a lot like Intelligence, such as having the wherewithal to notice something isn't real but is in fact an illusion. Which the game itself calls an Intelligence save!
-
-To address these issues, I've split wisdom in twain. Willpower is willpower, everyone gets that. The coverage of wisdom over connections, in terms of human relations, and empathy is now under Charisma, and perception is under the new Stat Perception. Connection to divine power is covered by Faith, and to primal power via the unerelated-to-the-character Verdance table.
-
-This does leave the window open for those hankering for a sense of “wise”, as in an individual who has a broad body of experience to call upon and errs on the side of patience. Characters still have the various Knowledge skills, and there is now the "Learned" Power for wisdom in the sense of being broadly knowledgeable, educated, well-read, etc., and the “Wisened” background that is wisdom in the sense of a wide body of practiced wisdom coming from age and life experience; the non-academic sage. It is also, I find, mostly simply a matter of role-play.
-
 ### Races & Racial Powers
 Your race is what you were born as. The choices your character had no hand in making. Your physical circumstances, your family, childhood, place of birth, home and all these little factors. When chosing a Race consider these, and consider what bonds (family, friends, childhood haunts), what ideals (beliefs you were raised with), and flaws (deep-rooted assumptions, traumas, rivals) you may have too.
 
@@ -119,7 +113,7 @@ All the PHB Races of 5e have been converted mostly verbatum with the major chang
 You choose 2 Racial Powers (by default) when you choose a Race, so not even two individuals of the same Race have the same capabilities, necessarily.
 
 #### Upbringing
-Another core part of what your Race represents, is your 'upbringing', the kind of childhood you had. You freely pick 2 Skills, representing your those you were taught, learned or had no choice but to pick up while growing up. Additionally you take the 'Language, one of' Skill, noting that as your native language. By default in my games in the Materium Existentiae, your Childhood Language will be Imperial Common.
+Another core part of what your Race represents, is your 'upbringing', the kind of childhood you had. You freely pick 2 non-martial Skills, representing your those you were taught, learned or had no choice but to pick up while growing up. Additionally you take the 'Language, one of' Skill, noting that as your native language. By default in my games in the Materium Existentiae, your Childhood Language will be Imperial Common.
 
 ### Backgrounds
 Your background is the profession and/or way of life you pursued before taking on the mantle of 'Adventurer' and you left it all behind, or were forced to. It emphasises skills, those you honed to a professional level, more than Powers, of which you gain only one. These are your character's first true choices, and so may say a lot about their ideals and their flaws, and will have built bonds all of their own. For ideas on these, see the PHB or other source books.
@@ -138,26 +132,18 @@ For example:
  - Ashen priestess
  - The Twin-swords of Tarentaise
 
-<<<<<<< HEAD
 WIP - Role input
 <div id="role-container"></div>
 
 #### Role Powers
-The main purpose of a Role is to embody what kind of Adventurer you are, and the powers to facilitate that are paramount. As such for your Role choose 3 Powers from PEDD any non-racial Powers: one of which must be a `combat` Power, and one of which must be an `exploration` Power. Use the tags to help you.
+The main purpose of a Role is to embody what kind of Adventurer you are, and the powers to facilitate that are paramount. As such for your Role choose 3 Powers from PEDD any non-racial Powers: one of which must be a `combat` Power, and one of which must be an `exploration` Power. Use the tags to help you. Your Role will only grow as you play, gaining more Powers, and therefore Skills and Stats.
 
 <div id="role-picker-container"></div>
 
+#### Role Skills
+In addition to the skills granted by your race and background so-far, you also gain proficiency in a number of Skills equal to 4 + your Intelligence. This is done now as your Intelligence Stat is now fixed, but consider these extra skills you've gained across your entire life, through childhood, your background and even recently as an adventuerer. You can pick any skills freely from [Skills](/pedd/skills) section.
 
-#### Role Martial Skills
-Combat is an inevitable part of adventure. In addition to any racial or background skills, as part of your Role you may freely choose 4 Martial Skills that you have the prerequisites for. These are the arms and armour of your Role, so be thematic.
-
-#### Intelligence Skills
-Including the skills granted by your race, background and role so-far, you also gain proficiency in a number of Skills equal to your Intelligence, to a minimum of 0. This is done now as your Intelligence Stat is now fixed, but consider these extra skills you've gained across your entire life, through childhood, your background and even recently as an adventuerer. 
-
-You can pick freely from the Skills & Proficiency section.
-=======
-Your Role grants you your initial capabilities as an Adventurer, hence its emphasis on Powers, 3 of them, but also you gain your final Stat increases and your last skills, this time freely chosen as you bring about the Role mechanically. Your Role will only grow as you play, gaining more Powers, and therefore Skills and Stats.
->>>>>>> 8a4d415f1ec9bd5dbdf403c4fc4a9562db735cbd
+As combat is an inevitable part of adventure, it is worth inversting your Role Skills in the Martial Skills that you will need if you find you don't have enough. These are the arms and armour of your Role, so be thematic.
 
 ### Equipment
 Finally, the possessions you have on you at the start of your adventure. Take a note of the equipment you already have from your background, and then choose one set of equipment that fits the image of your Role:
@@ -203,26 +189,9 @@ Pack's, for reference (you may with your DM's permission swap your pack for any 
 
 </div>
 
-Weapons and armour are covered in [Weapons & Armour in PEDD/Combat](bellaby.co.uk/pedd/combat#weapons-and-armour)
+Weapons and armour are covered in [Weapons & Armour in PEDD/Combat](/pedd/combat#weapons-and-armour)
 
-### Converting Races, Backgrounds and Classes
+## Come Together 
+Last but not least, you put everything together. Calculate your final Statistics (remember you cannot go over 4 in any, put overflow Stat increases into other Stats), Resistances and Secondary Characteristics, collate your Skills, Equipment and Powers for convenience, and [just like the base game - bring it together](https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#6ComeTogether).
 
-#### Features
-First, any and all Features can be taken as written so long as any areas of the game they touch haven't been effected by changes in PEDD. Those that do will need adjusting, and some Features have been rewritten wholesale, such as Spellcasting (which has its own section in powers [here](#spheres-of-magic)). See the points below.
-
-**Ability Score Increases** - any "Ability Score Increase" features are constrained to, at maximum, two +1's in the stated abilities. Any base-race - subrace combinations with 3 or more ability score increases only increase 2 Stats by +1, and you can choose which two. Any increases to Dexterity can instead be increases to Accuracy. Any increases to wisdom are instead increases to your choice of Perception or Willpower.
-
-**Perception Proficiency** - any feature that gives proficiency in perception instead grants the Keen Sense Power.
-
-**Saving Throw Proficiency** - any feature that gives a saving throw proficiency instead gives +1 to the corresponding Resistance (see [Converting Saves](#converting-saves))
-
-#### Races
-Races have been tweaked in a number of ways. Go through the following steps to convert a Race:
-
-1. Use the original Age, Size and Speed. Add a description for the race in the Materium Existentiae.
-2. Adjust the Attribute Increase feature to reflect the pattern: ["A Stat +2", "Another Stat +1", "A third Stat -1", "A Resistance +1"]. Adjust using other races as examples if necessary. Combine sub-races if necessary.
-3. Add Senses, this may include darkvision if it is a required part of the fantasy of the race.
-4. Introduce Baseline Health (default: 6 base, -1 for small, +1 for large, -2 for weak, +2 for strong) and Evasion bonus or malus for graceful / bulky races respectively.
-5. Remove any Skill proficiencies not distinctly tied to the physicality of the race (such as weapon or tool proficiencies)
-6. Remove all other features and make them the Racial Powers options for that Race, including from all sub-races.
-7. Create a list of Racial Powers from the removed Features, converting each Feature to a Power, and include any other racial powers to that list that should apply (check with your GM). If a Racial Power is iconic (it cannot be removed without intrinsically damaging the fantasy of the race), keep it as a named feature of the race. (Such as Lucky, for the Halfling).
+ - Add "Common", "Imperial Common" if playing in the Materium Existentiae, as a language at the end if you don't have it, but make a point of this being mostly functional and that the character comes from a walk of life that meant they never learnt the common tongue of where they currently are.

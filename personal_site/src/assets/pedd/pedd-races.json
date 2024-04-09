@@ -14,10 +14,6 @@
             {
                 "desc": "Any",
                 "val": -1
-            },
-            {
-                "desc": "Willpower",
-                "val": 1
             }
         ],
         "baseHealth": 6,
@@ -40,6 +36,7 @@
                 "smell"
             ]
         },
+        "tenaciousWill": "You gain proficiency in Willpower Saves.",
         "powers": [
             "Extra Language",
             "Prodigy",
@@ -53,26 +50,22 @@
     },
     {
         "name": "Dwarf",
-        "desc": "From kingdoms rich in ancient grandeur lost to the Cataclysm, the Dwarves are a people believed to be carved from the roots of mountains, which would certainly describe their supernatural sense for stone. They are so like Men and Little People, just stockier and of a height between them, yet they're utterly unable to form bloodlines. They, of all the races that shun the sun, have no weakness to it. A commitment to family or clan and unearthing lost traditions, and a burning hatred of drow and other dark creatures that kicked them when they were down, are the common threads that unite all dwarves.",
+        "desc": "From kingdoms rich in ancient grandeur lost to the Cataclysm, the Dwarves are a people believed to be carved from the roots of mountains, which would certainly describe their supernatural sense for stone. They are so like Men and Little People, just stockier and of a height between them, yet they're utterly unable to form bloodlines. They, of all the races that shun the sun, have no weakness to it. They're renowned smiths and artisans with clever fingers many shards-over. A commitment to family or clan and unearthing lost traditions, and a burning hatred of drow and other dark creatures that kicked them when they were down, are the common threads that unite all dwarves.",
         "stats": [
             {
                 "desc": "Strength",
-                "val": 2
-            },
-            {
-                "desc": "Charisma",
-                "val": -1
-            },
-            {
-                "desc": "Willpower",
-                "val": 2
-            },
-            {
-                "desc": "Fortitude",
                 "val": 1
             },
             {
-                "desc": "Evasion",
+                "desc": "Dexterity",
+                "val": 1
+            },
+            {
+                "desc": "Any",
+                "val": 1
+            },
+            {
+                "desc": "Any",
                 "val": -1
             }
         ],
@@ -122,10 +115,6 @@
             {
                 "desc": "Strength",
                 "val": -1
-            },
-            {
-                "desc": "Reflexes",
-                "val": 1
             }
         ],
         "baseHealth": 5,
@@ -163,7 +152,8 @@
             "Wood Elf Magic",
             "Everchanging Nature",
             "Mana",
-            "Natural Illusionist"
+            "Natural Illusionist",
+            "Resilient (Reflexes)"
         ]
     },
     {
@@ -181,14 +171,6 @@
             {
                 "desc": "Perception",
                 "val": -1
-            },
-            {
-                "desc": "Willpower",
-                "val": 1
-            },
-            {
-                "desc": "Evasion",
-                "val": 1
             }
         ],
         "baseHealth": 4,
@@ -212,6 +194,7 @@
             ]
         },
         "gnomeCunning": "Magic and formulae comes to your people easily, and can be just as easily refuted. You have Advantage on all Willpower saves against memetics and magic spells, but not spell-like effects",
+        "chromopalsy": "If you go 24 hours without experiencing something new, you have Disadvantage on all Willpower saves against resisting temptations, be they from the world, charms of a creature or effects of a spell or spell-like effect.",
         "powers": [
             "Darkvision",
             "Fey Ancestry",
@@ -241,10 +224,6 @@
             },
             {
                 "desc": "Dexterity",
-                "val": 1
-            },
-            {
-                "desc": "Fortitude",
                 "val": 1
             }
         ],
@@ -296,10 +275,6 @@
             {
                 "desc": "Any",
                 "val": -1
-            },
-            {
-                "desc": "Reflexes",
-                "val": 1
             }
         ],
         "baseHealth": 6,
@@ -340,7 +315,8 @@
             "Wood Elf Magic",
             "Mana",
             "Psychic Sense",
-            "Natural Illusionist"
+            "Natural Illusionist",
+            "Resilient (Reflexes)"
         ]
     },
     {
@@ -358,10 +334,6 @@
             {
                 "desc": "Charisma",
                 "val": -1
-            },
-            {
-                "desc": "Fortitude",
-                "val": 1
             }
         ],
         "baseHealth": 8,
@@ -417,10 +389,6 @@
             {
                 "desc": "Accuracy",
                 "val": -1
-            },
-            {
-                "desc": "Willpower",
-                "val": 1
             }
         ],
         "baseHealth": 8,

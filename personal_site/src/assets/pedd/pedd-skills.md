@@ -119,3 +119,56 @@ Those that have requirements.
 - Exotic Weapons - Custom Martial Skills not defined in the list
 
 </div>
+
+## Skills by Attributes
+Weapons are collapsed for the sake of quick reference. Remember that attributes are context-dependent, the below are just defaults.
+
+### Strength
+<div class="proficiencies-list">
+- Athletics
+- Intimidation
+- Melee Weapons & Shields
+</div>
+
+### Dexterity
+<div class="proficiencies-list">
+- Acrobatics
+- Crafting
+- Finesse Weapons
+- Sleight of Hand
+- Stealth
+- Tools (one set of)
+
+</div>
+
+### Accuracy
+<div class="proficiencies-list">
+- Ranged Weapons
+</div>
+
+### Perception
+<div class="proficiencies-list">
+- Animal Handling
+- Insight
+- Investigation
+- Observe
+- Survival
+</div>
+
+### Intelligence
+<div class="proficiencies-list">
+- Arcana
+- History
+- Medicine
+- Nature
+- Occultism
+- Persuasion
+- Religion
+</div>
+
+### Charisma
+<div class="proficiencies-list">
+- Charm
+- Deception
+- Languages (one of)
+</div>

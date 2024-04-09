@@ -1,10 +1,10 @@
 [
 {
     "name": "Custom",
-    "desc": "It is up to you to say where you come from, and what you did before you took on the mantle of the adventurer.",
+    "desc": "It is up to you to say where you come from, and what you did before you took on the mantle of your role.",
     "stats": ["Any +1", "Any +1"],
     "skills": ["Any 6"],
-    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
+    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 5 + 1d10 gp"],
     "suggestedPower": "Any"
 },
 {
@@ -17,35 +17,35 @@
 },
 {
     "name": "Charlatan",
-    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
-    "stats": ["Any +1", "Any +1"],
-    "skills": ["Any 4"],
-    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
-    "suggestedPower": "Any"
+    "desc": "You have always had a way with people. You know what makes them tick, you can tease out their hearts' desires after a few minutes of conversation, and with a few leading questions you can read them like they were children's books. You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume a persona. Additionally, you can forge documents including official papers and personal letters, as long as you have seen an example of the kind of document or the handwriting you are trying to copy.",
+    "stats": ["Charisma +1", "Perception +1"],
+    "skills": ["Persuasion", "Deception", "Sleight of Hand", "Disguise Kit", "Forgery Kit", "Observation"],
+    "equipment": ["A set of fine clothes", "a disguise kit", "ten stoppered bottles filled with colored liquid", "a set of weighted dice or a deck of marked cards", "forged official documents or seals, such as the signet ring of an imaginary duke", "a pouch containing 15gp"],
+    "suggestedPower": "Expert Skill (Deception)"
 },
 {
     "name": "Criminal",
     "desc": "As an experienced criminal with a history of breaking the law, you have spent a lot of time among other criminals and still have contacts within the criminal underworld. You have a reliable and trustworthy contact who acts as your liaison to a network of other criminals. You know how to get messages to and from your contact, even over great distances through contacts such as local messengers, corrupt caravan masters, and seedy sailors.",
     "stats": ["Dexterity +1", "Accuracy +1"],
-    "skills": ["Deception", "Intimidation", "Gaming Set - Playing Cards","Tools - Thieve's", "Thrown", "Blades"],
+    "skills": ["Deception", "Intimidation", "Gaming Set - Playing Cards","Tools - Thieves'", "Thrown", "Blades"],
     "equipment": ["A crowbar, a throwing knife, a set of dark common clothes including a hood, and a belt pouch containing 15gp"],
     "suggestedPower": "Skulker"
 },
 {
     "name": "Spy",
-    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
-    "stats": ["Any +1", "Any +1"],
-    "skills": ["Any 4"],
-    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
-    "suggestedPower": "Any"
+    "desc": "Although your capabilities are not much different from those of a burglar or smuggler, you learned and practiced them in a very different context: as an espionage agent. You might have been an officially sanctioned agent of the crown, or perhaps you sold the secrets you uncovered to the highest bidder. You have a reliable and trustworthy contact who acts as your liaison to a network of other spies. You know how to get messages to and from your contact, even over great distances through contacts such as local messengers, corrupt caravan masters, and seedy sailors.",
+    "stats": ["Persuasion +1", "Charisma +1"],
+    "skills": ["Persuasion", "Observation", "Stealth", "Tools - Thieves'", "Knives", "Deception"],
+    "equipment": ["A set of thieves' tools", "a set of cyphered observation notes", "a set of dark common clothes including a hood", "a day-to-day item that has a secret second meaning", "a pouch containing 10gp"],
+    "suggestedPower": "Keen Observer"
 },
 {
     "name": "Entertainer",
-    "desc": "It is up to you to say where youcome from, and what you did before you took on the mantle of the adventurer.",
-    "stats": ["Any +1", "Any +1"],
-    "skills": ["Any 4"],
-    "equipment": ["A set of tools (one of your choice)", "3 miscellaneous items worth less than 1gp each", "a set of common clothes", "a trinket (one of your choice that has meaning to your background)", "a pouch containing 15gp"],
-    "suggestedPower": "Any"
+    "desc": "Art is your life, and you thrive in front of an audience. You can always find a place to perform, usually in an inn or tavern but possibly with a circus, at a theater, or even in a noble's court. At such a place, you receive free lodging and food of a modest or comfortable standard (depending on the quality of the establishment), as long as you perform each night.",
+    "stats": ["Charisma +1", "Dexterity +1"],
+    "skills": ["Acrobatics", "Performance", "Tools - Musical instrument (one of your choice)", "Disguise Kit", "Knives", "Thrown"],
+    "equipment": ["A musical instrument (one of your choice)", "the favor of an admirer (love letter, lock of hair, or trinket)", "a costume", "a pouch containing 15gp"],
+    "suggestedPower": "Song of Rest"
 },
 {
     "name": "Folk Hero",
@@ -137,7 +137,7 @@
 },
 {
     "name": "Soldier",
-    "desc": "You trained as a youth in the Emperor’s New Army or other armed force, studied the use of weapons and armour, and learned basic battlefield survival techniques. You have a military rank of Lieutenant or equivalent from your career as a soldier. Soldiers honour your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use.",
+    "desc": "You trained as a youth in the Emperor's New Army or other armed force, studied the use of weapons and armour, and learned basic battlefield survival techniques. You have a military rank of Lieutenant or equivalent from your career as a soldier. Soldiers honour your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use.",
     "stats": ["Strength +1", "Accuracy +1"],
     "skills": ["Athletics", "Blades", "Firearms & Pistols", "Intimidation", "Artisan's Tools - Carpentry", "Survival"],
     "equipment": ["An insignia of rank, a trophy taken from a fallen enemy, a set of bone dice, a set of common clothes, a pistol with 20 sidearm paper cartridges, and a pouch containing 10gp"],
@@ -145,7 +145,7 @@
 },
 {
     "name": "New Army Healer",
-    "desc": "You trained as a youth in the Emperor’s New Army or other armed force to become a member of the renowned Healers, working either as part of a mixed squad, or as part of a team in one of their 'Field Hospitals'. Like any soldier you've received basic training, but were also taught how to make Healing Potions from a variety of different natural material across the Empire, and the application of potions, salves and gases, as well as extensive training in mundane first aid. You have a military rank of Lieutenant or equivalent from your career as a soldier. Soldiers honour your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use.",
+    "desc": "You trained as a youth in the Emperor's New Army or other armed force to become a member of the renowned Healers, working either as part of a mixed squad, or as part of a team in one of their 'Field Hospitals'. Like any soldier you've received basic training, but were also taught how to make Healing Potions from a variety of different natural material across the Empire, and the application of potions, salves and gases, as well as extensive training in mundane first aid. You have a military rank of Lieutenant or equivalent from your career as a soldier. Soldiers honour your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use.",
     "stats": ["Peception +1", "Intelligence +1"],
     "skills": ["Medicine", "Firearms & Pistols", "Knives", "Tool Kit - Herbalism", "Nature", "Survival"],
     "equipment": ["An insignia of rank, a medallion emblazoned with the red H of the Healers, a gathering knife, a set of common clothes, a pistol with 20 sidearm paper cartridges, and a pouch containing 15gp"],
@@ -155,7 +155,7 @@
     "name": "Urchin",
     "desc": "You grew up on the streets alone, orphaned, and poor, You had no one to watch over you or to provide for you, so you learned to provide for yourself. You fought fiercely over food and kept a constant watch out for other desperate souls who might steal from you. You slept on rooftops and in alleyways, exposed to the elements, and endured sickness without the advantage of medicine or a place to recuperate. You've survived despite all odds, and did so through cunning, strength, speed, or some combination of each. You know the secret patterns and flow to cities and can find passages through the urban sprawl that others would miss. When you are not in combat, you (and companions you lead) can travel between any two locations in the city twice as fast as your speed would normally allow.",
     "stats": ["Dexterity +1", "Charisma +1"],
-    "skills": ["Knives", "Clubs & Axes", "Deception", "Gaming Set – Dice", "Sleight of Hand", "Stealth"],
+    "skills": ["Knives", "Clubs & Axes", "Deception", "Gaming Set - Dice", "Sleight of Hand", "Stealth"],
     "equipment": ["A small knife", "a scrawled map of the city you grew up in", "a pet critter", "a token to remember your parents by", "a set of patched common clothes", "a pouch containing probably stolen 5gp"],
     "suggestedPower": "Skulker"
 }]
