@@ -23,10 +23,9 @@ Some skills have changed, been removed or new ones added. For example, due to be
 ### Skill Statistics
 In PEDD no Skill is automatically associated with a Stat, the alternate 5e rule many of us run with anyway, though there are suggestions as naturally certain Skills tend to be handled by certain Stats. Due to the shake-up in stats, some of the suggestions are not what they were in 5e. However if played well, you can Intimidate with Charisma using guile, Stealth with Intelligence using knowledge of the terrain and the enemy, and do Acrobatics with Accuracy while juggling, depending on how you use the Skill. The GM and the table will decide if a combination is valid, or if another combination would be better.
 
-**Note** for weapon attacks, the Stats used are fixed: **Strength** for Melee, **Accuracy** for Ranged. If the weapon has the property "Finesse" you can instead use Dexterity for the attacks.
+**Note** for weapon attacks, the Stats used are fixed: **Strength** for Melee, **Accuracy** for Ranged. If the weapon has the property "Finesse" you can instead use **Dexterity** for the attacks.
 
-For reference, the Skills (and their recommended Stat, required for Martial), with <sup>M</sup> for Martial and <sup>K</sup> for Knowledge (see below), are:
-
+- Skill <sup>M</sup> for Martial or <sup>K</sup> for Knowledge (recommended Stat):
 
 <div class="proficiencies-list">
 
@@ -105,17 +104,17 @@ Simple Weapons are those that have no requirements:
 </div>
 
 ### Martial Weapons
-Those that have requirements.
+Those that have requirements, or are exotic.
 
 <div class="proficiencies-list">
 
-- Battle-Axes*
-- Blades*
-- Heavy Armour*
-- Heavy Blades*
-- Mauls*
-- Medium Armour*
-- Pole-Arms*
+- Battle-Axes
+- Blades
+- Heavy Armour
+- Heavy Blades
+- Mauls
+- Medium Armour
+- Pole-Arms
 - Exotic Weapons - Custom Martial Skills not defined in the list
 
 </div>
@@ -138,7 +137,6 @@ Weapons are collapsed for the sake of quick reference. Remember that attributes 
 - Sleight of Hand
 - Stealth
 - Tools (one set of)
-
 </div>
 
 ### Accuracy

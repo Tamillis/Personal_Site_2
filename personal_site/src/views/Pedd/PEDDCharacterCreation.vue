@@ -16,6 +16,10 @@
             <CharacterCreator v-show="creatorMode" />
         </div>
 
+        <div id="races" hidden>
+            <h1>TEST</h1>
+        </div>
+
     </section>
 </template>
   
@@ -26,7 +30,11 @@ import Links from '../../components/PEDD/Links.vue';
 import CharacterCreator from '../../components/PEDD/CharacterCreator.vue';
 
 onMounted(() => {
-    putMdinElement('../src/assets/pedd/pedd-character-creation.md', 'pedd')
+    putMdinElement('../src/assets/pedd/pedd-character-creation.md', 'pedd');
+
+    window.addEventListener("MarkedDone", () => {
+        document.getElementById("races-viewer").innerHTML = document.getElementById("races").innerHTML;
+    })
 });
 
 let creatorMode = ref(false);

@@ -87,6 +87,12 @@
 
         <h3>Upbringing</h3>
         <p>2 Non-Martial Skills and Language - Any, your native language.</p>
+        <select>
+            <option v-for="skill in skills" v-html="skill"></option>
+        </select>
+        <select>
+            <option v-for="skill in skills" v-html="skill"></option>
+        </select>
 
         <h2>Background: <span>{{ chosen.background.name }}</span></h2>
         <div id="backgrounds-container">
@@ -142,6 +148,7 @@ import BackgroundContent from './BackgroundContent.vue';
 import powers from '../../assets/pedd/pedd-powers.json';
 import backgrounds from '../../assets/pedd/pedd-backgrounds.json';
 import races from '../../assets/pedd/pedd-races.json';
+import skills from '../../assets/pedd/pedd-skills.json';
 import StatDisplay from './StatDisplay.vue';
 import StatSelector from './StatSelector.vue';
 

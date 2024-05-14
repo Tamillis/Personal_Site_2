@@ -3,7 +3,7 @@
 Step-By-Step Character creation in PEDD looks like this:
 1. *Create a Character Concept* - in a phrase, define the core of your character.
 2. *Choose a Race* - the circumstances of your being. Choose one of the Race cards below, which gives the following base statistics and features:
-   1. Stats - typically a +2, +1 and -1 to Stats, though Resistances or Evasion can be effected
+   1. Stats - typically a +2, +1 and -1
    2. Base Health, Age, Size, Speed and Senses characteristics, and perhaps a few racial abilities
    3. A pick of 2 of the Racial Powers available to that Race
    4. Upbringing - You also get 2 non-martial skills and one language of your choice - the childhood skills and native language of your upbringing.
@@ -58,7 +58,7 @@ There are six **Statistics** (used in checks):
 - **Accuracy** - used in ranged attacks, and feats of precision
 - **Perception** - used to sense the world, spot hidden things, and read others
 
-*Mental Ability*
+*Internal Ability*
 - **Intelligence** - used in knowledge and understanding, for feats of alacrity
 - **Charisma** - used to affect others through force of personality, empathy and displays of emotion
 
@@ -85,17 +85,6 @@ Sometimes enemy attacks and other effects are made against your "Resistance DC",
 - **Speed** - unchanged, determined by Race
 - **Passive Statistics** - sometimes Powers or play require a value to compare against. The DM can ask you to make a roll that then represents that value, and sometimes they will ask for your "Passive Strength" etc. This is 8 + the Stat Value.
 
-#### Simple Character Sheet Grid
-
-| | | | | |  | | |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Acc. | | Str.  | | Int. | | | | 
-| Per. | | Dex.  | | Cha. | | | | 
-| Ref. | | Fort. | | Will. | | B.H. | | 
-| Size | | Health | | | | | | 
-| Arm. | | Def. | | | | | | |
-| Spd. | | Bonus | +2 | | | | | |
-
 #### Tertiary Statistics
 These 'Statistics' are not used in the game explicitely, but are a fun little aside for calculating ancilliary values for your character. Feel free to skip this step if you're not interested, or completely ignore its results.
 
@@ -110,7 +99,11 @@ Your race is what you were born as. The choices your character had no hand in ma
 
 All the PHB Races of 5e have been converted mostly verbatum with the major change that racial features are mostly converted to optional Racial Powers and Background Powers (if something being a learnable Background Power made more sense). The Stats have also been changed where necessary, and some flavour has been added / changed too. 
 
+<div id="races-viewer"></div>
+
 You choose 2 Racial Powers (by default) when you choose a Race, so not even two individuals of the same Race have the same capabilities, necessarily.
+
+<div id="racial-powers-viewer"></div>
 
 #### Upbringing
 Another core part of what your Race represents, is your 'upbringing', the kind of childhood you had. You freely pick 2 non-martial Skills, representing your those you were taught, learned or had no choice but to pick up while growing up. Additionally you take the 'Language, one of' Skill, noting that as your native language. By default in my games in the Materium Existentiae, your Childhood Language will be Imperial Common.
