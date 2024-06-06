@@ -15,19 +15,6 @@
 
             <CharacterCreator v-show="creatorMode" />
         </div>
-
-        <div id="races" hidden>
-            <h1>TEST</h1>
-        </div>
-
-        <div id="racial-powers" hidden>
-            <h1>TEST</h1>
-        </div>
-
-        <div id="powers" hidden>
-            <h1>TEST</h1>
-        </div>
-
     </section>
 </template>
   
@@ -41,7 +28,7 @@ onMounted(() => {
     putMdinElement('../src/assets/pedd/pedd-character-creation.md', 'pedd');
 
     window.addEventListener("MarkedDone", () => {
-        document.getElementById("races-viewer").innerHTML = document.getElementById("races").innerHTML;
+        //document.getElementById("races-viewer").innerHTML = document.getElementById("races").innerHTML;
     })
 });
 

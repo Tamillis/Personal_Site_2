@@ -22,8 +22,8 @@
 import { ref } from 'vue';
 import { capitalize } from '../../assets/functionality';
 
-let majorIncrease = ref("strength");
-let minorIncrease = ref("dexterity");
+let majorIncrease = ref("accuracy");
+let minorIncrease = ref("perception");
 
 const props = defineProps(["stats"]);
 const emits = defineEmits(["statChange"]);

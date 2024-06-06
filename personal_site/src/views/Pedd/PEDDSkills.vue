@@ -6,26 +6,34 @@
         <div class="main-text inset">
             <div id="pedd"></div>
 
-            <h3>Basic Skills</h3>
-            <div class="cards">
-                <div v-for="(skill, i) in skills.basicSkills" :key="`ms-${i}`">
-                    <p>{{ skill.skill }} ({{ skill.stat }})</p>
-                </div>
-            </div>
+            <section id="skill-viewer">
+                <h3><span>{{ title }}</span>Skills</h3>
 
-            <h3>Knowledge Skills</h3>
-            <div class="cards">
-                <div v-for="(skill, i) in skills.knowledgeSkills" :key="`ms-${i}`">
-                    <p>{{ skill.skill }} ({{ skill.stat }})</p>
+                <label for="by-category" class="skill-selector-label">Skill Category</label>
+                <select id="by-category" class="skill-selector" v-model="category" @change="filterSkills">
+                    <option>All</option>
+                    <option>Basic</option>
+                    <option>Knowledge</option>
+                    <option>Martial</option>
+                </select>
+                <label for="by-stat" class="skill-selector-label">Stat</label>
+                <select id="by-stat" class="skill-selector" v-model="stat" @change="filterSkills">
+                    <option>All</option>
+                    <option>Accuracy</option>
+                    <option>Perception</option>
+                    <option>Strength</option>
+                    <option>Dexterity</option>
+                    <option>Charisma</option>
+                    <option>Intelligence</option>
+                </select>
+                <div class="proficiencies-list">
+                    <ul>
+                        <li v-for="(skill, i) in skills" :key="`ms-${i}`">
+                            {{ skill.skill }} ({{ skill.stat }})
+                        </li>
+                    </ul>
                 </div>
-            </div>
-
-            <h3>Martial Skills</h3>
-            <div class="cards">
-                <div v-for="(skill, i) in skills.martialSkills" :key="`ms-${i}`">
-                    <p>{{ skill.skill }} ({{ skill.stat }}) <span v-if="skill.preq">{{ skill.preq }}</span></p>
-                </div>
-            </div>
+            </section>
         </div>
     </section>
 </template>
@@ -34,7 +42,37 @@
 import { putMdinElement } from '../../assets/functionality';
 import { onMounted, ref } from 'vue';
 import Links from '../../components/PEDD/Links.vue';
-import skills from '../../assets/pedd/pedd-skills.json'
+import skillsData from '../../assets/pedd/pedd-skills.json'
+
+let skills = ref([]);
+let title = ref("");
+let category = ref("All");
+let stat = ref("All");
+
+filterSkills();
+
+
+function filterSkills() {
+    skills.value = [];
+    if (category.value == "All") {
+        title.value = "";
+        skills.value = skills.value.concat(skillsData.basicSkills.filter(s => s.stat == stat.value || stat.value == "All"));
+        skills.value = skills.value.concat(skillsData.knowledgeSkills.filter(s => s.stat == stat.value || stat.value == "All"));
+        skills.value = skills.value.concat(skillsData.martialSkills.filter(s => s.stat == stat.value || stat.value == "All"));
+    }
+    else if (category.value == "Basic") {
+        title.value = "Basic ";
+        skills.value = skills.value.concat(skillsData.basicSkills.filter(s => s.stat == stat.value || stat.value == "All"));
+    }
+    else if (category.value == "Knowledge") {
+        title.value = "Knowledge ";
+        skills.value = skills.value.concat(skillsData.knowledgeSkills.filter(s => s.stat == stat.value || stat.value == "All"));
+    }
+    else if (category.value == "Martial") {
+        title.value = "Martial ";
+        skills.value = skills.value.concat(skillsData.martialSkills.filter(s => s.stat == stat.value || stat.value == "All"));
+    }
+}
 
 onMounted(() => {
     putMdinElement('../src/assets/pedd/pedd-skills.md', 'pedd')
@@ -105,5 +143,39 @@ h3 {
 
 #pedd table {
     margin: 0.5rem auto;
+}
+
+.proficiencies-list ul {
+    margin-top: 0.5rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.proficiencies-list li {
+    list-style: none;
+    border-left: 2px groove var(--highlight);
+    border-right: 2px groove var(--highlight);
+    padding: 0px 1rem;
+}
+
+.skill-selector {
+    border: none;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: var(--text-color);
+    text-align: right;
+
+    padding: 4px 2px;
+
+    width: fit-content;
+
+    font-size: var(--para-size);
+}
+
+.skill-selector-label {
+    text-indent: 0px !important;
+    display: inline;
+    padding: 4px 2px;
 }
 </style>

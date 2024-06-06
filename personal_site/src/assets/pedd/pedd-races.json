@@ -80,7 +80,7 @@
             "val": 25
         },
         "senses": {
-            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.\n\n**Darkvision** - You can see in dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey.\n\n**Stone sense** - You have Tremorsense up to a 15ft radius through earth & stone, when standing on connected ground",
+            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.",
             "val": [
                 "touch",
                 "taste",
@@ -89,6 +89,8 @@
                 "smell"
             ]
         },
+        "darkVision": "You can see in dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey.",
+        "stoneSense": "You have Tremorsense up to a 15ft radius through earth & stone, when standing on connected ground.",
         "powers": [
             "Superior Darkvision & Sunlight Sensitivity",
             "Stout Resilience",
@@ -128,7 +130,7 @@
             "val": 35
         },
         "senses": {
-            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.\n\n**Keen Senses (Sight)** - You can see further and clearer than other races, details rising to notice faster. You add your Bonus to any Perception checks for sight, when no Skill is in use.",
+            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.",
             "val": [
                 "touch",
                 "taste",
@@ -137,6 +139,7 @@
                 "smell"
             ]
         },
+        "keenSight": "You can see further and clearer than other races, details rising to notice faster. You add your Bonus to any Perception checks for sight, when no Skill is in use.",
         "trance": "Elves cannot sleep. Their blood is severed from dreams. Instead they meditate deeply, remaining conscious but unobservant. While meditating, Elves make a pale attempt at dreaming; such dreams are actually mental exercises that have become reflexive after years of practice. After resting in this way, you gain the same benefit a human would from 8 hours of sleep.",
         "feyAncestry": "You have advantage on saving throws against being Charmed, and magic can't put you to Sleep.",
         "powers": [
@@ -347,7 +350,7 @@
             "val": 30
         },
         "senses": {
-            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.\n\n**Keen Hearing and Smell** - You add your Bonus to any Perception checks for hearing or smell, when no Skill is in use.",
+            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.",
             "val": [
                 "touch",
                 "taste",
@@ -356,6 +359,7 @@
                 "smell"
             ]
         },
+        "keenHearingAndSmell": "You add your Bonus to any Perception checks for hearing or smell, when no Skill is in use.",
         "redRage": "Even now your people bear Grummsh' mark, and though any tuskman can throw off the yolk, sometimes they choose to indulge. In addition to your Racial Power choices, you can also take either: Aggression, Menacing, Relentless Endurance, Savage Attacks or Savage Magic.",
         "powers": [
             "Extra Language",
@@ -425,6 +429,65 @@
             "Mana",
             "Cursed",
             "Menacing"
+        ]
+    },
+    {
+        "name": "Goblinoid",
+        "desc": "Goblins are small, squat creatures whose heads are almost too large for their bodies. They have tan skin that has orange highlights and a mouth filled with too many sharp teeth, often riddle with forgotten bits of rotting meat. They use their claw-like nails or crude clubs to attack their foes, and dress in filthy rags (if anything at all). They have a mop of greasy hair whose hairline is too high, and tufts of mud-caked fur on their feet and knees.\n\nGoblins struggle in their manic compulsions, typically towards acquiring shiny things and being vicious, and are the perennial boogie-man of the countryside. And yet they can, in time, transform from their pitiful selves into Bugbears (powerful ones) or Nilbogs (smart ones), and from there into upright and prideful Hobgoblins. These are the Goblinoids, creatures born of the principle of Struggle, Survival and Competition to the point where their very bodies are product of struggle for betterment, improvement, and superiority, starting from arguably one of the most pitiful self-knowing creatures, into one of the most powerful.",
+        "stats": [
+            {
+                "desc": "Dexterity",
+                "val": 1
+            },
+            {
+                "desc": "Perception",
+                "val": 1
+            },
+            {
+                "desc": "Charisma",
+                "val": -1
+            }
+        ],
+        "baseHealth": 4,
+        "age": "Goblinoids are born as Goblins and mature incredibly quickly, reaching adulthood at 3 years. If they fail to undergo metamorphosis they do not tend to live long, and finding a goblin older than 35 is rare. Hobgoblin lifetimes, if not cut short by war, can stretch to a century.",
+        "size": {
+            "desc": "Goblins and Nilbogs are diminutive yet varied, ranging from 2 to 4 feet in height. Your size is Small. Bugbears and Hobgoblins stand tall and stooped (in the former) or proud (in the later). Your size is medium.",
+            "val": "small"
+        },
+        "speed": {
+            "desc": "Your base walking speed is 30ft",
+            "val": 30
+        },
+        "senses": {
+            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.",
+            "val": [
+                "touch",
+                "taste",
+                "sight",
+                "sound",
+                "smell"
+            ]
+        },
+        "darkVision": "You can see in dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey.",
+        "giftOfMaglubiyet": "Goblinoids are born of stuggle and strife, and adapt and grow accordingly. When you take the Statistic Increase Power, you can choose to evolve. If your new Intelligence is +2 or more, you can evolve from Goblin to Nilbog. If your new Strength is +2 or more, you can evolve from Goblin to Bugbear. If you're already Bugbear or Nilbog, and your new Strength and Intelligence are both +2 or more, you can evolve to Hobgoblin. Additionally, you can swap one or both of your Racial Powers for ones you have the prerequisites for when you evolve any time you take the Statistic Increase Power.",
+        "furyOfTheSmall": "If you are a Goblin: when you damage a character with an attack or a spell and the character's size is larger than yours, you can cause the attack or spell to deal extra damage to the character. The extra damage equals your Bonus. Once you use this trait, you can't use it again until you finish a short rest.",
+        "legacyOfEvolution": "If you are a Nilbog or Bugbear, choose one Racial Power from your previous Evolution to make an inherant racial trait for you. If you are a Hobgoblin, choose two.",
+        "powers": [
+            "Keen Senses",
+            "Arcane Aptitude",
+            "Fleet of Foot",
+            "Natural Camouflage",
+            "Mana",
+            "Psychic Sense",
+            "Squat and Nimble",
+            "Escape Artist",
+            "Tinkerer",
+            "Reversal of Mania",
+            "Sneaky",
+            "Long-Limbed",
+            "Powerful Build",
+            "Hooked Claws",
+            "Martial Heritage"
         ]
     }
 ]

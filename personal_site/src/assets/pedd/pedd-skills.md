@@ -39,12 +39,12 @@ There are two kinds of specialist skills:
 ### Getting Rid of Tools, Game Sets, Instruments and Kits
 They're really bleeding awkward, and weirdly fine grained, so they get the weapons treatment: getting shoved into broader categories that are then just treated like skills.
 
-Alchemy - replaces Herbalism Kit and Poisoner's Kit, and relevant artisan's tools
-Thieves' Tools - part of Sleight of Hand now. The kit can just be a piece of equipment like a Medicine Kit to assist with the associated roll.
-Musical instruments - one skill: Musical Instruments
-Vehicles - driving skill, sailing skill, riding skill (as this was sort of missing)
-Artisan's Tools - Engineering skill. Specific tools can be used to boost associated rolls.
-Gaming Set - removed. The skills associated with those games, such as Strategy when playing chess, sleight of hand with dexterity games etc.
-Navigator's Tools - Navigation skill
-Disguise Kit - Disguise skill
-Forgery Kit - context dependant use of deception, sleight of hand, culture etc.
+- **Alchemy** - replaces Herbalism Kit and Poisoner's Kit, and relevant artisan's tools
+- **Thieves' Tools** - part of Sleight of Hand now. The kit can just be a piece of equipment like a Medicine Kit to assist with the associated roll.
+- **Musical instruments** - one skill: Musical Instruments
+- **Vehicles** - driving skill, sailing skill, riding skill (as this was sort of missing)
+- **Artisan's Tools** - Engineering skill. Specific tools can be used to boost associated rolls.
+- **Gaming Set** - removed. The skills associated with those games, such as Strategy when playing chess, sleight of hand with dexterity games etc.
+- **Navigator's Tools** - Navigation skill
+- **Disguise Kit** - Disguise skill
+- **Forgery Kit** - context dependant use of deception, sleight of hand, culture etc.

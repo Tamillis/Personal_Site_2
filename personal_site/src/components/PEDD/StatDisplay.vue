@@ -5,14 +5,6 @@
             <table>
                 <tr>
                     <td>
-                        <p>Strength: </p>
-                    </td>
-                    <td>{{ player.strength }}</td>
-                    <td>
-                        <p>Dexterity: </p>
-                    </td>
-                    <td>{{ player.dexterity }}</td>
-                    <td>
                         <p>Accuracy: </p>
                     </td>
                     <td>{{ player.accuracy }}</td>
@@ -21,13 +13,21 @@
                     </td>
                     <td>{{ player.perception }}</td>
                     <td>
-                        <p>Intelligence: </p>
+                        <p>Strength: </p>
                     </td>
-                    <td>{{ player.intelligence }}</td>
+                    <td>{{ player.strength }}</td>
+                    <td>
+                        <p>Dexterity: </p>
+                    </td>
+                    <td>{{ player.dexterity }}</td>
                     <td>
                         <p>Charisma: </p>
                     </td>
                     <td>{{ player.charisma }}</td>
+                    <td>
+                        <p>Intelligence: </p>
+                    </td>
+                    <td>{{ player.intelligence }}</td>
                     <td v-if="player.faith">
                         <p>Faith: </p>
                     </td>
@@ -37,18 +37,6 @@
             <table class="mobile">
                 <tr>
                     <td>
-                        <p>Strength: </p>
-                    </td>
-                    <td>{{ player.strength }}</td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Dexterity: </p>
-                    </td>
-                    <td>{{ player.dexterity }}</td>
-                </tr>
-                <tr>
-                    <td>
                         <p>Accuracy: </p>
                     </td>
                     <td>{{ player.accuracy }}</td>
@@ -61,15 +49,27 @@
                 </tr>
                 <tr>
                     <td>
-                        <p>Intelligence: </p>
+                        <p>Strength: </p>
                     </td>
-                    <td>{{ player.intelligence }}</td>
+                    <td>{{ player.strength }}</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Dexterity: </p>
+                    </td>
+                    <td>{{ player.dexterity }}</td>
                 </tr>
                 <tr>
                     <td>
                         <p>Charisma: </p>
                     </td>
                     <td>{{ player.charisma }}</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Intelligence: </p>
+                    </td>
+                    <td>{{ player.intelligence }}</td>
                 </tr>
                 <tr v-if="player.faith">
                     <td>
@@ -156,10 +156,6 @@
                             <p>Size: </p>
                         </td>
                         <td>{{ capitalize(player.race.size.val) }}</td>
-                        <td>
-                            <p>Initiative: </p>
-                        </td>
-                        <td>{{ player.perception + player.dexterity }}</td>
                     </tr>
                 </table>
                 <table class="mobile">
@@ -202,12 +198,6 @@
                             <p>Size: </p>
                         </td>
                         <td>{{ capitalize(player.race.size.val) }}</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Initiative: </p>
-                        </td>
-                        <td>{{ player.perception + player.dexterity }}</td>
                     </tr>
                 </table>
             </div>

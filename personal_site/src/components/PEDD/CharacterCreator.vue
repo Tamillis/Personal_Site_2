@@ -1,29 +1,8 @@
 <template>
     <section>
-        <div class="summary">
-            <div>
-                <label for="character-name">Character Name: </label>
-                <input id="character-name" class="text-entry w100" placeholder="..." />
-            </div>
-            <div>
-                <label for="character-concept">Character Concept: </label>
-                <input id="character-concept" class="text-entry w100" placeholder="..." />
-            </div>
-        </div>
-        <div class="summary justify-around w100">
-            <div class="w100">
-                <label for="character-bonds">Bond/s: </label>
-                <textarea id="character-bonds" class="text-entry" placeholder="..."></textarea>
-            </div>
-            <div class="w100">
-                <label for="character-ideals">Ideal/s: </label>
-                <textarea id="character-ideals" class="text-entry" placeholder="..."></textarea>
-            </div>
-            <div class="w100">
-                <label for="character-flaws">Flaw/s: </label>
-                <textarea id="character-flaws" class="text-entry" placeholder="..."></textarea>
-            </div>
-        </div>
+        <h2 class="title"><span id="character-name-disp">{{ player.name }}</span>, <span id="character-concept-disp">{{ player.concept }}</span></h2>
+
+        <StatDisplay :player="player" :key="'sd-' + key" style="margin-top: 1rem" />
 
         <div class="summary gap-1r">
             <div class="flex">
@@ -37,105 +16,149 @@
             </div>
 
             <div>
-                <p>
-                <h2 class="inline">Racial Powers</h2>: {{ player.racialPowers.length == 0 ? "None chosen" :
-                    player.racialPowers.join(", ")
-                }}</p>
-                <p>
-                <h2 class="inline">Background Power</h2>: {{ player.backgroundPower == "" ? "None chosen" :
-                    player.backgroundPower }}
-                </p>
-                <p>
-                <h2 class="inline">Role Powers</h2>: {{ player.rolePowers.length == 0 ? "None chosen" :
-                    player.rolePowers.join(", ") }}</p>
-            </div>
-
-            <div class="flex">
                 <h2>Equipment</h2>
                 <p>TODO</p>
             </div>
 
-            <div class="flex">
+            <div>
                 <h2>Skills</h2>
                 <p>TODO</p>
             </div>
         </div>
 
-        <StatDisplay :player="player" :key="'sd-' + key" style="margin-top: 1rem" />
+        <div>
+            <h2>Powers</h2>
+            <p>{{ player.racialPowers.length == 0 ? "None chosen" :
+            player.racialPowers.join(", ") }} </p>
+            <p>{{ player.backgroundPower == "" ? "None chosen" :
+            player.backgroundPower }} </p>
+            <p>{{ player.rolePowers.length == 0 ? "None chosen" :
+            player.rolePowers.join(", ") }} </p>
+        </div>
 
         <hr />
 
-        <h2>Race: <span>{{ chosen.race.name }}</span></h2>
-        <CardContainer v-for="race in races" :name="race.name" :expanded="openedRaceCards.includes(race.name)"
-            :class="{ highlight: player.race && player.race.name == race.name }"
-            @chosen="() => openedRaceCards = chooseRace(race)">
-            <RaceContent :race="race" @selected-stats="(stats) => { updateChosenRaceWith(stats) }" />
-        </CardContainer>
+        <div id="section-tabs">
+            <button @click="setSection('concept')" :class="{ selected: sections.concept }">1. Concept</button>
+            <button @click="setSection('race')" :class="{ selected: sections.race }">2. Race</button>
+            <button @click="setSection('background')" :class="{ selected: sections.background }">3. Background</button>
+            <button @click="setSection('role')" :class="{ selected: sections.role }">4. Role</button>
+            <button @click="setSection('equipment')" :class="{ selected: sections.equipment }">5. Equipment</button>
+        </div>
 
-        <div v-if="openedRaceCards.length !== 0">
-            <h2>Racial Powers: <span>{{ chosen.racialPowers.join(', ') }}</span></h2>
+        <section id="concept-section" v-if="sections.concept">
+            <div class="summary">
+                <div>
+                    <label for="character-name">Character Name: </label>
+                    <input id="character-name" class="text-entry w100" placeholder="..." v-model="characterName" @input="buildPlayer" />
+                </div>
+                <div>
+                    <label for="character-concept">Character Concept: </label>
+                    <input id="character-concept" class="text-entry w100" placeholder="..." v-model="characterConcept" @input="buildPlayer" />
+                </div>
+            </div>
+            <div class="summary justify-around w100">
+                <div class="w100">
+                    <label for="character-bonds">Bond/s: </label>
+                    <textarea id="character-bonds" class="text-entry" placeholder="..."></textarea>
+                </div>
+                <div class="w100">
+                    <label for="character-ideals">Ideal/s: </label>
+                    <textarea id="character-ideals" class="text-entry" placeholder="..."></textarea>
+                </div>
+                <div class="w100">
+                    <label for="character-flaws">Flaw/s: </label>
+                    <textarea id="character-flaws" class="text-entry" placeholder="..."></textarea>
+                </div>
+            </div>
+        </section>
+
+        <section id="race-section" v-if="sections.race">
+            <h2>Race: <span>{{ chosen.race.name }}</span></h2>
+            <CardContainer v-for="race in races" :name="race.name" :expanded="openedRaceCards.includes(race.name)"
+                :class="{ highlight: player.race && player.race.name == race.name }"
+                @chosen="() => openedRaceCards = chooseRace(race)">
+                <RaceContent :race="race" @selected-stats="(stats) => { updateChosenRaceWith(stats) }" />
+            </CardContainer>
+
+            <div v-if="openedRaceCards.length !== 0">
+                <h2>Racial Powers: <span>{{ chosen.racialPowers.join(', ') }}</span></h2>
+                <div class="cards">
+                    <CardContainer v-for="(power, i) in racialPowers" :name="power.name"
+                        :class="{ highlight: chosen.racialPowers.includes(power.name) }"
+                        :expanded="openedRacialPowerCards.includes(power.name)"
+                        @chosen="() => openedRacialPowerCards = choosePower(power, 'racialPowers', openedRacialPowerCards, 2)"
+                        :key="`rcpc-${i}-${key}`">
+                        <PowerContent :power="power" @highlight="(tag) => highlight(tag)" />
+                    </CardContainer>
+                </div>
+            </div>
+        </section>
+
+        <section id="background-section" v-if="sections.background">
+            <h3>Upbringing</h3>
+            <p>2 Non-Martial Skills and Language - Any, your native language.</p>
+
+            <div class="flex">
+                <select class="tag-selector">
+                    <option v-for="skill in upbringingSkills">{{ skill.skill }}</option>
+                </select>
+                <select class="tag-selector">
+                    <option v-for="skill in upbringingSkills">{{ skill.skill }}</option>
+                </select>
+                <p>Language (<input id="upbringing-language" value="Common" />)</p>
+            </div>
+
+            <h2>Background: <span>{{ chosen.background.name }}</span></h2>
+            <div id="backgrounds-container">
+                <CardContainer v-for="bg in backgrounds" :name="bg.name"
+                    :expanded="openedBackgroundCards.includes(bg.name)"
+                    :class="{ highlight: player.background && player.background.name == bg.name }"
+                    @chosen="() => openedBackgroundCards = chooseBackground(bg)">
+                    <BackgroundContent :bg="bg" />
+                </CardContainer>
+            </div>
+
+            <h2>Background Power: <span>{{ chosen.backgroundPower }}</span></h2>
             <div class="cards">
-                <CardContainer v-for="(power, i) in racialPowers" :name="power.name"
-                    :class="{ highlight: chosen.racialPowers.includes(power.name) }"
-                    :expanded="openedRacialPowerCards.includes(power.name)"
-                    @chosen="() => openedRacialPowerCards = choosePower(power, 'racialPowers', openedRacialPowerCards, 2)"
-                    :key="`rcpc-${i}-${key}`">
+                <CardContainer v-for="(power, i) in backgroundPowers" :name="power.name"
+                    :class="{ highlight: chosen.backgroundPower == power.name }"
+                    :expanded="openedBackgroundPowerCards.includes(power.name)"
+                    @chosen="() => openedBackgroundPowerCards = chooseValue(power, 'backgroundPower', openedBackgroundPowerCards, 1)"
+                    :key="`bgpc-${i}-${key}`">
                     <PowerContent :power="power" @highlight="(tag) => highlight(tag)" />
                 </CardContainer>
             </div>
-        </div>
+        </section>
 
-        <h3>Upbringing</h3>
-        <p>2 Non-Martial Skills and Language - Any, your native language.</p>
-        <select>
-            <option v-for="skill in skills" v-html="skill"></option>
-        </select>
-        <select>
-            <option v-for="skill in skills" v-html="skill"></option>
-        </select>
+        <section id="role-section" v-if="sections.role">
+            <h2>Role</h2>
+            <StatSelector :stats="stats"
+                @stat-change="(statsSelection) => { roleStats = statsSelection; buildPlayer(); }" />
 
-        <h2>Background: <span>{{ chosen.background.name }}</span></h2>
-        <div id="backgrounds-container">
-            <CardContainer v-for="bg in backgrounds" :name="bg.name" :expanded="openedBackgroundCards.includes(bg.name)"
-                :class="{ highlight: player.background && player.background.name == bg.name }"
-                @chosen="() => openedBackgroundCards = chooseBackground(bg)">
-                <BackgroundContent :bg="bg" />
-            </CardContainer>
-        </div>
+            <h2>Role Powers: <span>{{ chosen.rolePowers.join(', ') }}</span></h2>
+            <p>One day the below will be properly automatically filtered by prerequisites</p>
+            <select class="tag-select" v-model="roleTag">
+                <option v-for="tag in tags">{{ tag }}</option>
+            </select>
+            <div class="cards">
+                <CardContainer v-for="(power, i) in rolePowers" :name="power.name"
+                    :expanded="openedRolePowerCards.includes(power.name)"
+                    :class="{ highlight: chosen.rolePowers.includes(power.name) }"
+                    @chosen="() => openedRolePowerCards = choosePower(power, 'rolePowers', openedRolePowerCards, 3)"
+                    :key="`rlpc-${i}-${key}`">
+                    <PowerContent :power="power" @highlight="(tag) => highlight(tag)" />
+                </CardContainer>
+            </div>
 
-        <h2>Background Power: <span>{{ chosen.backgroundPower }}</span></h2>
-        <div class="cards">
-            <CardContainer v-for="(power, i) in backgroundPowers" :name="power.name"
-                :class="{ highlight: chosen.backgroundPower == power.name }"
-                :expanded="openedBackgroundPowerCards.includes(power.name)"
-                @chosen="() => openedBackgroundPowerCards = chooseValue(power, 'backgroundPower', openedBackgroundPowerCards, 1)"
-                :key="`bgpc-${i}-${key}`">
-                <PowerContent :power="power" @highlight="(tag) => highlight(tag)" />
-            </CardContainer>
-        </div>
+            <h3>Role Skills</h3>
+            <p>4 + your Intelligence ({{ player.intelligence }}) = {{ 4 + player.intelligence }}</p>
+        </section>
 
-        <h2>Role Powers: <span>{{ chosen.rolePowers.join(', ') }}</span></h2>
-        <p>One day the below will be properly automatically filtered by prerequisites</p>
-        <select class="tag-select" v-model="roleTag">
-            <option v-for="tag in tags">{{ tag }}</option>
-        </select>
-        <div class="cards">
-            <CardContainer v-for="(power, i) in rolePowers" :name="power.name"
-                :expanded="openedRolePowerCards.includes(power.name)"
-                :class="{ highlight: chosen.rolePowers.includes(power.name) }"
-                @chosen="() => openedRolePowerCards = choosePower(power, 'rolePowers', openedRolePowerCards, 3)"
-                :key="`rlpc-${i}-${key}`">
-                <PowerContent :power="power" @highlight="(tag) => highlight(tag)" />
-            </CardContainer>
-        </div>
-
-        <StatSelector :stats="stats"
-            @stat-change="(statsSelection) => { roleStats = statsSelection; buildPlayer(); }" />
-
-        <h3>Role Skills</h3>
-
-        <h2>Equipment Collections</h2>
-        <p>Port this over from w/e</p>
+        <section id="equipment-section" v-if="sections.equipment">
+            <h3>Equipment Collections</h3>
+            <p>TODO</p>
+        </section>
     </section>
 </template>
 
@@ -151,7 +174,26 @@ import StatSelector from './StatSelector.vue';
 import powers from '../../assets/pedd/pedd-powers.json';
 import backgrounds from '../../assets/pedd/pedd-backgrounds.json';
 import races from '../../assets/pedd/pedd-races.json';
-import skills from '../../assets/pedd/pedd-skills.json';
+import skillsData from '../../assets/pedd/pedd-skills.json';
+
+let sections = ref({
+    concept: true,
+    race: false,
+    background: false,
+    role: false,
+    equipment: false
+});
+
+function setSection(section) {
+    for (let prop in sections.value) sections.value[prop] = false;
+    sections.value[section] = true;
+}
+
+let characterName = ref("");
+let characterConcept = ref("");
+
+let upbringingSkills = ref(skillsData.basicSkills.concat(skillsData.knowledgeSkills));
+upbringingSkills.value.sort((s1, s2) => s1.skill.localeCompare(s2.skill));
 
 let racialPowers = computed(
     () => powers.filter(p => p.tag.includes("racial") && p.tag.includes(chosen.value.race.name.toLowerCase()))
@@ -160,7 +202,7 @@ let backgroundPowers = computed(() => powers.filter(p => p.tag.includes("backgro
 let rolePowers = computed(() => {
     return powers.filter(p => roleTag.value == "All" || p.tag.includes(roleTag.value));
 });
-let stats = ["strength", "dexterity", "accuracy", "perception", "intelligence", "charisma"];
+let stats = ["accuracy", "perception", "strength", "dexterity", "charisma", "intelligence"];
 
 let tags = ["All"].concat(Array.from(new Set(powers.map(p => p.tag).flat())).sort()); //don't you just love javascript?
 let roleTag = ref("All");
@@ -173,7 +215,7 @@ let chosen = ref({
     rolePowers: []
 });
 
-let roleStats = ref(["strength", "dexterity", "intelligence", "charisma"]);
+let roleStats = ref(["accuracy", "perception"]);
 let key = ref(0);
 
 let selectedStats = computed(() => {
@@ -189,6 +231,10 @@ let selectedStats = computed(() => {
 let player = ref({});
 let buildPlayer = () => {
     player.value = {};
+
+    player.value.name = characterName.value;
+    player.value.concept = characterConcept.value;
+
     player.value.race = chosen.value.race;
     player.value.racialPowers = chosen.value.racialPowers;
     player.value.background = chosen.value.background;
@@ -400,5 +446,35 @@ h2 {
     width: fit-content;
 
     font-size: var(--para-size);
+}
+
+#section-tabs {
+    border-bottom: 2px groove var(--highlight);
+}
+
+#section-tabs button {
+    border-left: 2px groove var(--highlight);
+    border-right: none;
+    border-top: 2px groove var(--highlight);
+    border-bottom: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--text-color);
+    margin: 0;
+    padding: 4px 8px;
+}
+
+#section-tabs button:last-child {
+    border-right: 2px groove var(--highlight);
+}
+
+#section-tabs button:hover,
+#section-tabs .selected {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hidden {
+    display: none;
 }
 </style>

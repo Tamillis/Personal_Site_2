@@ -84,6 +84,7 @@
             "elf",
             "gnome",
             "half-elf",
+            "goblinoid",
             "human",
             "racial",
             "universal"
@@ -968,7 +969,8 @@
             "movement",
             "racial",
             "halfling",
-            "half-elf"
+            "half-elf",
+            "goblinoid"
         ],
         "preq": [
             ""
@@ -1301,6 +1303,7 @@
             "racial",
             "sense",
             "half-elf",
+            "goblinoid",
             "tuskman"
         ],
         "preq": [
@@ -1388,6 +1391,7 @@
             "half-elf",
             "human",
             "racial",
+            "goblinoid",
             "spellcasting",
             "universal"
         ],
@@ -1568,7 +1572,8 @@
             "racial",
             "roll-effecting",
             "half-elf",
-            "tuskman"
+            "tuskman",
+            "goblinoid"
         ],
         "preq": [
             ""
@@ -1635,7 +1640,8 @@
     {
         "name": "Otherworldly Patron",
         "tag": [
-            "patron"
+            "patron",
+            "resource"
         ],
         "preq": [],
         "desc": "You have struck a bargain with an otherworldly being of your choice. When you take this Power, choose one Patron Power, your Patron. You may not strike more than one bargain."
@@ -1656,7 +1662,6 @@
     {
         "name": "Pact Magic",
         "tag": [
-            "patron",
             "spellcasting"
         ],
         "preq": [
@@ -1737,6 +1742,7 @@
             "universal",
             "gnome",
             "halfling",
+            "goblinoid",
             "half-elf"
         ],
         "preq": [
@@ -2019,6 +2025,7 @@
             "roll-effecting",
             "skill",
             "gnome",
+            "goblinoid",
             "halfling"
         ],
         "preq": [
@@ -2030,7 +2037,8 @@
         "name": "Statistic Increase",
         "tag": [
             "roll-effecting",
-            "universal"
+            "universal",
+            "stat"
         ],
         "preq": [
             "After 3 Powers",
@@ -2165,6 +2173,7 @@
             "background",
             "exploration",
             "gnome",
+            "goblinoid",
             "racial",
             "skill",
             "utility",
@@ -2397,5 +2406,96 @@
             "Medicine"
         ],
         "desc": "You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits:\n\n- When you use a healer's kit to stabilize a dying character, that character also regains 1 health.\n- As an action. you can spend one use of a healer's kit to tend to a character and restore 1d6 + 4 health to it. The character can't regain health from this Power again until it finishes a long rest."
+    },
+    {
+        "name": "Escape Artist",
+        "tag": [
+            "racial",
+            "goblinoid",
+            "combat",
+            "movement"
+        ],
+        "preq": [
+            "Dexterity +1"
+        ],
+        "desc": "You can take the Disengage or Hide action as a bonus action on each of your turns."
+    },
+    {
+        "name": "Reversal of Mania",
+        "tag": [
+            "racial",
+            "goblinoid",
+            "combat",
+            "defensive",
+            "damage-reduction"
+        ],
+        "preq": [
+        ],
+        "desc": "Your days of being subject to your own urges are gone, and you have achieved a discipline of mind that most creatures of the material world find astounding, especially in contrast to normal Goblins. You have advantage on any saving throw caused by a spell from the enchantment school of magic. You also have advantage on any further saving throws made to end an ongoing enchantment spell's effect."
+    },
+    {
+        "name": "Sneaky",
+        "tag": [
+            "racial",
+            "goblinoid",
+            "exploration",
+            "skill"
+        ],
+        "preq": [
+            "Dexterity +1"
+        ],
+        "desc": "You gain proficiency in the Stealth skill. If you were already, or later gain proficiency, you instead gain Expertise in the Stealth skill."
+    },
+    {
+        "name": "Long-limbed",
+        "tag": [
+            "racial",
+            "goblinoid",
+            "combat",
+            "utility"
+        ],
+        "preq": [
+        ],
+        "desc": "When you make a melee attack on your turn, your reach for it is 5 feet greater than normal."
+    },
+    {
+        "name": "Powerful Build",
+        "tag": [
+            "racial",
+            "goblinoid",
+            "dragonborn",
+            "tuskman",
+            "dwarf",
+            "exploration"
+        ],
+        "preq": [
+        ],
+        "desc": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+    },
+    {
+        "name": "Hooked Claws",
+        "tag": [
+            "racial",
+            "goblinoid",
+            "combat",
+            "offensive"
+        ],
+        "preq": [
+        ],
+        "desc": "Your claws are natural weapons, which you can use to make attacks with proficiency even if you lack Body proficiency. If you hit with them, you deal slashing damage equal to 1d6 + your Strength. In addition, if the character was surprised by the Hooked Claws strike (due to a surprise round, being hidden, etc), you can make a free grapple check against the character."
+    },
+    {
+        "name": "Martial Heritage",
+        "tag": [
+            "background",
+            "goblinoid",
+            "combat",
+            "defensive",
+            "skill",
+            "utility"
+        ],
+        "preq": [
+        ],
+        "desc": "After undergoing your transformations and at last being admitted into a holdfast (or from some other tutor or training), you have been trained and readied for war. You are proficient in the next tier of armour skill (Light Armour if you weren't proficient in any, Medium Armour if you were proficient in light, Heavy Armour if you were proficient in medium), and you are proficient in using Knives and Clubs & Axes. In addition, you are proficient in two martial skills of your choice."
     }
 ]

@@ -53,8 +53,12 @@
             "stat": "Perception"
         },
         {
-            "skill": "Observe",
+            "skill": "Observation",
             "stat": "Perception"
+        },
+        {
+            "skill": "Performance",
+            "stat": "Charisma"
         },
         {
             "skill": "Persuasion",
@@ -62,6 +66,10 @@
         },
         {
             "skill": "Riding",
+            "stat": "Dexterity"
+        },
+        {
+            "skill": "Sailing",
             "stat": "Dexterity"
         },
         {
@@ -79,10 +87,6 @@
         {
             "skill": "Survival",
             "stat": "Perception"
-        },
-        {
-            "skill": "Sailing",
-            "stat": "Dexterity"
         }
     ],
     "knowledgeSkills": [
@@ -201,6 +205,10 @@
         {
             "skill": "Thrown",
             "stat": "Accuracy"
+        },
+        {
+            "skill": "Exotic Weapons (one)",
+            "stat": "Strength"
         }
     ]
 }
