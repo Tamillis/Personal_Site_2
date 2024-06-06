@@ -479,7 +479,8 @@
         "tag": [
             "resource",
             "spellcasting",
-            "universal"
+            "universal",
+            "background"
         ],
         "preq": [
             "Divine Spellcasting",
@@ -805,7 +806,8 @@
         "name": "Expert Skill",
         "tag": [
             "exploration",
-            "skill"
+            "skill",
+            "background"
         ],
         "preq": [],
         "desc": "You gain proficiency in a Tool / Language Skill of your choice, in a Martial Skill of your Choice, and in any one other Skill of your choice. Additionally, choose one Skill in which you have proficiency, now or before. You gain Expertise with that Skill."
@@ -921,7 +923,8 @@
             "movement",
             "offensive",
             "resource",
-            "utility"
+            "utility",
+            "background"
         ],
         "preq": [
             ""
@@ -1578,10 +1581,12 @@
             "combat",
             "exploration",
             "roll-effecting",
-            "utility"
+            "utility",
+            "background"
         ],
         "preq": [
-            "Perception +1", "Once every 4th Power"
+            "Perception +1",
+            "Once every 4th Power"
         ],
         "desc": "You are a master of navigating two types of natural environment, and you react with swift and decisive action when attacked in such regions. Choose two types of favoured terrain: boreal, aquatic, deserts, woods, jungles, plains, mountains, swamps, or underground. When in such terrain you have the following benefits:\n\n- You ignore difficult natural terrain of that environment.\n- You have Advantage on Initiative rolls.\n- Your first Attack in a combat has Advantage.\n- Verdance is one higher for you in your terrain, if you have Primal Spellcasting (up to a maximum of 6).\n\nWhile travelling in your favoured terrain, you gain the following benefits:\n\n- Difficult terrain doesn't slow your group's travel, and your group can move stealthily at a normal pace.\n- Your group can't become lost except by magical means.\n- Even when you are engaged in another activity while travelling (such as foraging, navigating, or tracking), you remain alert to danger.\n- When you forage, you find twice as much food as you normally would.\n- While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.\n\nWhen you retake this Power, choose two new favoured terrain types."
     },
@@ -1886,7 +1891,8 @@
         "tag": [
             "combat",
             "healing",
-            "utility"
+            "utility",
+            "background"
         ],
         "preq": [
             "Fortitude +1"
@@ -1929,7 +1935,8 @@
     {
         "name": "Skulker",
         "tag": [
-            "background", "exploration"
+            "background",
+            "exploration"
         ],
         "preq": [
             "Dexterity +1"
@@ -2121,7 +2128,8 @@
         "tag": [
             "combat",
             "stat",
-            "utility"
+            "utility",
+            "background"
         ],
         "preq": [
             "Intelligence +1"
@@ -2233,7 +2241,8 @@
         "tag": [
             "combat",
             "fighting-style",
-            "offensive"
+            "offensive",
+            "background"
         ],
         "preq": [
             "Fighting Style",
@@ -2352,5 +2361,41 @@
             ""
         ],
         "desc": "You learn the magic of the primeval woods, which are revered and protected by your people. You learn one Primal Sphere cantrip of your choice. You also learn the Longstrider and Pass Without Trace spells, each of which you can cast once without expending Mana. You regain the ability to cast these two spells in this way when you finish a Long Rest. The Verdance of your locale is your spellcasting ability for all three spells. See the Verdance table."
+    },
+    {
+        "name": "Discovery",
+        "tag": [
+            "background",
+            "social",
+            "exploration"
+        ],
+        "preq": [
+            ""
+        ],
+        "desc": "From the quiet seclusion of extended hermitage, the sudden revelation of a cosmic insight, the convalescence of years of studies or other such momentous personal event, you gain access to a unique and powerful discovery. The exact nature of this revelation depends on the nature of your seclusion. It might be a great truth about the cosmos, God, the ethereal beings of the psychic realm, or the forces of nature. It could be a site that no one else has ever seen. You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history. Work with your GM to determine the details of your discovery and its impact on the campaign."
+    },
+    {
+        "name": "Observant",
+        "tag": [
+            "background",
+            "social",
+            "exploration"
+        ],
+        "preq": [
+            "Perception +1"
+        ],
+        "desc": "Quick to notice details of your environment, you gain the following benefits:\n\n- If you can see a creature's mouth while it is speaking a language you understand, you can interpret what it's saying by reading its lips.\n- Your passive Perception is increased by your Bonus.\n-You gain proficiency in one of your choice of: Insight, Investigation, Observe"
+    },
+    {
+        "name": "Healer",
+        "tag": [
+            "background",
+            "combat",
+            "healing"
+        ],
+        "preq": [
+            "Medicine"
+        ],
+        "desc": "You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits:\n\n- When you use a healer's kit to stabilize a dying character, that character also regains 1 health.\n- As an action. you can spend one use of a healer's kit to tend to a character and restore 1d6 + 4 health to it. The character can't regain health from this Power again until it finishes a long rest."
     }
 ]

@@ -24,9 +24,9 @@ As such I've removed all non-stat increases from the racial options (so resistan
 On an unrelated note, one was to communicate the ideas behind the Primary Stats are the following schema of worldy-interaction: 
 | - | Direct | Indirect | Passive |
 | --- | --- | --- | --- |
-| **Remote** | Acc. | Per. | Ref. |
-| **Contact** | Str. | Dex. | Fort. |
-| **Mental** | Cha. | Int. | Will. |
+| **External** | Acc. | Per. | Ref. |
+| **Liminal** | Str. | Dex. | Fort. |
+| **Internal** | Cha. | Int. | Will. |
  
 This helps delineate between the potentially confusing Dexterity and Accuracy, Dexterity and Reflexes, and Strength and Fortitude. 
 
@@ -55,15 +55,15 @@ DC's are relatively unchanged, but again become more consistant and easier to re
 | 18 | Professional |
 | 22 | Hero |
 | 25 | Legend |
-| 30 | Demi-god (as no non-superhuman can reach above +15 on a D20) |
-| 40 | Godlike (as a theoretical cap to even the most powerful beings, a bonus to a D20 of +30) |
+| 30 | Demi-god <br/>(as no non-superhuman can reach above +15 on a D20) |
+| 40 | Godlike <br/>(as a theoretical cap to even the most powerful beings,<br/>a bonus to a D20 of +30) |
 
 You'll note that the numbers don't progress "cleanly" such as 5, 10, 15, 20... etc. That's because these numbers have been calculated rather than thrown out there as a target or rough guide. Hopefully as I test the system, I can adjust these numbers to reflect not just predictions, but empirical results.
 
 ### Where's Wisdom?
 Generally speaking wisdom has been removed, with all of the D&D weirdness about 'connection' and 'perception' being part of wisdom, even though most people use wisdom like willpower, and it just generally having a very poorly defined and understood area of concern. It gets especially odd when many people's definitions of wisdom start to sound a lot like Intelligence, such as having the wherewithal to notice something isn't real but is in fact an illusion. Which the game itself calls an Intelligence save!
 
-To address these issues, I've split wisdom in twain. Willpower is willpower, everyone gets that. The coverage of wisdom over connections, in terms of human relations, and empathy is now under Charisma, and perception is under the new Stat Perception. Connection to divine power is covered by Faith, and to primal power via the unerelated-to-the-character Verdance table.
+To address these issues, I've split wisdom in twain. Willpower is willpower, everyone gets that. The coverage of wisdom over connections, in terms of human relations, and empathy is now under Charisma, and perception is under the new Stat Perception. Connection to divine power is covered by Faith, and to primal power via the unrelated-to-the-character Verdance table.
 
 This does leave the window open for those hankering for a sense of “wise”, as in an individual who has a broad body of experience to call upon and errs on the side of patience. Characters still have the various Knowledge skills, and there is now the "Learned" Power for wisdom in the sense of being broadly knowledgeable, educated, well-read, etc., and the “Wisened” background that is wisdom in the sense of a wide body of practiced wisdom coming from age and life experience; the non-academic sage. It is also, I find, mostly simply a matter of role-play.
 

@@ -5,20 +5,42 @@
         <Links />
         <div class="main-text inset">
             <div id="pedd"></div>
+
+            <h3>Basic Skills</h3>
+            <div class="cards">
+                <div v-for="(skill, i) in skills.basicSkills" :key="`ms-${i}`">
+                    <p>{{ skill.skill }} ({{ skill.stat }})</p>
+                </div>
+            </div>
+
+            <h3>Knowledge Skills</h3>
+            <div class="cards">
+                <div v-for="(skill, i) in skills.knowledgeSkills" :key="`ms-${i}`">
+                    <p>{{ skill.skill }} ({{ skill.stat }})</p>
+                </div>
+            </div>
+
+            <h3>Martial Skills</h3>
+            <div class="cards">
+                <div v-for="(skill, i) in skills.martialSkills" :key="`ms-${i}`">
+                    <p>{{ skill.skill }} ({{ skill.stat }}) <span v-if="skill.preq">{{ skill.preq }}</span></p>
+                </div>
+            </div>
         </div>
     </section>
 </template>
-  
+
 <script setup>
 import { putMdinElement } from '../../assets/functionality';
 import { onMounted, ref } from 'vue';
 import Links from '../../components/PEDD/Links.vue';
+import skills from '../../assets/pedd/pedd-skills.json'
 
 onMounted(() => {
     putMdinElement('../src/assets/pedd/pedd-skills.md', 'pedd')
 });
 </script>
-  
+
 <style>
 #pedd a,
 #pedd a:link,
@@ -57,7 +79,7 @@ onMounted(() => {
     font-size: var(--subtitle-size);
 }
 
-#pedd h3 {
+h3 {
     font-size: var(--subsubtitle-size);
     text-decoration: underline;
     margin-top: 1rem;

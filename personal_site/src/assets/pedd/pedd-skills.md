@@ -1,5 +1,5 @@
 ## Skills & Proficiency
-A part of PEDD is the flattening of the odd little distinct yet related categories of "Skills, Tools, Languages and Weapon & Armor Proficiencies", simplifying how we interact with the system for both consistency and new player's sake. Some skills have also been changed, added or removed, and weapon and armour skills in particular have been overhauled.
+A part of PEDD is the flattening of the odd little distinct yet related categories of "Skills, Tools, Languages and Weapon & Armor Proficiencies", simplifying how we interact with the system for both consistency and new player's sake. Some skills have also been changed, added or removed, and tools, weapons and armour have in particular been overhauled.
 
 All of these are now "Skills" in which you have "Proficiency", or not, meaning you gain your Bonus to the skill check roll (which is how it always worked for all these disparate things, only now it is unified).
 
@@ -25,148 +25,26 @@ In PEDD no Skill is automatically associated with a Stat, the alternate 5e rule 
 
 **Note** for weapon attacks, the Stats used are fixed: **Strength** for Melee, **Accuracy** for Ranged. If the weapon has the property "Finesse" you can instead use **Dexterity** for the attacks.
 
-- Skill <sup>M</sup> for Martial or <sup>K</sup> for Knowledge (recommended Stat):
-
-<div class="proficiencies-list">
-
-- Acrobatics (Dexterity)
-- Animal Handling (Perception)
-- Arcana<sup>K</sup> (Intelligence)
-- Athletics (Strength)
-- Battle-Axes*<sup>M</sup> (Strength)
-- Blades*<sup>M</sup> (Strength)
-- Body<sup>M</sup> (Strength)
-- Bows<sup>M</sup> (Accuracy)
-- Charm (Charisma)
-- Clubs & Axes<sup>M</sup> (Strength)
-- Crossbows<sup>M</sup> (Accuracy)
-- Crafting (Dexterity)
-- Deception (Charisma)
-- Firearms & Pistols<sup>M</sup> (Accuracy)
-- Heavy Armour*<sup>M</sup> (Strength)
-- Heavy Blades*<sup>M</sup> (Strength)
-- History<sup>K</sup> (Intelligence)
-- Insight (Perception)
-- Intimidation (Strength)
-- Investigation (Perception)
-- Knives<sup>M</sup> (Strength)
-- Languages (one of)<sup>K</sup> (Charisma)
-- Light Armour<sup>M</sup> (Dexterity)
-- Mauls*<sup>M</sup> (Strength)
-- Medicine (Intelligence)
-- Medium Armour*<sup>M</sup> (Strength)
-- Nature<sup>K</sup> (Intelligence)
-- Observe (Perception)
-- Occultism<sup>K</sup> (Intelligence)
-- Persuasion (Intelligence)
-- Pole-Arms*<sup>M</sup> (Strength)
-- Religion<sup>K</sup> (Intelligence)
-- Shields<sup>M</sup> (Strength)
-- Sleight of Hand (Dexterity)
-- Slings<sup>M</sup> (Accuracy)
-- Spears<sup>M</sup> (Strength)
-- Stealth (Dexterity)
-- Survival (Perception)
-- Thrown<sup>M</sup> (Accuracy)
-- Tools (one set of) (Dexterity)
-
-- Custom - for unique undefined weapons and skills
-
-</div>
-
 ### Trained, Knowledge and Martial Skills
 **Trained** - Most of the time anyone can attempt the actions that would be governed by a Skill even if they're not Proficient, with the DM occasionally asking for "Trained" characters only to make a roll, meaning only those with Proficiency in the Skill.
 
 There are two kinds of specialist skills:
-- **Knowledge Skills** - skills which most of the time you *cannot* attempt the actions that would be governed by this skill unless Proficient. You either know something, or you do not.
+- **Knowledge Skills** - skills which most of the time you *cannot* attempt the actions that would be governed by this skill unless Proficient. You either know something, or you do not. For example the new skill 'Culture', which represents learning in the cultural mores and sociology both generally and for specific areas.
 - **Martial Skills** - skills with weapons, armour and shields. Unlike other skills, some Martial Skills are marked with an *, meaning they require other Martial Skills before they can be taken. If a Background or Power provide Proficiency in such a skill before you have the requirement, you "Downgrade" it to the required Skill instead.
   - Heavy Armour requires Medium Armour which requires Light Armour. 
   - Battle-Axes and Mauls require Clubs & Axes.
   - Heavy Blades requires Blades which requires Knives.
   - Pole-Arms requires Spears
 
-### Simple Weapons
-Simple Weapons are those that have no requirements:
-<div class="proficiencies-list">
+### Getting Rid of Tools, Game Sets, Instruments and Kits
+They're really bleeding awkward, and weirdly fine grained, so they get the weapons treatment: getting shoved into broader categories that are then just treated like skills.
 
-- Body
-- Bows
-- Clubs & Axes
-- Crossbows
-- Firearms & Pistols
-- Knives
-- Light Armour
-- Shields
-- Slings
-- Spears
-- Thrown
-
-</div>
-
-### Martial Weapons
-Those that have requirements, or are exotic.
-
-<div class="proficiencies-list">
-
-- Battle-Axes
-- Blades
-- Heavy Armour
-- Heavy Blades
-- Mauls
-- Medium Armour
-- Pole-Arms
-- Exotic Weapons - Custom Martial Skills not defined in the list
-
-</div>
-
-## Skills by Attributes
-Weapons are collapsed for the sake of quick reference. Remember that attributes are context-dependent, the below are just defaults.
-
-### Strength
-<div class="proficiencies-list">
-- Athletics
-- Intimidation
-- Melee Weapons & Shields
-</div>
-
-### Dexterity
-<div class="proficiencies-list">
-- Acrobatics
-- Crafting
-- Finesse Weapons
-- Sleight of Hand
-- Stealth
-- Tools (one set of)
-</div>
-
-### Accuracy
-<div class="proficiencies-list">
-- Ranged Weapons
-</div>
-
-### Perception
-<div class="proficiencies-list">
-- Animal Handling
-- Insight
-- Investigation
-- Observe
-- Survival
-</div>
-
-### Intelligence
-<div class="proficiencies-list">
-- Arcana
-- History
-- Medicine
-- Nature
-- Occultism
-- Persuasion
-- Religion
-</div>
-
-### Charisma
-<div class="proficiencies-list">
-- Charm
-- Deception
-- Languages (one of)
-</div>
+Alchemy - replaces Herbalism Kit and Poisoner's Kit, and relevant artisan's tools
+Thieves' Tools - part of Sleight of Hand now. The kit can just be a piece of equipment like a Medicine Kit to assist with the associated roll.
+Musical instruments - one skill: Musical Instruments
+Vehicles - driving skill, sailing skill, riding skill (as this was sort of missing)
+Artisan's Tools - Engineering skill. Specific tools can be used to boost associated rolls.
+Gaming Set - removed. The skills associated with those games, such as Strategy when playing chess, sleight of hand with dexterity games etc.
+Navigator's Tools - Navigation skill
+Disguise Kit - Disguise skill
+Forgery Kit - context dependant use of deception, sleight of hand, culture etc.

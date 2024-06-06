@@ -120,6 +120,11 @@
   display: flex;
 }
 
+.hidden {
+  display: none;
+  appearance: none;
+}
+
 .justify-left {
   justify-content: start;
 }

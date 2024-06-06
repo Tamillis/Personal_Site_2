@@ -395,7 +395,7 @@
         "age": "Young dragonborn grow quickly. They walk hours after leaving the pouch, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 14. Draconic energy sets them apart, and they don't grow old, only slowly increasing in size year by year until death takes them, typically violence from the fearful or starvation from lack of sustanence for the constant growth.",
         "size": {
             "desc": "Young dragonborn are on par with humans in height and weight with adult dragonborn being taller and heavier, standing well over 6 feet tall and averaging almost 250 pounds. Your size if you're a young or adult Dragonborn is Medium. \n\nRarer to find senior Dragonborn stand over 9 feet tall and if you are senior your size is Large and your Base Health is instead 9. Note that as a Large character, your Base Defence is now 6. \n\n Some mythical 'ancient' Dragonborn are said to be as tall as giants, their size being Huge or greater, but such rare and terrible creatures are not fit for Player Characters.",
-            "val": "medium"
+            "val": "large"
         },
         "speed": {
             "desc": "Your base walking speed is 30ft.",

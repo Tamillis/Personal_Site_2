@@ -145,12 +145,13 @@ import PowerContent from './PowerContent.vue';
 import RaceContent from './RaceContent.vue';
 import CardContainer from './CardContainer.vue';
 import BackgroundContent from './BackgroundContent.vue';
+import StatDisplay from './StatDisplay.vue';
+import StatSelector from './StatSelector.vue';
+
 import powers from '../../assets/pedd/pedd-powers.json';
 import backgrounds from '../../assets/pedd/pedd-backgrounds.json';
 import races from '../../assets/pedd/pedd-races.json';
 import skills from '../../assets/pedd/pedd-skills.json';
-import StatDisplay from './StatDisplay.vue';
-import StatSelector from './StatSelector.vue';
 
 let racialPowers = computed(
     () => powers.filter(p => p.tag.includes("racial") && p.tag.includes(chosen.value.race.name.toLowerCase()))
@@ -159,9 +160,9 @@ let backgroundPowers = computed(() => powers.filter(p => p.tag.includes("backgro
 let rolePowers = computed(() => {
     return powers.filter(p => roleTag.value == "All" || p.tag.includes(roleTag.value));
 });
-let tags = ["All"].concat(Array.from(new Set(powers.map(p => p.tag).flat())).sort()); //don't you just love javascript?
 let stats = ["strength", "dexterity", "accuracy", "perception", "intelligence", "charisma"];
 
+let tags = ["All"].concat(Array.from(new Set(powers.map(p => p.tag).flat())).sort()); //don't you just love javascript?
 let roleTag = ref("All");
 
 let chosen = ref({
