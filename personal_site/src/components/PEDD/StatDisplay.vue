@@ -16,8 +16,8 @@
 
         <h3>Resistances: </h3>
         <div class="flex table-like">
-            <p>Fortitude: {{ player.fortitude }}</p>
             <p>Reflexes: {{ player.reflexes }}</p>
+            <p>Fortitude: {{ player.fortitude }}</p>
             <p>Willpower: {{ player.willpower }}</p>
         </div>
 

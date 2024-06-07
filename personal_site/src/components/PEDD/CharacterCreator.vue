@@ -115,22 +115,23 @@
                 </div>
             </div>
 
-            <h2>Background: <span>{{ chosen.background.name }}</span></h2>
+            <h2>Background:</h2>
             <div id="backgrounds-container">
-                <CardContainer v-for="bg in backgrounds" :name="bg.name"
-                    :expanded="openedBackgroundCards.includes(bg.name)"
-                    :class="{ highlight: player.background && player.background.name == bg.name }"
-                    @chosen="() => openedBackgroundCards = chooseBackground(bg)">
+                <CardContainer v-for="(bg, i) in backgrounds" :name="bg.name"
+                    :expanded="player.background && player.background.name == bg.name"
+                    :class="{ hidden: player.background && player.background.name != bg.name }"
+                    @chosen="chooseBackground(bg)"
+                    :key="`bgc-${i}-${key}`">
                     <BackgroundContent :bg="bg" />
                 </CardContainer>
             </div>
 
-            <h2>Background Power: <span>{{ chosen.backgroundPower }}</span></h2>
+            <h2>Background Power:</h2>
             <div class="cards">
                 <CardContainer v-for="(power, i) in backgroundPowers" :name="power.name"
-                    :class="{ highlight: chosen.backgroundPower == power.name }"
-                    :expanded="openedBackgroundPowerCards.includes(power.name)"
-                    @chosen="() => openedBackgroundPowerCards = chooseBackgroundPower(power, 'backgroundPower', openedBackgroundPowerCards, 1)"
+                    :class="{ hidden: player.backgroundPower && player.backgroundPower != power.name }"
+                    :expanded="chosen.backgroundPower == power.name"
+                    @chosen="chooseBackgroundPower(power)"
                     :key="`bgpc-${i}-${key}`">
                     <PowerContent :power="power" @highlight="(tag) => highlight(tag)" />
                 </CardContainer>
@@ -276,8 +277,6 @@ let chosen = ref({
 //card state
 let openedRaceCards = [];
 let openedRacialPowerCards = [];
-let openedBackgroundCards = [];
-let openedBackgroundPowerCards = [];
 let openedRolePowerCards = [];
 
 let highlight = (tag) => {
@@ -320,53 +319,40 @@ let chooseRace = (chosenRace) => {
     return openedRaceCards;
 };
 
+let chooseRacialPowers = () => {};
+
 //background
 let upbringingSkills = ref(skillsData.basicSkills.concat(skillsData.knowledgeSkills));
 upbringingSkills.value.sort((s1, s2) => s1.skill.localeCompare(s2.skill));
 let backgroundPowers = computed(() => powers.filter(p => p.tag.includes("background")));
 
 let chooseBackground = (chosenBg) => {
-    key.value++;
-    if (!openedBackgroundCards.includes(chosenBg.name)) {
-        //clicking an un-opened card, opening it and making it the player race
-        chosen.value.background = chosenBg;
-        openedBackgroundCards.push(chosenBg.name);
-    }
-    else if (chosen.value.background && chosen.value.background.name !== chosenBg.name) {
-        //clicking an open card that is not the current player race
-        chosen.value.background = chosenBg;
-    }
-    else {
-        //clicking the opened and player race card, i.e. set player race to prior open race card and close it
-        openedBackgroundCards = openedBackgroundCards.filter(r => r !== chosenBg.name);
-        if (openedBackgroundCards.length > 0) chosen.value.background = races.filter(r => r.name == openedBackgroundCards[openedBackgroundCards.length - 1])[0];
-        else chosen.value.background = false;
+    if(chosen.value["background"].name == chosenBg.name) {
+        //clicked on open card, close it and reveal all cards
+        chosen.value["background"] = false;
+
+    } else {
+        //open chosen card, hide others
+        chosen.value["background"] = chosenBg;
     }
 
     buildPlayer();
-    return openedBackgroundCards;
+    return;
 }
 
-let chooseBackgroundPower = (card, attribute, opened) => {
-    key.value++;
-    if (!opened.includes(card.name)) {
-        //clicking an un-opened card
-        chosen.value[attribute] = card.name;
-        opened.push(card.name);
-    }
-    else if (chosen.value[attribute] !== card.name) {
-        //clicking an open card that is not the current selection
-        chosen.value[attribute] = card.name;
-    }
-    else {
-        //clicking the opened and selected card, i.e. deselect and close it
-        opened = opened.filter(r => r !== card.name);
-        if (opened.length > 0) chosen.value[attribute] = opened[opened.length - 1];
-        else chosen.value[attribute] = "";
+let chooseBackgroundPower = (card) => {
+
+    if(chosen.value.backgroundPower == card.name) {
+        //clicked on open card, close it and reveal all cards
+        chosen.value.backgroundPower = false;
+
+    } else {
+        //open chosen card, hide others
+        chosen.value.backgroundPower = card.name;
     }
 
     buildPlayer();
-    return opened;
+    return;
 };
 
 //role
