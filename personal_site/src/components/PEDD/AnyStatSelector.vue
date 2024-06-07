@@ -1,12 +1,12 @@
 <template>
     <select class="intext-link" :selected="selected" @change="(event) => setStat(event)">
         <option selected disabled>Any {{ val < 0 ? val : "+" + val }}</option>
-        <option value="Strength">Strength {{ val < 0 ? val : "+" + val }}</option>
-        <option value="Dexterity">Dexterity {{ val < 0 ? val : "+" + val }}</option>
         <option value="Accuracy">Accuracy {{ val < 0 ? val : "+" + val }}</option>
         <option value="Perception">Perception {{ val < 0 ? val : "+" + val }}</option>
-        <option value="Intelligence">Intelligence {{ val < 0 ? val : "+" + val }}</option>
+        <option value="Strength">Strength {{ val < 0 ? val : "+" + val }}</option>
+        <option value="Dexterity">Dexterity {{ val < 0 ? val : "+" + val }}</option>
         <option value="Charisma">Charisma {{ val < 0 ? val : "+" + val }}</option>
+        <option value="Intelligence">Intelligence {{ val < 0 ? val : "+" + val }}</option>
     </select>
 </template>
 

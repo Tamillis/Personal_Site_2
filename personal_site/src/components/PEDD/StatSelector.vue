@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>Stat Selection: </h2>
+        <h2 v-if="title">{{ title }} </h2>
         <div class="flex">
             <div class="flex selection">
                 <select class="" :value="majorIncrease" @change="(event) => majorIncreaseChange(event.target.value)">
@@ -25,7 +25,7 @@ import { capitalize } from '../../assets/functionality';
 let majorIncrease = ref("accuracy");
 let minorIncrease = ref("perception");
 
-const props = defineProps(["stats"]);
+const props = defineProps(["stats", "title"]);
 const emits = defineEmits(["statChange"]);
 
 let majorIncreaseChange = (val) => {

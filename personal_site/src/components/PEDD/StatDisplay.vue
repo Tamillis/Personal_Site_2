@@ -1,250 +1,43 @@
 <template>
     <div id="stats">
-        <div class="flex">
-            <h3>Stats: </h3>
-            <table>
-                <tr>
-                    <td>
-                        <p>Accuracy: </p>
-                    </td>
-                    <td>{{ player.accuracy }}</td>
-                    <td>
-                        <p>Perception: </p>
-                    </td>
-                    <td>{{ player.perception }}</td>
-                    <td>
-                        <p>Strength: </p>
-                    </td>
-                    <td>{{ player.strength }}</td>
-                    <td>
-                        <p>Dexterity: </p>
-                    </td>
-                    <td>{{ player.dexterity }}</td>
-                    <td>
-                        <p>Charisma: </p>
-                    </td>
-                    <td>{{ player.charisma }}</td>
-                    <td>
-                        <p>Intelligence: </p>
-                    </td>
-                    <td>{{ player.intelligence }}</td>
-                    <td v-if="player.faith">
-                        <p>Faith: </p>
-                    </td>
-                    <td v-if="player.faith">{{ player.faith }}</td>
-                </tr>
-            </table>
-            <table class="mobile">
-                <tr>
-                    <td>
-                        <p>Accuracy: </p>
-                    </td>
-                    <td>{{ player.accuracy }}</td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Perception: </p>
-                    </td>
-                    <td>{{ player.perception }}</td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Strength: </p>
-                    </td>
-                    <td>{{ player.strength }}</td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Dexterity: </p>
-                    </td>
-                    <td>{{ player.dexterity }}</td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Charisma: </p>
-                    </td>
-                    <td>{{ player.charisma }}</td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Intelligence: </p>
-                    </td>
-                    <td>{{ player.intelligence }}</td>
-                </tr>
-                <tr v-if="player.faith">
-                    <td>
-                        <p>Faith: </p>
-                    </td>
-                    <td>{{ player.faith }}</td>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
+        <h3>Stats: </h3>
+        <div class="flex table-like">
+            <p>Accuracy: <span>{{ player.accuracy }}</span></p>
+            <p>Perception: <span>{{ player.perception }}</span></p>
+            <p>Strength: <span>{{ player.strength }}</span></p>
+            <p>Dexterity: <span>{{ player.dexterity }}</span></p>
+            <p>Charisma: <span>{{ player.charisma }}</span></p>
+            <p>Intelligence: <span>{{ player.intelligence }}</span></p>
 
-        <div v-if="player.race">
-            <div class="flex">
-                <h3>Resistances</h3>
-                <table>
-                    <tr>
-                        <td>
-                            <p>Fortitude:</p>
-                        </td>
-                        <td>{{ player.fortitude }}</td>
-                        <td>
-                            <p>Reflexes:</p>
-                        </td>
-                        <td>{{ player.reflexes }}</td>
-                        <td>
-                            <p>Willpower:</p>
-                        </td>
-                        <td>{{ player.willpower }}</td>
-                    </tr>
-                </table>
-                <table class="mobile">
-                    <tr>
-                        <td>
-                            <p>Fortitude:</p>
-                        </td>
-                        <td>{{ player.fortitude }}</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Reflexes:</p>
-                        </td>
-                        <td>{{ player.reflexes }}</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Willpower:</p>
-                        </td>
-                        <td>{{ player.willpower }}</td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="flex">
-                <h3>Secondaries: </h3>
-                <table>
-                    <tr>
-                        <td>
-                            <p>Health:</p>
-                        </td>
-                        <td>{{ player.fortitude + player.willpower + player.race.baseHealth }}</td>
-                        <td>
-                            <p>Defence:</p>
-                        </td>
-                        <td class="collapse">
-                            <table class="collapse border-none">
-                                <tr>
-                                    <td>Base </td>
-                                    <td>{{ baseDefence[player.race.size.val] }}</td>
-                                    <td> + Armour</td>
-                                    <td>{{ player.armour }}</td>
-                                    <td> + Evasion</td>
-                                    <td>{{ player.evasion }}</td>
-                                    <td>=</td>
-                                    <td class="border-none">
-                                        {{ baseDefence[player.race.size.val] + player.armour + (player.evasion) }} </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td>
-                            <p>Speed: </p>
-                        </td>
-                        <td>{{ player.race.speed.val }}</td>
-                        <td>
-                            <p>Size: </p>
-                        </td>
-                        <td>{{ capitalize(player.race.size.val) }}</td>
-                    </tr>
-                </table>
-                <table class="mobile">
-                    <tr>
-                        <td>
-                            <p>Health:</p>
-                        </td>
-                        <td>{{ player.fortitude + player.willpower + player.race.baseHealth }}</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" class="border-top">
-                            <p>Defence:</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="collapse border-bottom" colspan="2">
-                            <table class="mobile collapse border-none">
-                                <tr>
-                                    <td>Base </td>
-                                    <td>{{ baseDefence[player.race.size.val] }}</td>
-                                    <td> + Armour</td>
-                                    <td>{{ player.armour }}</td>
-                                    <td> + Evasion</td>
-                                    <td>{{ player.evasion }}</td>
-                                    <td>=</td>
-                                    <td class="border-none">
-                                        {{ baseDefence[player.race.size.val] + player.armour + player.evasion }} </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Speed: </p>
-                        </td>
-                        <td>{{ player.race.speed.val }}</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Size: </p>
-                        </td>
-                        <td>{{ capitalize(player.race.size.val) }}</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="flex">
-                <h3>Tertiaries: </h3>
-                <div>
-                    <p><small>Don't forget these are just for flavour.</small></p>
-                    <table>
-                        <tr>
-                            <td>
-                                <p>Appearance <small>(Str. + Cha.)</small>:</p>
-                            </td>
-                            <td>{{ player.strength + player.charisma }}</td>
-                            <td>
-                                <p>Agility <small>(Dex. + Acc.)</small>:</p>
-                            </td>
-                            <td>{{ player.dexterity + player.accuracy }}</td>
-                            <td>
-                                <p>Foresight <small>(Per. + Int.)</small>:</p>
-                            </td>
-                            <td>{{ player.perception + player.intelligence }}</td>
-                        </tr>
-                    </table>
-                    <table class="mobile">
-                        <tr>
-                            <td>
-                                <p>Appearance <small>(Str. + Cha.)</small>:</p>
-                            </td>
-                            <td>{{ player.strength + player.charisma }}</td>
-
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Agility <small>(Dex. + Acc.)</small>:</p>
-                            </td>
-                            <td>{{ player.dexterity + player.accuracy }}</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Foresight <small>(Per. + Int.)</small>:</p>
-                            </td>
-                            <td>{{ player.perception + player.intelligence }}</td>
-                        </tr>
-                    </table>
-                </div>
+            <div v-if="player.faith">
+                <p>Faith: <span>{{ player.faith }}</span></p>
             </div>
         </div>
+
+        <h3>Resistances: </h3>
+        <div class="flex table-like">
+            <p>Fortitude: {{ player.fortitude }}</p>
+            <p>Reflexes: {{ player.reflexes }}</p>
+            <p>Willpower: {{ player.willpower }}</p>
+        </div>
+
+        <h3>Secondaries: </h3>
+        <div class="flex table-like">
+            <p>Health: {{ player.fortitude + player.willpower + (player.race ? player.race.baseHealth : 8) }}</p>
+            <p>Defence: Base {{ player.baseDefence }} + Armour {{ player.armour }} + Reflexes {{ player.reflexes }} = {{
+                player.defence }}</p>
+            <p>Speed: {{ player.race ? player.race.speed.val : "" }}</p>
+            <p>Size: {{ player.race ? capitalize(player.race.size.val) : "" }}</p>
+        </div>
+
+        <h3>Tertiaries: </h3>
+        <p><small>Don't forget these are just for flavour.</small></p>
+        <div class="flex table-like">
+            <p>Appearance <small>(Str. + Cha.)</small>: {{ player.strength + player.charisma }}</p>
+            <p>Agility <small>(Dex. + Acc.)</small>: {{ player.dexterity + player.accuracy }}</p>
+            <p>Foresight <small>(Per. + Int.)</small>: {{ player.perception + player.intelligence }}</p>
+        </div>
+
     </div>
 </template>
 
@@ -253,13 +46,6 @@ import { capitalize } from '../../assets/functionality';
 
 const props = defineProps(["player"]);
 
-let baseDefence = {
-    tiny: 16,
-    small: 10,
-    medium: 8,
-    large: 6,
-    huge: 2
-};
 </script>
 
 <style lang="css" scoped>
@@ -272,30 +58,40 @@ p {
     font-weight: 600;
 }
 
-table {
-    margin-top: 0;
-}
-
-td:last-child {
-    border-right: none;
-}
-
 .flex {
     display: flex;
-    gap: 1rem;
+    gap: 0;
 }
 
-.mobile {
-    display: none;
+.table-like p {
+    border: 2px solid var(--highlight);
+    border-right: none;
+    margin: 0;
+    padding: 0.5rem 0.5rem;
+    text-align: start;
+    text-indent: 0;
 }
 
-@media only screen and (max-width: 1050px) {
-    .mobile {
-        display: inline-block;
+.table-like p:last-child {
+    border-right: 2px solid var(--highlight);
+}
+
+@media only screen and (max-width: 750px) {
+    .flex {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
-    table:not(.mobile) {
-        display: none;
+    .table-like p {
+        border: 2px solid var(--highlight);
+        border-bottom: none;
+        text-indent: var(--text-indent);
+        width: 100%;
+    }
+
+    .table-like p:last-child {
+        border-bottom: 2px solid var(--highlight);
     }
 }
 

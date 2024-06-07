@@ -120,6 +120,10 @@
   display: flex;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .hidden {
   display: none;
   appearance: none;
@@ -137,8 +141,16 @@
   justify-content: space-around;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-1r {
   gap: 1rem;
+}
+
+.gap-2r {
+  gap: 2rem;
 }
 
 .square-20px {
