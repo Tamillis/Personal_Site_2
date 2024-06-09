@@ -1,8 +1,8 @@
 <template>
     <h2>Powers List</h2>
     <select class="tag-select" v-model="roleTag">
-            <option v-for="tag in tags">{{ tag }}</option>
-        </select>
+        <option v-for="tag in tags">{{ tag }}</option>
+    </select>
     <div class="cards">
         <CardContainer v-for="(power, i) in rolePowers" :name="power.name" :expanded="openedPowers.includes(power.name)"
             @chosen="togglePowerOpened(power)" :key="`rlpc-${i}-power`">

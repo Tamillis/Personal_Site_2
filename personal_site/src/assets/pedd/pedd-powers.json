@@ -1994,6 +1994,7 @@
             "racial",
             "resource",
             "universal",
+            "sorcerous-origin",
             "any-race"
         ],
         "preq": [

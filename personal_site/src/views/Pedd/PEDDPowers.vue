@@ -6,10 +6,10 @@
         <Links />
 
         <div class="main-text inset">
-            <div id="pedd"></div>
+            <div id="pedd" class="pedd"></div>
         </div>
 
-        <div class="main-text inset">
+        <div class="main-text inset pedd">
             <PowersList  />
         </div>
 
