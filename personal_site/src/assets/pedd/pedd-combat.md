@@ -47,21 +47,53 @@ To make characters easier to strike, meaning less spongey, and also to make comb
 - a Base Defence value of 8 for Medium characters, 10 for Small characters and 6 for Large characters. Should it be relevant, Huge characters have a Base Defence of 2 and Tiny a Base Defence of 14. (Smaller characters are harder to hit).
 - an Armour value determined by worn Equipment (see [Armour](./pedd/combat#armour))
 - an Evasion value, your Reflexes to a minimum of 0 (which can be limited by worn Equipment).
-  
+
 Instead Defence is calculated when required from these three parts, depending on what parts are in play. This gives us three kinds of Defence;
 - **Defence** - Defence with both Armour and Evasion.
 - **Unarmoured Defence** - Defence without Armour, armour limits on Evasion are still applied. A few effects target Unarmoured Defence.
-- **Stationary Defence** - Defence without the benefit of Evasion, often called "Touch AC" in other systems. Some effects target Stationary Defence, and surprised or unmoving targets only get their Stationary Defence.
+- **Stationary Defence** - Defence without the benefit of Evasion, often called "Touch AC" in other systems. Some effects target Stationary Defence, and surprised or unmoving targets only get their Stationary Defence. Any condition that reduces a character to 0 speed, called "Immobilised" in PEDD, uses its Stationary Defence.
 
 Remember that the Armour value also changes during play as you don and doff Equipment, and especially based on whether you Block with your Shield or not! Armour Piercing strikes ignore some or all of your Armour as well, such as guns.
 
-#### Natural Armour
-Many creatures have Natural Armour, and so might you through strange Powers. Natural Armour grants an armour value, cannot be doffed and is always 'light', i.e. never limits Evasion. Like other abse armour, it does not stack, so to benefit from greater armour values, one must wear armour with a greater value than your natural armour.
-
-#### Weapons and Armour
+### Weapons and Armour
 Weapons are a well known weakpoint of 5e and have been addressed many times. In fact, I used to use, and continue to take heavy inspiration form, the homebrew; Weapon's Revised https://1drv.ms/b/s!Aq2B34oritBLmmrdNLmMeUrxi5kM
 
-PEDD makes use of the following modified list of weapon attributes, [TODO: create my own weapons list, incorporating the properties better and including the block property], the guns can be found in my [Armouries of the Second Empire](/mewiki/ArmouriesOfTheSecondEmpire).
+PEDD makes use of the following modified list of weapon attributes, the guns can be found in my [Armouries of the Second Empire](/mewiki/ArmouriesOfTheSecondEmpire).
+
+#### Weapons
+Courtesy of Weapons Remastered, adapted and tweaked.
+
+Weapons with an *, like the Lance, have special properties described below the table.
+
+Bludgeoning -> blg, Piercing -> prc, Slashing -> slash
+
+| Name | Skill | Cost | Damage | Weight | Properties |
+| --- | --- | --- | --- | --- | --- |
+| **Simple Melee Weapons** |
+| Club | Clubs & Axes | 1sp | 1d4 blg | 2lbs | Light, nonlethal |
+| Cestus* | Body | 1gp | 1d4 blg | 0.5lbs | Light, nonlethal |
+| Dagger | Knives | 2gp | 1d4 prc / slash | 1lbs | Finesse, Finisher, Light, nonlethal |
+| Spear Club (Goedenday) | Spear / Clubs & Axes | 5sp | 1d4 blg / prc | 3lbs | Finisher, Light Armour Piercing |
+| Great Club | Clubs & Axes | 5sp | 2d4 blg | 10lbs | Heavy, Two-handed, Dazes |
+| Handaxe | Clubs & Axes / Thrown | 3gp | 1d6 slash | 2lbs | Light, Thrown (20/75) |
+| Javelin | Spear / Thrown | 5sp | 1d6 prc | 2lbs | Thrown (30/120) |
+| Winged Spear | Spear | 5gp | 1d6 prc | 5lbs | Versatile (1d8), Winged |
+| Light Hammer | Clubs & Axes, thrown | 2sp | 1d4 blg | 2lbs | Light, Dazes, Thrown (20/60) |
+| Mace | Clubs & Axes | 5gp | 1d6 blg | 4lbs | Light Armour Piercing |
+| Quarterstaff | Spear | 2sp | 1d6 blg | 4lbs | Nonlethal, Versatile (2d4) |
+| Sickle | Knives | 1gp | 1d4 slash | 2lbs | Light, Bleeds |
+| Shiv* | Knives | 1sp | 1d4 prc | 0.5lbs | Light, nonlethal |
+| Short Spear | Spear | 1gp | 1d6 prc | 3lbs | Finisher, nonlethal |
+| Spear | Spear | 1gp | 1d8 prc | 4lbs | Reach, two-handed |
+| **Martial Melee Weapons** |
+| Battleaxe | Battleaxes | 10gp | 1d8 slashing | 4lbs | Bleeds, Sweeping, Versatile (1d10) |
+| Esctoc | Blades | 20gp | 1d8 piercing | 2lbs | Finesse, Parry, Lightly Armour Piercing |
+| Falchion | Blades | 25gp | 1d8 slashing | 2lbs | Bleeds, Finesse, Parry |
+| Flail | Mauls | 10gp | 1d8 blg / prc | 2lbs | Ensnaring, Wind-up |
+| Garotte Wire* | Exotic (Garrote Wire) | 5gp | 1d6 Slash | 0.25lbs | Finesse, Light, Two-Handed |
+
+TODO: keep transfering these over
+
 
 #### Weapon Properties
 - **Ammunition** - You can use a weapon that has the Ammunition property to make a ranged attack only if you have Ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a weapon). Expended arrows and bolts can be recovered, by taking a minute to search the battlefield, but guns that use paper cartridges cannot.
@@ -70,21 +102,19 @@ PEDD makes use of the following modified list of weapon attributes, [TODO: creat
 - **Ensnaring** - When you hit an attack with an ensnaring weapon, you may use your Bonus Action to attempt the Grapple action on the target or Shove them Prone, using your weapon attack modifier in place of Strength. If you grapple a target with an ensnaring weapon, the grapple is automatically ended if you make another attack roll with that weapon.
 - **Finesse** - The weapon lends itself to dexterous combat due to features that make it more reliant on technique than brute force. When attacking with a finesse weapon, you use your choice of your
 Strength or Dexterity for the attack and damage rolls. You must use the same modifier for both rolls.
-- **Finisher** - Finisher weapons are well-suited to executing enemies that are at your mercy. When you make an attack against a Prone character, you roll one additional damage die.
+- **Finisher** - Finisher weapons are well-suited to executing enemies that are at your mercy. When you make an attack against a Prone or Incapacitated character, you roll one additional damage die.
 - **Heavy** - These weapons are larger and unwieldier than most, lending them unique advantages and challenges: 
   - Small characters make attacks with heavy weapons at Disadvantage.*
   - A heavy weapon allows you to make an attack relying upon on raw strength instead of technique. When you attack with a heavy weapon that you're proficient in, you can forego adding
 your proficiency bonus to the attack roll. If the attack hits, you add that proficiency bonus to the damage roll instead. You must decide to do this before making the attack roll. 
 - **Light** - A light weapon is small and easy to handle. When you take the Attack action and attack with a light melee weapon that you’re holding in one hand, you can use a Bonus Action to attack with a different light melee weapon that you’re holding in the other hand. You don’t add your Stat to the damage of the bonus attack, unless that modifier is negative. 
 - **Loading** & **Slow Loading** - due to the elaborate procedure of preparing the weapon for its next shot, it takes an Attack, Action or Bonus Action to reload, and a free hand. Slow Loading weapons take an Attack or Action to reload.
-Nonlethal - The weapon is designed to incapacitate or is otherwise capable of delivering a hit that does not kill the target. Non-lethal Strikes can be made with normal damage rolls.
+- **Nonlethal** - The weapon is designed to incapacitate or is otherwise capable of delivering a hit that does not kill the target. Non-lethal Strikes can be made with normal damage rolls.
 - **Parry** - The weapon has some weapon catching or deflecting feature, allowing it to be used to take the Parry Action.
 - **Prone Fighting** - When you are prone and make a melee attack with this weapon, you do not suffer Disadvantage for being prone.
-- **Reach** - This weapon's extended length adds 5 ft to your Reach when you attack with it. 
-- **Special** - Special weapons have some entirely unique property. These are detailed in the weapon section for the individual weapons they apply to.
-- **Bleed** - critical hits with this weapon inflict gaping wounds and profuse bleeding, inflicting additional slashing damage equal to your Bonus. Non-living character types are immune to this damage.
-- **Daze** - critical hits with this weapon hit with a singularly boneshaking blow, dazing the target. The target's next attack roll is made with Disadvantage. 
-- **Sundering** - The weapon features qualities that crush, pierce, or penetrate armor. When you attack a target wearing a breastplate, half plate, splint, or plate mail, you ignore 2 of the target's Armour. You may also gain this bonus against creatures with thick shells, stiff carapaces, metallic hides, and other creatures at the discretion of your DM.
+- **Reach** - This weapon's extended length adds 5 ft to your Reach when you attack with it.
+- **Bleeds** - critical hits with this weapon inflict gaping wounds and profuse bleeding, inflicting additional slashing damage equal to your Bonus. Non-living character types are immune to this damage.
+- **Dazes** - critical hits with this weapon hit with a singularly boneshaking blow, dazing the target. The target's next attack roll is made with Disadvantage. 
 - **Sweeping** - These weapons strike in broad, sweeping motions. When you make an attack with a sweeping weapon that deals slashing damage, you may use a Bonus Action to deal the weapon's damage die in damage against a second target within your reach that is adjacent to the first, provided that your attack roll would also hit that target.
 - **Versatile** - This weapon can be used with one or two hands. A damage value in parentheses appears with the property–the damage when the weapon is used with two hands.
 - **Wind-up** - The weapon can be used to spend time preparing an attack to be even more effective. On your turn you can use an attack or Bonus Action to swing up or set your weapon. On the next attack you make that Round with the weapon you can add an additional weapon die to that attack if it hits. A weapon can only add one such damage die in this way.
@@ -96,9 +126,9 @@ Nonlethal - The weapon is designed to incapacitate or is otherwise capable of de
 Armour is changed to the following (+ values can be taken in addition):
 | Name | Cost | Armour | Property |
 | --- | --- | --- | --- |
-| Padded | 5gp | 1 | Light, Loud | 
-| Leather | 10gp | 1 | Light | 
-| Studded Leather | 45gp | 2 | Light | 
+| Padded | 5gp | 1 | Light, Loud |
+| Leather | 10gp | 1 | Light |
+| Studded Leather | 45gp | 2 | Light |
 | **Medium Armour** |
 | Hide | 10gp | 2 | Medium |
 | Chain shirt | 50gp | 3 | Medium |
@@ -130,6 +160,9 @@ Armour is changed to the following (+ values can be taken in addition):
 **Blinkered** - you have Disadvantage on Perception checks
 
 **Shield** - equipped in 1 hand, you must use a Bonus Action to Block to gain the bonus to Armour
+
+#### Natural Armour
+Many creatures have Natural Armour, and so might you through strange Powers. Natural Armour grants an armour value, cannot be doffed and is always 'light', i.e. never limits Evasion. Like other abse armour, it does not stack, so to benefit from greater armour values, one must wear armour with a greater value than your natural armour.
 
 #### Cover
 Cover is functionally unchanged from the base game, but translates like so. Cover is a bonus to your Defence, a +2 for 'Half Cover' and a +5 for 'Three Quarters Cover'. This is independent of Armour and Evasion, so consider it part of your Base Defence. Additionally, don't forget that these bonuses apply to Reflex Saves as well, just as they apply to Dexterity Saves in 5e!
@@ -175,7 +208,7 @@ Additionally, a character can only be engaged by a maximum number of characters 
 
 **Flanking** - replacing the popular alternate rule of 5e, when you are the one in an Engagement who the foe isn’t Engaging, you have Advantage on your waepon attack rolls. You cannot flank a creature 2 or more sizes larger than you.
 
-#### Additional Actions
+### Combat Actions
 The other facet of making combat more tactical, beside the radical change of One Action All At Once, is what that one action can do. A variety of generally available tactical basic combat actions are added; 
 - **Charge** - when you use your Action to Move, moving at least 15ft, at the end of the Move you can make 1 Weapon Attack at Advantage as a Bonus Action.
 - **Run and Gun** - when you use your Action to Move, you can make 1 Ranged Weapon Attack as a Bonus Action at Disadvantage.
@@ -190,4 +223,16 @@ The other facet of making combat more tactical, beside the radical change of One
 - **Disarm** - as an Attack or Action against an enemy in your Reach holding a weapon, you can make a Dexterity check against the enemy's passive Reflexes. If you succeed, you rip the weapon from their grasp and throw it 20ft in a direction of your choice (this does not count as a thrown weapon attack), or equip it an empty hand of yours.
 - **Shove** - as an Attack or Action you attempt to make an Enemy Prone or move 10ft directly away from you. You make a Strength check against their passive Fortitude.
 - **Grapple** - as an Attack or Action you attempt to Restrain an character. You make a Strength check against their passive Fortitude. If you succeed both the character is Restrained. On subsequent turns you can maintain the grapple or end the grapple (no additional action or roll needed), and you can only use your Move action, if you do, to Move yourself and the enemy as if going through Difficult Terrain (typically, at half Speed). The grappled character can use their Action to attempt to escape the Grapple, making a Strength or Dexterity check (their choice) vs your passive Fortitude, ending the grapple on a success.
-- **Non-lethal Strike** - you attack with the weapon with the intention to knock unconscious rather than kill. Don't roll for Damage, instead take each dice roll to have been a 1.
+- **Non-lethal Strike** (a.k.a. knockout strike) - you attack with the weapon with the intention to knock unconscious rather than kill. Don't roll for Damage, instead take each dice roll to have been a 1.
+- **Coup de Grace** - an attack made against an incapacitated target where damage is not rolled, assume maximum results for any damage dice.
+
+### Conditions
+The following are changes and additions to D&D's conditions
+
+- **Bloodied** - A fan favourite, enemy characters when they fall below half health enter the "Bloodied" condition. This often means their behaviour, tactics and even powers may change for the easier or the much, much harder. Players also get to know that the target is below half health.
+- **Immobilised** - a "new" condition that is just short hand for the often stated "A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed". In addition the target must use its Stationary Defence.
+- **Incapacitated** - (updated, effectively makes Stun the same condition)
+  - The target character is Immobilised
+  - The target character cannot take actions or reactions.
+  - The target character automatically fails Fortitude and Reflex saves.
+  - Attack rolls against the target character have Advantage.
