@@ -121,3 +121,14 @@ hr {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
+select {
+  appearance: none;
+  display: inline;
+  outline: none;
+  border: none;
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--background);
+  padding: 0px 0.5rem;
+}

@@ -104,11 +104,11 @@
             <p>2 Non-Martial Skills and Language - Any, your native language.</p>
 
             <div class="flex gap-1r">
-                <select>
-                    <option v-for="skill in upbringingSkills">{{ skill.skill }}</option>
+                <select v-model="chosen.upbringing.skill1">
+                    <option v-for="skill in upbringingSkills.filter(s => s.skill != chosen.upbringing.skill2)">{{ skill.skill }}</option>
                 </select>
-                <select>
-                    <option v-for="skill in upbringingSkills">{{ skill.skill }}</option>
+                <select v-model="chosen.upbringing.skill2">
+                    <option v-for="skill in upbringingSkills.filter(s => s.skill != chosen.upbringing.skill1)">{{ skill.skill }}</option>
                 </select>
                 <div class="flex-grow">
                     <p>Language (<input id="upbringing-language" value="Common" style="display:inline"/>)</p>
@@ -146,6 +146,7 @@
                 @stat-change="(statsSelection) => { roleStats = statsSelection; buildPlayer(); }" />
 
             <h3>Role Skills</h3>
+            <SkillSelector :skills="roleSkills" :limit="4 + player.intelligence" />
             <p>4 + your Intelligence ({{ player.intelligence }}) = {{ 4 + player.intelligence }}</p>
 
             <h2>Role Powers: <span>{{ chosen.rolePowers.join(', ') }}</span></h2>
@@ -232,7 +233,9 @@ import backgrounds from '../../assets/pedd/pedd-backgrounds.json';
 import races from '../../assets/pedd/pedd-races.json';
 import skillsData from '../../assets/pedd/pedd-skills.json';
 import equipmentCollections from '../../assets/pedd/pedd-equipment-collections.json';
+import SkillSelector from './SkillSelector.vue';
 
+//derived resources
 let stats = ["accuracy", "perception", "strength", "dexterity", "charisma", "intelligence"];
 let tags = ["All"].concat(Array.from(new Set(powers.map(p => p.tag).flat())).sort()); //don't you just love javascript?
 let baseDefence = {
@@ -242,6 +245,8 @@ let baseDefence = {
     large: 6,
     huge: 2
 };
+let upbringingSkills = ref(skillsData.basicSkills.concat(skillsData.knowledgeSkills));
+upbringingSkills.value.sort((s1, s2) => s1.skill.localeCompare(s2.skill));
 
 //tab state
 let sections = ref({
@@ -272,6 +277,10 @@ let chosen = ref({
     shieldRefLimit: 99,
     helmet: 0,
     helmetRefLimit: 99,
+    upbringing: {
+        skill1: upbringingSkills.value[0].skill,
+        skill2: upbringingSkills.value[1].skill
+    }
 });
 
 //card state
@@ -322,8 +331,6 @@ let chooseRace = (chosenRace) => {
 let chooseRacialPowers = () => {};
 
 //background
-let upbringingSkills = ref(skillsData.basicSkills.concat(skillsData.knowledgeSkills));
-upbringingSkills.value.sort((s1, s2) => s1.skill.localeCompare(s2.skill));
 let backgroundPowers = computed(() => powers.filter(p => p.tag.includes("background")));
 
 let chooseBackground = (chosenBg) => {
@@ -362,6 +369,9 @@ let rolePowers = computed(() => {
 });
 
 let roleStats = ref(["accuracy", "perception"]);
+
+let roleSkills = ref(skillsData.basicSkills.map(s=>s.skill).concat(skillsData.knowledgeSkills.map(s=>s.skill).concat(skillsData.martialSkills.map(s=>s.skill))));
+roleSkills.value.sort((s1, s2) => s1.localeCompare(s2));
 
 let selectedStats = computed(() => {
     let ss = {};
@@ -517,17 +527,6 @@ h2 {
     width: fit-content;
 
     font-size: var(--para-size);
-}
-
-select {
-    appearance: none;
-    display: inline;
-    outline: none;
-    border: none;
-    text-align: center;
-    color: var(--text-color);
-    background-color: var(--background);
-    padding: 0px 0.5rem;
 }
 
 .selection {
