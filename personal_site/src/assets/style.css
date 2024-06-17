@@ -216,14 +216,14 @@
     padding: 1rem;
     border: var(--highlight) 4px groove;
     border-radius: 25px 0px 25px 0px;
-    
+
   }
 }
 
 @media only screen and (max-width: 599px) {
   .section {
     width: 100%;
-    padding-top:1rem;
+    padding-top: 1rem;
     border: var(--highlight) 2px groove;
     border-top: none;
     border-bottom: none;
@@ -317,6 +317,11 @@
 
 .triangle-points {
   list-style: "▷ " inside;
+}
+
+.triangle-points-down {
+  list-style: "▽ " inside;
+
 }
 
 .triangle-points-reverse {

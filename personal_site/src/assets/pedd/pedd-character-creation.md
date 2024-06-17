@@ -1,29 +1,40 @@
 ## Character Creation 5.P
 
 Step-By-Step Character creation in PEDD looks like this:
-1. *Create a Character Concept* - in a phrase, define the core of your character.
-2. *Choose a Race* - the circumstances of your being. Choose one of the Race cards below, which gives the following base statistics and features:
+1. *Create a Character Concept* - in a phrase, define the core of your character. Who is it that they *are*? What is it that they *do*?
+2. *Choose a Race* - the circumstances of your being. Choose one Race, giving the following base statistics and features:
    1. Stats - typically a +2, +1 and -1
-   2. Base Health, Age, Size, Speed and Senses characteristics, and perhaps a few racial abilities
-   3. A pick of 2 of the Racial Powers available to that Race
+   2. Base Health, Age, Size, Speed and Senses characteristics, and perhaps a few inherant racial Powers
+   3. A pick of 2 (or 3 for Half-Elves and Tuskmen) of the Racial Powers available to that Race
    4. Upbringing - You also get 2 non-martial skills and one language of your choice - the childhood skills and native language of your upbringing.
-3. *Choose a Background* - the circumstances of your way of life. All handbook backgrounds, and some more, are available as Background cards. They give the following:
+3. *Choose a Background* - the circumstances of your way of life. They give the following:
    1. Stat Increases - +1 to 2 Stats
    2. 6 Skills - the skills of your background.
    3. Equipment - Some initial equipment you've kept from your background days
    4. Background Power - You're free to choose one power from the Background category that thematically matches your envisioned background, though one is suggested.
-4. *Choose your Role* - the way that you adventure and tackle the world. You define your Role with a phrase and a vision, and this could be the same or similar to your Concept. You then choose the following:
+4. *Choose your Role* - the way that you adventure and tackle the world. You choose the following:
    1.  Stat Increases - a +2 to a Stat of your choice, and a +1 to another Stat of your choice.
-   2.  Role Skills - 4 + a number of Skills equal to your Character's (now final) Intelligence, of your choice, of Skills.
+   2.  Role Skills - 4 + a number of Skills equal to your Character's (now final) Intelligence of Skills. It's suggested to pick up some martial skills if you lack the ability to defend yourself at this stage.
    3.  Your initial 3 adventuring Powers (see [Powers Progression](/pedd/powers)), chosen from any non-racial Power: one of which must be a `combat` Power, and one of which must be an `exploration` Power. 
-5. *Adventuring Equipment* - chose your Equipment from one of the collections; the equipment that you find yourself with just before the game begins. The use of equipment is identical to 5e.
+5. *Adventuring Equipment* - chose your Equipment from one of the collections; the equipment that you find yourself with just before the game begins. The use of equipment is roughly identical to 5e.
 
 Go to the "Character Creator Mode" (button above &uarr;) to make your character along with these steps!
 
 ### Character Concept
-While not new, I ask players to think of a core character concept (a fantasy person they would like to play, to inhabit and act out) as the very first step of character creation, to form a basis they can build on and have the basis of their character be an idea, not a race or class as the old way lent itself to be (I've seen many, many newbies open the book and then go "I want to be a Dwarf Ranger", or what have you. That's not a character, that's a video game protagonist). Of course, this is a fluid thing, and is expected to change as you go through character creation and, choosing slightly different options as you go, you redefine your character's core concept. I expect players to be constantly updating their Core Concept based on their mechanical choices, but not for the mechanical choices to be the basis.
+While not new, I ask players to think of a core character concept (a fantasy person they would like to play, to inhabit and act out) as the very first step of character creation, to form a basis they can build on and have the basis of their character be an idea, not a race or class as the old way lent itself to be (I've seen many, many newbies open the book and then go "I want to be a Dwarf Ranger", or what have you. That's not a character, that's a video game protagonist). Of course, this is a fluid thing, and is expected to change as you go through character creation and - choosing slightly different options as you go - you redefine your character's core concept.
 
-As they do, they can add to their **Bonds**, **Ideals** and **Flaws** as they go through each step, but again thinking of these as part of the first step of character creation.
+Your Character Concept leads directly into your Role, so its bset to make it a single evocative phrase or demonym that is the sum of what it is that you *do* as an adventurer.
+
+For example:
+ - The Mage of Iron
+ - Noble Rebel of the Czondazani Cause
+ - An Ex-Ihleiskan Reaver
+ - A Water-burning pyromancer
+ - Outback ranger on his trusty yak
+ - Priestess of the Ashen Gods
+ - The Renowned Twin-swords of Tarentaise
+
+Also as part of step 1 I ask you to think of your character's **Bonds**, **Ideals** and **Flaws**: to lead with them rather than slap them on later. But feel free to return to them and add as you go through each step of character creation, of course. They are otherwise unchanged from 5e.
 
 ### Ability Statistics
 
@@ -50,15 +61,15 @@ A line is drawn between your active Statistics used for Actions, and your passiv
 
 There are six **Statistics** (used in checks):
 
-*Physical Ability*
-- **Strength** - used in melee attacks, and feats of brawn - your body's physical ability to force your way to victory
-- **Dexterity** - used in many skills, for feats of deftness - your body's phsyical ability to apply subtle power, bending yourself and redirecting the world to your whims
-
-*Remote Ability*
+*Projection Ability*
 - **Accuracy** - used in ranged attacks, and feats of precision
 - **Perception** - used to sense the world, spot hidden things, and read others
 
-*Internal Ability*
+*Interactive Ability*
+- **Strength** - used in melee attacks, and feats of brawn - your body's physical ability to force your way to victory
+- **Dexterity** - used in many skills, for feats of deftness - your body's phsyical ability to apply subtle power, bending yourself and redirecting the world to your whims
+
+*Mental Ability*
 - **Intelligence** - used in knowledge and understanding, for feats of alacrity
 - **Charisma** - used to affect others through force of personality, empathy and displays of emotion
 
@@ -66,24 +77,25 @@ If you get involved in matters of the divine, your Faith as a statistic becomes 
 - **Faith** - the attunment of your soul to the divine path of your deity / path / philosophy.
 
 And three **Resistances** (used in saves):
-- **Fortitude** - the physical ability of the body to throw off and work-through ills. Calculated from **Strength** + **Dexterity**.
-- **Reflexes** - the physical ability of the body and your mental awareness to avoid harms. Calculated from **Accuracy** + **Perception**.
-- **Willpower** - the psychological ability of the mind to resist. Calculated from **Intelligence** + **Charisma**.
+- **Reflexes** - the ability to avoid harms. Calculated from **Accuracy** + **Perception**.
+- **Fortitude** - the ability of the body to throw off and work-through ills. Calculated from **Strength** + **Dexterity**.
+- **Willpower** - the ability of the mind to resist. Calculated from **Intelligence** + **Charisma**.
 
 #### Difficulty Class and Resistance DC's
-A term I've carried over is "Difficulty Class", a.k.a. "DC", meaning the target number you must meet or beat to succeed a dice roll. 
+A term I've carried over from sheer reflex is "Difficulty Class", a.k.a. "DC", meaning the "target number" (which is an equally valid term to use if you prefer). When you roll a dice to make a check or save you must meet or beat this value to succeed. 
 
-Sometimes enemy attacks and other effects are made against your "Resistance DC", this is 8 + the Resistance value.
+Sometimes enemy attacks and other effects are made against your "Resistance DC", a.k.a. "Passive Resistance", this is 8 + the Resistance value.
 
 #### Secondary Statistics
 
 - **Health** - how much damage you can take before entering the Dying state. Your Race provides your **Base Health** and your **Fortitude** + **Willpower** is added on top to determine your total Health. Health is explicitly a combination of physical and emotional wear and tear, and the ability to roll with and carry on from blows.
-- **Defence** - how difficult you are to harm. **Base Defence** + **Armour** + **Evasion**
+- **Defence** - how difficult you are to harm. **Base Defence** + **Armour** + **Reflexes (as limited by armour, minimum of 0)**
   - **Base Defence** - 8 for Medium characters and 10 for Small characters, (and 6 for Large characters, if you find yourself to be one).
   - **Armour** - determined by the sum Defence of worn equipment.
-  - **Evasion** - your **Reflex** value to a minimum of 0, can be modified by some Powers and Races, can be limited by worn equipment.
-- **Speed** - unchanged, determined by Race
-- **Passive Statistics** - sometimes Powers or play require a value to compare against. The DM can ask you to make a roll that then represents that value, and sometimes they will ask for your "Passive Strength" etc. This is 8 + the Stat Value.
+  - **Reflexes** - your **Reflex** value as normal, but to a minimum of 0 and limited by Armour. Some Powers may also affect this value.
+- **Speed & Size** - unchanged, determined by Race
+- **Senses** - a roleplay statistic that lets you know the suite of senses available to your character's race
+- **Passive Stats** - sometimes Powers or play require a value to compare against. The DM can ask you to make a roll that then represents that value, and sometimes they will ask for your "Passive Strength", etc. This is 8 + the Stat Value.
 
 #### Tertiary Statistics
 These 'Statistics' are not used in the game explicitely, but are a fun little aside for calculating ancilliary values for your character. Feel free to skip this step if you're not interested, or completely ignore its results.
@@ -94,19 +106,16 @@ These 'Statistics' are not used in the game explicitely, but are a fun little as
 
 A few Powers and corners may use these Stats, but only explicitely as the combination of normal Stats that define them, such as with "Foresigthed Defence" which is built upon Perception and Intelligence.
 
-### Races & Racial Powers
+### Races
 Your race is what you were born as. The choices your character had no hand in making. Your physical circumstances, your family, childhood, place of birth, home and all these little factors. When chosing a Race consider these, and consider what bonds (family, friends, childhood haunts), what ideals (beliefs you were raised with), and flaws (deep-rooted assumptions, traumas, rivals) you may have too.
 
-All the PHB Races of 5e have been converted mostly verbatum with the major change that racial features are mostly converted to optional Racial Powers and Background Powers (if something being a learnable Background Power made more sense). The Stats have also been changed where necessary, and some flavour has been added / changed too. 
+All the PHB Races of 5e have been converted with the major change that racial features are mostly converted to optional Racial Powers and Background Powers (if something being a learnable Background Power made more sense). The Stats have also been changed where necessary, and some flavour has been added / changed too. 
 
-<div id="races-viewer"></div>
-
-You choose 2 Racial Powers (by default) when you choose a Race, so not even two individuals of the same Race have the same capabilities, necessarily.
-
-<div id="racial-powers-viewer"></div>
+#### Racial Powers
+You choose 2 Racial Powers (by default) when you choose a Race, so not even two individuals of the same Race have the same capabilities, necessarily. You are welcome to choose more Racial Powers of your Race as you progress if it makes sense at the table, as you unlock latent capabilities etc.
 
 #### Upbringing
-Another core part of what your Race represents, is your 'upbringing', the kind of childhood you had. You freely pick 2 non-martial Skills, representing your those you were taught, learned or had no choice but to pick up while growing up. Additionally you take the 'Language, one of' Skill, noting that as your native language. By default in my games in the Materium Existentiae, your Childhood Language will be Imperial Common.
+Your 'upbringing' is the kind of childhood you had. You freely pick 2 non-martial Skills, representing your those you were taught, learned or had no choice but to pick up while growing up. Additionally you take the 'Language, one of' Skill, noting that as your native language. By default in my games in the Materium Existentiae, your Childhood Language will be Imperial Common.
 
 ### Backgrounds
 Your background is the profession and/or way of life you pursued before taking on the mantle of 'Adventurer' and you left it all behind, or were forced to. It emphasises skills, those you honed to a professional level, more than Powers, of which you gain only one. These are your character's first true choices, and so may say a lot about their ideals and their flaws, and will have built bonds all of their own. For ideas on these, see the PHB or other source books.
@@ -114,19 +123,7 @@ Your background is the profession and/or way of life you pursued before taking o
 PEDD makes backgrounds more important than in 5e, by elevating their impact on the game mechanics directly. You gain Stats and a Power from your background now, as backgrounds truly define you.
 
 ### Role
-Define your Role, a single evocative phrase or demonym that is the sum of what it is that you *do* as an adventurer.  This might well be the same as or a subset of your Concept.
-
-For example:
- - The Mage of Iron
- - Czondazani Noble Rebel
- - Ihleiskan Reaver
- - Water-burning pyromancer
- - Outback ranger
- - Ashen priestess
- - The Twin-swords of Tarentaise
-
-WIP - Role input
-<div id="role-container"></div>
+Who you are as an adventurere, the means with which you adventure!
 
 #### Role Powers
 The main purpose of a Role is to embody what kind of Adventurer you are, and the powers to facilitate that are paramount. As such for your Role choose 3 Powers from PEDD any non-racial Powers: one of which must be a `combat` Power, and one of which must be an `exploration` Power. Use the tags to help you. Your Role will only grow as you play, gaining more Powers, and therefore Skills and Stats.

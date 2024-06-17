@@ -1,1 +1,105 @@
-["ArmouriesOfTheSecondEmpire.md", "BeliefsOfTheMateriae.md", "CalendarsOfTheMateriae.md", "CoreSetting.md", "DesignPrinciples.md", "GiantkinGoliathsAndAncientTales.md", "IhleiskaMap.md", "LanguagesOfMitteland.md", "MittelandMap.md", "PlayerOptions.md", "TheAges.md", "TheChurchOfTheEverlight.md"]
+{
+    "name": "wiki",
+    "path": "./src/assets/wiki",
+    "type": "dir",
+    "contents": [
+        {
+            "name": "Beyond",
+            "path": "./src/assets/wiki/Beyond",
+            "type": "dir",
+            "contents": [
+                {
+                    "name": "BeliefsOfTheMateriae.md",
+                    "path": "./src/assets/wiki/Beyond/BeliefsOfTheMateriae.md",
+                    "type": "file"
+                },
+                {
+                    "name": "CalendarsOfTheMateriae.md",
+                    "path": "./src/assets/wiki/Beyond/CalendarsOfTheMateriae.md",
+                    "type": "file"
+                },
+                {
+                    "name": "GiantkinGoliathsAndAncientTales.md",
+                    "path": "./src/assets/wiki/Beyond/GiantkinGoliathsAndAncientTales.md",
+                    "type": "file"
+                }
+            ]
+        },
+        {
+            "name": "Core",
+            "path": "./src/assets/wiki/Core",
+            "type": "dir",
+            "contents": [
+                {
+                    "name": "CoreSetting.md",
+                    "path": "./src/assets/wiki/Core/CoreSetting.md",
+                    "type": "file"
+                },
+                {
+                    "name": "DesignPrinciples.md",
+                    "path": "./src/assets/wiki/Core/DesignPrinciples.md",
+                    "type": "file"
+                },
+                {
+                    "name": "PlayerOptions.md",
+                    "path": "./src/assets/wiki/Core/PlayerOptions.md",
+                    "type": "file"
+                }
+            ]
+        },
+        {
+            "name": "Mitteland",
+            "path": "./src/assets/wiki/Mitteland",
+            "type": "dir",
+            "contents": [
+                {
+                    "name": "ArmouriesOfTheSecondEmpire.md",
+                    "path": "./src/assets/wiki/Mitteland/ArmouriesOfTheSecondEmpire.md",
+                    "type": "file"
+                },
+                {
+                    "name": "IhleiskaMap.md",
+                    "path": "./src/assets/wiki/Mitteland/IhleiskaMap.md",
+                    "type": "file"
+                },
+                {
+                    "name": "LanguagesOfMitteland.md",
+                    "path": "./src/assets/wiki/Mitteland/LanguagesOfMitteland.md",
+                    "type": "file"
+                },
+                {
+                    "name": "MittelandMap.md",
+                    "path": "./src/assets/wiki/Mitteland/MittelandMap.md",
+                    "type": "file"
+                },
+                {
+                    "name": "TheAges.md",
+                    "path": "./src/assets/wiki/Mitteland/TheAges.md",
+                    "type": "file"
+                },
+                {
+                    "name": "TheChurchOfTheEverlight.md",
+                    "path": "./src/assets/wiki/Mitteland/TheChurchOfTheEverlight.md",
+                    "type": "file"
+                }
+            ]
+        },
+        {
+            "name": "Test",
+            "path": "./src/assets/wiki/Test",
+            "type": "dir",
+            "contents": [
+                {
+                    "name": "another.md",
+                    "path": "./src/assets/wiki/Test/another.md",
+                    "type": "file"
+                },
+                {
+                    "name": "test.md",
+                    "path": "./src/assets/wiki/Test/test.md",
+                    "type": "file"
+                }
+            ]
+        }
+    ]
+}

@@ -4,7 +4,9 @@
     <h2 class="subsubtitle text-centre no-decoration">My D&D Setting & Worldbuilding Project</h2>
 
     <!-- List of articles on the wiki, doubling as route and link -->
-    <WikiRoutes />
+     <ul class="traingle-points">
+       <WikiRoutes :routes="routes" />
+     </ul>
 
     <!-- Search bar for unique terms to jump to article it's associated to -->
     <!-- <div class="flex gap-1r">
@@ -22,6 +24,10 @@
 import { ref, onMounted } from 'vue'
 import { putMdinElement } from '../assets/functionality'
 import WikiRoutes from '../components/WikiRoutes.vue'
+
+import routes from '../assets/wikiroutes.json'
+
+console.log(typeof routes, routes)
 
 const basepath = 'src/assets/'
 let file = ref(basepath + 'wikiRoot.md')

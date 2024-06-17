@@ -1715,7 +1715,7 @@
             "roll-effecting"
         ],
         "preq": [
-            "Tool or Crafting Proficiency"
+            "Engineering"
         ],
         "desc": "When not at Disadvantage, you can choose to spend at least 1 minute and not roll when making any Tool Set or Crafting check with which you are proficient and instead assume you rolled a 10, adding a Stat and any Bonus to that as normal. Any check that would normally take longer than 1 minute still does so."
     },

@@ -7,16 +7,17 @@
             <div id="pedd"></div>
 
             <section id="skill-viewer">
-                <h3><span>{{ title }}</span>Skills</h3>
+                <h3> 
+                    <select id="by-category" v-model="category" @change="updateByCategory">
+                        <option>All</option>
+                        <option>Basic</option>
+                        <option>Knowledge</option>
+                        <option>Martial</option>
+                    </select>
+                    <span>Skills</span>
+                </h3>
 
-                <label for="by-category" class="skill-selector-label">Skill Category</label>
-                <select id="by-category" class="skill-selector" v-model="category" @change="filterSkills">
-                    <option>All</option>
-                    <option>Basic</option>
-                    <option>Knowledge</option>
-                    <option>Martial</option>
-                </select>
-                <label for="by-stat" class="skill-selector-label">Stat</label>
+                <label for="by-stat" class="skill-selector-label">For stat: </label>
                 <select id="by-stat" class="skill-selector" v-model="stat" @change="filterSkills">
                     <option>All</option>
                     <option>Accuracy</option>
@@ -45,7 +46,6 @@ import Links from '../../components/PEDD/Links.vue';
 import skillsData from '../../assets/pedd/pedd-skills.json'
 
 let skills = ref([]);
-let title = ref("");
 let category = ref("All");
 let stat = ref("All");
 
@@ -55,28 +55,33 @@ filterSkills();
 function filterSkills() {
     skills.value = [];
     if (category.value == "All") {
-        title.value = "";
         skills.value = skills.value.concat(skillsData.basicSkills.filter(s => s.stat == stat.value || stat.value == "All"));
         skills.value = skills.value.concat(skillsData.knowledgeSkills.filter(s => s.stat == stat.value || stat.value == "All"));
         skills.value = skills.value.concat(skillsData.martialSkills.filter(s => s.stat == stat.value || stat.value == "All"));
     }
     else if (category.value == "Basic") {
-        title.value = "Basic ";
         skills.value = skills.value.concat(skillsData.basicSkills.filter(s => s.stat == stat.value || stat.value == "All"));
     }
     else if (category.value == "Knowledge") {
-        title.value = "Knowledge ";
         skills.value = skills.value.concat(skillsData.knowledgeSkills.filter(s => s.stat == stat.value || stat.value == "All"));
     }
     else if (category.value == "Martial") {
-        title.value = "Martial ";
         skills.value = skills.value.concat(skillsData.martialSkills.filter(s => s.stat == stat.value || stat.value == "All"));
     }
 }
 
 onMounted(() => {
-    putMdinElement('../src/assets/pedd/pedd-skills.md', 'pedd')
+    putMdinElement('../src/assets/pedd/pedd-skills.md', 'pedd');
+    document.getElementById("by-category").dispatchEvent(new Event("change"));
 });
+
+function updateByCategory(e){
+   var selectedText = e.target.options[e.target.selectedIndex].text;
+
+   e.target.style.width = 16 + (selectedText.length * 16) + "px";
+
+   filterSkills();
+}
 </script>
 
 <style>
@@ -117,7 +122,8 @@ onMounted(() => {
     font-size: var(--subtitle-size);
 }
 
-h3 {
+#pedd h3,
+#skill-viewer h3, #by-category {
     font-size: var(--subsubtitle-size);
     text-decoration: underline;
     margin-top: 1rem;
@@ -147,6 +153,8 @@ h3 {
 
 .proficiencies-list ul {
     margin-top: 0.5rem;
+    margin-left:0;
+    padding:0;
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
@@ -159,18 +167,33 @@ h3 {
     padding: 0px 1rem;
 }
 
+#by-category {
+    background-color: #0000;
+    appearance: revert;
+    padding: 4px 0px;
+    margin-right: 4px;
+}
+
+#by-category option {
+    background-color: var(--background);
+}
+
 .skill-selector {
     border: none;
     border-radius: 0px;
-    background-color: rgba(0, 0, 0, 0.25);
     color: var(--text-color);
     text-align: right;
 
-    padding: 4px 2px;
+    padding: 2px 4px;
+    margin: 2px 4px;
 
     width: fit-content;
 
     font-size: var(--para-size);
+}
+
+.skill-selector option {
+    text-align: center;
 }
 
 .skill-selector-label {

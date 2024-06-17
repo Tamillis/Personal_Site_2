@@ -1,19 +1,27 @@
 <template>
-    <ul class="">
-      <li class="triangle-points" v-for="route in configuredRoutes"><RouterLink class="intext-link" :to="route">{{route.substring(6)}}</RouterLink></li>
-    </ul>
+      <li :class=" routes.type == 'dir' ? 'triangle-points-down' : 'triangle-points'" >
+        <h3 v-if="routes.type=='dir'">{{ routes.name }}</h3>
+        <ul v-if="routes.type=='dir'">
+          <WikiRoutes v-for="route in routes.contents" :routes="route" />
+        </ul>
+        <RouterLink v-else class="intext-link" :to="configuredPath">{{routes.name}}</RouterLink>
+      </li>
 </template>
 
 <script setup>
-import routes from '../assets/wikiroutes.json'
 
-const configuredRoutes = [];
+const props = defineProps(["routes"])
+console.log(props.routes)
 
-for(let i = 0; i < routes.length; i++) configuredRoutes[i] = "mewiki/" + routes[i].substring(0, routes[i].length-3)
-configuredRoutes.sort()
+let configuredPath = props.routes.path.replace("./src/assets/wiki", "mewiki").replace(".md", "")
 
 </script>
 
 <style lang="css" scoped>
-
+h3 {
+  display: inline;
+  font-weight: 300;
+  font-size: 1.5em;
+  border-bottom: 1px solid var(--text-color);
+}
 </style>

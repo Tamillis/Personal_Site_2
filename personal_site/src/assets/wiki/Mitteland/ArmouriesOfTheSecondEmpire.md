@@ -58,7 +58,7 @@ Firebomb | 10gp | 2d10 burning<sup>b</sup> | 2lbs | Thrown (20/60), Area (5ft ra
 Grenade | 5gp | 1d8 slashing, 1d8 burning<sup>b</sup> | 1lbs | Thrown (20/60), Knockdown, Area (5ft radius)d
 Demo-barrel | 50gp | 4d6 bludgeoning & 4d6 burning<sup>b</sup> | 75lbs | Knockback (10ft per barrel*), Area (10ft radius per barrel*) *to a maximum of 60ft.
 
-a.	The X in ammunition X refers to the number of times the weapon can be fired before needing to be reloaded. No value means one shot per reload.
+a.	The X in Ammunition X refers to the number of times the weapon can be fired before needing to be reloaded. No value means one shot per reload.
 
 b.	A flammable object hit by this ignites if it isn’t being worn or carried.
 

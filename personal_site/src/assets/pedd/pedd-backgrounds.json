@@ -149,11 +149,11 @@
         ],
         "skills": [
             "Persuasion",
-            "Nature",
+            "Body",
             "Engineering",
             "Driving",
             "Medium Armour",
-            "Blades"
+            "Clubs & Axes"
         ],
         "equipment": [
             "a set of artisan's tools (one of your choice)",
@@ -392,7 +392,7 @@
     },
     {
         "name": "Soldier",
-        "desc": "You were recruited as a youth into the Emperor's New Army, or other armed force, as the lowest rank: a foot soldier. You received training in the use of arms and armour, and were forced to learn to survive on and off the battlefield. Now a veteran bearing their scars,soldiers honour your service and history. For the many who love or fear the army, you can command respect and assistance when in need.",
+        "desc": "You were recruited as a youth into the Emperor's New Army, or other armed force, as the lowest rank: a foot soldier. You received training in the use of arms and armour, and were forced to learn to survive on and off the battlefield. Now a veteran bearing their scars, soldiers honour your service and history. For the many who love or fear the army, you can command respect and assistance when in need.",
         "stats": [
             "Strength",
             "Accuracy"
@@ -401,7 +401,7 @@
             "Athletics",
             "Firearms & Pistols",
             "Intimidation",
-            "Light Armour",
+            "Medium Armour",
             "Pole-arms",
             "Survival"
         ],
