@@ -90,10 +90,11 @@ Sometimes enemy attacks and other effects are made against your "Resistance DC",
 
 - **Health** - how much damage you can take before entering the Dying state. Your Race provides your **Base Health** and your **Fortitude** + **Willpower** is added on top to determine your total Health. Health is explicitly a combination of physical and emotional wear and tear, and the ability to roll with and carry on from blows.
 - **Defence** - how difficult you are to harm. **Base Defence** + **Armour** + **Reflexes (as limited by armour, minimum of 0)**
-  - **Base Defence** - 8 for Medium characters and 10 for Small characters, (and 6 for Large characters, if you find yourself to be one).
+  - **Base Defence** - determined by Size: 14 (tiny), 10 (small), 8 (medium), 6 (large), 2 (huge). Smaller characters are harder to hit.
   - **Armour** - determined by the sum Defence of worn equipment.
   - **Reflexes** - your **Reflex** value as normal, but to a minimum of 0 and limited by Armour. Some Powers may also affect this value.
-- **Speed & Size** - unchanged, determined by Race
+- **Speed** - the ground you can cover in a Move, determined by your Race and some Powers
+- **Size** - what category of size you are, determined by Race.
 - **Senses** - a roleplay statistic that lets you know the suite of senses available to your character's race
 - **Passive Stats** - sometimes Powers or play require a value to compare against. The DM can ask you to make a roll that then represents that value, and sometimes they will ask for your "Passive Strength", etc. This is 8 + the Stat Value.
 

@@ -58,6 +58,11 @@
                     "type": "file"
                 },
                 {
+                    "name": "DuchyOfSalsburry.md",
+                    "path": "./src/assets/wiki/Mitteland/DuchyOfSalsburry.md",
+                    "type": "file"
+                },
+                {
                     "name": "IhleiskaMap.md",
                     "path": "./src/assets/wiki/Mitteland/IhleiskaMap.md",
                     "type": "file"
@@ -80,23 +85,6 @@
                 {
                     "name": "TheChurchOfTheEverlight.md",
                     "path": "./src/assets/wiki/Mitteland/TheChurchOfTheEverlight.md",
-                    "type": "file"
-                }
-            ]
-        },
-        {
-            "name": "Test",
-            "path": "./src/assets/wiki/Test",
-            "type": "dir",
-            "contents": [
-                {
-                    "name": "another.md",
-                    "path": "./src/assets/wiki/Test/another.md",
-                    "type": "file"
-                },
-                {
-                    "name": "test.md",
-                    "path": "./src/assets/wiki/Test/test.md",
                     "type": "file"
                 }
             ]

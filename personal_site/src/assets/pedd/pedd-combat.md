@@ -42,6 +42,11 @@ The more you're knocked down, the more likely you are to stay down, forever.
 
 *I actually would like to experiment with keeping failed death saves but fewer changes are better for now I believe.
 
+#### Wounds and Monsters (WIP)
+Monsters function just like player characters in that they have health, defence and even suffer the Wounded condition, but with a simple twist that changes what it is like to play against them.
+
+Most small monsters die when they reach the Wounded I condition. I.e., they can take "one wound". But some don't. Some monsters can take multiple Wounds, and in fact only lose parts of themselves (such as a tail, layer of armour, claws, or part of their construction if a construct). Their Health also resets when they take a Wound, meaning each wound they can take is like a health bar. Such monsters, great foes, have a "Wounds" that you must burn through first.
+
 ### Defence
 To make characters easier to strike, meaning less spongey, and also to make combat more proactive and engaging; the Defence Stat replaces AC (a simple rename for ease of understanding. AC really is an odd term), and is more flexible than a flat value, being made of three parts:
 - a Base Defence value of 8 for Medium characters, 10 for Small characters and 6 for Large characters. Should it be relevant, Huge characters have a Base Defence of 2 and Tiny a Base Defence of 14. (Smaller characters are harder to hit).
@@ -297,7 +302,7 @@ The other facet of making combat more tactical, beside the radical change of One
 - **Attack of Opportunity** - as a Bonus Action to an enemy you're engaged with moving away from you without Disengaging from you, you can make an attack action on them, after which they have moved away and are no longer engaged with you for that Round.
 - **Discern** - as an Attack or Action, you can make a Perception check against one enemy whose has a Hidden Action. If successful (the GM will decide the DC), their Action is no longer hidden and everyone in the combat can know.
 - **Disarm** - as an Attack or Action against an enemy in your Reach holding a weapon or shield, you can make a Dexterity check against the enemy's passive Reflexes. If you succeed, you rip the weapon from their grasp and throw it 20ft in a direction of your choice (this does not count as a thrown weapon attack), or equip it an empty hand of yours.
-- **Shove** - as an Attack or Action you attempt to make an Enemy Prone or move 10ft directly away from you. You make a Strength check against their passive Fortitude.
+- **Shove** - as an Attack or Action you attempt to make an Enemy Prone or move 10ft in a direction of your choice. You make a Strength check against their passive Fortitude.
 - **Grapple** - as an Attack or Action you attempt to Restrain an character. You make a Strength check against their passive Fortitude. If you succeed both the character is Restrained. On subsequent turns you can maintain the grapple or end the grapple (no additional action or roll needed), and you can only use your Move action, if you do, to Move yourself and the enemy as if going through Difficult Terrain (typically, at half Speed). The grappled character can use their Action to attempt to escape the Grapple, making a Strength or Dexterity check (their choice) vs your passive Fortitude, ending the grapple on a success.
 - **Non-lethal Strike** (a.k.a. knockout strike) - you attack with the weapon with the intention to knock unconscious rather than kill. Don't roll for Damage, instead take each dice roll to have been a 1.
 - **Coup de Grace** - an attack made against an incapacitated target where damage is not rolled, assume maximum results for any damage dice.
@@ -312,3 +317,12 @@ The following are changes and additions to D&D's conditions
   - The target character cannot take actions or reactions.
   - The target character automatically fails Fortitude and Reflex saves.
   - Attack rolls against the target character have Advantage.
+- **Charmed** - unless otherwise stated, a charmed character considers you an ally and will heed your commands, which you can give freely, to the best of its ability. However it will not obey commands that are against its interests. If it is an intelligent character, you can attempt to persuade or otherwise convince them to obey, or that their interests lie elsewhere.
+- **Frightened** - A Frightened character has Disadvantage on Ability checks and Attack rolls while the source of its fear is within line of sight. If it chooses to Move, the character must move away, or otherwise out of line of sight, from the source of its fear. The character doesn’t have to move into obviously dangerous ground, such as a fire or a pit.
+
+The following enviromental damage rules are updated and rolled into Conditions of the corresponding name:
+- **Falling** - At the end of a fall, a character takes 1d6 bludgeoning damage for every 10ft it fell, to a maximum of 200ft for 20d6. The character lands prone, unless it avoids taking damage from the fall.
+- **Suffocating*** - A character can survive for a number of rounds equal to its Fortitude (to a minimum of 1). At the start of the next turn, it drops to 0 health and is dying, and it can’t regain health or be stabilized until it can breathe again. If it recovers from Dying with a natural 20 and is still Suffocating, it suffers the condition anew as if just running out of breath again.
+- **Burning** - A character burns each Round. They take 1d6 fire damage at the start of the Round, and can take an Action to extinguish themselves. Unless another DC is stated, it is a DC 8 Reflex save to end the Burning condition.
+
+*Holding breath rules: A character can hold their breath for 1 minute plus their Willpower x 30 seconds (to a minimum of 30 seconds). When a character takes damage, it loses 30 seconds of breath. When a character runs out of breath they're Suffocating.
