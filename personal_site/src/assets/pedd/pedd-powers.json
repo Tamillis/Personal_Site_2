@@ -347,7 +347,6 @@
             "dragonborn",
             "racial",
             "roll-effecting",
-            "skill",
             "tuskman",
             "universal"
         ],
@@ -811,7 +810,7 @@
             "background"
         ],
         "preq": [],
-        "desc": "You gain proficiency in a Tool / Language Skill of your choice, in a Martial Skill of your Choice, and in any one other Skill of your choice. Additionally, choose one Skill in which you have proficiency, now or before. You gain Expertise with that Skill."
+        "desc": "You gain proficiency in one of Alchemy / Arcana / Disguise / Engineering / Investigation / Navigation / Strategy / Languages (one) / Medicine, in a Martial Skill of your choice, and in any one other Skill of your choice. Additionally, choose one Skill in which you have proficiency, now or before. You gain Expertise with that Skill."
     },
     {
         "name": "Expertise",
@@ -1705,7 +1704,7 @@
         "preq": [
             ""
         ],
-        "desc": "You have a knack for learning new things. You gain the following benefits:\n\n- You gain proficiency in a Tool Skill of your choice, one additional Skill proficiency of your choice, and proficiency in one language of your choice.\n- Choose one Skill in which you have proficiency. You gain Expertise with that Skill.\n- You learn languages and skills at quicker than the usual rate."
+        "desc": "You have a knack for learning new things. You gain the following benefits:\n\n- You gain proficiency in a Basic Skill, Knowledge Skill and one language of your choice.\n- Choose one Skill in which you have proficiency, now or before. You gain Expertise with that Skill.\n- You learn skills at quicker than the usual rate."
     },
     {
         "name": "Professional Artisan",
@@ -2183,7 +2182,7 @@
         "preq": [
             ""
         ],
-        "desc": "You gain proficiency with Skill Tinker's Tools. Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (1 Health, 5 Defence). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your Action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose one of the following options:\n\n- **Clockwork Toy**. This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents.\n- **Fire Starter**. The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.\n- **Music Box**. When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.\n- At your DM's discretion, you may make other objects with effects similar in power to these. The Prestidigitation cantrip is a good baseline for such effects."
+        "desc": "You gain proficiency with in the Engineering Skill. Using Tinkerer's tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (1 Health, 5 Defence). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your Action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose one of the following options:\n\n- **Clockwork Toy**. This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents.\n- **Fire Starter**. The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.\n- **Music Box**. When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.\n- At your DM's discretion, you may make other objects with effects similar in power to these. The Prestidigitation cantrip is a good baseline for such effects."
     },
     {
         "name": "Transmuted Spell",

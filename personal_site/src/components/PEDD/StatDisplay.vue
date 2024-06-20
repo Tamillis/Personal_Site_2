@@ -9,7 +9,7 @@
             <p>Charisma: <span>{{ player.charisma }}</span></p>
             <p>Intelligence: <span>{{ player.intelligence }}</span></p>
 
-            <div v-if="player.faith">
+            <div v-if="haveFaith">
                 <p>Faith: <span>{{ player.faith }}</span></p>
             </div>
         </div>
@@ -30,22 +30,25 @@
             <p>Size: {{ player.race ? capitalize(player.race.size.val) : "" }}</p>
         </div>
 
-        <h3>Tertiaries: </h3>
-        <p><small>Don't forget these are just for flavour.</small></p>
-        <div class="flex table-like">
-            <p>Appearance <small>(Str. + Cha.)</small>: {{ player.strength + player.charisma }}</p>
-            <p>Agility <small>(Dex. + Acc.)</small>: {{ player.dexterity + player.accuracy }}</p>
-            <p>Foresight <small>(Per. + Int.)</small>: {{ player.perception + player.intelligence }}</p>
-        </div>
+        <h3 @click="showTertiaries = !showTertiaries" style="cursor: pointer;">{{showTertiaries ? "Tertiaries:" : "Tertiaries..." }} </h3>
+        <section v-if="showTertiaries">
+            <p><small>Don't forget these are just for flavour.</small></p>
+            <div class="flex table-like">
+                <p>Appearance <small>(Str. + Cha.)</small>: {{ player.strength + player.charisma }}</p>
+                <p>Agility <small>(Dex. + Acc.)</small>: {{ player.dexterity + player.accuracy }}</p>
+                <p>Foresight <small>(Per. + Int.)</small>: {{ player.perception + player.intelligence }}</p>
+            </div>
+        </section>
 
     </div>
 </template>
 
 <script setup>
+import {ref} from 'vue';
 import { capitalize } from '../../assets/functionality';
 
-const props = defineProps(["player"]);
-
+const props = defineProps(["player", "haveFaith"]);
+const showTertiaries = ref(true);
 </script>
 
 <style lang="css" scoped>

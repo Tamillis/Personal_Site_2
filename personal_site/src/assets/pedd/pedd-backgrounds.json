@@ -474,5 +474,45 @@
             "a pouch containing probably stolen 5gp"
         ],
         "suggestedPower": "Skulker"
+    },
+    {
+        "name": "Mistdiver",
+        "desc": "You were an opportunist, an individual of great ambition or foolish confidence, that saw the horrors of the Mists and the inherent unknown in the things it leaves behind as tomorrow’s paycheque. You dove into the lands that bordered the Mist wall after it ebbed back to find what plunder you could, and fight or avoid the creatures and monstrosities the Mist had tainted or left behind. Inevitably at one point the Mist tainted you too, and most mistdivers say no diver is blooded until they gain their first Minor Mutation [see core player options](/mewiki/Core/PlayerOptions#mistdiver).",
+        "stats": [
+            "Accuracy",
+            "Perception"
+        ],
+        "skills": [
+            "Arcana",
+            "Exotic (Net)",
+            "Clubs & Axes",
+            "Investigation",
+            "Navigation",
+            "Sleight of Hand"
+        ],
+        "equipment": [
+            "a set of navigator’s tools", "5 lock picks", "a firefighter's axe", "a trinket from your first dive", "a set of traveller's clothes", "a pouch containing 5gp"
+        ],
+        "suggestedPower": "Jack of All Trades"
+    },
+    {
+        "name": "Mage Hunter",
+        "desc": "The age of sorcerer kings and rampant planar beings birthed innumerable tragedies that instilled in people a fear of magic, exaggerated by its systemisation and spread. As control of magi became a greater and greater concern, those who would hunt down rogue magic users appeared to fill the need. Desperados, bounty hunters, ex-soldiers and other such hardened folk, like you, took up the mantle; people paid to tag & bag rogue mages.\r\rWhen dealing with hostile magic users all hunters learn various protocols for dealing with the vast and dangerous abilities of magic. You are always able to prepare for specific magics you face in your travels; be that through acquirement of equipment, use of special potions, or even employing magical items yourself. You know where to go to do that preparation or who to ask. When faced with novel hostile magics, you know where to turn to learn better protocols.",
+        "stats": [
+            "Perception",
+            "Strength"
+        ],
+        "skills": [
+            "Athletics",
+            "Arcana",
+            "Insight",
+            "Investigation",
+            "Riding",
+            "Spears"
+        ],
+        "equipment": [
+            "a bear trap", "a gag & manacles", "a Mage Hunter’s papers", "a lucky charm", "a set of traveller's clothes", "a pouch containing 10gp"
+        ],
+        "suggestedPower": "Keen Senses"
     }
 ]

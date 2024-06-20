@@ -17,22 +17,28 @@
 import { ref } from 'vue';
 
 const props = defineProps(["skills", "limit"]);
-const emits = defineEmits(["chosen"]);
+const emits = defineEmits(["skills"]);
 
 let chosenSkills = ref([]);
 let unchosenSkills = ref(props.skills)
 let selectedSkill = ref(props.skills[0]);
 
-
 function addSkill() {
     chosenSkills.value.push(selectedSkill.value);
     unchosenSkills.value = unchosenSkills.value.filter(s => s != selectedSkill.value);
     selectedSkill.value = unchosenSkills.value[0];
+
+    emits('skills', chosenSkills.value);
+
 }
 
 function removeSkill(skill) {
     chosenSkills.value = chosenSkills.value.filter(s => s != skill);
     unchosenSkills.value.push(skill);
+    unchosenSkills.value = unchosenSkills.value.sort((s1,s2) => s1.localeCompare(s2));
+    selectedSkill.value = unchosenSkills.value[0];
+
+    emits('skills', chosenSkills.value);
 }
 </script>
 

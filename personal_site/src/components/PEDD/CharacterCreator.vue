@@ -1,42 +1,6 @@
 <template>
     <section>
-        <h2 class="title"><span id="character-name-disp">{{ player.name }}</span>, <span id="character-concept-disp">{{
-            player.concept }}</span></h2>
-
-        <StatDisplay :player="player" :key="'sd-' + key" style="margin-top: 1rem" />
-
-        <div class="flex justify-between gap-1r summary">
-            <div>
-                <h2>Race</h2>
-                <p>{{ player.race ? player.race.name : "None chosen" }}</p>
-            </div>
-
-            <div>
-                <h2>Background</h2>
-                <p>{{ player.background ? player.background.name : "None chosen" }}</p>
-            </div>
-
-            <div>
-                <h2>Equipment</h2>
-                <p>{{ player.background ? player.background.equipment.join(", ") : "" }}</p>
-                <p>{{ player.equipmentCollection ? player.equipmentCollection.equipment : "" }}</p>
-            </div>
-
-            <div>
-                <h2>Skills</h2>
-                <p>TODO</p>
-            </div>
-        </div>
-
-        <div>
-            <h2>Powers</h2>
-            <p>{{ player.racialPowers.length == 0 ? "None chosen" :
-                player.racialPowers.join(", ") }} </p>
-            <p>{{ player.backgroundPower == "" ? "None chosen" :
-                player.backgroundPower }} </p>
-            <p>{{ player.rolePowers.length == 0 ? "None chosen" :
-                player.rolePowers.join(", ") }} </p>
-        </div>
+        <CharacterDisplay :player="player" :haveFaith="sections.faith" />
 
         <hr />
 
@@ -46,9 +10,13 @@
             <button @click="setSection('background')" :class="{ selected: sections.background }">3. Background</button>
             <button @click="setSection('role')" :class="{ selected: sections.role }">4. Role</button>
             <button @click="setSection('equipment')" :class="{ selected: sections.equipment }">5. Equipment</button>
+            <button @click="sections.faith = !sections.faith">{{sections.faith ? "I lost my faith" : "I have faith!"}}</button>
+            <button @click="buildPlayer">Manual Refresh</button>
         </div>
 
-        <section id="concept-section" v-if="sections.concept">
+        <section id="concept-section" v-show="sections.concept">
+            <!-- TODO: Put into concept component, emitting characterName, characterConcept, bonds, ideals, flaws  -->
+
             <div class="flex">
                 <div>
                     <label for="character-name">Character Name: </label>
@@ -77,14 +45,16 @@
             </div>
         </section>
 
-        <section id="race-section" v-if="sections.race">
+        <section id="race-section" v-show="sections.race">
+            <!-- TODO: Put into race chooser component, emitting a simple chosen race name  -->
             <h2>Race: {{ chosen.race.name }}</h2>
             <CardContainer v-for="race in races" :name="race.name" :expanded="chosen.race.name == race.name"
-                :class="{ hidden: player.race && player.race.name !== race.name }"
-                @chosen="chooseRace(race)">
+                :class="{ hidden: player.race && player.race.name !== race.name }" @chosen="chooseRace(race)">
                 <RaceContent :race="race" @selected-stats="(stats) => { updateChosenRaceWith(stats) }" />
             </CardContainer>
 
+
+            <!-- TODO: Put into racial powers component, emitting a simple array of chosen power names  -->
             <div v-if="chosen.race">
                 <h2>Racial Powers: <span>{{ chosen.racialPowers.join(', ') }}</span></h2>
                 <div class="cards">
@@ -99,19 +69,23 @@
             </div>
         </section>
 
-        <section id="background-section" v-if="sections.background">
+        <section id="background-section" v-show="sections.background">
+            <!-- TODO: Put into upbringing component, emitting a simple array of chosen skills and chosen language  -->
             <h3>Upbringing</h3>
             <p>2 Non-Martial Skills and Language - Any, your native language.</p>
 
             <div class="flex gap-1r">
-                <select v-model="chosen.upbringing.skill1">
-                    <option v-for="skill in upbringingSkills.filter(s => s.skill != chosen.upbringing.skill2)">{{ skill.skill }}</option>
+                <select v-model="chosen.upbringing.skill1" @change="buildPlayer">
+                    <option v-for="skill in upbringingSkills.filter(s => s.skill != chosen.upbringing.skill2)">{{
+                        skill.skill }}</option>
                 </select>
-                <select v-model="chosen.upbringing.skill2">
-                    <option v-for="skill in upbringingSkills.filter(s => s.skill != chosen.upbringing.skill1)">{{ skill.skill }}</option>
+                <select v-model="chosen.upbringing.skill2" @change="buildPlayer">
+                    <option v-for="skill in upbringingSkills.filter(s => s.skill != chosen.upbringing.skill1)">{{
+                        skill.skill }}</option>
                 </select>
                 <div class="flex-grow">
-                    <p>Language (<input id="upbringing-language" value="Common" style="display:inline"/>)</p>
+                    <p>Language (<input id="upbringing-language" v-model="chosen.upbringing.language"
+                            @input="buildPlayer" style="display:inline" />)</p>
                 </div>
             </div>
 
@@ -120,8 +94,7 @@
                 <CardContainer v-for="(bg, i) in backgrounds" :name="bg.name"
                     :expanded="player.background && player.background.name == bg.name"
                     :class="{ hidden: player.background && player.background.name != bg.name }"
-                    @chosen="chooseBackground(bg)"
-                    :key="`bgc-${i}-${key}`">
+                    @chosen="chooseBackground(bg)" :key="`bgc-${i}-${key}`">
                     <BackgroundContent :bg="bg" />
                 </CardContainer>
             </div>
@@ -130,15 +103,14 @@
             <div class="cards">
                 <CardContainer v-for="(power, i) in backgroundPowers" :name="power.name"
                     :class="{ hidden: player.backgroundPower && player.backgroundPower != power.name }"
-                    :expanded="chosen.backgroundPower == power.name"
-                    @chosen="chooseBackgroundPower(power)"
+                    :expanded="chosen.backgroundPower == power.name" @chosen="chooseBackgroundPower(power)"
                     :key="`bgpc-${i}-${key}`">
                     <PowerContent :power="power" @highlight="(tag) => highlight(tag)" />
                 </CardContainer>
             </div>
         </section>
 
-        <section id="role-section" v-if="sections.role">
+        <section id="role-section" v-show="sections.role">
             <h2>Role</h2>
 
             <h3>Role Stats</h3>
@@ -146,7 +118,8 @@
                 @stat-change="(statsSelection) => { roleStats = statsSelection; buildPlayer(); }" />
 
             <h3>Role Skills</h3>
-            <SkillSelector :skills="roleSkills" :limit="4 + player.intelligence" />
+            <SkillSelector :skills="roleSkills" :limit="4 + player.intelligence"
+                @skills="(skills) => chosen.roleSkills = skills" />
             <p>4 + your Intelligence ({{ player.intelligence }}) = {{ 4 + player.intelligence }}</p>
 
             <h2>Role Powers: <span>{{ chosen.rolePowers.join(', ') }}</span></h2>
@@ -166,54 +139,9 @@
         </section>
 
         <section id="equipment-section" v-if="sections.equipment">
-
-            <div class="selection" style="max-width: 300px;">
-                <h3>Equipment Collections</h3>
-                <select id="equipment-collections" @change="updateEquipmentCollection">
-                    <option disabled selected>Choose one...</option>
-                    <option v-for="(collection, i) in equipmentCollections" :value="i">{{ collection.name }}</option>
-                </select>
-            </div>
-
-            <div class="flex">
-                <div class="selection">
-                    <h3>Body Armour</h3>
-                    <select id="arm" @change="chosenArmour">
-                        <option value="0" data-ref-limit="99">None</option>
-                        <option value="1" data-ref-limit="99">+1 Padded (Loud)</option>
-                        <option value="1" data-ref-limit="99">+1 Leather</option>
-                        <option value="2" data-ref-limit="99">+2 Studded Leather</option>
-                        <option value="2" data-ref-limit="2">+2 Hide</option>
-                        <option value="3" data-ref-limit="2">+3 Chain Shirt</option>
-                        <option value="4" data-ref-limit="2">+4 Scale Mail (Loud)</option>
-                        <option value="4" data-ref-limit="2">+4 Breastplate</option>
-                        <option value="5" data-ref-limit="2">+5 Half-plate (Loud)</option>
-                        <option value="4" data-ref-limit="0">+4 Ring mail (Loud)</option>
-                        <option value="6" data-ref-limit="0">+6 Chain mail (Loud)</option>
-                        <option value="7" data-ref-limit="0">+7 Splint mail (Loud)</option>
-                        <option value="8" data-ref-limit="0">+8 Plate mail (Loud)</option>
-                    </select>
-                </div>
-
-                <div class="selection">
-                    <h3>Helmet</h3>
-                    <select id="helmet" @change="chosenArmour">
-                        <option value="0" data-ref-limit="99">None</option>
-                        <option value="1" data-ref-limit="2">+1 Lobster Pot</option>
-                        <option value="2" data-ref-limit="0">+2 Great Helm (Blinkered)</option>
-                    </select>
-                </div>
-
-                <div class="selection">
-                    <h3>Shield</h3>
-                    <select id="shield" @change="chosenArmour">
-                        <option value="0" data-ref-limit="99">None</option>
-                        <option value="1" data-ref-limit="99">+1 Buckler</option>
-                        <option value="2" data-ref-limit="2">+2 Shield</option>
-                        <option value="3" data-ref-limit="0">+3 Tower Shield (Loud)</option>
-                    </select>
-                </div>
-            </div>
+            <EquipmentTab @equipment="(equipment) => chosen.roleEquipment = equipment"
+                @armour="(armour) => chosen.armour = armour" @shield="(shield) => chosen.shield = shield"
+                @helmet="(helmet) => chosen.helmet = helmet" @ref-limit="(refLimit) => chosen.refLimit = refLimit" />
         </section>
     </section>
 </template>
@@ -224,7 +152,6 @@ import PowerContent from './PowerContent.vue';
 import RaceContent from './RaceContent.vue';
 import CardContainer from './CardContainer.vue';
 import BackgroundContent from './BackgroundContent.vue';
-import StatDisplay from './StatDisplay.vue';
 import StatSelector from './StatSelector.vue';
 
 //resources
@@ -232,8 +159,9 @@ import powers from '../../assets/pedd/pedd-powers.json';
 import backgrounds from '../../assets/pedd/pedd-backgrounds.json';
 import races from '../../assets/pedd/pedd-races.json';
 import skillsData from '../../assets/pedd/pedd-skills.json';
-import equipmentCollections from '../../assets/pedd/pedd-equipment-collections.json';
 import SkillSelector from './SkillSelector.vue';
+import CharacterDisplay from './CharacterDisplay.vue';
+import EquipmentTab from './EquipmentTab.vue';
 
 //derived resources
 let stats = ["accuracy", "perception", "strength", "dexterity", "charisma", "intelligence"];
@@ -254,7 +182,8 @@ let sections = ref({
     race: false,
     background: false,
     role: false,
-    equipment: false
+    equipment: false,
+    faith: false
 });
 
 function setSection(section) {
@@ -263,24 +192,26 @@ function setSection(section) {
 }
 
 //charactersheet state
-let key = ref(0);
+let key = ref(0);   //TODO: Remove key?
+
+//TODO: change chosen to be the point of reference (i.e. id's, not objects), and also to load selections from chosen so that it can be used for saving
 let chosen = ref({
     race: false,
     racialPowers: [],
     background: false,
     backgroundPower: "",
-    rolePowers: [],
-    equipmentCollection: false,
-    arm: 0,
-    armRefLimit: 99,
-    shield: 0,
-    shieldRefLimit: 99,
-    helmet: 0,
-    helmetRefLimit: 99,
     upbringing: {
         skill1: upbringingSkills.value[0].skill,
-        skill2: upbringingSkills.value[1].skill
-    }
+        skill2: upbringingSkills.value[1].skill,
+        language: "Common"
+    },
+    rolePowers: [],
+    roleSkills: [],
+    roleEquipment: [],
+    armour: 0,
+    helmet: 0,
+    shield: 0,
+    refLimit: 99
 });
 
 //card state
@@ -328,13 +259,13 @@ let chooseRace = (chosenRace) => {
     return openedRaceCards;
 };
 
-let chooseRacialPowers = () => {};
+let chooseRacialPowers = () => { };
 
 //background
 let backgroundPowers = computed(() => powers.filter(p => p.tag.includes("background")));
 
 let chooseBackground = (chosenBg) => {
-    if(chosen.value["background"].name == chosenBg.name) {
+    if (chosen.value["background"].name == chosenBg.name) {
         //clicked on open card, close it and reveal all cards
         chosen.value["background"] = false;
 
@@ -349,7 +280,7 @@ let chooseBackground = (chosenBg) => {
 
 let chooseBackgroundPower = (card) => {
 
-    if(chosen.value.backgroundPower == card.name) {
+    if (chosen.value.backgroundPower == card.name) {
         //clicked on open card, close it and reveal all cards
         chosen.value.backgroundPower = false;
 
@@ -370,18 +301,8 @@ let rolePowers = computed(() => {
 
 let roleStats = ref(["accuracy", "perception"]);
 
-let roleSkills = ref(skillsData.basicSkills.map(s=>s.skill).concat(skillsData.knowledgeSkills.map(s=>s.skill).concat(skillsData.martialSkills.map(s=>s.skill))));
+let roleSkills = ref(skillsData.basicSkills.map(s => s.skill).concat(skillsData.knowledgeSkills.map(s => s.skill).concat(skillsData.martialSkills.map(s => s.skill))));
 roleSkills.value.sort((s1, s2) => s1.localeCompare(s2));
-
-let selectedStats = computed(() => {
-    let ss = {};
-    ss[roleStats.value[0]] = 2;
-    ss[roleStats.value[1]] = 1;
-    for (let s of stats) {
-        if (!ss.hasOwnProperty(s)) ss[s] = 0;
-    }
-    return ss
-});
 
 let choosePower = (power, attribute, opened, max) => {
     key.value++;
@@ -412,22 +333,6 @@ let choosePower = (power, attribute, opened, max) => {
     return opened;
 };
 
-//equipment
-let updateEquipmentCollection = (e) => {
-    chosen.value.equipmentCollection = equipmentCollections[e.target.value];
-    buildPlayer();
-}
-
-let chosenArmour = (e) => {
-    let chosenProp = e.target.id;
-    let refLimitProp = e.target.id + "RefLimit";
-    let armourValue = e.target.children[e.target.selectedIndex].value;
-    let refLimit = e.target.children[e.target.selectedIndex].dataset.refLimit;
-    chosen.value[chosenProp] = armourValue;
-    chosen.value[refLimitProp] = refLimit;
-    buildPlayer();
-}
-
 //calculated player stats
 let player = ref({});
 let buildPlayer = () => {
@@ -442,12 +347,18 @@ let buildPlayer = () => {
     player.value.backgroundPower = chosen.value.backgroundPower;
     player.value.rolePowers = chosen.value.rolePowers;
 
-    player.value.strength = selectedStats.value.strength;
-    player.value.dexterity = selectedStats.value.dexterity;
-    player.value.accuracy = selectedStats.value.accuracy;
-    player.value.perception = selectedStats.value.perception;
-    player.value.intelligence = selectedStats.value.intelligence;
-    player.value.charisma = selectedStats.value.charisma;
+    let ss = {};
+    ss[roleStats.value[0]] = 2;
+    ss[roleStats.value[1]] = 1;
+    for (let s of stats) {
+        if (!ss.hasOwnProperty(s)) ss[s] = 0;
+    }
+    player.value.strength = ss.strength;
+    player.value.dexterity = ss.dexterity;
+    player.value.accuracy = ss.accuracy;
+    player.value.perception = ss.perception;
+    player.value.intelligence = ss.intelligence;
+    player.value.charisma = ss.charisma;
     if (player.value.race) {
         for (let stat of player.value.race.stats) {
             if (stats.includes(stat.desc.toLowerCase())) player.value[stat.desc.toLowerCase()] += stat.val;
@@ -462,22 +373,32 @@ let buildPlayer = () => {
 
     player.value.fortitude = player.value.strength + player.value.dexterity;
     player.value.reflexes = player.value.accuracy + player.value.perception;
-
-    if (player.value.reflexes > chosen.value.armRefLimit) player.value.reflexes = chosen.value.armRefLimit;
-    if (player.value.reflexes > chosen.value.shieldRefLimit) player.value.reflexes = chosen.value.shieldRefLimit;
-    if (player.value.reflexes > chosen.value.helmetRefLimit) player.value.reflexes = chosen.value.helmetRefLimit;
-
+    if(player.value.reflexes > chosen.value.refLimit) player.value.reflexes = chosen.value.refLimit;
     player.value.willpower = player.value.intelligence + player.value.charisma;
 
     player.value.faith = 2; //TODO: make faith input based
 
-    player.value.equipmentCollection = chosen.value.equipmentCollection;
+    player.value.equipmentCollection = chosen.value.roleEquipment;
 
-    player.value.armour = Number(chosen.value.arm) + Number(chosen.value.shield) + Number(chosen.value.helmet);
+    player.value.skills = [];
+    player.value.skills = chosen.value.roleSkills.slice();  //copy array by value not ref
+    player.value.skills.push(chosen.value.upbringing.skill1)
+    player.value.skills.push(chosen.value.upbringing.skill2)
+    player.value.skills.push(`Language (${chosen.value.upbringing.language})`)
+    if (chosen.value.background) player.value.skills = player.value.skills.concat(chosen.value.background.skills);
+    player.value.skills = player.value.skills.sort((s1, s2) => s1.localeCompare(s2));
+
+    player.value.armour = chosen.value.armour + chosen.value.shield + chosen.value.helmet;
 
     player.value.baseDefence = player.value.race ? baseDefence[player.value.race.size.val] : 8;
     player.value.defence = Number(player.value.baseDefence) + Number(player.value.armour) + Number(player.value.reflexes);
 
+    //encode player into url for easy saving and sharing
+    let saved = btoa(JSON.stringify(player.value));
+    //history.pushState({},null, new URL(window.location.href.split("?")[0] + "?saved=" + saved));
+    //TODO: decode the url into where exactly? encode the chosen options?
+
+    //TODO: switch chosen to just use id's, i.e. names, for race and powers to reduce encoded size
     return player.value;
 };
 buildPlayer();
@@ -578,6 +499,7 @@ h2 {
     #section-tabs {
         text-indent: 0;
     }
+
     #section-tabs button {
         text-indent: 0;
         width: 20%;
