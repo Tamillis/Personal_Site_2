@@ -51,7 +51,7 @@ const props = defineProps(['player', 'haveFaith']);
 const selectedPowers = computed(() => {
     let sp = props.player.racialPowers.concat(props.player.rolePowers)
     if(props.player.backgroundPower) sp.push(props.player.backgroundPower);
-    console.log(sp);
+
     sp = sp.map(p => powers.filter(power => power.name == p)[0]);
     return sp;
 });

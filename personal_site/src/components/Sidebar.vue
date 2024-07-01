@@ -1,5 +1,5 @@
 <template>
-    <nav class="sidebar z3" id="nav">
+    <nav class="sidebar" id="nav">
         <ul id="links" class="shiftBack" @click="toggleNav()">
             <li class="nav-item">
                 <RouterLink to="/">Home</RouterLink>
@@ -55,14 +55,10 @@ function toggleNav() {
     //if the display of the sidebar is nill or none move items sidebar amount to the side
     //and set the display to block, or do the reverse
     if (out) {
-        nav.classList.remove("z1");
-        nav.classList.add("z3");
         links.classList.remove("shiftOut");
         links.classList.add("shiftBack");
     }
     else {
-        nav.classList.remove("z3");
-        nav.classList.add("z1");
         links.classList.remove("shiftBack");
         links.classList.add("shiftOut");
     }
@@ -81,10 +77,12 @@ a {
     transition: 0.2s;
 }
 
+.sidebar {
+    position: absolute;
+}
+
 @media screen and (min-width: 600px) {
     .sidebar {
-        position: fixed;
-
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -106,15 +104,15 @@ a {
     }
 
     .shiftOut {
-        transform: translateX(-80%);
+        transform: translateX(-85%);
         background-color: var(--background-transparent);
-        z-index: 1 !important;
+        z-index: 5 !important;
     }
 
     .shiftBack {
         transform: translateX(0%);
         background-color: var(--backgroundDark);
-        z-index: 5 !important;
+        z-index: 3 !important;
     }
 
     .nav-item {
@@ -131,7 +129,6 @@ a {
 
 @media screen and (max-width: 599px) {
     .sidebar {
-        position: absolute;
         top: 0px;
         width: 100vw;
     }
@@ -147,9 +144,9 @@ a {
     }
 
     .shiftOut {
-        transform: translateY(-80%);
+        transform: translateY(-85%);
         background-color: var(--background-transparent);
-        z-index: 1 !important;
+        z-index: 5 !important;
     }
 
     .shiftBack {

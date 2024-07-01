@@ -1,7 +1,7 @@
 <template>
     <div>
         <label :for="props.name" class="q-label">{{props.question}}</label><br />
-        <input :name="props.name" :id="props.name" v-model="age" class="q" @beforeinput="before" @input.prevent="handleInput" />
+        <input :name="props.name" :id="props.name" v-model="age" class="q w-fit" @beforeinput="before" @input.prevent="handleInput" />
     </div>
 </template>
 

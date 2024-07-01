@@ -4,7 +4,7 @@
         <ul v-if="routes.type=='dir'">
           <WikiRoutes v-for="route in routes.contents" :routes="route" />
         </ul>
-        <RouterLink v-else class="intext-link" :to="configuredPath">{{routes.name}}</RouterLink>
+        <RouterLink v-else class="intext-link" :to="configuredPath">{{routes.name.replace(".md", "")}}</RouterLink>
       </li>
 </template>
 

@@ -2,7 +2,7 @@
     <div :class="{'error-box': blank}">
         <label :for="props.name" class="q-label">{{ question }}</label><br />
         <input type="text" :id="props.name" :name="props.name" v-model="name" @beforeinput="setOldName" @input.prevent="handleChange"
-            class="q" />
+            class="q w-100" />
         <p v-if="blank" class="error-text">Blank handles are not allowed.</p>
     </div>
 </template>

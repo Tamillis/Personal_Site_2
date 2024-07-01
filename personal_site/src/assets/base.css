@@ -35,6 +35,13 @@
   
 }
 
+#app {
+  height:100vh;
+  padding:0;
+  margin:0;
+  overflow:auto;
+}
+
 /* Element styles, site-wide */
 html {
   overflow: auto;
@@ -131,4 +138,16 @@ select {
   color: var(--text-color);
   background-color: var(--background);
   padding: 0px 0.5rem;
+}
+
+textarea {
+  appearance: none;
+  display: inline;
+  outline: none;
+  border: none;
+  text-align: left;
+  color: var(--text-color);
+  background-color: var(--background);
+  padding: 0px 0.5rem;
+  height: 3em;
 }

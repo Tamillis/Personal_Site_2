@@ -1,6 +1,6 @@
 <template>
     <div :class="{ container: expanded, header: !expanded }">
-        <h3 @click="$emit('chosen')">{{ name }}<span v-if="!expanded" class="arrow">▼</span><span class="arrow"
+        <h3 @click="$emit('chosen', name)">{{ name }}<span v-if="!expanded" class="arrow">▼</span><span class="arrow"
                 v-else>▲</span></h3>
         <div id="body" v-if="expanded" class="inner-container">
             <slot></slot>

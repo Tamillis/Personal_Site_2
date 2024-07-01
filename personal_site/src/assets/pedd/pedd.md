@@ -141,3 +141,10 @@ Races have been tweaked in a number of ways. Go through the following steps to c
 6. Remove all other non-iconic features and make them the Racial Powers options for that Race, including from all sub-races.
 7. If a Racial Power is iconic (it cannot be removed without intrinsically damaging the fantasy of the race), keep it as a named feature of the race. (Such as Lucky, for the Halfling). Try to balance power through tempering racial powers for that race, or introduce a malus elsewhere (such as lowering baseHealth, like I have for the Elves)
 8. Create a list of Racial Powers from the removed Features, converting each Feature to a Power, and include any other racial powers to that list that should apply (check with your GM). 
+
+### Converting Spells
+
+Spells are mostly left as is, but the use of Flat Math means that damage does need to be brought down for higher level spells. As I haven't started to do that yet, I don't have a baseline to recommend here.
+
+Another are that needs redoing are Reaction spells. By default, change Reaction to Bonus Action. It may make sense to rejig the effect slightly as well, such as "until the start/end of their next turn" to "this turn" since that's how that works now.
+

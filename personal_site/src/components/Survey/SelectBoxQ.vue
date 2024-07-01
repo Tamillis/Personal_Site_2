@@ -1,7 +1,7 @@
 <template>
     <div :class="{'error-box': blank}">
         <label :for="props.name" class="q-label">{{props.question}}</label><br />
-        <select :name="props.name" :id="props.name" class="q" v-model="countrySelected">
+        <select :name="props.name" :id="props.name" class="q w-100" v-model="countrySelected">
             <option disabled value="">Please select your country</option>
             <option v-for="country in countries" :value="country">{{country}}</option>
         </select>

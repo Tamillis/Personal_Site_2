@@ -138,4 +138,8 @@ input[type=number] {
 .radioQ:checked {
   background: white;
 }
+
+form input, form textarea {
+  padding-left:2rem !important;
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
-    <select class="intext-link" :selected="selected" @change="(event) => setStat(event)">
-        <option selected disabled>Any {{ val < 0 ? val : "+" + val }}</option>
+    <select class="intext-link" v-model="selected" @change="$emit('statChosen', selected, val)">
+        <option value="Any" disabled>Any {{ val < 0 ? val : "+" + val }}</option>
         <option value="Accuracy">Accuracy {{ val < 0 ? val : "+" + val }}</option>
         <option value="Perception">Perception {{ val < 0 ? val : "+" + val }}</option>
         <option value="Strength">Strength {{ val < 0 ? val : "+" + val }}</option>
@@ -16,13 +16,6 @@ import { ref } from 'vue';
 const props = defineProps({ val: Number });
 const emit = defineEmits(['statChosen']);
 let selected = ref("Any");
-let priorStat = "";
-
-let setStat = (e) => {
-    priorStat = selected.value;
-    selected.value = e.target.value;
-    emit("statChosen", selected.value, priorStat, props.val);
-};
 
 </script>
 
@@ -34,8 +27,13 @@ select {
     margin: 0;
     padding: 0;
 }
+
 option {
     background-color: #0000;
     color: black;
+}
+
+option:disabled {
+    background-color: #1114
 }
 </style>
