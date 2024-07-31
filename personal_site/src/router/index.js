@@ -58,6 +58,11 @@ const router = createRouter({
       component: () => import('../views/PEDD/PEDDPowers.vue')
     },
     {
+      path: '/pedd/magic',
+      name:'pedd-magic',
+      component: () => import('../views/PEDD/PEDDMagic.vue')
+    },
+    {
       path: '/mewiki',
       name: 'mewiki',
       component: () => import('../views/WikiView.vue')

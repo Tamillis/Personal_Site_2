@@ -1,5 +1,5 @@
 ## Spheres of Magic
-Spellcasting has undergone a serious remake. Gone are spell casting classes, of course, and spell lists for each class. Now all spell lists are combined into 4 “Spheres of Magic”; Arcane, Divine, Primal and Occult. The nebulous "Spellcasting" feature has been separated into 5 different spellcasting Powers, one for each Sphere as well as one for Pact Magic. Each are fundamentally unique and not just because of the associated spell list and minor quirks, adding both flavour and mechanical differentiation. 
+Spellcasting has undergone a serious remake. Gone are spell casting classes, of course, and spell lists for each class, and even the confusingly labelled 'spell-levels'. Now all spell lists are combined into 4 “Spheres of Magic”; Arcane, Divine, Primal and Occult. The schizophrenic "Spellcasting" feature has been separated into 5 different spellcasting Powers, one for each Sphere as well as one for Pact Magic. Each are fundamentally unique and not just because of the associated spell list and minor quirks, adding both flavour and mechanical differentiation.
 
 Note that there is significant overlap for the spheres, many spells belong to, and are usable by, more than one sphere.
 
