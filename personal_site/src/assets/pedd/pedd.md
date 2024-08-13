@@ -1,4 +1,4 @@
-## A remake of 5e
+## My 5e Overhaul
 
 "One D&D", sorry "5.5" now, is coming and Wizards of the Coast really put their PR foot in it with the licensing changes so we're all ready to jump ship. I instead find myself remaking the ship, taking what I think works well, and changing, exchanging and adding in what I would like it to have. So if I were to make a 6th edition of a fashion that suited my tastes and allowed me to explore, reformulate and refine areas of mechanics in which I personally have an interest, while keeping much the rest the same, this would be that. A "Pete's Edition of Dungeons & Dragons", you might say.
 
@@ -104,13 +104,13 @@ There are many subcategories that the Character Types can be grouped with:
 ## Converting from 5e
 
 ### Features
-First, any and all Features can be taken as written so long as any areas of the game they touch haven't been effected by changes in PEDD. Those that do will need adjusting, and some Features have been rewritten wholesale, such as Spellcasting (which has its own section in powers [here](#spheres-of-magic)). See the points below.
+First, any and all Features can be taken as written so long as any areas of the game they touch haven't been effected by changes in PEDD. Those that do will need adjusting, and some Features have been rewritten wholesale, such as Spellcasting (which has its own section in Magic [here](/pedd/magic#spheres-of-magic)). See the points below.
 
 **Ability Score Increases** - any "Ability Score Increase" features are constrained to, at maximum, two +1's in the stated abilities. Any base-race - subrace combinations with 3 or more ability score increases only increase 2 Stats by +1, and you can choose which two. Any increases to Dexterity can instead be increases to Accuracy. Any increases to wisdom are instead increases to your choice of Perception or Willpower.
 
 **Perception Proficiency** - any feature that gives proficiency in perception instead grants the Keen Sense Power.
 
-**Saving Throw Proficiency** - any feature that gives a saving throw proficiency instead gives +1 to the corresponding Resistance (see [Converting Saves](#converting-saves))
+**Saving Throw Proficiency** - any feature that gives a saving throw proficiency instead gives +1 to the corresponding Resistance
 
 ### Spells and Flat Math Damage Rescaling
 Number of dice based on size, x1 for small/medium, x2 for large, x3 for huge, x4 for gargantuan.
@@ -140,7 +140,7 @@ Races have been tweaked in a number of ways. Go through the following steps to c
 5. Remove any Skill proficiencies not distinctly tied to the physicality of the race (such as weapon or tool proficiencies)
 6. Remove all other non-iconic features and make them the Racial Powers options for that Race, including from all sub-races.
 7. If a Racial Power is iconic (it cannot be removed without intrinsically damaging the fantasy of the race), keep it as a named feature of the race. (Such as Lucky, for the Halfling). Try to balance power through tempering racial powers for that race, or introduce a malus elsewhere (such as lowering baseHealth, like I have for the Elves)
-8. Create a list of Racial Powers from the removed Features, converting each Feature to a Power, and include any other racial powers to that list that should apply (check with your GM). 
+8. Create a list of Racial Powers from the removed Features, converting each Feature to a Power, and include any other racial powers to that list that should apply (check with your GM).
 
 ### Converting Spells
 

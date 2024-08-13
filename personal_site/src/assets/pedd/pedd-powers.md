@@ -17,13 +17,22 @@ For example (as both Hardy and Hale are "Once every 4<sup>th</sup> Power" Powers
 
 Powers taken more than once should be noted what "Rank" they are at; such as "Hale I" or "Hale IV", to show that they are technically two separate powers. Many Powers describe the differences that occur when the Power is taken more than once.
 
-#### Powers In Training
+### A Reflection on Powers
+Obviously, what I'd decided to do was translate the features of 5e as-is as much as possible: for the twin reasons of simplicity and familiarity. However seeing as PEDD is drifiting further and further from its point of origin, and now we have this pretty list of powers with plenty of awkward prerequisites, odd benefits and often boxed in bizare categories, me thinks it is time to start making more serious changes.
+
+Primarily I'm inspired by another classless system I saw that also did away with any pretense at connecting to the old classes, but I wish to retain a much greater connection than that. It is simply that, more than anything, I wish to streamline some of the powers, bring them in line with my own sensibilities and implied setting, and explore some of my own ideas.
+
+If I'm going to change something as fundamental as attributes, I might as well start changing features.
+
+This does also imply a future change to spells, but we'll get to that, and whether and by how much it would be necessary, later.
+
+### Powers In Training
 Powers are “in-training” before coming online, to encourage roleplay of skill acquisition. E.g. a character at the start of each session declares what Power/s they are training towards and when the when the group / DM feels its appropriate, characters gain that Power. Alternatively, play make indicate a certain Power a character should take next as a natural next progression.
 
 The amount of time needed for a Power is thematic, and depends on the pace of the game being played, your table's position on the arcade-to-simulation scale, and of course the Power itself. Many PEDD Powers also refer to being able to learn other Powers at an "increased rate". By default you can think of this as halving the amount of time, though again it depends on the table and style of play at hand.
 
 
-#### Tags
+### Tags
 Powers come with tags for ease of perusal and understanding. <a id="toggle-tags">Click here for explanation</a>:
 
 <section id="tag-section" class="hidden"> 

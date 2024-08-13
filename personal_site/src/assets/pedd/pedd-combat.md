@@ -48,15 +48,15 @@ Monsters function just like player characters in that they have health, defence 
 Most small monsters die when they reach the Wounded I condition. I.e., they can take "one wound". But some don't. Some monsters can take multiple Wounds, and in fact only lose parts of themselves (such as a tail, layer of armour, claws, or part of their construction if a construct). Their Health also resets when they take a Wound, meaning each wound they can take is like a health bar. Such monsters, great foes, have a "Wounds" that you must burn through first.
 
 ### Defence
-To make characters easier to strike, meaning less spongey, and also to make combat more proactive and engaging; the Defence Stat replaces AC (a simple rename for ease of understanding. AC really is an odd term), and is more flexible than a flat value, being made of three parts:
+To make characters easier to strike, meaning less spongey, and also to make combat more proactive and engaging; the Defence Stat replaces AC (a simple rename for ease of understanding. AC really is an odd term in isolate), and is more flexible than a flat value, being made of three parts:
 - a Base Defence value of 8 for Medium characters, 10 for Small characters and 6 for Large characters. Should it be relevant, Huge characters have a Base Defence of 2 and Tiny a Base Defence of 14. (Smaller characters are harder to hit).
 - an Armour value determined by worn Equipment (see [Armour](./pedd/combat#armour))
-- an Evasion value, your Reflexes to a minimum of 0 (which can be limited by worn Equipment).
+- your Reflexes to a minimum of 0 (which can be limited by worn Equipment).
 
 Instead Defence is calculated when required from these three parts, depending on what parts are in play. This gives us three kinds of Defence;
-- **Defence** - Defence with both Armour and Evasion.
-- **Unarmoured Defence** - Defence without Armour, armour limits on Evasion are still applied. A few effects target Unarmoured Defence.
-- **Stationary Defence** - Defence without the benefit of Evasion, often called "Touch AC" in other systems. Some effects target Stationary Defence, and surprised or unmoving targets only get their Stationary Defence. Any condition that reduces a character to 0 speed, called "Immobilised" in PEDD, uses its Stationary Defence.
+- **Defence** - Defence with both Armour and Reflexes.
+- **Unarmoured Defence** - Defence without Armour, armour limits on Reflexes are still applied. A few effects target Unarmoured Defence.
+- **Stationary Defence** - Defence without the benefit of Reflexes, often called "Touch AC" in other systems. Some effects target Stationary Defence, and surprised or unmoving targets only get their Stationary Defence. Any condition that reduces a character to 0 speed, called "Immobilised" in PEDD, uses its Stationary Defence.
 
 Remember that the Armour value also changes during play as you don and doff Equipment, and especially based on whether you Block with your Shield or not! Armour Piercing strikes ignore some or all of your Armour as well, such as guns.
 
@@ -69,6 +69,9 @@ More details about the guns and munitions, as they're a core part of my setting,
 
 #### Weapons
 Courtesy of Weapons Remastered, adapted and tweaked.
+
+<a id="toggle-weapons">Click here to show</a>:
+<section id="weapons-section" class="hidden"> 
 
 Weapons with an *, like the Lance, have special properties described below the table.
 
@@ -169,8 +172,14 @@ creatures that are two sizes or more larger than it. A character can use an Acti
 **Shiv** - Crude and simply made, a shiv is the weapon of the desparate. If you make an attack roll with this weapon and the dice result is 1, the Shiv breaks.
 
 **Whip** - The whip functionally also has the benefits of the Winged property, without being Winged. 
+</section>
 
 #### Weapon Properties
+
+<a id="toggle-weapon-properties">Click here to show:</a>
+
+<section id="weapon-properties-section" class="hidden"> 
+
 - **Ammunition (X/Y)** - You can use a weapon that has the Ammunition property to make a ranged attack only if you have Ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a weapon). Expended arrows, bolts and darts can be recovered, by taking a minute to search the battlefield, but guns that use paper cartridges cannot. X denotes the short range of the weapon, and Y the long range (attacks at Disadvantage).
 - **Armour Piercing** & **Light Armour Piercing** – the weapon ignores some benefit of Armour to a target's Defence. The target's Armour is reduced, to a minimum of 0, by 2 for Light Armour Piercing and by 6 for Armour Piercing.
 - **Block** - You can raise this weapon like a shield, using your Bonus Action to Block, gaining a bonus of 1 to Defence.
@@ -198,25 +207,26 @@ Strength or Dexterity for the attack and damage rolls. You must use the same mod
 - **Knockback (Str/X)** – effected characters have to pass a Fortitude check vs the value given or be thrown X ft and made prone. Additionally, they take falling damage as if they fell X feet (regardless of the distance actually thrown).
 - **Misfire** - on an attack roll of 1, the gun misfires; the attack fails, and a clearing bonus action to clean the gun is required before it can be fired again, leaving it unloaded.
 - **Scatter X** – weapons with this property also target any creature within 5ft of the target, using the same to hit roll, for the damage indicated in X. The scatter property is not in effect if the primary target is 10ft or less from the attacker.
+- **20 Paper Cartridges** – these pre-prepared cartridges were invented in the Imperial capital and rapidly took over from manually priming, loading, and wadding shot, which used to take far longer and was far more prone to mistake. Unlike other ammunition, paper cartridges cannot be reused. The powder, paper, and wax wadding is burnt up upon firing, and the lead ball is often missing (in the ground or the body of the target) and always deformed. 20 cartridges can be bought for 1gp, and are of the type “longarm”, “sidearm” or “buckshot”. Each can only be used with its associated weapons, and each cost the same.
 
-#### *Ammunition*
-
-**20 Paper Cartridges** – these pre-prepared cartridges were invented in the Imperial capital and rapidly took over from manually priming, loading, and wadding shot, which used to take far longer and was far more prone to mistake. Unlike other ammunition, paper cartridges cannot be reused. The powder, paper, and wax wadding is burnt up upon firing, and the lead ball is often missing (in the ground or the body of the target) and always deformed. 20 cartridges can be bought for 1gp, and are of the type “longarm”, “sidearm” or “buckshot”. Each can only be used with its associated weapons, and each cost the same.
+</section>
 
 #### Armour
-Armour is changed to the following (+ values can be taken in addition):
+Armour is changed to the following (+ values can be taken in addition) <a id="toggle-armour">show</a>:
+
+<section id="armour-section" class="hidden"> 
+
 | Name | Cost | Armour | Property |
 | --- | --- | --- | --- |
+| **Body Armour** |
 | Padded | 5gp | 1 | Light, Loud |
 | Leather | 10gp | 1 | Light |
 | Studded Leather | 45gp | 2 | Light |
-| **Medium Armour** |
 | Hide | 10gp | 2 | Medium |
 | Chain shirt | 50gp | 3 | Medium |
 | Scale mail | 50gp | 4 | Medium, Loud |
 | Breastplate | 400gp | 4 | Medium |
 | Half plate | 750gp | 5 | Medium, Loud |
-| **Heavy Armour** |
 | Ring mail | 30gp | 4 | Heavy, Loud |
 | Chain mail | 75gp | 6 | Heavy, Loud |
 | Splint | 200gp | 7 | Heavy, Loud |
@@ -228,11 +238,11 @@ Armour is changed to the following (+ values can be taken in addition):
 | Shield | 10gp | +2 | Medium, Shield |
 | Tower Shield | 75gp | +3 | Heavy, Loud, Shield |
 
-**Light** - no limit on Evasion
+**Light** - no limit on Reflexes
 
-**Medium** - your Evasion cannot be greater than 2.
+**Medium** - your Reflexes cannot be greater than 2.
 
-**Heavy** - you cannot use Evasion in calculations of Defence.
+**Heavy** - you do not use Reflexes in calculations of Defence, and your Reflexes are limited to 2.
 
 **Loud** - you have Disadvantage on Stealth checks.
 
@@ -240,72 +250,88 @@ Armour is changed to the following (+ values can be taken in addition):
 
 **Blinkered** - you have Disadvantage on Perception checks
 
-**Shield** - equipped in 1 hand, you must use a Bonus Action to Block to gain the bonus to Armour
+**Shield** - equipped in 1 hand, you must use a Bonus Action to Block to gain the bonus to Armour. If you use two shields, and use your Bonus Action and Action to Block, yes you may gain both shields' defence bonuses.
+
+</section>
 
 #### Natural Armour
-Many creatures have Natural Armour, and so might you through strange Powers. Natural Armour grants an armour value, cannot be doffed and is always 'light', i.e. never limits Evasion. Like other abse armour, it does not stack, so to benefit from greater armour values, one must wear armour with a greater value than your natural armour.
+Many creatures have Natural Armour, and so might you through strange Powers. Natural Armour grants an armour value, cannot be doffed and is always 'light', i.e. never limits Reflexes. Like other body armour, it does not stack, so to benefit from greater armour values, you must wear armour with a greater value than your natural armour.
 
 #### Cover
-Cover is functionally unchanged from the base game, but translates like so. Cover is a bonus to your Defence, a +2 for 'Half Cover' and a +5 for 'Three Quarters Cover'. This is independent of Armour and Evasion, so consider it part of your Base Defence. Additionally, don't forget that these bonuses apply to Reflex Saves as well, just as they apply to Dexterity Saves in 5e!
+Cover is functionally unchanged from the base game, but translates like so. Cover is a bonus to your Defence, a +2 for 'Half Cover' and a +5 for 'Three Quarters Cover'. This is independent of Armour and Evasion, so consider it part of your Base Defence. Additionally, these bonuses apply to Reflex Saves as well, just as cover applies to Dexterity Saves in 5e.
 
 ### One Action All At Once
-A radical change I've experimented a little with is to basic combat where, simply, all characters in a **Round** of combat have one **Action** (and a Bonus Action), and everyone "acts" at once, no initiative. No taking "Turns".
+A radical change to basic combat I've received repeated positive feedback for: where, simply, all characters in a **Round** of combat have one **Action** (and a Bonus Action), and everyone "acts" at once, no initiative. No taking "Turns".
 
 How on Earth does that work? You might be thinking.
 
-The GM declares the intentions of most enemies in the scene at the start of a Round, just as their movements would give away what they're about to do. Then all players decide among themselves what they're going to do that Round. When everyone is happy with their Actions, you "resolve" the round in whatever order works.
+The GM declares the intentions of most enemies in the scene at the start of a Round, just as their movements would give away what they're about to do. Then all players decide among themselves what they're going to do that Round. When everyone is happy with their Actions, you "resolve" the round in whatever order works. Only in the edge case when the order of actions matters does Initiative need to be determined, using an [Initiative Contest](#initiative-contest).
+
+Often, some players may still be thinking while others already know what they want to do. Resolve the actions of the decided players and their engagements (see Engagement below), and you'll often find the remaining players now know what to do.
 
 Only powerful or well-trained enemies will be capable of **Hidden Actions**, where their intentions are not stated by the GM but kept secret until after players commit to their own Actions, but player characters can always attempt to **Discern** enemy moves anyway (see [Additional Actions](#additional-actions)).
 
-**Initiative Contest** - For any situations where the order of actions matters, the two characters involved roll off with their Initiative, the secondary statistic that starts as your Perception and Dexterity, to see who can get the higher value. If it makes sense to resolve such conflicts of interest using appropriate skill checks rather than Initiative (i.e. Athletics), then do so. For "slow" enemies / mooks the DM will just let the players go first, so-called "player's advantage". For example; "I try to grab the bag of gold before him", "OK, you and the white dragon need to make an Initiative Contest."
-
 Most Actions, however, can be resolved simultaneously. Attacks for example; two people just try to hit each other, damage each other, and collapse wounded at the same time if that is what happens.
 
-Since everyone gets only one Action, the old action / bonus-action / movement economy of 5e is radically simplified. Movement is simply another Action, making the "Dash" action and the "Movement Action" synonymous. Bonus Actions are mostly unchanged but are best thought of as 'concurrent actions', happening at the same time and therefore not significantly interrupting the character's main action. Reactions, interestingly, disappear. 
+Since everyone gets only one Action, the old action / bonus-action / movement economy of 5e is simplified. Movement is simply another Action, making the "Dash" action and the "Movement Action" synonymous. Bonus Actions are mostly unchanged but are best thought of as 'concurrent actions', happening at the same time and therefore not significantly interrupting the character's main action. Reactions, interestingly, disappear. 
 
 **Converting Reactions** - Any "Reactions" are considered "Actions". As Turns are simultaneous their triggers don't matter. If anything, the "triggers" are natural consequences of play. "Oh, the zombie is attempting to bite my face? I block!"
 
+### Combat Actions
+So what can that one action can do? Here are a variety of tactical basic combat actions available to all;
+- **Attack** - make your weapon or spell attack/s against their targets. One attack Action may involve a number of Attacks on a number of targets depending on the weapon, spell or some Power. As in 5e, this is the distinction between an "Attack Action" and specific "Attacks". Unless otherwise stated, full attack action attacks are with lethal intent.
+- **Move** - move your Speed along a path of your choice. Difficult terrain doubles the speed required, swimming / climbing required quadruple the speed, and impassible terrain must be circumnavigated.
+- **Charge** - when you use your Action to Move, moving at least 15ft, at the end of the Move you can make 1 Weapon Attack at Advantage as a Bonus Action.
+- **Run and Gun** - when you use your Action to Move, you can make 1 Ranged Weapon Attack as a Bonus Action at Disadvantage.
+- **Dodge** - as an Action, you make a Reflex Saving Throw and the result (or your Stationary Defence, if that is higher) replaces your Defence value for the rest of the Round.
+- **Block** - as a Bonus Action, you raise your shield, or weapon if it has the Block property, to gain the item's Armour bonus. This prevents you using that item as a weapon to attack. The Armour bonus lasts for the rest of the Round.
+- **Parry** - if your weapon has the Parry Property, when an enemy makes a melee attack against you, you can choose to make a Weapon Attack against them, and use your weapon attack roll as your Defense for the enemy's attack resolution (even if the result is lower than your normal Defence). Resolve the enemy's attack against your new Defence. If this causes them to fail, carry over your result as if you had just made a weapon attack against them. If it is a success, you damage them as per a normal weapon attack.
+- **Stand** - a Bonus Action to go from Prone to Standing.
+- **Go to Cover / Go Prone** - as a Bonus Action make yourself Prone, or enter adjacent cover. The Prone condition or being in cover uses Stationary Defence. As before Prone makes being shot at occur at disadvantage, and cover is +2/+5 to Defence for half / ¾ cover.
+- **Disengage** - as a Bonus Action, move 5ft without triggering Attacks of Opportunity.
+- **Attack of Opportunity** - as a Bonus Action to an enemy you're engaged with moving away from you without Disengaging from you, you can make an attack action on them, after which they have moved away and are no longer engaged with you for that Round.
+- **Discern** - as an Attack or Action, you can make a Perception check against one enemy whose has a Hidden Action. If successful (the GM will decide the DC), their Action is no longer hidden and everyone in the combat can know.
+- **Disarm** - as an Attack or Action against an enemy in your Reach holding a weapon or shield, you can make a Dexterity check against the enemy's passive Reflexes. If you succeed, you rip the weapon from their grasp and throw it 20ft in a direction of your choice (this does not count as a thrown weapon attack), or equip it an empty hand of yours.
+- **Shove** - as an Attack or Action you attempt to make an Enemy Prone or move 10ft in a direction of your choice. You make a Strength check against their passive Fortitude.
+- **Grapple** - as an Attack or Action you attempt to Restrain an character. You make a Strength check against their passive Fortitude. If you succeed both the character is Restrained. On subsequent turns you can maintain the grapple or end the grapple (no additional action or roll needed), and you can only use your Move action, if you do, to Move yourself and the enemy as if going through Difficult Terrain (typically, at half Speed). The grappled character can use their Action to attempt to escape the Grapple, making a Strength or Dexterity check (their choice) vs your passive Fortitude, ending the grapple on a success.
+- **Non-lethal Strike** (a.k.a. knockout strike) - you make an Attack Action with the intention to knock unconscious rather than kill. Don't roll for Damage, instead take each dice roll (if any) to have been a 1.
+- **Coup de Grace** - when making an Attack Action against an Incapacitated target, don't roll for Damage, instead take each dice roll (if any) to be the maximum result.
+
+#### Initiative Contest
+For any situations where the order of actions matters, the two (or more) characters involved roll off with the most appropriate skill, to see who can get the higher value. For "slow" enemies / mooks the DM will just let the players go first, so-called "player's advantage". For example; "I try to grab the bag of gold before him", "OK, you and the white dragon need to make an Dexterity Check."
+
 #### Engagement
-To help with handling fights with little to no initiative and create a natural ebb-and-flow to combat, combatants are "paired off" in **Engagements**. These are the momentary pairs or small groups that naturally form in the middle of any chaotic fight, and allows us as the players to "zoom in" on little microcosms of fights with the camera, as it were, focusing on resolving pairing after pairing.
+To help with handling fights with little to no initiative and create a natural ebb-and-flow to combat, combatants are "paired off" in Engagements. These are the momentary pairs or small groups that naturally form in the middle of any chaotic fight, and allows us as the players to "zoom in" on little microcosms of fights with the camera, as it were, focusing on resolving pairing after pairing. This can help with indicisive players where ready pairings can resolve first.
 
 Engagements are resolved effectively simultaneously and the order of Engagements doesn’t matter, as with only 1 Action per turn melees rarely effect each other.
 
-All combat is resolved in two simple steps:
+All combat is resolved in three simple steps:
 
-1. **Determine Engagements** - where combatents, according to their ["Zone of Engagement"](#zone-of-engagement), “pair off”. “Pulling” and “turning”, if in conflict, are an Initiative Contest. Any who intend to Move do, Engaging as necessary. This may seem complex at the outset, but these rules mostly only exist to resolve edge-cases and cases of conflict. 9 times out of 10 the GM simply needs to ask "OK, so who's fighting the Ogre and who's shooting back at the goblins?".
-2. **Resolve Engagements** - resolving pairs/groups in a sensible/cinematic sequence. Melee conflicts are easily resolved in their engagements. Ranged attacks naturally involve unpaired individuals but often can be smoothly resolved at the start or end of a Round. Resolve conflicts of interest with an Initiative Contest.
+1. **Moving** - Any who intend to Move, do so. When more than one character takes the Move action with respect to other characters' positions, it can get quite confusing quite quickly. As such, when declaring a Move, declare also the 'goal' of the movement and generally speaking a natural conclusion where all characters reach or approach their goals becomes clear. For example, if we have Mr A, Mr B and Mr C in the awkward face off of A moving to B, B to C and C to A, where does everyone end up? Bunched in the middle: because when viewed through the lense of their goals, the natural result is that they all start moving towards each other (this way, A gets to B, who gets to C, who gets to A). Another situation may be: A is moving to B, who is moving to C, who is running away from A (or B really). In this case, they all move linearly in the direction of C's flight (which is away from A (or B)). If it is *not* clear, make an Initiative Contest check to see who goes first, and then resolve from there.
+2. **Determine Engagements** - (if this step is necessary) where combatents pair off with ["Zone of Engagement"](#zone-of-engagement). This may seem complex at the outset, but these rules mostly only exist to resolve edge-cases and opinions of conflict. 9 times out of 10 the GM simply needs to ask "OK, so who's fighting the Ogre wacking Gary and who's shooting back at the goblins?".
+3. **Resolve Engagements** - resolving pairs/groups in a sensible/cinematic sequence. Melee conflicts are easily resolved in their engagements. Ranged attacks naturally involve unpaired individuals but often can be smoothly resolved at the start or end of a Round. Resolve conflicts of interest with an Initiative Contest.
 
 #### Zone of Engagement
 The rules of pairing off, pulling and turning. 
 
 How do you avoid a long conga-line chain of awkwardly connected characters fighting each other? "Pairing off". Sometimes if you want to attack Mr A, even if they're attacking Mr B, because Mr C is attacking you and is otherwise unengaged, you have no choice but to "**Turn**" from your initial intended target, who is said to "**Pull**" you, and "**Pair Off**" with them. I.e., you cannot be "pulled" if you are engaged with someone who is engaged with you.
 
+Intent:
+
+> Mr C -> You -> Mr A -> Mr B -> ...
+
+Result:
+
+> Mr C <-> You | Mr A <-> Mr B ...
+
+“Pulling” and “turning”, if in conflict, are an Initiative Contest.
+
 Additionally, a character can only be engaged by a maximum number of characters according to their relative size. Sometimes someone is surrounded by attackers, and even if you wanted to join in on the bullying, you're crowded out. The maximum number of opponents a character of a given relative size can have is:
-- smaller - 1
-- same - 2
-- larger - 4
-- 2 sizes larger - 8
-- 3 sizes+ larger - any
-
-**Flanking** - replacing the popular alternate rule of 5e, when you are the one in an Engagement who the foe isn’t Engaging, you have Advantage on your waepon attack rolls. You cannot flank a creature 2 or more sizes larger than you.
-
-### Combat Actions
-The other facet of making combat more tactical, beside the radical change of One Action All At Once, is what that one action can do. A variety of generally available tactical basic combat actions are added; 
-- **Charge** - when you use your Action to Move, moving at least 15ft, at the end of the Move you can make 1 Weapon Attack at Advantage as a Bonus Action.
-- **Run and Gun** - when you use your Action to Move, you can make 1 Ranged Weapon Attack as a Bonus Action at Disadvantage.
-- **Dodge** - as an Action, you make a Reflex Saving Throw and if the result is higher than your Defence, it replaces your Defence value for the rest of the Round
-- **Block** - as a Bonus Action, you raise your shield, or weapon if it has the Block property, to gain the item's Armour bonus. This prevents you using that item as a weapon to attack. The Armour bonus lasts for the rest of the round.
-- **Parry** - if your weapon has the Parry Property, when you make an attack action against an enemy who is making a melee attack against you use your weapon attack roll as your Defense for the enemy's attack resolution, and it also functions as a normal attack action. Resolve the enemy's attack against your new Defence, if its higher or even if it's lower.
-- **Disengage** - as a Bonus Action, move 5ft without triggering Attacks of Opportunity. (Replaces 5e action "Disengage")
-- **Stand** - a Bonus Action to go from Prone to Standing.
-- **Go to Cover / Go Prone** - as a Bonus Action make yourself Prone, or enter adjacent cover. The Prone condition or being in cover uses Stationary Defence. As before Prone makes being shot at occur at disadvantage, and cover is +2/+5 to Defence for half / ¾ cover.
-- **Attack of Opportunity** - as a Bonus Action to an enemy you're engaged with moving away from you without Disengaging from you, you can make an attack action on them, after which they have moved away and are no longer engaged with you for that Round.
-- **Discern** - as an Attack or Action, you can make a Perception check against one enemy whose has a Hidden Action. If successful (the GM will decide the DC), their Action is no longer hidden and everyone in the combat can know.
-- **Disarm** - as an Attack or Action against an enemy in your Reach holding a weapon or shield, you can make a Dexterity check against the enemy's passive Reflexes. If you succeed, you rip the weapon from their grasp and throw it 20ft in a direction of your choice (this does not count as a thrown weapon attack), or equip it an empty hand of yours.
-- **Shove** - as an Attack or Action you attempt to make an Enemy Prone or move 10ft in a direction of your choice. You make a Strength check against their passive Fortitude.
-- **Grapple** - as an Attack or Action you attempt to Restrain an character. You make a Strength check against their passive Fortitude. If you succeed both the character is Restrained. On subsequent turns you can maintain the grapple or end the grapple (no additional action or roll needed), and you can only use your Move action, if you do, to Move yourself and the enemy as if going through Difficult Terrain (typically, at half Speed). The grappled character can use their Action to attempt to escape the Grapple, making a Strength or Dexterity check (their choice) vs your passive Fortitude, ending the grapple on a success.
-- **Non-lethal Strike** (a.k.a. knockout strike) - you attack with the weapon with the intention to knock unconscious rather than kill. Don't roll for Damage, instead take each dice roll to have been a 1.
-- **Coup de Grace** - an attack made against an incapacitated target where damage is not rolled, assume maximum results for any damage dice.
+- 2+ sizes smaller - 1
+- smaller - 2
+- same - 4
+- larger - 8
+- 2+ sizes larger - any
 
 ### Conditions
 The following are changes and additions to D&D's conditions
@@ -319,6 +345,7 @@ The following are changes and additions to D&D's conditions
   - Attack rolls against the target character have Advantage.
 - **Charmed** - unless otherwise stated, a charmed character considers you an ally and will heed your commands, which you can give freely, to the best of its ability. However it will not obey commands that are against its interests. If it is an intelligent character, you can attempt to persuade or otherwise convince them to obey, or that their interests lie elsewhere.
 - **Frightened** - A Frightened character has Disadvantage on Ability checks and Attack rolls while the source of its fear is within line of sight. If it chooses to Move, the character must move away, or otherwise out of line of sight, from the source of its fear. The character doesn’t have to move into obviously dangerous ground, such as a fire or a pit.
+- **Flanked** - replacing the popular alternate rule of 5e, when you are the one in an Engagement who the foe isn’t Engaging, you have Advantage on your weapon attack rolls. You cannot flank a character 2 or more sizes larger than you.
 
 The following enviromental damage rules are updated and rolled into Conditions of the corresponding name:
 - **Falling** - At the end of a fall, a character takes 1d6 bludgeoning damage for every 10ft it fell, to a maximum of 200ft for 20d6. The character lands prone, unless it avoids taking damage from the fall.

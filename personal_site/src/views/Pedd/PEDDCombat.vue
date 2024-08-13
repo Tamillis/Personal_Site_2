@@ -2,7 +2,7 @@
     <section class="section bg-black-transparent-0p3">
         <h1 class="main-title">P.E.D.D.</h1>
         <h2 class="subsubtitle text-centre no-decoration">Combat</h2>
-        
+
         <Links />
 
         <div class="main-text inset">
@@ -11,7 +11,7 @@
 
     </section>
 </template>
-  
+
 <script setup>
 import { putMdinElement } from '../../assets/functionality';
 import { onMounted } from 'vue';
@@ -19,8 +19,18 @@ import Links from '../../components/PEDD/Links.vue';
 
 onMounted(() => putMdinElement('../src/assets/pedd/pedd-combat.md', 'pedd'));
 
+window.addEventListener("MarkedDone", () => {
+    let sections = ['weapons', 'weapon-properties', 'armour'];
+    for (let section of sections) {
+        console.log(section);
+        document.getElementById("toggle-" + section).addEventListener("click", () => {
+            document.getElementById(section + "-section").classList.toggle("hidden");
+        });
+    }
+});
+
 </script>
-  
+
 <style>
 #pedd a,
 #pedd a:link,

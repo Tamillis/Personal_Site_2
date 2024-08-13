@@ -32,7 +32,7 @@ When a character takes any Power that gives them access to Divine spells, they m
 
 Primal Magic is driven by the user's connection to the power of nature, wherever it is they find themselves. At the end of each Long Rest the caster must, in addition to preparing spells, commune with nature to be empowered by the 'Verdance' of the current locale. Consult the Verdance table below, also found in the "Primal Spellcasting" Power, and your DM to calculate the Verdance you use for your Primal Spells in the coming day, as well as any Powers that modify the Verdance you can access.
 
-### Verdance Table
+#### Verdance Table
 | Verdance | Boreal | Coastal | Deserts | Forests | Jungles | Plains | Mountains | Swamps | Underground |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Barren   | -1 | 1 | -1 | 0 | 1 | 1 | 0 | 0 | -1 |
@@ -146,7 +146,7 @@ Spells from the Arcane Sphere unavailable to you.
 | VIII | Sunburst | 
 | IX | Wish | 
 
-#### Spell Schools
+### Spell Schools
 Spell schools are another vestigial part of the D&D system, but I think they're actually quite interesting and deserve a bit more love. Now many Powers key specifically off a spell's school, notably Occult Spellcasting and my Goblinoid's race, hopefully making them more interesting and useful!
 
 #### Spell-like and Spellcasting Powers

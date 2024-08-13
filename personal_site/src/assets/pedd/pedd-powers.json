@@ -126,9 +126,9 @@
             "healing"
         ],
         "preq": [
-            "Savant - Abjuration"
+            "Arcane Spellcasting"
         ],
-        "desc": "You can weave magic around yourself for protection. When you cast an abjuration spell of Magnitude I or higher, you can simultaneously use a strand of the spell's magic to create a magical ward on yourself that lasts until you finish a Long Rest. The ward has Health equal to your Bonus + your Intelligence. Whenever you take damage, the ward takes the damage instead. If this damage reduces the ward to 0 hit points, you take any remaining damage. This may be in addition to any Temporary Health you gain. Whenever you cast an abjuration spell of Magnitude I, the ward regains an amount of Health equal to twice the Magnitude of the spell, up to a maximum of your Bonus + your Intelligence.\n\nWhile the ward has 0 Health, it can't absorb damage, but its magic remains and it can be refilled.\n\nOnce you create the ward, you can't create it again until you finish a Long Rest."
+        "desc": "You can redirect threads of your magic around yourself for protection. When you cast an Abjuration spell of Magnitude I or higher, you can simultaneously create a magical ward on yourself or an ally within 30ft that lasts until you finish a Long Rest. The ward gives you Temporary Health equal to your Bonus + your Intelligence. Whenever you cast an Abjuration spell of Magnitude I, the ward regains an amount of Health equal to twice the Magnitude of the spell, up to a maximum of your Bonus + your Intelligence.\n\nWhen the Temporary Health of the ward is depleted or replaced, its magic remains and it can be refilled.\n\nOnce you create the ward, you can't create it again until you finish a Long Rest.\n\nIf cast on an ally and that ally leaves the plane of existence you are on, the ward ends."
     },
     {
         "name": "Archery",
@@ -1092,9 +1092,9 @@
             "healing"
         ],
         "preq": [
-            "Savant - Necromancy"
+            "Mana"
         ],
-        "desc": "You gain the ability to reap life energy from beasts, dragons, fell, fey, giants, lycanthropes, monstrosities, oozes, or plants you kill with your spells. Once per turn when you kill one or more of these characters with a spell of 1st Magnitude or higher, you regain health equal to twice the spell's Magnitude, or three times its Magnitude if the spell belongs to the School of Necromancy."
+        "desc": "You gain the ability to reap life energy from beasts, dragons, fell, fey, giants, lycanthropes, monstrosities, oozes, or plants you kill with your spells. Once per turn when you kill one or more of these characters with a spell of Magnitude I or higher, you regain Health equal to twice the spell's Magnitude, or three times its Magnitude if the spell belongs to the School of Necromancy."
     },
     {
         "name": "Grudge Bearer",
@@ -1220,9 +1220,9 @@
             "crowd-control"
         ],
         "preq": [
-            "Savant - Enchantment"
+            "Spellcasting"
         ],
-        "desc": "Your soft words and enchanting gaze can magically enthrall another character. As an Action, choose one character that you can see within 5ft of you. If the target can see or hear you, it must succeed on a Willpower saving throw against your Arcane Spellcasting spell save DC or be charmed by you until the end of your next turn. The charmed character's speed drops to 0, and the character is Incapacitated and visibly dazed.\n\nOn subsequent Rounds, you can use your Action to maintain this effect, extending its duration until the end of the Round. However, the effect ends if you move more than 5ft away from the character, if the character can neither see nor hear you, or if the character takes damage.\n\nOnce the effect ends, or if the character succeeds on its initial saving throw against this effect, you can't use this Power on that character again until you finish a Long Rest."
+        "desc": "Your soft words and enchanting gaze can magically enthrall another character. As an Action, choose one character that you can see within 5ft of you. If the target can see or hear you, it must succeed on a Willpower saving throw against your Spellcasting spell save DC or be charmed by you until the end of your next turn. The charmed character's speed drops to 0, and the character is Incapacitated and visibly dazed.\n\nOn subsequent Rounds, you can use your Action to maintain this effect, extending its duration until the end of the Round. However, the effect ends if you move more than 5ft away from the character, if the character can neither see nor hear you, or if the character takes damage.\n\nOnce the effect ends, or if the character succeeds on its initial saving throw against this effect, you can't use this Power on that character again until you finish a Long Rest."
     },
     {
         "name": "Improved Minor Illusion",
@@ -1231,9 +1231,9 @@
             "utility"
         ],
         "preq": [
-            "Savant - Illusion"
+            "Spell - Minor Illusion"
         ],
-        "desc": "You learn the Minor Illusion cantrip. If you already know this cantrip, you learn a different Arcane Sphere cantrip of your choice. The cantrip doesn't count against your number of cantrips known. When you cast Minor Illusion, you can create both a sound and an image with a single casting of the spell."
+        "desc": "When you cast Minor Illusion, you can create both a sound and an image with a single casting of the spell."
     },
     {
         "name": "Improved Rage",
@@ -1493,7 +1493,7 @@
             "utility"
         ],
         "preq": [
-            "Savant - Transmutation"
+            "Arcane Spellcasting"
         ],
         "desc": "When you studied transmutation, you learned to temporarily alter the physical properties of one nonmagical object, changing it from one substance into another. You perform a special alchemical procedure on one object composed entirely of wood, stone (but not a gemstone), lead, iron or other common metals, or silver, transforming it into a different one of those materials. For each 10 minutes you spend performing the procedure, you can transform up to 1 cubic foot of material. After 1 hour, or until you lose your concentration (as if you were concentrating on a spell), the material reverts to its original substance."
     },
@@ -1504,7 +1504,7 @@
             "utility"
         ],
         "preq": [
-            "Savant - Conjuration"
+            "Arcane Spellcasting"
         ],
         "desc": "You can use your Action to conjure up an inanimate object in your hand or on the ground in an unoccupied space that you can see within 10ft of you. This object can be no larger than 3ft on a side and weigh no more than 10lbs, and its form must be that of a nonmagical object that you have seen. The object is visibly magical, radiating dim light out to 5ft.\n\nThe object disappears after 1 hour, when you use this Power again, or if it takes or deals any damage, after that damage has been taken / dealt."
     },
@@ -1675,9 +1675,9 @@
             "universal"
         ],
         "preq": [
-            "Savant - Divination"
+            "Mana", "Perception +1"
         ],
-        "desc": "When you opened your mind to the school of divination, glimpses of the future begin to press in on your awareness. When you finish a Long Rest, roll two d20s and record the numbers rolled. You can replace any attack roll, saving throw, or ability check made by you or a character that you can see with one of these foretelling rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per Round.\n\nEach foretelling roll can be used only once. When you finish a Long Rest, you lose any unused foretelling rolls."
+        "desc": "Your mind has been opened to the fabric of fate: glimpses of the future begin to press in on your awareness. When you finish a Long Rest, roll two d20s and record the numbers rolled. You can replace any attack roll, saving throw, or stat check made by you or a character that you can see with one of these foretelling rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per Round.\n\nEach foretelling roll can be used only once. When you finish a Long Rest, you lose any unused foretelling rolls."
     },
     {
         "name": "Primal Spellcasting",
@@ -1873,9 +1873,9 @@
             "utility"
         ],
         "preq": [
-            "Savant - Evocation"
+            "Intelligence +1"
         ],
-        "desc": "You can create pockets of relative safety within the effects of your evocation spells. When you cast an evocation spell that affects other characters that you can see, you can choose a number of them equal to 1 + the spell's Magnitude. The chosen characters automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save."
+        "desc": "You can try to create pockets of relative safety within the effects of your Evocation spells. When you cast an Evocation spell that affects other characters that you can see, you can choose to make an Arcana Skill check against a DC of 15 to spare a number of equal to your Intelligence. If you succeed, the chosen characters automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save."
     },
     {
         "name": "Second Chance",
