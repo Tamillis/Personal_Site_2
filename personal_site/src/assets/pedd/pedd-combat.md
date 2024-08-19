@@ -1,67 +1,94 @@
 ## Combat
-The goal was to make combat more consistently dangerous, and the seemingly incompatible: more tactical and snappier. 
+PEDD significantly changes how combat works both at the character level, through Statistics, and at the game level in the rules of basic combat being re-written.
 
-Low level combat was too dangerous but quickly combat became trivial and/or very slow, with characters that were health sponges that you end up playing whack-a-mole with, and monsters much the same. Getting rid of Health scaling (starting higher but not going up unless explicitely empowered) fixes this.
+The goals were to make combat:
+ - more consistently dangerous
+ - more tactical
+ - (and the seemingly incompatible with the above) snappier
 
-I also wanted to erase the issue of players switching off when its not their turn, so I got rid of turns. The "One Action All At Once" system (see [below](#one-action-all-at-once)), which is also part of making the combat more tactical. Giving players more to do with their single Action also furthers this goal. This is also a much quicker system. Everyone is playing all at once, getting rid of the slow round-the-robin of turn based combat, and everyone only having one Action means each round is resolved more quickly.
+Low level combat was too dangerous but quickly combat became trivial and/or very slow, with characters that were health sponges that you end up playing whack-a-mole with, and monsters much the same. The fact that interesting combat relied on DM's to employ various twists and challenges to make it engaging says more about the base combat system than being critical of DM's who didn't go that far.
+
+Getting rid of HP scaling (starting higher 'Health' but not going up unless explicitely empowered) fixes the health sponge issue, and combined with lower average Defence and the Defence Stat rework makes combat more consistently dangerous (as does the general trend of [Flat Maths](/pedd#flat-maths)).
+
+Tactical choice is improved by bringing more possible actions to the table (see [Actions](#combat-actions)) and expanding weapon properties and usage.
+
+I also wanted to erase the issue of players switching off when its not their turn, so I got rid of turns. The "One Action All At Once" system (see [below](#one-action-all-at-once)), which is also part of making the combat more tactical as well as natural snappier. This is a much quicker system as everyone is playing all at once, getting rid of the slow round-the-robin of turn based combat. Everyone only having one Action also means each round is resolved much more quickly.
+
+## Combat Statistics
 
 ### Health
-Health starts higher than the HP that it replaces, the name also shaking out the video game connetations and helping players who don't come from a video-game background. It purposefuly does not progress unless specifically empowered, avoiding the health sponge issue of later level 5e. Health is naturally restrained and reserved for those that invest in it: those ineffible heroes who seem to be able to take punch after punch where others would fall to the first blow no matter how many fights they'd been in.
+Health starts higher than the HP that it replaces, with the name also shaking out the video game connetations and helping players who don't come from a video-game background to engage with the Stat. It purposefuly does not progress unless specifically empowered. Health is naturally limited and only those who invest in it become the ineffible heroes who seem to be able to take punch after punch where others would fall to the first blow no matter how many fights they'd been in.
 
 ### Recovery
-On the topic of health, there are a few changes to recovery.
-
-#### Short and Long Rests, Sleep and Downtime
-Short Rests and Long Rests are mostly unchanged, with the caveat that explicitely, yes, a Long Rest counts as a Short Rest. For this reason all Powers that key off of "A Short or Long Rest" now simply state "Short Rest". Simplifying and unifying that odd system.
-
-**Short Rests** are 1 hour periods of light activity or rest.
-
-**Long Rests** are 8 hour periods of light activity or rest.
-
-Every Character must, in addition, **Sleep** for at least 6 reasonably-continuous hours every 24 hour period, unless some Power or racial feature says otherwise (such as Elves, who cannot sleep). Failure to do so means you gain a point of Exhaustion. Sleeping counts as Resting, though not all Rest needs to be sleep; say if you were keeping watch.
-
-**Downtime** - PEDD introduces a third level of resting, Downtime, which is a 2 day+ period of non-adventuring activity. As Short Rests are part of Long Rests, Long Rests are part of Downtime, though many other activities can be gotten up to during Downtime. Just as in the base game, feel free to pursue professions, craft, carouse, or any other Downtime Activity.
+On the topic of health, recovery of that Health has also changed. No matter what the sheer iverisimilitude of full recoveries every Long Rest (which inevitably meant a few z's were enough to fix broken bones and burnt flesh) always took me out of a game. So I changed it.
 
 #### Recovering Health, removing Hit Dice
-Hit Dice are also an older mechanic that is mostly vestigial. It is removed. Instead, when Resting (Short or Long), you recover your Race's Baseline Health as a flat amount to your current Health, no more or no less.
+Hit Dice are an older mechanic that is mostly vestigial. It, too, is removed. Instead, when Resting (Short or Long), you recover your Race's Baseline Health as a flat amount to your current Health, no more or no less.
 
 Once you have regained Health from Short Rests twice, you cannot regain Health from a third Short Rest until you have completed a Long Rest. Meaning, per day, you can at maximum regain 3 × your Race's Baseline Health, unless your ability to recover is further empowered of course.
 
-If you seek medical attention or healing spells, you may yet recover a lot more Health in a day, but this is fine since it is an investment of other resources.
+If you seek professional medical attention or magical healing, you may yet recover a lot more Health in a day.
+
+Few will be capable of fully recoving in a single day, not at least without a significant expenditure of resources.
+
+#### Short and Long Rests, Sleep and Downtime
+Appart from Health recovery, Short Rests and Long Rests are mostly unchanged, with the caveat that explicitely, yes, a Long Rest counts as a Short Rest. For this reason all Powers that key off of "A Short or Long Rest" now simply state "Short Rest". Simplifying and unifying that odd system. 
+
+Additionally the meaning of a rest is clarified:
+- **Short Rests** are 1 hour periods of light activity or rest.
+- **Long Rests** are 8 hour periods of light activity or rest.
+- **Light Activity** includes reading, talking, eating, or standing watch. If a Check is needed, it is not Light Activity, including crafting or other professional activity.
+
+Every Character must, in addition, **Sleep** for at least 6 reasonably-continuous hours every 24 hour period, unless some Power or racial feature says otherwise (such as Elves, who cannot sleep). Failure to do so means you gain a point of Exhaustion. Sleeping counts as Resting, though not all Rest needs to be sleep; say if you were keeping watch.
+
+**Downtime** - PEDD introduces a third level of resting, Downtime, which is a 2 day+ period of non-adventuring activity. As Short Rests are part of Long Rests, Long Rests are part of Downtime, though many other activities can be gotten up to during Downtime. Just as in the base game, feel free to pursue professions, craft, carouse, or any other Downtime Activity. After a Downtime, you regain all Health.
 
 #### Dying and Wounds
-(This is completely true for 5e as well but) When you reach 0 Health, you enter the "Dying" state. You collapse Unconscious (or dramatically conscious, functionally unconscious, if you will), and cannot take Actions. What is new, is that you gain a rank of the Wounded condition as well.
+When you reach 0 Health, you enter the "Dying" state, as in 5e. You collapse Unconscious, and cannot take Actions. Additionally, you gain a rank of the Wounded condition. This is another addressment of the wack-a-mole issue. Entering the Dying state is now cumulatively dangerous as when you enter the Dying state you gain a rank in the Wounded condition (Wounded I, initially), which affects one's chances with Death Saves, and has a chance to leave permanent marks.
 
-**Wounded** - another addressment of the wack-a-mole issue is the Wounded condition. Entering the Dying state is now cumulatively dangerous as when you enter the Dying state you gain a rank in the Wounded condition (Wounded I, initially).
+**Wounded [Rank]** - When your Health is reduced to 0 and you don't already have the Wounded condition, you go Unconscious and you gain the Wounded 1 condition. Each time you go Unconscious from your Health dropping to 0, your Wounded condition increases by 1. Wounds are severe physical and mental damage that threatens your continued existence. The Wounded X condition loses one rank per Long Rest, and one rank per successful Medicine check made against a DC of the Wounded condition rank × 5 (the same like a Death Save). This Medicine check can be made once per day on a wounded character, regardless of success or failure.
 
-**Wounded [Rank]** - When your Health is reduced to 0 and you don't already have the Wounded condition, you go Unconscious and you gain the Wounded 1 condition. Each time you go Unconscious from your Health dropping to 0, your Wounded condition increases by 1. Wounds are severe physical and mental damage that threatens your continued existence. The Wounded X condition loses one rank per Long Rest, and one rank per successful Medicine check made against a DC of the Wounded condition rank × 5 (the same like a Death Save). This Medicine check can be made once per day per character, regardless of success or failure.
+The Dying condition is therefore updated:
 
-**Dying** - now when you are Dying and you make Death Saves, the DC is not 10, it is your Wounded condition's rank × 5. So at Wounded I, Death Saves are made against a DC of 5, at Wounded II a DC of 10, Wounded III at DC 15 etc. Otherwise Dying is unchanged (3 saves to stabilise, 3 failed saves and death, coming conscious erases all death saves)*.
+**Dying** - now when you are Dying and you make Death Saves, the DC is not 10, it is your Wounded condition's rank × 5. So at Wounded I, Death Saves are made against a DC of 5, at Wounded II a DC of 10, Wounded III at DC 15 etc. Otherwise Dying is unchanged (3 saves to stabilise, 3 failed saves and death, coming conscious erases all death saves).
 
 The more you're knocked down, the more likely you are to stay down, forever.
 
-*I actually would like to experiment with keeping failed death saves but fewer changes are better for now I believe.
+#### Wounds and Enemies
+Enemy characters function just like player characters in that they have health, defence and can even suffer the Wounded condition, but with a simple twist that changes what it is like to play against them.
 
-#### Wounds and Monsters (WIP)
-Monsters function just like player characters in that they have health, defence and even suffer the Wounded condition, but with a simple twist that changes what it is like to play against them.
+Most smaller enemy characters die immediately (or are otherwise defeated) when they reach the Wounded I condition. I.e., they can take "one wound". But some don't. Some foes can take multiple Wounds, and may lose parts of themselves (such as a tail, layer of armour, claws, part of their construction...), and will act differently, have access (or greater access) to certain powers etc. 
 
-Most small monsters die when they reach the Wounded I condition. I.e., they can take "one wound". But some don't. Some monsters can take multiple Wounds, and in fact only lose parts of themselves (such as a tail, layer of armour, claws, or part of their construction if a construct). Their Health also resets when they take a Wound, meaning each wound they can take is like a health bar. Such monsters, great foes, have a "Wounds" that you must burn through first.
+Their Health also resets when they take a Wound, meaning each wound they can take is like an additional health bar. Such enemies, great monsters and infamous villains, have "Wounds" that you must burn through first, with every tier presenting a different kind of foe and challenge.
 
 ### Defence
-To make characters easier to strike, meaning less spongey, and also to make combat more proactive and engaging; the Defence Stat replaces AC (a simple rename for ease of understanding. AC really is an odd term in isolate), and is more flexible than a flat value, being made of three parts:
-- a Base Defence value of 8 for Medium characters, 10 for Small characters and 6 for Large characters. Should it be relevant, Huge characters have a Base Defence of 2 and Tiny a Base Defence of 14. (Smaller characters are harder to hit).
+The Defence Stat replaces AC, and is more flexible than a flat value, being made of three parts:
+- a Base Defence value of 8 for Medium characters, see the Base Defence Table below.
 - an Armour value determined by worn Equipment (see [Armour](./pedd/combat#armour))
 - your Reflexes to a minimum of 0 (which can be limited by worn Equipment).
 
-Instead Defence is calculated when required from these three parts, depending on what parts are in play. This gives us three kinds of Defence;
-- **Defence** - Defence with both Armour and Reflexes.
+It is intented to be, on average, lower than AC, making combat more dangerous. However this is only passive defence, Actions such as Block, and Powers, play a more significant role in increasing Defence, making it more active and combat in general more engaging.
+
+Defence is calculated as required as one of these three categories:
+- **Defence** - Full Defence with both Armour and Reflexes.
 - **Unarmoured Defence** - Defence without Armour, armour limits on Reflexes are still applied. A few effects target Unarmoured Defence.
-- **Stationary Defence** - Defence without the benefit of Reflexes, often called "Touch AC" in other systems. Some effects target Stationary Defence, and surprised or unmoving targets only get their Stationary Defence. Any condition that reduces a character to 0 speed, called "Immobilised" in PEDD, uses its Stationary Defence.
+- **Stationary Defence** - Defence without the benefit of Reflexes, often called "Touch AC" in other systems. Some effects target Stationary Defence, and surprised or unmoving targets only get their Stationary Defence. Any character whose Speed is 0, such as one suffering the Immobilised condition, uses its Stationary Defence.
 
 Remember that the Armour value also changes during play as you don and doff Equipment, and especially based on whether you Block with your Shield or not! Armour Piercing strikes ignore some or all of your Armour as well, such as guns.
 
+#### Base Defence Table
+Smaller characters are harder to hit. Player characters can potentially be Small, Medium or Large as that is interesting, and Tiny and Huge are added incase size, through magic or other means, is altered during play.
+
+| Size | Base Defence |
+| --- | --- |
+| Tiny | 14 |
+| Small | 10 |
+| Medium | 8 |
+| Large | 6 |
+| Huge | 2 |
+
 ### Weapons and Armour
-Weapons are a well known weakpoint of 5e and have been addressed many times. In fact, I used to use, and continue to take heavy inspiration form, the homebrew; Weapon's Revised https://1drv.ms/b/s!Aq2B34oritBLmmrdNLmMeUrxi5kM
+Weapons are a well known weakpoint of 5e and have been addressed many times. In fact, I used to use, and continue to take heavy inspiration from, the homebrew; Weapon's Revised https://1drv.ms/b/s!Aq2B34oritBLmmrdNLmMeUrxi5kM
 
 PEDD makes use of the following list of weapons, weapon attributes and armour.
 
@@ -260,12 +287,16 @@ Many creatures have Natural Armour, and so might you through strange Powers. Nat
 #### Cover
 Cover is functionally unchanged from the base game, but translates like so. Cover is a bonus to your Defence, a +2 for 'Half Cover' and a +5 for 'Three Quarters Cover'. This is independent of Armour and Evasion, so consider it part of your Base Defence. Additionally, these bonuses apply to Reflex Saves as well, just as cover applies to Dexterity Saves in 5e.
 
+## New Combat
+
 ### One Action All At Once
-A radical change to basic combat I've received repeated positive feedback for: where, simply, all characters in a **Round** of combat have one **Action** (and a Bonus Action), and everyone "acts" at once, no initiative. No taking "Turns".
+A radical change to basic combat I've received repeated positive feedback for: where, simply, all characters in a **Round** of combat have one **Action**, and everyone "acts" at once, no initiative. No taking "Turns".
 
 How on Earth does that work? You might be thinking.
 
-The GM declares the intentions of most enemies in the scene at the start of a Round, just as their movements would give away what they're about to do. Then all players decide among themselves what they're going to do that Round. When everyone is happy with their Actions, you "resolve" the round in whatever order works. Only in the edge case when the order of actions matters does Initiative need to be determined, using an [Initiative Contest](#initiative-contest).
+For starters, it is a bit of a misnomer. All characters still have access to Bonus Actions, from various Powers and Spells, in addition to their Action. Movement also does not technically occur at the same time as the other Actions, as it is resolved last (see below).
+
+However, the main thrust of the system works like this. The GM declares the intentions of most enemies in the scene at the start of a Round, just as their movements would give away what they're about to do. Then all players decide among themselves what they're going to do that Round. When everyone is happy with their Actions, you "resolve" the round in whatever order works. Only in the edge case when the order of actions matters does Initiative need to be determined, using an [Initiative Contest](#initiative-contest).
 
 Often, some players may still be thinking while others already know what they want to do. Resolve the actions of the decided players and their engagements (see Engagement below), and you'll often find the remaining players now know what to do.
 
@@ -280,7 +311,7 @@ Since everyone gets only one Action, the old action / bonus-action / movement ec
 ### Combat Actions
 So what can that one action can do? Here are a variety of tactical basic combat actions available to all;
 - **Attack** - make your weapon or spell attack/s against their targets. One attack Action may involve a number of Attacks on a number of targets depending on the weapon, spell or some Power. As in 5e, this is the distinction between an "Attack Action" and specific "Attacks". Unless otherwise stated, full attack action attacks are with lethal intent.
-- **Move** - move your Speed along a path of your choice. Difficult terrain doubles the speed required, swimming / climbing required quadruple the speed, and impassible terrain must be circumnavigated.
+- **Move** - move your Speed along a path of your choice towards a target.
 - **Charge** - when you use your Action to Move, moving at least 15ft, at the end of the Move you can make 1 Weapon Attack at Advantage as a Bonus Action.
 - **Run and Gun** - when you use your Action to Move, you can make 1 Ranged Weapon Attack as a Bonus Action at Disadvantage.
 - **Dodge** - as an Action, you make a Reflex Saving Throw and the result (or your Stationary Defence, if that is higher) replaces your Defence value for the rest of the Round.
@@ -300,16 +331,26 @@ So what can that one action can do? Here are a variety of tactical basic combat 
 #### Initiative Contest
 For any situations where the order of actions matters, the two (or more) characters involved roll off with the most appropriate skill, to see who can get the higher value. For "slow" enemies / mooks the DM will just let the players go first, so-called "player's advantage". For example; "I try to grab the bag of gold before him", "OK, you and the white dragon need to make an Dexterity Check."
 
+### Move Action
+The Move Action sees a character move a distance in feet equal to their Speed towards a stated target. This can be in a straight line or other path of their choice, so long as the path is traversible. Like all Actions, they are declared at the same time as everyone else, however they're unique in that they're only resolved at the end, after all other Actions and Engagements (see Engagement).
+
+Difficult terrain doubles the Speed required, with swimming / climbing requiring quadruple the speed, and impassible terrain must be circumnavigated.
+
+When more than one character takes the Move action with respect to other characters' positions, how to resolve movement can get quite confusing quite quickly. As such, when declaring a Move, declare also the 'target' of the movement. When everone does this generally speaking a natural conclusion where all characters reach or approach their targets becomes clear. 
+
+For example, if we have Mr A, Mr B and Mr C in the awkward face off of A moving to B, B to C and C to A, where does everyone end up? Bunched in the middle: because when viewed through the lense of their targets, the natural result is that they all start moving towards each other (this way, A gets to B, who gets to C, who gets to A). Another situation may be: A is moving to B, who is moving to C, who is running away from A (or B really). In this case, they all move linearly in the direction of C's flight (which is away from A (or B)). 
+
+If it is *not* clear, make an Initiative Contest check to see who goes first, and then resolve from there.
+
 #### Engagement
 To help with handling fights with little to no initiative and create a natural ebb-and-flow to combat, combatants are "paired off" in Engagements. These are the momentary pairs or small groups that naturally form in the middle of any chaotic fight, and allows us as the players to "zoom in" on little microcosms of fights with the camera, as it were, focusing on resolving pairing after pairing. This can help with indicisive players where ready pairings can resolve first.
 
 Engagements are resolved effectively simultaneously and the order of Engagements doesn’t matter, as with only 1 Action per turn melees rarely effect each other.
 
-All combat is resolved in three simple steps:
+All combat is resolved in two simple steps*:
 
-1. **Moving** - Any who intend to Move, do so. When more than one character takes the Move action with respect to other characters' positions, it can get quite confusing quite quickly. As such, when declaring a Move, declare also the 'goal' of the movement and generally speaking a natural conclusion where all characters reach or approach their goals becomes clear. For example, if we have Mr A, Mr B and Mr C in the awkward face off of A moving to B, B to C and C to A, where does everyone end up? Bunched in the middle: because when viewed through the lense of their goals, the natural result is that they all start moving towards each other (this way, A gets to B, who gets to C, who gets to A). Another situation may be: A is moving to B, who is moving to C, who is running away from A (or B really). In this case, they all move linearly in the direction of C's flight (which is away from A (or B)). If it is *not* clear, make an Initiative Contest check to see who goes first, and then resolve from there.
-2. **Determine Engagements** - (if this step is necessary) where combatents pair off with ["Zone of Engagement"](#zone-of-engagement). This may seem complex at the outset, but these rules mostly only exist to resolve edge-cases and opinions of conflict. 9 times out of 10 the GM simply needs to ask "OK, so who's fighting the Ogre wacking Gary and who's shooting back at the goblins?".
-3. **Resolve Engagements** - resolving pairs/groups in a sensible/cinematic sequence. Melee conflicts are easily resolved in their engagements. Ranged attacks naturally involve unpaired individuals but often can be smoothly resolved at the start or end of a Round. Resolve conflicts of interest with an Initiative Contest.
+1. **Determine Engagements** - (if this step is necessary) where combatents pair off with ["Zone of Engagement"](#zone-of-engagement). This may seem complex at the outset, but these rules mostly only exist to resolve edge-cases and opinions of conflict. 9 times out of 10 the GM simply needs to ask "OK, so who's fighting the Ogre wacking Gary and who's shooting back at the goblins?".
+2. **Resolve Engagements** - resolving pairs/groups in a sensible/cinematic sequence. Melee conflicts are easily resolved in their engagements. Ranged attacks naturally involve unpaired individuals but often can be smoothly resolved at the start or end of a Round. Resolve conflicts of interest with an Initiative Contest.
 
 #### Zone of Engagement
 The rules of pairing off, pulling and turning. 
