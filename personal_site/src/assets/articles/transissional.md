@@ -216,7 +216,7 @@ The following are some example bulk texts of Transission Inglish. Current reader
 
 ### The North Wind and The Sun 
 
-The North Wind and the Sunn were dispiuting which was the stronger, when a travveler came elong rapped in a worm cloke. They egreed that the won who first secseeded in making the travveler take his cloke off shud be censiddered stronger than the úther. Then the North Wind blew as hard as he cud, butt the more he blew the more clocely did the travveler fold his cloke erownd him; and at last the North Wind gave up the etémpt. Then the Sunn shon owt wormly, and imydietly the travveler tuk off his cloke. And so, the North Wind was obliged to cenfess that the Sunn was the stronger of the tue. 
+The North Wind and the Sunn were dispiuting which was the stronger, when a travveler came elong rapped in a worm cloke. They egreed that the won who first secséded in making the travveler take his cloke off shud be censiddered stronger than the úther. Then the North Wind blew as hard as he cud, butt the more he blew the more clocely did the travveler fold his cloke erownd him; and at last the North Wind gave up the etémpt. Then the Sunn shon owt wormly, and imydietly the travveler tuc off his cloke. And so, the North Wind was obliged to cenfess that the Sunn was the stronger of the tue.
  
 
 ### Schleicher’s Fable 
