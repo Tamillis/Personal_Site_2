@@ -16,7 +16,10 @@
 
         <h3>Resistances: </h3>
         <div class="flex table-like">
-            <p>Reflexes: {{ player.reflexes }}</p>
+            <p>Reflexes: 
+                <span v-if=player.reflexLimited><span style="text-decoration: line-through;">{{player.reflexes}}</span> (<span style="color:var(--highlight); font-weight:bold;">{{ player.reflexLimit }}</span>)</span>
+                <span v-else>{{ player.reflexes }}</span>
+            </p>
             <p>Fortitude: {{ player.fortitude }}</p>
             <p>Willpower: {{ player.willpower }}</p>
         </div>
@@ -24,6 +27,7 @@
         <h3>Secondaries: </h3>
         <div class="flex table-like">
             <p>Health: {{ player.fortitude + player.willpower + (player.race ? player.race.baseHealth : 8) }}</p>
+            <p>Focus: {{ player.willpower < 1 ? 1 : player.willpower }}</p>
             <p>Defence: Base {{ player.baseDefence }} + Armour {{ player.armour }} + Reflexes {{ player.reflexes }} = {{
                 player.defence }}</p>
             <p>Speed: {{ player.race ? player.race.speed.val : "" }}</p>
@@ -48,7 +52,7 @@ import {ref} from 'vue';
 import { capitalize } from '../../assets/functionality';
 
 const props = defineProps(["player", "haveFaith"]);
-const showTertiaries = ref(true);
+const showTertiaries = ref(false);
 </script>
 
 <style lang="css" scoped>

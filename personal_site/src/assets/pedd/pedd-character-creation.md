@@ -101,9 +101,10 @@ Sometimes enemy attacks and other effects are made against your "Resistance DC",
 - **Defence** - how difficult you are to harm. **Base Defence** + **Armour** + **Reflexes (as limited by armour, minimum of 0)**
   - **Base Defence** - determined by Size: 14 (tiny), 10 (small), 8 (medium), 6 (large), 2 (huge). Smaller characters are harder to hit.
   - **Armour** - determined by the sum Defence of worn equipment.
-  - **Reflexes** - your **Reflex** value as normal, but to a minimum of 0 and limited by Armour. Some Powers may also affect this value.
+  - **Reflexes** - your **Reflex** value to a minimum of 0 and limited by Armour. Some Powers may also affect this value.
+- **Focus** - your **Willpower** value to a minimum of 1. Used in certain Tactical Actions.
 - **Speed** - the ground you can cover in a Move, determined by your Race and some Powers
-- **Size** - what category of size you are, determined by Race.
+- **Size** - what category of size you are, determined by Race. Your base defence and many combat interactions depend on Size.
 - **Senses** - a roleplay statistic that lets you know the suite of senses available to your character's race
 - **Passive Stats** - sometimes Powers or play require a value to compare against. The DM can ask you to make a roll that then represents that value, and sometimes they will ask for your "Passive Strength", etc. This is 8 + the Stat Value.
 

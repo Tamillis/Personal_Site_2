@@ -60,10 +60,11 @@ So what can that one Action can do? Quite a lot more than 5e. Every character ca
 - **Stand** - a Bonus Action to go from Prone to Standing.
 
 #### Tactical Actions
-- **Bait and Switch** - as an Attack or Action, when you're within 5ft of an Engaged ally character, you can switch places with that character, provided you spend at least 5 ft of movement. This movement doesn't provoke an Attack of Opportunity.
+- **Aim** - as an Attack or Action, you gain Advantage on your next weapon attack which must be a ranged or thrown weapon. You can choose to spend 1 Focus, and Aim as a Bonus Action.
+- **Bait and Switch** - as an Attack or Action, when you're within 5ft of an Engaged ally character, you can spend 1 Focus to switch places with that character, provided you spend at least 5 ft of movement. This movement doesn't provoke an Attack of Opportunity. You are now Engaged with that ally's enemy, and any attack they were about to make on your ally is directed at yourself instead.
 - **Call the Shot** - As an Action, direct one of your allys to strike. Choose an ally who can see or hear you. That character can immediately make one weapon attack. You can choose to spend 1 Focus, and Call the Shot as a Bonus Action instead of an Action.
-- **Charge** - when you use your Action to Move, moving at least 15ft, at the end of the Move you can make 1 Weapon Attack at Advantage as a Bonus Action.
-- **Coup de Grace** - when making an Attack Action against an Incapacitated target, don't roll for Damage, instead take each dice roll (if any) to be the maximum result.
+- **Charge** - when you use your Action to Move, moving at least 15ft or half your speed (whichever is lower), at the end of the Move you can make 1 Weapon Attack at Advantage as a Bonus Action.
+- **Coup de Grace** - when you make a Weapon Attack against an Incapacitated target, don't roll for Damage, instead take each dice roll (if any) to be the maximum result.
 - **Disarm** - as an Attack or Action against an enemy in your Reach holding a weapon or shield, you make an attack roll against the enemy's passive Reflexes. If you succeed, you rip the weapon from their grasp and throw it 10ft in a direction of your choice (this does not count as a thrown weapon attack), to the ground at your feet, or equip it an empty hand of yours.
 - **Distract** - as a Bonus Action when you hit a character with a weapon attack, you can distract them, giving your allies an opening. The next Attack roll against the target this Round has Advantage.
 - **Evasive Footwork** - when you take the Move action, you can spend 1 Focus and roll a d6. You add the number rolled to your Defence until you stop moving.
@@ -138,7 +139,9 @@ Additionally, a character can only be engaged by a maximum number of characters 
 ## Combat Statistics
 
 ### Focus
-(WIP): Focus is both a replacement of Battle Master's unnamed superiority dice pool and a combination and re-opening of the "Concentration" condition. Characters start with Willpower (to a minimum of 1) Focus. Each focus point can be used to either maintain Concentration on a spell, or expended on a Combat Manoeuvre. You regain all used Focus on a Short Rest. (This might be really unfun, needs testing:) Each time you Concentrate on a spell, you use 1 Focus. Focus is not returned when used, but you can Focus on more than one spell so long as you have the Focus to spare.
+Focus is both a replacement of Battle Master's unnamed superiority dice pool and an exclusionary partner of the "Concentration" condition. Characters start with their Willpower (to a minimum of 1) Focus. Each point of Focus can be expended on certain Tactical Actions. You regain all used Focus on a Short Rest. 
+
+Each time you are Concentrating on a spell, you use cannot Focus.
 
 ### Health
 Health starts higher than the HP that it replaces, with the name also shaking out the video game connetations and helping players who don't come from a video-game background to engage with the Stat. It purposefuly does not progress unless specifically empowered. Health is naturally limited and only those who invest in it become the ineffible heroes who seem to be able to take punch after punch where others would fall to the first blow no matter how many fights they'd been in.

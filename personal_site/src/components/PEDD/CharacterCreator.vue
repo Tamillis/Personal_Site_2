@@ -6,6 +6,11 @@
 
 		<button class="btn">TODO: Save</button>
 
+		<pre style="text-indent: 0;">
+DEBUG:
+{{ JSON.stringify(chosen, null, 2) }}
+		</pre>
+
 		<hr />
 
 		<div id="section-tabs">
@@ -36,7 +41,7 @@
                 :chosenRace="chosen.race" 
                 :chosenAnyStats="chosen.anyRaceStats"
                 @race="race => (chosen.race = race)" 
-                @race-stats="stats => (chosen.anyRaceStats = stats)" />
+                @race-stats="stats => setAnyRaceStats(stats)" />
 
 			<div v-if="chosen.race">
 				<RacialPowers
@@ -133,7 +138,7 @@
 				@armour="armour => (chosen.armour = armour)"
 				@shield="shield => (chosen.shield = shield)"
 				@helmet="helmet => (chosen.helmet = helmet)"
-				@ref-limit="refLimit => (chosen.refLimit = refLimit)"
+				@ref-limit="reflexLimit => (chosen.reflexLimit = reflexLimit)"
 			/>
 		</section>
 	</section>
@@ -210,8 +215,11 @@ let key = ref(0); //TODO: Remove key?
 // 	armour: 0,
 // 	helmet: 0,
 // 	shield: 0,
-// 	refLimit: 99
+// 	reflexLimit: 99
 // });
+
+//NOTE: can use url saving like I planned, or if the JSON gets too dense and therefore the url is too long, could experiment with downloading and uploading JSON purely through the frontend:
+// https://stackoverflow.com/questions/23344776/how-to-access-data-of-uploaded-json-file
 
 //TEST, as if it was loaded from a save
 let chosen = ref({
@@ -222,11 +230,11 @@ let chosen = ref({
 	flaws: "Emulates what she imagines her mama to be, as she's never known her.",
 	race: "Half-Elf",
 	anyRaceStats: [
-		{ desc: "Accuracy", val: 1 },
-		{ desc: "Intelligence", val: -1 }
+		{ desc: "accuracy", val: 1 },
+		{ desc: "intelligence", val: -1 }
 	],
 	racialPowers: ["Elven Accuracy", "Keen Senses", "Wood Elf Magic"],
-	background: false,
+	background: false,	//TODO: from here
 	backgroundPower: "",
 	upbringing: {
 		skill1: "Animal Handling",
@@ -239,8 +247,14 @@ let chosen = ref({
 	armour: 0,
 	helmet: 0,
 	shield: 0,
-	refLimit: 99
+	reflexLimit: 99
 });
+
+//race any stat selections
+function setAnyRaceStats(stats) {
+	chosen.anyRaceStats = stats.value;
+	console.log("setAnyRaceStats", stats);
+}
 
 //race
 let racialPowers = computed(() =>
@@ -321,7 +335,7 @@ let choosePower = (power, attribute, opened, max) => {
 //TODO: make this computed from chosen
 let player = ref({});
 let buildPlayer = () => {
-	console.log("Chosen raceStats", chosen.value.anyRaceStats);
+	//console.log("Chosen raceStats", chosen.value.anyRaceStats);
 	player.value = {};
 
 	player.value.name = chosen.value.name;
@@ -334,12 +348,16 @@ let buildPlayer = () => {
 	player.value.backgroundPower = chosen.value.backgroundPower;
 	player.value.rolePowers = chosen.value.rolePowers;
 
-	let ss = {};
+	let ss = {
+		strength: 0,
+		dexterity: 0,
+		accuracy: 0,
+		perception: 0,
+		intelligence: 0,
+		charisma: 0
+	};
 	ss[roleStats.value[0]] = 2;
 	ss[roleStats.value[1]] = 1;
-	for (let s of stats) {
-		if (!ss.hasOwnProperty(s)) ss[s] = 0;
-	}
 
 	for (let stat of chosen.value.anyRaceStats) {
         ss[stat.desc] += stat.val;
@@ -365,7 +383,8 @@ let buildPlayer = () => {
 
 	player.value.fortitude = player.value.strength + player.value.dexterity;
 	player.value.reflexes = player.value.accuracy + player.value.perception;
-	if (player.value.reflexes > chosen.value.refLimit) player.value.reflexes = chosen.value.refLimit;
+	player.value.reflexLimit = chosen.value.reflexLimit;
+	player.value.reflexLimited = player.value.reflexes > player.value.reflexLimit
 	player.value.willpower = player.value.intelligence + player.value.charisma;
 
 	player.value.faith = 2; //TODO: make faith input based
@@ -383,7 +402,7 @@ let buildPlayer = () => {
 	player.value.armour = chosen.value.armour + chosen.value.shield + chosen.value.helmet;
 
 	player.value.baseDefence = player.value.race ? baseDefence[player.value.race.size.val] : 8;
-	player.value.defence = Number(player.value.baseDefence) + Number(player.value.armour) + Number(player.value.reflexes);
+	player.value.defence = Number(player.value.baseDefence) + Number(player.value.armour) + Number(player.value.reflexLimited ? player.value.reflexLimit: player.value.reflexes);
 
 	//encode player into url for easy saving and sharing
 	let saved = btoa(JSON.stringify(player.value));

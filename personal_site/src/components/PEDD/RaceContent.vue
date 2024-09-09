@@ -4,11 +4,13 @@
 		<p>{{ race.desc }}</p>
 		<h4>Stats:</h4>
 		<ul>
-			<li v-for="(stat) in race.stats">
-				<AnyStatSelector v-if="stat.desc == 'Any'" :val="stat.val" @stat-chosen="chosenStat => anyStatChosen(chosenStat, stat.val)" />
-				<p v-else style="margin: 0">
+			<li v-for="(stat) in race.stats.filter(s => s.desc != 'Any')">
+				<p style="margin: 0">
 					{{ stat.desc }} <span>{{ stat.val >= 0 ? "+" + stat.val : stat.val }}</span>
 				</p>
+			</li>
+			<li v-for="(stat, i) in currentAnyStats">
+				<AnyStatSelector :val="stat.val" :initialStat="stat.desc" @stat-chosen="chosenStat => anyStatChosen(chosenStat, stat.val, i)" />
 			</li>
 		</ul>
 		<h4>
@@ -42,12 +44,11 @@ let standardHeadings = ["name", "desc", "stats", "baseHealth", "age", "size", "s
 
 let extras = Object.keys(props.race).filter(key => !standardHeadings.includes(key));
 
-//chosenAnyStats of the form [{desc, val},{desc,val}...]
-//TODO: How to pass this down to the AnyStatSelector, can be just overriden on the way out, as different races have different numbers of any stats
-const currentAnyStats = ref(props.chosenAnyStats ? props.chosenAnyStats : {});
+//chosenAnyStats of the form [{desc, val},{desc,val}...] ... defaults will be passed in.
+const currentAnyStats = ref(props.chosenAnyStats ? props.chosenAnyStats : props.race.stats.filter(stat => stat.desc == "Any"));
 
-function anyStatChosen(n, stat, val) {
-	currentAnyStats.value.push({ desc: stat, val: val });
+function anyStatChosen(stat, val, n) {
+	currentAnyStats.value[n] = { desc: stat, val: val };
 
 	emit("selectedStats", currentAnyStats.value);
 }
