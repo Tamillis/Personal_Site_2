@@ -8,7 +8,7 @@
         <ul>
             <li v-for="preq in power.preq">{{ preq }}</li>
         </ul>
-        <div v-html="marked.parse(power.desc)"></div>
+        <div v-html="marked.parse(power.desc)" class="list-circles"></div>
     </div>
 </template>
 
@@ -29,6 +29,10 @@ const props = defineProps({ power: Object });
     margin: 0;
     text-decoration: none;
     list-style: none;
+}
+
+*.list-circles li {
+    list-style: circle !important;
 }
 
 *.power-content a,

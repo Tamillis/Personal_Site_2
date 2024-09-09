@@ -14,20 +14,27 @@
 
 <script setup>
 import { putMdinElement } from '../../assets/functionality';
-import { onMounted } from 'vue';
+import { onMounted, onUnmounted } from 'vue';
+import p5 from 'p5';
+import sketch from '../../assets/pedd/pedd_movement_1';
 import Links from '../../components/PEDD/Links.vue';
 
 onMounted(() => putMdinElement('../src/assets/pedd/pedd-combat.md', 'pedd'));
 
-window.addEventListener("MarkedDone", () => {
-    let sections = ['weapons', 'weapon-properties', 'armour'];
+window.addEventListener("MarkedDone", peddCombatEvents);
+
+onUnmounted(() => window.removeEventListener("MarkedDone", peddCombatEvents));
+
+function peddCombatEvents() {
+    let sections = ['weapons', 'weapon-properties', 'armour', 'actions'];
     for (let section of sections) {
-        console.log(section);
         document.getElementById("toggle-" + section).addEventListener("click", () => {
             document.getElementById(section + "-section").classList.toggle("hidden");
         });
     }
-});
+
+    new p5(sketch, "movement-1-canvas");
+}
 
 </script>
 
@@ -36,7 +43,7 @@ window.addEventListener("MarkedDone", () => {
 #pedd a:link,
 #pedd a:visited {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--highlight);
     font-style: normal;
     font-weight: bold;
     overflow-wrap: break-word;

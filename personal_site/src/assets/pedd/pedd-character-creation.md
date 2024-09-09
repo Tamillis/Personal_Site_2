@@ -1,4 +1,4 @@
-## Character Creation 5.P
+## Character Creation
 
 Step-By-Step Character creation in PEDD looks like this:
 1. *Create a Character Concept* - in a phrase, define the core of your character. Who is it that they *are*? What is it that they *do*?
@@ -23,7 +23,7 @@ Go to the "Character Creator Mode" (button above &uarr;) to make your character 
 ### Character Concept
 While not new, I ask players to think of a core character concept (a fantasy person they would like to play, to inhabit and act out) as the very first step of character creation, to form a basis they can build on and have the basis of their character be an idea, not a race or class as the old way lent itself to be (I've seen many, many newbies open the book and then go "I want to be a Dwarf Ranger", or what have you. That's not a character, that's a video game protagonist). Of course, this is a fluid thing, and is expected to change as you go through character creation and - choosing slightly different options as you go - you redefine your character's core concept.
 
-Your Character Concept leads directly into your Role, so its bset to make it a single evocative phrase or demonym that is the sum of what it is that you *do* as an adventurer.
+Your Character Concept leads directly into your Role, so its best to make it a single evocative phrase or demonym that is the sum of what it is that you *do* as an adventurer.
 
 For example:
  - The Mage of Iron
@@ -36,10 +36,30 @@ For example:
 
 Also as part of step 1 I ask you to think of your character's **Bonds**, **Ideals** and **Flaws**: to lead with them rather than slap them on later. But feel free to return to them and add as you go through each step of character creation, of course. They are otherwise unchanged from 5e.
 
-### Ability Statistics
+### Statistics
 
-The ability score into modifier system was vestigial so I removed it. All characters have "Ability Statistics", a.k.a. "Stats", a single value ranging from -3 to +5 for humanoid and player characters (higher and lower for monsters and "Super humans", with in-system values running from -5 to +10).
+All characters have 6 **Statistics**, a.k.a. "Stats", with a single value ranging from -3 to +5. (These values are higher and lower for monsters and "Super humans", with in-system values running from -5 to +10). 5e's ability score into modifier system was confusing to new players and frankly vestigial, so I removed it.
 
+The six **Statistics** are:
+
+*Projection Ability*
+- **Accuracy** - used in ranged attacks, and feats of precision
+- **Perception** - used to sense the world, spot hidden things, and read others
+- **Strength** - used in melee attacks, and feats of brawn - your body's physical ability to force your way to victory
+- **Dexterity** - used in many skills, for feats of deftness - your body's phsyical ability to apply subtle power, bending yourself and redirecting the world to your whims
+- **Intelligence** - used in knowledge and understanding, for feats of alacrity
+- **Charisma** - used to affect others through force of personality, empathy and displays of emotion
+
+The idea behind the particular Stats is the following schema of worldy-interaction:
+| - | "Direct" | "Indirect" |
+| --- | --- | --- |
+| "External" | **Accuracy** | **Perception** |
+| "Liminal" | **Strength** | **Dexterity** |
+| "Internal" | **Charisma** | **Intelligence** |
+
+Stat design is split between direct application, when a character affects the world directly, vs. indirect where interaction is more subtle. External Stats affect the world at a distance from a character, and limenal means at point of contact. Internal of course means interaction through the lense of the character's inner world: their mentality.
+
+#### Stat Values
 Stat Value | Meaning
 --- | ---
 -3 | Severely Handicapped - even menial tasks are difficult
@@ -56,27 +76,16 @@ Stats are determined by your Race, Background and Role, which produces a meaning
 
 During character creation no Statistic can be increased beyond +4, unless explicitly stated. If a Race, Background or Role would raise a Stat above 4, instead you may raise a different Stat (again, not above 4).
 
-#### Statistics and Resistances
-A line is drawn between your active Statistics used for Actions, and your passive Resistances which are used to mitigate harms. Resistances are calculated values, from Statistics, Race and Background. They can be above 4 or below -3, they are whatever the calculation comes out as.
-
-There are six **Statistics** (used in checks):
-
-*Projection Ability*
-- **Accuracy** - used in ranged attacks, and feats of precision
-- **Perception** - used to sense the world, spot hidden things, and read others
-
-*Interactive Ability*
-- **Strength** - used in melee attacks, and feats of brawn - your body's physical ability to force your way to victory
-- **Dexterity** - used in many skills, for feats of deftness - your body's phsyical ability to apply subtle power, bending yourself and redirecting the world to your whims
-
-*Mental Ability*
-- **Intelligence** - used in knowledge and understanding, for feats of alacrity
-- **Charisma** - used to affect others through force of personality, empathy and displays of emotion
-
+#### Faith
 If you get involved in matters of the divine, your Faith as a statistic becomes important, although other characters are also welcome to have and track their Faith (note, do not calculate Faith like other Statistics, instead Faith is a value starting at 2 that is affected by your character's actions during play, see Divine Spellcasting):
 - **Faith** - the attunment of your soul to the divine path of your deity / path / philosophy.
 
-And three **Resistances** (used in saves):
+
+#### Resistances
+Statistics are active and used for Checks and Actions, but they are not used reactively. Instead this is what your passive Resistances are used for: to mitigate harms. Resistances are calculated values, from Statistics, Race and Background. They can be above 4 or below -3, they are whatever the calculation comes out as.
+
+And three Resistances (used in saves):
+
 - **Reflexes** - the ability to avoid harms. Calculated from **Accuracy** + **Perception**.
 - **Fortitude** - the ability of the body to throw off and work-through ills. Calculated from **Strength** + **Dexterity**.
 - **Willpower** - the ability of the mind to resist. Calculated from **Intelligence** + **Charisma**.
@@ -182,7 +191,7 @@ Pack's, for reference (you may with your DM's permission swap your pack for any 
 
 Weapons and armour are covered in [Weapons & Armour in PEDD/Combat](/pedd/combat#weapons-and-armour)
 
-## Come Together 
+### Come Together 
 Last but not least, you put everything together. Calculate your final Statistics (remember you cannot go over 4 in any, put overflow Stat increases into other Stats), Resistances and Secondary Characteristics, collate your Skills, Equipment and Powers for convenience, and [just like the base game - bring it together](https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#6ComeTogether).
 
  - Add "Common", "Imperial Common" if playing in the Materium Existentiae, as a language at the end if you don't have it, but make a point of this being mostly functional and that the character comes from a walk of life that meant they never learnt the common tongue of where they currently are.

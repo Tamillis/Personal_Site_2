@@ -10,7 +10,7 @@
         </div>
 
         <div class="main-text inset pedd">
-            <PowersList  />
+            <PowersList />
         </div>
 
     </section>
@@ -18,19 +18,23 @@
 
 <script setup>
 import { putMdinElement } from '../../assets/functionality';
-import { onMounted } from 'vue';
+import { onMounted, onUnmounted } from 'vue';
 import PowersList from '../../components/PEDD/PowersList.vue';
 import Links from '../../components/PEDD/Links.vue';
 
-window.addEventListener("MarkedDone", () => {
-        document.getElementById("toggle-tags").addEventListener("click", () => {
-            document.getElementById("tag-section").classList.toggle("hidden");
-        });
-    })
+window.addEventListener("MarkedDone", peddPowersEvents);
 
 onMounted(async () => {
     await putMdinElement('../src/assets/pedd/pedd-powers.md', 'pedd');
 });
+
+onUnmounted(() => window.removeEventListener("MarkedDone", peddPowersEvents));
+
+function peddPowersEvents() {
+    document.getElementById("toggle-tags").addEventListener("click", () => {
+        document.getElementById("tag-section").classList.toggle("hidden");
+    });
+}
 
 //add 
 
@@ -41,7 +45,7 @@ onMounted(async () => {
 #pedd a:link,
 #pedd a:visited {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--highlight);
     font-style: normal;
     font-weight: bold;
     overflow-wrap: break-word;
@@ -96,6 +100,10 @@ onMounted(async () => {
 
 #pedd strong {
     font-weight: 700;
+}
+
+#pedd li {
+    list-style: circle;
 }
 
 #pedd table {

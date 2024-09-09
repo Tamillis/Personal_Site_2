@@ -2497,5 +2497,18 @@
         "preq": [
         ],
         "desc": "After undergoing your transformations and at last being admitted into a holdfast (or from some other tutor or training), you have been trained and readied for war. You are proficient in the next tier of armour skill (Light Armour if you weren't proficient in any, Medium Armour if you were proficient in light, Heavy Armour if you were proficient in medium), and you are proficient in using Knives and Clubs & Axes. In addition, you are proficient in two martial skills of your choice."
+    },
+    {
+        "name": "Magical Tinkering",
+        "tag": [
+            "combat",
+            "exploration",
+            "combat",
+            "utility"
+        ],
+        "preq": [
+            "Engineering", "Intelligence +1"
+        ],
+        "desc": "You've learned how to invest a spark of magic into mundane objects. To use this ability, you must have thieves' tools or artisan's tools in hand. You then touch a Tiny nonmagical object as an Action and give it one of the following magical properties of your choice:\n\n - The object sheds bright light in a 5ft radius and dim light for an additional 5ft.\n - Whenever tapped by a character, the object emits a recorded message that can be heard up to 10ft away. You utter the message when you bestow this property on the object, and the recording can be no more than 6 seconds long.\n - The object continuously emits your choice of an odor or a nonverbal sound (wind, waves, chirping, or the like). The chosen phenomenon is perceivable up to 10ft away.\n - A static visual effect appears on one of the object's surfaces. This effect can be a picture, up to 25 words of text, lines and shapes, or a mixture of these elements, as you like.\n\nThe chosen property lasts indefinitely. As an action, you can touch the object and end the property early. You can bestow magic on multiple objects, touching one object each time you use this Power, though a single object can only bear one property at a time. The maximum number of objects you can affect with this Power at one time is equal to your Intelligence. If you try to exceed your maximum, the oldest property immediately ends, and then the new property applies.\n\nAdditionally, if you have the Arcane Spellcasting Power, you may use your thieves' or artisan's tools as a spellcasting focus."
     }
 ]

@@ -27,9 +27,9 @@ import CharacterCreator from '../../components/PEDD/CharacterCreator.vue';
 onMounted(() => {
     putMdinElement('../src/assets/pedd/pedd-character-creation.md', 'pedd');
 
-    window.addEventListener("MarkedDone", () => {
-        //document.getElementById("races-viewer").innerHTML = document.getElementById("races").innerHTML;
-    })
+    // window.addEventListener("MarkedDone", () => {
+    //     //document.getElementById("races-viewer").innerHTML = document.getElementById("races").innerHTML;
+    // })
 });
 
 let creatorMode = ref(false);
