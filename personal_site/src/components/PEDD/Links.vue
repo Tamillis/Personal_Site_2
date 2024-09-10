@@ -7,6 +7,9 @@
             <RouterLink class="intext-link" :to="{name:'pedd-character-creation'}">Character Creation</RouterLink>
         </li>
         <li class="triangle-points">
+            <RouterLink class="intext-link" :to="{name:'pedd-character-creator'}">Character Creator</RouterLink>
+        </li>
+        <li class="triangle-points">
             <RouterLink class="intext-link" :to="{name:'pedd-skills'}">Skills</RouterLink>
         </li>
         <li class="triangle-points">
@@ -27,18 +30,6 @@ import { useRoute, RouterLink } from 'vue-router';
 const route = useRoute();
 </script>
 
-<style lang="css" scoped>
-#pedd a,
-#pedd a:link,
-#pedd a:visited {
-    text-decoration: none;
-    color: var(--text-color);
-    font-style: normal;
-    font-weight: bold;
-    overflow-wrap: break-word;
-}
+<style lang="css">
 
-#pedd a:hover {
-    font-style: italic;
-}
 </style>

@@ -35,7 +35,7 @@ The amount of time needed for a Power is thematic, and depends on the pace of th
 ### Tags
 Powers come with tags for ease of perusal and understanding. <a id="toggle-tags">Click here for explanation</a>:
 
-<section id="tag-section" class="hidden"> 
+<section id="tags-section" class="hidden"> 
 
 - **Racial** – Powers that can only be gained from being a certain Race, representing in-born racial abilities that you couldn't gain no matter how much you train, and can only be taken during character creation. Some Powers a race can choose from as a Racial power are Background Powers, as conceivably any race if in a position (i.e. background) to study them could do so and could learn them, then they ought not be racial powers.
 - **Background** - so called "simpler" Powers that can be taken as part of your Background, the skills and abilities of your childhood and professional life before becoming an adventurer

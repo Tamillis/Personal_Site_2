@@ -1,112 +1,26 @@
 <template>
-    <section class="section bg-black-transparent-0p3">
-        <h1 class="main-title">P.E.D.D.</h1>
-        <h2 class="subsubtitle text-centre no-decoration">Powers</h2>
-
-        <Links />
-
-        <div class="main-text inset">
-            <div id="pedd" class="pedd"></div>
-        </div>
-
-        <div class="main-text inset pedd">
-            <PowersList />
-        </div>
-
-    </section>
+    <PeddPage md="pedd-powers" subtitle="Powers">
+        <PowersList />
+    </PeddPage>
 </template>
 
 <script setup>
-import { putMdinElement } from '../../assets/functionality';
-import { onMounted, onUnmounted } from 'vue';
+import { onUnmounted } from 'vue';
 import PowersList from '../../components/PEDD/PowersList.vue';
-import Links from '../../components/PEDD/Links.vue';
+import PeddPage from './PeddPage.vue';
 
 window.addEventListener("MarkedDone", peddPowersEvents);
-
-onMounted(async () => {
-    await putMdinElement('../src/assets/pedd/pedd-powers.md', 'pedd');
-});
 
 onUnmounted(() => window.removeEventListener("MarkedDone", peddPowersEvents));
 
 function peddPowersEvents() {
     document.getElementById("toggle-tags").addEventListener("click", () => {
-        document.getElementById("tag-section").classList.toggle("hidden");
+        document.getElementById("tags-section").classList.toggle("hidden");
     });
 }
-
-//add 
 
 </script>
 
 <style>
-#pedd a,
-#pedd a:link,
-#pedd a:visited {
-    text-decoration: none;
-    color: var(--highlight);
-    font-style: normal;
-    font-weight: bold;
-    overflow-wrap: break-word;
-}
 
-#pedd a:hover {
-    font-style: italic;
-}
-
-#pedd blockquote {
-    margin-left: var(--textindent);
-    background-color: rgba(0, 0, 0, 0.3);
-    width: fit-content;
-    padding-right: 1.5rem;
-    border-top: 2px solid var(--highlight);
-    border-bottom: 2px solid var(--highlight);
-}
-
-#pedd p {
-    line-height: 1.2rem;
-    margin-bottom: 0.33rem;
-}
-
-#pedd h1 {
-    text-align: center;
-    font-size: var(--main-title-size);
-}
-
-#pedd h2 {
-    font-size: var(--subtitle-size);
-}
-
-#pedd h3 {
-    font-size: var(--subsubtitle-size);
-    text-decoration: underline;
-    margin-top: 1rem;
-    margin-bottom: -0.33rem;
-}
-
-#pedd h4 {
-    font-size: var(--para-size);
-    font-weight: 700;
-    margin-top: 0.75rem;
-    margin-bottom: -0.33rem;
-}
-
-#pedd em {
-    font-size: 1.1rem;
-    font-weight: 500;
-    line-height: 1.3rem;
-}
-
-#pedd strong {
-    font-weight: 700;
-}
-
-#pedd li {
-    list-style: circle;
-}
-
-#pedd table {
-    margin: 0.5rem auto;
-}
 </style>

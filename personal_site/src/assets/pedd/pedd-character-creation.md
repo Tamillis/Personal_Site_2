@@ -41,21 +41,19 @@ Also as part of step 1 I ask you to think of your character's **Bonds**, **Ideal
 All characters have 6 **Statistics**, a.k.a. "Stats", with a single value ranging from -3 to +5. (These values are higher and lower for monsters and "Super humans", with in-system values running from -5 to +10). 5e's ability score into modifier system was confusing to new players and frankly vestigial, so I removed it.
 
 The six **Statistics** are:
-
-*Projection Ability*
 - **Accuracy** - used in ranged attacks, and feats of precision
 - **Perception** - used to sense the world, spot hidden things, and read others
-- **Strength** - used in melee attacks, and feats of brawn - your body's physical ability to force your way to victory
-- **Dexterity** - used in many skills, for feats of deftness - your body's phsyical ability to apply subtle power, bending yourself and redirecting the world to your whims
-- **Intelligence** - used in knowledge and understanding, for feats of alacrity
-- **Charisma** - used to affect others through force of personality, empathy and displays of emotion
+- **Strength** - used in melee attacks, and feats of brawn
+- **Dexterity** - used in many skills, for feats of deftness
+- **Intelligence** - used to learn knowledge, understand puzzles and in cunning and manipulation, for feats of alacrity
+- **Charisma** - used to move others through force of personality, empathy and displays of emotion, genuine or otherwise
 
 The idea behind the particular Stats is the following schema of worldy-interaction:
-| - | "Direct" | "Indirect" |
+| - | Direct | Indirect |
 | --- | --- | --- |
-| "External" | **Accuracy** | **Perception** |
-| "Liminal" | **Strength** | **Dexterity** |
-| "Internal" | **Charisma** | **Intelligence** |
+| ***External*** | Accuracy | Perception |
+| ***Liminal*** | Strength | Dexterity |
+| ***Internal*** | Charisma | Intelligence |
 
 Stat design is split between direct application, when a character affects the world directly, vs. indirect where interaction is more subtle. External Stats affect the world at a distance from a character, and limenal means at point of contact. Internal of course means interaction through the lense of the character's inner world: their mentality.
 
@@ -108,7 +106,10 @@ Sometimes enemy attacks and other effects are made against your "Resistance DC",
 - **Senses** - a roleplay statistic that lets you know the suite of senses available to your character's race
 - **Passive Stats** - sometimes Powers or play require a value to compare against. The DM can ask you to make a roll that then represents that value, and sometimes they will ask for your "Passive Strength", etc. This is 8 + the Stat Value.
 
-#### Tertiary Statistics
+<h4><a id="toggle-tertiary">Tertiary Statistics...</a></h4>
+
+<div id="tertiary-section" class="hidden">
+
 These 'Statistics' are not used in the game explicitely, but are a fun little aside for calculating ancilliary values for your character. Feel free to skip this step if you're not interested, or completely ignore its results.
 
 - **Appearance** - the comeliness of your visage, **Strength** + **Charisma**
@@ -116,6 +117,8 @@ These 'Statistics' are not used in the game explicitely, but are a fun little as
 - **Foresight** - your ability to predict how things will come out moment-to-moment, **Perception** + **Intelligence**
 
 A few Powers and corners may use these Stats, but only explicitely as the combination of normal Stats that define them, such as with "Foresigthed Defence" which is built upon Perception and Intelligence.
+
+</div>
 
 ### Races
 Your race is what you were born as. The choices your character had no hand in making. Your physical circumstances, your family, childhood, place of birth, home and all these little factors. When chosing a Race consider these, and consider what bonds (family, friends, childhood haunts), what ideals (beliefs you were raised with), and flaws (deep-rooted assumptions, traumas, rivals) you may have too.
@@ -153,16 +156,18 @@ Note that any martial weapon choice can be downgraded to a simple weapon, a shie
 
 When you have options (denoted by a /), choose 1. The packs and tool kits are suggestions, you can take any pack or toolkit.
 
-<div id="equipment-list">
+<a id="toggle-equipment-list">Click here to show</a>
+
+<div id="equipment-list-section" class="hidden">
 
 - The Fighter
   - Chainmail, a shield, 3 Martial Weapons of your choice, 2 Simple weapons of your choice, a dungeoneer's / explorer's pack
 - The Rogue
-  - Leather Armour, a melee martial weapon of your choice, a ranged martial weapon of your choice, a simple weapon of your choice, a set of tools (Thieves' / Alchemist's / Tinker's / Smith's), a Burlglar's / Dungeoneer's / Explorer's pack
+  - Leather Armour, a melee martial weapon of your choice, a ranged martial weapon of your choice, a simple weapon of your choice, a set of tools (Thieves' / Alchemist's / Tinker's / Smith's), a Burglar's / Dungeoneer's / Explorer's pack
 - The Wizard
-  - a staff, a wand, a component pouch full of arcane spellcasting components, a set of tools (Alchemist's / Herbalist's), a diplomat's /entertainer's / explorer's / scholar's pack
-- The Tinker
-  - Leather armour, a Simple Weapon of your choice, a set of tools (Tinker's, Woodcarver's, Painter's, Jeweler's, Caligrapher's)
+  - a staff, a wand, a component pouch full of arcane spellcasting components, a set of tools (Alchemist's / Herbalist's), a diplomat's / entertainer's / explorer's / scholar's pack
+- The Artificer
+  - any two simple weapons, a light crossbow and 20 bolts / a pistol and 20 paper cartridges, studded leather armor / scale mail, a set of tools (Tinker's, Woodcarver's, Painter's, Jeweler's, Caligrapher's, Thieves'), a burglar's / dungeoneer’s / explorer's pack
 - The Destitute
   - a knife, an empty knapsack, the clothes on your back, and nothing more
 - The Cleric
@@ -172,13 +177,15 @@ When you have options (denoted by a /), choose 1. The packs and tool kits are su
 - The Warlock
   - Padded armour, a Martial Weapon of your choice representative of your patron, a knife, an occult spellcasting wand, a set of tools (alchemist's / calligrapher's / jeweller's / disguise / forgery)
 - The Bard
-  - Padded armour, an elegant Martial or Simple weapon of your choice, a knife, a musical instrument (lute / horn / drum / viol), a burglar's/diplomat's/entertainer's/explorer's pack 
+  - Padded armour, an elegant Martial or Simple weapon of your choice, a knife, a musical instrument (lute / horn / drum / viol), a burglar's/diplomat's/entertainer's/explorer's pack
 
 </div>
 
 Pack's, for reference (you may with your DM's permission swap your pack for any other pack):
 
-<div class="proficiencies-list">
+<a id="toggle-pack-list">Click here to show</a>
+
+<div id="pack-list-section" class="hidden">
 
 - Burglar's Pack - Includes a backpack, a bag of 1,000 ball bearings, 10ft of string, a bell, 5 candles, a crowbar, a hammer, 10 pitons, a hooded lantern, 2 flasks of oil, 5 days rations, a tinderbox, and a waterskin. The pack also has 50ft of hempen rope strapped to the side of it.
 - Diplomat's Pack - Includes a chest, 2 cases for maps and scrolls, a set of fine clothes, a bottle of ink, an ink pen, a lamp, 2 flasks of oil, 5 sheets of paper, a vial of perfume, sealing wax, and soap.

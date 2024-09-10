@@ -58,93 +58,11 @@ Pact Magic, while clearly occult in nature, functions quite differently to other
 
 Patrons are known to plug their warlocks with all sorts of spells of varied yet thematic spells, with each Patron presenting a unique spell list: one of the sphere's as a base plus a number of "emblematic spells" added to that list, and "anethema spells" that may be removed. Patrons are also known to change what spells they imbibe their followers with during periods of communion, and so Pact Magic is the only kind known to change spells during a Downtime Activity period, rather than a Rest or not at all as is the case with Innate Spells.
 
-As in the base game, Pact Magic is also notable for its vastly different spellcasting resource. It avoids the need for Mana. Instead, the warlock has a well of power that is known as their “Stipend”, that “Recharges” after a Short Rest, unlike other Spellcasting which uses Mana Reserve that returns on a Long Rest. 
+As in the base game, Pact Magic is also notable for its vastly different spellcasting resource. It avoids the need for Mana. Instead, the warlock has a well of power that is known as their “Stipend”, that “Recharges” after a Short Rest, unlike other Spellcasting which uses Mana Reserve that returns on a Long Rest.
 
 Lastly, the Spellcasting Ability that governs the magic casting is also dictated by the Patron.
 
-None: Pact Magic does not count as one of the 'Spellcasting' Powers for the purpose of the 'spellcasting' prerequisite of some Powers (which is why it doesn't have that tag).
-
-#### Archfey
-
-(TODO: Shove these Patrons into Powers)
-
-**Spellcasting Ability** - [Verdance](#-verdance-table). Additionally if your reside, spending more time than not, in a single region for a lunar month, the Verdance of that region increases by a stage (unless it is already Abundant). After this, if you leave, it reverts to the previous stage over the course of a lunar month.
-
-**Spell List** - Primal Sphere
-
-**Emblematic Spells** TODO
-
-In addition to the Arcane Sphere spell list
-
-| Magnitude | Spells |
-| --- | --- | 
-| Cantrip | Eldritch Blast, Vicious Mockery |
-| I | Arms of Hadar, Dissonant Whispers, Hex | 
-| II | Enthrall, Immovable Object, Silence | 
-| III | Conjure Barrage, Hunger of Hadar, Meld into Stone | 
-| IV | Compulsion, Gravity Sinkhole, Shadow of Moil | 
-| V | Antilife Shell, Awaken, Destructive Wave | 
-| VI | Forbiddance, Gravity Fissure, Primordial Ward | 
-| VII | Divine Word, Tether Essence | 
-| VIII | Dark Star, Reality Break | 
-| IX | Ravenous Void | 
-
-**Anathema** TODO
-
-Spells from the Arcane Sphere unavailable to you.
-
-| Magnitude | Spells |
-| --- | --- | 
-| Cantrip | Friends |
-| I | Cure Wounds, Protection from Good and Evil | 
-| II | Aid, Lesser Restoration | 
-| III | Catnap, Revivify | 
-| IV | Fabricate, Summon Construct | 
-| V | Dawn, Greater Restoration | 
-| VI | Sunbeam | 
-| VII | Sequester | 
-| VIII | Sunburst | 
-| IX | Wish | 
-
-#### Fiend
-
-**Spellcasting Ability** - Charisma. Additionally, your maximum Charisma is now 6, and your Charisma increases by 1 but your Willpower decreases by 2. If using Appearance, it further increases by 1.
-
-**Spell List** - Occult Sphere
-
-**Emblematic Spells** TODO
-
-In addition to the Arcane Sphere spell list
-
-| Magnitude | Spells |
-| --- | --- | 
-| Cantrip | Eldritch Blast, Vicious Mockery |
-| I | Arms of Hadar, Dissonant Whispers, Hex | 
-| II | Enthrall, Immovable Object, Silence | 
-| III | Conjure Barrage, Hunger of Hadar, Meld into Stone | 
-| IV | Compulsion, Gravity Sinkhole, Shadow of Moil | 
-| V | Antilife Shell, Awaken, Destructive Wave | 
-| VI | Forbiddance, Gravity Fissure, Primordial Ward | 
-| VII | Divine Word, Tether Essence | 
-| VIII | Dark Star, Reality Break | 
-| IX | Ravenous Void | 
-
-**Anathema** TODO
-
-Spells from the Arcane Sphere unavailable to you.
-
-| Magnitude | Spells |
-| --- | --- | 
-| Cantrip | Friends |
-| I | Cure Wounds, Protection from Good and Evil | 
-| II | Aid, Lesser Restoration | 
-| III | Catnap, Revivify | 
-| IV | Fabricate, Summon Construct | 
-| V | Dawn, Greater Restoration | 
-| VI | Sunbeam | 
-| VII | Sequester | 
-| VIII | Sunburst | 
-| IX | Wish | 
+Pact Magic does not count as one of the 'Spellcasting' Powers for the purpose of the 'spellcasting' prerequisite of some Powers (which is why it doesn't have that tag).
 
 ### Spell Schools
 Spell schools are another vestigial part of the D&D system, but I think they're actually quite interesting and deserve a bit more love. Now many Powers key specifically off a spell's school, notably Occult Spellcasting and my Goblinoid's race, hopefully making them more interesting and useful!

@@ -48,6 +48,11 @@ const router = createRouter({
       component: () => import('../views/PEDD/PEDDCharacterCreation.vue')
     },
     {
+      path: '/pedd/character-creator',
+      name:'pedd-character-creator',
+      component: () => import('../views/PEDD/PEDDCharacterCreator.vue')
+    },
+    {
       path: '/pedd/skills',
       name:'pedd-skills',
       component: () => import('../views/PEDD/PEDDSkills.vue')
