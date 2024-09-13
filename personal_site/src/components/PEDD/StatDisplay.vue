@@ -1,40 +1,70 @@
 <template>
     <div id="stats">
-        <h3>Stats: </h3>
-        <div class="flex table-like">
-            <p>Accuracy: <span>{{ player.accuracy }}</span></p>
-            <p>Perception: <span>{{ player.perception }}</span></p>
-            <p>Strength: <span>{{ player.strength }}</span></p>
-            <p>Dexterity: <span>{{ player.dexterity }}</span></p>
-            <p>Charisma: <span>{{ player.charisma }}</span></p>
-            <p>Intelligence: <span>{{ player.intelligence }}</span></p>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">Stats</th>
+                    <th colspan="2">Resistances</th>
+                    <th colspan="2">Secondaries</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Accuracy:</td>
+                    <td>{{ player.accuracy }}</td>
+                    <td>Perception:</td>
+                    <td>{{ player.perception }}</td>
+                    <td>Reflexes:</td>
+                    <td><span v-if=player.reflexLimited>
+                            <span style="text-decoration: line-through;">{{ player.reflexes }}</span>
+                            (<span style="color:var(--highlight); font-weight:bold;">{{ player.reflexLimit }}</span>)
+                        </span>
+                        <span v-else>{{ player.reflexes }}</span>
+                    </td>
+                    <td>
+                        <a @click="showDefenceInfo = !showDefenceInfo">Defence: </a>
+                        <span v-if="showDefenceInfo">{{ defenceInfo }}</span>
+                    </td>
+                    <td>{{ player.defence }}</td>
+                </tr>
+                <tr>
+                    <td>Strength:</td>
+                    <td>{{ player.strength }}</td>
+                    <td>Dexterity: </td>
+                    <td>{{ player.dexterity }}</td>
+                    <td>Fortitude: </td>
+                    <td> {{ player.fortitude }}</td>
+                    <td>
+                        <a @click="showHealthInfo = !showHealthInfo">Health: </a>
+                        <span v-if="showHealthInfo">{{ healthInfo }}</span>
+                    </td>
+                    <td>{{ player.health }}</td>
+                </tr>
+                <tr>
+                    <td>Charisma:</td>
+                    <td>{{ player.charisma }}</td>
+                    <td>Intelligence:</td>
+                    <td>{{ player.intelligence }}</td>
+                    <td>Willpower:</td>
+                    <td>{{ player.willpower }}</td>
+                    <td>Focus:</td>
+                    <td>{{ player.willpower < 1 ? 1 : player.willpower }}</td>
+                </tr>
+                <tr>
+                    <td><span v-if="haveFaith">Faith:</span></td>
+                    <td><span v-if="haveFaith">{{ player.faith }}</span></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Speed:</td>
+                    <td>{{ player.race ? player.race.speed.val : "" }}</td>
+                </tr>
+            </tbody>
+        </table>
 
-            <div v-if="haveFaith">
-                <p>Faith: <span>{{ player.faith }}</span></p>
-            </div>
-        </div>
-
-        <h3>Resistances: </h3>
-        <div class="flex table-like">
-            <p>Reflexes: 
-                <span v-if=player.reflexLimited><span style="text-decoration: line-through;">{{player.reflexes}}</span> (<span style="color:var(--highlight); font-weight:bold;">{{ player.reflexLimit }}</span>)</span>
-                <span v-else>{{ player.reflexes }}</span>
-            </p>
-            <p>Fortitude: {{ player.fortitude }}</p>
-            <p>Willpower: {{ player.willpower }}</p>
-        </div>
-
-        <h3>Secondaries: </h3>
-        <div class="flex table-like">
-            <p>Health: {{ player.fortitude + player.willpower + (player.race ? player.race.baseHealth : 8) }}</p>
-            <p>Focus: {{ player.willpower < 1 ? 1 : player.willpower }}</p>
-            <p>Defence: Base {{ player.baseDefence }} + Armour {{ player.armour }} + Reflexes {{ player.reflexes }} = {{
-                player.defence }}</p>
-            <p>Speed: {{ player.race ? player.race.speed.val : "" }}</p>
-            <p>Size: {{ player.race ? capitalize(player.race.size.val) : "" }}</p>
-        </div>
-
-        <h3 @click="showTertiaries = !showTertiaries" style="cursor: pointer;">{{showTertiaries ? "Tertiaries:" : "Tertiaries..." }} </h3>
+        <h3 @click="showTertiaries = !showTertiaries" style="cursor: pointer;">{{ showTertiaries ? "Tertiaries:" :
+            "Tertiaries..." }} </h3>
         <section v-if="showTertiaries">
             <p><small>Don't forget these are just for flavour.</small></p>
             <div class="flex table-like">
@@ -48,10 +78,23 @@
 </template>
 
 <script setup>
-import {ref} from 'vue';
+import { ref, computed } from 'vue';
 import { capitalize } from '../../assets/functionality';
 
 const props = defineProps(["player", "haveFaith"]);
+const showHealthInfo = ref(false);
+const healthInfo = computed(() => {
+    return `${props.player.race ? props.player.race.name : 'Race'} base (${props.player.race ? props.player.race.baseHealth : 0}) + ` +
+        `Fortitude (${props.player.fortitude}) + ` +
+        `Willpower (${props.player.willpower}) = `;
+});
+
+const showDefenceInfo = ref(false)
+const defenceInfo = computed(() => {
+    return `${props.player.race ? capitalize(props.player.race.size.val) + " " : ""} Size (${props.player.baseDefence}) + ` +
+        `Armour ${props.player.armour} + ` +
+        `Evasion (${props.player.reflexLimited ? props.player.reflexLimit : props.player.reflexes}) = `;
+});
 const showTertiaries = ref(false);
 </script>
 
@@ -63,6 +106,19 @@ h3 {
 
 p {
     font-weight: 600;
+}
+
+table th {
+    border-bottom: 2px var(--highlight) groove;
+}
+
+table td, table th {
+    padding: 0.25rem 0.5rem;
+}
+
+table td:nth-child(odd) {
+    text-align: right;
+    padding-right: 1rem;
 }
 
 .flex {

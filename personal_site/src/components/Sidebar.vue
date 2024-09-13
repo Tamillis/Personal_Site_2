@@ -1,6 +1,6 @@
 <template>
-    <nav class="sidebar" id="nav">
-        <ul id="links" class="shiftBack" @click="toggleNav()">
+    <nav class="sidebar shiftOut" id="nav" @click="toggleNav()">
+        <ul id="links">
             <li class="nav-item">
                 <RouterLink to="/">Home</RouterLink>
             </li>
@@ -39,6 +39,7 @@
             <li class="nav-item"><a href="mailto:peter@bellaby.co.uk?subject=Enquiry for Peter Bellaby"
                     class="nav-item-a">Email Me</a></li>
         </ul>
+        <div class="triangle-point"></div>
     </nav>
 </template>
 
@@ -55,12 +56,12 @@ function toggleNav() {
     //if the display of the sidebar is nill or none move items sidebar amount to the side
     //and set the display to block, or do the reverse
     if (out) {
-        links.classList.remove("shiftOut");
-        links.classList.add("shiftBack");
+        nav.classList.remove("shiftOut");
+        nav.classList.add("shiftBack");
     }
     else {
-        links.classList.remove("shiftBack");
-        links.classList.add("shiftOut");
+        nav.classList.remove("shiftBack");
+        nav.classList.add("shiftOut");
     }
     out = !out;
 }
@@ -77,85 +78,39 @@ a {
     transition: 0.2s;
 }
 
+a:hover {
+    cursor: pointer;
+    background-color: hsla(160, 100%, 37%, 0.2);
+    box-shadow: 0px 0px 5px 5px hsla(160, 100%, 37%, 0.2);
+}
+
+#nav {
+    transition: transform 0.33s ease-in-out, background-color 0.5s ease-in-out;
+}
+
 .sidebar {
-    position: absolute;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    padding-bottom: 1rem;
+    border-radius: 0px 0px 10px 10px;
+    border: var(--highlight) 4px groove;
+    border-top: none;
 }
 
-@media screen and (min-width: 600px) {
-    .sidebar {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        width: fit-content;
-        height: 100vh;
-
-        transition: ease-in;
-        transform: 0.5s;
-    }
-
-    #links {
-        position: relative;
-        transition: transform 0.33s ease-in-out, background-color 0.5s ease-in-out;
-        padding: 1rem;
-        border-radius: 0px 10px 10px 0px;
-        border: var(--highlight) 4px groove;
-        border-left: none;
-    }
-
-    .shiftOut {
-        transform: translateX(-85%);
-        background-color: var(--background-transparent);
-        z-index: 5 !important;
-    }
-
-    .shiftBack {
-        transform: translateX(0%);
-        background-color: var(--backgroundDark);
-        z-index: 3 !important;
-    }
-
-    .nav-item {
-        padding: 0.13rem 1rem 0.13rem 0rem;
-        text-align: left;
-        list-style: '- ' inside;
-        border-bottom: 1px solid var(--text-color);
-    }
-
-    .nav-item:last-child {
-        border-bottom: none;
-    }
+.shiftOut {
+    transform: translateY(-85%);
+    background-color: var(--background-transparent);
+    z-index: 5 !important;
 }
 
-@media screen and (max-width: 599px) {
-    .sidebar {
-        top: 0px;
-        width: 100vw;
-    }
+.shiftBack {
+    transform: translateY(0%);
+    z-index: 5 !important;
+    background-color: var(--backgroundDark);
+}
 
-    #links {
-        display: flex;
-        flex-wrap: wrap;
-        transition: transform 0.33s ease-in-out, background-color 0.5s ease-in-out;
-        padding: 1rem;
-        border-radius: 0px 0px 10px 10px;
-        border: var(--highlight) 4px groove;
-        border-top: none;
-    }
-
-    .shiftOut {
-        transform: translateY(-85%);
-        background-color: var(--background-transparent);
-        z-index: 5 !important;
-    }
-
-    .shiftBack {
-        transform: translateY(0%);
-        z-index: 5 !important;
-        background-color: var(--backgroundDark);
-    }
-
-    .nav-item {
+.nav-item {
         margin-left: 0.33rem;
         padding-right: 0.33rem;
         text-align: left;
@@ -166,22 +121,57 @@ a {
     .nav-item:last-child {
         border-right: none;
     }
+
+@media screen and (max-width: 599px) {
+    #links {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
 }
 
-/* a,
-li {
-    width: 100%;
-} */
+@media screen and (min-width: 600px) {
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
-a:hover {
-    cursor: pointer;
-}
+        width: fit-content;
+        height: fit-content;
 
+        transition: ease-in;
+        transform: 0.5s;
 
+        top: 50%;
 
+        padding: 1rem;
+        border-radius: 0px 10px 10px 0px;
+        border: var(--highlight) 4px groove;
+        border-left: none;
+    }
 
-.nav-item a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-    box-shadow: 0px 0px 5px 5px hsla(160, 100%, 37%, 0.2);
+    .shiftOut {
+        transform: translate(-85%, -50%);
+        background-color: var(--background-transparent);
+        z-index: 1 !important;
+    }
+
+    .shiftBack {
+        transform: translate(0%, -50%);
+        background-color: var(--backgroundDark);
+        z-index: 5 !important;
+    }
+
+    .nav-item {
+        padding: 0.13rem 1rem 0.13rem 0rem;
+        text-align: left;
+        list-style: '- ' inside;
+        border: none;
+        border-bottom: 1px solid var(--text-color);
+    }
+
+    .nav-item:last-child {
+        border-bottom: none;
+    }
 }
 </style>

@@ -49,6 +49,10 @@
             "stat": "Perception"
         },
         {
+            "skill": "Musical Instruments",
+            "stat": "Dexterity"
+        },
+        {
             "skill": "Navigation",
             "stat": "Perception"
         },

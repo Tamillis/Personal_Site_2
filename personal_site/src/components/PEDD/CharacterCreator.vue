@@ -1,12 +1,12 @@
 <template>
 	<section>
-		<CharacterDisplay :player="player" :haveFaith="sections.faith" />
+		<CharacterDisplay :player="player" :haveFaith="sections.faith" @updateImgSrc="(src) => chosen.imgSrc = src" />
 
-		TODO: Make resource powers work as intended. Flag Red Rage as such.
+		TODO: Make resource powers work as intended. Flag Red Rage as such. Get rid of pure resource powers, they do nothing (like Fighting Style). Just use tags.
 
-		<button class="btn">TODO: Save</button>
+		<button class="btn" @click="debug = !debug">TODO: Save</button>
 
-		<pre style="text-indent: 0;">
+		<pre style="text-indent: 0;font-size:0.67em" :class="{ hidden: debug }">
 DEBUG:
 {{ JSON.stringify(chosen, null, 2) }}
 		</pre>
@@ -26,69 +26,35 @@ DEBUG:
 		</div>
 
 		<section id="concept-section" v-show="sections.concept">
-			<CharacterConcept
-				:chosen="chosen"
-				@name="name => (chosen.name = name)"
-				@concept="concept => (chosen.concept = concept)"
-				@bonds="bonds => (chosen.bonds = bonds)"
-				@ideals="ideals => (chosen.ideals = ideals)"
-				@flaws="flaws => (chosen.flaws = flaws)"
-			/>
+			<CharacterConcept :chosen="chosen" @name="name => (chosen.name = name)"
+				@concept="concept => (chosen.concept = concept)" @bonds="bonds => (chosen.bonds = bonds)"
+				@ideals="ideals => (chosen.ideals = ideals)" @flaws="flaws => (chosen.flaws = flaws)" />
 		</section>
 
 		<section id="race-section" v-show="sections.race">
-			<RaceSelector 
-                :chosenRace="chosen.race" 
-                :chosenAnyStats="chosen.anyRaceStats"
-                @race="race => (chosen.race = race)" 
-                @race-stats="stats => setAnyRaceStats(stats)" />
+			<RaceSelector :chosenRace="chosen.race" :chosenAnyStats="chosen.anyRaceStats"
+				@race="race => (chosen.race = race)" @race-stats="stats => setAnyRaceStats(stats)" />
 
 			<div v-if="chosen.race">
-				<RacialPowers
-					:racialPowers="racialPowers"
-					:chosenPowers="chosen.racialPowers"
-					:race="chosen.race"
-					@chosen="powers => (chosen.racialPowers = powers)"
-				/>
+				<RacialPowers :racialPowers="racialPowers" :chosenPowers="chosen.racialPowers" :race="chosen.race"
+					@chosen="powers => (chosen.racialPowers = powers)" />
 			</div>
 		</section>
 
 		<section id="background-section" v-show="sections.background">
-			<Upbringing
-				:chosenUpbringingSkills="[chosen.upbringing.skill1, chosen.upbringing.skill2]"
-				:chosenUpbringingLanguage="chosen.upbringing.language"
-				@upbringing="upbringing => (chosen.upbringing = upbringing)"
-			/>
+			<Upbringing :chosenUpbringingSkills="[chosen.upbringingSkill1, chosen.upbringingSkill2]"
+				:chosenUpbringingLanguage="chosen.upbringingLanguage"
+				@upbringing="upbringing => chooseUpbringing(upbringing)" />
 
-			<!--  TODO: Put background into a component emitting a simple chosen background name -->
-			<h2>Background:</h2>
-			<div id="backgrounds-container">
-				<CardContainer
-					v-for="(bg, i) in backgrounds"
-					:name="bg.name"
-					:expanded="player.background && player.background.name == bg.name"
-					:class="{ hidden: player.background && player.background.name != bg.name }"
-					@chosen="chooseBackground(bg)"
-					:key="`bgc-${i}-${key}`"
-				>
-					<BackgroundContent :bg="bg" />
-				</CardContainer>
-			</div>
+			<Background :background="chosen.background" @backgroundChosen="(bg) => (chosen.background = bg)" />
 
-			<!--  TODO: Put background power into a component emitting a simple chosen power name -->
 			<h2>Background Power:</h2>
 			<div class="cards">
-				<CardContainer
-					v-for="(power, i) in backgroundPowers"
-					:name="power.name"
-					:class="{
-						hidden: player.backgroundPower && player.backgroundPower != power.name
-					}"
-					:expanded="chosen.backgroundPower == power.name"
-					@chosen="chooseBackgroundPower(power)"
-					:key="`bgpc-${i}-${key}`"
-				>
-					<PowerContent :power="power" @highlight="tag => highlight(tag)" />
+				<CardContainer v-for="(power, i) in backgroundPowers" :name="power.name" :class="{
+					hidden: chosen.backgroundPower != '' && chosen.backgroundPower != power.name
+				}" :expanded="chosen.backgroundPower != '' && chosen.backgroundPower == power.name" @chosen="chooseBackgroundPower(power.name)"
+					:key="`bgpc-${i}-${key}`">
+					<PowerContent :power="power" />
 				</CardContainer>
 			</div>
 		</section>
@@ -96,19 +62,17 @@ DEBUG:
 		<section id="role-section" v-show="sections.role">
 			<h2>Role</h2>
 
+			<!-- TODO: From here, remake the StatSelector into a single reusable component -->
 			<h3>Role Stats</h3>
-			<StatSelector
-				:stats="stats"
-				@stat-change="
-					statsSelection => {
-						roleStats = statsSelection;
-						buildPlayer();
-					}
-				"
-			/>
+			<StatSelector :stats="stats" @stat-change="statsSelection => {
+					roleStats = statsSelection;
+					buildPlayer();
+				}
+				" />
 
 			<h3>Role Skills</h3>
-			<SkillSelector :skills="roleSkills" :limit="4 + player.intelligence" @skills="skills => (chosen.roleSkills = skills)" />
+			<SkillSelector :skills="roleSkills" :limit="4 + player.intelligence"
+				@skills="skills => (chosen.roleSkills = skills)" />
 			<p>4 + your Intelligence ({{ player.intelligence }}) = {{ 4 + player.intelligence }}</p>
 
 			<h2>
@@ -119,27 +83,21 @@ DEBUG:
 				<option v-for="tag in tags">{{ tag }}</option>
 			</select>
 			<div class="cards">
-				<CardContainer
-					v-for="(power, i) in rolePowers"
-					:name="power.name"
+				<CardContainer v-for="(power, i) in rolePowers" :name="power.name"
 					:expanded="openedRolePowerCards.includes(power.name)"
 					:class="{ highlight: chosen.rolePowers.includes(power.name) }"
 					@chosen="() => (openedRolePowerCards = choosePower(power, 'rolePowers', openedRolePowerCards, 3))"
-					:key="`rlpc-${i}-${key}`"
-				>
+					:key="`rlpc-${i}-${key}`">
 					<PowerContent :power="power" @highlight="tag => highlight(tag)" />
 				</CardContainer>
 			</div>
 		</section>
 
 		<section id="equipment-section" v-if="sections.equipment">
-			<EquipmentTab
-				@equipment="equipment => (chosen.roleEquipment = equipment)"
-				@armour="armour => (chosen.armour = armour)"
-				@shield="shield => (chosen.shield = shield)"
+			<EquipmentTab @equipment="equipment => (chosen.roleEquipment = equipment)"
+				@armour="armour => (chosen.armour = armour)" @shield="shield => (chosen.shield = shield)"
 				@helmet="helmet => (chosen.helmet = helmet)"
-				@ref-limit="reflexLimit => (chosen.reflexLimit = reflexLimit)"
-			/>
+				@ref-limit="reflexLimit => (chosen.reflexLimit = reflexLimit)" />
 		</section>
 	</section>
 </template>
@@ -149,7 +107,6 @@ import { ref, computed } from "vue";
 import PowerContent from "./PowerContent.vue";
 import RaceSelector from "./RaceSelector.vue";
 import CardContainer from "./CardContainer.vue";
-import BackgroundContent from "./BackgroundContent.vue";
 import StatSelector from "./StatSelector.vue";
 import CharacterConcept from "./CharacterConcept.vue";
 import SkillSelector from "./SkillSelector.vue";
@@ -163,6 +120,7 @@ import powers from "../../assets/pedd/pedd-powers.json";
 import races from "../../assets/pedd/pedd-races.json";
 import backgrounds from "../../assets/pedd/pedd-backgrounds.json";
 import skillsData from "../../assets/pedd/pedd-skills.json";
+import Background from "./Background.vue";
 
 //derived resources
 let stats = ["accuracy", "perception", "strength", "dexterity", "charisma", "intelligence"];
@@ -192,6 +150,7 @@ function setSection(section) {
 
 //charactersheet state
 let key = ref(0); //TODO: Remove key?
+let debug = ref(true);
 
 //TODO: change chosen to be the point of reference (i.e. id's, not objects), and also to load selections from chosen so that it can be used for saving
 // let chosen = ref({
@@ -222,6 +181,7 @@ let key = ref(0); //TODO: Remove key?
 // https://stackoverflow.com/questions/23344776/how-to-access-data-of-uploaded-json-file
 
 //TEST, as if it was loaded from a save
+//TODO: convert as much as possible to use simple int id's to ideally compress the url
 let chosen = ref({
 	name: "Ana",
 	concept: "A Young Elf Abroad",
@@ -234,20 +194,22 @@ let chosen = ref({
 		{ desc: "intelligence", val: -1 }
 	],
 	racialPowers: ["Elven Accuracy", "Keen Senses", "Wood Elf Magic"],
-	background: false,	//TODO: from here
-	backgroundPower: "",
-	upbringing: {
-		skill1: "Animal Handling",
-		skill2: "Nature",
-		language: "Damarani"
-	},
-	rolePowers: [],
-	roleSkills: [],
-	roleEquipment: [],
+	background: "Acolyte",
+	backgroundPower: "Scrivener's Magic",
+	upbringingSkill1: "Animal Handling",
+	upbringingSkill2: "Nature",
+	upbringingLanguage: "Damarani",
+	//TODO: from here
+	roleStatMajor: "Accuracy",
+	roleStatMinor: "Dexterity",
+	rolePowers: ["Archery", "Lay on Hands", "Mana"],
+	roleSkills: ["Religion", "Medicine", "Riding"],
+	roleEquipment: "The Cleric",
 	armour: 0,
 	helmet: 0,
 	shield: 0,
-	reflexLimit: 99
+	reflexLimit: 99,
+	imgSrc: "https://dsm01pap007files.storage.live.com/y4mYxAkM_i8Gebhc4foTlfme5fFV5KLJl91A2KLbkVl1Ca73CFlAycsi9XA7ODStJuI9Xy8E3K8sQ2WMJUGq4bcTxAzN65b4TF5vf_8aXTmgqyF8JJ1q01Q_I9gUZunpl7KiXV_OzCoCngEGS8VMwPYeZqtxz20p9QlxlN9xezS_GqfbLqBMQ5udIiyzaDlJs9NyqNtrwPKfNb28700UwyhrniA2tMo5RleQOGdGD7itkI?encodeFailures=1&width=420&height=420"
 });
 
 //race any stat selections
@@ -264,31 +226,16 @@ let racialPowers = computed(() =>
 //background
 let backgroundPowers = computed(() => powers.filter(p => p.tag.includes("background")));
 
-let chooseBackground = chosenBg => {
-	if (chosen.value["background"].name == chosenBg.name) {
-		//clicked on open card, close it and reveal all cards
-		chosen.value["background"] = false;
-	} else {
-		//open chosen card, hide others
-		chosen.value["background"] = chosenBg;
-	}
+let chooseUpbringing = (upbringing)  => {
+	chosen.value.upbringingSkill1 = upbringing.skill1;
+	chosen.value.upbringingSkill2 = upbringing.skill2;
+	chosen.value.upbringingLanguage = upbringing.language;
+}
 
-	buildPlayer();
-	return;
-};
-
-let chooseBackgroundPower = card => {
-	if (chosen.value.backgroundPower == card.name) {
-		//clicked on open card, close it and reveal all cards
-		chosen.value.backgroundPower = false;
-	} else {
-		//open chosen card, hide others
-		chosen.value.backgroundPower = card.name;
-	}
-
-	buildPlayer();
-	return;
-};
+let chooseBackgroundPower = (bg) => {
+	if(chosen.value.backgroundPower == bg) chosen.value.backgroundPower = '';
+	else chosen.value.backgroundPower = bg;
+}
 
 //role
 let openedRolePowerCards = [];
@@ -344,8 +291,11 @@ let buildPlayer = () => {
 	player.value.race = chosen.value.race != "";
 	if (player.value.race) player.value.race = races.filter(r => r.name == chosen.value.race)[0];
 	player.value.racialPowers = chosen.value.racialPowers;
-	player.value.background = chosen.value.background;
+
+	player.value.background = false;
+	if (chosen.background != '') player.value.background = backgrounds.filter(bg => chosen.value.background == bg.name)[0];
 	player.value.backgroundPower = chosen.value.backgroundPower;
+
 	player.value.rolePowers = chosen.value.rolePowers;
 
 	let ss = {
@@ -360,7 +310,7 @@ let buildPlayer = () => {
 	ss[roleStats.value[1]] = 1;
 
 	for (let stat of chosen.value.anyRaceStats) {
-        ss[stat.desc] += stat.val;
+		ss[stat.desc] += stat.val;
 	}
 
 	player.value.strength = ss.strength;
@@ -386,6 +336,7 @@ let buildPlayer = () => {
 	player.value.reflexLimit = chosen.value.reflexLimit;
 	player.value.reflexLimited = player.value.reflexes > player.value.reflexLimit
 	player.value.willpower = player.value.intelligence + player.value.charisma;
+	player.value.health = player.value.fortitude + player.value.willpower + (player.value.race ? player.value.race.baseHealth : 0)
 
 	player.value.faith = 2; //TODO: make faith input based
 
@@ -393,16 +344,19 @@ let buildPlayer = () => {
 
 	player.value.skills = [];
 	player.value.skills = chosen.value.roleSkills.slice(); //copy array by value not ref
-	player.value.skills.push(chosen.value.upbringing.skill1);
-	player.value.skills.push(chosen.value.upbringing.skill2);
-	player.value.skills.push(`Language (${chosen.value.upbringing.language})`);
-	if (chosen.value.background) player.value.skills = player.value.skills.concat(chosen.value.background.skills);
+	player.value.skills.push(chosen.value.upbringingSkill1);
+	player.value.skills.push(chosen.value.upbringingSkill2);
+	player.value.skills.push(`Language (${chosen.value.upbringingLanguage})`);
+
+	if (player.value.background) player.value.skills = player.value.skills.concat(player.value.background.skills);
 	player.value.skills = player.value.skills.sort((s1, s2) => s1.localeCompare(s2));
 
 	player.value.armour = chosen.value.armour + chosen.value.shield + chosen.value.helmet;
 
 	player.value.baseDefence = player.value.race ? baseDefence[player.value.race.size.val] : 8;
-	player.value.defence = Number(player.value.baseDefence) + Number(player.value.armour) + Number(player.value.reflexLimited ? player.value.reflexLimit: player.value.reflexes);
+	player.value.defence = Number(player.value.baseDefence) + Number(player.value.armour) + Number(player.value.reflexLimited ? player.value.reflexLimit : player.value.reflexes);
+
+	player.value.imgSrc = chosen.value.imgSrc;
 
 	//encode player into url for easy saving and sharing
 	let saved = btoa(JSON.stringify(player.value));

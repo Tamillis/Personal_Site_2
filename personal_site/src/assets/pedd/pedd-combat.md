@@ -3,7 +3,7 @@ PEDD significantly changes how combat works both at the character level, through
 
 The goals were to make combat:
  1. More consistently dangerous
- 2. Mre tactical
+ 2. More tactical
  3. (And the seemingly incompatible with the above) snappier
 
 The first point is a combination of the fact that low level combat was too dangerous but higher level combat quickly became trivially easy to survive and very slow to play through. Characters became health sponges that you end up playing whack-a-mole with, and monsters much the same. The fact that interesting combat relied on DM's to employ various twists and challenges on top of typical combat rules to make it engaging says more about the base combat system than being critical of DM's who didn't go that far.
@@ -139,9 +139,11 @@ Additionally, a character can only be engaged by a maximum number of characters 
 ## Combat Statistics
 
 ### Focus
-Focus is both a replacement of Battle Master's unnamed superiority dice pool and an exclusionary partner of the "Concentration" condition. Characters start with their Willpower (to a minimum of 1) Focus. Each point of Focus can be expended on certain Tactical Actions. You regain all used Focus on a Short Rest. 
+Focus is both a replacement of Battle Master's unnamed superiority dice pool and an exclusionary partner of the "Concentration" condition. 
 
-Each time you are Concentrating on a spell, you use cannot Focus.
+Characters start with their Willpower (to a minimum of 1) Focus. Each point of Focus can be expended on certain Tactical Actions and you regain all used Focus on a Short Rest, giving all characters a small (by default) pool of special moves they can pull off during a fight.
+
+Each time you are Concentrating on a spell, you use cannot use Focus.
 
 ### Health
 Health starts higher than the HP that it replaces, with the name also shaking out the video game connetations and helping players who don't come from a video-game background to engage with the Stat. It purposefuly does not progress unless specifically empowered. Health is naturally limited and only those who invest in it become the ineffible heroes who seem to be able to take punch after punch where others would fall to the first blow no matter how many fights they'd been in.
@@ -190,9 +192,9 @@ Their Health also resets when they take a Wound, meaning each wound they can tak
 
 ### Defence
 The Defence Stat replaces AC, and is more flexible than a flat value, being made of three parts:
-- a Base Defence value of 8 for Medium characters, see the Base Defence Table below.
+- a Base Defence value that keys off of size, 8 for Medium characters. See the Base Defence Table below.
 - an Armour value determined by worn Equipment (see [Armour](./pedd/combat#armour))
-- your Reflexes to a minimum of 0 (which can be limited by worn Equipment).
+- your Reflexes to a minimum of 0 (which can be limited by worn Equipment) which is also known as your "Evasion".
 
 It is intented to be, on average, lower than AC, making combat more dangerous. However this is only passive defence, Actions such as Block, and Powers, play a more significant role in increasing Defence, making it more active and combat in general more engaging.
 
@@ -219,7 +221,7 @@ Weapons are a well known weakpoint of 5e and have been addressed many times. In 
 
 PEDD makes use of the following list of weapons, weapon attributes and armour.
 
-More details about the guns and munitions, as they're a core part of my setting, can be found in my [Armouries of the Second Empire](/mewiki/Mitteland/ArmouriesOfTheSecondEmpire).
+More details about guns, munitions, weapons and magical items as they pertain to my setting can be found in my [Armouries of the Second Empire](/mewiki/Mitteland/ArmouriesOfTheSecondEmpire).
 
 #### Weapons
 Courtesy of Weapons Remastered, adapted and tweaked.
@@ -366,7 +368,9 @@ Strength or Dexterity for the attack and damage rolls. You must use the same mod
 </section>
 
 #### Armour
-Armour is changed to the following (+ values can be taken in addition) <a id="toggle-armour">show</a>:
+Armour is updated to the following table. Armour does not stack unless a + value is stated.
+
+<a id="toggle-armour">Click here to show.</a>
 
 <section id="armour-section" class="hidden"> 
 
@@ -412,25 +416,25 @@ Armour is changed to the following (+ values can be taken in addition) <a id="to
 Many creatures have Natural Armour, and so might you through strange Powers. Natural Armour grants an armour value, cannot be doffed and is always 'light', i.e. never limits Reflexes. Like other body armour, it does not stack, so to benefit from greater armour values, you must wear armour with a greater value than your natural armour.
 
 #### Cover
-Cover is functionally unchanged from the base game, but translates like so. Cover is a bonus to your Defence, a +2 for 'Half Cover' and a +5 for 'Three Quarters Cover'. This is independent of Armour and Evasion, so consider it part of your Base Defence. Additionally, these bonuses apply to Reflex Saves as well, just as cover applies to Dexterity Saves in 5e.
+Cover is functionally unchanged from 5e, but translates like so. Cover is a bonus to your Defence, a +2 for 'Half Cover' and a +5 for 'Three Quarters Cover'. This is independent of Armour and Evasion, so consider it part of your Base Defence. Additionally, these bonuses apply to Reflex Saves as well, just as cover applies to Dexterity Saves in 5e.
 
 ### Conditions
-The following are changes and additions to D&D's conditions
+The following are changes and additions to 5e's conditions (I will in time port all the conditions over including an overhaul of exhaustion)
 
-- **Bloodied** - A fan favourite, enemy characters when they fall below half health enter the "Bloodied" condition. This often means their behaviour, tactics and even powers may change for the easier or the much, much harder. Players also get to know that the target is below half health.
-- **Immobilised** - a "new" condition that is just short hand for the often stated "A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed". In addition the target must use its Stationary Defence.
+- **Bloodied** - A fan favourite, enemy characters when they fall below half health enter the "Bloodied" condition. This often means their behaviour, tactics and even powers may change for the easier or the much, much harder. Players also get to know that the target is below half health. Alternatively, on monsters that have 2 to 3 wounds, its the condition after 1 wound.
+- **Charmed** - unless otherwise stated, a charmed character considers you an ally and will heed your commands, which you can give freely, to the best of its ability. However it will not obey commands that are against its interests. If it is an intelligent character, you can attempt to persuade or otherwise convince them to obey, or that their interests lie elsewhere.
+- **Flanked** - replacing the popular alternate rule of 5e, when you are the one in an Engagement who the foe isn’t Engaging, you have Advantage on your weapon attack rolls. You cannot flank a character 2 or more sizes larger than you.
+- **Frightened** - A Frightened character has Disadvantage on Ability checks and Attack rolls while the source of its fear is within line of sight. If it chooses to Move, the character must move away, or otherwise out of line of sight, from the source of its fear. The character doesn’t have to move into obviously dangerous ground, such as a fire or a pit.
+- **Immobilised** - a "new" condition that is just short hand for the often stated "A creature's speed becomes 0, and it can't benefit from any bonus to its speed". In addition the target must use its Stationary Defence.
 - **Incapacitated** - (updated, effectively makes Stun the same condition)
   - The target character is Immobilised
-  - The target character cannot take actions or reactions.
+  - The target character cannot take Actions or Bonus Actions.
   - The target character automatically fails Fortitude and Reflex saves.
   - Attack rolls against the target character have Advantage.
-- **Charmed** - unless otherwise stated, a charmed character considers you an ally and will heed your commands, which you can give freely, to the best of its ability. However it will not obey commands that are against its interests. If it is an intelligent character, you can attempt to persuade or otherwise convince them to obey, or that their interests lie elsewhere.
-- **Frightened** - A Frightened character has Disadvantage on Ability checks and Attack rolls while the source of its fear is within line of sight. If it chooses to Move, the character must move away, or otherwise out of line of sight, from the source of its fear. The character doesn’t have to move into obviously dangerous ground, such as a fire or a pit.
-- **Flanked** - replacing the popular alternate rule of 5e, when you are the one in an Engagement who the foe isn’t Engaging, you have Advantage on your weapon attack rolls. You cannot flank a character 2 or more sizes larger than you.
 
 The following enviromental damage rules are updated and rolled into Conditions of the corresponding name:
+- **Burning** - A character burns each Round. They take 1d6 fire damage at the start of the Round, and can take an Action to extinguish themselves. Unless another DC is stated, it is a DC 8 Reflex save to end the Burning condition.
 - **Falling** - At the end of a fall, a character takes 1d6 bludgeoning damage for every 10ft it fell, to a maximum of 200ft for 20d6. The character lands prone, unless it avoids taking damage from the fall.
 - **Suffocating*** - A character can survive for a number of rounds equal to its Fortitude (to a minimum of 1). At the start of the next turn, it drops to 0 health and is dying, and it can’t regain health or be stabilized until it can breathe again. If it recovers from Dying with a natural 20 and is still Suffocating, it suffers the condition anew as if just running out of breath again.
-- **Burning** - A character burns each Round. They take 1d6 fire damage at the start of the Round, and can take an Action to extinguish themselves. Unless another DC is stated, it is a DC 8 Reflex save to end the Burning condition.
 
 *Holding breath rules: A character can hold their breath for 1 minute plus their Willpower x 30 seconds (to a minimum of 30 seconds). When a character takes damage, it loses 30 seconds of breath. When a character runs out of breath they're Suffocating.

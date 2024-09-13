@@ -1,8 +1,11 @@
 <template>
+    <h2 class="title underline">{{ player.name }}, {{ player.concept }}</h2>
 
-    <h2 class="title">{{ player.name }}, {{ player.concept }}</h2>
+    <div class="flex">
+        <StatDisplay :player="player" :haveFaith="haveFaith" style="margin-top: 1rem" />
+        <CharacterPortrait style="max-width: 25%;" :imgSrc="player.imgSrc" @updateImgSrc="(imgSrc) => $emit('updateImgSrc', imgSrc)"/>
+    </div>
 
-    <StatDisplay :player="player" :haveFaith="haveFaith" style="margin-top: 1rem" />
 
     <div class="flex justify-between gap-1r summary">
         <div>
@@ -35,30 +38,42 @@
         <div class="flex gap-1r flex-wrap">
             <div class="power-summary" v-for="power in selectedPowers">
                 <h4>{{power.name}}</h4>
-                <p><small>{{ power.desc }}</small></p>
+                <div style="font-size:0.66em" v-html="power.desc"></div>
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
-import {computed} from 'vue'
+import {computed, ref} from 'vue'
+import {marked} from 'marked';
 import StatDisplay from './StatDisplay.vue';
 import powers from '../../assets/pedd/pedd-powers.json';
+import CharacterPortrait from './CharacterPortrait.vue';
 
 const props = defineProps(['player', 'haveFaith']);
+const emits = defineEmits(['updateImgSrc']);
 
 const selectedPowers = computed(() => {
-    let sp = props.player.racialPowers.concat(props.player.rolePowers)
-    if(props.player.backgroundPower) sp.push(props.player.backgroundPower);
+    let selectedPower = [];
+    if (props.player.racialPowers) selectedPower = selectedPower.concat(props.player.racialPowers);
+    if(props.player.backgroundPower) selectedPower.push(props.player.backgroundPower);
+    if(props.player.rolePowers && Array.isArray(props.player.rolePowers)) selectedPower = selectedPower.concat(props.player.rolePowers);
 
-    sp = sp.map(p => powers.filter(power => power.name == p)[0]);
-    return sp;
+    selectedPower = selectedPower.map(sp => {
+        let power = powers.filter(p => sp && p.name == sp)[0]
+        return {
+            name: power.name,
+            desc: marked.parse(power.desc)
+        }
+    });
+
+    return selectedPower;
 });
 
 </script>
 
-<style lang="css" scoped>
+<style lang="css">
 .power-summary {
     width: 30%;
 }
@@ -69,21 +84,12 @@ const selectedPowers = computed(() => {
 }
 
 .power-summary p {
-    margin: 0;
-    line-height: 1;
+    margin: 0.25em 0;
+    line-height: 1.1;
 }
 
-.power-summary small {
-    -webkit-line-clamp: 15;      
-    -moz-line-clamp: 15;
-    line-clamp: 15;
-    display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -moz-box-orient: vertical;
-      -ms-box-orient: vertical;
-      box-orient: vertical;
-    white-space: pre-wrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.power-summary table {
+    display: none;
 }
+
 </style>

@@ -1,7 +1,6 @@
 <template>
     <section class="section bg-black-transparent-0p3">
-        <h1 class="main-title">P.E.D.D.</h1>
-        <h2 class="subsubtitle text-centre no-decoration">{{ props.subtitle }}</h2>
+        <h1 class="main-title">P.E.D.D. <small style="font-size:75%"> - {{ subtitle }}</small></h1>
 
         <Links />
 

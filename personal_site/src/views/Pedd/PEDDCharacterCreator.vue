@@ -1,9 +1,10 @@
 <template>
     <section class="section bg-black-transparent-0p3">
-        <h1 class="main-title">P.E.D.D.</h1>
-        <h2 class="subsubtitle text-centre no-decoration">Character Creator</h2>
-
         <Links />
+
+        <h1 class="main-title">P.E.D.D.<small style="font-size: 75%;"> - Character Creator</small></h1>
+
+
 
         <div class="main-text inset">
             <CharacterCreator />

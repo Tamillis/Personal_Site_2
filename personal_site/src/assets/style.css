@@ -292,7 +292,7 @@
   text-indent: var(--textindent);
   text-rendering: optimizeLegibility;
   background-color: var(--backgroundDark);
-  box-shadow: var(--gap) var(--gap) var(--gap) calc(2*var(--gap)) var(--backgroundDark);
+  box-shadow: var(--gap) var(--gap) var(--gap) calc(1.5*var(--gap)) var(--backgroundDark);
   margin-top: var(--gap);
 }
 

@@ -1,25 +1,25 @@
 <template>
     <ul>
         <li class="triangle-points">
-            <RouterLink class="intext-link" :to="{name:'pedd'}">Introduction</RouterLink>
+            <RouterLink class="intext-link" :to="{ name: 'pedd' }">Introduction</RouterLink>
         </li>
         <li class="triangle-points">
-            <RouterLink class="intext-link" :to="{name:'pedd-character-creation'}">Character Creation</RouterLink>
+            <RouterLink class="intext-link" :to="{ name: 'pedd-character-creation' }">Character Creation</RouterLink>
         </li>
         <li class="triangle-points">
-            <RouterLink class="intext-link" :to="{name:'pedd-character-creator'}">Character Creator</RouterLink>
+            <RouterLink class="intext-link" :to="{ name: 'pedd-character-creator' }">Character Creator</RouterLink>
         </li>
         <li class="triangle-points">
-            <RouterLink class="intext-link" :to="{name:'pedd-skills'}">Skills</RouterLink>
+            <RouterLink class="intext-link" :to="{ name: 'pedd-skills' }">Skills</RouterLink>
         </li>
         <li class="triangle-points">
-            <RouterLink class="intext-link" :to="{name:'pedd-combat'}">Combat</RouterLink>
+            <RouterLink class="intext-link" :to="{ name: 'pedd-combat' }">Combat</RouterLink>
         </li>
         <li class="triangle-points">
-            <RouterLink class="intext-link" :to="{name:'pedd-powers'}">Powers</RouterLink>
+            <RouterLink class="intext-link" :to="{ name: 'pedd-powers' }">Powers</RouterLink>
         </li>
         <li class="triangle-points">
-            <RouterLink class="intext-link" :to="{name:'pedd-magic'}">Magic</RouterLink>
+            <RouterLink class="intext-link" :to="{ name: 'pedd-magic' }">Magic</RouterLink>
         </li>
     </ul>
 </template>
@@ -30,6 +30,16 @@ import { useRoute, RouterLink } from 'vue-router';
 const route = useRoute();
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+ul li {
+    width: fit-content;
+    padding-right: 1rem;
+}
 
 </style>

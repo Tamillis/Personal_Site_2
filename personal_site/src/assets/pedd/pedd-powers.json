@@ -674,7 +674,7 @@
             "Faith +1",
             "Fighting Style"
         ],
-        "desc": "You learn two cantrips of your choice from the nature sphere. Your spellcasting ability for these spells is Verdance, as detailed in the [Verdance Table](/PEDD/Powers#Verdance-Table)."
+        "desc": "You learn two cantrips of your choice from the nature sphere. Your spellcasting ability for these spells is Verdance, as detailed in the [Verdance Table](/pedd/magic#verdance-table)."
     },
     {
         "name": "Duelling",
@@ -1282,7 +1282,7 @@
             "skill"
         ],
         "preq": [],
-        "desc": "You can add half your Proficiency Bonus, rounded down, to any ability check you make that doesn't already include a Proficiency Bonus."
+        "desc": "You can add half your Bonus, rounded down, to any Checks you make that doesn't already include a Bonus."
     },
     {
         "name": "Journeyman Mage",
@@ -1292,7 +1292,7 @@
             "universal"
         ],
         "preq": [],
-        "desc": "Choose a Sphere of Magic: Arcane, Divine, Occult or Primal. You learn two cantrips of your choice from that sphere's spell list.\n\nIn addition, choose one Magnitude I Spell to learn from that same spell list. Using this Power, you can cast the spell twice at Magnitude I, where you must then finish a Long Rest before you can cast it with this Power again.\n\nYour spellcasting statistic for these spells depends on the class you chose: Intelligence for Arcane, Faith for Divine, Charisma for Occult or Verdance for Primal (see the [Verdance table](/PEDD/Powers#Verdance-Table)).\n\nAdditionally, being a Journeyman Mage makes learning the corresponding Spellcasting Power and Mana Power much faster."
+        "desc": "Choose a Sphere of Magic: Arcane, Divine, Occult or Primal. You learn two cantrips of your choice from that sphere's spell list.\n\nIn addition, choose one Magnitude I Spell to learn from that same spell list. Using this Power, you can cast the spell twice at Magnitude I, where you must then finish a Long Rest before you can cast it with this Power again.\n\nYour spellcasting statistic for these spells depends on the class you chose: Intelligence for Arcane, Faith for Divine, Charisma for Occult or Verdance for Primal (see the [Verdance Table](/pedd/magic#verdance-table)).\n\nAdditionally, being a Journeyman Mage makes learning the corresponding Spellcasting Power and Mana Power much faster."
     },
     {
         "name": "Keen Senses",
@@ -2369,7 +2369,7 @@
         "preq": [
             ""
         ],
-        "desc": "You learn the magic of the primeval woods, which are revered and protected by your people. You learn one Primal Sphere cantrip of your choice. You also learn the Longstrider and Pass Without Trace spells, each of which you can cast once without expending Mana. You regain the ability to cast these two spells in this way when you finish a Long Rest. The Verdance of your locale is your spellcasting ability for all three spells. See the Verdance table."
+        "desc": "You learn the magic of the primeval woods, which are revered and protected by your people. You learn one Primal Sphere cantrip of your choice. You also learn the Longstrider and Pass Without Trace spells, each of which you can cast once without expending Mana. You regain the ability to cast these two spells in this way when you finish a Long Rest. The Verdance of your locale is your spellcasting ability for all three spells. See the [Verdance Table](/pedd/magic#verdance-table)."
     },
     {
         "name": "Discovery",
