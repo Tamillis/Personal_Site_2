@@ -18,6 +18,10 @@
   margin-bottom: 0px !important;
 }
 
+.mb-1r {
+  margin-bottom: 1rem;
+}
+
 .mt-gap {
   margin-top: var(--gap);
 }
@@ -144,6 +148,14 @@
   flex-wrap: wrap;
 }
 
+.flex-justify-between {
+  justify-content: space-between;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
 .hidden {
   display: none;
   appearance: none;
@@ -171,6 +183,10 @@
 
 .gap-2r {
   gap: 2rem;
+}
+
+.pb-1r {
+  padding-bottom: 1rem;
 }
 
 .square-20px {

@@ -1,10 +1,10 @@
 <template>
     <div style="width:250px">
-        <div class="flex">
+        <div v-if="props.limit > chosenSkills.length" class="flex border-bottom mb-1r pb-1r">
             <select v-model="selectedSkill">
                 <option v-for="skill in unchosenSkills" :value="skill">{{skill}}</option>
             </select>
-            <button class="square btn" v-if="props.limit > chosenSkills.length" @click="addSkill">+</button>
+            <button class="square btn" @click="addSkill">+</button>
         </div>
         <div v-for="skill in chosenSkills" class="flex">
             <p>{{ skill }}</p>
@@ -15,13 +15,18 @@
 
 <script setup>
 import { ref } from 'vue';
+import skillsData from "../../assets/pedd/pedd-skills.json";
 
-const props = defineProps(["skills", "limit"]);
+const props = defineProps(["roleSkills", "otherSkills", "limit"]);
 const emits = defineEmits(["skills"]);
 
-let chosenSkills = ref([]);
-let unchosenSkills = ref(props.skills)
-let selectedSkill = ref(props.skills[0]);
+let roleSkills = ref(
+    skillsData.basicSkills.map(s => s.skill).concat(skillsData.knowledgeSkills.map(s => s.skill).concat(skillsData.martialSkills.map(s => s.skill)))
+);
+roleSkills.value.sort((s1, s2) => s1.localeCompare(s2));
+let chosenSkills = ref(props.roleSkills);
+let unchosenSkills = ref(roleSkills.value.filter(s => !chosenSkills.value.includes(s) && !props.otherSkills.includes(s)));
+let selectedSkill = ref(unchosenSkills.value[0]);
 
 function addSkill() {
     chosenSkills.value.push(selectedSkill.value);
@@ -29,7 +34,6 @@ function addSkill() {
     selectedSkill.value = unchosenSkills.value[0];
 
     emits('skills', chosenSkills.value);
-
 }
 
 function removeSkill(skill) {

@@ -52,6 +52,7 @@
 import {ref} from 'vue';
 import equipmentCollections from '../../assets/pedd/pedd-equipment-collections.json';
 
+const props = defineProps(["equipment", "armour", "helmet", "shield"])
 const emit = defineEmits(["equipment", "armour", "helmet", "shield", "refLimit"])
 
 const chosen = ref({
@@ -84,8 +85,6 @@ let chosenArmour = (e) => {
     emit('armour', chosen.value.armour);
     emit('helmet', chosen.value.helmet);
     emit('shield', chosen.value.shield);
-
-    console.log("EquipmentTab chosen", chosen.value);
 };
 
 </script>

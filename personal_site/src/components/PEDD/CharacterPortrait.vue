@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <img :src="imgSrc" @click="showImgSrc = !showImgSrc" alt="Character Portrait Image. Click to show URL input." title="Character Portrait image. Click to show URL input."/>
         <input v-show="showImgSrc" id="img-src-input" @change="update" :value="imgSrc" class="text-entry" />
     </div>
@@ -23,9 +23,18 @@ function update(e) {
 </script>
 
 <style lang="css" scoped>
+img, input, .container {
+    text-indent: 0;
+}
+
+input {
+    margin: 0.5rem;
+}
+
 img {
     border-radius: 50%;
     border: 2px var(--highlight) groove;
     width: 100%;
+    text-indent: 0;
 }
 </style>

@@ -62,22 +62,19 @@ DEBUG:
 		<section id="role-section" v-show="sections.role">
 			<h2>Role</h2>
 
-			<!-- TODO: From here, remake the StatSelector into a single reusable component -->
 			<h3>Role Stats</h3>
-			<StatSelector :stats="stats" @stat-change="statsSelection => {
-					roleStats = statsSelection;
-					buildPlayer();
-				}
-				" />
-
+			<div class="flex horizontal-spacers">
+				<StatSelector v-model="chosen.roleStatMajor" :val="2" />
+				<StatSelector v-model="chosen.roleStatMinor" :val="1" />
+			</div>
+			
 			<h3>Role Skills</h3>
-			<SkillSelector :skills="roleSkills" :limit="4 + player.intelligence"
-				@skills="skills => (chosen.roleSkills = skills)" />
-			<p>4 + your Intelligence ({{ player.intelligence }}) = {{ 4 + player.intelligence }}</p>
-
-			<h2>
-				Role Powers: <span>{{ chosen.rolePowers.join(", ") }}</span>
-			</h2>
+			<p>4 + your Intelligence ({{ player.intelligence }}) = {{ 4 + player.intelligence }}. It is wise to pick up some combat skills if you don't have enough yet.</p>
+			<SkillSelector :roleSkills="chosen.roleSkills" :otherSkills="otherSkills" :limit="4 + player.intelligence"
+			@skills="skills => (chosen.roleSkills = skills)" />
+			
+			<!-- TODO: From here -->
+			<h2>Role Powers: <span>{{ chosen.rolePowers.join(", ") }}</span></h2>
 			<p>One day the below will be properly automatically filtered by prerequisites</p>
 			<select class="tag-select" v-model="roleTag">
 				<option v-for="tag in tags">{{ tag }}</option>
@@ -94,7 +91,7 @@ DEBUG:
 		</section>
 
 		<section id="equipment-section" v-if="sections.equipment">
-			<EquipmentTab @equipment="equipment => (chosen.roleEquipment = equipment)"
+			<EquipmentTab @equipment="equipment => (chosen.roleEquipment = equipment.equipment.split(','))"
 				@armour="armour => (chosen.armour = armour)" @shield="shield => (chosen.shield = shield)"
 				@helmet="helmet => (chosen.helmet = helmet)"
 				@ref-limit="reflexLimit => (chosen.reflexLimit = reflexLimit)" />
@@ -119,7 +116,6 @@ import Upbringing from "./Upbringing.vue";
 import powers from "../../assets/pedd/pedd-powers.json";
 import races from "../../assets/pedd/pedd-races.json";
 import backgrounds from "../../assets/pedd/pedd-backgrounds.json";
-import skillsData from "../../assets/pedd/pedd-skills.json";
 import Background from "./Background.vue";
 
 //derived resources
@@ -183,15 +179,15 @@ let debug = ref(true);
 //TEST, as if it was loaded from a save
 //TODO: convert as much as possible to use simple int id's to ideally compress the url
 let chosen = ref({
-	name: "Ana",
-	concept: "A Young Elf Abroad",
-	bonds: "She loves and lives for her papa's farm.",
-	ideals: "All nature is fundamentally good, just we don't know how to be good around it.",
-	flaws: "Emulates what she imagines her mama to be, as she's never known her.",
+	name: "Hiccary",
+	concept: "The Holy Archeress",
+	bonds: "Born and raised deep in the Ebon Glade in the old ways, she seeks her scattered and lost créche.",
+	ideals: "The rule of nature is harsh, we can make something kinder.",
+	flaws: "Faith once broken has been forged stronger and ever more rigid.",
 	race: "Half-Elf",
 	anyRaceStats: [
-		{ desc: "accuracy", val: 1 },
-		{ desc: "intelligence", val: -1 }
+		{ desc: "Accuracy", val: 1 },
+		{ desc: "Strength", val: -1 }
 	],
 	racialPowers: ["Elven Accuracy", "Keen Senses", "Wood Elf Magic"],
 	background: "Acolyte",
@@ -199,12 +195,11 @@ let chosen = ref({
 	upbringingSkill1: "Animal Handling",
 	upbringingSkill2: "Nature",
 	upbringingLanguage: "Damarani",
-	//TODO: from here
 	roleStatMajor: "Accuracy",
 	roleStatMinor: "Dexterity",
 	rolePowers: ["Archery", "Lay on Hands", "Mana"],
-	roleSkills: ["Religion", "Medicine", "Riding"],
-	roleEquipment: "The Cleric",
+	roleSkills: ["Bows", "Light Armour", "Medicine", "Riding"],
+	roleEquipment: false,
 	armour: 0,
 	helmet: 0,
 	shield: 0,
@@ -213,9 +208,9 @@ let chosen = ref({
 });
 
 //race any stat selections
-function setAnyRaceStats(stats) {
+function setAnyRaceStats(stats, val) {
 	chosen.anyRaceStats = stats.value;
-	console.log("setAnyRaceStats", stats);
+	console.log("setAnyRaceStats", stats, val);
 }
 
 //race
@@ -238,18 +233,20 @@ let chooseBackgroundPower = (bg) => {
 }
 
 //role
+
+// other skills used to calculate what Role Skills can be chosen from
+let otherSkills = computed(() => {
+	let skills = [chosen.value.upbringingSkill1, chosen.value.upbringingSkill2];
+	let background = backgrounds.filter(bg => bg.name == chosen.value.background)[0];
+	skills = skills.concat(background.skills);
+	return skills;
+});
+
 let openedRolePowerCards = [];
 let roleTag = ref("All");
 let rolePowers = computed(() => {
 	return powers.filter(p => roleTag.value == "All" || p.tag.includes(roleTag.value));
 });
-
-let roleStats = ref(["accuracy", "perception"]);
-
-let roleSkills = ref(
-	skillsData.basicSkills.map(s => s.skill).concat(skillsData.knowledgeSkills.map(s => s.skill).concat(skillsData.martialSkills.map(s => s.skill)))
-);
-roleSkills.value.sort((s1, s2) => s1.localeCompare(s2));
 
 let choosePower = (power, attribute, opened, max) => {
 	key.value++;
@@ -274,29 +271,29 @@ let choosePower = (power, attribute, opened, max) => {
 		}
 	}
 
-	buildPlayer();
 	return opened;
 };
 
-//calculated player stats
-//TODO: make this computed from chosen
-let player = ref({});
-let buildPlayer = () => {
+//computer player stats from chosen values
+let player = computed(() => {
 	//console.log("Chosen raceStats", chosen.value.anyRaceStats);
-	player.value = {};
+	let p = {};
 
-	player.value.name = chosen.value.name;
-	player.value.concept = chosen.value.concept;
+	p.name = chosen.value.name;
+	p.concept = chosen.value.concept;
+	p.bonds = chosen.value.bonds;
+	p.ideals = chosen.value.ideals;
+	p.flaws = chosen.value.flaws;
 
-	player.value.race = chosen.value.race != "";
-	if (player.value.race) player.value.race = races.filter(r => r.name == chosen.value.race)[0];
-	player.value.racialPowers = chosen.value.racialPowers;
+	p.race = chosen.value.race != "";
+	if (p.race) p.race = races.filter(r => r.name == chosen.value.race)[0];
+	p.racialPowers = chosen.value.racialPowers;
 
-	player.value.background = false;
-	if (chosen.background != '') player.value.background = backgrounds.filter(bg => chosen.value.background == bg.name)[0];
-	player.value.backgroundPower = chosen.value.backgroundPower;
+	p.background = false;
+	if (chosen.background != '') p.background = backgrounds.filter(bg => chosen.value.background == bg.name)[0];
+	p.backgroundPower = chosen.value.backgroundPower;
 
-	player.value.rolePowers = chosen.value.rolePowers;
+	p.rolePowers = chosen.value.rolePowers;
 
 	let ss = {
 		strength: 0,
@@ -306,67 +303,67 @@ let buildPlayer = () => {
 		intelligence: 0,
 		charisma: 0
 	};
-	ss[roleStats.value[0]] = 2;
-	ss[roleStats.value[1]] = 1;
+	ss[chosen.value.roleStatMajor.toLowerCase()] = 2;
+	ss[chosen.value.roleStatMinor.toLowerCase()] = 1;
 
 	for (let stat of chosen.value.anyRaceStats) {
-		ss[stat.desc] += stat.val;
+		ss[stat.desc.toLowerCase()] += stat.val;
 	}
 
-	player.value.strength = ss.strength;
-	player.value.dexterity = ss.dexterity;
-	player.value.accuracy = ss.accuracy;
-	player.value.perception = ss.perception;
-	player.value.intelligence = ss.intelligence;
-	player.value.charisma = ss.charisma;
-	if (player.value.race) {
-		for (let stat of player.value.race.stats) {
-			if (stats.includes(stat.desc.toLowerCase())) player.value[stat.desc.toLowerCase()] += stat.val;
+	p.strength = ss.strength;
+	p.dexterity = ss.dexterity;
+	p.accuracy = ss.accuracy;
+	p.perception = ss.perception;
+	p.intelligence = ss.intelligence;
+	p.charisma = ss.charisma;
+	if (p.race) {
+		for (let stat of p.race.stats) {
+			if (stats.includes(stat.desc.toLowerCase())) p[stat.desc.toLowerCase()] += stat.val;
 		}
 	}
-	if (player.value.background) {
-		for (let statDesc of player.value.background.stats) {
+	if (p.background) {
+		for (let statDesc of p.background.stats) {
 			let stat = statDesc.toLowerCase();
-			if (stats.includes(stat)) player.value[stat]++;
+			if (stats.includes(stat)) p[stat]++;
 		}
 	}
 
-	player.value.fortitude = player.value.strength + player.value.dexterity;
-	player.value.reflexes = player.value.accuracy + player.value.perception;
-	player.value.reflexLimit = chosen.value.reflexLimit;
-	player.value.reflexLimited = player.value.reflexes > player.value.reflexLimit
-	player.value.willpower = player.value.intelligence + player.value.charisma;
-	player.value.health = player.value.fortitude + player.value.willpower + (player.value.race ? player.value.race.baseHealth : 0)
+	p.fortitude = p.strength + p.dexterity;
+	p.reflexes = p.accuracy + p.perception;
+	p.reflexLimit = chosen.value.reflexLimit;
+	p.reflexLimited = p.reflexes > p.reflexLimit
+	p.willpower = p.intelligence + p.charisma;
+	p.health = p.fortitude + p.willpower + (p.race ? p.race.baseHealth : 0)
 
-	player.value.faith = 2; //TODO: make faith input based
+	p.faith = 2; //TODO: make faith input based
 
-	player.value.equipmentCollection = chosen.value.roleEquipment;
+	p.skills = [];
+	p.skills = chosen.value.roleSkills.slice(); //copy array by value not ref
+	p.skills.push(chosen.value.upbringingSkill1);
+	p.skills.push(chosen.value.upbringingSkill2);
+	p.skills.push(`Language (${chosen.value.upbringingLanguage})`);
+	
+	if (p.background) p.skills = p.skills.concat(p.background.skills);
+	p.skills = p.skills.sort((s1, s2) => s1.localeCompare(s2));
+	
+	p.roleEquipment = chosen.value.roleEquipment;
 
-	player.value.skills = [];
-	player.value.skills = chosen.value.roleSkills.slice(); //copy array by value not ref
-	player.value.skills.push(chosen.value.upbringingSkill1);
-	player.value.skills.push(chosen.value.upbringingSkill2);
-	player.value.skills.push(`Language (${chosen.value.upbringingLanguage})`);
+	p.armour = chosen.value.armour + chosen.value.shield + chosen.value.helmet;
 
-	if (player.value.background) player.value.skills = player.value.skills.concat(player.value.background.skills);
-	player.value.skills = player.value.skills.sort((s1, s2) => s1.localeCompare(s2));
+	p.baseDefence = p.race ? baseDefence[p.race.size.val] : 8;
+	p.defence = Number(p.baseDefence) + Number(p.armour) + Number(p.reflexLimited ? p.reflexLimit : p.reflexes);
 
-	player.value.armour = chosen.value.armour + chosen.value.shield + chosen.value.helmet;
-
-	player.value.baseDefence = player.value.race ? baseDefence[player.value.race.size.val] : 8;
-	player.value.defence = Number(player.value.baseDefence) + Number(player.value.armour) + Number(player.value.reflexLimited ? player.value.reflexLimit : player.value.reflexes);
-
-	player.value.imgSrc = chosen.value.imgSrc;
+	p.imgSrc = chosen.value.imgSrc;
 
 	//encode player into url for easy saving and sharing
-	let saved = btoa(JSON.stringify(player.value));
+	let saved = btoa(JSON.stringify(p));
 	//history.pushState({},null, new URL(window.location.href.split("?")[0] + "?saved=" + saved));
 	//TODO: decode the url into where exactly? encode the chosen options?
 
 	//TODO: switch chosen to just use id's, i.e. names, for race and powers to reduce encoded size
-	return player.value;
-};
-buildPlayer();
+	return p;
+});
+
 </script>
 
 <style lang="css" scoped>
@@ -380,10 +377,6 @@ h2 {
 	font-size: larger;
 	display: block;
 	text-indent: 0px;
-}
-
-.summary div {
-	min-width: 150px;
 }
 
 .tag-select {

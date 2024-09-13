@@ -53,18 +53,16 @@
                 <tr>
                     <td><span v-if="haveFaith">Faith:</span></td>
                     <td><span v-if="haveFaith">{{ player.faith }}</span></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="4"></td>
                     <td>Speed:</td>
                     <td>{{ player.race ? player.race.speed.val : "" }}</td>
                 </tr>
             </tbody>
         </table>
 
-        <h3 @click="showTertiaries = !showTertiaries" style="cursor: pointer;">{{ showTertiaries ? "Tertiaries:" :
-            "Tertiaries..." }} </h3>
+        <a @click="showTertiaries = !showTertiaries">
+            <h3>{{ showTertiaries ? "Tertiaries:" : "Tertiaries..." }}</h3>
+        </a>
         <section v-if="showTertiaries">
             <p><small>Don't forget these are just for flavour.</small></p>
             <div class="flex table-like">
@@ -92,17 +90,13 @@ const healthInfo = computed(() => {
 const showDefenceInfo = ref(false)
 const defenceInfo = computed(() => {
     return `${props.player.race ? capitalize(props.player.race.size.val) + " " : ""} Size (${props.player.baseDefence}) + ` +
-        `Armour ${props.player.armour} + ` +
+        `Armour (${props.player.armour}) + ` +
         `Evasion (${props.player.reflexLimited ? props.player.reflexLimit : props.player.reflexes}) = `;
 });
 const showTertiaries = ref(false);
 </script>
 
 <style lang="css" scoped>
-h3 {
-    font-weight: bold;
-    font-size: larger;
-}
 
 p {
     font-weight: 600;
@@ -112,7 +106,8 @@ table th {
     border-bottom: 2px var(--highlight) groove;
 }
 
-table td, table th {
+table td,
+table th {
     padding: 0.25rem 0.5rem;
 }
 
