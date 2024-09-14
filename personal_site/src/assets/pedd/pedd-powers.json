@@ -40,14 +40,12 @@
         "name": "Akimbo",
         "tag": [
             "combat",
-            "fighting-style",
             "offensive"
         ],
         "preq": [
-            "Accuracy +1",
-            "Fighting Style"
+            "Accuracy +1"
         ],
-        "desc": "When wielding two light ranged weapons and you make an attack action with one, as a Bonus Action you can make an attack with the other weapon. You do not add Accuracy to the damage roll of the second attack."
+        "desc": "When wielding two Light Ranged Weapons and you make an Attack action with one, as a Bonus Action you can make an Attack with the other weapon. You do not add Accuracy to the damage roll of the second attack."
     },
     {
         "name": "Ancestors of Stone",
@@ -134,12 +132,10 @@
         "name": "Archery",
         "tag": [
             "combat",
-            "fighting-style",
             "offensive"
         ],
         "preq": [
-            "Accuracy +1",
-            "Fighting Style"
+            "Accuracy +1"
         ],
         "desc": "You gain a +2 additional Bonus to attack rolls you make with Slings and Bows."
     },
@@ -209,16 +205,14 @@
         "desc": "You gain proficiency in the Deception and Persuasion skills. If you already had proficiency those skills, you gain Expertise instead."
     },
     {
-        "name": "Blessed Warrior",
+        "name": "Blessed",
         "tag": [
             "cantrip",
-            "fighting-style",
             "universal",
             "utility"
         ],
         "preq": [
-            "Faith +1",
-            "Fighting Style"
+            "Faith +1"
         ],
         "desc": "You learn two cantrips of your choice from the divine sphere. Faith is your spellcasting ability for them."
     },
@@ -237,14 +231,12 @@
         "name": "Blind Fighting",
         "tag": [
             "combat",
-            "fighting-style",
             "offensive"
         ],
         "preq": [
-            "Fighting Style",
             "Perception +1"
         ],
-        "desc": "You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you."
+        "desc": "When in combat, you effectively have blindsight with a range of 10ft. Within that range, you can see anything that isn't behind total cover, even if you're Blinded, in darkness, or otherwise have your senses obscured. Moreover, you can see an invisible character within that range, unless the character successfully hides from you."
     },
     {
         "name": "Bountiful Luck",
@@ -295,16 +287,14 @@
         "name": "Close Quarters Shooter",
         "tag": [
             "combat",
-            "fighting-style",
             "offensive",
             "roll-effecting"
         ],
         "preq": [
             "Accuracy +1",
-            "Dexterity +1",
-            "Fighting Style"
+            "Dexterity +1"
         ],
-        "desc": "When making a ranged attack while you are within 5ft of a hostile creature, you do not have Disadvantage on the attack roll. Your ranged attacks ignore half cover and three-quarters cover against targets within 30ft of you. You have a +1 Bonus to attack rolls on ranged attacks."
+        "desc": "When making a ranged attack while you are within 5ft of a hostile character, you do not have Disadvantage on the attack roll. Your ranged attacks ignore half cover and three-quarters cover against targets within 30ft of you. You have a +1 Bonus to attack rolls on ranged attacks."
     },
     {
         "name": "Combat Expert",
@@ -392,15 +382,13 @@
         "name": "Deadeye",
         "tag": [
             "combat",
-            "fighting-style",
             "offensive",
             "roll-effecting"
         ],
         "preq": [
-            "Accuracy +1",
-            "Fighting Style"
+            "Accuracy +1"
         ],
-        "desc": "You can Run and Gun without Disadvantage, and in addition you can 'Aim' as a Bonus Action. When you Aim you get your Bonus on your next Ranged Weapon Attack, in addition to your proficiency Bonus or Expertise if you have that."
+        "desc": "You can Run and Gun without Disadvantage, and in addition you can 'Aim' as a Bonus Action without spending Focus."
     },
     {
         "name": "Deepened Ki",
@@ -420,14 +408,12 @@
         "name": "Defensive Fighting",
         "tag": [
             "combat",
-            "defensive",
-            "fighting-style"
+            "defensive"
         ],
         "preq": [
-            "Fighting Style",
             "Strength +1"
         ],
-        "desc": "While you are wearing armour, you gain a +1 bonus to your Armour."
+        "desc": "While you are wearing armour, you gain a +1 bonus to your Armour. This does not include Shields or Helmets."
     },
     {
         "name": "Determination",
@@ -663,31 +649,27 @@
         "desc": "You learn the magic of the raiders of the dark places. You learn the Dancing Lights cantrip. You also learn the Faerie Fire and Darkness spells, each of which you can cast once without expending Mana. You regain the ability to cast these two spells in this way when you finish a Long Rest. Charisma is your spellcasting ability for these spells."
     },
     {
-        "name": "Druidic Warrior",
+        "name": "Druidic Apprentice",
         "tag": [
             "cantrip",
-            "combat",
-            "fighting-style",
+            "spellcasting",
             "utility"
         ],
         "preq": [
-            "Faith +1",
-            "Fighting Style"
+            "Nature"
         ],
         "desc": "You learn two cantrips of your choice from the nature sphere. Your spellcasting ability for these spells is Verdance, as detailed in the [Verdance Table](/pedd/magic#verdance-table)."
     },
     {
-        "name": "Duelling",
+        "name": "Duellist",
         "tag": [
             "combat",
-            "fighting-style",
             "offensive"
         ],
         "preq": [
-            "Dexterity +1",
-            "Fighting Style"
+            "Dexterity +1"
         ],
-        "desc": "When wielding a one-handed melee weapon or a pistol, and no other weapons, you gain a +2 bonus to damage rolls."
+        "desc": "When wielding a one-handed melee weapon or a pistol, and no other weapons, you gain a +2 Bonus to damage rolls."
     },
     {
         "name": "Dwarven Toughness",
@@ -915,23 +897,6 @@
         "desc": "You can cast False Life on yourself at will at Magnitude I, without spellcasting, expending your Stipend / Mana, or needing material components, as a 1 minute ritual involving blood letting, consumption of raw meat or other fiendish activity. You gain 10 Temporary Health, instead of 1d4 + 4."
     },
     {
-        "name": "Fighting Style",
-        "tag": [
-            "combat",
-            "crowd-control",
-            "defensive",
-            "movement",
-            "offensive",
-            "resource",
-            "utility",
-            "background"
-        ],
-        "preq": [
-            ""
-        ],
-        "desc": "You adopt a particular style of fighting as your specialty. Choose one Fighting Style Power you have the prerequisites for. You can't take the same Fighting Style Power more than once, but if you take this Power again you can choose a different Fighting Style."
-    },
-    {
         "name": "Finder's High Magic",
         "tag": [
             "exploration",
@@ -1050,11 +1015,9 @@
         "name": "Great Weapon Fighting",
         "tag": [
             "combat",
-            "fighting-style",
             "offensive"
         ],
         "preq": [
-            "Fighting Style",
             "Strength +1"
         ],
         "desc": "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit."
@@ -1417,11 +1380,9 @@
         "tag": [
             "combat",
             "defensive",
-            "fighting-style",
             "utility"
         ],
         "preq": [
-            "Fighting Style",
             "Strength +1"
         ],
         "desc": "As long as you are not wearing heavy armour or using a shield, you gain the following benefits:\n\n- fighting in water does not confer Disadvantage to your attacks.\n- your swim speed and climbing speed is doubled to a maximum of your Speed (by default your swim and climbing peeds are 1/4 of your Speed).\n- you gain a +1 Bonus to your Evasion."
@@ -1430,12 +1391,10 @@
         "name": "Marksman",
         "tag": [
             "combat",
-            "fighting-style",
             "offensive"
         ],
         "preq": [
-            "Accuracy +1",
-            "Fighting Style"
+            "Accuracy +1"
         ],
         "desc": "You gain a +2 bonus to attack rolls you make with Firearms & Pistols without the Scatter property."
     },
@@ -1719,16 +1678,14 @@
         "desc": "When not at Disadvantage, you can choose to spend at least 1 minute and not roll when making any Tool Set or Crafting check with which you are proficient and instead assume you rolled a 10, adding a Stat and any Bonus to that as normal. Any check that would normally take longer than 1 minute still does so."
     },
     {
-        "name": "Protection",
+        "name": "Protective Fighter",
         "tag": [
             "combat",
             "defensive",
-            "fighting-style",
             "roll-effecting"
         ],
         "preq": [
-            "Dexterity +1",
-            "Fighting Style"
+            "Dexterity +1"
         ],
         "desc": "When a character you can see attacks a target other than you that is within 5ft of you, you can use your Bonus Action to impose Disadvantage on the attack roll. You must be wielding a Shield or a weapon with the Block property."
     },
@@ -1965,14 +1922,12 @@
         "name": "Sniper",
         "tag": [
             "combat",
-            "fighting-style",
             "offensive"
         ],
         "preq": [
-            "Accuracy +1",
-            "Fighting Style"
+            "Accuracy +1"
         ],
-        "desc": "When attacking a Character 60ft away or further with a ranged weapon, you gain your Bonus to damage rolls."
+        "desc": "When you hit with a Ranged Weapon Attack against a Character 60ft away or further, you gain your Bonus to the damage roll."
     },
     {
         "name": "Song of Rest",
@@ -2158,14 +2113,12 @@
         "name": "Thrown Weapon Fighting",
         "tag": [
             "combat",
-            "fighting-style",
             "offensive"
         ],
         "preq": [
-            "Accuracy +1",
-            "Fighting Style"
+            "Accuracy +1"
         ],
-        "desc": "You can draw a weapon that has the Thrown property as part of the attack action you make with the weapon. In addition, when you hit with a ranged attack using a Thrown weapon, you gain a +2 Bonus to the damage roll."
+        "desc": "You can draw a weapon that has the Thrown property as part of the Attack Action you make with the weapon. In addition, if you hit, you gain a +2 Bonus to the damage roll."
     },
     {
         "name": "Tinkerer",
@@ -2223,24 +2176,20 @@
         "name": "Two Weapon Fighting",
         "tag": [
             "combat",
-            "fighting-style",
             "offensive"
         ],
         "preq": [
-            "Dexterity +1",
-            "Fighting Style"
+            "Dexterity +1"
         ],
-        "desc": "When you engage in two-weapon fighting, you can add your attack Statistic to the damage of the second attack."
+        "desc": "You can make an Off-Hand Strike even if neither weapon has the Light property, although neither weapon may have the Heavy Property, and you can add your attack Statistic to the damage roll of the Off-Hand Strike."
     },
     {
         "name": "Unarmed Fighting",
         "tag": [
             "combat",
-            "fighting-style",
             "offensive"
         ],
         "preq": [
-            "Fighting Style",
             "Strength +1"
         ],
         "desc": "You've trained extensively in unarmed combat, gaining the following benefits:\n\n- You gain Proficiency in Body and Improvised Weapons if you were not already.\n- Your Unarmed Attacks can deal bludgeoning damage equal to 1d4 + your Strength on a hit. If you aren't wielding any weapons or a shield when you make the attack roll, the d4 becomes a d6.\n- Your Unarmed and Improvised Attacks contain the Block I, Finesse and Parry (Bludgeoning) properties.\n- At the start of each Round, you can deal 1d4 bludgeoning damage to one character grappled by you."
@@ -2249,15 +2198,13 @@
         "name": "Grappler",
         "tag": [
             "combat",
-            "fighting-style",
             "offensive",
             "background"
         ],
         "preq": [
-            "Fighting Style",
             "Dexterity +1"
         ],
-        "desc": "You've developed the skills necessary to hold your own in close-quarters grappling. You gain the following benefits:\n\n- When you hit a character with an unarmed strike or an improvised weapon on your turn, you can use a bonus action to attempt to grapple the target.\n- You have advantage on attack rolls against a character you are grappling.\n- You can use your action to try to pin a character grappled by you. To do so, make another grapple check. If you succeed, you and the creature are both restrained until the grapple ends."
+        "desc": "You've developed the skills necessary to hold your own in close-quarters grappling. You gain the following benefits:\n\n- When you hit a character with an unarmed strike or an improvised weapon on your turn, you can use a Bonus Action to attempt to grapple the target.\n- You have Advantage on attack rolls against a character you are grappling.\n- You can use your Action to try to pin a character grappled by you. To do so, make another grapple check. If you succeed, you and the character are both Restrained until the grapple ends."
     },
     {
         "name": "Unleashed Wild Shape",

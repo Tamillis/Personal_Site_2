@@ -156,6 +156,10 @@
   align-items: center;
 }
 
+.flex-thirds>* {
+  width: 33.3%;
+}
+
 .hidden {
   display: none;
   appearance: none;

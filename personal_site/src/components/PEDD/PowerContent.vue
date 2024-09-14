@@ -17,7 +17,7 @@ import { marked } from 'marked';
 const props = defineProps({ power: Object });
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 *.power-content ul {
     display: flex;
     flex-wrap: wrap;
@@ -29,6 +29,7 @@ const props = defineProps({ power: Object });
     margin: 0;
     text-decoration: none;
     list-style: none;
+    flex-basis: unset;
 }
 
 *.list-circles li {

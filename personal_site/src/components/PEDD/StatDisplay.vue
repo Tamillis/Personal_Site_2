@@ -102,6 +102,10 @@ p {
     font-weight: 600;
 }
 
+table {
+    width: 100%;
+}
+
 table th {
     border-bottom: 2px var(--highlight) groove;
 }
@@ -114,6 +118,12 @@ table th {
 table td:nth-child(odd) {
     text-align: right;
     padding-right: 1rem;
+}
+
+@media only screen and (min-width: 1000px) {
+    table {
+        width: unset;
+    }
 }
 
 .flex {

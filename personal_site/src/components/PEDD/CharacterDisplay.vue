@@ -1,24 +1,23 @@
 <template>
 
-    <div class="flex flex-justify-between gap-1r" style="width: 100%">
+    <div class="stat-display-container">
         <div>
 
             <h2 class="title underline">{{ player.name }}, {{ player.concept }}</h2>
             <StatDisplay :player="player" :haveFaith="haveFaith" />
         </div>
-        <CharacterPortrait style="max-width: 25%;" :imgSrc="player.imgSrc"
+        <CharacterPortrait class="character-portrait" :imgSrc="player.imgSrc"
             @updateImgSrc="(imgSrc) => $emit('updateImgSrc', imgSrc)" />
     </div>
 
-    <div class="flex flex-wrap gap-1r summary">
-
+    <div class="summary">
         <div>
-            <div class="flex flex-align-center">
+            <div class="flex flex-align-center flex-thirds">
                 <h3>Race</h3>
                 <p>- {{ player.race ? player.race.name : "None chosen" }}</p>
             </div>
 
-            <div class="flex flex-align-center">
+            <div class="flex flex-align-center flex-thirds">
                 <h3>Background</h3>
                 <p>- {{ player.background ? player.background.name : "None chosen" }}</p>
             </div>
@@ -94,7 +93,7 @@ const selectedPowers = computed(() => {
 
 <style lang="css">
 .power-summary {
-    width: 30%;
+    width: 100%;
 }
 
 .power-summary h4 {
@@ -111,9 +110,8 @@ const selectedPowers = computed(() => {
     display: none;
 }
 
-.summary>div {
-    width: calc(33% - 1rem);
-    border-right: 2px var(--highlight) groove;
+.summary {
+    display: block;
 }
 
 .summary>div:last-child {
@@ -131,5 +129,48 @@ const selectedPowers = computed(() => {
 
 .summary * {
     text-indent: 0;
+}
+
+.stat-display-container {
+    width: 100%;
+}
+
+.character-portrait {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px;
+}
+
+@media only screen and (min-width: 600px) {
+    .power-summary {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .stat-display-container {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    .character-portrait {
+        max-width: 25%;
+    }
+
+    .summary {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .summary>div {
+        width: calc(33% - 1rem);
+        border-right: 2px var(--highlight) groove;
+    }
+
+    .power-summary {
+        width: calc(33% - 1rem);
+    }
 }
 </style>

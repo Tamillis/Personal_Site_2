@@ -76,6 +76,7 @@ So what can that one Action can do? Quite a lot more than 5e. Every character ca
 - **Lunge** - When you make a melee weapon attack, you can attack at Disadvantage but increase your Reach for that attack by 5ft. You can spend 1 Focus to ignore the Disadvantage.
 - **Menace** - as an Action, you can attempt to intimidate a character that can see or hear you. You must make a Charisma check vs their passive Willpower. On a success, the target is Frightened of you until the end of the Round.
 - **Non-lethal Strike** (a.k.a. knockout strike) - you make an Attack Action with the intention to knock unconscious rather than kill. Don't roll for Damage, instead take each dice roll (if any) to have been a 1.
+- **Off-Hand Strike** - when you make an Attack with a weapon with the Light Property, you may use your Bonus Action to do a second Attack with the other weapon in your off-hand, which also must have the Light property. This second attack does not benefit from the Statistic to the damage roll.
 - **Parry** - as an Attack or Action, if your weapon has the Parry Property and when another character damages you with a melee attack, you can reduce the damage by your Dexterity and proficiency Bonus with the weapon.
 - **Power Strike** - when you hit a character with a weapon attack, you can spend 1 Focus to add 1d6 to the damage roll.
 - **Quick Toss** - as a Bonus Action, you make a Ranged Weapon Attack with a weapon that has the thrown property at Disadvantage. You can draw the weapon as part of making this attack. You can spend 1 Focus to ignore the Disadvantage.

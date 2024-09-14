@@ -177,7 +177,7 @@ let debug = ref(true);
 // https://stackoverflow.com/questions/23344776/how-to-access-data-of-uploaded-json-file
 
 //TEST, as if it was loaded from a save
-//TODO: convert as much as possible to use simple int id's to ideally compress the url
+//TODO: convert as much as possible to use simple int/key id's to ideally compress the url
 let chosen = ref({
 	name: "Hiccary",
 	concept: "The Holy Archeress",

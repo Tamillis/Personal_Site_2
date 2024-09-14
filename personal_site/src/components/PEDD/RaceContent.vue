@@ -66,6 +66,7 @@ ul li {
 	margin: 0;
 	text-decoration: none;
 	list-style: none;
+	flex-basis: unset;
 }
 
 h4,
