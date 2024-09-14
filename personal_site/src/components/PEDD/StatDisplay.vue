@@ -1,11 +1,11 @@
 <template>
     <div id="stats">
-        <table>
+        <table class="main">
             <thead>
                 <tr>
                     <th colspan="4">Stats</th>
                     <th colspan="2">Resistances</th>
-                    <th colspan="2">Secondaries</th>
+                    <th colspan="2" class="screen-1000">Secondaries</th>
                 </tr>
             </thead>
             <tbody>
@@ -21,11 +21,11 @@
                         </span>
                         <span v-else>{{ player.reflexes }}</span>
                     </td>
-                    <td>
+                    <td class="screen-1000">
                         <a @click="showDefenceInfo = !showDefenceInfo">Defence: </a>
                         <span v-if="showDefenceInfo">{{ defenceInfo }}</span>
                     </td>
-                    <td>{{ player.defence }}</td>
+                    <td class="screen-1000">{{ player.defence }}</td>
                 </tr>
                 <tr>
                     <td>Strength:</td>
@@ -34,11 +34,11 @@
                     <td>{{ player.dexterity }}</td>
                     <td>Fortitude: </td>
                     <td> {{ player.fortitude }}</td>
-                    <td>
+                    <td class="screen-1000">
                         <a @click="showHealthInfo = !showHealthInfo">Health: </a>
                         <span v-if="showHealthInfo">{{ healthInfo }}</span>
                     </td>
-                    <td>{{ player.health }}</td>
+                    <td class="screen-1000">{{ player.health }}</td>
                 </tr>
                 <tr>
                     <td>Charisma:</td>
@@ -47,13 +47,45 @@
                     <td>{{ player.intelligence }}</td>
                     <td>Willpower:</td>
                     <td>{{ player.willpower }}</td>
-                    <td>Focus:</td>
-                    <td>{{ player.willpower < 1 ? 1 : player.willpower }}</td>
+                    <td class="screen-1000">Focus:</td>
+                    <td class="screen-1000">{{ player.willpower < 1 ? 1 : player.willpower }}</td>
                 </tr>
                 <tr>
                     <td><span v-if="haveFaith">Faith:</span></td>
                     <td><span v-if="haveFaith">{{ player.faith }}</span></td>
                     <td colspan="4"></td>
+                    <td class="screen-1000">Speed:</td>
+                    <td class="screen-1000">{{ player.race ? player.race.speed.val : "" }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="screen-600">
+            <thead>
+                <tr>
+                    <th colspan="2">Secondaries</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a @click="showDefenceInfo = !showDefenceInfo">Defence: </a>
+                        <span v-if="showDefenceInfo">{{ defenceInfo }}</span>
+                    </td>
+                    <td>{{ player.defence }}</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a @click="showHealthInfo = !showHealthInfo">Health: </a>
+                        <span v-if="showHealthInfo">{{ healthInfo }}</span>
+                    </td>
+                    <td>{{ player.health }}</td>
+                </tr>
+                <tr>
+                    <td>Focus:</td>
+                    <td>{{ player.willpower < 1 ? 1 : player.willpower }}</td>
+                </tr>
+                <tr>
                     <td>Speed:</td>
                     <td>{{ player.race ? player.race.speed.val : "" }}</td>
                 </tr>
@@ -64,11 +96,20 @@
             <h3>{{ showTertiaries ? "Tertiaries:" : "Tertiaries..." }}</h3>
         </a>
         <section v-if="showTertiaries">
-            <p><small>Don't forget these are just for flavour.</small></p>
+            <p style="margin:0 0 2px 0;"><small>Don't forget these are just for flavour.</small></p>
             <div class="flex table-like">
-                <p>Appearance <small>(Str. + Cha.)</small>: {{ player.strength + player.charisma }}</p>
-                <p>Agility <small>(Dex. + Acc.)</small>: {{ player.dexterity + player.accuracy }}</p>
-                <p>Foresight <small>(Per. + Int.)</small>: {{ player.perception + player.intelligence }}</p>
+                <div>
+                    <p>Appearance: {{ player.strength + player.charisma }}</p>
+                    <small>(Str. + Cha.)</small>
+                </div>
+                <div>
+                    <p>Agility: {{ player.dexterity + player.accuracy }}</p>
+                    <small>(Dex. + Acc.)</small>
+                </div>
+                <div>
+                    <p>Foresight: {{ player.perception + player.intelligence }}</p>
+                    <small>(Per. + Int.)</small>
+                </div>
             </div>
         </section>
 
@@ -97,12 +138,11 @@ const showTertiaries = ref(false);
 </script>
 
 <style lang="css" scoped>
-
 p {
     font-weight: 600;
 }
 
-table {
+table.main {
     width: 100%;
 }
 
@@ -120,58 +160,65 @@ table td:nth-child(odd) {
     padding-right: 1rem;
 }
 
-@media only screen and (min-width: 1000px) {
-    table {
-        width: unset;
-    }
+.flex {
+    flex-direction: column;
+    gap: 0;
+    width: fit-content;
 }
 
-.flex {
+.table-like div {
+    border: 2px solid var(--highlight);
+    border-bottom: none;
+    text-indent: var(--text-indent);
+    margin: 0px;
+    padding: 5px 0px;
+
     display: flex;
-    gap: 0;
+    align-items: baseline;
 }
 
 .table-like p {
-    border: 2px solid var(--highlight);
-    border-right: none;
-    margin: 0;
-    padding: 0.5rem 0.5rem;
-    text-align: start;
-    text-indent: 0;
-}
-
-.table-like p:last-child {
-    border-right: 2px solid var(--highlight);
-}
-
-@media only screen and (max-width: 750px) {
-    .flex {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .table-like p {
-        border: 2px solid var(--highlight);
-        border-bottom: none;
-        text-indent: var(--text-indent);
-        width: 100%;
-    }
-
-    .table-like p:last-child {
-        border-bottom: 2px solid var(--highlight);
-    }
-}
-
-.flex h3:first-child {
-    width: 10vw;
-    min-width: 8rem;
+    width: 130px;
     text-align: right;
-    padding-right: 1rem;
 }
 
-.btn {
-    padding: 0;
-    display: inline;
+.table-like div:last-child {
+    border-bottom: 2px solid var(--highlight);
+}
+
+.screen-600 {
+    display: revert;
+}
+
+.screen-1000 {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    table {
+        width: revert;
+    }
+
+    .screen-600 {
+        display: none;
+    }
+
+    .screen-1000 {
+        display: revert;
+    }
+
+    .flex {
+        flex-direction: row;
+    }
+
+    .table-like div {
+        border: 2px solid var(--highlight);
+        border-right: none;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .table-like div:last-child {
+        border-right: 2px solid var(--highlight);
+    }
 }
 </style>

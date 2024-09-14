@@ -5,13 +5,19 @@ import { Snowstorm } from './assets/snowstorm.js';
 import { onMounted } from 'vue';
 import Sidebar from './components/Sidebar.vue';
 
+let showFrameRate = false;
+
 onMounted(() => {
+  window.addEventListener("mousedown", (e) => {
+      if(e.clientX < 25 && e.clientY < 25) showFrameRate = !showFrameRate;
+  });
   new p5(sketch, "background-canvas")
 });
 
 const sketch = s => {
   let storm;
-
+  let count = 0;
+  let fps = 60;
   s.setup = function () {
     s.createCanvas(s.windowWidth, s.windowHeight);
     s.stroke(220);
@@ -22,6 +28,14 @@ const sketch = s => {
   s.draw = function () {
     s.background(s.color("#2a312d"));
     storm.draw(s);
+    if(count++ % 6 == 0) fps = Math.floor(s.frameRate());
+    if(showFrameRate) {
+      s.push();
+      s.fill("white");
+      s.noStroke();
+      s.text(fps, 10, 20);
+      s.pop();
+    }
   }
 
   s.windowResized = function () {

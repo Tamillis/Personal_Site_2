@@ -25,16 +25,16 @@ class Snowstorm {
   }
 
   draw(s) {
-    //create a list of all current flake positions
-    let flakePositions = [];
-    for (let flake of this.storm) {
-      flakePositions.push(flake.pos);
-    }
+    //create a list of all current flake positions - tiny effect for massive maths, removed
+    // let flakePositions = [];
+    // for (let flake of this.storm) {
+    //   flakePositions.push(flake.pos);
+    // }
 
     //for each flake, move it and draw it
     for (let flake of this.storm) {
       //flakes interact with all other flakes, so that position data needs to be passed in
-      flake.moveFlake(s, flakePositions);
+      flake.moveFlake(s); //, flakePositions);
       flake.drawFlake(s);
     }
 
@@ -140,7 +140,7 @@ class Flake {
     s.pop();
   }
 
-  moveFlake(s, positions) {
+  moveFlake(s) { //, positions) {
     //update position W.R.T. array of passed in positions
 
     //reset acc to windForce and gravity
@@ -151,9 +151,9 @@ class Flake {
     this.acc.x += windForce;
     this.acc.x *= 1 - this.windInertia;
 
-    //apply separation force
-    let sepForce = this.separateFromPositions(s, positions);
-    this.acc.add(sepForce);
+    //apply separation force - tiny effect for massive math so I've removed it
+    //let sepForce = this.separateFromPositions(s, positions);
+    //this.acc.add(sepForce);
 
     //move due to acc
     this.vel.add(this.acc);

@@ -138,10 +138,21 @@ label {
 }
 
 input,
-textarea, select {
+textarea,
+select {
   color: var(--text-color);
   background-color: var(--background);
   padding: 0px 0.5rem;
+}
+
+input:active,
+textarea:active,
+select:active,
+input:focus,
+textarea:focus,
+select:focus {
+  border: 2px var(--highlight) groove;
+  outline: none;
 }
 
 select {

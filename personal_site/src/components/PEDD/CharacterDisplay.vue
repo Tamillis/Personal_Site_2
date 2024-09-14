@@ -12,13 +12,13 @@
 
     <div class="summary">
         <div>
-            <div class="flex flex-align-center flex-thirds">
-                <h3>Race</h3>
+            <div class="flex flex-align-center">
+                <h3 style="width:125px">Race</h3>
                 <p>- {{ player.race ? player.race.name : "None chosen" }}</p>
             </div>
 
-            <div class="flex flex-align-center flex-thirds">
-                <h3>Background</h3>
+            <div class="flex flex-align-center">
+                <h3 style="width:125px">Background</h3>
                 <p>- {{ player.background ? player.background.name : "None chosen" }}</p>
             </div>
 
@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <div>
+        <div class="summary-sub-section">
             <h3>Equipment</h3>
             <ul v-if="player.background">
                 <li v-for="eq in player.background.equipment" class="triangle-points">{{ eq }}</li>
@@ -40,7 +40,7 @@
             </ul>
         </div>
 
-        <div>
+        <div class="summary-sub-section">
             <h3>Skills</h3>
             <ul>
                 <li v-for="skill in player.skills" class="triangle-points">{{ skill }}</li>
@@ -141,8 +141,18 @@ const selectedPowers = computed(() => {
     max-width: 250px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 999px) {
     .power-summary {
+        width: calc(50% - 1rem);
+    }
+
+    .summary {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .summary-sub-section {
         width: calc(50% - 1rem);
     }
 }

@@ -2,7 +2,7 @@
 	<section>
 		<CharacterDisplay :player="player" :haveFaith="sections.faith" @updateImgSrc="(src) => chosen.imgSrc = src" />
 
-		TODO: Make resource powers work as intended. Flag Red Rage as such. Get rid of pure resource powers, they do nothing (like Fighting Style). Just use tags.
+		TODO: Make resource powers work as intended. Flag Red Rage as such. Get rid of pure resource powers. Just use tags.
 
 		<button class="btn" @click="debug = !debug">TODO: Save</button>
 
@@ -22,7 +22,6 @@ DEBUG:
 			<button @click="sections.faith = !sections.faith">
 				{{ sections.faith ? "I lost my faith" : "I have faith!" }}
 			</button>
-			<button @click="buildPlayer">Manual Refresh</button>
 		</div>
 
 		<section id="concept-section" v-show="sections.concept">
@@ -73,23 +72,10 @@ DEBUG:
 			<SkillSelector :roleSkills="chosen.roleSkills" :otherSkills="otherSkills" :limit="4 + player.intelligence"
 			@skills="skills => (chosen.roleSkills = skills)" />
 			
-			<!-- TODO: From here -->
-			<h2>Role Powers: <span>{{ chosen.rolePowers.join(", ") }}</span></h2>
-			<p>One day the below will be properly automatically filtered by prerequisites</p>
-			<select class="tag-select" v-model="roleTag">
-				<option v-for="tag in tags">{{ tag }}</option>
-			</select>
-			<div class="cards">
-				<CardContainer v-for="(power, i) in rolePowers" :name="power.name"
-					:expanded="openedRolePowerCards.includes(power.name)"
-					:class="{ highlight: chosen.rolePowers.includes(power.name) }"
-					@chosen="() => (openedRolePowerCards = choosePower(power, 'rolePowers', openedRolePowerCards, 3))"
-					:key="`rlpc-${i}-${key}`">
-					<PowerContent :power="power" @highlight="tag => highlight(tag)" />
-				</CardContainer>
-			</div>
+			<RolePowers :powers="chosen.rolePowers" @powersChosen="(chosenPowers) => (chosen.rolePowers = chosenPowers)"/>
 		</section>
-
+		
+		<!-- TODO: From here -->
 		<section id="equipment-section" v-if="sections.equipment">
 			<EquipmentTab @equipment="equipment => (chosen.roleEquipment = equipment.equipment.split(','))"
 				@armour="armour => (chosen.armour = armour)" @shield="shield => (chosen.shield = shield)"
@@ -111,6 +97,7 @@ import CharacterDisplay from "./CharacterDisplay.vue";
 import EquipmentTab from "./EquipmentTab.vue";
 import RacialPowers from "./RacialPowers.vue";
 import Upbringing from "./Upbringing.vue";
+import RolePowers from "./RolePowers.vue";
 
 //resources
 import powers from "../../assets/pedd/pedd-powers.json";
@@ -120,7 +107,7 @@ import Background from "./Background.vue";
 
 //derived resources
 let stats = ["accuracy", "perception", "strength", "dexterity", "charisma", "intelligence"];
-let tags = ["All"].concat(Array.from(new Set(powers.map(p => p.tag).flat())).sort()); //don't you just love javascript?
+
 let baseDefence = {
 	tiny: 16,
 	small: 10,
@@ -241,38 +228,6 @@ let otherSkills = computed(() => {
 	skills = skills.concat(background.skills);
 	return skills;
 });
-
-let openedRolePowerCards = [];
-let roleTag = ref("All");
-let rolePowers = computed(() => {
-	return powers.filter(p => roleTag.value == "All" || p.tag.includes(roleTag.value));
-});
-
-let choosePower = (power, attribute, opened, max) => {
-	key.value++;
-	if (!opened.includes(power.name)) {
-		//clicking an un-opened card must open it
-		opened.push(power.name);
-
-		if (chosen.value[attribute].length < max) {
-			//and it can be added to selected list if there's room
-			chosen.value[attribute].push(power.name);
-		}
-	} else {
-		//clicking an opened card
-		//if the opened card is not in the selected list and there is room, add it
-		if (!chosen.value[attribute].includes(power.name) && chosen.value[attribute].length < max) {
-			chosen.value[attribute].push(power.name);
-		} else {
-			//remove it from the selected list
-			chosen.value[attribute] = chosen.value[attribute].filter(r => r !== power.name);
-			//and close that card
-			opened = opened.filter(r => r !== power.name);
-		}
-	}
-
-	return opened;
-};
 
 //computer player stats from chosen values
 let player = computed(() => {
