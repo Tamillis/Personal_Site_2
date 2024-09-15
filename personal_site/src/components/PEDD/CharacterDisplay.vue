@@ -2,7 +2,6 @@
 
     <div class="stat-display-container">
         <div>
-
             <h2 class="title underline">{{ player.name }}, {{ player.concept }}</h2>
             <StatDisplay :player="player" :haveFaith="haveFaith" />
         </div>

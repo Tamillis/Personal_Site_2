@@ -72,7 +72,7 @@ let updateEquipmentCollection = (e) => {
 };
 
 let chosenArmour = (e) => {
-    //track ref limit
+    //track each ref limit
     chosen.value[e.target.dataset.prop + "RefLimit"] = Number(e.target.children[e.target.selectedIndex].dataset.refLimit);
     
     //emit lowest reflexes limit
@@ -81,7 +81,7 @@ let chosenArmour = (e) => {
     if (chosen.value.shieldRefLimit < lowestLimit) lowestLimit = chosen.value.shieldRefLimit;
     emit('refLimit', lowestLimit);
 
-    //emit player armour, helmet and shield value
+    //emit player armour, helmet and shield values
     emit('armour', chosen.value.armour);
     emit('helmet', chosen.value.helmet);
     emit('shield', chosen.value.shield);

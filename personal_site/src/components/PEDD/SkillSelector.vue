@@ -24,7 +24,7 @@ let roleSkills = ref(
     skillsData.basicSkills.map(s => s.skill).concat(skillsData.knowledgeSkills.map(s => s.skill).concat(skillsData.martialSkills.map(s => s.skill)))
 );
 roleSkills.value.sort((s1, s2) => s1.localeCompare(s2));
-let chosenSkills = ref(props.roleSkills);
+let chosenSkills = ref(props.roleSkills ? props.roleSkills : []);
 let unchosenSkills = ref(roleSkills.value.filter(s => !chosenSkills.value.includes(s) && !props.otherSkills.includes(s)));
 let selectedSkill = ref(unchosenSkills.value[0]);
 

@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <img :src="imgSrc" @click="showImgSrc = !showImgSrc" alt="Character Portrait Image. Click to show URL input." title="Character Portrait image. Click to show URL input."/>
+        <img :src="imgSrc" :class="{square: (imgSrc == '')}" @click="showImgSrc = !showImgSrc" alt="Character Portrait Image. Click to show URL input." title="Character Portrait image. Click to show URL input."/>
         <input v-show="showImgSrc" id="img-src-input" @change="update" :value="imgSrc" class="text-entry" />
     </div>
 </template>
@@ -36,5 +36,13 @@ img {
     border: 2px var(--highlight) groove;
     width: 100%;
     text-indent: 0;
+}
+
+.square {
+    display: block;
+    aspect-ratio: 1 / 1;
+    font-size: 1em;
+    text-align: center;
+    padding-top: calc(50% - 1em);
 }
 </style>
