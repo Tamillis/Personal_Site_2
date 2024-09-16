@@ -3,14 +3,14 @@
         <h2>Role Powers: <span>{{ props.powers.join(", ") }}</span></h2>
         <p>TODO: properly automatically filter by prerequisites</p>
         <p v-if="props.powers.length < 3" style="color: orangered">Please choose 3 Powers.</p>
-        <select class="tag-select">
-            <option>TODO: Search by tag</option>
-            <option>TODO: Search by term</option>
+        <select class="tag-select" v-model="searchType">
+            <option value="tag">Search by tag</option>
+            <option value="term">Search by term</option>
         </select>
-        <input class="text-search" placeholder="Search by name or description..." v-model="search" list="tag-list" />
-        <datalist id="tag-list">
+        <select v-if="searchType == 'tag'" class="tag-select" v-model="searchTag">
             <option v-for="tag in tags">{{ tag }}</option>
-        </datalist>
+        </select>
+        <input v-if="searchType == 'term'" class="text-search" placeholder="Search by name or description..." v-model="searchTerm" />
         <div class="cards">
             <CardContainer v-for="(power, i) in rolePowers" :name="power.name"
                 :expanded="props.powers.includes(power.name)" :class="{ highlight: props.powers.includes(power.name) }"
@@ -33,9 +33,13 @@ let tags = ["All"].concat(Array.from(new Set(powers.map(p => p.tag).flat())).sor
 const props = defineProps(['powers']);
 const emits = defineEmits(['powersChosen'])
 
-let search = ref("");
-let rolePowers = computed(() => {
-    return powers.filter(p => search.value == '' || search.value.toLowerCase() == 'all' || p.name.includes(search.value) || p.desc.includes(search.value));
+const searchTerm = ref("");
+const searchTag = ref("All");
+const searchType = ref("tag");
+const rolePowers = computed(() => {
+    let term = searchTerm.value.toLowerCase();
+    if(searchType.value == "tag") return powers.filter(p => searchTag.value == 'All' || p.tag.includes(searchTag.value));
+    else return powers.filter(p => term == '' || term == 'all' || p.name.includes(term) || p.desc.includes(term));
 });
 
 let choosePower = (name) => {

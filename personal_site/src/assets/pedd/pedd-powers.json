@@ -281,7 +281,7 @@
         "preq": [
             "Otherworldly Patron"
         ],
-        "desc": "**Healing Light** - you gain the ability to channel celestial energy to heal wounds. You have a pool of d6s equal to your Expertise + your Faith that you regain after a Long Rest. As a Bonus Action, you can spend these d6s to heal one character you can see within 60ft of you with a word of healing power whispered into your ear by your Patron. The maximum number of dice you can spend at once equals your Faith (minimum of one die). Roll the dice you spend, add them together, and restore an amount of Health equal to the total.\n\n**Spellcasting Ability** - Faith. Faith for you is the following the orders, precepts and desires of your Patron. In addition, your maximum Faith is now 6, but your Faith can fall as low as -5 and is prone to fluctuating more rapidly than Divine Spellcasting spell casters (consult with your DM, but as a guide affect change at the end of each session).\n\n**Spell List** - Divine Sphere\n\n**Emblematic Spells** - In addition to the Divine Sphere spell list, you can choose from the following list.\n\n| Magnitude | Spells                                                                                   |\n| --------- | ---------------------------------------------------------------------------------------- |\n| Cantrip   | Eldritch Blast (but radiant damage), Blade Ward                                          |\n| I         | Burning Hands, Faerie Fire (but white light), Sleep                                      |\n| II        | Flame Blade, Fortune's Favour, See Invisibility                                          |\n| III       | Call Lightning, Fear, Fly                                                                |\n| IV        | Charm Monster, Compulsion, Sickening Radiance (but harsh white light)                    |\n| V         | Contact Other Plane, Hold Monster, Wall of Light                                         |\n| VI        | Globe of Invulnerability, Mass Suggestion, Tasha's Otherwordly Guise (Upper Planes only) |\n| VII       | Force Cage, Sequester                                                                    |\n| VIII      | Antipathy/Sympathy, Power Word Stun                                                      |\n| IX        | Wish                                                                                     |\n\n**Anathema** - Due to the limited nature of the Divine Sphere, the Celestial Patron finds none of its spells Anathema."
+        "desc": "**Healing Light** - you gain the ability to channel celestial energy to heal wounds. You have a pool of d6s equal to your Bonus + your Faith that you regain after a Long Rest. As a Bonus Action, you can spend these d6s to heal one character you can see within 60ft of you with a word of healing power whispered into your ear by your Patron. The maximum number of dice you can spend at once equals your Faith (minimum of one die). Roll the dice you spend, add them together, and restore an amount of Health equal to the total.\n\n**Spellcasting Ability** - Faith. Faith for you is the following the orders, precepts and desires of your Patron. In addition, your maximum Faith is now 6, but your Faith can fall as low as -5 and is prone to fluctuating more rapidly than Divine Spellcasting spell casters (consult with your DM, but as a guide affect change at the end of each session).\n\n**Spell List** - Divine Sphere\n\n**Emblematic Spells** - In addition to the Divine Sphere spell list, you can choose from the following list.\n\n| Magnitude | Spells                                                                                   |\n| --------- | ---------------------------------------------------------------------------------------- |\n| Cantrip   | Eldritch Blast (but radiant damage), Blade Ward                                          |\n| I         | Burning Hands, Faerie Fire (but white light), Sleep                                      |\n| II        | Flame Blade, Fortune's Favour, See Invisibility                                          |\n| III       | Call Lightning, Fear, Fly                                                                |\n| IV        | Charm Monster, Compulsion, Sickening Radiance (but harsh white light)                    |\n| V         | Contact Other Plane, Hold Monster, Wall of Light                                         |\n| VI        | Globe of Invulnerability, Mass Suggestion, Tasha's Otherwordly Guise (Upper Planes only) |\n| VII       | Force Cage, Sequester                                                                    |\n| VIII      | Antipathy/Sympathy, Power Word Stun                                                      |\n| IX        | Wish                                                                                     |\n\n**Anathema** - Due to the limited nature of the Divine Sphere, the Celestial Patron finds none of its spells Anathema."
     },
     {
         "name": "Close Quarters Shooter",
@@ -745,7 +745,7 @@
         "preq": [
             ""
         ],
-        "desc": "The accuracy of elves is legendary, especially that of elf archers and spellcasters. Youhave uncanny aim with attacks that rely on precision rather than brute force. Once per Short Rest, you have Advantage on a ranged weapon attack, or a ranged spell attack."
+        "desc": "The accuracy of elves is legendary, especially that of elf archers and spellcasters. You have uncanny aim with attacks that rely on precision rather than brute force. Once per Short Rest, you have Advantage on a ranged weapon attack, or a ranged spell attack."
     },
     {
         "name": "Empowered Spell",
@@ -2043,22 +2043,6 @@
         "desc": "When you cast a spell, you can spend 1 Magnitude I Reserve to cast it without any somatic or verbal components."
     },
     {
-        "name": "Superior Darkvision & Sunlight Sensitivity",
-        "tag": [
-            "dwarf",
-            "elf",
-            "exploration",
-            "racial",
-            "roll-effecting",
-            "sense",
-            "gnome"
-        ],
-        "preq": [
-            ""
-        ],
-        "desc": "You gain the Power Darkvision but to a range of 120ft, instead of 60ft. However, you have Disadvantage on attack rolls and Perception checks that rely on sight when you, the target of the attack, or whatever you are trying to perceive is in direct sunlight."
-    },
-    {
         "name": "Svirfneblin Magic",
         "tag": [
             "background",
@@ -2149,6 +2133,22 @@
         "desc": "When you cast a spell that deals a type of organic or energy damage (see the following list), you can spend 1 Magnitude I Reserve to change that damage type to one of the other listed types: acid, cold, fire, lightning, poison, psychic."
     },
     {
+        "name": "Troglobite",
+        "tag": [
+            "dwarf",
+            "elf",
+            "exploration",
+            "racial",
+            "roll-effecting",
+            "sense",
+            "gnome"
+        ],
+        "preq": [
+            ""
+        ],
+        "desc": "You have Superior Darkvision:\n- You gain the Power Darkvision but to a range of 120ft, instead of 60ft. \n\nHowever, you have Sunlight Sensitivity:\n- You have Disadvantage on attack rolls and Perception checks that rely on sight when you, the target of the attack, or whatever you are trying to perceive is in direct sunlight."
+    },
+    {
         "name": "Turn Undead",
         "tag": [
             "combat",
@@ -2236,7 +2236,7 @@
         "desc": "You gain the Light cantrip. If you already know this cantrip, you learn a different Divine Sphere cantrip of your choice.\n\nYou can Channel Divinity and interpose divine light between yourself and an attacking enemy. When you are attacked by a character within 30ft of you that you can see, you can use your Bonus Action and impose Disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be blinded is immune to this Miracle.\n\nYou can use this Miracle a number of times equal to your Faith (a minimum of once). You regain all expended uses when you finish a Rest."
     },
     {
-        "name": "Weapon Mastery",
+        "name": "Weapon Master",
         "tag": [
             "background",
             "combat",
@@ -2246,7 +2246,7 @@
         "preq": [
             ""
         ],
-        "desc": "You have practiced extensively with a variety of weapons. You gain proficiency with three Martial Skills of your choice. You can take this Power any number of times."
+        "desc": "You have practiced extensively with a variety of weapons. You can swap between two weapons once per Round without needing an action. You gain Proficiency in four Martial Skills of your choice. If you take this Power again, you gain a further four Martial Skill proficiencies each time."
     },
     {
         "name": "Resilient",

@@ -1,16 +1,16 @@
 <template>
     <div class="selection" style="max-width: 300px;">
         <h3>Equipment Collections</h3>
-        <select id="equipment-collections" @change="updateEquipmentCollection">
+        <select id="equipment-collections" v-model="equipment">
             <option disabled selected>Choose one...</option>
-            <option v-for="(collection, i) in equipmentCollections" :value="i">{{ collection.name }}</option>
+            <option v-for="(collection, i) in equipmentCollections">{{ collection.name }}</option>
         </select>
     </div>
 
     <div class="flex">
         <div class="selection">
             <h3>Body Armour</h3>
-            <select data-prop="armour" v-model.number="chosen.armour" @change="chosenArmour">
+            <select data-prop="armour" v-model.number="armour" @change="chosenArmour">
                 <option value="0" data-ref-limit="99">None</option>
                 <option value="1" data-ref-limit="99">+1 Padded (Loud)</option>
                 <option value="1" data-ref-limit="99">+1 Leather</option>
@@ -29,7 +29,7 @@
 
         <div class="selection">
             <h3>Helmet</h3>
-            <select data-prop="helmet" v-model.number="chosen.helmet" @change="chosenArmour">
+            <select data-prop="helmet" v-model.number="helmet" @change="chosenArmour">
                 <option value="0" data-ref-limit="99">None</option>
                 <option value="1" data-ref-limit="2">+1 Lobster Pot</option>
                 <option value="2" data-ref-limit="0">+2 Great Helm (Blinkered)</option>
@@ -38,7 +38,7 @@
 
         <div class="selection">
             <h3>Shield</h3>
-            <select data-prop="shield" v-model.number="chosen.shield" @change="chosenArmour">
+            <select data-prop="shield" v-model.number="shield" @change="chosenArmour">
                 <option value="0" data-ref-limit="99">None</option>
                 <option value="1" data-ref-limit="99">+1 Buckler</option>
                 <option value="2" data-ref-limit="2">+2 Shield</option>
@@ -52,8 +52,12 @@
 import {ref} from 'vue';
 import equipmentCollections from '../../assets/pedd/pedd-equipment-collections.json';
 
-const props = defineProps(["equipment", "armour", "helmet", "shield"])
-const emit = defineEmits(["equipment", "armour", "helmet", "shield", "refLimit"])
+const emit = defineEmits(["refLimit"]);
+
+const equipment = defineModel('equipment');
+const armour = defineModel('armour');
+const helmet = defineModel('helmet');
+const shield = defineModel('shield');
 
 const chosen = ref({
     armour: 0,
@@ -64,13 +68,6 @@ const chosen = ref({
     helmetRefLimit: 99,
 });
 
-let updateEquipmentCollection = (e) => {
-    let equipment = equipmentCollections[e.target.value];
-    
-    //emit equipment
-    emit('equipment', equipment);
-};
-
 let chosenArmour = (e) => {
     //track each ref limit
     chosen.value[e.target.dataset.prop + "RefLimit"] = Number(e.target.children[e.target.selectedIndex].dataset.refLimit);
@@ -80,11 +77,6 @@ let chosenArmour = (e) => {
     if (chosen.value.helmetRefLimit < lowestLimit) lowestLimit = chosen.value.helmetRefLimit;
     if (chosen.value.shieldRefLimit < lowestLimit) lowestLimit = chosen.value.shieldRefLimit;
     emit('refLimit', lowestLimit);
-
-    //emit player armour, helmet and shield values
-    emit('armour', chosen.value.armour);
-    emit('helmet', chosen.value.helmet);
-    emit('shield', chosen.value.shield);
 };
 
 </script>
