@@ -22,6 +22,11 @@
                     "name": "GiantkinGoliathsAndAncientTales.md",
                     "path": "./src/assets/wiki/Beyond/GiantkinGoliathsAndAncientTales.md",
                     "type": "file"
+                },
+                {
+                    "name": "TheHomeConstellation.md",
+                    "path": "./src/assets/wiki/Beyond/TheHomeConstellation.md",
+                    "type": "file"
                 }
             ]
         },

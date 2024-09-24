@@ -1,24 +1,27 @@
 ## Spheres of Magic
-Spellcasting has undergone a serious remake. Gone are spell casting classes, of course, and spell lists for each class, and even the confusingly labelled 'spell-levels'. Now all spell lists are combined into 4 “Spheres of Magic”; Arcane, Divine, Primal and Occult. The schizophrenic "Spellcasting" feature has been separated into 5 different spellcasting Powers, one for each Sphere as well as one for Pact Magic. Each are fundamentally unique and not just because of the associated spell list and minor quirks, adding both flavour and mechanical differentiation.
+Spellcasting has undergone a serious remake. Gone are spell casting classes, of course, and spell lists for each class, and even the confusingly labelled 'spell-levels'. Now all spell lists are combined into 4 “Spheres of Magic”; Arcane, Divine, Primal and Occult. The schizophrenic "Spellcasting" feature has been separated into 5 different spellcasting Powers, one for each Sphere as well as one for Pact Magic. Each are fundamentally unique Powers that operate on their own principles, adding both flavour and mechanical differentiation.
 
 Note that there is significant overlap for the spheres, many spells belong to, and are usable by, more than one sphere.
 
+### Spells and Converting Spells to PEDD
+By and large Spells have been kept as-is, with the rather large caveat that Flat Math needs to be applied to them, and the subtler changes that the One Action All At Once Combat system requires. Here are some guidelines for converting spells.
+
+- 
+
 ### Mana Magnitude and Reserve
-Spell levels and spell slots have also received a semantic rework as can be seen in the 'Mana' Power, as the naming convention is old and counter-productive. Countless times I've had new players get confused about levels, spell levels and how spell slots . Now admittedly with the removal of classes and character levels, I could have left spell levels in without ambiguity, but I didn't as apparently I'm anethema to levels. Spell levels are relabelled to "Magnitude" and spell slots to "Reserve". A spellcaster has a "X Reserve of Y Magnitude", with one spell use being simply known as a "Cast", one use of a magnitude of reserve. This also translates well when talking about "up-casting".
+Spell levels and spell slots have received a semantic rework as can be seen in the 'Mana' Power, as the spell-level and spell-slot naming conventions were old and counter-intertuitive. Countless times I've had new players get confused about levels, spell levels and how spell slots work. Now admittedly with the removal of classes and character levels, I could have left spell levels in without ambiguity, but I didn't as apparently I'm anethema to levels. Spell levels are relabelled to "Magnitude" and spell slots to "Reserve". A spellcaster has "X Reserve of Y Magnitude", with one spell using one use of a Magnitude of Reserve. "Upcasting" is shorthand for casting a spell at a certain Magnitude using a higher Magnitude Reserve if that's all you have left.
 
 ### Innate Spells, and Prepared Spells & Sources
-Another semantic rework is "Prepared" spellcasting and spellcasting with "Known spells". Now there are explicit Innate and Prepared Spells. "Innate spells" are learned spells memorised or made reflexive by the caster, they never need to be prepared. All Cantrips, for example, are Innate (and also take 0 Reserve to Cast). Prepared spells then, to Spheres that can, allow a spell caster to Prepare a spell they don't otherwise have ready for use. The manner and method a spell is Prepared depends on the Sphere, but it means the caster can choose from any Spell they have access to in their "Source":
+Another semantic rework is "Prepared" spellcasting and spellcasting with "Known spells". Now there are explicit Innate and Prepared Spells depending on the kinds of spellcasting Powers available to a character. "Innate spells" are learned spells memorised or made reflexive by the caster: they never need to be prepared. All Cantrips, for example, are Innate (and also take 0 Reserve to Cast). Prepared spells then, to Spheres that can, allow a spell caster to Prepare a spell they don't otherwise have ready for use. The manner and method a spell is Prepared depends on the Sphere, but it means the caster can choose from any Spell they have access to in their "**Source**":
 
-- The source of Arcane spells is the wizard’s spellbook, which they accrue over time by writing down Arcane Sphere spells they encounter and invent.
-- The source of Divine spells are that devotee's deity. This is a spell list which the deity, in all their wisdom and might, chooses for the day from all the Divine Sphere spells. Ultimately the DM, somewhat knowing the future with their preparation and who acts as the deity in question, produces a subset of the divine sphere which the character can then choose from. Alternatively the DM and player check whether the spell list the player wants for that day is OK by the Diety (the DM). It might be that, for a given day, a deity requires a character to prepare a particular spell.
-- Primal spells can be sourced from the entire primal sphere of magic, but it is fundamentally limited in breadth and scope compared to the others so this seeming advantage is still balanced.
+- The Source of Arcane spells is the wizard’s spellbook, which they accrue over time by writing down Arcane Sphere spells they encounter and invent.
+- The Source of Divine spells are that devotee's deity. This is a spell list which the deity, in all their wisdom and might, chooses for the day from all the Divine Sphere spells. Ultimately the DM, somewhat knowing the future with their preparation and who acts as the deity in question, produces a subset of the divine sphere which the character can then choose from. Alternatively the DM and player check whether the spell list the player wants for that day is OK by the Diety (the DM). It might be that, for a given day, a deity requires a character to prepare a particular spell, that certain spells on the Divine list are anethema to that Deity, or the Deity (the DM) feels a certain spell not on the Divine list ought to be (so it is).
+- Primal spells can be sourced at any time from the entire Primal sphere of magic, but it is fundamentally limited in breadth and scope compared to the others so this seeming advantage still balances out.
 
 ### The Arcane Sphere
-> Spell list - Artificer, Wizard
-
 Arcane magic practitioners, commonly called wizards, are your typical learned mage. They collect a large repertoire of Prepared spells in their Spellbook; and through intense study can memorise the immense complexities of a select few spells, making that spell Innate for them. Famously, wizards are known to invent spells [choosing any spell from the Arcane Sphere or working with the GM to craft custom spells] as a down time activity.
 
-See the Arcane Spellcasting Power (which is largely unchanged from Wizard's Spellcasting).
+Arcane magic is used through the Arcane Spellcasting Power (which is largely unchanged from Wizard's Spellcasting).
 
 ### The Divine Sphere
  > Spell list - Cleric, Paladin
@@ -46,15 +49,15 @@ The Primal Mage can freely choose from the entire Primal Sphere when preparing s
 ### The Occult Sphere
 > Spell list - Bard, Sorcerer & Warlock
 
-Occult magic is that which refutes study, bends logic and breaks minds. Those that practice it rarely chose to do so, or came to use it through a myriad of unorthodox ways. Such spells are always Innate; esoteric knowledge carved into the mind and body of the Sorcerer. It is not prepared, or one might say it is prepared into their very bodies. 
+Occult magic is that which refutes study, bends logic and breaks minds. Those that practice it rarely chose to do so, or came to use it through a myriad of unorthodox ways. Such spells are always Innate; esoteric knowledge carved into the mind and body of the Sorcerer. It is not prepared, or one might say it is prepared into their very souls. 
 
-Occult spellcasting uses Fortitude, Reflexes or Willpower, halved and rounded up, to cast spells: depending on the spell's school, as they rely on their bodies to conjure the magic. 
+Occult spellcasting uses Fortitude, Reflexes or Willpower, halved and rounded up (so a +5 Willpower is a +3 Spell Casting Modifier etc.), to cast spells: depending on the spell's school, as they rely on their being to conjure the magic. 
 - **Fortitude** - Abjuration, Conjuration and Enchantment
 - **Reflexes** - Illusion, Transmutation
 - **Willpower** - Divination, Evocation, Necromancy
 
 ### Pact Magic
-Pact Magic, while clearly occult in nature, functions quite differently to other spellcasting Powers, as fundamentally the magic is derived from some other powerful individual known as a *Patron* who entrusts power into their vassal. Not all who have a Patron are provided with magic, as the character might not have the Pact Magic Power, but one needs a Patron with whom to make a pact in order to access the magics that come as part of that pact.
+Pact Magic, while clearly occult in nature, functions quite differently to other spellcasting Powers, as fundamentally the magic is derived from some other powerful individual known as a *Patron* who entrusts power into their vassal, who merely channels that power. Not all who have a Patron are provided with magic, as the character might not have the Pact Magic Power, but one needs a Patron with whom to make a pact in order to access the magics that come as part of that pact.
 
 Patrons are known to plug their warlocks with all sorts of spells of varied yet thematic spells, with each Patron presenting a unique spell list: one of the sphere's as a base plus a number of "emblematic spells" added to that list, and "anethema spells" that may be removed. Patrons are also known to change what spells they imbibe their followers with during periods of communion, and so Pact Magic is the only kind known to change spells during a Downtime Activity period, rather than a Rest or not at all as is the case with Innate Spells.
 

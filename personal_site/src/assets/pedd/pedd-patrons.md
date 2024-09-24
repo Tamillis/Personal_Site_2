@@ -8,20 +8,20 @@
 
 **Emblematic Spells** TODO
 
-In addition to the Arcane Sphere spell list
+In addition to the Primal Sphere spell list
 
 | Magnitude | Spells |
 | --- | --- | 
-| Cantrip | Eldritch Blast, Vicious Mockery |
-| I | Arms of Hadar, Dissonant Whispers, Hex | 
-| II | Enthrall, Immovable Object, Silence | 
-| III | Conjure Barrage, Hunger of Hadar, Meld into Stone | 
-| IV | Compulsion, Gravity Sinkhole, Shadow of Moil | 
-| V | Antilife Shell, Awaken, Destructive Wave | 
-| VI | Forbiddance, Gravity Fissure, Primordial Ward | 
-| VII | Divine Word, Tether Essence | 
-| VIII | Dark Star, Reality Break | 
-| IX | Ravenous Void | 
+| Cantrip | Eldritch Blast, Vicious Mockery | 2
+| I | Arms of Hadar, Dissonant Whispers, Hex | 3
+| II | Enthrall, Immovable Object, Silence | 3
+| III | Conjure Barrage, Hunger of Hadar, Meld into Stone | 3
+| IV | Compulsion, Gravity Sinkhole, Shadow of Moil | 3
+| V | Antilife Shell, Awaken, Destructive Wave | 3
+| VI | Forbiddance, Gravity Fissure, Primordial Ward | 3
+| VII | Divine Word, Tether Essence | 2
+| VIII | Dark Star, Reality Break | 2
+| IX | Ravenous Void | 1
 
 **Anathema** TODO
 
@@ -42,7 +42,7 @@ Spells from the Arcane Sphere unavailable to you.
 
 #### Fiend
 
-**Spellcasting Ability** - Charisma. Additionally, your maximum Charisma is now 6, and your Charisma increases by 1 but your Willpower decreases by 2. If using Appearance, it further increases by 1.
+**Spellcasting Ability** - Charisma. Additionally, your maximum Charisma is now 6, and your Charisma increases by 1 but your Willpower decreases by 2. (If using Appearance, it further increases by 1.)
 
 **Spell List** - Occult Sphere
 
