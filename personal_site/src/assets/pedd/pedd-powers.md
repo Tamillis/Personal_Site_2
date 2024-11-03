@@ -18,13 +18,23 @@ For example (as both Hardy and Hale are "Once every 4<sup>th</sup> Power" Powers
 Powers taken more than once should be noted what "Rank" they are at; such as "Hale I" or "Hale IV", to show that they are technically two separate powers. Many Powers describe the differences that occur when the Power is taken more than once.
 
 ### A Reflection on Powers
-Obviously, what I'd decided to do was translate the features of 5e as-is as much as possible: for the twin reasons of simplicity and familiarity. However seeing as PEDD is drifiting further and further from its point of origin, and now we have this pretty list of powers with plenty of awkward prerequisites, odd benefits and often boxed in bizare categories, me thinks it is time to start making more serious changes.
+Obviously, what I'd decided to do was translate the features of 5e as-is as much as possible: for the twin reasons of simplicity and familiarity. However seeing as PEDD is drifiting further and further from its point of origin, and now we have this pretty list of often rather fine grained powers with plenty of awkward prerequisites, odd benefits and often boxed in bizare categories, me thinks it is time to start making more serious changes.
 
-Primarily I'm inspired by another classless system I saw that also did away with any pretense at connecting to the old classes, but I wish to retain a much greater connection than that. It is simply that, more than anything, I wish to streamline some of the powers, bring them in line with my own sensibilities and implied setting, and explore some of my own ideas.
+Primarily I'm inspired by another classless system I saw that also did away with any pretense at connecting to the old classes, but I wish to retain a much greater connection than that. It is simply that, more than anything, I wish to streamline some of the powers, bring them in line with my own sensibilities and implied setting, and explore some of my own ideas. By streamline, I do mean to remove as many Powers as possible by combining them, crunching them down and translating them into other aspects of the system (as already done with the Battlemaster Fighter into Tactical Actions).
 
 If I'm going to change something as fundamental as attributes, I might as well start changing features.
 
-This does also imply a future change to spells, but we'll get to that, and whether and by how much it would be necessary, later.
+This does also imply a future change to spells with pretty much the same approach (remove, combine and translate), but we'll get to that, and whether and by how much it would be necessary, later.
+
+#### Power Sets
+An idea for Power rewriting is to guide myself by organising Powers under themed Sets (no totally not classes). A set may be a tree, an inverse tree, or just a grouping. Each set can then have a tag to help navigation and discovery of Powers.
+
+- Focus Set - Powers for enhancing tactical actions and Focus. Note, put certain tactical actions into this.
+- Patronage Set - for Pact Magic and friends
+  - Invocations - although it would be good to unwrap this set back up into patronage
+- Fighting Styles
+- Powerful - name to be confirmed. The "level up" set. These are the powers that in a rather absolute sense improve character power, so combining them under one tag allows one "Powerful" Power to be taken per X Powers without overlap. Those would be access to higher level spells, more Health, and Extra Attack. Also create "Heavy Attack" as a foil to Extra Attack: heavy attacks deal twice the damage when using Strength, extra attacks allow you to do more than one attack per action when using Dexterity / Accuracy. Also an "Empowered Cantrips" Power to replace 5th/11th/17th character level power bump.
+
 
 ### Powers In Training
 Powers are “in-training” before coming online, to encourage roleplay of skill acquisition. E.g. a character at the start of each session declares what Power/s they are training towards and when the when the group / DM feels its appropriate, characters gain that Power. Alternatively, play make indicate a certain Power a character should take next as a natural next progression.

@@ -4,33 +4,6 @@
     "type": "dir",
     "contents": [
         {
-            "name": "Beyond",
-            "path": "./src/assets/wiki/Beyond",
-            "type": "dir",
-            "contents": [
-                {
-                    "name": "BeliefsOfTheMateriae.md",
-                    "path": "./src/assets/wiki/Beyond/BeliefsOfTheMateriae.md",
-                    "type": "file"
-                },
-                {
-                    "name": "CalendarsOfTheMateriae.md",
-                    "path": "./src/assets/wiki/Beyond/CalendarsOfTheMateriae.md",
-                    "type": "file"
-                },
-                {
-                    "name": "GiantkinGoliathsAndAncientTales.md",
-                    "path": "./src/assets/wiki/Beyond/GiantkinGoliathsAndAncientTales.md",
-                    "type": "file"
-                },
-                {
-                    "name": "TheHomeConstellation.md",
-                    "path": "./src/assets/wiki/Beyond/TheHomeConstellation.md",
-                    "type": "file"
-                }
-            ]
-        },
-        {
             "name": "Core",
             "path": "./src/assets/wiki/Core",
             "type": "dir",
@@ -53,6 +26,58 @@
                 {
                     "name": "TheAges.md",
                     "path": "./src/assets/wiki/Core/TheAges.md",
+                    "type": "file"
+                }
+            ]
+        },
+        {
+            "name": "Expanded",
+            "path": "./src/assets/wiki/Expanded",
+            "type": "dir",
+            "contents": [
+                {
+                    "name": "BeliefsOfTheMateriae.md",
+                    "path": "./src/assets/wiki/Expanded/BeliefsOfTheMateriae.md",
+                    "type": "file"
+                },
+                {
+                    "name": "Beyond.md",
+                    "path": "./src/assets/wiki/Expanded/Beyond.md",
+                    "type": "file"
+                },
+                {
+                    "name": "CalendarsOfTheMateriae.md",
+                    "path": "./src/assets/wiki/Expanded/CalendarsOfTheMateriae.md",
+                    "type": "file"
+                },
+                {
+                    "name": "Cosmology.md",
+                    "path": "./src/assets/wiki/Expanded/Cosmology.md",
+                    "type": "file"
+                },
+                {
+                    "name": "GiantkinGoliathsAndAncientTales.md",
+                    "path": "./src/assets/wiki/Expanded/GiantkinGoliathsAndAncientTales.md",
+                    "type": "file"
+                },
+                {
+                    "name": "TheElementalBraid.md",
+                    "path": "./src/assets/wiki/Expanded/TheElementalBraid.md",
+                    "type": "file"
+                },
+                {
+                    "name": "TheFirmaments.md",
+                    "path": "./src/assets/wiki/Expanded/TheFirmaments.md",
+                    "type": "file"
+                },
+                {
+                    "name": "TheHomeConstellation.md",
+                    "path": "./src/assets/wiki/Expanded/TheHomeConstellation.md",
+                    "type": "file"
+                },
+                {
+                    "name": "TheThreeBodies.md",
+                    "path": "./src/assets/wiki/Expanded/TheThreeBodies.md",
                     "type": "file"
                 }
             ]

@@ -222,11 +222,11 @@
         "desc": "Humans call them Halflings, but they call themselves \"The Little People\" in their own language, which by-and-large they keep secret. Their origins are much of a mystery, though they are ubiquitous, sometimes more so even than humans, with whom they have been working hand in hand with since the beginning of time, oft retold in the household tale of \"The First Fast Friendship\". Halflings covet and espouse the comforts of home, and work readily with others, well known for their loyalty to their friends, halfling or otherwise.\n\nLittle Peoples can be found across the shards, of course, making up members of tribes, villages and cities throughout the whole of the Materiae. The one little-known exception is The Shard of Three Isles, where they are mysteriously and curiously absent. Often times Halfling societies are uniformly Halfling, peaceful shires of little round houses and pleasant gardens, far from marauding monsters and clashing armies. Sometimes, the little folk are often found underfoot in the cities and towns of the world, making up significant portions of settlements and tribes the shards over, with families forming districts within cities where the building regulations tend to fit a smaller clientele, greasing the wheels and filling the stomachs of civilisation.",
         "stats": [
             {
-                "desc": "Charisma",
+                "desc": "Any",
                 "val": 1
             },
             {
-                "desc": "Dexterity",
+                "desc": "Any",
                 "val": 1
             }
         ],

@@ -1,6 +1,6 @@
 ## My 5e Overhaul
 
-"One D&D", sorry "5.5" now, oh no wait its D&D 5e (2024) which I think is impresively is an even worse name, is coming and Wizards of the Coast really put their PR foot in it with the licensing changes so we're all ready to jump ship. I instead find myself remaking the ship, taking what I think works well, and changing, exchanging and adding in what I would like it to have. So if I were to make a 6th edition of a fashion that suited my tastes and allowed me to explore, reformulate and refine areas of mechanics in which I personally have an interest, while keeping much the rest the same, this would be that. A "Pete's Edition of Dungeons & Dragons", you might say.
+"One D&D", sorry "5.5" now, oh no wait its D&D 5e (2024) which I think is impresively an even worse name, is coming and Wizards of the Coast really put their PR foot in it with the licensing changes so we're all ready to jump ship. I instead find myself remaking the ship, taking what I think works well, and changing, exchanging and adding in what I would like it to have. So if I were to make a 6th edition of a fashion that suited my tastes and allowed me to explore, reformulate and refine areas of mechanics in which I personally have an interest, while keeping much the rest the same, this would be that. A "Pete's Edition of Dungeons & Dragons", you might say.
 
 Frankly, by now, this is less an edition of D&D 5e, and more a total overhaul or, in other words, just my own heavily-inspired heroic fantasy roleplaying system with (for now) borrowed spells and features. But hey, here we are.
 
@@ -29,7 +29,7 @@ On an unrelated note, one was to communicate the ideas behind the Primary Stats 
 | **External** | Acc. | Per. | Ref. |
 | **Liminal** | Str. | Dex. | Fort. |
 | **Internal** | Cha. | Int. | Will. |
- 
+
 This helps delineate between the potentially confusing Dexterity and Accuracy, Dexterity and Reflexes, and Strength and Fortitude. 
 
 Strength and Dexterity can be seen as two very different ways to physically interact with the environment: brute force and subtlety: flow and redirection. 
