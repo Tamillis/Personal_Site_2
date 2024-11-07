@@ -1,9 +1,9 @@
 # The Three Bodies
-The three physical realms, the Shadowfell, the Fae Wild, and the Materium Existentiae, were formed, unlike the rest of reality, by the first three bodies of the Gods and the elemental tools they wielded. So, unlike the rest of Creation, it is bound far more rigidly to Laws and to the effects of material Cause. The three bodies, in their own way, are a closed system of equilibria, a finite (if huge) mini-universe of set matter and energy, all interconnected and interdependent. At least until before the shattering.
+The three physical realms, the Shadowfell, the Fae Wild, and the Materium Existentiae, were formed, unlike the rest of reality, by the first three bodies of the Gods and the elemental tools they wielded. So, unlike the rest of Creation, it is bound far more rigidly to physical laws and to the effects of material Cause. The three bodies, in their own way, are a closed system of equilibria, a finite (if huge) mini-universe of set matter and energy, all interconnected and interdependent. At least until before the shattering.
 
 When the three had finished crafting their realms, they lay down their lives to weave the last step in the creation of the universe, and with their sacrifice, kick-started the Flow of Ideas, the Cycle of Thoughts, the growth and life of the universe. They bridged the worlds, opened the Sun Apertures, and set to motion all things. The dream and its guardian Seldarine began to churn with all the potential for life, for which the Senda gave her life to birth, calling down Souls from the Beginning, and onto the lands, into the seas and over the skies the first beings took their steps. Sendus, from the Skotite throne, gave his life to weave the palace of memories’ last and most grand function, the ability to allow souls to pass on to their next destination having been weighed and properly directed, and finish the living stage of the Cycle of Thought. Sendum then shattered into a million pieces, to seed the Material with the first life and allow the Dream to Dream and the Shadow to Claim.
 
-The Place Between Places
+### The Place Between Places
 The Underdark is so named because it lies beneath all the physical planes, connecting them, twisting through and around and under, to emerge once again in a cave or gulley of the Earthly Spheres, though it holds many more names; Las Cavernas, The Underneath, The Place Between Places. Those of most ancient lore call them the Veins of the Gods.
 
 Things call the Underdark home, some of which truly belong to this place, such as the aboleth, the worm in the capillary of the first, the first corruption of the outer-one, the first attempt to undermine the Prime. In the quiet and the gloom beings from the Absolutes or the Elements find it easier to roost, and chew on the roots of reality. Folk wander, having gone below and never emerging, producing races of wide-eyed drifters and burrowing opportunists, such as the forgotten Duergar or the fortune-bereft Githzerai.
@@ -19,16 +19,20 @@ The Drow are perhaps the most infamous of these settlers, anchoring their cities
 But there are other things less spoken of, those that do not care to show their faces in the stinging brightness of the Material Plane or the overbearing verdancy of the Fae Wild. It is these creatures beyond the pale that give any man, even the greatest of heroes, pause before he descends into the Underneath. Even the Drow, despite their merciless Goddess’ demands for might, have been forced to strike many a bargain and kneel to even the most Dark of creatures that made their homes in the Place-Between-Places. The contents of these deals are best left uncontemplated.
 
 Its nature as a place between the three physical planes gives the dark some interesting physicalities, seemingly bound by the rules of all three places at once. First, down is actually three directions, which is used to keep orientation in there (mat-ward, fey-ward and shadow-ward). If you go down in one direction enough, you’ll eventually get there. Somewhere. Some folk call it the right-hand rule, which also means that there is a direction which only leads you further and further away from all the physical realms. Changing which down you obey is a simple case of projecting your psyche using the following thoughts:
-“Think blue and a man at work.”
-“Think green and a girl at play.”
-“Think black and an elder’s grave.”
+
+> “Think blue and a man at work.”
+
+> “Think green and a girl at play.”
+
+> “Think black and an elder’s grave.”
+
 Similarly, objects can be imbued with a different orientation of down, when one pushes their will into it, causing it to fall towards the new orientation.
 
 Secondly, the Underdark, as a place outside the Cycle of Thoughts, feeds on those thoughts. Memories and life fade into this place, feeding it, but this process can be manipulated. Those thoughts, then, are far more tangible here than elsewhere. As the place where things go to be forgotten, thought and life can be given to manifest in its halls; items of need for the most desperate come to be in their hands even as they forget what they are. Special plants and lifeforms feed on this essence, so-called epistevores, eventually decaying it away in order to grow. This provides the basis of the ecology of the dark, the shadows of the cycle of life; forests of decay littered with husks of those who wandered in and lost all that they were, unable to leave.
 
 Thirdly, it has no sun, as it is no plane. Being entirely underground may make this seem self-evident, but practitioners of magic know that the apertures of the sun are a fundamental part of the fabric of reality that simply is not defined in the dark. For this reason magical light is almost impossible, for there is no sun to call on. Darkness is absolute. Only elemental Fire yet provides light.
 
-The Ethereal Plane
+### The Ethereal Plane
 Like a layer sitting on top of the physical worlds, a “plane” curiously unlike the others in that it is not one of the elemental braid, or one of the cast-out absolutes, nor even physical, but instead a potential phase of physical reality. A slightly different, out of tune, way reality could have been, and through the magical pressure of the balance of the Cosmos, it came to be. 
 
 The Ether is also called the realm that never was, the Unborn. It takes the unclaimed place of Chaotic, Reasoned Good. It echoes with the hope of the Gods, but for all its wonder, it is always immaterial, the cosmic balance to the material worlds. Neither obeying physical law, nor creational law as in the outer planes, it is immaterial, home to the immaterial, and provides all the wonder of that which needs no law. But the chaos of that place makes it ephemeral, and much of it fades and warps quickly. 
@@ -37,10 +41,10 @@ The Ethereal is known for how much more powerful the soul is there. It is often 
 
 Most importantly, the Mists do not reach here, though projecting not just the seeming of something, but its entire physical self, into the ethereal plane to bypass the corrupting force of the Mist is extremely difficult, and risky, for the physical is not welcome in the Ethereal, nor does the ethereal map often reflect the territory, and phasing back finds a traveller buried in rock, plunged in the sea, or lost to the Mists.
 
-The Shard of Eilistraee
+#### The Shard of Eilistraee
 In an area of the Ethereal, there sits apart from the ghostly outline of Eden a collection of chunks of the Materiae Existentiae, naturally drawn together as the lost are wont in Eilistraee’s presence. They make up a patchwork land known as Eilistraee’s Sanctuary, also known as The Eye of the Ghost Moon, and form her Holy Land, to which connections are often made through Blink Gates to her other scattered holdings for the Lost.
 
-Shadowfell - The Black Mirror
+### Shadowfell - The Black Mirror
 The story of the first Wild Hunt, when First Men rode into the verdant gateway, into the land of cycles and whimsy for the first time, has a younger brother. It is not much spoken of, and after the Shattering only scraps of that story remain, and only the very learned even know of it, let alone know it. Shadowfell is the very opposite of the Fae realm. The black mirror of it. Shadowfell does not dance. 
 
 The Shadowfell is bleak and dark, small and decaying, each day different, but each day the lesser, the energy of a day stretched out over a year. Every act has its final inevitable toll, and it is always measured. Time flows slowly, but energy fades rapidly; torches burn down to cinders in moments, but even a scratch fails to heal for weeks, cursing most all life to the inevitability of slow death. 
@@ -83,7 +87,7 @@ Outside the Palace and Towers of civilization the horrors of the shadow lurk, an
 
 Effects: negative mana magnitude, non life processes sped up (scaling to magnitude). 
 
-The Fractal Dream and the Symbolic Courts
+### The Fractal Dream and the Symbolic Courts
 Bathed in perpetual dusk/dawn, the Fae Wild is both the land of potential and of dreams. Though it is thought of as the land of abundant life, in truth it is not the land of life, that title instead belonging to the Material, but is instead the land of the Fractal Dream, the gestational first step of the Cycle. It holds both the reflections of life, what it desires and what it could have been, and all its possibilities at once; the dreams and hopes for the next generations. 
 
 The fey is forest and jungle, mire and reef; as if the world was bursting with chaotic life, surging and resplendent, but also cycling and repeating, in a mad fractal dance of echoing patterns and mini-cycles. By definition, it’s the lucid dream of life; vaster, chaotic and ever fluctuating, but also never quite real. The fey is what life may enact and put to praxis. 
@@ -100,8 +104,8 @@ Many of the First yet remain there in the Fey, and are what are known as "True E
 
 The laws of Creation have little hold in the dream, or too much, for all in a way wield such power to create, to dream up new stuff, but the impermanent nature of the place as the birth of ideas, constantly changing the fabric of the place, means that nothing is permanent, and all stuff wrought is quickly undone. Ironically the more powerful of fey beings are those able to coral and maintain larger demesnes for longer; permanence in a people and a place renowned for their changeability.  
 
-Bottled Dreams and the Dream Worlds
-Lucid dreamers are able to hold their own courts while they sleep, dreaming up new pockets of their own and often drawing visitors, though most fail to realise the weight of their actions. Bottled Dreams, by dream artists who imbue potions with a dream of their making for sale, are perhaps the most well “known” of the fey world from the perspective of affluent city dwellers of cities highly developed in the arcane who keep far from the forests. Those who do know of the true courts in a more personal fashion have a better, more violent, understanding of that place.
-
 Effects: everything regenerates unless storied away; beings implied rejuvenate d6 HP per round. Beings who are set-up to fall decay d6HP per round. 
 Naming a trope when committing an action grants advantage, going against the grain causes disadvantage. Completing a pattern of 3 grants a flat 20 on the dice. 
+
+#### Bottled Dreams and the Dream Worlds
+Lucid dreamers are able to hold their own courts while they sleep, dreaming up new pockets of their own and often drawing visitors, though most fail to realise the weight of their actions. Bottled Dreams, by dream artists who imbue potions with a dream of their making for sale, are perhaps the most well “known” of the fey world from the perspective of affluent city dwellers of cities highly developed in the arcane who keep far from the forests. Those who do know of the true courts in a more personal fashion have a better, more violent, understanding of that place.

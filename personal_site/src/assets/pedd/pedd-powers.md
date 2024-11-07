@@ -35,6 +35,18 @@ An idea for Power rewriting is to guide myself by organising Powers under themed
 - Fighting Styles
 - Powerful - name to be confirmed. The "level up" set. These are the powers that in a rather absolute sense improve character power, so combining them under one tag allows one "Powerful" Power to be taken per X Powers without overlap. Those would be access to higher level spells, more Health, and Extra Attack. Also create "Heavy Attack" as a foil to Extra Attack: heavy attacks deal twice the damage when using Strength, extra attacks allow you to do more than one attack per action when using Dexterity / Accuracy. Also an "Empowered Cantrips" Power to replace 5th/11th/17th character level power bump.
 
+#### Power Requirements
+On an unrelated note, I've sat down to set out the framework for Power Requirements, so it can be programmed for a proper build system be built, where Players only see the powers they qualify for. (The character creator also needs to factor in changes to a character caused by Powers, such as skills, expertise marking, Stat increases etc, which means that when deselecting a Power, first the new state must be checked to see if the current powers still qualify and if invalid, ignore the deselect. Or better yet, display in some way that the power is not deselectable).
+
+Note: make all non-preq Powers 'preq: []' not 'preq: [""]'
+
+Prerequisite groupings:
+- {Power name}
+- {Stat name} {value}
+- {Name} Skill / {Name} Expertise
+- "Once every Nth Power"
+- "After N Powers"
+- One of (the above / separated / by / forward-slashes)
 
 ### Powers In Training
 Powers are “in-training” before coming online, to encourage roleplay of skill acquisition. E.g. a character at the start of each session declares what Power/s they are training towards and when the when the group / DM feels its appropriate, characters gain that Power. Alternatively, play make indicate a certain Power a character should take next as a natural next progression.

@@ -1,4 +1,6 @@
 # The Elemental Braid
+Surrounding the material worlds, forming a border between them and the innermost Firmaments, is the elemental braid.
+
 The least hospitable locations of the Braid are the places that only the elementals can call home; the pure strands of Fire, Earth, Air and Water. Such raw primordial energies render life there impossible. Life, true life, needs at least air and water to function, though most life cannot survive without the other elements too. 
 
 The mythological locations whispered by mortals, such as the City of the Deeps and the Brass City, could only come to be in places where the elements were allowed to mix and the influences of civilization could survive. Those pure threads that border and overlap with each other create the Elemental Realms, though the original four are simply known as the Pure Realms, home only to elementals and those deceased souls closely entwined with the elements where there is where they can find nirvana.
