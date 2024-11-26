@@ -33,8 +33,10 @@ Most Actions, however, can be resolved simultaneously. Attacks for example; two 
 
 Since everyone gets only one Action, the old action / bonus-action / movement economy of 5e collapses. Movement is simply another Action, making the "Dash" action and the "Movement Action" synonymous. Bonus Actions are mostly unchanged but are best thought of as 'concurrent actions', happening at the same time and therefore not significantly interrupting the character's main action. Reactions, interestingly, disappear.
 
-#### Converting Reactions
-Any "Reactions" are considered "Actions". As Turns are simultaneous their triggers don't matter. If anything, the "triggers" are natural consequences of play. "Oh, the zombie is attempting to bite my face? I block!"
+#### Converting Reactions and Ready Actions
+Any "Reactions" are considered "Actions". As Turns are simultaneous their triggers don't matter. If anything, the "triggers" are natural consequences of play. "Oh, the zombie is attempting to bite my face? I block!" The same goes for the Ready Action, no need to setup and wait for a trigger, as it becomes a natural part of play.
+
+Note that one particularly common Reaction of 5e, Attacks of Opportunity, and its paired Action Disengage, have become a Tactical Action in the former and completely removed in the latter. Further, some Tactical Actions allow for attacks "for free", which means outside of needing to make an Attack Action, Bonus Action etc.
 
 #### Initiative Contest
 For any situations where the order of actions matters, the two (or more) characters involved roll off with the most appropriate skill, to see who can get the higher value. For "slow" enemies / mooks the DM will just let the players go first, so-called "player's advantage". For example; "I try to grab the bag of gold before him", "OK, you and the white dragon need to make an Dexterity Check."
@@ -42,7 +44,7 @@ For any situations where the order of actions matters, the two (or more) charact
 Characters can spend 1 Focus to add a d6 to their Initiative roll. See [Focus](#focus) below.
 
 ### Combat Actions
-So what can that one Action can do? Quite a lot more than 5e. Every character can perform Core Combat Actions and a variety of Tactical Actions. Note that many are keyed to "an Attack or Action", so if you have more than one attack, you can potentially take more than one "action" on your turn.
+So what can that one Action can do? Quite a lot more than 5e. Every character can perform Core Combat Actions and a variety of Tactical Actions. Note that many are keyed to "an Attack or Action", so if you have more than one attack, you can potentially take more than one "action" on your turn. Note there are several Powers that provide further and enhanced Tactical Actions.
 
 <a id="toggle-actions">Click here to show.</a>
 
@@ -50,39 +52,27 @@ So what can that one Action can do? Quite a lot more than 5e. Every character ca
 
 #### Core Combat Actions
 - **Attack** - as an Action, you make your weapon or spell attack/s against the target(s). One attack Action may involve a number of Attacks on a number of targets depending on the weapon, spell or some Power such as Extra Attack. As in 5e, this is the distinction between the "Attack Action" and specific "Attacks", as well as "Weapon Attacks" and "Spell Attacks". Unless otherwise stated, full attack action attacks are with lethal intent (see Non-Lethal Strike).
-- **Attack of Opportunity** - as a Bonus Action to an enemy you're Engaged with moving away from you without Disengaging, you can make an attack action on them, after which they have moved away and are no longer Engaged with you for that Round.
+  - **Unarmed Strike** - in PEDD, this simply means a weapon Attack using Body, instead of a traditional weapon.
+  - **Improvised Strike** - in PEDD, this simply means a weapon Attack using a piece of the environment. Ask your GM for appropriate statistics to use.
 - **Block** - as a Bonus Action, you raise your shield, or weapon if it has the Block property, to gain the item's Armour bonus. This prevents you using that item as a weapon to attack. The Armour bonus lasts for the rest of the Round.
 - **Discern** - as an Attack or Action, you can make a Perception check against one enemy whose has a Hidden Action. If successful (the GM will decide the DC), their Action is no longer hidden and everyone in the combat can know.
-- **Disengage** - when you are in an Engagement, as a Bonus Action you can move 5ft without triggering Attacks of Opportunity and break the Engagement. You cannot start a new Engagement with this movement.
 - **Dodge** - as an Action, you make a Reflex Saving Throw and the result (or your Stationary Defence, if that is higher) replaces your Defence value for the rest of the Round.
-- **Go to Cover / Go Prone** - as a Bonus Action you make yourself Prone, or enter adjacent cover. The Prone condition or being in cover uses Stationary Defence. Prone makes being shot at occur at Disadvantage, and cover is +2/+5 to Defence for half / ¾ cover respectively (see [Conditions](#conditions)).
+- **Go to Cover / Go Prone / Stand** - as a Bonus Action you make yourself Prone, or enter adjacent cover. The Prone condition or being in cover uses Stationary Defence. Prone makes being shot at occur at Disadvantage, and cover is +2/+5 to Defence for half / ¾ cover respectively (see [Conditions](#conditions)). Going from cover or Prone to standing takes a Stand Bonus Action.
+- **Help** - as an Action, you aid an ally in attacking an enemy within 5ft of you. You feint, distract the target, or in some other way team up to make your ally's attack more effective. If your ally Attacks the target this Round, the first Attack is made with Advantage.
+- **Hide** - as an Action, you make a Stealth check in an attempt to hide from those you are obscured from (in 3/4's cover or out of line of sight), versus a DC of 15. If you succeed, you gain the benefits of being Invisible: Attacks against you have Disadvantage, and your Attacks have Advantage. When you make an Attack, you are no longer hidden. If you or others Move such that you are no longer obscured, you are no longer Hidden from them.
 - **Move** - move your Speed along a path of your choice towards a target. See [Move Action](#move-action) for details.
-- **Stand** - a Bonus Action to go from Prone to Standing.
 
 #### Tactical Actions
-- **Aim** - as an Attack or Action, you gain Advantage on your next weapon attack which must be a ranged or thrown weapon. You can choose to spend 1 Focus, and Aim as a Bonus Action.
-- **Bait and Switch** - as an Attack or Action, when you're within 5ft of an Engaged ally character, you can spend 1 Focus to switch places with that character, provided you spend at least 5 ft of movement. This movement doesn't provoke an Attack of Opportunity. You are now Engaged with that ally's enemy, and any attack they were about to make on your ally is directed at yourself instead.
-- **Call the Shot** - As an Action, direct one of your allys to strike. Choose an ally who can see or hear you. That character can immediately make one weapon attack. You can choose to spend 1 Focus, and Call the Shot as a Bonus Action instead of an Action.
-- **Charge** - when you use your Action to Move, moving at least 15ft or half your speed (whichever is lower), at the end of the Move you can make 1 Weapon Attack at Advantage as a Bonus Action.
-- **Coup de Grace** - when you make a Weapon Attack against an Incapacitated target, don't roll for Damage, instead take each dice roll (if any) to be the maximum result.
+- **Attack of Opportunity** - if an enemy you're Engaged with moves away from you, you can spend 1 Focus to make an attack on them for free, after which they have moved away and are no longer Engaged with you for that Round.
+- **Coup de Grace** - when you make a Weapon Attack against an Incapacitated target, don't roll for Damage, instead take each dice you would roll (if any) to be the maximum result.
 - **Disarm** - as an Attack or Action against an enemy in your Reach holding a weapon or shield, you make an attack roll against the enemy's passive Reflexes. If you succeed, you rip the weapon from their grasp and throw it 10ft in a direction of your choice (this does not count as a thrown weapon attack), to the ground at your feet, or equip it an empty hand of yours.
-- **Distract** - as a Bonus Action when you hit a character with a weapon attack, you can distract them, giving your allies an opening. The next Attack roll against the target this Round has Advantage.
-- **Evasive Footwork** - when you take the Move action, you can spend 1 Focus and roll a d6. You add the number rolled to your Defence until you stop moving.
-- **Feint** - as a Bonus Action, you can choose one character within 5ft of you as your target to Feint against. You then have Advantage on your next Attack roll against that character this Round.
 - **Focussed Strike** - when you make a weapon attack roll against a character, you can spend 1 Focus to add d6 to the roll.
-- **Goad** - as an Action, when a target Character that can see or hear you has an Intelligence Stat, you can attempt to goad the target into attacking you. You must make a Charisma check vs their passive Willpower. On a success, the target has Disadvantage on all attack rolls against targets other than you until the end of the Round.
-- **Grapple** - as an Attack or Action you attempt to Restrain an character. You make a Strength check against their passive Fortitude. If you succeed both the character is Restrained. On subsequent turns you can maintain the grapple or end the grapple (no additional action or roll needed), and you can only use your Move action, if you do, to Move yourself and the enemy as if going through Difficult Terrain (typically, at half Speed). The grappled character can use their Action to attempt to escape the Grapple, making a Strength or Dexterity check (their choice) vs your passive Fortitude, ending the grapple on a success.
-- **Hound** - When you hit a character that is 2 sizes larger than you or less with a weapon attack, you can forego damage to move the target 10ft in a direction of your choice without provoking attacks of opportunity.
-- **Lunge** - When you make a melee weapon attack, you can attack at Disadvantage but increase your Reach for that attack by 5ft. You can spend 1 Focus to ignore the Disadvantage.
-- **Menace** - as an Action, you can attempt to intimidate a character that can see or hear you. You must make a Charisma check vs their passive Willpower. On a success, the target is Frightened of you until the end of the Round.
-- **Non-lethal Strike** (a.k.a. knockout strike) - you make an Attack Action with the intention to knock unconscious rather than kill. Don't roll for Damage, instead take each dice roll (if any) to have been a 1.
+- **Grapple** - as an Attack or Action you attempt to Grapple a Character. You make a Strength check against their passive Fortitude. If you succeed the target Character is Immobilised. On subsequent turns you can maintain the grapple (no additional roll needed) as an Action or end the grapple for free. When Grappling, you can use your Bonus Action to Move yourself and the enemy as if going through Difficult Terrain (typically, at half Speed) or make an Unarmed Strike or Weapon Attack with the 'prone fighting' tag against the grappled Character. The grappled character can use their Action to attempt to escape the Grapple, making a Strength or Dexterity check (their choice) vs your passive Fortitude, ending the grapple on a success.
+- **Lunge** - When you make a melee weapon attack, you can attack at Disadvantage but double your Reach for that attack. You can spend 1 Focus to ignore the Disadvantage.
+- **Non-lethal Strike** (a.k.a. Knockout Strike) - you make an Attack Action with the intention to knock unconscious rather than kill. Don't roll for Damage, instead take each dice roll (if any) to have been a 1. If the target reaches 0 Health, they enter the Unconscious condition.
 - **Off-Hand Strike** - when you make an Attack with a weapon with the Light Property, you may use your Bonus Action to do a second Attack with the other weapon in your off-hand, which also must have the Light property. This second attack does not benefit from the Statistic to the damage roll.
-- **Parry** - as an Attack or Action, if your weapon has the Parry Property and when another character damages you with a melee attack, you can reduce the damage by your Dexterity and proficiency Bonus with the weapon.
+- **Parry** - as an Attack or Action, if your weapon has the Parry Property and when another character damages you with a melee attack, you can reduce the damage by your Dexterity and proficiency Bonus with the weapon, to a minimum of 0.
 - **Power Strike** - when you hit a character with a weapon attack, you can spend 1 Focus to add 1d6 to the damage roll.
-- **Quick Toss** - as a Bonus Action, you make a Ranged Weapon Attack with a weapon that has the thrown property at Disadvantage. You can draw the weapon as part of making this attack. You can spend 1 Focus to ignore the Disadvantage.
-- **Rally** - as a Bonus Action you can bolster the resolve of one of your allies. When you do so, choose an ally who can see or hear you. They gain temporary Health equal to your Charisma (to a minimum of 1). When you have used Rally on an ally, you cannot use Rally on the same ally until you both finish a Long Rest.
-- **Riposte** - if your weapon has the Parry Property, when an enemy makes a melee attack against you, you can choose to make a Weapon Attack against them, and use your weapon attack roll as your Defense for the enemy's attack resolution (even if the result is lower than your normal Defence). Resolve the enemy's attack against your new Defence. If this causes them to fail, carry over your result as if you had just made a weapon attack against them. If it is a success, you damage them as per a normal weapon attack.
-- **Run and Gun** - when you use your Action to Move, you can make 1 Ranged Weapon Attack as a Bonus Action at Disadvantage.
 - **Shove** - as an Attack or Action you attempt to make an Enemy Prone or move 10ft in a direction of your choice. You make a Strength check against their passive Fortitude.
 
 </section>
@@ -92,7 +82,7 @@ The Move Action sees a character move a distance in feet equal to their Speed to
 
 Difficult terrain doubles the Speed required, with swimming / climbing requiring quadruple the speed, and impassible terrain must be circumnavigated.
 
-When more than one character takes the Move action with respect to other characters' positions, how to resolve movement can get quite confusing quite quickly. As such, when declaring a Move, declare also the 'target' of the movement. When everone does this generally speaking a natural conclusion where all characters reach or approach their targets becomes clear. 
+When more than one character takes the Move action with respect to other characters' positions, how to resolve movement can get quite confusing quite quickly. As such, when declaring a Move, declare also the 'target' of the movement. When everyone does this generally speaking a natural conclusion where all characters reach or approach their targets becomes clear. 
 
 For example, if we have Mr A, Mr B and Mr C in the awkward face off of A moving to B, B to C and C to A, where does everyone end up? Bunched in the middle: because when viewed through the lense of their targets, the natural result is that they all start moving towards each other (this way, A gets to B, who gets to C, who gets to A). 
 
@@ -142,9 +132,9 @@ Additionally, a character can only be engaged by a maximum number of characters 
 ### Focus
 Focus is both a replacement of Battle Master's unnamed superiority dice pool and an exclusionary partner of the "Concentration" condition. 
 
-Characters start with their Willpower (to a minimum of 1) Focus. Each point of Focus can be expended on certain Tactical Actions and you regain all used Focus on a Short Rest, giving all characters a small (by default) pool of special moves they can pull off during a fight.
+Characters start with their Willpower of Focus (to a minimum of 1). Each point of Focus can be expended on certain Tactical Actions or to boost an initiative contest roll by d6, and you regain all used Focus on a Short Rest. This gives all characters a small (by default) pool of special moves they can pull off during a fight. There are Powers to boost your Focus pool, provide more Focus recovery and make new Tactical Actions available.
 
-Each time you are Concentrating on a spell, you use cannot use Focus.
+Focus and Concentration are "exclusionary partners" becase when you are Concentrating on a spell, you use cannot use Focus. If you must use Focus, you break concentration.
 
 ### Health
 Health starts higher than the HP that it replaces, with the name also shaking out the video game connetations and helping players who don't come from a video-game background to engage with the Stat. It purposefuly does not progress unless specifically empowered. Health is naturally limited and only those who invest in it become the ineffible heroes who seem to be able to take punch after punch where others would fall to the first blow no matter how many fights they'd been in.
@@ -323,7 +313,7 @@ d.	Grenades and Firebombs effect an area, as such instead of attack rolls effect
 
 **Lance** - You have disadvantage when you use a lance to attack a target within 5 feet of you. A lance requires two hands to wield when you aren't mounted.
 
-**Net** - A character hit by a Net of its size or one larger is Restrained until it is freed. A Net has no effect on characters that are formless, or
+**Net** - A character hit by a Net of its size or one larger is Immobilised until it is freed. A Net has no effect on characters that are formless, or
 creatures that are two sizes or more larger than it. A character can use an Action to make a DC 10 Strength check, freeing itself or another character within its reach from a Net on a success. Dealing 5 slashing damage to the net (Defence 10) destroys the Net and frees the character without harming it.
 
 **Shiv** - Crude and simply made, a shiv is the weapon of the desparate. If you make an attack roll with this weapon and the dice result is 1, the Shiv breaks.
@@ -340,7 +330,7 @@ creatures that are two sizes or more larger than it. A character can use an Acti
 - **Ammunition (X/Y)** - You can use a weapon that has the Ammunition property to make a ranged attack only if you have Ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a weapon). Expended arrows, bolts and darts can be recovered, by taking a minute to search the battlefield, but guns that use paper cartridges cannot. X denotes the short range of the weapon, and Y the long range (attacks at Disadvantage).
 - **Armour Piercing** & **Light Armour Piercing** – the weapon ignores some benefit of Armour to a target's Defence. The target's Armour is reduced, to a minimum of 0, by 2 for Light Armour Piercing and by 6 for Armour Piercing.
 - **Block** - You can raise this weapon like a shield, using your Bonus Action to Block, gaining a bonus of 1 to Defence.
-- **Ensnaring** - When you hit an attack with an ensnaring weapon, you may use your Bonus Action to attempt the Grapple action on the target or Shove them Prone, using your weapon attack modifier in place of Strength. If you grapple a target with an ensnaring weapon, the grapple is automatically ended if you make another attack roll with that weapon.
+- **Ensnaring** - When you hit an attack with an ensnaring weapon, you may use your Bonus Action to attempt the Grapple action on the target or Shove them or make them Prone, using your weapon attack modifier in place of Strength. If you grapple a target with an ensnaring weapon, the grapple is automatically ended if you make another attack roll with that weapon.
 - **Finesse** - The weapon lends itself to dexterous combat due to features that make it more reliant on technique than brute force. When attacking with a finesse weapon, you use your choice of your
 Strength or Dexterity for the attack and damage rolls. You must use the same modifier for both rolls.
 - **Finisher** - Finisher weapons are well-suited to executing enemies that are at your mercy. When you make an attack against a Prone or Incapacitated character, you roll one additional damage die.
@@ -423,15 +413,16 @@ Cover is functionally unchanged from 5e, but translates like so. Cover is a bonu
 The following are changes and additions to 5e's conditions (I will in time port all the conditions over including an overhaul of exhaustion)
 
 - **Bloodied** - A fan favourite, enemy characters when they fall below half health enter the "Bloodied" condition. This often means their behaviour, tactics and even powers may change for the easier or the much, much harder. Players also get to know that the target is below half health. Alternatively, on monsters that have 2 to 3 wounds, its the condition after 1 wound.
-- **Charmed** - unless otherwise stated, a charmed character considers you an ally and will heed your commands, which you can give freely, to the best of its ability. However it will not obey commands that are against its interests. If it is an intelligent character, you can attempt to persuade or otherwise convince them to obey, or that their interests lie elsewhere.
+- **Charmed** - unless otherwise stated, a charmed character considers you an ally and will heed your commands, which you can give freely, to the best of its ability. However it will not obey commands that are against its interests. If it is an intelligent character, you can attempt to persuade or otherwise convince them to obey, or that their interests lie elsewhere. For example, a charmed character will not attack another they consider an Ally, but depending on the situation, they may be persuaded to no longer consider the other character an ally.
 - **Flanked** - replacing the popular alternate rule of 5e, when you are the one in an Engagement who the foe isn’t Engaging, you have Advantage on your weapon attack rolls. You cannot flank a character 2 or more sizes larger than you.
 - **Frightened** - A Frightened character has Disadvantage on Ability checks and Attack rolls while the source of its fear is within line of sight. If it chooses to Move, the character must move away, or otherwise out of line of sight, from the source of its fear. The character doesn’t have to move into obviously dangerous ground, such as a fire or a pit.
 - **Immobilised** - a "new" condition that is just short hand for the often stated "A creature's speed becomes 0, and it can't benefit from any bonus to its speed". In addition the target must use its Stationary Defence.
-- **Incapacitated** - (updated, effectively makes Stun the same condition)
+- **Incapacitated**
   - The target character is Immobilised
   - The target character cannot take Actions or Bonus Actions.
   - The target character automatically fails Fortitude and Reflex saves.
   - Attack rolls against the target character have Advantage.
+- **Stunned** - you cause a target character to be Incapacitated for the Round.
 
 The following enviromental damage rules are updated and rolled into Conditions of the corresponding name:
 - **Burning** - A character burns each Round. They take 1d6 fire damage at the start of the Round, and can take an Action to extinguish themselves. Unless another DC is stated, it is a DC 8 Reflex save to end the Burning condition.

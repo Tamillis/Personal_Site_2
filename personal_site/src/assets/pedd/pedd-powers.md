@@ -9,7 +9,7 @@ For example (as both Hardy and Hale are "Once every 4<sup>th</sup> Power" Powers
 1. Hardy I
 2. Hale I
 3. Second Wind
-4. Fighting Style - Mariner
+4. Mariner
 5. Hardy II
 6. Hale II
 
@@ -40,15 +40,22 @@ On an unrelated note, I've sat down to set out the framework for Power Requireme
 
 Note: make all non-preq Powers 'preq: []' not 'preq: [""]'
 
+Note: for resource powers, when selected they need to flag that the associated powers have a cost of 1
+
+Note: many powers can be taken more than once. Make this possible.
+
+Note: Sorcerous Origin and Occult Spellcasting is a special case and needs proper handling. Mana becomes a required pick but retro-active.
+
 Prerequisite groupings:
 - {Power name}
 - {Stat name} {value}
 - {Name} Skill / {Name} Expertise
-- "Once every Nth Power"
-- "After N Powers"
+- {Name} Cantrip / {Name} Spell
+- "Once every Nth Role Power"
+- "After N Role Powers"
 - One of (the above / separated / by / forward-slashes)
 
-### Powers In Training
+### Powers In Training - (NOTE: add this to character creator)
 Powers are “in-training” before coming online, to encourage roleplay of skill acquisition. E.g. a character at the start of each session declares what Power/s they are training towards and when the when the group / DM feels its appropriate, characters gain that Power. Alternatively, play make indicate a certain Power a character should take next as a natural next progression.
 
 The amount of time needed for a Power is thematic, and depends on the pace of the game being played, your table's position on the arcade-to-simulation scale, and of course the Power itself. Many PEDD Powers also refer to being able to learn other Powers at an "increased rate". By default you can think of this as halving the amount of time, though again it depends on the table and style of play at hand.

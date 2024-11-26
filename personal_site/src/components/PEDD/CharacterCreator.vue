@@ -15,6 +15,7 @@
 			<button @click="setSection('background')" :class="{ selected: sections.background }">3. Background</button>
 			<button @click="setSection('role')" :class="{ selected: sections.role }">4. Role</button>
 			<button @click="setSection('equipment')" :class="{ selected: sections.equipment }">5. Equipment</button>
+			<button @click="setSection('spells')" :class="{ selected: sections.spells }">6. Spells</button>
 			<button @click="chosen.faith = !chosen.faith">
 				{{ chosen.faith ? "I lost my faith" : "I have faith!" }}
 			</button>
@@ -82,6 +83,10 @@
 				v-model:shield="chosen.shield" v-model:helmet="chosen.helmet"
 				@ref-limit="reflexLimit => (chosen.reflexLimit = reflexLimit)" />
 		</section>
+
+		<section id="spells-section" v-show="sections.spells">
+			<p>This section is entirely TODO (:</p>
+		</section>
 	</section>
 </template>
 
@@ -123,7 +128,8 @@ let sections = ref({
 	race: false,
 	background: false,
 	role: false,
-	equipment: false
+	equipment: false,
+	spells: false
 });
 
 function setSection(section) {
