@@ -1,0 +1,1 @@
+One mega campaign from starting caught up in the beginnings of revolution, piercing the heart of a fire giant with primordial ice, and discovering the secret bound titan at the heart of the hole, and how it may be used to break all men free of chains.

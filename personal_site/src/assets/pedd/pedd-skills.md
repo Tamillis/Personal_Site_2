@@ -31,7 +31,7 @@ In PEDD no Skill is automatically associated with a Stat, the alternate 5e rule 
 There are two kinds of specialist skills:
 - **Knowledge Skills** - skills which most of the time you *cannot* attempt the actions that would be governed by this skill unless Proficient. You either know something, or you do not. For example the new skill 'Culture', which represents learning in the cultural mores and sociology both generally and for specific areas.
 - **Martial Skills** - skills with weapons, armour and shields. Unlike other skills, some Martial Skills are marked with an *, meaning they require other Martial Skills before they can be taken. If a Background or Power provide Proficiency in such a skill before you have the requirement, you "Downgrade" it to the required Skill instead.
-  - Heavy Armour requires Medium Armour which requires Light Armour. 
+  - Heavy Armour requires Medium Armour which requires Light Armour.
   - Battle-Axes and Mauls require Clubs & Axes.
   - Heavy Blades requires Blades which requires Knives.
   - Pole-Arms requires Spears

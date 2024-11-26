@@ -10,6 +10,8 @@ OK so most crafting systems have levels of a profession, where each level gives 
 
 This does imply a sort of two-tier approach for professions: item producing professions and raw material producing professions, which reflects such systems in many games. You have your gathering professions and crafting professions.
 
+That said, the "skill" of gathering professions is more A: the ability to successfully harvest the resource, and B: everything else which the exploration pillar of regular play entails (prospecting, hauling etc.).
+
 ### Blacksmithing
 As the ur system, and first tree to use as a basis for system creation. Start with armour and weapons. The core of much of D&D's items anyway.
 

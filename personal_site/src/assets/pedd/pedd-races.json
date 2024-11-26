@@ -489,5 +489,64 @@
             "Hooked Claws",
             "Martial Heritage"
         ]
+    },
+    {
+        "name": "Djinn",
+        "desc": "Tracing their ancestry to the genies of the Elemental Braid, each Djinn can tap into the power of one of the elements. Air, earth, fire, and water — the four fundamental physical forms of the Material Plane, beget the four types of Djinn. Some are direct descendants of a genie, while others were born to a bloodline who lived are suffused with a genie’s magic that once again manifests.",
+        "stats": [
+            {
+                "desc": "Any",
+                "val": 2
+            },
+            {
+                "desc": "Any",
+                "val": 1
+            },
+            {
+                "desc": "Any",
+                "val": -1
+            }
+        ],
+        "baseHealth": 6,
+        "age": "A typical Djinn has a life span of 120 years",
+        "size": {
+            "desc": "Like Humans, Djinn vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.",
+            "val": "medium"
+        },
+        "speed": {
+            "desc": "Your base walking speed is 30ft",
+            "val": 30
+        },
+        "senses": {
+            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.",
+            "val": [
+                "touch",
+                "taste",
+                "sight",
+                "sound",
+                "smell"
+            ]
+        },
+        "elementalHeritage": "Choose one of the four elements that is your heritage: Earth, Air, Fire, Water. Depending on your heritage you gain the following benefits:\n\nTODO",
+        "powers": [
+            "Keen Senses",
+            "Fey Ancestry",
+            "Extra Language",
+            "Darkvision",
+            "Prodigy",
+            "Drow Magic",
+            "Arcane Aptitude",
+            "Fleet of Foot",
+            "Natural Camouflage",
+            "Heritage of the Sea",
+            "Elven Accuracy",
+            "Drow High Magic",
+            "Fey Teleportation",
+            "Wood Elf Magic",
+            "Mana",
+            "Psychic Sense",
+            "Natural Illusionist",
+            "Resilient (Reflexes)"
+        ]
     }
 ]
