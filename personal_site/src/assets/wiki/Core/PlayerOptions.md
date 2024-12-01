@@ -1,7 +1,7 @@
 # Player Options (D&D 5e)
 
 > “Make your choices wisely, apprentice, for you will find they come to define you.”
-> 
+>
 > – Unknown
 
 Here can be found various additional player options for D&D 5e for my setting.
@@ -10,19 +10,23 @@ Here can be found various additional player options for D&D 5e for my setting.
 
 ### Mistdiver
 > “You wanna know how I got these mouths?”
-> 
+>
 >  – Gee “Smiles” McCackle, member of the mistdiver guild Opportunity Knocks
 
 You were an opportunist, an individual of great ambition or foolish confidence, that saw the horrors of the Mists and the inherent unknown in the things it leaves behind as tomorrow’s paycheque. You dove into the lands that bordered the Mist wall after it ebbed back to find what plunder you could, and fight or avoid the creatures and monstrosities the Mist had tainted or left behind. Inevitably at one point the Mist tainted you too, and most mistdivers say no diver is blooded until they gain their first taint.
-
-**Skill Proficiencies**: Investigation, Perception
-
-**Tool Proficiencies**: Navigator’s Tools, Thief’s Tools
-
-**Equipment**: A set of navigator’s tools, 5 lock picks, a trinket from your first dive, a set of traveller's clothes, a pouch containing 5gp.
  
 **Feature**: *Minor Mutation*
 You have a small mutation that marks you as touched by the Mists. Those outside of the mistdiver community will look at you with suspicion and fear if you reveal it, believing you could be one of the very monstrosities they have been warned about since childhood. However, your mutation may aid you in ways you might not expect, and you find yourself far more resistant to further mutation. Work with your GM to determine your mutation and its potential uses and effects.
+
+**Stats (PEDD)**: Accuracy, Perception
+
+**Skill & Tool Proficiencies (D&D 5e)**: Investigation, Perception, Navigator’s Tools, Thief’s Tools
+
+**Skills (PEDD)**: Arcana, Exotic Weapon (Net), Clubs & Axes, Investigation, Navigation, Sleight of Hand
+
+**Suggested Power (PEDD)**: Jack of All Trades
+
+**Equipment**: A set of navigator’s tools, 5 lock picks, a trinket from your first dive, a set of traveller's clothes, a pouch containing 5gp.
 
 d8|Example Mutation|Potential Effects
 ---|---|---
@@ -36,20 +40,35 @@ d8|Example Mutation|Potential Effects
 8|Tail|A long tail sprouts from the base of your spine, granting balance.
 
 ### Mage Hunter
-> "It was men like you who brought the Empire and its people to its knees. Now I will bring you to yours." 
-> 
+> "It was men like you who brought the Empire and its people to its knees. Now I will bring you to yours."
+>
 > – The Marquis Bertholdt Von Komreig, licensed mage hunter
 
-The age of sorcerer kings and rampant planar beings birthed innumerable tragedies that instilled in people a fear of magic, exaggerated by its systemisation and spread. As control of magi became a greater and greater concern, those who would hunt down rogue magic users appeared to fill the need. Desperados, bounty hunters, ex-soldiers and other such hardened folk, like you, took up the mantle; people paid to tag & bag rogue mages. 
+The age of sorcerer kings and rampant planar beings birthed innumerable tragedies that instilled in people a fear of magic, exaggerated by its systemisation and spread, and haunted by the atrocities commited by the Sorcerer Kings of the Age of Strife. As control of magi became a greater and greater concern, those who would hunt down rogue magic users appeared to fill the need. Desperados, bounty hunters, ex-soldiers and other such hardened folk, like you, took up the mantle; people paid to tag & bag rogue mages in the name of the Empire.
 
 **Feature**: *Mage Hunter’s Creed*
 When dealing with hostile magic users all hunters learn various protocols for dealing with the vast and dangerous abilities of magic. You are always able to prepare for specific magics you face in your travels; be that through acquirement of equipment, use of special potions, or even employing magical items yourself. You know where to go to do that preparation or who to ask. When faced with novel hostile magics, you know where to turn to learn better protocols.
 
-**Skill Proficiencies:** Arcana, Athletics
+**Stats (PEDD)** - Perception and Strength
 
-**Tool Proficiencies:** Hunter’s Tools, Land Vehicles
+**Skill & Tool Proficiencies (D&D 5e):** Arcana, Athletics, Hunter’s Tools, Land Vehicles
 
-**Equipment:** A bear trap, a gag & manacles, a Mage Hunter’s papers, a lucky charm, a set of traveller's clothes, a pouch containing 10gp.
+**Skills (PEDD)** - Athletics, Arcana, Insight, Investigation, Exotic Weapon (Net) and Spears
+
+**Suggested Power (PEDD)** - Keen Senses
+
+**Equipment:** - A bear trap, a gag & manacles, a Mage Hunter’s papers, a lucky charm, a set of traveller's clothes, a pouch containing 10gp.
+
+d8|Anti-magic Motivation
+---|---
+1|I was raised by those who feared magic and grew up to hate it myself. I may have never questioned my conviction.
+2|I've witnessed first hand the consequences of a mage gone mad with power, and must not let that happen again.
+3|The world is orderly and lawful, as the Gods and/or nature would have it. Magic violates that order and I will not stand it.
+4|The government hands out licenses to kill, so long as the targets are mages. That's good enough for me
+5|There was nothing more I wanted as a child than to have magic, but I wasn't born with the gift. If I can't have it...
+6|A magical plague left me the only survivor of my village, the culprits must pay.
+7|I just hate magic, it fills me with irrational anger.
+8|Magic is a great power capable of miracles at the level of the Gods: but men are fickle and must be controlled. By me, if needs must.
 
 ## Feats
 

@@ -65,7 +65,7 @@ The Primal Mage can freely choose from the entire Primal Sphere when preparing s
 
 Occult magic is that which refutes study, bends logic and breaks minds. Those that practice it rarely chose to do so, or came to use it through a myriad of unorthodox ways. Such spells are always Innate; esoteric knowledge carved into the mind and body of the Sorcerer. It is not prepared, or one might say it is prepared into their very souls. 
 
-Occult spellcasting uses Fortitude, Reflexes or Willpower, halved and rounded up (so a +5 Willpower is a +3 Spell Casting Modifier etc.), to cast spells: depending on the spell's school, as they rely on their being to conjure the magic. 
+Occult spellcasting uses Fortitude, Reflexes or Willpower, halved and rounded up (so a +5 Willpower is a +3 Spell Casting Modifier etc.), to cast spells: depending on the spell's school, as they rely on their being to conjure the magic.
 - **Fortitude** - Abjuration, Conjuration and Enchantment
 - **Reflexes** - Illusion, Transmutation
 - **Willpower** - Divination, Evocation, Necromancy
@@ -82,7 +82,45 @@ Lastly, the Spellcasting Ability that governs the magic casting is also dictated
 Pact Magic does not count as one of the 'Spellcasting' Powers for the purpose of the 'spellcasting' prerequisite of some Powers (which is why it doesn't have that tag).
 
 ### Spell Schools
-Spell schools are another vestigial part of the D&D system, but I think they're actually quite interesting and deserve a bit more love. Now many Powers key specifically off a spell's school, notably Occult Spellcasting and my Goblinoid's race, hopefully making them more interesting and useful!
+Spell schools are another vestigial part of the D&D system, but I think they're actually quite interesting and deserve a bit more love. Now many Powers key specifically off a spell's school, notably Occult Spellcasting and my Goblinoid's race, hopefully making them more interesting and useful! Magic, as it has been "put under the knife", keeps both the traditional spell school names, and modern names.
+
+The spell schools have received some revision, and every Spell has been reclassified if necessary based on this understanding and a simple reading of the spell’s effects. If a different school is a better fit (to the schools as explored here) then it has been changed.
+
+#### Abjuration – Barrier Magic
+Setting up lines of separation in order to induce effects, typically by preventing or reducing something from crossing a line, such as fire. Sometimes seen as the higher order magic of Energy Magic, as its about manipulating energy states and (most importantly) preventing changes of energy, rather than the creation or elimination of it. It is the bread and butter of wards.
+
+#### Conjuration – Summoning Magic
+The drawing and creation of objects and creatures into the caster’s hands or vicinity from some other location temporarily, quickly returning to whence they came. Typically, this involves aligning the location with the desired elemental ribbon or the demi-plane of the desired abstract concept, such as acid or base, “summoning” material. This school also includes bridging distances within the same plane (what you and I may call teleportation), overlapping with Entropic Magic, though this is, counter-intuitively, much harder to do than bridging planes.
+
+**Abeyance Magic** – The creation of temporary forms with pure mana is a well-known subschool. These temporary, entirely mana-based, objects quickly decay leaving nothing but fast-fading motes behind, as they are no true and lasting form.
+
+#### Divination – Portent Magic
+Magic that learns from or tries to nudge the future. Rumour has it that the most powerful seers can even manipulate past occurrences, or at least create effects that appear as if part occurrences were different. Some schools of thought split divination magic into that which reads the future, and that which manipulates it: Communications Magic and Fate Magic.
+
+#### Enchantment – Mind Magic
+The magic to make others think something else, through direct application of thoughts, modification of ethical values, or manipulations of understanding. Projecting sense information directly into a mind is traditionally lumped with Illusion as it is an "external" force on the mind, versus "internal" forces coaxed by enchantment.
+
+#### Evocation – Energy Magic
+Energy that is generated and directed to directly create a variety of effects, primarily attacks. This is perhaps the widest and basest of all the schools, as it covers the host of direct effects the weave can express, and crops up, at least partially, in every field of magical study and application. It is also simply what most peasants think magic *is*. No one domain has claim to it. Due to the nature of energy as having one of many potential forms, so often is Energy Magic split into the various fundamental forces; light, sound, force (movement, momentum, potential), heat, charge, magnetism, chemical bonds. Just add the word "Magic" after each.
+
+#### Illusion – Phantom Magic
+Illusions are fundementally separated in twain; Mind Magic that deceives the senses of its targets by creating fake input, and Energy Magic that creates plausible effects in the real world itself. The intense focus and specialisation needed to create detailed Illusions from these two schools is what created the Illusion school, the eponymous Phantom Magic, even if scholars would argue that Phantom Magic is nothing but a bad classification. The fractious Imagers and other practitioners of illusion know better, that their school is just as much a study as any other. Even if fundamentally little is original, it is a classic example of the differences between fundamental and applicable arcana.
+
+#### Necromancy – Soul Magic
+Technically necromancy is the manipulation of life force for effect, *any* effect which includes healing and the anchoring / reanchoring of a soul within a life force shell (a.k.a. resurrection) by manipulation of anima-exa. Necromancy and its poor reputation both at hearth-sides and in ecclesiastical circles comes more from the history of those who studied soul magic, and the manner in which they did so. Manipulating a soul is nearly never something one wants done voluntarily. But the recently deceased still have their anima-exa and souls, and do not argue, and so here begins the repupation of necromancers.
+
+Anima-ipsa, the matter of the soul itself, and not just the life-force shell that anchors it in one's body, is irrevocable, even to magic, so in truth even the name “soul magic” is a bit of a misnomer. It is considered blasphemous by those called holy to mess with the Cycle of Thought, and evil to steal life force. To force a soul into black-anima is the blackest of magics.
+
+**Haemomancy** - a sub-school of necromancy, particularly concerned with powering spell effects by sacrificing life force and anima-exa, typically in the form of blood from where the name is earned.
+
+#### Consumption Magic
+A rare and fringe school of magic that most who know of it reject – the ritual consumption of skin, flesh and bone of animal and plant matter in order to take on traits of the consumed by incorporating bits of their soul, temporarily or (more commonly) permanently, often resulting in drastic bodily changes. Practitioners call themselves 'Evolutionists' and often quote their tongue-in-cheek moto: "you are what you eat".
+
+#### Transmutation – Form Magic
+Magic that manipulates the aspects and forms of physical things, including life, into new and more useful forms by affecting the underlying Aristopoulian images, the “form”, of those objects and directly or indirectly editing that form. It is related to Summoning, but differentiated by the use of real forms (just the manipulation of them), and its ability to be far more lasting than any summoning, though only powerful magic can make permanent changes to a form. Aristopoulus [Son of Ariston, i.e. plato] was an ancient archmage who founded the school during the Age of Eden.
+
+#### Entropic Magic
+Due to its rarity and difficulty for mortal humanoids to wrap their linear minds around, a domain of magic as yet not enshrined in a school is Entropic Magic – the manipulation of time and space, creating fields and zones of alternate time (frozen, changed rate, unwinding) and alternate space (different relational properties, different dimensions, different causalities). The only field of Entropic magic with any level of understanding are Portals, and even then they are known for the difficulty and danger.
 
 #### Spell-like and Spellcasting Powers
 Many Powers grant "spellcasting", where the character learns spells and through Mana or the details of the Power, can cast them at certain Magnitudes. Some Powers grant "spell-like" abilities where the effect of the Power is the same as the state spell, but the character does *not* know the spell outright, meaning that if they gain Mana they still cannot "cast" the spell, as it were. Spell-like Powers can be thought of as independent access to the spell, or even physical and mental abilities that bring about coincidentally the same effect. After all, it is said many scholars craft spells to mimic supernatural phenomena and abilities of powerful creatures.

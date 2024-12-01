@@ -3,8 +3,8 @@
         "name": "Touch Heal",
         "power": "Magnitude I",
         "school": "Necromancy",
-        "casting": "1 VS Action",
-        "target": "1 Character",
+        "casting": "Action, V S",
+        "target": "A Character",
         "range": "Touch",
         "desc": "A character you touch regains an amount of Health equal to 1d8 per Magnitude of Mana used to cast the spell, plus your spellcasting stat. This spell has no effect on Undead or Constructs."
     },
@@ -12,10 +12,10 @@
         "name": "Word of Decay",
         "power": "Cantrip",
         "school": "Evocation",
-        "casting": "1 VM (a corrupted piece of a corpse) Action",
-        "target": "Enemy Characters",
+        "casting": "Action, V M (a corrupted piece of a corpse)",
+        "target": "Around Self",
         "range": "5ft",
-        "desc": "(Word of Radiance, but necrotic damage and a foul word of the far planes) You utter a fell word, and decaying power erupts from you. Each Character of your choice that you can see within range must succeed on a Fortitude saving throw or take 1d6 necrotic damage."
+        "desc": "You utter a fell word, and decaying power erupts from you. Each Character of your choice that you can see within range of you must succeed on a Fortitude saving throw or take 1d6 necrotic damage."
     }
 ]
 

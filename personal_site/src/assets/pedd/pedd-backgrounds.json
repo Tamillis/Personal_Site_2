@@ -497,7 +497,7 @@
     },
     {
         "name": "Mage Hunter",
-        "desc": "The age of sorcerer kings and rampant planar beings birthed innumerable tragedies that instilled in people a fear of magic, exaggerated by its systemisation and spread. As control of magi became a greater and greater concern, those who would hunt down rogue magic users appeared to fill the need. Desperados, bounty hunters, ex-soldiers and other such hardened folk, like you, took up the mantle; people paid to tag & bag rogue mages.\r\rWhen dealing with hostile magic users all hunters learn various protocols for dealing with the vast and dangerous abilities of magic. You are always able to prepare for specific magics you face in your travels; be that through acquirement of equipment, use of special potions, or even employing magical items yourself. You know where to go to do that preparation or who to ask. When faced with novel hostile magics, you know where to turn to learn better protocols.",
+        "desc": "The age of sorcerer kings and rampant planar beings birthed innumerable tragedies that instilled in people a fear of magic, exaggerated by its systemisation and spread, and haunted by the atrocities commited by the Sorcerer Kings of the Age of Strife. As control of magi became a greater and greater concern, those who would hunt down rogue magic users appeared to fill the need. Desperados, bounty hunters, ex-soldiers and other such hardened folk, like you, took up the mantle; people paid to tag & bag rogue mages in the name of the Empire.\r\rWhen dealing with hostile magic users all hunters learn various protocols for dealing with the vast and dangerous abilities of magic. You are always able to prepare for specific magics you face in your travels; be that through acquirement of equipment, use of special potions, or even employing magical items yourself. You know where to go to do that preparation or who to ask. When faced with novel hostile magics, you know where to turn to learn better protocols.",
         "stats": [
             "Perception",
             "Strength"
@@ -507,7 +507,7 @@
             "Arcana",
             "Insight",
             "Investigation",
-            "Riding",
+            "Exotic Weapon (Net)",
             "Spears"
         ],
         "equipment": [
