@@ -1,8 +1,8 @@
 Thinking of compacting races a bit as well to reflect the setting and to mark another way this system is separate from D&D.
 
-Base races: can be played as is.
+Base races: cannot be played as is, since its easier to have a base with different branches than to replace branches dynamically. Tekasa, there's only two: Human and Halfling.
 
-Templates: can be 'attached' to certain base race/s and add/takeaway to that Race.
+Templates: are 'attached' to any of the bases to make a race option.
 
 Bloodline: template on Humans & Halflings. One +1 Any to a fixed Stat and gives access to 3 racial powers and to one of a selection of "tags", one for each blood line (will also smoothly allow me to add in Ásar, Tieflings etc.).
 

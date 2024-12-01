@@ -360,7 +360,7 @@
             ]
         },
         "keenHearingAndSmell": "You add your Bonus to any Perception checks for hearing or smell, when no Skill is in use.",
-        "redRage": "Even now your people bear Grummsh' mark, and though any tuskman can throw off the yolk, sometimes they choose to indulge. In addition to your Racial Power choices, you can also take either: Aggression, Menacing, Relentless Endurance, Savage Attacks or Savage Magic.",
+        "redRage": "Even now your people bear Grummsh' mark, and though any tuskman can throw off the yolk, sometimes they choose to indulge. In addition to your Racial Power choices, you can also take either: Adrenaline Rush, Menacing, Relentless Endurance, Savage Attacks or Savage Magic.",
         "powers": [
             "Extra Language",
             "Keen Senses",
@@ -368,7 +368,7 @@
             "Natural Camouflage",
             "Darkvision",
             "Gruumsh's Fury",
-            "Aggression",
+            "Adrenaline Rush",
             "Menacing",
             "Relentless Endurance",
             "Savage Attacks",
@@ -468,7 +468,7 @@
                 "smell"
             ]
         },
-        "darkVision": "You can see in dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey.",
+        "darkVision": "You can see in dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
         "giftOfMaglubiyet": "Goblinoids are born of stuggle and strife, and adapt and grow accordingly. When you take the Statistic Increase Power, you can choose to evolve. If your new Intelligence is +2 or more, you can evolve from Goblin to Nilbog. If your new Strength is +2 or more, you can evolve from Goblin to Bugbear. If you're already Bugbear or Nilbog, and your new Strength and Intelligence are both +2 or more, you can evolve to Hobgoblin. Additionally, you can swap one or both of your Racial Powers for ones you have the prerequisites for when you evolve any time you take the Statistic Increase Power.",
         "furyOfTheSmall": "If you are a Goblin: when you damage a character with an attack or a spell and the character's size is larger than yours, you can cause the attack or spell to deal extra damage to the character. The extra damage equals your Bonus. Once you use this trait, you can't use it again until you finish a short rest.",
         "legacyOfEvolution": "If you are a Nilbog or Bugbear, choose one Racial Power from your previous Evolution to make an inherant racial trait for you. If you are a Hobgoblin, choose two.",
@@ -500,19 +500,18 @@
             },
             {
                 "desc": "Any",
-                "val": 1
-            },
-            {
-                "desc": "Any",
                 "val": -1
             }
         ],
         "baseHealth": 6,
         "age": "A typical Djinn has a life span of 120 years",
-        "size": {
-            "desc": "Like Humans, Djinn vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.",
+        "size": [{
+            "desc": "Human origin Djinn, like Humans, vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.",
             "val": "medium"
-        },
+        },{
+            "desc": "Halflings who contain the touch of the elements also average about 3 feet tall and weigh about 40 pounds. Your size is Small.",
+            "val": "small"
+        }],
         "speed": {
             "desc": "Your base walking speed is 30ft",
             "val": 30
@@ -527,26 +526,19 @@
                 "smell"
             ]
         },
-        "elementalHeritage": "Choose one of the four elements that is your heritage: Earth, Air, Fire, Water. Depending on your heritage you gain the following benefits:\n\nTODO",
+        "elementalHeritage": "Choose one of the four elements that is your heritage: Earth, Air, Fire, Water. Depending on your heritage you gain the following benefits:\n\n**Earth**\n - Earth Walk - You can move across difficult terrain without expending extra movement if you are using your walking speed on the ground or a floor.\n - Darkvision - You can see in dim light within 60ft of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of grey.\n - Bludgeoning Resistance - You have resistance to non-magical bludgeoning damage.\n\n**Air**\n - Fleet of Foot - Your walking speed is 35ft.\n - Unending Breath - You can hold your breath indefinitely while you’re not incapacitated.\n - Lightning Resistance - You have resistance to lightning damage.\n\n**Fire**\n - Nimble - You can move through the space of any character that is of a size larger than yours, and you gain proficiency in Acrobatics or Athletics (your choice). You have Advantage on Athletics or Acrobatics (depending on which you chose) checks to escape being Grappled.\n - Unending Warmth - You never feel cold or suffer from a cold environment, and you're always feverish to the touch.\n - Fire Resistance - You have resistance to fire damage.\n\n**Water**\n - Darkvision - You can see in dim light within 60ft of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of grey.\n - Slashing Resistance - You have resistance to non-magical slashing damage.\n - Amphibious - You can breathe air and water.",
         "powers": [
             "Keen Senses",
-            "Fey Ancestry",
             "Extra Language",
-            "Darkvision",
             "Prodigy",
-            "Drow Magic",
             "Arcane Aptitude",
-            "Fleet of Foot",
-            "Natural Camouflage",
-            "Heritage of the Sea",
-            "Elven Accuracy",
-            "Drow High Magic",
-            "Fey Teleportation",
-            "Wood Elf Magic",
             "Mana",
-            "Psychic Sense",
             "Natural Illusionist",
-            "Resilient (Reflexes)"
+            "Resilient",
+            "Earth Magic",
+            "Air Magic",
+            "Fire Magic",
+            "Water Magic"
         ]
     }
 ]

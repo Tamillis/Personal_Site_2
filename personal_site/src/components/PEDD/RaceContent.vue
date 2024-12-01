@@ -19,7 +19,12 @@
 		<h4>Age:</h4>
 		<div v-html="marked.parse(race.age)"></div>
 		<h4>Size:</h4>
-		<div v-html="marked.parse(race.size.desc)"></div>
+		<div v-if="Array.isArray(race.size)">
+			<select ref="race-size-selector">
+				<option v-for="size in race.size" :value="size.val">{{ size.desc }}</option>
+			</select>
+		</div>
+		<div v-else v-html="marked.parse(race.size.desc)"></div>
 		<h4>Speed:</h4>
 		<div v-html="marked.parse(race.speed.desc)"></div>
 		<h4>Senses:</h4>

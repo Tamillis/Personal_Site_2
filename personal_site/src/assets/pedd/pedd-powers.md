@@ -38,13 +38,17 @@ An idea for Power rewriting is to guide myself by organising Powers under themed
 #### Power Requirements
 On an unrelated note, I've sat down to set out the framework for Power Requirements, so it can be programmed for a proper build system be built, where Players only see the powers they qualify for. (The character creator also needs to factor in changes to a character caused by Powers, such as skills, expertise marking, Stat increases etc, which means that when deselecting a Power, first the new state must be checked to see if the current powers still qualify and if invalid, ignore the deselect. Or better yet, display in some way that the power is not deselectable).
 
-Note: make all non-preq Powers 'preq: []' not 'preq: [""]'
+Note: mark all Stat-boosting & skill granting Powers with that data in ther json for the character creator to read out
 
 Note: for resource powers, when selected they need to flag that the associated powers have a cost of 1
 
 Note: many powers can be taken more than once. Make this possible.
 
 Note: Sorcerous Origin and Occult Spellcasting is a special case and needs proper handling. Mana becomes a required pick but retro-active.
+
+Note: Powers that grant Skills at Expertise are marked with *, just Skill proficiency (no mark) or Skill proficiency or Expertise if already earned with ^
+
+Note: Skill/Stat increase choices need to be handled. Currently set as either using the "Any" keyword or an array of choices
 
 Prerequisite groupings:
 - {Power name}
@@ -77,6 +81,7 @@ Powers come with tags for ease of perusal and understanding. <a id="toggle-tags"
   - **Crowd-Control** - non-damaging effects that hinder the target
   - **Movement** - increases the movement capability of the character
   - **Healing** - restores health or temporary health to yourself or a target
+  - **Temporary-Health** - provides an amount of Temporary Health that lasts until the next Long Rest, you gain more Temporary Health from another source (keeping whichever is greater), or you take damage enough to drain it
   - **Utility** - an ancilliary effect that is none of the above
 - **Stat** - a Stat increasing Power
   - **Health** - a subcategory of Stat, where Health is increased

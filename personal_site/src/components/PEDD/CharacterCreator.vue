@@ -2,8 +2,11 @@
 	<section>
 		<CharacterDisplay :player="player" :haveFaith="chosen.faith" @updateImgSrc="(src) => chosen.imgSrc = src" />
 
-		TODO: Make resource powers work as intended including Red Rage. Make powers use prerequisites.
-
+		<p>TODO:</p> 
+<ul>
+	<li>See <a>/PEDD/Powers</a> for tweaks to how powers work. Multiple Power selection also TODO</li>
+	<li>Add Rolling functionality for attacks, spells, skills and stats</li>
+</ul>
 		<button class="btn mb-1r" @click="copyUrl">Copy to clipboard</button>
 		<button class="btn" @click="chosen = blankCharacter">Reset</button>
 
@@ -91,7 +94,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
+import { useTemplateRef, onMounted, ref, computed } from "vue";
 import PowerContent from "./PowerContent.vue";
 import RaceSelector from "./RaceSelector.vue";
 import CardContainer from "./CardContainer.vue";
@@ -113,6 +116,8 @@ import equipment from "../../assets/pedd/pedd-equipment-collections.json"
 
 //derived resources
 let stats = ["accuracy", "perception", "strength", "dexterity", "charisma", "intelligence"];
+
+const sizeSelector = useTemplateRef('race-size-selector');
 
 let baseDefence = {
 	tiny: 16,
@@ -257,6 +262,9 @@ let player = computed(() => {
 		for (let stat of p.race.stats) {
 			if (stats.includes(stat.desc.toLowerCase())) p[stat.desc.toLowerCase()] += stat.val;
 		}
+		console.log(sizeSelector.value);
+		let size = p.race ? (Array.isArray(p.race.size) ? (sizeSelector.value ? sizeSelector.value.value : "medium") : p.race.size.val) : "medium";
+		p.size = size;
 	}
 	if (p.background) {
 		for (let statDesc of p.background.stats) {
@@ -287,7 +295,7 @@ let player = computed(() => {
 
 	p.armour = chosen.value.armour + chosen.value.shield + chosen.value.helmet;
 
-	p.baseDefence = p.race ? baseDefence[p.race.size.val] : 8;
+	p.baseDefence = baseDefence[p.size];
 	p.defence = Number(p.baseDefence) + Number(p.armour) + Number(p.reflexLimited ? p.reflexLimit : p.reflexes);
 
 	p.imgSrc = chosen.value.imgSrc;

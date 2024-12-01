@@ -24,7 +24,7 @@
         "desc": "You can push yourself beyond your normal limits repeatedly. After your Action, you can take one additional Action.\n\nOnce you use this Power a number of times equal to your Dexterity, you must finish a Short Rest before you can use it again."
     },
     {
-        "name": "Aggression",
+        "name": "Adrenaline Rush",
         "tag": [
             "combat",
             "movement",
@@ -34,7 +34,7 @@
         "preq": [
             "Strength +1"
         ],
-        "desc": "As a Bonus Action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started. You can use this Power a number of times equal to your Strength, regaining uses on a Short Rest."
+        "desc": "As a Bonus Action, you can move up to your Speed while an enemy can see or hear you. You can use this Power a number of times equal to your Strength, where you must finish a Long Rest before you can use it again. Whenever you use this trait, you gain Temporary Health equal to your Strength."
     },
     {
         "name": "Agonizing Blast",
@@ -51,7 +51,8 @@
         "name": "Akimbo",
         "tag": [
             "combat",
-            "offensive"
+            "offensive",
+            "fighting-style"
         ],
         "preq": [
             "Accuracy +1"
@@ -69,7 +70,7 @@
             "spell-like"
         ],
         "preq": [],
-        "desc": "As an Action you make your flesh turn as hard as stone. For 1 minute you Concentrate as if on a spell, and while concentrating you have resistance to nonmagical physical damage and a +2 Bonus to Armour."
+        "desc": "As an Action you make your flesh turn as hard as stone. For 1 minute you Concentrate as if on a spell, and while concentrating you have resistance to non-magical physical damage and a +2 Bonus to Armour."
     },
     {
         "name": "Aptitude",
@@ -129,12 +130,12 @@
         "tag": [
             "combat",
             "defensive",
-            "healing"
+            "temporary-health"
         ],
         "preq": [
             "Arcane Spellcasting"
         ],
-        "desc": "You can redirect threads of your magic around yourself for protection. When you cast an Abjuration spell of Magnitude I or higher, you can simultaneously create a magical ward on yourself or an ally within 30ft that lasts until you finish a Long Rest. The ward gives you Temporary Health equal to your Bonus + your Intelligence. Whenever you cast an Abjuration spell of Magnitude I, the ward regains an amount of Health equal to twice the Magnitude of the spell, up to a maximum of your Bonus + your Intelligence.\n\nWhen the Temporary Health of the ward is depleted or replaced, its magic remains and it can be refilled.\n\nOnce you create the ward, you can't create it again until you finish a Long Rest.\n\nIf cast on an ally and that ally leaves the plane of existence you are on, the ward ends."
+        "desc": "You can amply and redirect threads of your defensive magic around yourself for greater protection. Whenever you cast an Abjuration spell of Magnitude I or higher, you can simultaneously create a magical ward on yourself or an ally within 30ft. The ward gives Temporary Health equal to your Bonus + your Intelligence."
     },
     {
         "name": "Archery",
@@ -146,17 +147,18 @@
         "preq": [
             "Accuracy +1"
         ],
-        "desc": "You gain a +2 additional Bonus to attack rolls you make with Slings and Bows."
+        "desc": "You gain a +2 additional Bonus to attack rolls you make with Crossbows, Bows and Slings."
     },
     {
         "name": "Armour of Shadows",
         "tag": [
-            "invocation"
+            "invocation",
+            "Mage Armour Spell"
         ],
         "preq": [
             "Pact Magic"
         ],
-        "desc": "You can cast Mage Armor on yourself at will, without spellcasting, expending your Stipend / Mana, or needing material components."
+        "desc": "You can cast Mage Armour on yourself at will, without spellcasting, expending your Stipend / Mana, or needing material components."
     },
     {
         "name": "Artificer's Lore",
@@ -190,7 +192,20 @@
         "preq": [
             "Charisma +1"
         ],
-        "desc": "You can inspire others through stirring words or music. To do so, you use your bonus action to choose one character other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.\n\nOnce within the next 10 minutes, the character can roll the die and add the number rolled to one ability check, attack roll, or saving throw they make. The character can wait until after they roll the d20 before deciding to use the Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A character can have only one Bardic Inspiration die at a time.\n\nYou can use this Power a number of times equal to your Charisma. You regain any expended uses when you finish a Rest."
+        "desc": "You can inspire others through stirring words or music. To do so, you use your Bonus Action to choose one character other than yourself within 60ft of you who can hear you. That creature gains one Bardic Inspiration die, a d6.\n\nOnce within the next Short Rest, the character can roll the die and add the number rolled to one ability check, attack roll, or saving throw they make. The character can wait until after they roll the d20 before deciding to use the Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A character can have only one Bardic Inspiration die at a time.\n\nYou can use this Power a number of times equal to your Charisma. You regain any expended uses when you finish a Long Rest."
+    },
+    {
+        "name": "Improved Bardic Inspiration",
+        "tag": [
+            "combat",
+            "social",
+            "utility"
+        ],
+        "preq": [
+            "Charisma +3",
+            "After 6 Powers"
+        ],
+        "desc": "You can use the Bardic Inspiration Power a number of times equal to your Charisma + your Bonus and the die increases from a d6 to a d10."
     },
     {
         "name": "Beast Speech",
@@ -212,7 +227,10 @@
         "preq": [
             "Pact Magic"
         ],
-        "desc": "You gain proficiency in the Deception and Persuasion skills. If you already had proficiency those skills, you gain Expertise instead."
+        "desc": "You gain proficiency in the Deception and Persuasion skills. If you already had proficiency those skills, you gain Expertise instead.",
+        "skill": {
+            "core": ["Deception^", "Persuasion^"]
+        }
     },
     {
         "name": "Blessed",
@@ -235,7 +253,11 @@
         "preq": [
             "Divine Domain"
         ],
-        "desc": "In a moment of divine revelation, you learn two language Skills of your choice, also gaining Expertise with them. You also become Proficient and gain Expertise in your choice of two of the following skills: Arcana, History, Nature, or Religion. This is regardless of if you were Proficient with those skills or languages before."
+        "desc": "In a moment of divine revelation, you learn two language Skills of your choice, also gaining Expertise with them. You also become Proficient and gain Expertise in your choice of two of the following skills: Arcana, History, Nature, or Religion. This is regardless of if you were Proficient with those skills or languages before.",
+        "skill": {
+            "core":[["Arcana*", "History*", "Nature*", "Religion*"], ["Arcana*", "History*", "Nature*", "Religion*"]],
+            "knowledge": ["Language (Any)*", "Language (Any)*"]
+        }
     },
     {
         "name": "Blind Fighting",
@@ -247,7 +269,7 @@
         "preq": [
             "Perception +1"
         ],
-        "desc": "When in combat, you effectively have blindsight with a range of 10ft. Within that range, you can see anything that isn't behind total cover, even if you're Blinded, in darkness, or otherwise have your senses obscured. Moreover, you can see an invisible character within that range, unless the character successfully hides from you."
+        "desc": "When in combat, you effectively have blindsight with a range of 10ft. Within that range, you can see anything that isn't behind total cover, even if you're Blinded, in darkness, or otherwise have your senses obscured. Moreover, you can see an invisible character within that range, unless the character successfully Hides from you."
     },
     {
         "name": "Bountiful Luck",
@@ -259,7 +281,7 @@
         "preq": [
             "Lucky"
         ],
-        "desc": "Your people have extraordinary luck, which you have learned to mystically lend to your companions whenever you see them falter. You're not sure how you do it, you just wish it, and it happens. Surely a sign of fortune's favor!\n\nWhen an ally you can see within 30 feet of you rolls a 1 on the d20 for an attack roll, an ability check, or a saving throw, you can use your Bonus Action to let the ally reroll the die. The ally must use the new roll.\n\nWhen you use this Power, you can't use your Lucky racial trait before the end of your next turn."
+        "desc": "Your people have extraordinary luck, which you have learned to mystically lend to your companions whenever you see them falter. You're not sure how you do it, you just wish it, and it happens. Surely a sign of fortune's favor.\n\nWhen an ally you can see within 30ft of you rolls a 1 on the d20 for an attack roll, an ability check, or a saving throw, you can use your Bonus Action to let the ally reroll the die. The ally must use the new roll, even if it is a 1.\n\nWhen you use this Power, you can't use your Lucky racial trait before the end of your next turn."
     },
     {
         "name": "Cantrip Cornucopia",
@@ -269,7 +291,7 @@
         "preq": [
             "Pact Magic"
         ],
-        "desc": "You learn another cantrip from your Patron's spell list, and one more cantrip of your choice from the list;\n\n- Chill Touch\n- Dancing Lights\n- Eldritch Blast\n- Gust\n- Infestation\n- Lightning Lure\n- Magic Stone\n- Mind Sliver\n- Minor Illusion\n- Prestidigitation\n- Sapping Sting\n- Shocking Grasp\n- Thaumaturgy\n- Vicious Mockery\n- Word of Decay (Word of Radiance, but necrotic damage and a foul word of the far planes)"
+        "desc": "You learn another cantrip from your Patron's spell list, and one more cantrip of your choice from the list;\n\n- Chill Touch\n- Dancing Lights\n- Eldritch Blast\n- Gust\n- Infestation\n- Lightning Lure\n- Magic Stone\n- Mind Sliver\n- Minor Illusion\n- Prestidigitation\n- Sapping Sting\n- Shocking Grasp\n- Thaumaturgy\n- Vicious Mockery\n- Word of Decay"
     },
     {
         "name": "Careful Spell",
@@ -2172,7 +2194,7 @@
         "desc": "You gain the Light cantrip. If you already know this cantrip, you learn a different Divine Sphere cantrip of your choice.\n\nYou can Channel Divinity and interpose divine light between yourself and an attacking enemy. When you are attacked by a character within 30ft of you that you can see, you can use your Bonus Action and impose Disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be blinded is immune to this Miracle.\n\nYou can use this Miracle a number of times equal to your Faith (a minimum of once). You regain all expended uses when you finish a Rest."
     },
     {
-        "name": "Weapon Master",
+        "name": "Martial Master",
         "tag": [
             "background",
             "combat",
@@ -2180,7 +2202,10 @@
             "utility"
         ],
         "preq": [],
-        "desc": "You have practiced extensively with a variety of weapons. You can swap between two weapons once per Round without needing an action. You gain Proficiency in four Martial Skills of your choice. If you take this Power again, you gain a further four Martial Skill proficiencies each time."
+        "desc": "You have practiced extensively with a variety of weapons, armour and shields. You can swap between two weapons/shields once per Round without needing an action and you gain Proficiency in four Martial Skills of your choice. If you take this Power again, you gain a further four Martial Skill proficiencies each time.",
+        "skill": {
+            "martial": ["Any", "Any", "Any", "Any"]
+        }
     },
     {
         "name": "Resilient",
@@ -2512,5 +2537,56 @@
             "Willpower +2"
         ],
         "desc": "Your Focus pool is now 2x your Willpower + your Bonus."
+    },
+    {
+        "name": "Earth Magic",
+        "tag": [
+            "background",
+            "cantrip",
+            "djinn",
+            "exploration",
+            "racial",
+            "spellcasting"
+        ],
+        "preq": [],
+        "desc": ""
+    },
+    {
+        "name": "Air Magic",
+        "tag": [
+            "background",
+            "cantrip",
+            "djinn",
+            "exploration",
+            "racial",
+            "spellcasting"
+        ],
+        "preq": [],
+        "desc": ""
+    },
+    {
+        "name": "Fire Magic",
+        "tag": [
+            "background",
+            "cantrip",
+            "djinn",
+            "exploration",
+            "racial",
+            "spellcasting"
+        ],
+        "preq": [],
+        "desc": ""
+    },    {
+        "name": "Water Magic",
+        "tag": [
+            "background",
+            "cantrip",
+            "djinn",
+            "exploration",
+            "racial",
+            "spellcasting"
+        ],
+        "preq": [],
+        "desc": ""
     }
 ]
