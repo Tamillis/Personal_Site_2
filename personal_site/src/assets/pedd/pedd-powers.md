@@ -50,6 +50,8 @@ Note: Powers that grant Skills at Expertise are marked with *, just Skill profic
 
 Note: Skill/Stat increase choices need to be handled. Currently set as either using the "Any" keyword or an array of choices
 
+Note: Powers that can be taken multiple times that scale their prerequisites, the scaling needs to be machine readable in some way. Starting with RANK as a keyword (i.e. Dexterity +RANK).
+
 Prerequisite groupings:
 - {Power name}
 - {Stat name} {value}
