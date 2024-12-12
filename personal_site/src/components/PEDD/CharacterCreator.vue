@@ -95,6 +95,7 @@
 
 <script setup>
 import { useTemplateRef, onMounted, ref, computed } from "vue";
+
 import PowerContent from "./PowerContent.vue";
 import RaceSelector from "./RaceSelector.vue";
 import CardContainer from "./CardContainer.vue";
