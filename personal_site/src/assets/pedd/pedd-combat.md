@@ -327,9 +327,13 @@ creatures that are two sizes or more larger than it. A character can use an Acti
 
 <section id="weapon-properties-section" class="hidden"> 
 
+##### Melee Weapon Properties
+
 - **Ammunition (X/Y)** - You can use a weapon that has the Ammunition property to make a ranged attack only if you have Ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a weapon). Expended arrows, bolts and darts can be recovered, by taking a minute to search the battlefield, but guns that use paper cartridges cannot. X denotes the short range of the weapon, and Y the long range (attacks at Disadvantage).
 - **Armour Piercing** & **Light Armour Piercing** – the weapon ignores some benefit of Armour to a target's Defence. The target's Armour is reduced, to a minimum of 0, by 2 for Light Armour Piercing and by 6 for Armour Piercing.
+- **Bleeds** - critical hits with this weapon when doing Slashing damage inflict gaping wounds and profuse bleeding, inflicting additional slashing damage equal to your Bonus. Non-living character types are immune to this damage.
 - **Block** - You can raise this weapon like a shield, using your Bonus Action to Block, gaining a bonus of 1 to Defence.
+- **Dazes** - critical hits with this weapon when doing Bludgeoning damage hit with a singularly boneshaking blow, dazing the target. The target's next attack roll is made with Disadvantage.
 - **Ensnaring** - When you hit an attack with an ensnaring weapon, you may use your Bonus Action to attempt the Grapple action on the target or Shove them or make them Prone, using your weapon attack modifier in place of Strength. If you grapple a target with an ensnaring weapon, the grapple is automatically ended if you make another attack roll with that weapon.
 - **Finesse** - The weapon lends itself to dexterous combat due to features that make it more reliant on technique than brute force. When attacking with a finesse weapon, you use your choice of your
 Strength or Dexterity for the attack and damage rolls. You must use the same modifier for both rolls.
@@ -341,20 +345,20 @@ Strength or Dexterity for the attack and damage rolls. You must use the same mod
 - **Loading** & **Slow Loading** - due to the elaborate procedure of preparing the weapon for its next shot, it takes an Attack, Action or Bonus Action to reload, and a free hand. Slow Loading weapons take an Attack or Action to reload.
 - **Nonlethal** - The weapon is designed to incapacitate or is otherwise capable of delivering a hit that does not kill the target. Non-lethal Strikes can be made with normal damage rolls.
 - **Parry** - The weapon has some weapon catching or deflecting feature, allowing it to be used to take the Riposte or Parry Actions.
+- **Penetrates** - Critical hits with this weapon when doing Piercing damage sink deep into the tissue and tear at soft innards. The target must make a Fortitude save vs the attack roll or suffer a point of Exhaustion.
 - **Prone Fighting** - When you are prone and make a melee attack with this weapon, you do not suffer Disadvantage for being prone.
 - **Reach** - This weapon's extended length adds 5 ft to your Reach when you attack with it.
-- **Bleeds** - critical hits with this weapon when doing Slashing damage inflict gaping wounds and profuse bleeding, inflicting additional slashing damage equal to your Bonus. Non-living character types are immune to this damage.
-- **Dazes** - critical hits with this weapon when doing Bludgeoning or Piercing damage hit with a singularly boneshaking blow, dazing the target. The target's next attack roll is made with Disadvantage. 
 - **Sweeping** - These weapons strike in broad, sweeping motions. When you make an attack with a sweeping weapon that deals slashing damage, you may use a Bonus Action to deal the weapon's damage die in damage against a second target within your reach that is adjacent to the first, provided that your attack roll would also hit that target.
 - **Versatile** - This weapon can be used with one or two hands. A damage value in parentheses appears with the property–the damage when the weapon is used with two hands.
 - **Wind-up** - The weapon can be used to spend time preparing an attack to be even more effective. On your turn you can use an attack or Bonus Action to swing up or set your weapon. On the next attack you make that Round with the weapon you can add an additional weapon die to that attack if it hits. A weapon can only add one such damage die in this way.
 - **Winged** - These weapons have specially-shaped heads that halt the movement of their target toward the user and can also be used to catch shields and weapons. When you deal piercing damage against a character one size larger than you, or less, with a winged weapon, that character cannot move toward you that Round. Additionally can use the Disarm action with this weapon, using your Proficiency with the weapon's skill.
+
+##### Ranged and Special Weapon Properties
 - **Cartridge Loading** – due to the elaborate procedure of preparing a muzzle loading gun for its next shot, it takes an attack or an action to reload firearms, and a free hand.
 - **Knockdown (Str)** – effected characters have to pass a Fortitude check vs the value given, or the passive strength of the User, or be knocked prone.
 - **Knockback (Str/X)** – effected characters have to pass a Fortitude check vs the value given or be thrown X ft and made prone. Additionally, they take falling damage as if they fell X feet (regardless of the distance actually thrown).
 - **Misfire** - on an attack roll of 1, the gun misfires; the attack fails, and a clearing bonus action to clean the gun is required before it can be fired again, leaving it unloaded.
-- **Scatter X** – weapons with this property also target any creature within 5ft of the target, using the same to hit roll, for the damage indicated in X. The scatter property is not in effect if the primary target is 10ft or less from the attacker.
-- **20 Paper Cartridges** – these pre-prepared cartridges were invented in the Imperial capital and rapidly took over from manually priming, loading, and wadding shot, which used to take far longer and was far more prone to mistake. Unlike other ammunition, paper cartridges cannot be reused. The powder, paper, and wax wadding is burnt up upon firing, and the lead ball is often missing (in the ground or the body of the target) and always deformed. 20 cartridges can be bought for 1gp, and are of the type “longarm”, “sidearm” or “buckshot”. Each can only be used with its associated weapons, and each cost the same.
+- **Scatter X** – weapons with this property also target any Character within 5ft of the target, using the same to hit roll, for the damage indicated in X. The scatter property is not in effect if the primary target is 10ft or less from the attacker.
 
 </section>
 
@@ -429,4 +433,7 @@ The following enviromental damage rules are updated and rolled into Conditions o
 - **Falling** - At the end of a fall, a character takes 1d6 bludgeoning damage for every 10ft it fell, to a maximum of 200ft for 20d6. The character lands prone, unless it avoids taking damage from the fall.
 - **Suffocating*** - A character can survive for a number of rounds equal to its Fortitude (to a minimum of 1). At the start of the next turn, it drops to 0 health and is dying, and it can’t regain health or be stabilized until it can breathe again. If it recovers from Dying with a natural 20 and is still Suffocating, it suffers the condition anew as if just running out of breath again.
 
-*Holding breath rules: A character can hold their breath for 1 minute plus their Willpower x 30 seconds (to a minimum of 30 seconds). When a character takes damage, it loses 30 seconds of breath. When a character runs out of breath they're Suffocating.
+*Holding breath rules: A character can hold their breath for 1 minute plus their Willpower x 30 seconds (to a minimum of 30 seconds). When a character takes damage, they lose 30 seconds of breath. When a character runs out of breath they're Suffocating.
+
+#### Exhaustion
+Exhaustion is cool, but odd in application. Instead, one can earn and rest from levels of exhaustion as before, but for each rank of exhaustion a character has a -2 Malus to all of their Rolls, -5ft of Speed and -2 to their Maximum Health. Speed cannot go below 5ft, and Maximum Health cannot go below 1. As before, at the 6th rank of Exhaustion, a Character dies.

@@ -108,6 +108,11 @@
                     "type": "file"
                 },
                 {
+                    "name": "MagicInTheEmpire.md",
+                    "path": "./src/assets/wiki/Mitteland/MagicInTheEmpire.md",
+                    "type": "file"
+                },
+                {
                     "name": "MittelandMap.md",
                     "path": "./src/assets/wiki/Mitteland/MittelandMap.md",
                     "type": "file"

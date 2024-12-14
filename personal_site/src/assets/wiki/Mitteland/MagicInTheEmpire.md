@@ -2,8 +2,6 @@
 
 Magic can be said to define the modern Empire, in that its abuse in the face of chaos saw the old Empire crumble into warring fiefs capable, and frequently guilty of, great horrors. The core of the Second Empire's very authority comes from its claim to police magic and magic users strictly, swiftly and with great force. Every magic user in the Empire either holds one of their dear, both in rarity and in price, 'Mage Licenses' or is hunted by the special division of the New Army: the Mage Hunters, or one of the many, many licensed guilds of bounty hunters.
 
-
-
 ### Spell Schools of the Empire
 The various spells found within the Existentiae are as varied as their practitioners, but the magi of the Empire have cobbled together a classification system of 8 schools, patterned off of ancient arcane writings, even if that isn’t the be all and end all, especially for the other domains.
 
