@@ -11,3 +11,8 @@ The Curse of Gruumsh: template on Human, Any +2 and Any +1 must be Liminal Stats
 We're totally not Tolkeinesque, so renaming the obvious fantasy races:
 - Elf -> Gnascoria (latin for originator)
 - Gnome -> Cognoverimus-or ("we will get to know-er") -> Gnoverimo(s)
+
+TODO:
+Change racial Stat increases to use arrays when options are presented instead of the "Any" special case, meaning subsets of the stats can be chosen/
+
+Is it worth bringing back the resistances as stat options again?

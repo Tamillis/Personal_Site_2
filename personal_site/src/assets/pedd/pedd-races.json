@@ -107,11 +107,11 @@
         "desc": "Also known as the Fae-touched, Elves are a magical people of otherworldly bearing. The Fey drifted to one of two fates; living in places of ethereal natural beauty and terrible primalcy, in the midst of ancient forests of darks roots, in oases of deep deserts, in the watery depths of vibrant coral reefs; or to the courts and intrigues of mortal cities, crafting in silvery spires glittering with magic, where soft music drifts through the air and gentle fragrances waft on the breeze to counter city stench rising from the dirt streets below. Coming to be called Wild Elves and Grey Elves respectively, all Elves love life, as even now they're a reflection of the pre-world that made them.",
         "stats": [
             {
-                "desc": "Dexterity",
+                "desc": "Dexterity / Charisma / Perception",
                 "val": 2
             },
             {
-                "desc": "Intelligence",
+                "desc": "Any",
                 "val": 1
             },
             {
@@ -120,9 +120,9 @@
             }
         ],
         "baseHealth": 5,
-        "age": "Although elves reach physical maturity at about the same age as humans (unless the child doesn't wish to group up yet), the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old, with Elves deep in the glades rumoured to never age.",
+        "age": "Although elves reach physical maturity at about the same age as humans (unless the child doesn't wish to group up yet), the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. A wild elf typically claims adulthood and an adult name around the age of 100 and can live for a millenium or more, depending on how intertwined with nature they are and Elves deep in the glades rumoured to never age, whereas more urbane Elves seems to share lifespans of 'only' a century or two.",
         "size": {
-            "desc": "Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium.",
+            "desc": "Elves range from under 5 to over 6 feet tall and have slender builds and exaggerated features. Your size is Medium.",
             "val": "medium"
         },
         "speed": {

@@ -7,8 +7,8 @@ export default function(s) {
     let v = 0.0033;
 
     let a = makeAgent(0.5, 0.1, "Mr A", "#F00");
-    let b = makeAgent(0.1, 0.66, "Mr B", "#FF0");
-    let c = makeAgent(0.9, 0.66, "Mr C", "#F0F");
+    let b = makeAgent(0.1, 0.8, "Mr B", "#FF0");
+    let c = makeAgent(0.9, 0.8, "Mr C", "#F0F");
 
     function drawAgent(agent) {
         s.fill(agent.col);
@@ -70,10 +70,20 @@ export default function(s) {
         //get unit vector in direction of target and scale by v
         let dir = target.sub(current);
         let dist = Math.sqrt(dir.x * dir.x + dir.y * dir.y);
-        if (dist < size / dims) return;
-        let change = dir.normalize().mult(v);
-
-        a.x += change.x;
-        a.y += change.y;
+        
+        if(dist > size/dims) {
+            let change = dir.normalize().mult(v);
+            a.x += change.x;
+            a.y += change.y;
+        }
+        else {
+            target = s.createVector(b.x, b.y);
+            current = s.createVector(a.x, a.y);
+            let dirBtoA = current.sub(target).normalize();
+            let offset = dirBtoA.mult(size / dims);
+            let newPos = target.add(offset);
+            a.x = newPos.x;
+            a.y = newPos.y;
+        }
     }
 }

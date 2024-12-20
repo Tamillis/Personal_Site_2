@@ -13,7 +13,7 @@ window.addEventListener("MarkedDone", peddCombatEvents);
 onUnmounted(() => window.removeEventListener("MarkedDone", peddCombatEvents));
 
 function peddCombatEvents() {
-    let sections = ['weapons', 'weapon-properties', 'armour', 'actions'];
+    let sections = ['weapons', 'weapon-properties', 'armour', 'core-actions', "tactical-actions"];
     for (let section of sections) {
         document.getElementById("toggle-" + section).addEventListener("click", () => {
             document.getElementById(section + "-section").classList.toggle("hidden");

@@ -27,7 +27,7 @@ However, the main thrust of the system works like this. The GM declares the inte
 
 Often, some players may still be thinking while others already know what they want to do. Resolve the actions of the decided players and their engagements (see Engagement below), and you'll often find the remaining players now know what to do.
 
-Only powerful or well-trained enemies will be capable of **Hidden Actions**, where their intentions are not stated by the GM but kept secret until after players commit to their own Actions, but player characters can always attempt to **Discern** enemy moves anyway (see [Additional Actions](#additional-actions)).
+Only powerful or well-trained enemies will be capable of **Hidden Actions**, where their intentions are not stated by the GM but kept secret until after players commit to their own Actions, but player characters can always attempt to **Discern** enemy moves anyway (see [Tactical Actions](#tactical-actions)).
 
 Most Actions, however, can be resolved simultaneously. Attacks for example; two people just try to hit each other, damage each other, and collapse wounded at the same time if that is what happens.
 
@@ -46,11 +46,12 @@ Characters can spend 1 Focus to add a d6 to their Initiative roll. See [Focus](#
 ### Combat Actions
 So what can that one Action can do? Quite a lot more than 5e. Every character can perform Core Combat Actions and a variety of Tactical Actions. Note that many are keyed to "an Attack or Action", so if you have more than one attack, you can potentially take more than one "action" on your turn. Note there are several Powers that provide further and enhanced Tactical Actions.
 
-<a id="toggle-actions">Click here to show.</a>
-
-<section id="actions-section" class="hidden">
 
 #### Core Combat Actions
+<a id="toggle-core-actions">Click here to show.</a>
+
+<section id="core-actions-section" class="hidden">
+
 - **Attack** - as an Action, you make your weapon or spell attack/s against characters in reach / range. One attack Action may involve a number of Attacks on a number of targets depending on the weapon, spell or some Power such as Extra Attack. If multiple targets are all within reach / range and you have multiple Attacks as part of the Attack Action, you may freely choose who to direct attacks at, and make Attack Rolls per Attack. As in 5e, this is the distinction between the "Attack Action" and specific "Attacks", as well as "Weapon Attacks" and "Spell Attacks". Unless otherwise stated, full attack action attacks are with lethal intent (see Non-Lethal Strike).
   - **Unarmed Strike** - in PEDD, this simply means a weapon Attack using Body, instead of a traditional weapon.
   - **Improvised Strike** - in PEDD, this simply means a weapon Attack using a piece of the environment. Ask your GM for appropriate statistics to use.
@@ -62,7 +63,14 @@ So what can that one Action can do? Quite a lot more than 5e. Every character ca
 - **Hide** - as an Action, you make a Stealth check in an attempt to hide from those you are obscured from (in 3/4's cover or out of line of sight), versus a DC of 15. If you succeed, you gain the benefits of being Invisible: Attacks against you have Disadvantage, and your Attacks have Advantage. When you make an Attack, you are no longer hidden. If you or others Move such that you are no longer obscured, you are no longer Hidden from them.
 - **Move** - move your Speed along a path of your choice towards a target. See [Move Action](#move-action) for details.
 
+</section>
+
 #### Tactical Actions
+
+<a id="toggle-tactical-actions">Click here to show.</a>
+
+<section id="tactical-actions-section" class="hidden">
+
 - **Attack of Opportunity** - if an enemy you're Engaged with moves away from you, you can spend 1 Focus to make an attack on them for free, after which they have moved away and are no longer Engaged with you for that Round.
 - **Coup de Grace** - when you make a Weapon Attack against an Incapacitated target, don't roll for Damage, instead take each dice you would roll (if any) to be the maximum result.
 - **Disarm** - as an Attack or Action against an enemy in your Reach holding a weapon or shield, you make an attack roll against the enemy's passive Reflexes. If you succeed, you rip the weapon from their grasp and throw it 10ft in a direction of your choice (this does not count as a thrown weapon attack), to the ground at your feet, or equip it an empty hand of yours.
@@ -292,7 +300,7 @@ Bludgeoning -> blg, Piercing -> prc, Slashing -> slash
 | Sawn-Off Gun | Firearms & Pistols | 30gp | 2d4 slashing | 6lps | Ammunition (20/40), cartridge loading, scatter (1d4) |
 | *Munitions* |
 | Demo-barrel | - | 50gp | 4d6 bludgeoning & 4d6 burning<sup>b</sup> | 75lbs | Knockback (+2 / 10ft per barrel*), Area (10ft radius per barrel*) *to a maximum of 60ft. |
-| Flashbomb | Thrown | Blinds & Deafens until the end of the target’s next turn |	| 1lbs | Thrown (20/60), Area (10ft radius)<sup>d</sup> |
+| Flashbomb | Thrown | 5gp | Blinds & Deafens until the end of the target’s next turn | 1lbs | Thrown (20/60), Area (10ft radius)<sup>d</sup> |
 | Fire Lance | Exotic (Lance) | 35gp | 2d8 burning<sup>b</sup> | 11lbs | Ammunition (5/10), reach, heavy, two-handed, special<sup>c<sup> |
 | Firebomb | Thrown | 10gp | 2d10 burning<sup>b</sup> | 2lbs | Thrown (20/60), Area (5ft radius)<sup>d</sup> |
 | Grenade | Thrown | 5gp | 1d8 slashing, 1d8 burning<sup>b</sup> | 1lbs | Thrown (20/60), Knockdown (+2), Area (5ft radius)d |
