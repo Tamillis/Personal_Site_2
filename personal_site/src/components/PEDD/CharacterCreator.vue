@@ -2,10 +2,11 @@
 	<section>
 		<CharacterDisplay :player="player" :haveFaith="chosen.faith" @updateImgSrc="(src) => chosen.imgSrc = src" />
 
-		<p>TODO:</p> 
+		<h4>TODO:</h4> 
 <ul>
 	<li>See <a>/PEDD/Powers</a> for tweaks to how powers work. Multiple Power selection also TODO</li>
 	<li>Add Rolling functionality for attacks, spells, skills and stats</li>
+	<li>Add dynamic skill-downgrading</li>
 </ul>
 		<button class="btn mb-1r" @click="copyUrl">Copy to clipboard</button>
 		<button class="btn" @click="chosen = blankCharacter">Reset</button>

@@ -285,8 +285,8 @@
         "name": "Noble",
         "desc": "You understand wealth, power, and privilege. You carry the noble title of Lord/Lady, and your family owns land, collects taxes, and wields significant political influence. Thanks to your noble birth, you are welcome in high society and the right people are inclined to think the best of you, treating you as a member of the same social sphere. The common folk assume you have the right to be wherever you are and make every effort to avoid your displeasure. You can secure an audience with a local noble if you need to.",
         "stats": [
-            "Intelligence +1",
-            "Charisma +1"
+            "Intelligence",
+            "Charisma"
         ],
         "skills": [
             "History",

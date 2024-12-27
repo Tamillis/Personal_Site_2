@@ -7,7 +7,7 @@
                     <option>All</option>
                     <option>Basic</option>
                     <option>Knowledge</option>
-                    <option>Martial</option>
+                    <option>Weapon</option>
                 </select>
                 <span>Skills</span>
             </h3>
@@ -57,7 +57,7 @@ function filterSkills() {
     else if (category.value == "Knowledge") {
         skills.value = skills.value.concat(skillsData.knowledgeSkills.filter(s => s.stat == stat.value || stat.value == "All"));
     }
-    else if (category.value == "Martial") {
+    else if (category.value == "Weapon") {
         skills.value = skills.value.concat(skillsData.martialSkills.filter(s => s.stat == stat.value || stat.value == "All"));
     }
 }
