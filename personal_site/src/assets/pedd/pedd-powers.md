@@ -44,7 +44,7 @@ Note: for resource powers, when selected they need to flag that the associated p
 
 Note: many powers can be taken more than once. Make this possible.
 
-Note: Sorcerous Origin and Occult Spellcasting is a special case and needs proper handling. Mana becomes a required pick but retro-active.
+Note: Sorcerous Origin and Occult Spellcasting is a special case and needs proper handling. Mana becomes a required pick but retro-actively.
 
 Note: Powers that grant Skills at Expertise are marked with *, just Skill proficiency (no mark) or Skill proficiency or Expertise if already earned with ^
 
