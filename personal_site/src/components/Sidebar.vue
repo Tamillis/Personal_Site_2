@@ -48,7 +48,7 @@ import { useRoute, RouterLink } from 'vue-router';
 
 const route = useRoute();
 
-let out = false;
+let out = true;
 function toggleNav() {
     let links = document.getElementById("links");
     let nav = document.getElementById("nav");

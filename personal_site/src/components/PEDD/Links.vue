@@ -19,6 +19,9 @@
             <RouterLink class="intext-link" :to="{ name: 'pedd-powers' }">Powers</RouterLink>
         </li>
         <li class="triangle-points">
+            <RouterLink class="intext-link" :to="{ name: 'pedd-equipment' }">Equipment</RouterLink>
+        </li>
+        <li class="triangle-points">
             <RouterLink class="intext-link" :to="{ name: 'pedd-magic' }">Magic</RouterLink>
         </li>
     </ul>

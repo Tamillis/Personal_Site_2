@@ -68,6 +68,11 @@ const router = createRouter({
       component: () => import('../views/PEDD/PEDDMagic.vue')
     },
     {
+      path: '/pedd/equipment',
+      name:'pedd-equipment',
+      component: () => import('../views/PEDD/PEDDEquipment.vue')
+    },
+    {
       path: '/mewiki',
       name: 'mewiki',
       component: () => import('../views/WikiView.vue')

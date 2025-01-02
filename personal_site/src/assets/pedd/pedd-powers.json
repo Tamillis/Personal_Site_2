@@ -152,11 +152,11 @@
     {
         "name": "Armour of Shadows",
         "tag": [
-            "invocation",
-            "Mage Armour Spell"
+            "invocation"
         ],
         "preq": [
-            "Pact Magic"
+            "Pact Magic",
+            "Mage Armour Spell"
         ],
         "desc": "You can cast Mage Armour on yourself at will, without spellcasting, expending your Stipend / Mana, or needing material components."
     },
@@ -876,7 +876,7 @@
             "utility"
         ],
         "preq" : ["Intelligence +1", "Alchemy Skill"],
-        "desc": "You are an expert at manipulating alchemy for use in combat and in the field.\n\n**Formula Book** - An alchemist keeps meticulous formulas for every item they can create. You have a book of formulas. This formula book contains the formulas for two common 1st-level alchemical items of your choice. You can copy formula you find into your formula book, spending 50gp per level on the necessary experimentation and resources. If you take this power again, you invent 2 new formula of your choice, and add them directly to your book.\n\n **Field Alchemy** - You've learned how to quickly and reliably produce alchemical products even while out in the field. At the end of a Long Rest, you spend some time to create unstable alchemical items that can be used over the course of the day. You don't need to attempt a Crafting check to do this, you use an alchemist's toolkit, and you ignore both the number of days typically required to create the items and any alchemical raw materials requirements. Each item must be in your formula book, and have the consumable trait. These items remain potent for 24 hours or until your next Long Rest, whichever comes first, unless the item has an even shorter shelf life, in which case that is kept.\n\nYou can Craft a number of alchemical items whose level totals up to 4 + your Intelligence. If you take this Power again, add 4 to this value.\n\n**Acid Vial** - In addition to your formulas, you can always prepare the alchemical item 'Acid Vial'. This tiny glass flask contains volatile chemicals that can be used offensively in a pinch. The glass vial, when thrown like a bomb, deals 1d6 acid damage and 1 Scatter acid damage to a target within 20ft, or 60ft at Disadvantage."
+        "desc": "You are an expert at manipulating alchemy for use in combat and in the field.\n\n**Formula Book** - An alchemist keeps meticulous formulas for every item they can create. You have a book of formulas. This formula book contains the formulas for two low-grade alchemical items of your choice. You can copy formula you find into your formula book, spending 50gp per grade on the necessary experimentation and resources. If you take this power again, you invent 2 new formula of your choice including those of a grade above what you already have, and add them directly to your book.\n\n **Field Alchemy** - You've learned how to quickly and reliably produce alchemical products even while out in the field. At the end of a Long Rest, you spend some time to create unstable alchemical items that can be used over the course of the day. You don't need to attempt a Crafting check to do this if you use an alchemist's toolkit, and you ignore material requirements. Each item must be in your formula book. These items remain potent for 24 hours or until your next Long Rest, whichever comes first, unless the item has an even shorter shelf life, in which case that is kept.\n\nYou can Craft a number of alchemical items whose grade totals up to 4 + your Intelligence. If you take this Power again, add 4 to this value.\n\n**Acid Vial** - In addition to your formulas, you can always prepare the alchemical item 'Acid Vial'. This tiny glass flask contains volatile chemicals that can be used offensively in a pinch. The glass vial, when thrown like a bomb, deals 1d6 acid damage to a target within 20ft, or 60ft at Disadvantage, and 1 Scatter acid damage to any character within 5ft of the target if the attack roll would hit them."
     },
     {
         "name": "Fiendish Vigour",
