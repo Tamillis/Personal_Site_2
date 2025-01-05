@@ -1,5 +1,7 @@
 ## My 5e Overhaul
 
+> This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.
+
 "One D&D", sorry "5.5" now, oh no wait its D&D 5e (2024) which I think is impresively an even worse name, is coming and Wizards of the Coast really put their PR foot in it with the licensing changes so we're all ready to jump ship. I instead find myself remaking the ship, taking what I think works well, and changing, exchanging and adding in what I would like it to have. So if I were to make a 6th edition of a fashion that suited my tastes and allowed me to explore, reformulate and refine areas of mechanics in which I personally have an interest, while keeping much the rest the same, this would be that. A "Pete's Edition of Dungeons & Dragons", you might say.
 
 Frankly, by now, this is less an edition of D&D 5e, and more a total overhaul or, in other words, just my own heavily-inspired heroic fantasy roleplaying system with (for now) borrowed spells and features. But hey, here we are.
