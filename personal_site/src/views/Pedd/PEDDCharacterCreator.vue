@@ -1,10 +1,8 @@
 <template>
     <section class="section bg-black-transparent-0p3">
-        <Links />
-
         <h1 class="main-title">P.E.D.D.<small style="font-size: 75%;"> - Character Creator</small></h1>
-
-
+        
+        <Links />
 
         <div class="main-text inset">
             <CharacterCreator />

@@ -422,19 +422,21 @@ Many creatures have Natural Armour, and so might you through strange Powers. Nat
 Cover is functionally unchanged from 5e, but translates like so. Cover is a bonus to your Defence, a +2 for 'Half Cover' and a +5 for 'Three Quarters Cover'. This is independent of Armour and Evasion, so consider it part of your Base Defence. Additionally, these bonuses apply to Reflex Saves as well, just as cover applies to Dexterity Saves in 5e.
 
 ### Conditions
-The following are changes and additions to 5e's conditions (I will in time port all the conditions over including an overhaul of exhaustion)
+The following are changes and additions to 5e's conditions (I will in time port all the conditions over including an overhaul of exhaustion).
+
+Note that durations have been separated from Conditions, so every condition, when inflicted, should also state their duration (1 Round, 1 hour etc.). If a Condition is inflicted that Round, if necessary, roll Initiative to see if the condition applies before or after the target's actions.
 
 - **Bloodied** - A fan favourite, enemy characters when they fall below half health enter the "Bloodied" condition. This often means their behaviour, tactics and even powers may change for the easier or the much, much harder. Players also get to know that the target is below half health. Alternatively, on monsters that have 2 to 3 wounds, its the condition after 1 wound.
 - **Charmed** - unless otherwise stated, a charmed character considers you an ally and will heed your commands, which you can give freely, to the best of its ability. However it will not obey commands that are against its interests. If it is an intelligent character, you can attempt to persuade or otherwise convince them to obey, or that their interests lie elsewhere. For example, a charmed character will not attack another they consider an Ally, but depending on the situation, they may be persuaded to no longer consider the other character an ally.
-- **Flanked** - replacing the popular alternate rule of 5e, when you are the one in an Engagement who the foe isn’t Engaging, you have Advantage on your weapon attack rolls. You cannot flank a character 2 or more sizes larger than you.
+- **Flanked** - when you are the one in an Engagement who the foe isn’t Engaging, you have Advantage on your weapon attack rolls. You cannot flank a character 2 or more sizes larger than you.
 - **Frightened** - A Frightened character has Disadvantage on Ability checks and Attack rolls while the source of its fear is within line of sight. If it chooses to Move, the character must move away, or otherwise out of line of sight, from the source of its fear. The character doesn’t have to move into obviously dangerous ground, such as a fire or a pit.
-- **Immobilised** - a "new" condition that is just short hand for the often stated "A creature's speed becomes 0, and it can't benefit from any bonus to its speed". In addition the target must use its Stationary Defence.
+- **Immobilised** -the target character's Speed becomes 0, and it can't benefit from any Bonus to its Speed. Additionally, the target must use its Stationary Defence.
 - **Incapacitated**
-  - The target character is Immobilised
-  - The target character cannot take Actions or Bonus Actions.
+  - The target character is Immobilised.
+  - The target character is Stunned.
   - The target character automatically fails Fortitude and Reflex saves.
   - Attack rolls against the target character have Advantage.
-- **Stunned** - you cause a target character to be Incapacitated for the Round.
+- **Stunned** - the target character cannot take Actions or Bonus Actions.
 
 The following enviromental damage rules are updated and rolled into Conditions of the corresponding name:
 - **Burning** - A character burns each Round. They take 1d6 fire damage at the start of the Round, and can take an Action to extinguish themselves. Unless another DC is stated, it is a DC 8 Reflex save to end the Burning condition.

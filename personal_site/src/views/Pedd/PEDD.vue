@@ -1,5 +1,5 @@
 <template>
-    <PeddPage md="pedd" subtitle="Pete's Edition of Dungeons & Dragons"/>
+    <PeddPage md="pedd"/>
 </template>
   
 <script setup>

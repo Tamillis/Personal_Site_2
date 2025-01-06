@@ -1,40 +1,30 @@
-## My 5e Overhaul
+## Pete's Edition of Dungeons and Dragons
 
 > This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.
 
-"One D&D", sorry "5.5" now, oh no wait its D&D 5e (2024) which I think is impresively an even worse name, is coming and Wizards of the Coast really put their PR foot in it with the licensing changes so we're all ready to jump ship. I instead find myself remaking the ship, taking what I think works well, and changing, exchanging and adding in what I would like it to have. So if I were to make a 6th edition of a fashion that suited my tastes and allowed me to explore, reformulate and refine areas of mechanics in which I personally have an interest, while keeping much the rest the same, this would be that. A "Pete's Edition of Dungeons & Dragons", you might say.
+### My 5e Overhaul
+~"One D&D"~, sorry ~"5.5"~ now, oh no wait its D&D 5e (2024), which I think is impresively an even worse name, ~is coming~ has come. Let me start that again. Wizards of the Coast really put their PR foot in it with the OGL licensing changes (that they have also back-pedalled on so, yay for backlash I suppose. I mean, I'm using the CC-BY so who am I to complain?) and we were all ready to jump ship, although fair is fair with the aforementioned CC-BY licensing for the 5e SRD and the 2024 relaunch itself seems to be well received.
 
-Frankly, by now, this is less an edition of D&D 5e, and more a total overhaul or, in other words, just my own heavily-inspired heroic fantasy roleplaying system with (for now) borrowed spells and features. But hey, here we are.
+I, however, found myself remaking the ship, taking what I thought worked well, and changing, exchanging and adding in what I would like the game to have. Eventually I found myself having slipped well down the slope, and that my "5.75e" had become almost its own system entirely, with only some bells and whistles being the same as the 5e that birthed it. Such is tinkering, I suppose. I'd asked myself, if I were to make a 6th edition of a fashion that suited my tastes and that allowed me to explore, reformulate and refine areas of mechanics in which I personally have an interest, while keeping as keeping as much as I could the same (oh how I failed on that front), this would be that. A "Pete's Edition of Dungeons & Dragons", you might say.
 
-In addition to mechanics that I personally find interesting and a redo of the maths, a lot of the changes I've made are minor tweaks I've done over the years for new player friendliness. Many times now, I've found myself the DM for a group of newbies who I've coaxed into the hobby or given at last an outlet for their pent-up interest, and these changes better enable newer folks to enjoy the hobby without needing to work their way past legacy systems and jargon. While some changes will add complexity, all are done with new players in mind as well, and all of PEDD is written with that understanding. So apologies to veterans if it feels like I'm belabouring the point.
+Frankly, by now, this is less an updated edition of D&D 5e, and more a total overhaul or, in other words, just my own heavily-inspired heroic fantasy roleplaying system with familiar spells and features lifted from 5e. But hey, here we are. Seeing as I keep getting more and more serious about this little side project, I've started (and please don't sue me on this front, I really have only just started) implementing the legal-use of the 5e SRD. That means that there are probably chunks of D&D 5e that I've lifted that are not strictly part of the SRD and so need to be re-imagined in order to be compliant. I'm getting there.
 
-Taking the content of the Fifth Edition as a base, PEDD applies changes in four major categories: 
-- [Character Creation](/PEDD/character-creation) - a rework of the character creation system and core ability scores.
-- [Skills](/PEDD/skills) - a condensation and rework of the skill & proficiency systems, with a particular overhaul of how weapons are used.
-- [Power Progression](/PEDD/powers) - abolishment of the class and levelling system (including updates to nearly all features, feats and spells) which was the impetus behind this whole project.
+In addition to mechanics that I personally find interesting and a redo of the maths (see Flat Maths below), a lot of the changes I've made are minor tweaks I've done over the years for new player friendliness. Many times now, I've found myself the DM for a group of newbies who I've coaxed into the hobby or given at last an outlet for their pent-up interest, and these changes better enable newer folks to enjoy the hobby without needing to work their way past legacy systems and jargon. While some changes will add complexity, all are done with new players in mind as well, and all of PEDD is written with that understanding. So apologies to veterans if it feels like I'm belabouring the point.
+
+### Core Changes to 5e
+Taking the content of the Fifth Edition as a base, PEDD applies changes in four major categories:
+- [Character Creation](/PEDD/character-creation) - a rework of the character creation system and core ability scores. This has ballooned, as I'm sure you can imagine, to basically lead to a rewrite of the core systems of D&D. It is very much not the case that PEDD is backwards compatible with 5e (though conversion guides are present).
+- [Power Progression](/PEDD/powers) - abolishment of the class and levelling system (including updates to nearly all features, feats and spells) which was the impetus behind this whole project. Levels are gone, experience is a thing of the past and an emphasis on organic growth with "Powers in training" replace it.
 - [Combat](/PEDD/combat) - a rework of the action economy and combat to increase table-engagement, speed up & simplify the work of combat and yet also enable it to be more tactical.
+- [Skills](/PEDD/skills) - a condensation and rework of the skill & proficiency systems, with a particular overhaul of how weapons are used.
 
-While this is now a complete overhaul of base 5e, anything not mentioned is not changed from the 5e ruleset as while vast swathes of the game have been affected, the bones are still D&D 5e and you know what, that’s OK. It's a good base, and one we are all familiar with and that does a damn fine job, and by extending it, it means there's no need for me to repeat good material.
+Since then, Magic, Equipment, Spells and some work-in-progress sections like Crafting and Patrons, compromise PEDD.
 
-Note that all in-game terms as defined in PEDD are capitalised, like 'Action', and that a corresponding entry in the Index (a WIP) can be quickly found, but not necessarily all capitalised words are in-game terms. If I get the implementation going, each term's index entry will be quickly visible via pop-up.
+While this is now a complete overhaul of base 5e, anything not mentioned is not changed from the 5e ruleset (namely, Game Mastering) as while vast swathes of the game have been affected, the bones are still D&D 5e and you know what, that’s OK. It's a good base, and one we are all familiar with and that does a damn fine job, and by extending it, it means there's no need for me to repeat good material.
 
-### Thoughts on Pedd
-Having played a recent game for a group of newbies I've noticed that there is *still* a lot of up-front work even with the presentation of cards for easy pick-and-mix character creation. 
+Note that all in-game terms as defined in PEDD are capitalised, like 'Action', and that a corresponding entry in the Index (a WIP) can be quickly found, but not necessarily all capitalised words are in-game terms. If I get the implementation going, each term's index entry will be quickly visible via pop-up, automatic highlighting etc.
 
-The main issue was with the presentation and determination of stats, which makes me want to simplify them. In retrospect, I've ended up with a system of 11 Stats! 15 (!) if you count Health, Defence, Speed and Initiative, which in a way my players did. They're all just terms given the same amount of attention to them. Which, to be fair, is a bit mental. If you get really gnarly, you can add Armour and Base Defence in there too. 
-
-As such I've removed all non-stat increases from the racial options (so resistances are purely derived), I've axed initiative (to be determined by Dex / Per depending on the context pre-fight / whatever the roll-off should be dictated by). Defence complexity is intended so that's staying. Base Health, Speed and Size are unchanged, tacked on to race as really that's all they are anyway. Evasion was given its own name to help diffentiate it from Reflexes as a shorthand for "reflexes value capped by armour and a minimum of 0" but that sort of just didn't work with new folks oddly enough. I'll try using just Reflexes next and see if that works out better. At the very least in needs to be de-emphasised.
-
-On an unrelated note, one was to communicate the ideas behind the Primary Stats are the following schema of worldy-interaction: 
-| - | Direct | Indirect | Passive |
-| --- | --- | --- | --- |
-| **External** | Acc. | Per. | Ref. |
-| **Liminal** | Str. | Dex. | Fort. |
-| **Internal** | Cha. | Int. | Will. |
-
-This helps delineate between the potentially confusing Dexterity and Accuracy, Dexterity and Reflexes, and Strength and Fortitude. 
-
-Strength and Dexterity can be seen as two very different ways to physically interact with the environment: brute force and subtlety: flow and redirection. 
+Please remember that the 5e SRD is intended to be this base, but I am in the process of making sure all lifted material comes strictly from there.
 
 ### Flat Maths
 A large part of the rewrite focuses on getting the maths right for the sweeping changes being made. It does this by making the maths "flat". This makes it easier to predict and interpret, and aids with the level-less design. It also has the added benefit of making something that was dangerous, always dangerous. Flat Maths means nothing "falls off".
@@ -64,15 +54,50 @@ DC's are relatively unchanged, but again become more consistant and easier to re
 
 You'll note that the numbers don't progress "cleanly" such as 5, 10, 15, 20... etc. That's because these numbers have been calculated rather than thrown out there as a target or rough guide. Hopefully as I test the system, I can adjust these numbers to reflect not just predictions, but empirical results.
 
-### Where's Wisdom?
-Generally speaking wisdom has been removed, with all of the D&D weirdness about 'connection' and 'perception' being part of wisdom, even though most people use wisdom like willpower, and it just generally having a very poorly defined and understood area of concern. It gets especially odd when many people's definitions of wisdom start to sound a lot like Intelligence, such as having the wherewithal to notice something isn't real but is in fact an illusion. Which the game itself calls an Intelligence save!
+### Stat Changes - Where's Wisdom?
+The first thing in Character Creation you will notice are the changed Stats. The 6 stats of D&D are so iconic they've become ubiquitous, appearing in systems that frankly do not need them. This has highlighted their idiosynchrosies and pitfalls time and again, and changing these was something I just couldn't resist. I've griped about them to my friends often enough, they wouldn't be surprised by this change. This was also the beginning of the slide down the slippery slope to full overhaul.
 
-To address these issues, I've split wisdom in twain. Willpower is willpower, everyone gets that. The coverage of wisdom over connections, in terms of human relations, and empathy is now under Charisma, and perception is under the new Stat Perception. Connection to divine power is covered by Faith, and to primal power via the unrelated-to-the-character Verdance table.
+PEDD's stats are (and their Raison D'Etre):
+- **Accuracy** : the ranged weapon attack stat as well as a 'move with precision' stat. Core stats should reflect core interactions, and ranged attacks (especially in my fire-arms based settings) are one of those. It is also a way to break up Dexterity, which has long been known to be over-tuned.
+- **Perception** : as the most used skill and a core interaction, and something that ought to represent a facet of a character, it ought to be a stat too. It replaces the "sensing" aspect of Wisdom as well.
+- **Strength** : unchanged, but includes most situations Constitution would be used actively (such as with endurance)
+- **Dexterity** : re-focused as the stat used in feats of adroitness and skill.
+- **Charisma** : unchanged but includes Wisdom's old domain of empathy and human-relations
+- **Intelligence** : unchanged
 
-This does leave the window open for those hankering for a sense of “wise”, as in an individual who has a broad body of experience to call upon and errs on the side of patience. Characters still have the various Knowledge skills, and there is now the "Learned" Power for wisdom in the sense of being broadly knowledgeable, educated, well-read, etc., and the “Wisened” background that is wisdom in the sense of a wide body of practiced wisdom coming from age and life experience; the non-academic sage. It is also, I find, mostly simply a matter of role-play.
+These 6 stats are combined to make the 3 Resistances:
+- **Reflexes** (Accuracy + Perception) : one's ability to avoid danger with accurate movements and seeing attacks coming. This also means Dexterity is not used in Defence calculations (by default).
+- **Fortitude** (Strength + Dexterity) : one's ability to power through bodily harms from the combination of the power and capability of their body. Replaces Constitution.
+- **Willpower** (Charisma + Intelligence) : one's ability to overcome mental hardship, through both aspects of their mentality.
+
+A better and more in-depth explanation can be found in [PEDD Character Creation](/PEDD/character-creation#Statistics).
+
+Generally speaking wisdom has been removed, with all of the D&D weirdness about 'connection' and 'perception' being part of wisdom, even though most people use wisdom like willpower, and it just generally having a very poorly defined and understood area of concern confusing veterans and newbies alike for decades. It gets especially odd when many people's definitions of wisdom start to sound a lot like Intelligence, such as having the wherewithal to notice something isn't real but is in fact an illusion. Which the game itself calls an Intelligence save!
+
+To address these issues, I've split wisdom in twain. Willpower is willpower, everyone gets that. The coverage of wisdom over connections, in terms of human relations and empathy, is now under Charisma, and perception is under the new Stat Perception (which also handily stops Perception being the most-important-adventuring-skill). Connection to divine power is covered by Faith, a secretive seventh Stat for those to whom it matters, and to primal power via the unrelated-to-the-character Verdance table.
+
+This does leave the window open for those hankering for a sense of “wise”, as in an individual who has a broad body of experience to call upon and errs on the side of patience. Characters still have the various Knowledge skills, and there is now the "Learned" Power for wisdom in the sense of being broadly knowledgeable, educated, well-read, etc., and the “Wisened” background that is wisdom in the sense of a wide body of practiced wisdom coming from age and life experience; the non-academic sage. It is also, I find, mostly simply a matter of role-play. Stop me if you have heard of a high-wisdom character who's player hasn't been capable of acting wisely?
+
+### Retrospectives on PEDD
+Having played a recent game for a group of newbies I've noticed that there is *still* a lot of up-front work even with the presentation of cards for easy pick-and-mix character creation.
+
+The main issue was with the presentation and determination of stats, which makes me want to simplify them. In retrospect, I've ended up with a system of 11 Stats! 15 (!) if you count Health, Defence, Speed and Initiative, which in a way my players did. They're all just terms given the same amount of attention to them. Which, to be fair, is a bit mental. If you get really gnarly, you can add Armour and Base Defence in there too.
+
+As such I've removed all non-stat increases from the racial options (so resistances are purely derived), I've axed initiative (to be determined by Dex / Per depending on the context pre-fight / whatever the roll-off should be dictated by). Defence complexity is intended so that's staying, though player's are encouraged to note their typical 'Defence', when armoured and not flat-foot. Base Health, Speed and Size are unchanged but de-emphasised, now tacked on to race as really that's all they are anyway. Evasion was given its own name to help diffentiate it from Reflexes as a shorthand for "reflexes value capped by armour and a minimum of 0" but that sort of just didn't work with new folks oddly enough. I'll try using just Reflexes next and see if that works out better. At the very least in needs to be de-emphasised.
+
+On an unrelated note, one way to communicate the ideas behind the Primary Stats are the following schema of worldy-interaction: 
+| - | Brute Force | Subtle | Reactive |
+| --- | --- | --- | --- |
+| **External** | Acc. | Per. | Ref. |
+| **Surface** | Str. | Dex. | Fort. |
+| **Internal** | Cha. | Int. | Will. |
+
+This helps delineate between the potentially confusing Dexterity and Accuracy, Dexterity and Reflexes, and Strength and Fortitude. 
+
+Strength and Dexterity can be seen as two very different ways to physically interact with the environment: brute force and subtlety: flow and redirection. 
 
 ## Miscellaneous Changes
-Changes to D&D 5e that don't fit in one of the four major categories above.
+Changes to D&D 5e that don't fit in one of the major categories above. As PEDD has grown, this section has shrunk as what was here, has now become their own sections.
 
 ### Characters, Creatures and Monsters
 Instances of 'creature' are updated to 'character' as generally the game is character focused and the clearer language helps. All monsters, beasts etc. do count as characters in this instance. However there is also a greater, clearer, emphasis on so-called 'monster types' as well, and are referenced in certain Powers. They're the (slightly expanded and rejigged) following categories known as Character Types:

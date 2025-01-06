@@ -27,7 +27,7 @@ If I'm going to change something as fundamental as attributes, I might as well s
 This does also imply a future change to spells with pretty much the same approach (remove, combine and translate), but we'll get to that, and whether and by how much it would be necessary, later.
 
 #### Power Sets
-An idea for Power rewriting is to guide myself by organising Powers under themed Sets (no totally not classes). A set may be a tree, an inverse tree, or just a grouping. Each set can then have a tag to help navigation and discovery of Powers.
+An idea for Power rewriting Powers is to guide myself by organising Powers under themed Sets (no totally not classes). A set may be a tree, an inverse tree, or just a grouping. Each set can then have a tag to help navigation and discovery of Powers.
 
 - Focus Set - Powers for enhancing tactical actions and Focus. Note, put certain tactical actions into this.
 - Patronage Set - for Pact Magic and friends
@@ -36,7 +36,7 @@ An idea for Power rewriting is to guide myself by organising Powers under themed
 - Powerful - name to be confirmed. The "level up" set. These are the powers that in a rather absolute sense improve character power, so combining them under one tag allows one "Powerful" Power to be taken per X Powers without overlap. Those would be access to higher level spells, more Health, and Extra Attack. Also create "Heavy Attack" as a foil to Extra Attack: heavy attacks deal twice the damage when using Strength, extra attacks allow you to do more than one attack per action when using Dexterity / Accuracy. Also an "Empowered Cantrips" Power to replace 5th/11th/17th character level power bump.
 
 #### Power Requirements
-On an unrelated note, I've sat down to set out the framework for Power Requirements, so it can be programmed for a proper build system be built, where Players only see the powers they qualify for. (The character creator also needs to factor in changes to a character caused by Powers, such as skills, expertise marking, Stat increases etc, which means that when deselecting a Power, first the new state must be checked to see if the current powers still qualify and if invalid, ignore the deselect. Or better yet, display in some way that the power is not deselectable).
+On an unrelated note, I've sat down to set out the framework for Power Requirements, so it can be programmed for a proper build system be built, where Players only see the powers they qualify for (and to have fun features like a character randomizer that actually produces legal results). The character creator also needs to factor in changes to a character caused by Powers, such as skills, expertise marking, Stat increases etc, which means that when deselecting a Power, first the new state must be checked to see if the current powers still qualify and if invalid, ignore the deselect. Or better yet, display in some way that the power is not deselectable.
 
 Note: mark all Stat-boosting & skill granting Powers with that data in ther json for the character creator to read out
 
@@ -66,6 +66,9 @@ Powers are “in-training” before coming online, to encourage roleplay of skil
 
 The amount of time needed for a Power is thematic, and depends on the pace of the game being played, your table's position on the arcade-to-simulation scale, and of course the Power itself. Many PEDD Powers also refer to being able to learn other Powers at an "increased rate". By default you can think of this as halving the amount of time, though again it depends on the table and style of play at hand.
 
+As a guide, though this is not in any way implemented yet, Powers will have a "training" header that gives two key bits of information: the intensitiy of the training required and the length. As a guide I envision 3 stages of intensity: a power that requires full time study (think like a 9-5), a power that requires part-time study (such as over the weekend), and powers that can be learnt in a hobby-like fashion, just an hour or so a day. Lengths are fairly self explanatory, at the described intensity, how long do they take? A day? A month? A year? The DM and table are encouraged to fluff this number as approriate to the Power, the character and the situation, and of course, for what is fun to play.
+
+One aspect of the intention behind the training design is that a character can have multiple powers "in training" at once, based on the different levels of intensity. There's no reason a character couldn't be training 9-5 on their body to earn the Statistic Increase Power with the goal of improving their Strength, whilst also drilling the weekends to hone your soothing music to train 'Song of Rest', and during a quiet hour each day work on your language skill to pick up an 'Extra Language'.
 
 ### Tags
 Powers come with tags for ease of perusal and understanding. <a id="toggle-tags">Click here for explanation</a>:

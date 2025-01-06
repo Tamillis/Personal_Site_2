@@ -38,7 +38,7 @@
         },
         "tenaciousWill": "You gain proficiency in Willpower Saves.",
         "powers": [
-            "Extra Language",
+            "Extra Childhood Language",
             "Prodigy",
             "Natural Aptitude",
             "Determination",
@@ -253,7 +253,7 @@
         "lucky": "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die. You must use the new result, even if it is a 1.",
         "brave": "You have advantage on saving throws against being Frightened.",
         "powers": [
-            "Extra Language",
+            "Extra Childhood Language",
             "Fleet of Foot",
             "Squat and Nimble",
             "Naturally Stealthy",
@@ -304,7 +304,7 @@
         "powers": [
             "Keen Senses",
             "Fey Ancestry",
-            "Extra Language",
+            "Extra Childhood Language",
             "Darkvision",
             "Prodigy",
             "Drow Magic",
@@ -362,7 +362,7 @@
         "keenHearingAndSmell": "You add your Bonus to any Perception checks for hearing or smell, when no Skill is in use.",
         "redRage": "Even now your people bear Grummsh' mark, and though any tuskman can throw off the yolk, sometimes they choose to indulge. In addition to your Racial Power choices, you can also take either: Adrenaline Rush, Menacing, Relentless Endurance, Savage Attacks or Savage Magic.",
         "powers": [
-            "Extra Language",
+            "Extra Childhood Language",
             "Keen Senses",
             "Stout Resiliance",
             "Natural Camouflage",
@@ -529,7 +529,7 @@
         "elementalHeritage": "Choose one of the four elements that is your heritage: Earth, Air, Fire, Water. Depending on your heritage you gain the following benefits:\n\n**Earth**\n - Earth Walk - You can move across difficult terrain without expending extra movement if you are using your walking speed on the ground or a floor.\n - Darkvision - You can see in dim light within 60ft of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of grey.\n - Bludgeoning Resistance - You have resistance to non-magical bludgeoning damage.\n\n**Air**\n - Fleet of Foot - Your walking speed is 35ft.\n - Unending Breath - You can hold your breath indefinitely while you’re not incapacitated.\n - Lightning Resistance - You have resistance to lightning damage.\n\n**Fire**\n - Nimble - You can move through the space of any character that is of a size larger than yours, and you gain proficiency in Acrobatics or Athletics (your choice). You have Advantage on Athletics or Acrobatics (depending on which you chose) checks to escape being Grappled.\n - Unending Warmth - You never feel cold or suffer from a cold environment, and you're always feverish to the touch.\n - Fire Resistance - You have resistance to fire damage.\n\n**Water**\n - Darkvision - You can see in dim light within 60ft of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of grey.\n - Slashing Resistance - You have resistance to non-magical slashing damage.\n - Amphibious - You can breathe air and water.",
         "powers": [
             "Keen Senses",
-            "Extra Language",
+            "Extra Childhood Language",
             "Prodigy",
             "Arcane Aptitude",
             "Mana",
