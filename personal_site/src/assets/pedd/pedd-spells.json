@@ -18,6 +18,16 @@
         "target": "Self-centered",
         "range": "5ft",
         "desc": "You utter a fell word, and decaying power erupts from you. Each Character of your choice that you can see within range of you must succeed on a Fortitude saving throw or take 1d6 necrotic damage."
+    },
+    {
+        "name": "Word of Warding",
+        "power": "Cantrip",
+        "sphere": ["Arcane"],
+        "school": "Abjuration",
+        "casting": "Action, V S",
+        "target": "Self",
+        "range": "Touch",
+        "desc": "You utter a word of power and runes of warding slither across your skin. The first attack that deals bludgeoning, slashing or piercing damage against you until the end of the next Round is halved as if you had Resistance"
     }
 ]
 

@@ -735,7 +735,7 @@
             "roll-effecting"
         ],
         "preq": [],
-        "desc": "The accuracy of elves is legendary, especially that of elf archers and spellcasters. You have uncanny aim with attacks that rely on precision rather than brute force. Once per Short Rest, you have Advantage on a ranged weapon attack, or a ranged spell attack."
+        "desc": "The accuracy of elves is legendary, especially that of elf archers and spellcasters. You have uncanny aim with attacks that rely on precision rather than brute force. Once per Short Rest when you miss with a ranged weapon attack or ranged spell, you can re-roll and must keep the new roll."
     },
     {
         "name": "Empowered Spell",
@@ -885,7 +885,7 @@
             "utility"
         ],
         "preq" : ["Intelligence +1", "Alchemy Skill"],
-        "desc": "You are an expert at manipulating alchemy for use in combat and in the field.\n\n**Formula Book** - An alchemist keeps meticulous formulas for every item they can create. You have a book of formulas. This formula book contains the formulas for two low-grade alchemical items of your choice. You can copy formula you find into your formula book, spending 50gp per grade on the necessary experimentation and resources. If you take this power again, you invent 2 new formula of your choice including those of a grade above what you already have, and add them directly to your book.\n\n **Field Alchemy** - You've learned how to quickly and reliably produce alchemical products even while out in the field. At the end of a Long Rest, you spend some time to create unstable alchemical items that can be used over the course of the day. You don't need to attempt a Crafting check to do this if you use an alchemist's toolkit, and you ignore material requirements. Each item must be in your formula book. These items remain potent for 24 hours or until your next Long Rest, whichever comes first, unless the item has an even shorter shelf life, in which case that is kept.\n\nYou can Craft a number of alchemical items whose grade totals up to 4 + your Intelligence. If you take this Power again, add 4 to this value.\n\n**Acid Vial** - In addition to your formulas, you can always prepare the alchemical item 'Acid Vial'. This tiny glass flask contains volatile chemicals that can be used offensively in a pinch. The glass vial, when thrown like a bomb, deals 1d6 acid damage to a target within 20ft, or 60ft at Disadvantage, and 1 Scatter acid damage to any character within 5ft of the target if the attack roll would hit them."
+        "desc": "You are an expert at manipulating alchemy for use in combat and in the field.\n\n**Formula Book** - An alchemist keeps meticulous formulas for every item they can create. You have a book of formulas. This formula book contains the formulas for four low-grade alchemical items of your choice. You can copy formula you find into your formula book, spending 50gp per grade on the necessary experimentation and resources. If you take this power again, you invent 2 new formula of your choice including those of a grade above what you already have, and add them directly to your book.\n\n **Field Alchemy** - You've learned how to quickly and reliably produce alchemical products even while out in the field. At the end of a Long Rest, you spend some time to create unstable alchemical items that can be used over the course of the day, and you ignore material requirements. Each item must be in your formula book. These items remain potent for 24 hours or until your next Long Rest, whichever comes first, unless the item has an even shorter shelf life, in which case that is kept.\n\nYou can Craft a number of alchemical items whose grade totals up to 4 + your Intelligence. If you take this Power again, add 4 to this value.\n\n**Acid Vial** - In addition to your formulas and Field Alchemy, you can prepare and throw the alchemical item 'Acid Vial' as an Attack Action. This tiny glass flask contains volatile chemicals that can be used offensively in a pinch. The glass vial, when thrown like a bomb, deals 1d6 acid damage to a target within 20ft, or 60ft at Disadvantage, and 1 Scatter acid damage to any character within 5ft of the target if the attack roll would hit them."
     },
     {
         "name": "Fiendish Vigour",
@@ -1107,7 +1107,7 @@
         "preq": [
             "Fortitude +2"
         ],
-        "desc": "Your steadfast ability to take hits sees you through. When not wearing Medium or Heavy Armour, your Defence and Stationary Defence is calculated by your Base Defence (8 for Medium size) + your Foritude + your Armour. You can use a shield and still gain this benefit."
+        "desc": "Your steadfast ability to take hits sees you through. When not wearing Medium or Heavy Armour, instead of Reflexes, your Fortitude is used in your Defence calculations. You can use a shield and still gain this benefit."
     },
     {
         "name": "Health Increase",
@@ -1324,6 +1324,16 @@
             "History / Arcana / Religion Proficiency"
         ],
         "desc": "You gain Expertise in History, Arcana and Religion if you had Proficiency with each. As you gain Proficiency with each of these skills later, you also gain Expertise in them from Learned."
+    },
+    {
+        "name": "Lightning Reflexes",
+        "tag": [
+            "combat",
+            "focus",
+            "utility"
+        ],
+        "preq": [],
+        "desc": "You gain your Bonus to Initiative Contests. Additionally, when you spend 1 Focus, you instead add your Bonus x d6 to the roll."
     },
     {
         "name": "Lucky",

@@ -5,6 +5,7 @@
 		<h4>TODO:</h4> 
 <ul>
 	<li>See <a>/PEDD/Powers</a> for tweaks to how powers work. Multiple Power selection also TODO</li>
+	<li>Add Powers in training</li>
 	<li>Add Rolling functionality for attacks, spells, skills and stats</li>
 	<li>Add dynamic skill-downgrading</li>
 </ul>

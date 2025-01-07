@@ -1,74 +1,13 @@
 ## Powers
-In a move I've wanted to do since I've ever started tweaking 5e and messing around with my own RPG's, I introduce an abolishment of all classes and the system of levelling, replacing it with "Powers" (created from Features and Feats). The intent is to allow for any combination of Features to be allowed for all sorts of different and unique characters, and to replace levelling with a more story-driven Power by Power progression system, where characters discover, train in and then unleash Powers.
+In a move I've wanted to do since I've ever started tweaking 5e, I introduce an abolishment of all classes and the system of levelling, replacing it with "Powers" (created from D&D 5e SRD Features, Feats, Spells and from whole-cloth). The intent is to allow for any combination of Powers to be allowed for all sorts of different and unique characters, and to replace levelling with a more story-driven powers "In-Training" progression system, where characters discover, train in and then unleash Powers.
 
-A Power is, in the old parlance, a 'feature'; an ability of a character to do something extraordinary beyond the day-to-day ken of your normal person. Whether that be to do something but better, do something that was otherwise impossible or grant access to something in addition to usual routes, Powers - as the name implies - empower you to adventure!
+A Power is, in the old parlance, a 'feature'; an ability of a character to do something extraordinary beyond the day-to-day ken of your normal person. Whether that be to do something but better, do something that was otherwise impossible or grant access to something in addition to usual routes. Powers - as the name implies - empower you to adventure!
 
-Powers follow certain rules for their acquisition and use. Most Powers have Prerequisites that you must meet before taking them, with those with none being freely available to all. Certain Powers will be stronger than others, so they will key off of higher prerequisites such as Stats or the presence of other Powers. Many such "punchy" Powers also have the prerequisites “After n or more Powers”, meaning n number of other Powers must be taken before this Power can be taken again, or "Once every n<sup>th</sup> Power" which is the same again except the first investment of this Power can be taken immediately. This has nothing to do with other Powers that also have this prerequisite, so they may be "interleaved".
+Most Powers have Prerequisites that you must meet before taking them, with those with none being freely available to all. Certain Powers will be stronger than others, so they will key off of higher prerequisites such as Stats or the presence of other Powers. Many such "punchy" Powers also have the prerequisites “After N Powers”, meaning n number of other Powers must be taken before this Power can be taken, or "Every N<sup>th</sup> Power" which means the Power can be taken multiple times, but only after N other Powers have been taken. This has nothing to do with other Powers that also have this prerequisite, so they may be "interleaved".
 
-For example (as both Hardy and Hale are "Once every 4<sup>th</sup> Power" Powers), the following is a valid combination of Powers:
-1. Hardy I
-2. Hale I
-3. Second Wind
-4. Mariner
-5. Hardy II
-6. Hale II
-
-**Note**: Powers that allow you to take another Power such as Fighting Style's fighting-styles or Divine Domain's miracles do not count toward the number of Powers you have for prerequisite reasons. These natural sub-categories of Powers are tagged for ease of access.
+Natural sub-categories of Powers are tagged for ease of perusal.
 
 Powers taken more than once should be noted what "Rank" they are at; such as "Hale I" or "Hale IV", to show that they are technically two separate powers. Many Powers describe the differences that occur when the Power is taken more than once.
-
-### A Reflection on Powers
-Obviously, what I'd decided to do was translate the features of 5e as-is as much as possible: for the twin reasons of simplicity and familiarity. However seeing as PEDD is drifiting further and further from its point of origin, and now we have this pretty list of often rather fine grained powers with plenty of awkward prerequisites, odd benefits and often boxed in bizare categories, me thinks it is time to start making more serious changes.
-
-Primarily I'm inspired by another classless system I saw that also did away with any pretense at connecting to the old classes, but I wish to retain a much greater connection than that. It is simply that, more than anything, I wish to streamline some of the powers, bring them in line with my own sensibilities and implied setting, and explore some of my own ideas. By streamline, I do mean to remove as many Powers as possible by combining them, crunching them down and translating them into other aspects of the system (as already done with the Battlemaster Fighter into Tactical Actions).
-
-If I'm going to change something as fundamental as attributes, I might as well start changing features.
-
-This does also imply a future change to spells with pretty much the same approach (remove, combine and translate), but we'll get to that, and whether and by how much it would be necessary, later.
-
-#### Power Sets
-An idea for Power rewriting Powers is to guide myself by organising Powers under themed Sets (no totally not classes). A set may be a tree, an inverse tree, or just a grouping. Each set can then have a tag to help navigation and discovery of Powers.
-
-- Focus Set - Powers for enhancing tactical actions and Focus. Note, put certain tactical actions into this.
-- Patronage Set - for Pact Magic and friends
-  - Invocations - although it would be good to unwrap this set back up into patronage
-- Fighting Styles
-- Powerful - name to be confirmed. The "level up" set. These are the powers that in a rather absolute sense improve character power, so combining them under one tag allows one "Powerful" Power to be taken per X Powers without overlap. Those would be access to higher level spells, more Health, and Extra Attack. Also create "Heavy Attack" as a foil to Extra Attack: heavy attacks deal twice the damage when using Strength, extra attacks allow you to do more than one attack per action when using Dexterity / Accuracy. Also an "Empowered Cantrips" Power to replace 5th/11th/17th character level power bump.
-
-#### Power Requirements
-On an unrelated note, I've sat down to set out the framework for Power Requirements, so it can be programmed for a proper build system be built, where Players only see the powers they qualify for (and to have fun features like a character randomizer that actually produces legal results). The character creator also needs to factor in changes to a character caused by Powers, such as skills, expertise marking, Stat increases etc, which means that when deselecting a Power, first the new state must be checked to see if the current powers still qualify and if invalid, ignore the deselect. Or better yet, display in some way that the power is not deselectable.
-
-Note: mark all Stat-boosting & skill granting Powers with that data in ther json for the character creator to read out
-
-Note: for resource powers, when selected they need to flag that the associated powers have a cost of 1
-
-Note: many powers can be taken more than once. Make this possible.
-
-Note: Sorcerous Origin and Occult Spellcasting is a special case and needs proper handling. Mana becomes a required pick but retro-actively.
-
-Note: Powers that grant Skills at Expertise are marked with *, just Skill proficiency (no mark) or Skill proficiency or Expertise if already earned with ^
-
-Note: Skill/Stat increase choices need to be handled. Currently set as either using the "Any" keyword or an array of choices
-
-Note: Powers that can be taken multiple times that scale their prerequisites, the scaling needs to be machine readable in some way. Starting with RANK as a keyword (i.e. Dexterity +RANK).
-
-Prerequisite groupings:
-- {Power name}
-- {Stat name} {value}
-- {Name} Skill / {Name} Expertise
-- {Name} Cantrip / {Name} Spell
-- "Once every Nth Role Power"
-- "After N Role Powers"
-- One of (the above / separated / by / forward-slashes)
-
-### Powers In Training - (NOTE: add this to character creator)
-Powers are “in-training” before coming online, to encourage roleplay of skill acquisition. E.g. a character at the start of each session declares what Power/s they are training towards and when the when the group / DM feels its appropriate, characters gain that Power. Alternatively, play make indicate a certain Power a character should take next as a natural next progression.
-
-The amount of time needed for a Power is thematic, and depends on the pace of the game being played, your table's position on the arcade-to-simulation scale, and of course the Power itself. Many PEDD Powers also refer to being able to learn other Powers at an "increased rate". By default you can think of this as halving the amount of time, though again it depends on the table and style of play at hand.
-
-As a guide, though this is not in any way implemented yet, Powers will have a "training" header that gives two key bits of information: the intensitiy of the training required and the length. As a guide I envision 3 stages of intensity: a power that requires full time study (think like a 9-5), a power that requires part-time study (such as over the weekend), and powers that can be learnt in a hobby-like fashion, just an hour or so a day. Lengths are fairly self explanatory, at the described intensity, how long do they take? A day? A month? A year? The DM and table are encouraged to fluff this number as approriate to the Power, the character and the situation, and of course, for what is fun to play.
-
-One aspect of the intention behind the training design is that a character can have multiple powers "in training" at once, based on the different levels of intensity. There's no reason a character couldn't be training 9-5 on their body to earn the Statistic Increase Power with the goal of improving their Strength, whilst also drilling the weekends to hone your soothing music to train 'Song of Rest', and during a quiet hour each day work on your language skill to pick up an 'Extra Language'.
 
 ### Tags
 Powers come with tags for ease of perusal and understanding. <a id="toggle-tags">Click here for explanation</a>:
@@ -102,3 +41,54 @@ Powers come with tags for ease of perusal and understanding. <a id="toggle-tags"
 - **Utility** - a.k.a. a ribbon ability, some other effect that enhances who you are as a character and otherwise not fitting into the above non-pillar categories
 
 </section>
+
+### Powers In Training
+Powers are “in-training” before coming online, to encourage roleplay of skill acquisition. E.g. a character at the start of each session declares what Power/s they are training towards and when the when the group / DM feels its appropriate, characters gain that Power. Alternatively, play make indicate a certain Power a character should take next as a natural next progression.
+
+The amount of time needed for a Power is thematic, and depends on the pace of the game being played, your table's position on the arcade-to-simulation scale, and of course the Power itself. Many PEDD Powers also refer to being able to learn other Powers at an "increased rate". By default you can think of this as halving the amount of time, though again it depends on the table and style of play at hand.
+
+As a guide, though this is not in any way implemented yet, Powers will have a "training" header that gives two key bits of information: the intensitiy of the training required and the length. As a guide I envision 3 stages of intensity: a power that requires full time study (think like a 9-5), a power that requires part-time study (such as over the weekend), and powers that can be learnt in a hobby-like fashion, just an hour or so a day. Lengths are fairly self explanatory, at the described intensity, how long do they take? A day? A month? A year? The DM and table are encouraged to fluff this number as approriate to the Power, the character and the situation, and of course, for what is fun to play.
+
+One aspect of the intention behind the training design is that a character can have multiple powers "in training" at once, based on the different levels of intensity. There's no reason a character couldn't be training 9-5 on their body to earn the Statistic Increase Power with the goal of improving their Strength, whilst also drilling the weekends to hone your soothing music to train 'Song of Rest', and during a quiet hour each day work on your language skill to pick up an 'Extra Language'.
+
+### A Reflection on Powers
+Obviously, what I'd decided to do was translate the features of 5e as-is as much as possible: for the twin reasons of simplicity and familiarity. However seeing as PEDD is drifting further and further from its point of origin, and now we have this pretty list of often rather fine grained powers with plenty of awkward prerequisites, odd benefits and often boxed in bizare categories, me thinks it is time to start making more serious changes.
+
+Primarily, I'm inspired by another classless system I saw that also did away with any pretense at connecting to the old classes, but I wish to retain a much greater connection than that. It is simply that, more than anything, I wish to streamline some of the powers, bring them in line with my own sensibilities and implied setting, and explore some of my own ideas. By streamline, I do mean to remove as many Powers as possible by combining them, crunching them down and translating them into other aspects of the system (as already done with the Battlemaster Fighter into Tactical Actions).
+
+This does also imply a future change to spells with pretty much the same approach (remove, combine and translate), but we'll get to that, and whether and by how much it would be necessary, later. Which I have actually started work on, if only behind the scenes.
+
+### Power Sets
+An idea for Power rewriting Powers is to guide myself by organising Powers under themed Sets (no totally not classes). A set may be a tree, an inverse tree, or just a grouping. Each set can then have a tag to help navigation and discovery of Powers.
+
+- Focus Set - Powers for enhancing tactical actions and Focus. Note, put certain tactical actions into this.
+- Patronage Set - for Pact Magic and friends
+  - Invocations - although it would be good to unwrap this set back up into patronage
+- Fighting Styles
+- Powerful - name to be confirmed. The "level up" set. These are the powers that in a rather absolute sense improve character power, so combining them under one tag allows one "Powerful" Power to be taken per X Powers without overlap. Those would be access to higher level spells, more Health, and Extra Attack. Also create "Heavy Attack" as a foil to Extra Attack: heavy attacks deal twice the damage when using Strength, extra attacks allow you to do more than one attack per action when using Dexterity / Accuracy. Also an "Empowered Cantrips" Power to replace 5th/11th/17th character level power bump.
+
+#### Power Requirements
+On an unrelated note, I've sat down to set out the framework for Power Requirements, so it can be programmed for a proper build system be built, where Players only see the powers they qualify for (and to have fun features like a character randomizer that actually produces legal results). The character creator also needs to factor in changes to a character caused by Powers, such as skills, expertise marking, Stat increases etc, which means that when deselecting a Power, first the new state must be checked to see if the current powers still qualify and if invalid, ignore the deselect. Or better yet, display in some way that the power is not deselectable.
+
+Note: mark all Stat-boosting & skill granting Powers with that data in ther json for the character creator to read out
+
+Note: for resource powers, when selected they need to flag that the associated powers have a cost of 1
+
+Note: many powers can be taken more than once. Make this possible.
+
+Note: Sorcerous Origin and Occult Spellcasting is a special case and needs proper handling. Mana becomes a required pick but retro-actively.
+
+Note: Powers that grant Skills at Expertise are marked with *, just Skill proficiency (no mark) or Skill proficiency or Expertise if already earned with ^
+
+Note: Skill/Stat increase choices need to be handled. Currently set as either using the "Any" keyword or an array of choices
+
+Note: Powers that can be taken multiple times that scale their prerequisites, the scaling needs to be machine readable in some way. Starting with RANK as a keyword (i.e. Dexterity +RANK).
+
+Prerequisite groupings:
+- {Power name}
+- {Stat name} {value}
+- {Name} Skill / {Name} Expertise
+- {Name} Cantrip / {Name} Spell
+- "Once every Nth Role Power"
+- "After N Role Powers"
+- One of (the above / separated / by / forward-slashes)
