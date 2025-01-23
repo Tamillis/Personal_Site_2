@@ -2,13 +2,16 @@
 	<section>
 		<CharacterDisplay :player="player" :haveFaith="chosen.faith" @updateImgSrc="(src) => chosen.imgSrc = src" />
 
-		<h4>TODO:</h4> 
-<ul>
-	<li>See <a>/PEDD/Powers</a> for tweaks to how powers work. Multiple Power selection also TODO</li>
-	<li>Add Powers in training</li>
-	<li>Add Rolling functionality for attacks, spells, skills and stats</li>
-	<li>Add dynamic skill-downgrading</li>
-</ul>
+		<h4>TODO:</h4>
+		<ul>
+			<li>Custom Background 'any' stat and skill selectors</li>
+			<li>See <a>/PEDD/Powers</a> for tweaks to how powers work.</li>
+			<li>Power Ranks and the ability to take a Power more than once</li>
+			<li>Have Powers that grant stats, skills and other changes do so (in progress)</li>
+			<li>Add Powers in training section</li>
+			<li>Add Rolling functionality for attacks, spells, skills and stats</li>
+			<li>Add dynamic skill-downgrading</li>
+		</ul>
 		<button class="btn mb-1r" @click="copyUrl">Copy to clipboard</button>
 		<button class="btn" @click="chosen = blankCharacter">Reset</button>
 
@@ -41,12 +44,13 @@
 					:limit="((chosen.race == 'Half-Elf' || chosen.race == 'Tuskman') ? 3 : 2)"
 					@chosen="chooseRacialPowers" :key="`rp-${key}`" />
 			</div>
-		</section>
 
-		<section id="background-section" v-show="sections.background">
 			<Upbringing :chosenUpbringingSkills="[chosen.upbringingSkill1, chosen.upbringingSkill2]"
 				:chosenUpbringingLanguage="chosen.upbringingLanguage"
 				@upbringing="upbringing => chooseUpbringing(upbringing)" />
+		</section>
+
+		<section id="background-section" v-show="sections.background">
 
 			<p v-if="!chosen.background" style="color:orangered">Choose a background</p>
 			<Background :background="chosen.background" @backgroundChosen="(bg) => (chosen.background = bg)" />
@@ -75,7 +79,8 @@
 			</div>
 
 			<h3>Role Skills</h3>
-			<p>4 + your Intelligence ({{ player.intelligence }}) = {{ 4 + player.intelligence }}. It is wise to pick up some combat skills if you don't have enough yet.</p>
+			<p>4 + your Intelligence ({{ player.intelligence }}) = {{ 4 + player.intelligence }}. It is wise to pick up
+				some combat skills if you don't have enough yet.</p>
 			<SkillSelector :roleSkills="chosen.roleSkills" :otherSkills="otherSkills" :limit="4 + player.intelligence"
 				@skills="skills => (chosen.roleSkills = skills)" />
 

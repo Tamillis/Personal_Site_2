@@ -70,7 +70,7 @@ Dhis givz fxnetic speling dhx folxuing 24 letxr alfxbet (if yuu duu not caunt ii
 
 A, B, C, D, E, F, G, H, I, J, L, M, N, O, P, R, S, T, U, V, W, X, Y, Z
 
-Or, if yuu duu caunt dhx difthongz and daigrafs, an alfxbet ov 42 letxrz: dhi xbxv and:
+Or, if yuu duu caunt dhx difthongz and daigrafs, an alfxbet ov 42 letxrz: dhi xbxv and: 
 
 AA, AR, AU, CH, DH, EX, II, IX, NG, OO, OR, SH, TH, UU, UX, XR, XU, ZH
 
@@ -79,7 +79,7 @@ Ai duxnt, dhxu.
 ## Cxnvenshxnz
 It iz wxrth nxuting dhat dhx cxnvenshxnz ar jxst dhat, sxjesjxnz and not ruulz. Jxst az won haz an acsent wen spiicing, ai sii nxu riizxn won caant hav an acsent in raiting iidhxr. Az sxch, wot daixlect xv Inglish yuu beis yor spelingz of, wedhxr yuu ciip dhx rxutic r or not, yuuz silabic consxnxnts etsetrx iz xp tx yuu.
 
-Laic "Transissional Inglish [sic]", Fxnetic Speling yuuziz rxutisaizd British Inglish az dhx standard tx rait and iich wxrd iz ritxn az if it woz prxnaunst 'fuly', sxu not widh its diistrest form. Dhx thrii ecsepshxnz tx dhis ruul ar dhx wxrdz x, dhx/dhi and tx, insted ov dhexr strong prxnxsieishxnz xv ei, dhii and tuu.
+Laic "Transissional Inglish [sic]", Fxnetic Speling yuuziz rxutisaizd British Inglish az dhx standxrd tx rait and iich wxrd iz ritxn az if it woz prxnaunst 'fuly', sxu not widh its diistrest form. Dhx thrii ecsepshxnz tx dhis ruul ar dhx wxrdz x, dhx/dhi and tx, insted ov dhexr strong prxnxsieishxnz xv ei, dhii and tuu.
 
 Silabic consxnxnts ar not prxfxrd: insxrt an 'x' az xprxuprixt.
 

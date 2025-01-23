@@ -45,9 +45,6 @@ For any situations where the order of actions matters, the two (or more) charact
 So what can that one Action can do? Quite a lot more than 5e. Every character can perform Core Combat Actions and a variety of Tactical Actions. Note that many are keyed to "an Attack or Action", so if you have more than one attack, you can potentially take more than one "action" on your turn. Note there are several Powers that provide further and enhanced Tactical Actions.
 
 #### Core Combat Actions
-<a id="toggle-core-actions">Click here to show.</a>
-
-<section id="core-actions-section" class="hidden">
 
 - **Attack** - as an Action, you make your weapon or spell attack/s against characters in reach / range. One attack Action may involve a number of Attacks on a number of targets depending on the weapon, spell or some Power such as Extra Attack. If multiple targets are all within reach / range and you have multiple Attacks as part of the Attack Action, you may freely choose who to direct attacks at, and make Attack Rolls per Attack. As in 5e, this is the distinction between the "Attack Action" and specific "Attacks", as well as "Weapon Attacks" and "Spell Attacks". Unless otherwise stated, full attack action attacks are with lethal intent (see Non-Lethal Strike).
   - **Unarmed Strike** - in PEDD, this simply means a weapon Attack using Body, instead of a traditional weapon.
@@ -60,13 +57,7 @@ So what can that one Action can do? Quite a lot more than 5e. Every character ca
 - **Hide** - as an Action, you make a Stealth check in an attempt to hide from those you are obscured from (in 3/4's cover or out of line of sight), versus a DC of 15. If you succeed, you gain the benefits of being Invisible: Attacks against you have Disadvantage, and your Attacks have Advantage. When you make an Attack, you are no longer hidden. If you or others Move such that you are no longer obscured, you are no longer Hidden from them.
 - **Move** - move your Speed along a path of your choice towards a target. See [Move Action](#move-action) for details.
 
-</section>
-
 #### Tactical Actions
-
-<a id="toggle-tactical-actions">Click here to show.</a>
-
-<section id="tactical-actions-section" class="hidden">
 
 - **Attack of Opportunity** - if an enemy you're Engaged with moves away from you, you can spend 1 Focus to make an attack on them for free, after which they have moved away and are no longer Engaged with you for that Round.
 - **Coup de Grace** - when you make a Weapon Attack against an Incapacitated target, don't roll for Damage, instead take each dice you would roll (if any) to be the maximum result.
@@ -79,8 +70,6 @@ So what can that one Action can do? Quite a lot more than 5e. Every character ca
 - **Parry** - as an Attack or Action, if your weapon has the Parry Property and when another character damages you with a melee attack, you can reduce the damage by your Dexterity and proficiency Bonus with the weapon (if any), to a minimum of 0, if you succeed at a weapon skill check vs the enemy's passive Reflexes.
 - **Power Strike** - when you hit a character with a weapon attack, you can spend 1 Focus to add d6 to the damage roll.
 - **Shove** - as an Attack or Action you attempt to make an Enemy Prone or move 10ft in a direction of your choice. You make a Strength check against their passive Fortitude.
-
-</section>
 
 ### Move Action
 The Move Action sees a character move a distance in feet equal to their Speed towards a stated target. This can be in a straight line or other path of their choice, so long as the path is traversible. Like all Actions, they are declared at the same time as everyone else, however they're unique in that they're only resolved at the end, after all other Actions and Engagements (see Engagement).

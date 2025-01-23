@@ -14,7 +14,7 @@ Powers come with tags for ease of perusal and understanding. <a id="toggle-tags"
 
 <section id="tags-section" class="hidden"> 
 
-- **Racial** – Powers that can only be gained from being a certain Race, representing in-born racial abilities that you couldn't gain no matter how much you train, and can only be taken during character creation. Some Powers a race can choose from as a Racial power are Background Powers, as conceivably any race if in a position (i.e. background) to study them could do so and could learn them, then they ought not be racial powers.
+- **Racial** - Powers that can only be gained from being a certain Race, representing in-born racial abilities that you couldn't gain no matter how much you train, and can only be taken during character creation. Some Powers a race can choose from as a Racial power are Background Powers, as conceivably any race if in a position (i.e. background) to study them could do so and could learn them, then they ought not be racial powers.
 - **Background** - so called "simpler" Powers that can be taken as part of your Background, the skills and abilities of your childhood and professional life before becoming an adventurer
 - **Cantrip** - a Power that grants the ability to use a cantrip without needing Spellcasting
 - **Combat** / **Exploration** / **Social** / **Universal** - used in the respective pillar of play or in all. Only Powers that belong to a Resource aren't labelled with one.
@@ -70,19 +70,14 @@ An idea for Power rewriting Powers is to guide myself by organising Powers under
 #### Power Requirements
 On an unrelated note, I've sat down to set out the framework for Power Requirements, so it can be programmed for a proper build system be built, where Players only see the powers they qualify for (and to have fun features like a character randomizer that actually produces legal results). The character creator also needs to factor in changes to a character caused by Powers, such as skills, expertise marking, Stat increases etc, which means that when deselecting a Power, first the new state must be checked to see if the current powers still qualify and if invalid, ignore the deselect. Or better yet, display in some way that the power is not deselectable.
 
-Note: mark all Stat-boosting & skill granting Powers with that data in ther json for the character creator to read out
-
-Note: for resource powers, when selected they need to flag that the associated powers have a cost of 1
-
-Note: many powers can be taken more than once. Make this possible.
-
-Note: Sorcerous Origin and Occult Spellcasting is a special case and needs proper handling. Mana becomes a required pick but retro-actively.
-
-Note: Powers that grant Skills at Expertise are marked with *, just Skill proficiency (no mark) or Skill proficiency or Expertise if already earned with ^
-
-Note: Skill/Stat increase choices need to be handled. Currently set as either using the "Any" keyword or an array of choices
-
-Note: Powers that can be taken multiple times that scale their prerequisites, the scaling needs to be machine readable in some way. Starting with RANK as a keyword (i.e. Dexterity +RANK).
+##### TODO
+- mark all Stat-boosting & skill granting Powers with that data in ther json for the character creator to read out
+- for resource powers, when selected they need to flag that the associated powers have a cost of 1
+- many powers can be taken more than once. Make this possible.
+- Sorcerous Origin and Occult Spellcasting is a special case and needs proper handling. Mana becomes a required pick but retro-actively.
+- Powers that grant Skills at Expertise are marked with *, just Skill proficiency (no mark) or Skill proficiency or Expertise if already earned with ^
+- Skill/Stat increase choices need to be handled. Currently set as either using the "Any" keyword or an array of choices
+- Powers that can be taken multiple times that scale their prerequisites, the scaling needs to be machine readable in some way. Starting with RANK as a keyword (i.e. Dexterity +RANK).
 
 Prerequisite groupings:
 - {Power name}

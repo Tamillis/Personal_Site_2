@@ -24,31 +24,21 @@ The plane is embellished with the channelled and stolen threads of the elements,
 
 **Part of the plane, part of the Creed** – whenever a character breaks the Creed, as written in the Book of Gehenna at the Moot, they are marked with a red hand until the next score-and-one of sunrises. Any attack against a marked creature is made at Advantage and incurs no Sin.
 
-I)	The Captain is to have two full Shares; the Quartermaster is to have one Share and one Half; The Doctor, Mate, Gunner and Boatswain, one Share and one Quarter. All other men receive one share. Any who take more than their share, or who unrightfully deny a fellow his, shall be Marked.
+<style> ol {list-style-type:upper-roman} </style>
 
-II)	He that shall be found guilty of unlawfully Striking or Abusing in any regard fellow crew or those under Parley, shall be Marked. Parley is declared between two captains upon their meeting and applies to both crew for as long as either remains on the other’s vessel in whole or in part. Every man's quarrels within a crew or Parley to be ended on shore, at sword and pistol.
-
-III)	He that shall be found Guilty of Cowardice in the time of engagements, shall suffer what Punishment the Captain and the Majority of the Company shall think fit. He who flees punishment shall be Marked.
-
-IV)	If any Man shall offer to run away, or keep any Secret from the Company, he shall suffer what Punishment the Captain and the Majority of the Company shall think fit. He who flees punishment shall be Marked.
-
-V)	If any Gold, Jewels, Silver, etc. be found on Board of any Prize or Prizes to the value of a Piece of Eight, & the finder do not deliver it to the Quarter Master in the space of 24 hours he shall suffer what Punishment the Captain and the Majority of the Company shall think fit.
-
-VI)	He that is found Guilty of Defrauding one another to the value of a Royal of Plate, shall suffer what Punishment the Captain and the Majority of the Company shall think fit. He who flees punishment shall be Marked.
-
-VII)	He that shall have the Misfortune to lose a Limb in time of Engagement, shall have the Sum of Six hundred pieces of Eight, and remain aboard as long as he shall think fit. If refused payment, his captain and his crew shall all be them Marked.
-
-VIII)	Good Quarters to be given when Craved. If denied, shall the executor be Marked.
-
-IX)	He that sees a Sail first, shall have the best Pistol or Small Arm aboard of her. If refused by his Captain, Quartermaster or Mate, or whomever is responsible, shall be Marked.
-
-X)	He that shall be guilty of Drunkenness in time of Engagement shall suffer what Punishment the Captain and Majority of the Company shall think fit. He who flees punishment shall be Marked.
-
-XI)	No snapping of Guns or ignition of Magic in the Hold. He who does shall be Marked.
-
-XII)	If at any time the Captain takes upon a guest, they shall be treated as under Parley for the duration of their voyage. If at any time a Man offers to meddle with them, without their Consent, shall be Marked.
-
-XIII)	No sorcerer or possessor of powers arcane or divine shall be denied their last ounce of Power. He that demands the use of such shall be Marked.
+1. The Captain is to have two full Shares; the Quartermaster is to have one Share and one Half; The Doctor, Mate, Gunner and Boatswain, one Share and one Quarter. All other men receive one share. Any who take more than their share, or who unrightfully deny a fellow his, shall be Marked.
+2. He that shall be found guilty of unlawfully Striking or Abusing in any regard fellow crew or those under Parley, shall be Marked. Parley is declared between two captains upon their meeting and applies to both crew for as long as either remains on the other’s vessel in whole or in part. Every man's quarrels within a crew or Parley to be ended on shore, at sword and pistol.
+3. He who flees punishment shall be Marked.
+4. He that shall be found Guilty of Cowardice in the time of engagements, or any Man shall offer to run away or keep any Secret from the Company, shall suffer what Punishment the Captain and the Majority of the Company shall think fit.
+5. If any Gold, Jewels, Silver, etc. be found on Board of any Prize or Prizes to the value of a Piece of Eight, & the finder do not deliver it to the Quarter Master in the space of 24 hours he shall suffer what Punishment the Captain and the Majority of the Company shall think fit.
+6. He that is found Guilty of Defrauding one another to the value of a Royal of Plate, shall suffer what Punishment the Captain and the Majority of the Company shall think fit.
+7. He that shall have the Misfortune to lose a Limb in time of Engagement, shall have the Sum of Six hundred pieces of Eight, and remain aboard as long as he shall think fit. If refused payment, his captain and his crew shall all be them Marked.
+8. Good Quarters to be given when Craved. If denied, shall the executor be Marked.
+9.  He that sees a Sail first, shall have the best Pistol or Small Arm aboard of her. If refused by his Captain, Quartermaster or Mate, or whomever is responsible, shall be Marked.
+10. He that shall be guilty of Drunkenness in time of Engagement shall suffer what Punishment the Captain and Majority of the Company shall think fit. He who flees punishment shall be Marked.
+11. No snapping of Guns or ignition of Magic in the Hold. He who does shall be Marked.
+12. If at any time the Captain takes upon a guest, they shall be treated as under Parley for the duration of their voyage. If at any time a Man offers to meddle with them, without their Consent, shall be Marked.
+13. No sorcerer or possessor of powers arcane or divine shall be denied their last ounce of Power. He that demands the use of such shall be Marked.
 
 In all cases, he who is marked may be voluntarily Marooned with one Bottle of Powder, one Bottle of Water, one small Arm, and Shot, and no other equipment or component other than the clothes on his back. This removes the Mark.
 

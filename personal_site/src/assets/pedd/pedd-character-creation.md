@@ -18,10 +18,12 @@ Step-By-Step Character creation in PEDD looks like this:
    3.  Your initial 3 adventuring Powers (see [Powers Progression](/pedd/powers)), chosen from any non-racial Power: one of which must be a `combat` Power, and one of which must be an `exploration` Power. 
 5. *Adventuring Equipment* - chose your Equipment from one of the collections; the equipment that you find yourself with just before the game begins. The use of equipment is roughly identical to 5e.
 
-Go to the "Character Creator Mode" (button above &uarr;) to make your character along with these steps!
+Go to the [Character Creator](/pedd/character-creator) to make your character along with these steps!
 
 ### Character Concept
-While not new, I ask players to think of a core character concept (a fantasy person they would like to play, to inhabit and act out) as the very first step of character creation, to form a basis they can build on and have the basis of their character be an idea, not a race or class as the old way lent itself to be (I've seen many, many newbies open the book and then go "I want to be a Dwarf Ranger", or what have you. That's not a character, that's a video game protagonist). Of course, this is a fluid thing, and is expected to change as you go through character creation and - choosing slightly different options as you go - you redefine your character's core concept.
+While not a new idea, as the very first step of character creation I ask you, the players, to think of a core character concept: a fantasy person they would like to play, to inhabit and act out. It will form a basis you can build on instead of the trap of a race or class as the old way lent itself to be. (I've seen many, many newbies open the book and then go "I want to be a Dwarf Ranger", or what have you. That's not a character, that's a video game avatar). 
+
+Of course, your concept will be a fluid thing, and is expected to change as you go through character creation and - choosing slightly different-to-expected options as you go - you refine the concept. 
 
 Your Character Concept leads directly into your Role, so its best to make it a single evocative phrase or demonym that is the sum of what it is that you *do* as an adventurer.
 
@@ -30,11 +32,11 @@ For example:
  - Noble Rebel of the Czondazani Cause
  - An Ex-Ihleiskan Reaver
  - A Water-burning pyromancer
- - Outback ranger on his trusty yak
- - Priestess of the Ashen Gods
- - The Renowned Twin-swords of Tarentaise
+ - Outback ranger & his trusty yak
+ - Priestess of the forgotten Ashen Gods
+ - The Renowned Twin-sword Duelist of Tarentaise
 
-Also as part of step 1 I ask you to think of your character's **Bonds**, **Ideals** and **Flaws**: to lead with them rather than slap them on later. But feel free to return to them and add as you go through each step of character creation, of course. They are otherwise unchanged from 5e.
+Also as part of step 1, I ask you to think of your character's **Bonds**, **Ideals** and **Flaws**: to lead with them rather than slap them on later. But feel free to return to them and add as you go through each step of character creation, of course. They are otherwise unchanged from 5e. Remember to lean on these (and your GM) to earn Inspiration.
 
 ### Statistics
 
@@ -116,12 +118,12 @@ These 'Statistics' are not used in the game explicitely, but are a fun little as
 - **Agility** - the speed and adroitness with which you move, **Dexterity** + **Accuracy**
 - **Foresight** - your ability to predict how things will come out moment-to-moment, **Perception** + **Intelligence**
 
-A few Powers and corners may use these Stats, but only explicitely as the combination of normal Stats that define them, such as with "Foresigthed Defence" which is built upon Perception and Intelligence.
+A few Powers may use these Stats, but only explicitely as the combination of normal Stats that define them, such as with "Foresighted Defence" which is built upon Perception and Intelligence.
 
 </div>
 
 ### Races
-Your race is what you were born as. The choices your character had no hand in making. Your physical circumstances, your family, childhood, place of birth, home and all these little factors. When chosing a Race consider these, and consider what bonds (family, friends, childhood haunts), what ideals (beliefs you were raised with), and flaws (deep-rooted assumptions, traumas, rivals) you may have too.
+Your race is what you were born as. The choices your character had no hand in making (which is why it includes Upbringing). Your physical circumstances, your family, childhood, place of birth, home and all these little factors. When chosing a Race consider these, and consider what bonds (family, friends, childhood haunts), what ideals (beliefs you were raised with), and flaws (deep-rooted assumptions, traumas, rivals) you may have too.
 
 All the PHB Races of 5e have been converted with the major change that racial features are mostly converted to optional Racial Powers and Background Powers (if something being a learnable Background Power made more sense). The Stats have also been changed where necessary, and some flavour has been added / changed too. 
 
@@ -131,73 +133,34 @@ You choose 2 Racial Powers (by default) when you choose a Race, so not even two 
 #### Upbringing
 Your 'upbringing' is the kind of childhood you had. You freely pick 2 non-martial Skills, representing your those you were taught, learned or had no choice but to pick up while growing up. Additionally you take the 'Language, one of' Skill, noting that as your native language. By default in my games in the Materium Existentiae, your Childhood Language will be Imperial Common.
 
+Note that even if you don't have the common language of the campaign you're playing, such as Imperial Common, you are still considered conversational in it. You just don't get Proficiency in any social interactions using it, and you're considered to have a noticable accent, poor grammar and narrow vocabulary.
+
 ### Backgrounds
 Your background is the profession and/or way of life you pursued before taking on the mantle of 'Adventurer' and you left it all behind, or were forced to. It emphasises skills, those you honed to a professional level, more than Powers, of which you gain only one. These are your character's first true choices, and so may say a lot about their ideals and their flaws, and will have built bonds all of their own. For ideas on these, see the PHB or other source books.
 
-PEDD makes backgrounds more important than in 5e, by elevating their impact on the game mechanics directly. You gain Stats and a Power from your background now, as backgrounds truly define you.
-
 ### Role
-Who you are as an adventurere, the means with which you adventure!
+Who you are as an adventurere, the means with which you adventure! Your Character Concept should evoke an idea of the kind of powers you'll need.
 
 #### Role Powers
 The main purpose of a Role is to embody what kind of Adventurer you are, and the powers to facilitate that are paramount. As such for your Role choose 3 Powers from PEDD any non-racial Powers: one of which must be a `combat` Power, and one of which must be an `exploration` Power. Use the tags to help you. Your Role will only grow as you play, gaining more Powers, and therefore Skills and Stats.
 
-<div id="role-picker-container"></div>
+[See Powers here](/pedd/powers)
 
 #### Role Skills
-In addition to the skills granted by your race and background so-far, you also gain proficiency in a number of Skills equal to 4 + your Intelligence. This is done now as your Intelligence Stat is now fixed, but consider these extra skills you've gained across your entire life, through childhood, your background and even recently as an adventuerer. You can pick any skills freely from [Skills](/pedd/skills) section.
+In addition to the skills granted by your race and background so-far, you also gain proficiency in a number of Skills equal to 4 + your Intelligence, as your Intelligence Stat is now fixed. You've gained skills across your entire life: through childhood and your background, so consider these Skills those you've learned and had to use as an adventuerer, in particular any martial skills you most likely are currently lacking in. These are the arms and armour of your Role, so be thematic.
 
-As combat is an inevitable part of adventure, it is worth inversting your Role Skills in the Martial Skills that you will need if you find you don't have enough. These are the arms and armour of your Role, so be thematic.
+You can pick any skills freely from [Skills](/pedd/skills) section.
 
 ### Equipment
-Finally, the possessions you have on you at the start of your adventure. Take a note of the equipment you already have from your background, and then choose one set of equipment that fits the image of your Role:
+Finally, the possessions you have on you at the start of your adventure. Take a note of the equipment you already have from your background, and then choose one collection of equipment that fits the image of your Role: [See Collections](/pedd/equipment#equipment-collections)
 
 Note that any martial weapon choice can be downgraded to a simple weapon, a shield to a simple weapon, and chain mail can be downgraded to leather armour. Leather armour, if you don't have Light Armour Proficiency, cannot be downgraded, but you can hold onto it for later. Or sell it.
 
 When you have options (denoted by a /), choose 1. The packs and tool kits are suggestions, you can take any pack or toolkit.
 
-<a id="toggle-equipment-list">Click here to show</a>
+Pack's, for reference (you may with your GM's permission swap your pack for any other pack): [See Packs](/pedd/equipment#equipment-packs)
 
-<div id="equipment-list-section" class="hidden">
-
-- The Fighter
-  - Chainmail, a shield, 3 Martial Weapons of your choice, 2 Simple weapons of your choice, a dungeoneer's / explorer's pack
-- The Rogue
-  - Leather Armour, a melee martial weapon of your choice, a ranged martial weapon of your choice, a simple weapon of your choice, a set of tools (Thieves' / Alchemist's / Tinker's / Smith's), a Burglar's / Dungeoneer's / Explorer's pack
-- The Wizard
-  - a staff, a wand, a component pouch full of arcane spellcasting components, a set of tools (Alchemist's / Herbalist's), a diplomat's / entertainer's / explorer's / scholar's pack
-- The Artificer
-  - any two simple weapons, a light crossbow and 20 bolts / a pistol and 20 paper cartridges, studded leather armor / scale mail, a set of tools (Tinker's, Woodcarver's, Painter's, Jeweler's, Caligrapher's, Thieves'), a burglar's / dungeoneer’s / explorer's pack
-- The Destitute
-  - a knife, an empty knapsack, the clothes on your back, and nothing more
-- The Cleric
-  - Chain Shirt, two Simple and/or Martial weapons that represent your deity / path / philosophy, a holy symbol of your faith, a healer's kit, a diplomat's / priest's / scholar's pack
-- The Druid
-  - Hide / Leather Armour, a bronze embossed shield, a simple weapon of your choice, a druidic focus, a component pouch full of natural components, a dungeoneer's / entertainer's / priest's pack
-- The Warlock
-  - Padded armour, a Martial Weapon of your choice representative of your patron, a knife, an occult spellcasting wand, a set of tools (alchemist's / calligrapher's / jeweller's / disguise / forgery)
-- The Bard
-  - Padded armour, an elegant Martial or Simple weapon of your choice, a knife, a musical instrument (lute / horn / drum / viol), a burglar's/diplomat's/entertainer's/explorer's pack
-
-</div>
-
-Pack's, for reference (you may with your DM's permission swap your pack for any other pack):
-
-<a id="toggle-pack-list">Click here to show</a>
-
-<div id="pack-list-section" class="hidden">
-
-- Burglar's Pack - Includes a backpack, a bag of 1,000 ball bearings, 10ft of string, a bell, 5 candles, a crowbar, a hammer, 10 pitons, a hooded lantern, 2 flasks of oil, 5 days rations, a tinderbox, and a waterskin. The pack also has 50ft of hempen rope strapped to the side of it.
-- Diplomat's Pack - Includes a chest, 2 cases for maps and scrolls, a set of fine clothes, a bottle of ink, an ink pen, a lamp, 2 flasks of oil, 5 sheets of paper, a vial of perfume, sealing wax, and soap.
-- Dungeoneer's Pack - Includes a backpack, a crowbar, a hammer, 10 pitons, 10 torches, a tinderbox, 10 days of rations, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it.
-- Entertainers's Pack - Includes a backpack, a bedroll, 2 costumes, 5 candles, 5 days of rations, a waterskin, and a disguise kit.
-- Explorer's Pack - Includes a backpack, a bedroll, a mess kit, a tinderbox, 10 torches, 10 days of rations, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it.
-- Priest's Pack - Includes a backpack, a blanket, 10 candles, a tinderbox, an alms box, 2 blocks of incense, a censer, vestments, 2 days of rations, and a waterskin.
-- Scholar's Pack - Includes a backpack, a book of lore, a bottle of ink, an ink pen, 10 sheets of parchment, a little bag of sand, and a small knife.
-
-</div>
-
-Weapons and armour are covered in [Weapons & Armour in PEDD/Combat](/pedd/combat#weapons-and-armour)
+See the Weapons and Armour sections for details about those specific items.
 
 ### Come Together 
 Last but not least, you put everything together. Calculate your final Statistics (remember you cannot go over 4 in any, put overflow Stat increases into other Stats), Resistances and Secondary Characteristics, collate your Skills, Equipment and Powers for convenience, and [just like the base game - bring it together](https://www.dndbeyond.com/sources/basic-rules/step-by-step-characters#6ComeTogether).
