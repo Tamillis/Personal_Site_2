@@ -25,7 +25,7 @@ In addition to the Primal Sphere spell list
 
 **Anathema** TODO
 
-Spells from the Arcane Sphere unavailable to you.
+Spells from the Primal Sphere unavailable to you.
 
 | Magnitude | Spells |
 | --- | --- | 

@@ -2606,7 +2606,7 @@
             "spellcasting"
         ],
         "preq": [],
-        "desc": ""
+        "desc": "You know the Shocking Grasp cantrip. You know the Feather Fall and the Levitate spells, each of which you can cast once without expending Mana or requiring a material component. You regain the ability to cast these two spells in this way when you finish a Long Rest. Willpower (halved, rounded up) is your spellcasting statistic for these spells."
     },
     {
         "name": "Fire Magic",

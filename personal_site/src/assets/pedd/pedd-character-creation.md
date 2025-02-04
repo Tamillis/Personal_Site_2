@@ -105,7 +105,7 @@ Sometimes enemy attacks and other effects are made against your "Resistance DC",
 - **Focus** - your **Willpower** value to a minimum of 1. Used in certain Tactical Actions.
 - **Speed** - the ground you can cover in a Move, determined by your Race and some Powers
 - **Size** - what category of size you are, determined by Race. Your base defence and many combat interactions depend on Size.
-- **Senses** - a roleplay statistic that lets you know the suite of senses available to your character's race
+- **Senses** - the typical five senses by default (though nothing stops you from roleplaying blindness, deafness etc.), which can change with certain Powers like Keen Senses
 - **Passive Stats** - sometimes Powers or play require a value to compare against. The DM can ask you to make a roll that then represents that value, and sometimes they will ask for your "Passive Strength", etc. This is 8 + the Stat Value.
 
 <h4><a id="toggle-tertiary">Tertiary Statistics...</a></h4>
