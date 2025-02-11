@@ -1087,7 +1087,7 @@
         "desc": "The fury of Gruumsh burns barely contained within you. You gain the following benefits:\n\n- When you hit with an attack made with a melee weapon, you can roll one of the weapon's damage dice an additional time and add it as extra damage of the weapon's damage type.\n- Immediately after you use your Racial Power taken with from your Red Rage heritage, you can make one weapon attack.\n\nOnce you use each of these abilities, you can't use it again until you finish a Short Rest."
     },
     {
-        "name": "Hale",
+        "name": "Hale Recovery",
         "tag": [
             "exploration",
             "recovery"
@@ -2583,7 +2583,7 @@
         "desc": "Your Focus pool is now 2x your Willpower + your Bonus."
     },
     {
-        "name": "Earth Magic",
+        "name": "Natural Earth Magic",
         "tag": [
             "background",
             "cantrip",
@@ -2593,10 +2593,10 @@
             "spellcasting"
         ],
         "preq": [],
-        "desc": ""
+        "desc": "You know the Blade Ward cantrip. You know the Entangle and Spike Growth spells, each of which you can cast once with this trait without expending Mana or requiring a material component. You regain the ability to cast these two spells in this way when you finish a Long Rest. Fortitude (halved, rounded up) is your spellcasting statistic for these spells."
     },
     {
-        "name": "Air Magic",
+        "name": "Natural Air Magic",
         "tag": [
             "background",
             "cantrip",
@@ -2606,10 +2606,10 @@
             "spellcasting"
         ],
         "preq": [],
-        "desc": "You know the Shocking Grasp cantrip. You know the Feather Fall and the Levitate spells, each of which you can cast once without expending Mana or requiring a material component. You regain the ability to cast these two spells in this way when you finish a Long Rest. Willpower (halved, rounded up) is your spellcasting statistic for these spells."
+        "desc": "You know the Shocking Grasp cantrip. You know the Feather Fall and Levitate spells, each of which you can cast once with this trait without expending Mana or requiring a material component. You regain the ability to cast these two spells in this way when you finish a Long Rest. Willpower (halved, rounded up) is your spellcasting statistic for these spells."
     },
     {
-        "name": "Fire Magic",
+        "name": "Natural Fire Magic",
         "tag": [
             "background",
             "cantrip",
@@ -2619,9 +2619,9 @@
             "spellcasting"
         ],
         "preq": [],
-        "desc": ""
+        "desc": "You know the Produce Flame cantrip. You know the Burning Hands and Flame Blade spells, each of which you can cast once with this trait without expending Mana or requiring a material component. You regain the ability to cast these two spells in this way when you finish a Long Rest. Fortitude (halved, rounded up) is your spellcasting statistic for these spells."
     },    {
-        "name": "Water Magic",
+        "name": "Natural Water Magic",
         "tag": [
             "background",
             "cantrip",
@@ -2631,6 +2631,6 @@
             "spellcasting"
         ],
         "preq": [],
-        "desc": ""
+        "desc": "You know the Acid Splash cantrip. You know the Create or Destroy Water and Water Walk spells, each of which you can cast once with this trait without expending Mana or requiring a material component. You regain the ability to cast these two spells in this way when you finish a Long Rest. Willpower (halved, rounded up) is your spellcasting statistic for these spells."
     }
 ]

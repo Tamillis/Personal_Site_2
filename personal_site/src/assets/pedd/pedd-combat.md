@@ -133,6 +133,8 @@ Focus and Concentration are "exclusionary partners" becase when you are Concentr
 ### Health
 Health starts higher than the HP that it replaces, with the name also shaking out the video game connetations and helping players who don't come from a video-game background to engage with the Stat. It purposefuly does not progress unless specifically empowered. Health is naturally limited and only those who invest in it become the ineffible heroes who seem to be able to take punch after punch where others would fall to the first blow no matter how many fights they'd been in.
 
+NOTE: OK, so just spit-balling here but, what if Base Health is removed from races, with a simple health bonus as part of their race, and size dictates base health just like it already did at the design stage. It means there's one less awkwardly named stat to care about: Base Health. This also means Size dynamically scales your Health, which could be cool or could be a ball-ache. We'll see.
+
 #### Recovering Health, removing Hit Dice
 On the topic of health, recovery of that Health has also changed. No matter what the sheer iverisimilitude of full recoveries every Long Rest (which inevitably meant a few z's were enough to fix broken bones and burnt flesh) always took me out of a game. So I changed it.
 
