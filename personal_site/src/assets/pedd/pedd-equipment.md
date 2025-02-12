@@ -214,3 +214,38 @@ Armour is updated to the following table. Armour does not stack unless a + value
 | liquid luck | 1sp | herb | - adv on next roll within 1 minute |
 | soul saver | 1sp | herb | - passes death save |
 | Barkskin Salve | 1sp | Puréed bark and glow-worm jelly | activates with an Action to grant +2 constant block Defense for 1 hour. |
+
+### Runes
+Runes come in many names, symbols, dragon-marks, elven characters and hieroglyphs, to name a few. Rune Magic is the domain of learning and using them.
+
+Each Rune represents a concept of magic made manifest, and though any normal person would feel the runes slipping from their memory the second they look away, those capable of taking in their higher existence and commiting even that to memory, can imbue runes and make use of their magical powers. Each Rune is associated with a Spell, which that Rune can be used to cast, and a magical benefit from infusing the rune into items and clothing the rune mage bears.
+
+The runes (discovered so far) are:
+
+Rune | Name | Spell | Benefit
+--- | --- | --- | ---
+雲 | Cloud | Fog Cloud | You can control the presence or absence of clouds within a 1 mile radius and you can see through 60ft of obscuration.
+死 | Death | Inflict Wounds | As a Bonus Action, you can add +1 to any physical damage done this Round. The bearer looks palid.
+竜 | Dragon | Chromatic Orb | proficiency in Intimidation  and Language (Draconic)
+敵 | Enemy | Disguise self | proficiency in disguise and you can alter small details about yoursel, such as eye colour, at will.
+火 | Fire | Burning hands | immune to the cold, prestidigitation and produce flame minor effects
+友 | Friend | Speak with animals | proficiency in persuasion and charm.
+霜 | Frost | Armor of Agathys | immune to heat. Freeze water, preserve food etc a la presti
+坂 | Hill | Goodberry | you have advantage on Exhaustion checks and saves.
+旅 | Journey | Longstrider | speed increases by 5ft and your travel speed by 800 yards.
+王 | King | Command | others assume you’re a higher station than them. You have proficiency in Willpower saves.
+山 | Mountain | Entangle | you have proficiency in Athletics and Thrown.
+力 | Power | * | Your Strength increases by 1, and your maximum Strength is 6. *Unlike other Runes, this Rune's "Spell" is the ability to cast any other worn Rune at one Magnitude higher than normal.
+石 | Stone | Sanctuary | you always know in what direction and what distance (to the nearest 5ft) this symbol is from you. You have proficiency in Navigation.
+嵐 | Storm | Thunderwave | you crackle with static and can cast Shocking Grasp.
+
+(From Symbol)
+
+Once triggered, the glyph glows, filling a 60ft radius Sphere with Dim Light for 10 minutes, after which time the spell ends. Each creature in the Sphere when the glyph activates is targeted by its effect, as is a creature that enters the Sphere for the first time on a turn or ends its turn there. A creature is targeted only once per turn.
+
+- Death. Each target makes a Constitution saving throw, taking 10d10 Necrotic damage on a failed save or half as much damage on a successful save.
+- Discord. Each target makes a Wisdom saving throw. On a failed save, a target argues with other creatures for 1 minute. During this time, it is incapable of meaningful communication and has Disadvantage on attack rolls and ability checks.
+- Fear. Each target must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute. While Frightened, the target must move at least 30ft away from the glyph on each of its turns, if able.
+- Pain. Each target must succeed on a Constitution saving throw or have the Incapacitated condition for 1 minute.
+- Sleep. Each target must succeed on a Wisdom saving throw or have the Unconscious condition for 10 minutes. A creature awakens if it takes damage or if someone takes an action to shake it awake.
+- Stunning. Each target must succeed on a Wisdom saving throw or have the Stunned condition for 1 minute.

@@ -106,7 +106,8 @@ Instances of 'creature' are updated to 'character' as generally the game is char
 - **Aberrations** - so-called 'true outsiders', enigmatic and horrifying beings from beyond the outer planes and the boundary of Time and Space itself, sometimes referred to as the 'Far Planes'
 - **Beasts** - natural creatures of the material plane, though humanoids and other sophonts are excluded from this category.
 - **Celestials** - beings of the Good planes
-- **Constructs** - beings of the plane of Logic and other constructs built in their image on the material plane. This means there are "Outsider constructs" and "material constructs"
+- **Constructs** - beings of the plane of Logic 
+  - **Machines** - other constructs built by the hands of mortals in the image of divine logic or otherwise, on the material plane. This means there are "Outsider Constructs" and "Material Machines". That only Constructs seem capable of sentience, no matter how clever the Machine, is a matter of some theology.
 - **Dragons** - beings of ancient power and deep hunger, said to be all that's left of the three Creators
 - **Demons** - beings of the plane of Passion
 - **Elementals** - beings of the four ribbons of the elemntal braid, those old things from when the creators first wove the physical realms, or newer spirits of the lands, seas and skies.
@@ -121,14 +122,20 @@ Instances of 'creature' are updated to 'character' as generally the game is char
 - **Oozes** - curious life forms barely worthy of the name, neither plant nor animal nor fungus.
 - **Plants** - and although scholars protest, fungi belong to this group
 - **Sprites** - beings of the plane of Chaos
-- **Undead** - humanoid husks that're turned to evil means by the black breath of Exanima.
+- **Undead** - natural, humanoid and legendary husks that're turned to evil means by the black breath of Exanima.
 
-There are many subcategories that the Character Types can be grouped with:
-- **Material creatures**: beasts, (material) constructs, giants, humanoids, lycanthropes, monstrosities, oozes, plants
+Certain Character Types are grouped into "Creatures" for the purposes of identification with certain Spells and Powers.
+- **Outsiders**: aberrations, celestials, constructs, demons, fiends, jurors and sprites
+- **Unnatural Creatures**: elementals, fell, fey, machines, monstrosities and undead
+- **Natural Creatures**: beasts, oozes and plants (funghi are 'plants')
+- **Legendary Creatures**: dragons, giants
+- **Humanoids**: All the playable races, humans, little-people, beast-folk and the "monsterous races" who, at the end of the day, depend simply on who you ask.
+
+There are many other classifications and subcategories that the Character Types can be grouped with or described by in-world:
+- **Material creatures**: beasts, constructs, giants, humanoids, lycanthropes, machines, monstrosities, oozes, plants
 - **Living creatures**: beasts, dragons, fell, fey, giants, humanoids, lycanthropes, monstrosities, oozes, plants
-- **Natural creatures**: beasts, elementals, giants, humanoids, oozes, plants
 - **Dark creatures**: aberrations, demons, fiends, lycanthropes, monstrosities (debated), fell, undead.
-- **Outsiders**: Aberrations, Celestials, (Outsider) Constructs, Demons, Fiends, Jurors, Sprites
+- **Magical creatures**: aberrations, dragons, elementals, giants, fell, fey, monstrosities and (if one counts as made-of magic, rather than bearing-magic) undead
 
 ## Converting from 5e
 
