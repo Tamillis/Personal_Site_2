@@ -848,7 +848,7 @@
         "preq": [
             "Charisma +1"
         ],
-        "desc": "You have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.\n\nChoose a type of favoured enemy: aberrations, beasts, celestials, constructs, dragons, demons, elementals, fell, fey, fiends, giants, jurors, lycanthropes, monstrosities, oozes, plants, sprites or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favoured enemies. You gain the following benefits:\n\n- You gain your Bonus to damage rolls with weapon attacks against characters of the chosen type. Additionally, you have Advantage on Survival checks to track your favoured enemies, as well as on Intelligence checks to recall information about them.\n- When you gain this Power, your studies in the language of choice spoken by your favoured enemies (or reasonable alternative) comes to fruition and you become fluent in it. You gain proficiency in that language skill.\n\nYou can take this Power two more times, choosing two further enemy types and a language each time."
+        "desc": "You have significant experience studying, tracking, hunting, and even talking to a certain type of enemy. Choose a group of favoured enemies:\n\n - Outsiders - aberrations, celestials, constructs, demons, fiends, jurors and sprites\n - Unnatural Creatures - elementals, fell, fey, machines, monstrosities and undead\n - Natural Creatures - beasts, oozes and plants (funghi are 'plants')\n - Legendary Creatures - dragons and giants\n - Two races of Humanoid - such as 'gnolls and orcs', or 'elves and humans'\n\nYou gain your Bonus to damage rolls with weapon attacks against characters of the chosen type. Additionally, you have Advantage on Survival checks to track your favoured enemies, Observation checks to spot your favoured enemies when they're Hidden, as well as on any Knowledge skill checks to recall information about them.\n\nWhen you gain this Power, your studies in the language of choice spoken by your favoured enemies (or reasonable alternative) comes to fruition and you become fluent in it. You gain proficiency in that language skill.\n\nYou can take this Power two more times, choosing two further enemy types and a language each time."
     },
     {
         "name": "Fey Ancestry",
@@ -1107,7 +1107,7 @@
         "preq": [
             "Fortitude +2"
         ],
-        "desc": "Your steadfast ability to take hits sees you through. When not wearing Medium or Heavy Armour, instead of Reflexes, your Fortitude is used in your Defence calculations. You can use a shield and still gain this benefit."
+        "desc": "Your steadfast ability to take hits sees you through. When not wearing Medium (excluding Hide Armour) or Heavy Armour, instead of Reflexes, your Fortitude is used in your Defence calculations. You can use a shield and still gain this benefit."
     },
     {
         "name": "Health Increase",

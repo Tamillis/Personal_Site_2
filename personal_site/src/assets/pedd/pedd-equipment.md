@@ -191,29 +191,30 @@ Armour is updated to the following table. Armour does not stack unless a + value
 - Scholar's Pack - Includes a backpack, a book of lore, a bottle of ink, an ink pen, 10 sheets of parchment, a little bag of sand, and a small knife.
 
 ### Alchemical Items
-| Name | Cost | Materials | Effect |
+| Name | Cost | Materials | Grade | Effect |
 | --- | --- | --- | --- |
-| flash bang | 1sp | herb | - from armories of 2nd emp |
-| grenade | 1sp | herb | - from armories of 2nd emp |
-| mine | 1sp | herb | - disguised grenade |
-| grease pot | 1sp | herb | - grease! |
-| glue bomb | 1sp | herb | - save vs reduced movement to 0 for 1 round |
-| Honeyfire pot | 1sp | herb | - reflex save per round against Burning d6 |
-| ice burst | 1sp | herb | - save vs slow movement & ice damage |
-| water deluge | 1sp | herb | - save vs shove & blg dmg |
-| shock-stun | 1sp | herb | stones - electric dmg & save vs stun |
-| sleep powder | 1sp | herb | - save vs sleep obv |
-| paralyze dart | 1sp | herb | - save vs immobilised |
-| poison gas | 1sp | herb | - save vs Poisoned |
-| choking gas | 1sp | herb | - save vs disabled 1 round |
-| mana surge | 1sp | herb | - temporary counter-magic effect up to spell level equal to grade |
-| tripwire alarm | 1sp | herb | |
-| weapon coatings | 1sp | herb | |
-| armour resistance coatings | 1sp | herb |, armour buffs |
-| stat buffs | 1sp | herb | / stat maluses, 6 / 9 related items one for each stat. Bullish Strength, Agility of the Hare, Anteater's Accuracy, Eyes of the Eagle, Charm of the Cat, Fox's Wiles |
+| flash bang | 1sp | herb | I | - from armories of 2nd emp |
+| grenade | 1sp | herb | I | - from armories of 2nd emp |
+| mine | 1sp | herb | I | - disguised grenade |
+| grease pot | 1sp | herb | I | - grease! |
+| glue bomb | 1sp | herb | I | - save vs reduced movement to 0 for 1 round |
+| Honeyfire pot | 1sp | herb | I | - reflex save per round against Burning d6 |
+| ice burst | 1sp | herb | I | - save vs slow movement & ice damage |
+| water deluge | 1sp | herb | I | - save vs shove & blg dmg |
+| shock-stun | 1sp | herb | I | stones - electric dmg & save vs stun |
+| sleep powder | 1sp | herb | I | - save vs sleep obv |
+| paralyze dart | 1sp | herb | I | - save vs immobilised |
+| poison gas | 1sp | herb | I | - save vs Poisoned |
+| choking gas | 1sp | herb | I | - save vs disabled 1 round |
+| mana surge | 1sp | herb | I | - temporary counter-magic effect up to spell level equal to grade |
+| tripwire alarm | 1sp | herb | I | |
+| weapon coatings | 1sp | herb | I | |
+| armour resistance coatings | 1sp | herb | I |, armour buffs |
+| stat buffs | 1sp | herb | I | / stat maluses, 6 / 9 related items one for each stat. Bullish Strength, Agility of the Hare, Anteater's Accuracy, Eyes of the Eagle, Charm of the Cat, Fox's Wiles |
+| elixer of life | 1gp | elan catalyst, biological nucelae (yolk, seeds etc), blood-bind fibres | I | heal 1d6 + 3 and advantage on saves vs disease and poison, immediate save against ongoing disease / poison, cannot benefit from Elixer of Life for 10 minutes. |
 | liquid luck | 1sp | herb | - adv on next roll within 1 minute |
-| soul saver | 1sp | herb | - passes death save |
-| Barkskin Salve | 1sp | Puréed bark and glow-worm jelly | activates with an Action to grant +2 constant block Defense for 1 hour. |
+| soul saver | 1sp | soul boundary bridging agent, mana rich ingestants, bracing liquors | - passes death save |
+| Barkskin Salve | 1sp | cellwall-reinforcer (puréed bark), transformation jelly, inertial charge agent | activates with an Action to grant +2 constant block Defence for 1 hour. |
 
 ### Runes
 Runes come in many names, symbols, dragon-marks, elven characters and hieroglyphs, to name a few. Rune Magic is the domain of learning and using them.
