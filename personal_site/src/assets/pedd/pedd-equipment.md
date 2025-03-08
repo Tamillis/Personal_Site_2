@@ -1,6 +1,6 @@
 ## PEDD Equipment
 
-As PEDD has grown ever larger and even graduated into its own stand-alone system, I found myself needing to make a compendium and refernce of its items.
+As PEDD has grown ever larger and even graduated into its own stand-alone system, I found myself needing to make a compendium and reference of its items.
 
 ### Weapons
 
@@ -23,7 +23,7 @@ Bludgeoning -> blg, Piercing -> prc, Slashing -> slash
 | Shiv* | Knives | 5cp | 1d4 prc | 0.5lbs | Light, Nonlethal |
 | Short Spear | Spear | 1gp | 1d6 prc | 3lbs | Finisher, Nonlethal |
 | Sickle | Knives | 1gp | 1d4 slash | 2lbs | Light, Bleeds |
-| Spear Club (Goedenday) | Spear / Clubs & Axes | 5sp | 1d4 blg / prc | 3lbs | Finisher, Light Armour Piercing |
+| Spear Club (Goedendag) | Spear / Clubs & Axes | 5sp | 1d4 blg / prc | 3lbs | Finisher, Light Armour Piercing |
 | Spear | Spear | 1gp | 1d8 prc | 4lbs | Reach, Two-Handed, Block |
 | Winged Spear | Spear | 5gp | 1d6 prc | 5lbs | Versatile (1d8), Winged, Block |
 | **Martial Melee Weapons** |
@@ -192,7 +192,7 @@ Armour is updated to the following table. Armour does not stack unless a + value
 
 ### Alchemical Items
 | Name | Cost | Materials | Grade | Effect |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | flash bang | 1sp | herb | I | - from armories of 2nd emp |
 | grenade | 1sp | herb | I | - from armories of 2nd emp |
 | mine | 1sp | herb | I | - disguised grenade |
@@ -240,6 +240,7 @@ Rune | Name | Spell | Benefit
 石 | Stone | Sanctuary | you always know in what direction and what distance (to the nearest 5ft) this symbol is from you. You have proficiency in Navigation.
 嵐 | Storm | Thunderwave | you crackle with static and can cast Shocking Grasp.
 
+<div style="display:none">
 (From Symbol)
 
 Once triggered, the glyph glows, filling a 60ft radius Sphere with Dim Light for 10 minutes, after which time the spell ends. Each creature in the Sphere when the glyph activates is targeted by its effect, as is a creature that enters the Sphere for the first time on a turn or ends its turn there. A creature is targeted only once per turn.
@@ -250,3 +251,5 @@ Once triggered, the glyph glows, filling a 60ft radius Sphere with Dim Light for
 - Pain. Each target must succeed on a Constitution saving throw or have the Incapacitated condition for 1 minute.
 - Sleep. Each target must succeed on a Wisdom saving throw or have the Unconscious condition for 10 minutes. A creature awakens if it takes damage or if someone takes an action to shake it awake.
 - Stunning. Each target must succeed on a Wisdom saving throw or have the Stunned condition for 1 minute.
+
+</div>

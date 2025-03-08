@@ -53,7 +53,8 @@ So what can that one Action can do? Quite a lot more than 5e. Every character ca
 - **Discern** - as an Attack or Action, you can make a Perception check against one enemy whose has a Hidden Action. If successful (the GM will decide the DC), their Action is no longer hidden and everyone in the combat can know.
 - **Dodge** - as an Action, you make a Reflex Saving Throw and the result (or your Stationary Defence, if that is higher) replaces your Defence value for the rest of the Round.
 - **Go to Cover / Go Prone / Stand** - as a Bonus Action you make yourself Prone, or enter adjacent cover. The Prone condition or being in cover uses Stationary Defence. Prone makes being shot at occur at Disadvantage, and cover is +2/+5 to Defence for half / ¾ cover respectively (see [Conditions](#conditions)). Going from cover or Prone to standing takes a Stand Bonus Action.
-- **Help** - as an Action, you aid an ally in attacking an enemy within 5ft of you. You feint, distract the target, or in some other way team up to make your ally's attack more effective. If your ally Attacks the target this Round, the first Attack is made with Advantage.
+- **Mount / Dismount** - as an Action, you safely get on or get off a mount within your reach.
+- **Help** - as an Action, you aid an ally in attacking an enemy within your reach. You feint, distract the target, or in some other way team up to make your ally's attack more effective. If your ally Attacks the target this Round, the first Attack is made with Advantage.
 - **Hide** - as an Action, you make a Stealth check in an attempt to hide from those you are obscured from (in 3/4's cover or out of line of sight), versus a DC of 15. If you succeed, you gain the benefits of being Invisible: Attacks against you have Disadvantage, and your Attacks have Advantage. When you make an Attack, you are no longer hidden. If you or others Move such that you are no longer obscured, you are no longer Hidden from them.
 - **Move** - move your Speed along a path of your choice towards a target. See [Move Action](#move-action) for details.
 
@@ -100,7 +101,7 @@ All combat is resolved in two simple steps*:
 2. **Resolve Engagements** - resolving pairs/groups in a sensible/cinematic sequence. Melee conflicts are easily resolved in their engagements. Ranged attacks naturally involve unpaired individuals but often can be smoothly resolved at the start or end of a Round. Resolve conflicts of interest with an Initiative Contest.
 
 #### Zone of Engagement
-The rules of pairing off, pulling and turning. 
+The rules of pairing off, pulling and turning.
 
 How do you avoid a long conga-line chain of awkwardly connected characters fighting each other? "Pairing off". Sometimes if you want to attack Mr A, even if they're attacking Mr B, because Mr C is attacking you and is otherwise unengaged, you have no choice but to "**Turn**" from your initial intended target, who is said to "**Pull**" you, and "**Pair Off**" with them. In other words, you cannot be "pulled" if you are "paired off": engaged with someone who is engaged with you.
 
@@ -120,6 +121,20 @@ Additionally, a character can only be engaged by a maximum number of characters 
 - same - 4
 - larger - 8
 - 2+ sizes larger - any
+
+#### Mounted Combat & Unstable Platforms
+Fighting on the back of a mount, such as a horse, flying carpet or dune worm, is tricky for the untrained. 
+
+When mounted: 
+- You suffer from the 'Unstable Platform' effect. 
+- You gain the benefit of +5ft of reach, if your mount is a size larger than you
+- When your mount uses its Action to Move, it automatically moves you (and is not slowed, such as when grappled characters move each other). Since Movement happens last, any actions from the back of a mount occur before it moves apart from a 'Combined Charge'.
+
+It takes an Action to Mount or Dismount a mount. If you are knocked from your mount, you fall Prone. If your mount is two sizes larger than you, or more, the GM should consider fall damage.
+
+**Unstable Platform** - When unstable, such as being on a mount or standing in an earthquake, you have Disadvantage on Ranged Attacks and cannot attack beyond normal range.
+
+**Combined Charge** - You and your mount both use your Actions. The mount Moves in a straight line towards a target that is within its movement. At the end of that movement, the rider can make one Attack at Advantage against that target. If the mount cannot reach the target with a straight movement, you cannot use Combined Charge.
 
 ## Combat Statistics
 
