@@ -79,6 +79,23 @@ On an unrelated note, I've sat down to set out the framework for Power Requireme
 - Skill/Stat increase choices need to be handled. Currently set as either using the "Any" keyword or an array of choices
 - Powers that can be taken multiple times that scale their prerequisites, the scaling needs to be machine readable in some way. Starting with RANK as a keyword (i.e. Dexterity +RANK).
 
+Skills are set on power by skill attribute which leads to an object of {core, knowledge, martial} mirroring how the pedd-skill object works like:
+
+```json
+"skill": {
+    "core":[["Arcana*", "History*", "Nature*", "Religion*"], ["Arcana*", "History*", "Nature*", "Religion*"]],
+    "knowledge": "Language (Any)",
+    "martial": ["Blade^", "Bows^", "Mauls^" "Rogue^"]
+}
+```
+
+- SkillName^ skill Proficiency or upgrade to Expertise if already earned
+- SkillName* skill at Expertise
+
+For Stats:
+- stat-change: { stat: val etc.} - note that stat can be the statistics or the secondaries like speed
+- stat-max: {stat: val etc.}
+
 Prerequisite groupings:
 - {Power name}
 - {Stat name} {value}

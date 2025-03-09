@@ -115,7 +115,7 @@ creatures that are two sizes or more larger than it. A character can use an Acti
 - **Finesse** - The weapon lends itself to dexterous combat due to features that make it more reliant on technique than brute force. When attacking with a finesse weapon, you use your choice of your
 Strength or Dexterity for the attack and damage rolls. You must use the same modifier for both rolls.
 - **Finisher** - Finisher weapons are well-suited to executing enemies that are at your mercy. When you make an attack against a Prone or Incapacitated character, you roll one additional damage die.
-- **Heavy** - These weapons are larger and unwieldier than most, lending them unique advantages and challenges: 
+- **Heavy** - These weapons are larger and unwieldier than most, lending them unique advantages and challenges:
   - Small characters make attacks with heavy weapons at Disadvantage.
   - A heavy weapon allows you to make an attack relying upon on raw strength instead of technique. When you attack with a heavy weapon that you're proficient in, you can forego adding your proficiency bonus to the attack roll. If the attack hits, you add that proficiency bonus to the damage roll instead. You must decide to do this before making the attack roll.
 - **Light** - A light weapon is small and easy to handle. When you take the Attack action and attack with a light melee weapon that you’re holding in one hand, you can use a Bonus Action to attack with a different light melee weapon that you’re holding in the other hand. You don’t add your Stat to the damage of the bonus attack, unless that modifier is negative. 

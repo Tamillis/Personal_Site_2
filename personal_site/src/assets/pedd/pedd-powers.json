@@ -45,7 +45,7 @@
             "Eldritch Blast cantrip",
             "Pact Magic"
         ],
-        "desc": "When you cast Eldritch Blast, add your Spellcasting Ability to the damage it deals on a hit."
+        "desc": "When you cast Eldritch Blast, add your Magic Statistic to the damage it deals on a hit."
     },
     {
         "name": "Akimbo",
@@ -99,7 +99,7 @@
             "universal"
         ],
         "preq": [],
-        "desc": "You have a natural grasp of arcane magic and with only a little preparation, can have ready a plethora of minor magics.\n\nYou know one cantrip of your choice from the Arcane Sphere spell list which you can switch for a different Arcane Sphere cantrip after a Long Rest. Intelligence is your spellcasting ability for it.\n\nAdditionally, you learn Arcane spells at twice the usual rate."
+        "desc": "You have a natural grasp of arcane magic and with only a little preparation, can have ready a plethora of minor magics.\n\nYou know one cantrip of your choice from the Arcane Sphere spell list which you can switch for a different Arcane Sphere cantrip after a Long Rest. Intelligence is your Magic Statistic for it.\n\nAdditionally, you learn Arcane spells at twice the usual rate."
     },
     {
         "name": "Arcane Recovery",
@@ -243,7 +243,7 @@
         "preq": [
             "Faith +1"
         ],
-        "desc": "You learn two cantrips of your choice from the divine sphere. Faith is your spellcasting ability for them."
+        "desc": "You learn two cantrips of your choice from the divine sphere. Faith is your Magic Statistic for them."
     },
     {
         "name": "Blessings of Knowledge",
@@ -308,7 +308,7 @@
     {
         "name": "Cavalier",
         "tag": [
-            "combat", "utility", "fighting-style"
+            "combat", "utility", "fighting-style", "roll-effecting"
         ],
         "preq": [
             "Reflex +1"
@@ -324,7 +324,7 @@
         "preq": [
             "Otherworldly Patron"
         ],
-        "desc": "**Healing Light** - you gain the ability to channel celestial energy to heal wounds. You have a pool of d6s equal to your Bonus + your Faith that you regain after a Long Rest. As a Bonus Action, you can spend these d6s to heal one character you can see within 60ft of you with a word of healing power whispered into your ear by your Patron. The maximum number of dice you can spend at once equals your Faith (minimum of one die). Roll the dice you spend, add them together, and restore an amount of Health equal to the total.\n\n**Spellcasting Ability** - Faith. Faith for you is the following the orders, precepts and desires of your Patron. In addition, your maximum Faith is now 6, but your Faith can fall as low as -5 and is prone to fluctuating more rapidly than Divine Spellcasting spell casters (consult with your DM, but as a guide affect change at the end of each session).\n\n**Spell List** - Divine Sphere\n\n**Emblematic Spells** - In addition to the Divine Sphere spell list, you can choose from the following list.\n\n| Magnitude | Spells |\n| --- | --- |\n| Cantrip | Eldritch Blast (but radiant damage), Blade Ward |\n| I | Burning Hands, Faerie Fire (but white light), Sleep |\n| II | Flame Blade, Fortune's Favour, See Invisibility |\n| III | Call Lightning, Fear, Fly |\n| IV | Charm Monster, Compulsion, Sickening Radiance (but harsh white light) |\n| V | Contact Other Plane, Hold Monster, Wall of Light |\n| VI | Globe of Invulnerability, Mass Suggestion, Tasha's Otherwordly Guise (Upper Planes only) |\n| VII | Force Cage, Sequester |\n| VIII | Antipathy/Sympathy, Power Word Stun |\n| IX | Wish |\n\n**Anathema** - Due to the limited nature of the Divine Sphere, the Celestial Patron finds none of its spells Anathema."
+        "desc": "**Healing Light** - you gain the ability to channel celestial energy to heal wounds. You have a pool of d6s equal to your Bonus + your Faith that you regain after a Long Rest. As a Bonus Action, you can spend these d6s to heal one character you can see within 60ft of you with a word of healing power whispered into your ear by your Patron. The maximum number of dice you can spend at once equals your Faith (minimum of one die). Roll the dice you spend, add them together, and restore an amount of Health equal to the total.\n\n**Magic Statistic** - Faith. Faith for you is the following the orders, precepts and desires of your Patron. In addition, your maximum Faith is now 6, but your Faith can fall as low as -5 and is prone to fluctuating more rapidly than Divine Spellcasting spell casters (consult with your GM, but as a guide affect change at the end of each session).\n\n**Spell List** - Divine Sphere\n\n**Emblematic Spells** - In addition to the Divine Sphere spell list, you can choose from the following list.\n\n| Magnitude | Spells |\n| --- | --- |\n| Cantrip | Eldritch Blast (but radiant damage), Blade Ward |\n| I | Burning Hands, Faerie Fire (but white light), Sleep |\n| II | Flame Blade, Fortune's Favour, See Invisibility |\n| III | Call Lightning, Fear, Fly |\n| IV | Charm Monster, Compulsion, Sickening Radiance (but harsh white light) |\n| V | Contact Other Plane, Hold Monster, Wall of Light |\n| VI | Globe of Invulnerability, Mass Suggestion, Tasha's Otherwordly Guise (Upper Planes only) |\n| VII | Force Cage, Sequester |\n| VIII | Antipathy/Sympathy, Power Word Stun |\n| IX | Wish |\n\n**Anathema** - Due to the limited nature of the Divine Sphere, the Celestial Patron finds none of its spells Anathema."
     },
     {
         "name": "Close Quarters Shooter",
@@ -534,7 +534,7 @@
             "Faith +0",
             "Mana"
         ],
-        "desc": "As a conduit for divine power, you can cast divine spells. You must have at least 0 Faith to learn and use this Power. If your Faith dips below 0, you no longer benefit from this Power or any that requires it until your Faith is restored.\n\n**Cantrips** - You know three cantrips of your choice from the Divine Sphere spell list.\n\n**Prepared Spells** - You prepare the list of Divine Sphere spells that are available for you to cast that day, choosing freely from the Divine Sphere spell list. When you do so, choose a number of spells equal to your Bonus + your Faith. The spells must be of a Magnitude for which you have Mana Reserve. You can change your list of prepared spells when you finish a Long Rest. Preparing a new list of Divine Sphere spells requires time spent in prayer and meditation: at least 1 minute per Magnitude for each spell on your list.\n\n**Spellcasting Ability** - Faith is your spellcasting ability for your spells. The power of your spells comes from your devotion to your deity. You use your Faith whenever a spell refers to your spellcasting ability. In addition, you use your Faith when setting the saving throw DC for a Divine Sphere spell you cast and when making an attack roll with one.\n\n**Spell Save DC** - 8 + your Bonus + your Faith\n\n**Spell Attack Modifier** - your Bonus + your Faith\n\n**Ritual Spellcasting** - You can cast a Divine Sphere spell as a ritual if that spell has the ritual tag and you have the spell prepared.\n\n**Spellcasting Focus** - You can use a holy symbol as a spellcasting focus for your cleric spells."
+        "desc": "As a conduit for divine power, you can cast divine spells. You must have at least 0 Faith to learn and use this Power. If your Faith dips below 0, you no longer benefit from this Power or any that requires it until your Faith is restored. Faith is your Magic Statistic for your spells. You can brandish a holy symbol in lieu of material components that don't have a gold cost for your Divine spells.\n\n**Cantrips** - You know three cantrips of your choice from the Divine Sphere spell list.\n\n**Prepared Spells** - You prepare the list of Divine Sphere spells that are available for you to cast that day, choosing freely from the Divine Sphere spell list. When you do so, choose a number of spells equal to your Bonus + your Faith. The spells must be of a Magnitude for which you have Mana Reserve. You can change your list of prepared spells when you finish a Long Rest. Preparing a new list of Divine Sphere spells requires time spent in prayer and meditation: at least 1 minute per Magnitude for each spell on your list."
     },
     {
         "name": "Draconic Affinity",
@@ -549,7 +549,7 @@
             "Draconic Bloodline",
             "Occult Spellcasting"
         ],
-        "desc": "When you cast a spell that deals damage of the type associated with your Draconic Ancestry, add your Spellcasting Ability to one damage roll of that spell. At the same time, you can spend 1 Magnitude I Reserve, in addition to the Reserve spent on the spell, to gain Resistance to that damage type for 1 hour.\n\nIf your ancestry is one of the following, your damage type is:\n- Brass - Fire\n- Bronze - Lightning\n- Copper - Acid\n- Gold - Fire\n- Silver - Cold"
+        "desc": "When you cast a spell that deals damage of the type associated with your Draconic Ancestry, add your Magic Statistic to one damage roll of that spell. At the same time, you can spend 1 Magnitude I Reserve, in addition to the Reserve spent on the spell, to gain Resistance to that damage type for 1 hour.\n\nIf your ancestry is one of the following, your damage type is:\n- Brass - Fire\n- Bronze - Lightning\n- Copper - Acid\n- Gold - Fire\n- Silver - Cold"
     },
     {
         "name": "Draconic Bloodline",
@@ -650,7 +650,7 @@
             "Charisma +1",
             "Drow Magic"
         ],
-        "desc": "You learn more of the magic typical of dark elves. You learn the Hunter's Mark spell and can cast once without expending Mana at Magnitude III. You also learn the Hold Person and Dispel Magic spells, each of which you can cast once without expending Mana at their lowest Magnitude. You regain the ability to cast these spells in this way when you finish a Long Rest. Charisma is your spellcasting ability for these spells."
+        "desc": "You learn more of the magic typical of dark elves. You learn the Hunter's Mark spell and can cast once without expending Mana at Magnitude III. You also learn the Hold Person and Dispel Magic spells, each of which you can cast once without expending Mana at their lowest Magnitude. You regain the ability to cast these spells in this way when you finish a Long Rest. Charisma is your Magic Statistic for these spells."
     },
     {
         "name": "Drow Magic",
@@ -664,7 +664,7 @@
             "spellcasting"
         ],
         "preq": [],
-        "desc": "You learn the magic of the raiders of the dark places. You learn the Dancing Lights cantrip. You also learn the Faerie Fire and Darkness spells, each of which you can cast once without expending Mana. You regain the ability to cast these two spells in this way when you finish a Long Rest. Charisma is your spellcasting ability for these spells."
+        "desc": "You learn the magic of the raiders of the dark places. You learn the Dancing Lights cantrip. You also learn the Faerie Fire and Darkness spells, each of which you can cast once without expending Mana. You regain the ability to cast these two spells in this way when you finish a Long Rest. Charisma is your Magic Statistic for these spells."
     },
     {
         "name": "Druidic Apprentice",
@@ -676,7 +676,7 @@
         "preq": [
             "Nature"
         ],
-        "desc": "You learn two cantrips of your choice from the nature sphere. Your spellcasting ability for these spells is Verdance, as detailed in the [Verdance Table](/pedd/magic#verdance-table)."
+        "desc": "You learn two cantrips of your choice from the nature sphere. Verdance is your Magic Statistic for these spells, as detailed in the [Verdance Table](/pedd/magic#verdance-table)."
     },
     {
         "name": "Duellist",
@@ -770,7 +770,7 @@
             "universal"
         ],
         "preq": [],
-        "desc": "Your arcane nature grants you spell-like abilities as if you know the Prestidigitation cantrip. Additionally, after your 5th Power, you gain the ability to effectively cast the Absorb Elements spell at Magnitude II once with this Power and regain the ability to do so when you finish a Long Rest. After your 10th Power, you can effectively cast the Alter Self spell once with this Power and regain the ability to do so when you finish a Long Rest. Intelligence is your effective spellcasting ability for these Powers."
+        "desc": "Your arcane nature grants you spell-like abilities as if you know the Prestidigitation cantrip. Additionally, after your 6th Power, you gain the ability to effectively cast the Absorb Elements spell at Magnitude II once with this Power and regain the ability to do so when you finish a Long Rest. After your 12th Power, you can effectively cast the Alter Self spell once with this Power and regain the ability to do so when you finish a Long Rest. Intelligence is your effective Magic Statistic for these Powers."
     },
     {
         "name": "Expanded Repertoire",
@@ -780,7 +780,7 @@
         "preq": [
             "Pact Magic"
         ],
-        "desc": "Your Patronage spells increases to your Expertise + Spellcasting Ability (to a minimum of 2), and you may prepare your list of Patronage Innate Spells anew as if completing a Downtime Activity to do so."
+        "desc": "Your Patronage spells increases to your Expertise + Magic Statistic (to a minimum of 2), and you may prepare your list of Patronage Innate Spells anew as if completing a Downtime Activity to do so."
     },
     {
         "name": "Expert Skill",
@@ -922,7 +922,7 @@
             "Finder's Magic",
             "Perception +2"
         ],
-        "desc": "You learn the Locate Animals or Plants and Locate Creature spells, each of which you can cast once without expending Mana at their lowest Magnitude. You regain the ability to cast these spells in this way when you finish a Long Rest. Perception is your Spellcasting Ability for these spells. Additionally, once per Long Rest you can divine a location as if you were casting the Scrying spell, see it for details."
+        "desc": "You learn the Locate Animals or Plants and Locate Creature spells, each of which you can cast once without expending Mana at their lowest Magnitude. You regain the ability to cast these spells in this way when you finish a Long Rest. Perception is your Magic Statistic for these spells. Additionally, once per Long Rest you can divine a location as if you were casting the Scrying spell, see it for details."
     },
     {
         "name": "Finder's Magic",
@@ -937,7 +937,7 @@
         "preq": [
             "Perception +1"
         ],
-        "desc": "You learn the Hunter's Mark and Locate Object spells that you can cast without expending Mana. Once you cast either spell with this trait, you can't cast that spell again until you finish a Long Rest. Perception is your Spellcasting Ability for these spells."
+        "desc": "You learn the Hunter's Mark and Locate Object spells that you can cast without expending Mana. Once you cast either spell with this trait, you can't cast that spell again until you finish a Long Rest. Perception is your Magic Statistic for these spells."
     },
     {
         "name": "Fleet of Foot",
@@ -1021,7 +1021,12 @@
         "preq": [
             "Otherworldly Patron"
         ],
-        "desc": "**Awakened Mind** - Your alien knowledge gives you the ability to touch the minds of other characters. You can telepathically speak to any character you can see within 30ft of you. You need to share a language with the character for it to understand your telepathic utterances, but you don't need to share a language to share emotions, impressions and simple concepts.\n\n**Spellcasting Ability** - Intelligence. Additionally, your maximum Intelligence is now 6, and your Intelligence increases by 1 but your Charisma decreases by 1 (to a minimum of -3).\n\n**Spell List** - Arcane Sphere\n\n**Emblematic Spells** - In addition to the Arcane Sphere spell list, you can choose from the following list.\n\n| Magnitude | Spells                                       |\n| --------- | -------------------------------------------- |\n| Cantrip   | Eldritch Blast, Vicious Mockery              |\n| I         | Arms of Hadar, Dissonant Whispers            |\n| II        | Enthrall, Immovable Object                   |\n| III       | Conjure Barrage, Hunger of Hadar             |\n| IV        | Compulsion, Gravity Sinkhole, Shadow of Moil |\n| V         | Awaken, Destructive Wave                     |\n| VI        | Gravity Fissure, Primordial Ward             |\n| VII       | Tether Essence                               |\n| VIII      | Dark Star, Reality Break                     |\n| IX        | Ravenous Void                                |\n\n**Anathema** - Spells from the Arcane Sphere unavailable to you.\n\n| Magnitude | Spells                                     |\n| --------- | ------------------------------------------ |\n| Cantrip   |Friends                                    |\n| I         | Cure Wounds, Protection from Good and Evil |\n| II        | Aid, Lesser Restoration                    |\n| III       | Catnap, Revivify                           |\n| IV        | Fabricate, Summon Construct                |\n| V         | Dawn, Greater Restoration                  |\n| VI        | Sunbeam                                    |\n| VII       | Sequester                                  |\n| VIII      | Sunburst                                   |\n| IX        | Wish                                       |"
+        "stat-change": {
+            "Int": 1,
+            "IntMax": 1,
+            "Cha": -1
+        },
+        "desc": "**Awakened Mind** - Your alien knowledge gives you the ability to touch the minds of other characters. You can telepathically speak to any character you can see within 30ft of you. You need to share a language with the character for it to understand your telepathic utterances, but you don't need to share a language to share emotions, images and impressions. Additionally, your maximum Intelligence is now 6, and your Intelligence increases by 1 but your Charisma decreases by 1 (to a minimum of -3).\n\n**Spell Affinity** - If you take the Pact Magic Power, Intelligence is your Magic Statistic for your spells and you use the Arcane Sphere spell list.\n\n**Emblematic Spells** - In addition to the Arcane Sphere spell list, you can choose from the following list.\n\n| Magnitude | Spells                                       |\n| --------- | -------------------------------------------- |\n| Cantrip   | Eldritch Blast, Vicious Mockery              |\n| I         | Arms of Hadar, Dissonant Whispers            |\n| II        | Enthrall, Immovable Object                   |\n| III       | Conjure Barrage, Hunger of Hadar             |\n| IV        | Compulsion, Gravity Sinkhole, Shadow of Moil |\n| V         | Awaken, Destructive Wave                     |\n| VI        | Gravity Fissure, Primordial Ward             |\n| VII       | Tether Essence                               |\n| VIII      | Dark Star, Reality Break                     |\n| IX        | Ravenous Void                                |\n\n**Anathema** - Spells from the Arcane Sphere unavailable to you.\n\n| Magnitude | Spells                                     |\n| --------- | ------------------------------------------ |\n| Cantrip   |Friends                                    |\n| I         | Cure Wounds, Protection from Good and Evil |\n| II        | Aid, Lesser Restoration                    |\n| III       | Catnap, Revivify                           |\n| IV        | Fabricate, Summon Construct                |\n| V         | Dawn, Greater Restoration                  |\n| VI        | Sunbeam                                    |\n| VII       | Sequester                                  |\n| VIII      | Sunburst                                   |\n| IX        | Wish                                       |"
     },
     {
         "name": "Great Weapon Fighting",
@@ -1594,7 +1599,7 @@
         "preq": [
             "Mana"
         ],
-        "desc": "An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with occultish magic. This font of magic, whatever its origin, fuels your spells. Your spellcasting ability for Occult Spellcasting depends on the school of the spell that you cast, since the power of your magic relies on your body's ability to conjure, fuel and guide the magic, rather than any specific learning.\n\n- For Abjuration, Conjuration and Divination spells you use your Fortitude (halved, rounded up).\n- For Illusion and Transmutation spells you use your Reflexes (halved, rounded up).\n- For Enchantment, Evocation and Necromancy spells you use your Willpower (halved, rounded up).\n\nYou can use an arcane focus as a spellcasting focus for your sorcerer spells.\n\n**Cantrips** - You know four cantrips of your choice from the Occult Sphere spell list.\n\n**Spells Known** - You know two Magnitude I spells of your choice from the Occult Sphere spell list as Innate Spells. When you gain a rank in the Mana Power, you learn one more Occult Sphere spell of a Magnitude which you have Reserve for, also as an Innate Spell.\n\nAdditionally, when you gain a rank in Mana, you can choose one of the Innate Occult Sphere Spells you know and replace it with another from the Occult Sphere spell list, which also must be of a Magnitude for which you have Reserve."
+        "desc": "An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with occultish magic. This font of magic, whatever its origin, fuels your spells. Your Magic Statistic for Occult Spellcasting depends on the school of the spell that you cast, since the power of your magic relies on your body's ability to conjure, fuel and guide the magic, rather than any specific learning.\n\n- For Abjuration, Conjuration and Divination spells you use your Fortitude (halved, rounded up).\n- For Illusion and Transmutation spells you use your Reflexes (halved, rounded up).\n- For Enchantment, Evocation and Necromancy spells you use your Willpower (halved, rounded up).\n\nYou can use an arcane focus as a spellcasting focus for your sorcerer spells.\n\n**Cantrips** - You know four cantrips of your choice from the Occult Sphere spell list.\n\n**Spells Known** - You know two Magnitude I spells of your choice from the Occult Sphere spell list as Innate Spells. When you gain a rank in the Mana Power, you learn one more Occult Sphere spell of a Magnitude which you have Reserve for, also as an Innate Spell.\n\nAdditionally, when you gain a rank in Mana, you can choose one of the Innate Occult Sphere Spells you know and replace it with another from the Occult Sphere spell list, which also must be of a Magnitude for which you have Reserve."
     },
     {
         "name": "Open Hand Technique",
@@ -1631,7 +1636,7 @@
         "preq": [
             "Otherworldly Patron"
         ],
-        "desc": "Your arcane research and the magic bestowed on you by your patron have given you facility with spells.\n\n**Cantrips** - You know two cantrips of your choice from the Spell List of your Patron. Through the Cantrip Cornucopia Invocation, you can gain more cantrips.\n\n**Stipend** - Your Patron bestows upon you a stipend of magical power, that you must expend as Mana Reserve at Magnitude I. You regain all your Stipend when you finish a Short Rest. You have 2 Charges of your Stipend, and can increase the number of Charges of it through the Overcharge Invocation, and the Magnitude through the Force of Will Invocation. All Pact Magic spells are cast at the maximum Magnitude available to you. Stipend is not Mana, and cannot be used in Mana-requiring Powers. However you may cast spells from your Patronage with your own Mana Reserve, if you have any.\n\n**Patronage** - Choose a number of spells from the Spell List of your Patron equal to your Bonus + your Patron's Spellcasting Ability (to a minimum of 1). These are Innate Spells for you. If these Stats increase, you may choose more spells. As a Downtime Activity, you can commune with your Patron and they may choose to allow you to change one, some or all of your Innate Spells up to the Magnitude you have the Stipend to cast (Downtime Activities are 2 days or more of non-adventuring, consult with your DM).\n\n**Spellcasting Ability** - your Spellcasting Ability is determined by your Patron.\n\n**Spell Save DC** = 8 + your Bonus + your Spellcasting Ability\n\n**Spell Attack Modifier** = your Bonus + your Spellcasting Ability\n\n**Spellcasting Focus** - You can use an arcane focus as a spellcasting focus for your Occult Sphere spells."
+        "desc": "Your arcane research and the magic bestowed on you by your patron have given you facility with spells.\n\n**Cantrips** - You know two cantrips of your choice from the Spell List of your Patron. Through the Cantrip Cornucopia Invocation, you can gain more cantrips.\n\n**Stipend** - Your Patron bestows upon you a stipend of magical power, that you must expend as Mana Reserve at Magnitude I. You regain all your Stipend when you finish a Short Rest. You have 2 Charges of your Stipend, and can increase the number of Charges of it through the Overcharge Invocation, and the Magnitude through the Force of Will Invocation. All Pact Magic spells are cast at the maximum Magnitude available to you. Stipend is not Mana, and cannot be used in Mana-requiring Powers. However you may cast spells from your Patronage with your own Mana Reserve, if you have any. You can use an arcane focus as a spellcasting focus for your Occult Sphere spells.\n\n**Patronage** - Choose a number of spells from the Spell List of your Patron equal to your Bonus + your Patron's Magic Statistic (to a minimum of 1). These are Innate Spells for you. If these Stats increase, you may choose more spells. During Downtime, you can commune with your Patron and they may choose to allow you to change one, some or all of your Innate Spells up to the Magnitude you have the Stipend to cast."
     },
     {
         "name": "Portent",
@@ -1655,7 +1660,7 @@
             "Mana",
             "Perception +1"
         ],
-        "desc": "**Cantrips** - You know two cantrips of your choice from the Primal Sphere.\n\n**Preparing and Casting Spells** - You use your Reserve of Mana to cast spells. In addition to any Innate spells you know, you prepare a list of primal spells that are available for you to cast each day. To do so, choose a number of spells from the Primal Sphere spell list. The spells must be of a Magnitude that you have the Reserve for. You can change your list of prepared spells when you finish a Long Rest. Preparing a new list of primal spells requires time spent communing with nature and absorbing the instincts and hidden wisdom needed to cast the spells: at least 1 minute per spell Magnitude for each spell.\n\n**Spellcasting Ability** - Your spellcasting ability is determined by the current Verdance of nature where you are, as detailed in the Verdance table below. You use Verdance whenever a spell refers to your spellcasting ability. In addition, you use Verdance when setting the saving throw DC for a primal spell you Cast and when making an attack roll with one.\n\n**Spell save DC** - 8 + your Bonus + Verdance\n\n**Spell attack modifier** - your Bonus + Verdance\n\n**Ritual Casting** - You can cast a primal spell as a ritual if that spell has the ritual tag and you have the spell prepared.\n\n**Spellcasting Focus** - You can use a druidic focus as a spellcasting focus for your Primal spells.\n\n| Verdance | Barren | Poor | Middling | Rich | Abundant|\n|---|---|---|---|---|---|\n|Boreal|-1|0|1|2|4|\n|Deeps|-1|0|1|2|4|\n|Deserts|-1|0|1|2|4|\n|Jungles|1|2|3|4|5|\n|Plains|0|1|2|3|4|\n|Mountains|-1|0|1|2|4|\n|Shallows|1|2|3|4|5|\n|Swamps|0|1|2|3|4|\n|Underground|-1|0|1|2|4|\n|Woods|0|1|2|3|4|"
+        "desc": "Your connection to nature allows you to weave the power of the local environment into primal magic. You can use a druidic focus as a spellcasting focus for your Primal spells. Your Magic Statistic for your Primal Sphere spells is determined by the current Verdance of nature where you are, as detailed in the Verdance table below.\n\n**Cantrips** - You know two cantrips of your choice from the Primal Sphere.\n\n**Preparing and Casting Spells** - You use your Reserve of Mana to cast spells. In addition to any Innate spells you know, you prepare a list of primal spells that are available for you to cast each day. To do so, choose a number of spells from the Primal Sphere spell list. The spells must be of a Magnitude that you have the Reserve for. You can change your list of prepared spells when you finish a Long Rest. Preparing a new list of primal spells requires time spent communing with nature and absorbing the instincts and hidden wisdom needed to cast the spells: at least 1 minute per spell Magnitude for each spell.\n\n| Verdance | Barren | Poor | Middling | Rich | Abundant|\n|---|---|---|---|---|---|\n|Boreal|-1|0|1|2|4|\n|Deeps|-1|0|1|2|4|\n|Deserts|-1|0|1|2|4|\n|Jungles|1|2|3|4|5|\n|Plains|0|1|2|3|4|\n|Mountains|-1|0|1|2|4|\n|Shallows|1|2|3|4|5|\n|Swamps|0|1|2|3|4|\n|Underground|-1|0|1|2|4|\n|Woods|0|1|2|3|4|"
     },
     {
         "name": "Prodigy",
@@ -1774,7 +1779,7 @@
         "name": "Rune Magic",
         "tag": ["spellcasting", "universal"],
         "preq": ["Once every 3rd Power"],
-        "desc": "You know a number of ancient magical runes that you keep protected in a legend. You can add runes that you find in your adventures to your legend.\n\nAt the end of a Long Rest, choose a number of runes from your legend equal to your Bonus. You imbue them on objects that you carry or wear, through paint, chisel or other means. Each of these runes exudes power, providing a constant benefit to the bearer. In addition, you may expend the power of a rune to cast the Spell that rune embodies. Each symbol Spell is cast at its minimum Magnitude, but requires no Mana or material components, and your Spellcasting ability is your Bonus. When you do so, the rune fades and you no longer gain the passive benefit. Any unused runes fade at the start of your next Long Rest.\n\nWhen you take this Power you know 4 runes."
+        "desc": "You know a number of ancient magical runes that you keep protected in a legend. You can add runes that you find in your adventures to your legend.\n\nAt the end of a Long Rest, choose a number of runes from your legend equal to your Bonus. You imbue them on objects that you carry or wear, through paint, chisel or other means. Each of these runes exudes power, providing a constant benefit to the bearer. In addition, you may expend the power of a rune to cast the Spell that rune embodies. Each symbol Spell is cast at its minimum Magnitude, but requires no Mana or material components, and your Magic Statistic is your Bonus. When you do so, the rune fades and you no longer gain the passive benefit. Any unused runes fade at the start of your next Long Rest.\n\nWhen you take this Power you know 4 runes."
     },
     {
         "name": "Savage Attacks",
@@ -1826,7 +1831,7 @@
             "gnome"
         ],
         "preq": [],
-        "desc": "You learn the magic of the learned scribe. You learn the Message cantrip. You also learn the Comprehend Languages and Illusory Script spells, each of which you can cast once without expending Mana or requiring components. You regain the ability to cast these two spells in this way when you finish a Long Rest. Intelligence is your spellcasting ability for all three spells."
+        "desc": "You learn the magic of the learned scribe. You learn the Message cantrip. You also learn the Comprehend Languages and Illusory Script spells, each of which you can cast once without expending Mana or requiring components. You regain the ability to cast these two spells in this way when you finish a Long Rest. Intelligence is your Magic Statistic for all three spells."
     },
     {
         "name": "Sculpt Spells",
@@ -2064,7 +2069,7 @@
         "preq": [
             "Intelligence +2"
         ],
-        "desc": "You have inherited the innate spellcasting ability of your ancestors.\n\nYou learn to cast each of the following spells once without expending Mana with this Power: Blindness/Deafness, Blur, Disguise Self, and Nondetection (targetting only yourself but without needing the 25gp material component). You regain the ability to cast these spells when you finish a Long Rest. Intelligence is your spellcasting ability for these spells."
+        "desc": "You have inherited the innate spellcasting ability of your ancestors.\n\nYou learn to cast each of the following spells once without expending Mana with this Power: Blindness/Deafness, Blur, Disguise Self, and Nondetection (targetting only yourself but without needing the 25gp material component). You regain the ability to cast these spells when you finish a Long Rest. Intelligence is your Magic Statistic for these spells."
     },
     {
         "name": "Swift",
@@ -2332,7 +2337,7 @@
             "half-elf"
         ],
         "preq": [],
-        "desc": "You learn the magic of the primeval woods, which are revered and protected by your people. You learn one Primal Sphere cantrip of your choice. You also learn the Longstrider and Pass Without Trace spells, each of which you can cast once without expending Mana. You regain the ability to cast these two spells in this way when you finish a Long Rest. The Verdance of your locale is your spellcasting ability for all three spells. See the [Verdance Table](/pedd/magic#verdance-table)."
+        "desc": "You learn the magic of the primeval woods, which are revered and protected by your people. You learn one Primal Sphere cantrip of your choice. You also learn the Longstrider and Pass Without Trace spells, each of which you can cast once without expending Mana. You regain the ability to cast these two spells in this way when you finish a Long Rest. The Verdance of your locale is your spellcasting ability for these spells. See the [Verdance Table](/pedd/magic#verdance-table)."
     },
     {
         "name": "Discovery",
