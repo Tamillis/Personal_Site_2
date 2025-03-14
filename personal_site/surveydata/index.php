@@ -7,7 +7,7 @@ require __DIR__ . "/SurveyGateway.php";
 require __DIR__ . "/SurveyController.php";
 require __DIR__ . "/SurveyModel.php";
 
-const RES_LOC = 1; //where in the final URI the resource is after explode("/", it)
+const RES_LOC = 2; //where in the final URI the resource is after explode("/", it)
 const RES_ENDPOINT = "surveydata"; //in case I change up the endpoint
 const RES_NAME = "surveys"; //in case I change up the table name
 
@@ -25,7 +25,7 @@ $parts = array_filter(explode("/", $path));
 
 if ($parts[RES_LOC] !== RES_ENDPOINT) {
     http_response_code(404);
-    echo json_encode(["message" => "Resource in $path not found", "URI parts" => $parts]);
+    echo json_encode(["message" => "Resource ". RES_ENDPOINT . " not found in $path at position " . RES_LOC . ", found " . $parts[RES_LOC] . " instead.", "URI parts" => $parts]);
     exit;
 }
 

@@ -89,6 +89,10 @@ Skills are set on power by skill attribute which leads to an object of {core, kn
 }
 ```
 
+Actually the above needs to change to accomodate skill choices between arrays that cover more than one skill category
+
+Also there are special names for "Any Martial", "Any", and "Current^" which means upgrade any Current Skill from Proficiency to Expertise
+
 - SkillName^ skill Proficiency or upgrade to Expertise if already earned
 - SkillName* skill at Expertise
 
@@ -104,3 +108,14 @@ Prerequisite groupings:
 - "Once every Nth Role Power"
 - "After N Role Powers"
 - One of (the above / separated / by / forward-slashes)
+
+### Simulation
+So begins the idea of adding everything needed to powers to fully simulate them in a virtual tabletop.
+
+As I make my way through the Powers I'll make a note of the sections here and my thoughts for there use on simulation.
+
+```json "actions": ["array", "of", "action", "names"] ``` will give a list of actions a character can do on their turn (in addition to base)
+```json "bonus-actions": ["array", "of", "action", "names"] ``` as above, but for bonus actions. includes if actions are now bonus actions
+```json "cool-down": { "short" : 3 } ``` an object with different prop-values for different periods and numbers of times of use per period. Probs just a very high value for "infinite" or negative and check on val == 0
+
+or, you know, I'm just making a tonne of work for myself for basically no reason.

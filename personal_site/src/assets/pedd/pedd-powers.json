@@ -8,7 +8,10 @@
         "preq": [
             "Dexterity +1"
         ],
-        "desc": "You can push yourself beyond your normal limits for a moment. After your Action, you can take one additional Action.\n\nOnce you use this Power, you must finish a Short Rest before you can use it again."
+        "desc": "You can push yourself beyond your normal limits for a moment. After your Action, you can take one additional Action.\n\nOnce you use this Power, you must finish a Short Rest before you can use it again.",
+        "cooldown": {
+            "short-rest": 1
+        }
     },
     {
         "name": "Improved Action Surge",
@@ -324,7 +327,10 @@
         "preq": [
             "Otherworldly Patron"
         ],
-        "desc": "**Healing Light** - you gain the ability to channel celestial energy to heal wounds. You have a pool of d6s equal to your Bonus + your Faith that you regain after a Long Rest. As a Bonus Action, you can spend these d6s to heal one character you can see within 60ft of you with a word of healing power whispered into your ear by your Patron. The maximum number of dice you can spend at once equals your Faith (minimum of one die). Roll the dice you spend, add them together, and restore an amount of Health equal to the total.\n\n**Magic Statistic** - Faith. Faith for you is the following the orders, precepts and desires of your Patron. In addition, your maximum Faith is now 6, but your Faith can fall as low as -5 and is prone to fluctuating more rapidly than Divine Spellcasting spell casters (consult with your GM, but as a guide affect change at the end of each session).\n\n**Spell List** - Divine Sphere\n\n**Emblematic Spells** - In addition to the Divine Sphere spell list, you can choose from the following list.\n\n| Magnitude | Spells |\n| --- | --- |\n| Cantrip | Eldritch Blast (but radiant damage), Blade Ward |\n| I | Burning Hands, Faerie Fire (but white light), Sleep |\n| II | Flame Blade, Fortune's Favour, See Invisibility |\n| III | Call Lightning, Fear, Fly |\n| IV | Charm Monster, Compulsion, Sickening Radiance (but harsh white light) |\n| V | Contact Other Plane, Hold Monster, Wall of Light |\n| VI | Globe of Invulnerability, Mass Suggestion, Tasha's Otherwordly Guise (Upper Planes only) |\n| VII | Force Cage, Sequester |\n| VIII | Antipathy/Sympathy, Power Word Stun |\n| IX | Wish |\n\n**Anathema** - Due to the limited nature of the Divine Sphere, the Celestial Patron finds none of its spells Anathema."
+        "desc": "**Healing Light** - you gain the ability to channel celestial energy to heal wounds. You have a pool of d6s equal to your Bonus + your Faith that you regain after a Long Rest. As a Bonus Action, you can spend these d6s to heal one character you can see within 60ft of you with a word of healing power whispered into your ear by your Patron. The maximum number of dice you can spend at once equals your Faith (minimum of one die). Roll the dice you spend, add them together, and restore an amount of Health equal to the total.\n\n**Magic Statistic** - Faith. Faith for you is the following the orders, precepts and desires of your Patron. In addition, your maximum Faith is now 6, but your Faith can fall as low as -5 and is prone to fluctuating more rapidly than Divine Spellcasting spell casters (consult with your GM, but as a guide affect change at the end of each session).\n\n**Spell List** - Divine Sphere\n\n**Emblematic Spells** - In addition to the Divine Sphere spell list, you can choose from the following list.\n\n| Magnitude | Spells |\n| --- | --- |\n| Cantrip | Eldritch Blast (but radiant damage), Blade Ward |\n| I | Burning Hands, Faerie Fire (but white light), Sleep |\n| II | Flame Blade, Fortune's Favour, See Invisibility |\n| III | Call Lightning, Fear, Fly |\n| IV | Charm Monster, Compulsion, Sickening Radiance (but harsh white light) |\n| V | Contact Other Plane, Hold Monster, Wall of Light |\n| VI | Globe of Invulnerability, Mass Suggestion, Tasha's Otherwordly Guise (Upper Planes only) |\n| VII | Force Cage, Sequester |\n| VIII | Antipathy/Sympathy, Power Word Stun |\n| IX | Wish |\n\n**Anathema** - Due to the limited nature of the Divine Sphere, the Celestial Patron finds none of its spells Anathema.",
+        "stat-max": {
+            "faith": 6
+        }
     },
     {
         "name": "Close Quarters Shooter",
@@ -360,7 +366,8 @@
         "preq": [
             "Wild Shape"
         ],
-        "desc": "You gain the ability to use Wild Shape on your turn as a Bonus Action, rather than as an Action.\n\nAdditionally, while you are transformed by Wild Shape, you can use a Bonus Action to expend a Reserve of Mana to regain 1d8 Health per Magnitude of Mana expended. For example, if you expend a Reserve of Magnitude III, you regain 3d8 Health."
+        "desc": "You gain the ability to use Wild Shape on your turn as a Bonus Action, rather than as an Action.\n\nAdditionally, while you are transformed by Wild Shape, you can use a Bonus Action to expend a Reserve of Mana to regain 1d8 Health per Magnitude of Mana expended. For example, if you expend a Reserve of Magnitude III, you regain 3d8 Health.",
+        "bonus-actions": ["Wild Shape"]
     },
     {
         "name": "Cunning Action",
@@ -372,7 +379,8 @@
         "preq": [
             "Dexterity +1"
         ],
-        "desc": "Your quick thinking and agility allow you to move and act quickly. You can take the Discern, Disarm, Dodge, or Parry actions as Bonus Actions instead."
+        "desc": "Your quick thinking and agility allow you to move and act quickly. You can take the Discern, Disarm, Dodge, or Parry actions as Bonus Actions instead.",
+        "bonus-actions": ["Discern", "Dodge", "Parry"]
     },
     {
         "name": "Cursed",
@@ -783,14 +791,15 @@
         "desc": "Your Patronage spells increases to your Expertise + Magic Statistic (to a minimum of 2), and you may prepare your list of Patronage Innate Spells anew as if completing a Downtime Activity to do so."
     },
     {
-        "name": "Expert Skill",
+        "name": "Skilled",
         "tag": [
             "exploration",
             "skill",
             "background"
         ],
-        "preq": [],
-        "desc": "You gain proficiency in one of Alchemy / Arcana / Disguise / Engineering / Investigation / Navigation / Strategy / Languages (one) / Medicine, in a Martial Skill of your choice, and in any one other Skill of your choice. Additionally, choose one Skill in which you have proficiency, now or before. You gain Expertise with that Skill."
+        "preq": ["Intelligence +1"],
+        "desc": "You gain proficiency in one of Alchemy / Arcana / Disguise / Engineering / Investigation / Navigation / Strategy / Languages (one) / Medicine, in a Martial Skill of your choice, and in any one other Skill of your choice.",
+        "skill": [["Alchemy", " Arcana", " Disguise", "Engineering", "Investigation", "Navigation", "Strategy", "Languages (one)","Medicine"], "Any Martial", "Any"]
     },
     {
         "name": "Expertise",
@@ -800,9 +809,11 @@
         ],
         "preq": [
             "After 3 Powers",
-            "Once every 4th Power"
+            "Once every 3rd Power",
+            "Intelligence +1"
         ],
-        "desc": "Choose two skills with which you are proficient. You now have Expertise in those skills (double your Bonus).\n\nIf you take this Power again, you choose two others of your proficienct Skills to gain Expertise in."
+        "desc": "Choose two skills with which you are proficient. You now have Expertise in those skills.\n\nIf you take this Power again, you choose two others of your proficienct Skills to gain Expertise in.",
+        "skill":["Current^", "Current^"]
     },
     {
         "name": "Extended Spell",
@@ -822,7 +833,18 @@
             "skill"
         ],
         "preq": [],
-        "desc": "You study vocabulary lists, unpick grammar and drill pronunciation, through academic or immersive methods, and learn another language. You gain Proficiency in the Lanuages (Any) Skill, choosing a language you do not already have proficiency in."
+        "desc": "You study vocabulary lists, unpick grammar and drill pronunciation, through academic or immersive methods, and learn another language. You gain Proficiency in the Lanuages (one) Skill, choosing a language you do not already have proficiency in. Additionally, learning languages now takes less time for you. You can only take this Power once.",
+        "skill": ["Languages (one)"]
+    },
+    {
+        "name": "Polyglot",
+        "tag": [
+            "social",
+            "skill"
+        ],
+        "preq": ["Extra Language"],
+        "desc": "Your proficiency with languages makes picking up others a breeze. You gain Proficiency in three Lanuages, choosing languages you do not already have proficiency in. Additionally, learning languages now takes even less time for you, and if you encounter a language you do not know, you can still attempt communication at Disadvantage. You can take this Power multiple times, chosing 3 new languages each time.",
+        "skill": ["Languages (one)", "Languages (one)", "Languages (one)"]
     },
     {
         "name": "Extra Childhood Language",
@@ -835,7 +857,8 @@
             "tuskman"
         ],
         "preq": [],
-        "desc": "You were raised in an environment that required you to become bilingual, and you've gained an aptitude for languages. You know one more Childhood Language, and you learn other languages at twice the usual rate."
+        "desc": "You were raised in an environment that required you to become bilingual, and you've gained an aptitude for languages. You know one more Childhood Language, and you learn other languages at twice the usual rate.",
+        "skill": ["Languages (one)"]
     },
     {
         "name": "Eyes of the Rune Keeper",
@@ -859,7 +882,8 @@
         "preq": [
             "Charisma +1"
         ],
-        "desc": "You have significant experience studying, tracking, hunting, and even talking to a certain type of enemy. Choose a group of favoured enemies:\n\n - Outsiders - aberrations, celestials, constructs, demons, fiends, jurors and sprites\n - Unnatural Creatures - elementals, fell, fey, machines, monstrosities and undead\n - Natural Creatures - beasts, oozes and plants (funghi are 'plants')\n - Legendary Creatures - dragons and giants\n - Two races of Humanoid - such as 'gnolls and orcs', or 'elves and humans'\n\nYou gain your Bonus to damage rolls with weapon attacks against characters of the chosen type. Additionally, you have Advantage on Survival checks to track your favoured enemies, Observation checks to spot your favoured enemies when they're Hidden, as well as on any Knowledge skill checks to recall information about them.\n\nWhen you gain this Power, your studies in the language of choice spoken by your favoured enemies (or reasonable alternative) comes to fruition and you become fluent in it. You gain proficiency in that language skill.\n\nYou can take this Power two more times, choosing two further enemy types and a language each time."
+        "desc": "You have significant experience studying, tracking, hunting, and even talking to a certain type of enemy. Choose a group of favoured enemies:\n\n - Outsiders - aberrations, celestials, constructs, demons, fiends, jurors and sprites\n - Unnatural Creatures - elementals, fell, fey, machines, monstrosities and undead\n - Natural Creatures - beasts, oozes and plants (funghi are 'plants')\n - Legendary Creatures - dragons and giants\n - Two races of Humanoid - such as 'gnolls and orcs', or 'elves and humans'\n\nYou gain your Bonus to damage rolls with weapon attacks against characters of the chosen type. Additionally, you have Advantage on Survival checks to track your favoured enemies, Observation checks to spot your favoured enemies when they're Hidden, as well as on any Knowledge skill checks to recall information about them.\n\nWhen you gain this Power, your studies in the language of choice spoken by your favoured enemies (or reasonable alternative) comes to fruition and you become fluent in it. You gain proficiency in that language skill.\n\nYou can take this Power two more times, choosing two further enemy types and a language each time.",
+        "skill": ["Languages (one)"]
     },
     {
         "name": "Fey Ancestry",
@@ -952,7 +976,10 @@
             "goblinoid"
         ],
         "preq": [],
-        "desc": "By foot, claw or wing, you're swifter than others. Increase your Speed by 5ft and your Travel Speed by 800 yards."
+        "desc": "By foot, claw or wing, you're swifter than others. Increase your Speed by 5ft and your Travel Speed by 800 yards.",
+        "stat-change": {
+            "speed": 5
+        }
     },
     {
         "name": "Force of Will",
@@ -1022,9 +1049,11 @@
             "Otherworldly Patron"
         ],
         "stat-change": {
-            "Int": 1,
-            "IntMax": 1,
-            "Cha": -1
+            "intelligence": 1,
+            "charisma": -1
+        },
+        "stat-max": {
+            "intelligence": 6
         },
         "desc": "**Awakened Mind** - Your alien knowledge gives you the ability to touch the minds of other characters. You can telepathically speak to any character you can see within 30ft of you. You need to share a language with the character for it to understand your telepathic utterances, but you don't need to share a language to share emotions, images and impressions. Additionally, your maximum Intelligence is now 6, and your Intelligence increases by 1 but your Charisma decreases by 1 (to a minimum of -3).\n\n**Spell Affinity** - If you take the Pact Magic Power, Intelligence is your Magic Statistic for your spells and you use the Arcane Sphere spell list.\n\n**Emblematic Spells** - In addition to the Arcane Sphere spell list, you can choose from the following list.\n\n| Magnitude | Spells                                       |\n| --------- | -------------------------------------------- |\n| Cantrip   | Eldritch Blast, Vicious Mockery              |\n| I         | Arms of Hadar, Dissonant Whispers            |\n| II        | Enthrall, Immovable Object                   |\n| III       | Conjure Barrage, Hunger of Hadar             |\n| IV        | Compulsion, Gravity Sinkhole, Shadow of Moil |\n| V         | Awaken, Destructive Wave                     |\n| VI        | Gravity Fissure, Primordial Ward             |\n| VII       | Tether Essence                               |\n| VIII      | Dark Star, Reality Break                     |\n| IX        | Ravenous Void                                |\n\n**Anathema** - Spells from the Arcane Sphere unavailable to you.\n\n| Magnitude | Spells                                     |\n| --------- | ------------------------------------------ |\n| Cantrip   |Friends                                    |\n| I         | Cure Wounds, Protection from Good and Evil |\n| II        | Aid, Lesser Restoration                    |\n| III       | Catnap, Revivify                           |\n| IV        | Fabricate, Summon Construct                |\n| V         | Dawn, Greater Restoration                  |\n| VI        | Sunbeam                                    |\n| VII       | Sequester                                  |\n| VIII      | Sunburst                                   |\n| IX        | Wish                                       |"
     },
