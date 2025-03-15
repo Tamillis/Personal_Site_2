@@ -1,12 +1,12 @@
 <?php
-// Include the SessionAuth class
+// Includes
 require 'SessionAuth.php';
+require 'API.php';
+
 try {
     $auth = new SessionAuth();
 } catch (Exception $ex) {
-    http_response_code(500);
-    echo json_encode(['error' => $ex->getMessage()]);
-    exit;
+    API::respond(['error' => $ex->getMessage()], 500);
 }
 
 //all responses will be JSON so setting that now
@@ -18,29 +18,29 @@ if (isset($_GET['action'])) {
         case 'login':
             $input = getInput();
             if ($auth->login($input['username'], $input['password'])) {
-                echo json_encode(['message' => 'Login successful']);
+                API::respond(['message' => 'Login successful']);
             } else {
                 http_response_code(401);
-                echo json_encode(['error' => 'Invalid username or password']);
+                API::respond(['error' => 'Invalid username or password'], 401);
             }
-            exit;
+            break;
         case 'logout':
             $auth->logout();
-            echo json_encode(['message' => 'Logout successful']);
-            exit;
-
+            API::respond(['message' => 'Logout successful']);
+            break;
         case 'check':
-            echo json_encode(['authenticated' => $auth->isAuthenticated(), 'username' => $auth->getUsername()]);
-            exit;
+            API::respond(['authenticated' => $auth->isAuthenticated(), 'username' => $auth->getUsername()]);
+            break;
+        default:
+            API::respond(["error" => "Invalid action {$_GET['action']}"], 400);
+            break;
     }
 }
 
 function getInput() {
     $input = json_decode(file_get_contents('php://input'), true);
     if (!isset($input['username']) || !isset($input['password'])) {
-        http_response_code(400);
-        echo json_encode(['error' => 'Username and password are required']);
-        exit;
+        API::respond(['error' => 'Username and password are required'], 400);
     }
     return $input;
 }

@@ -1,5 +1,5 @@
 <?php
-
+require 'env.php';
 class SessionAuth {
     private $username;
     private $passwordHash;
@@ -16,16 +16,8 @@ class SessionAuth {
 
     // Load credentials from settings.json
     private function loadCredentials() {
-        //manually load local .env
-        $env = file_get_contents(__DIR__."/.env");
-        $lines = explode("\n",$env);
-        foreach($lines as $line){
-            preg_match("/([^#]+)\=(.*)/",$line,$matches);
-            if(isset($matches[2])){ putenv(trim($line)); }
-        }
-
         if (getenv('USERNAME') == null || getenv('PASSWORD_HASH') == null) {
-            throw new Exception('Invalid settings file. Missing username or passwordHash.');
+            throw new Exception('Invalid environemnt settings. Missing username and/or passwordHash.');
         }
 
         $this->username = getenv('USERNAME');

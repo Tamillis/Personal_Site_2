@@ -1,18 +1,16 @@
 <?php
-// Include the SessionAuth class
+// Includes
 require 'SessionAuth.php';
+require 'API.php';
 
 //all responses will be JSON so setting that now
 header('Content-Type: application/json');
-
 
 // Initialize the session authentication
 try {
     $auth = new SessionAuth();
 } catch (Exception $ex) {
-    http_response_code(500);
-    echo json_encode(['error' => $ex->getMessage()]);
-    exit;
+    API::respond(['error' => $ex->getMessage()], 500);
 }
 
 // Define the path to the JSON file
@@ -21,11 +19,7 @@ $jsonFile = 'pedd-powers.json';
 // Protect appropraite CRUD operations with authentication
 function checkAuthentication() {
     global $auth;
-    if (!$auth->isAuthenticated()) {
-        http_response_code(401);
-        echo json_encode(['error' => 'Unauthorized. Please log in.']);
-        exit;
-    }
+    if (!$auth->isAuthenticated()) API::respond(['error' => 'Unauthorized. Please log in.'], 401);
 }
 
 // Function to read the JSON file
@@ -34,26 +28,14 @@ function readData() {
     // Check if the file exists
     if (!file_exists($jsonFile)) {
         // Attempt to create the file if it doesn't exist
-        if (!file_put_contents($jsonFile, json_encode([]))) {
-            http_response_code(500);
-            echo json_encode(['error' => 'Unable to create JSON file. Check permissions.']);
-            exit;
-        }
-    }
-
-    //Check if the file is readable
-    if (!is_readable($jsonFile)) {
-        http_response_code(500);
-        echo json_encode(['error' => 'Unable to read JSON file. Check permissions.']);
-        exit;
+        $successful = file_put_contents($jsonFile, json_encode([]));
+        if (!$successful) API::respond(['error' => 'Unable to create JSON file. Check permissions.'], 500);
     }
 
     $data = file_get_contents($jsonFile);
-    if ($data === false) {
-        http_response_code(500);
-        echo json_encode(['error' => 'Unable to read JSON file. Check file content.']);
-        exit;
-    }
+    //Check if the file is readable too
+    if (!is_readable($jsonFile || !$data)) API::respond(['error' => 'Unable to read JSON file. Check permissions.'], 500);
+
     return json_decode($data, true);
 }
 
@@ -63,19 +45,9 @@ function writeData($data) {
     checkAuthentication();
 
     global $jsonFile;
-    // Check if the file is writable
-    if (!is_writable($jsonFile)) {
-        http_response_code(500);
-        echo json_encode(['error' => 'Unable to write to JSON file. Check permissions.']);
-        exit;
-    }
-
-    $result = file_put_contents($jsonFile, json_encode($data, JSON_PRETTY_PRINT));
-    if ($result === false) {
-        http_response_code(500);
-        echo json_encode(['error' => 'Unable to write to JSON file. Check permissions.']);
-        exit;
-    }
+    $successful = file_put_contents($jsonFile, json_encode($data, JSON_PRETTY_PRINT));
+    // Check if the file is writable too
+    if (!is_writable($jsonFile) || !$successful) API::respond(['error' => 'Unable to write to JSON file. Check permissions.'], 500);
 }
 
 function getArrayElementWithName($arr, $name) {
@@ -95,7 +67,8 @@ function addArrayElement(&$arr, $el) {
     });
 }
 
-// this seems like a long-winded way of doing this
+// WARN: this seems like a long-winded way of doing this
+// removes element with given name from passed in array
 function removeArrayElementWithName(&$arr, $name) {
     $i = 0;
     $n = -1;
@@ -112,38 +85,26 @@ function removeArrayElementWithName(&$arr, $name) {
 }
 
 function checkArrayHasName($arr, $name) : void {
-    if(!getArrayElementWithName($arr, $name)) {
-        http_response_code(409);
-        echo json_encode(['error' => 'Record with this name doesn\' exist']);
-        exit;
-    };
+    if(!getArrayElementWithName($arr, $name)) API::respond(['error' => 'Record with this name doesn\'t exist'], 409);
 }
 
 function checkArrayDoesntHaveName($arr, $name) : void {
-    if(getArrayElementWithName($arr, $name)) {
-        http_response_code(409);
-        echo json_encode(['error' => 'Record with this name already exists']);
-        exit;
-    };
+    if(getArrayElementWithName($arr, $name)) API::respond(['error' => 'Record with this name already exists'], 409);
 }
 
 function getInput() {
     $input = json_decode(file_get_contents('php://input'), true);
-    if (!isset($input['name'])) 
-    {
-        http_response_code(400);
-        echo json_encode(['error' => 'Name is required']);
-        exit;
-    }
+    if (!isset($input['name'])) API::respond(['error' => 'Name is required'], 400);
     return $input;
 }
+
 // Handle CRUD operations based on the request method
 $method = $_SERVER['REQUEST_METHOD'];
 
 switch ($method) {
     case 'GET':
         // Read operation
-        echo json_encode(readData());
+        API::respond(readData());
         break;
 
     case 'POST':
@@ -153,7 +114,7 @@ switch ($method) {
         checkArrayDoesntHaveName($data, $input['name']);
         addArrayElement($data, $input);
         writeData($data);
-        echo json_encode(['message' => 'Record ' . $input['name'] . ' created successfully']);
+        API::respond(['message' => "Record {$input['name']} created successfully"]);
         break;
 
     case 'PUT':
@@ -164,7 +125,7 @@ switch ($method) {
         removeArrayElementWithName($data, $input['name']);
         addArrayElement($data, $input);
         writeData($data);
-        echo json_encode(['message' => 'Record ' . $input['name'] . ' updated successfully']);
+        API::respond(['message' => "Record {$input['name']} updated successfully"]);
         break;
 
     case 'DELETE':
@@ -174,11 +135,10 @@ switch ($method) {
         checkArrayHasName($data, $input['name']);
         removeArrayElementWithName($data, $input['name']);
         writeData($data);
-        echo json_encode(['message' => 'Record ' . $input['name'] . ' deleted successfully']);
+        API::respond(['message' => "Record {$input['name']} deleted successfully"]);
         break;
 
     default:
-        http_response_code(405);
-        echo json_encode(['error' => 'Method not allowed']);
+        API::respond(['error' => 'Method not allowed'], 405);
         break;
 }

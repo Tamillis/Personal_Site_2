@@ -3,13 +3,6 @@
 echo password_hash("pie", PASSWORD_DEFAULT);
 echo "<br/>";
 
-$env = file_get_contents(__DIR__."/.env");
-$lines = explode("\n",$env);
-foreach($lines as $line){
-  preg_match("/([^#]+)\=(.*)/",$line,$matches);
-  if(isset($matches[2])){ putenv(trim($line)); }
-}
-echo "<br/>";
-echo getenv('PASSWORD_HASH');
-echo "<br/>";
-echo password_verify("pie", getenv('PASSWORD_HASH')) ? "Verified" : "Wrong";
+$obj = ["msg" => "Hello there"];
+
+echo "The message {$obj['msg']} is in \$obj!";
