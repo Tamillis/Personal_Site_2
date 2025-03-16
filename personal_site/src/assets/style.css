@@ -11,6 +11,10 @@
   align-self:end;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .gap {
   gap:var(--gap);
 }
