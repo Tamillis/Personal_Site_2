@@ -7,7 +7,9 @@ class SessionAuth {
     // Start the session and initialize the class
     public function __construct() {
         if (session_status() === PHP_SESSION_NONE) {
-            session_start();
+            session_start([
+                'cookie_lifetime' => 86400,
+            ]);
         }
 
         // Load credentials from settings.json
