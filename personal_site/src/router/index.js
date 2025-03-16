@@ -100,7 +100,7 @@ const router = createRouter({
     {
       path: '/admin',
       name: 'admin',
-      component: () => import('../views/Admin.vue')
+      component: () => import('../views/Admin/Admin.vue')
     },
     {
       path: '/404',

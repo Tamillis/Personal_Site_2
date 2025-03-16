@@ -5,29 +5,30 @@
         <form id="login-form" @submit.prevent="login" :class="{hidden: !showLogin}">
             <div class="flex">
                 <label for="username">Username:</label>
-                <input id="username" v-model="username" class="text-entry" type="text" />
+                <input id="username" v-model="username" class="q text-entry" type="text" />
                 <label for="password">Password:</label>
-                <input id="password" v-model="password" class="text-entry" type="password" />
+                <input id="password" v-model="password" class="q text-entry" type="password" />
                 <button type="submit" id="login-btn" class="btn">Login</button>
             </div>
             <p :class="{hidden: !errMsg}" class="error-text">{{ errMsg }}</p>
         </form>
 
         <section id="logged-in" :class="{hidden: showLogin}">
-            <div class="flex gap">
+            <div class="flex gap justify-end">
                 <p>Logged in as <span id="username-display">{{ username }}</span></p>
                 <button id="log-out-btn" class="btn" @click="logout">Log Out</button>
             </div>
-
-            <section class="main-text">
-                <h2>Here be PEDD Powers TBC</h2>
+            <hr/>
+            <section class="">
+                <PEDDPowersEditor />
             </section>
         </section>
     </section>
 </template>
 
 <script setup>
-import Links from '../components/PEDD/Links.vue';
+import Links from '../../components/PEDD/Links.vue';
+import PEDDPowersEditor from './PEDDPowersEditor.vue';
 
 import { ref } from 'vue';
 const AUTH_URL = "/api/Auth_Controller.php";
