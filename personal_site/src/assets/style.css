@@ -8,7 +8,7 @@
 }
 
 .align-self-end {
-  align-self:end;
+  align-self: end;
 }
 
 .bold {
@@ -16,7 +16,7 @@
 }
 
 .gap {
-  gap:var(--gap);
+  gap: var(--gap);
 }
 
 .ml0 {
@@ -272,6 +272,11 @@
   margin-right: auto;
 }
 
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .section {
   z-index: 1;
   transition: 0.5s;
@@ -514,6 +519,19 @@
   appearance: none;
 
   font-size: var(--para-size);
+}
+
+input[type=number].q {
+  -moz-appearance: textfield;
+  text-align:center;
+}
+
+input[type=number].q::-webkit-outer-spin-button,
+input[type=number].q::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 
 .q-label {

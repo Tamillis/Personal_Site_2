@@ -1,7 +1,6 @@
 <template>
-    <div class="mb-gap">
+    <div>
         <div class="flex gap">
-            <p class="q-label bold">Skill Selection</p>
             <select v-model="rank">
                 <option>Proficiency</option>
                 <option>Expertise</option>
@@ -21,9 +20,10 @@
                 v-if="choice == 'Single' || choices.length > 1">Add</button>
         </div>
         <div class="flex gap">
-            <p class="q-label">Skills:</p>
-            <p id="skills-display" class="w-fit">{{chosenSkills.map(s => Array.isArray(s) ? "[" + s.map(datum =>
-                datum.skill).join(", ") + "]" : s.skill).join(", ")}}</p>
+            <p id="skills-display" class="w-fit" v-if="chosenSkills.length > 0">
+                {{chosenSkills.map(s => Array.isArray(s) ? "[" + s.map(datum => datum.skill).join(", ") + "]" : s.skill).join(", ")}}
+            </p>
+            <p v-else>(None)</p>
             <button type="button" class="btn" v-if="chosenSkills.length > 0" @click="chosenSkills.pop()">-</button>
         </div>
     </div>
@@ -32,6 +32,8 @@
 <script setup>
 import skillsData from '/src/assets/pedd/pedd-skills.json';
 import { ref } from 'vue';
+
+const emit = defineEmits(['skillChosen'])
 
 let allSkills = [
     ...skillsData.basicSkills.map(s => { return { ...s, category: "Core" } }),
@@ -79,6 +81,8 @@ function addSkill() {
         if (choices.value.length > 1) pushSkill(chosenSkills.value, choices.value);
         choices.value = [];
     }
+
+    emit('skillChosen', chosenSkills.value);
 }
 
 function addChoice() {
@@ -93,7 +97,5 @@ function selectChoice(e) {
 </script>
 
 <style lang="css" scoped>
-.q-label {
-    width: 6rem;
-}
+
 </style>
