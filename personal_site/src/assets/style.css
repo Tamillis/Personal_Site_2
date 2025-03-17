@@ -11,6 +11,10 @@
   align-self: end;
 }
 
+.align-top {
+  align-items: start;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -519,6 +523,10 @@
   appearance: none;
 
   font-size: var(--para-size);
+}
+
+.font-sm {
+  font-size: 0.886em;
 }
 
 input[type=number].q {

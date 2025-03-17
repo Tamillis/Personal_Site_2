@@ -33,8 +33,6 @@
 import skillsData from '/src/assets/pedd/pedd-skills.json';
 import { ref } from 'vue';
 
-const emit = defineEmits(['skillChosen'])
-
 let allSkills = [
     ...skillsData.basicSkills.map(s => { return { ...s, category: "Core" } }),
     ...skillsData.knowledgeSkills.map(s => { return { ...s, category: "Knowledge" } }),
@@ -53,7 +51,8 @@ let rank = ref("Proficiency");
 let choice = ref("Single");
 let choices = ref([]);
 let chosenSkill = ref("Any");
-let chosenSkills = ref([]);
+
+let chosenSkills = defineModel({default:[]});
 
 function isString(v) {
     return typeof v === 'string' || v instanceof String;
@@ -82,7 +81,7 @@ function addSkill() {
         choices.value = [];
     }
 
-    emit('skillChosen', chosenSkills.value);
+    //emit('skillChosen', chosenSkills.value);
 }
 
 function addChoice() {
