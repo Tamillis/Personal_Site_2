@@ -34,7 +34,7 @@ function readData() {
 
     $data = file_get_contents($jsonFile);
     //Check if the file is readable too
-    if (!is_readable($jsonFile || !$data)) API::respond(['error' => 'Unable to read JSON file. Check permissions.'], 500);
+    if (!is_readable($jsonFile)) API::respond(['error' => 'Unable to read JSON file. Check permissions.'], 500);
 
     return json_decode($data, true);
 }

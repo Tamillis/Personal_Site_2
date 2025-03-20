@@ -51,6 +51,18 @@
   margin-top: var(--gap);
 }
 
+.ml-gap {
+  margin-left: var(--gap);
+}
+
+.mr-gap {
+  margin-right: var(--gap);
+}
+
+.m-gap {
+  margin: var(--gap);
+}
+
 .no-bg {
   background-color: rgba(0, 0, 0, 0) !important;
 }
@@ -65,6 +77,11 @@
 
 .bg-black-transparent-0p5 {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-dark {
+  background-color: var(--backgroundDark);
+  box-shadow: var(--gap) var(--gap) var(--gap) calc(1.5*var(--gap)) var(--backgroundDark);
 }
 
 .text-centre {
@@ -85,6 +102,10 @@
 
   width: 90%;
   font-size: smaller;
+}
+
+.text-sm {
+  font-size:small;
 }
 
 .centre {
@@ -444,6 +465,10 @@
 
 .w-fit {
   width: fit-content;
+}
+
+.text-wrap {
+  white-space: pre-wrap;
 }
 
 /* Programming page unique CSS */

@@ -7,6 +7,12 @@ $obj = ["msg" => "Hello there"];
 
 echo "The session status is " . session_status();
 echo "<br/>";
-echo PHP_SESSION_NONE;
+
+$data = file_get_contents("pedd-powers.json");
+
+echo $data;
 echo "<br/>";
-echo $_SESSION['authenticated'] ? "Authenticated" : "Not Authenticated";
+
+$json = json_decode($data, true);
+
+var_dump($json);
