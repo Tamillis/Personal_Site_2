@@ -1,10 +1,11 @@
-@import url("base.css");
+@import url('base.css');
 
 /* Generic utility classes for easy modification when writting the HTML */
 
 .align-right {
-  text-align: right;
   align-self: end;
+
+  text-align: right;
 }
 
 .align-self-end {
@@ -28,7 +29,7 @@
 }
 
 .ml0 {
-  margin-left: 0px !important;
+  margin-left: 0 !important;
 }
 
 .ml-gap {
@@ -36,7 +37,7 @@
 }
 
 .mb0 {
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important;
 }
 
 .mb-1r {
@@ -63,6 +64,16 @@
   margin-right: var(--gap);
 }
 
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .m-gap {
   margin: var(--gap);
 }
@@ -72,15 +83,15 @@
 }
 
 .bg-black-transparent-0p1 {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, .1);
 }
 
 .bg-black-transparent-0p3 {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, .3);
 }
 
 .bg-black-transparent-0p5 {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .bg-dark {
@@ -93,28 +104,30 @@
 }
 
 .text-entry {
-  border: none;
-  border-radius: 0px;
-
-  margin-left: var(--gap);
+  font-size: smaller;
+  width: 90%;
   margin-right: var(--gap);
+  margin-left: var(--gap);
   padding: 4px 2px;
 
+  border: none;
+  border-radius: 0;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-
-  width: 90%;
-  font-size: smaller;
 }
 
 .text-sm {
-  font-size:small;
+  font-size: small;
+}
+
+.text-wrap {
+  white-space: pre-wrap;
 }
 
 .centre {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 .width-fit {
@@ -167,11 +180,15 @@
 
 .border {
   border: var(--highlight) 4px groove;
-  border-radius: 25px 0px 25px 0px;
+  border-radius: 25px 0 25px 0;
 }
 
 .border-top {
   border-top: var(--highlight) 2px groove;
+}
+
+.border-right {
+  border-right: var(--highlight) 2px groove;
 }
 
 .border-bottom {
@@ -262,54 +279,55 @@
 }
 
 .no-indent {
-  text-indent: 0px !important;
+  text-indent: 0 !important;
 }
 
 .no-border-top {
-  border-top: none !important;
-  padding-top: none !important;
   margin-top: none !important;
+  padding-top: none !important;
+
+  border-top: none !important;
 }
 
 .no-btn {
-  background: none;
   border: none;
   outline: none;
+  background: none;
+}
+
+.w-66 {
+  width: 66%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-fit {
+  width: fit-content;
 }
 
 /* General styling classes, for a site-wide aesthetic */
 .btn {
+  z-index: 10;
+  display: block;
+  padding: 5px 10px;
+  cursor: pointer;
   text-align: center;
   text-decoration: none;
   color: var(--text-color);
-  background-color: var(--color);
-  padding: 5px 10px;
-
-  display: block;
   border: solid 2px var(--highlight);
-  cursor: pointer;
-
-  z-index: 10;
+  background-color: var(--color);
 }
 
 .btn:active {
   transform: translate(0, 3px);
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.my-0 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .section {
   z-index: 1;
-  transition: 0.5s;
   overflow: auto;
+  transition: .5s;
 }
 
 @media only screen and (min-width: 600px) {
@@ -317,8 +335,7 @@
     margin: 1rem var(--sectionMargin);
     padding: 1rem;
     border: var(--highlight) 4px groove;
-    border-radius: 25px 0px 25px 0px;
-
+    border-radius: 25px 0 25px 0;
   }
 }
 
@@ -344,64 +361,70 @@
 }
 
 .main-title {
-  text-decoration: underline;
   font-size: var(--main-title-size);
-  text-align: center;
   margin-bottom: 1rem;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .subtitle {
-  text-decoration: underline;
   font-size: var(--subtitle-size);
+  margin-bottom: .5rem;
+
+  text-decoration: underline;
   text-indent: 1.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .subtitle-synopsis {
-  text-indent: 3em;
   font-size: var(--subtitle-size);
+
+  text-indent: 3em;
 }
 
 .subsubtitle {
-  text-decoration: underline;
   font-size: var(--subsubtitle-size);
+
+  text-decoration: underline;
   text-indent: 1.5rem;
 }
 
 .main-text {
-  display: block;
-  padding: 0.5em 0em;
   font-size: 1em;
+
+  display: block;
+  margin-top: var(--gap);
+  padding: .5em 0;
   text-indent: var(--textindent);
-  text-rendering: optimizeLegibility;
   background-color: var(--backgroundDark);
   box-shadow: var(--gap) var(--gap) var(--gap) calc(1.5*var(--gap)) var(--backgroundDark);
-  margin-top: var(--gap);
+  text-rendering: optimizeLegibility;
 }
 
 .main-text ul,
 .main-text ol {
-  text-indent: 0px;
   margin-left: var(--subtitle-size);
+
+  text-indent: 0;
 }
 
 .main-text p {
-  margin: 5px 0px;
+  margin: 5px 0;
 }
 
 .inline-subtitle {
-  font-style: italic;
   font-weight: bold;
+  font-style: italic;
   padding-top: 3px;
 }
 
 .intext-link,
 .intext-link:link,
 .intext-link:visited {
+  font-weight: bold;
+  font-style: normal;
+
   text-decoration: none;
   color: var(--text-color);
-  font-style: normal;
-  font-weight: bold;
   overflow-wrap: break-word;
 }
 
@@ -410,8 +433,8 @@
 }
 
 .inset {
-  margin-left: var(--textindent);
   margin-right: var(--textindent);
+  margin-left: var(--textindent);
 }
 
 .inline {
@@ -419,60 +442,44 @@
 }
 
 .triangle-points {
-  list-style: "▷ " inside;
+  list-style: '▷ ' inside;
 }
 
 .triangle-points-down {
-  list-style: "▽ " inside;
-
+  list-style: '▽ ' inside;
 }
 
 .triangle-points-reverse {
-  list-style: "◁ " inside;
+  list-style: '◁ ' inside;
 }
 
 .table {
-  border: 2px var(--color) groove;
-
-  text-align: center;
   border-collapse: collapse;
+  text-align: center;
+
+  border: 2px var(--color) groove;
 }
 
 .table td,
 .table th {
-  border-right: 2px var(--color) groove;
   padding: 2px 5px;
+
+  border-right: 2px var(--color) groove;
 }
 
 .table tr:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, .1);
 }
 
 .table th {
-  font-style: italic;
   font-weight: bold;
+  font-style: italic;
   text-decoration: underline;
 }
 
 .collapse {
-  padding: 0;
   margin: 0;
-}
-
-.w-66 {
-  width: 66%;
-}
-
-.w-100 {
-  width: 100%;
-}
-
-.w-fit {
-  width: fit-content;
-}
-
-.text-wrap {
-  white-space: pre-wrap;
+  padding: 0;
 }
 
 /* Programming page unique CSS */
@@ -481,14 +488,14 @@
 .wrap {
   /* set display to none initially for site speed */
   display: none;
-
+  overflow: none;
   /* These values are brute forced to be the minimum without invoking sidebars from P5JS:s latest style */
+
   width: 80vw;
   height: 85vw;
-  padding: 0;
-  overflow: none;
-  scrollbar-width: 0;
   margin: 1em auto;
+  padding: 0;
+  scrollbar-width: 0;
 }
 
 @media screen and (min-width: 600px) {
@@ -500,20 +507,20 @@
 
 /* Sets the frame element to be 100% of the wrapping div */
 .frame {
+  overflow: none;
+
   width: 100%;
   height: 100%;
-  overflow: none;
 }
 
 /* Generic Footer classes */
 
 .main-footer {
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 25px 0px 25px 0px;
   margin: 1rem;
-  transition: 0.5s;
   padding: 5px 2em;
-
+  transition: .5s;
+  border-radius: 25px 0 25px 0;
+  background-color: rgba(0, 0, 0, .1);
 }
 
 @media screen and (min-width: 1280px) {
@@ -526,9 +533,10 @@
 
 .footer-text {
   font-size: .87em;
-  opacity: 0.8;
   /* vertically aligning text doesnt work with vertical-align: middle; because???? */
+
   transform: translateY(25%);
+  opacity: .8;
 }
 
 #demo-div {
@@ -543,52 +551,51 @@
 }
 
 .q {
-  border: none;
-  border-radius: 0px;
+  font-size: var(--para-size);
   padding: 4px 2px;
 
+  border: none;
+  border-radius: 0;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-
-  font-size: var(--para-size);
 }
 
 .font-sm {
-  font-size: 0.886em;
+  font-size: .886em;
 }
 
 input[type=number].q {
+  text-align: center;
+
   -moz-appearance: textfield;
-  text-align:center;
 }
 
 input[type=number].q::-webkit-outer-spin-button,
 input[type=number].q::-webkit-inner-spin-button {
+  margin: 0;
+
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  margin: 0;
 }
 
 .q-label {
-  text-indent: 0px !important;
+  text-indent: 0 !important;
 }
 
 .checkBoxQ,
 .radioQ {
+  width: 12px;
+  height: 12px;
+  margin: 2px 5px 0 5px;
+  transition: .2s all linear;
+  border: white solid 1px;
+  border-radius: 50%;
+
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: white solid 1px;
-
-  margin: 2px 5px 0px 5px;
-
-  transition: 0.2s all linear;
 }
 
 .checkBoxQ:checked,
@@ -597,12 +604,14 @@ input[type=number].q::-webkit-inner-spin-button {
 }
 
 .error-box {
-  border: red 2px solid;
   width: fit-content;
   padding-right: 2rem;
+
+  border: red 2px solid;
 }
 
 .error-text {
-  color: red;
   font-weight: bold;
+
+  color: red;
 }

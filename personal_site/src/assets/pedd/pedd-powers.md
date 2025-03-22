@@ -31,10 +31,10 @@ Prerequisites are <a id="toggle-preqs">(Click here to show)</a>:
 - a certain Stat at a certain Value
 - the presence of other Powers
 - After N Powers - Many such "punchy" Powers use this, meaning n number of other Powers must first be taken before this Power can be taken
-- Every N<sup>th</sup> Power - which means the Power can be taken multiple times, but only after N other Powers have been taken. This has nothing to do with other Powers that also have this prerequisite, so they may be "interleaved".
+- Once every N<sup>th</sup> Power - which means the Power can be taken multiple times, but only after N other Powers have been taken. This has nothing to do with other Powers that also have this prerequisite, so they may be "interleaved".
 - a Skill or Expertise in a Skill
 - a Cantrip or Spell known
-- A OR B - any of the above prerequisites, only obviously one or the other (or however many in the chain) are needed.
+- One of A OR B - any of the above prerequisites, only obviously one or the other (or however many in the chain) are needed.
 
 </section>
 
