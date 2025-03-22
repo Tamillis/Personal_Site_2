@@ -14,7 +14,7 @@ try {
 }
 
 // Define the path to the JSON file
-$jsonFile = 'pedd-powers.json';
+$jsonFile = '../src/assets/pedd/pedd-powers.json';
 
 // Protect appropraite CRUD operations with authentication
 function checkAuthentication() {

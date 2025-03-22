@@ -26,11 +26,13 @@ const props = defineProps({ name: String, expanded: Boolean });
 .container:first-child {
     border-top: none;
 }
+
 @media only screen and (min-width: 600px) {
-.container * {
-    flex-basis: 15rem;
+    .container * {
+        flex-basis: 15rem;
+    }
 }
-}
+
 @media only screen and (max-width: 599px) {
     .container {
         flex-direction: column;
