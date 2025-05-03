@@ -246,7 +246,7 @@ Note that durations have been separated from Conditions, so every condition, whe
 - **Stunned** - the target character cannot take Actions or Bonus Actions.
 
 The following enviromental damage rules are updated and rolled into Conditions of the corresponding name:
-- **Burning** - A character burns each Round. They take 1d6 fire damage at the start of the Round, and can take an Action to extinguish themselves. Unless another DC is stated, it is a DC 8 Reflex save to end the Burning condition.
+- **Burning (damage, DC)** - A character burns each Round. They take the amount of fire damage noted in brackets alongside the condition, default 1d6, at the start of the Round, and can take an Action to extinguish themselves. Unless another DC is stated, it is a DC 8 Reflex save to end the Burning condition.
 - **Falling** - At the end of a fall, a character takes 1d6 bludgeoning damage for every 10ft it fell, to a maximum of 200ft for 20d6. The character lands prone, unless it avoids taking damage from the fall.
 - **Suffocating*** - A character can survive for a number of rounds equal to its Fortitude (to a minimum of 1). At the start of the next turn, it drops to 0 health and is dying, and it can’t regain health or be stabilized until it can breathe again. If it recovers from Dying with a natural 20 and is still Suffocating, it suffers the condition anew as if just running out of breath again.
 

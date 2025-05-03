@@ -99,6 +99,16 @@ Strength and Dexterity can be seen as two very different ways to physically inte
 ## Miscellaneous Changes
 Changes to D&D 5e that don't fit in one of the major categories above. As PEDD has grown, this section has shrunk as what was here, has now become their own sections.
 
+### Metric 'Conversions' and other Term Clarifications
+Certain measures consistently crop up so for reference here's what they would roughly be in metric:
+30ft - 10 metres
+5ft - 2 metres
+10 gallons - 40 litres
+
+Also, 1 Round is 6 seconds, give or take some dramatic leeway.
+
+Power / Spell use of the words "Character" and "Target". A character is any humanoid or other type of creature. A target includes objects or particular points in space, basically anything. I'm in the process of rewording things to clearly match this definition, so use common sense if what the power / spell currently says doesn't make sense.
+
 ### Characters, Creatures and Monsters
 Instances of 'creature' are updated to 'character' as generally the game is character focused and the clearer language helps. All monsters, beasts etc. do count as characters in this instance. However there is also a greater, clearer, emphasis on so-called 'monster types' as well, and are referenced in certain Powers. They're the (slightly expanded and rejigged) following categories known as Character Types:
 
@@ -118,7 +128,7 @@ Instances of 'creature' are updated to 'character' as generally the game is char
 - **Humanoids** - also known as Sophonts, those typically of two legs and two arms of the physical realms who're capable of intelligent thought. Further subdivided into the Races of the worlds (a very long list indeed; dragonborn, dwarf, elf, gnome, goblinoid, half-elf, halfling, human, tuskman, etc. ...). Scholars argue that this should in-fact be two categories: humans and little-people.
 - **Jurors** - beings of the planes of Reason, though often erronously confused with Celestials
 - **Monstrosities** - creatures and other things of the physical realms and beyond, or a mix thereof, that require some mana to live. Things that are not 'of nature'.
-  - **Lycanthropes** - humanoid monstrosities infected with a shape-changing disease and predilection for violence and the hunger of the far planes
+  - **Lycanthropes** - regular humanoids or beasts who become monstrosities under specific conditions, typically having been infected with a shape-changing disease or placed under a corrupting curse.
 - **Oozes** - curious life forms barely worthy of the name, neither plant nor animal nor fungus.
 - **Plants** - and although scholars protest, fungi belong to this group
 - **Sprites** - beings of the plane of Chaos
