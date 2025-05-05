@@ -53,10 +53,12 @@ So what can that one Action can do? Quite a lot more than 5e. Every character ca
 - **Discern** - as an Attack or Action, you can make a Perception check against one enemy whose has a Hidden Action. If successful (the GM will decide the DC), their Action is no longer hidden and everyone in the combat can know.
 - **Dodge** - as an Action, you make a Reflex Saving Throw and the result (or your Stationary Defence, if that is higher) replaces your Defence value for the rest of the Round.
 - **Go to Cover / Go Prone / Stand** - as a Bonus Action you make yourself Prone, or enter adjacent cover. The Prone condition or being in cover uses Stationary Defence. Prone makes being shot at occur at Disadvantage, and cover is +2/+5 to Defence for half / ¾ cover respectively (see [Conditions](#conditions)). Going from cover or Prone to standing takes a Stand Bonus Action.
-- **Mount / Dismount** - as an Action, you safely get on or get off a mount within your reach.
 - **Help** - as an Action, you aid an ally in attacking an enemy within your reach. You feint, distract the target, or in some other way team up to make your ally's attack more effective. If your ally Attacks the target this Round, the first Attack is made with Advantage.
 - **Hide** - as an Action, you make a Stealth check in an attempt to hide from those you are obscured from (in 3/4's cover or out of line of sight), versus a DC of 15. If you succeed, you gain the benefits of being Invisible: Attacks against you have Disadvantage, and your Attacks have Advantage. When you make an Attack, you are no longer hidden. If you or others Move such that you are no longer obscured, you are no longer Hidden from them.
+- **Interact** - as an Action, you interact, a short series of motions that achieves a simple goal, with something or someone. This includes; giving an unconscious ally a health potion, arranging the runes of a magical interface, frisking a character for weapons, pulling the chains of a pulley, finding a particular page of a book, or creating a rough sketch in the sand
+- **Mount / Dismount** - as an Action, you safely get on or get off a mount within your reach.
 - **Move** - move your Speed along a path of your choice towards a target. See [Move Action](#move-action) for details.
+- **Use** - as a Bonus Action, you make a single motion to use an item or device. This includes: pulling a lever, pushing a button, drinking a potion readily available, sending a signal (hand, flag, flare etc.), or unlocking a chest with a readily available key.
 
 #### Tactical Actions
 

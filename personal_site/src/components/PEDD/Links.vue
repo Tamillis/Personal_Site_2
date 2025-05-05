@@ -25,6 +25,9 @@
             <RouterLink class="intext-link" :to="{ name: 'pedd-magic' }">Magic</RouterLink>
         </li>
         <li class="triangle-points">
+            <RouterLink class="intext-link" :to="{ name: 'pedd-spells' }">Spells</RouterLink>
+        </li>
+        <li class="triangle-points">
             <RouterLink class="intext-link" :to="{ name: 'admin' }">Admin</RouterLink>
         </li>
     </ul>

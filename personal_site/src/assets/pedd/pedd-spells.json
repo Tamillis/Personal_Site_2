@@ -1,380 +1,1681 @@
 [
     {
-        "name": "Cure Wounds",
-        "power": "Magnitude I",
-        "sphere": ["Divine"],
-        "school": "Necromancy",
-        "casting": "Action, V S",
-        "target": "A Character",
-        "range": "Touch",
-        "desc": "A character you touch regains an amount of Health equal to 1d8 per Magnitude of Mana used to cast the spell, plus your spellcasting stat. This spell has no effect on Undead or Constructs."
+        "name": "Acid Splash",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Evocation",
+        "range": "60ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": true,
+        "occult": true,
+        "description": "You create an acidic bubble at a point within 60ft, where it explodes in a 5ft radius sphere. Each character in that sphere must succeed on a Reflex saving throw or take 1d6 Acid damage."
     },
     {
-        "name": "Word of Decay",
-        "power": "Cantrip",
-        "sphere": ["Occult"],
+        "name": "Blade Ward",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "1 minute",
+        "concentration": true,
+        "school": "Abjuration",
+        "range": "Self",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "Whenever a character makes an attack against you before the spell ends, the attacker subtracts 1d4 from the attack roll."
+    },
+    {
+        "name": "Chill Touch",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Necromancy",
+        "range": "Touch",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "Channeling the chill of the grave, you make a melee spell attack against a target within reach. On a hit, the target takes 1d10 Necrotic damage, and it can't regain Health this Round. "
+    },
+    {
+        "name": "Dancing Lights",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "1 minute",
+        "concentration": true,
+        "school": "Illusion",
+        "range": "120ft",
+        "components": "V, S, M ",
+        "materials": "a bit of phosphorus",
+        "consumes": false,
+        "arcane": true,
+        "divine": true,
+        "nature": true,
+        "occult": true,
+        "description": "You create up to four torch-size lights within range, making them appear as torches, lanterns, or glowing orbs that hover for the duration. Alternatively, you combine the four lights into one glowing Medium form that is vaguely humanlike. Whichever form you choose, each light sheds Dim Light in a 10ft radius. As a Bonus Action, you can move the lights up to 60ft to a space within range. A light must be within 20ft of another light created by this spell, and a light vanishes if it exceeds the spell's range."
+    },
+    {
+        "name": "Druidcraft",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Transmutation",
+        "range": "30ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": true,
+        "occult": false,
+        "description": "Whispering to the spirits of nature, you create one of the following effects within range. \n- **Weather Sensor**. You create a Tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 Round. \n- **Bloom**. You instantly make a flower blossom, a seed pod open, or a leaf bud bloom. \n- **Sensory Effect**. You create a harmless sensory effect, such as falling leaves, spectral dancing fairies, a gentle breeze, the sound of an animal, or the faint odor of skunk. The effect must fit in a 5-foot Cube. \n- **Fire Play**. You light or snuff out a candle, a torch, or a campfire."
+    },
+    {
+        "name": "Eldritch Blast",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
         "school": "Evocation",
-        "casting": "Action, V M (a corrupted piece of a corpse)",
-        "target": "Self-centered",
-        "range": "5ft",
-        "desc": "You utter a fell word, and decaying power erupts from you. Each Character of your choice that you can see within range of you must succeed on a Fortitude saving throw or take 1d6 necrotic damage."
+        "range": "120ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "You hurl a beam of crackling energy. Make a ranged spell attack against character in range. On a hit, the target takes 1d10 Force damage.\n\nEnhance effect: the spell creates one extra beam. You can direct the beams at the same character or at different ones. Make a separate attack roll for each beam."
+    },
+    {
+        "name": "Elementalism",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Transmutation",
+        "range": "30ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": true,
+        "occult": true,
+        "description": "You exert control over the elements, creating one of the following effects within range. \n- **Beckon Air**. You create a breeze strong enough to ripple cloth, stir dust, rustle leaves, and close open doors and shutters, all in a 5ft cube. Doors and shutters being held open by someone or something aren't affected. \n- **Beckon Earth**. You create a thin shroud of dust or sand that covers surfaces in a 5ft square, or you cause a single word to appear in your handwriting in a patch of dirt or sand. \n- **Beckon Fire**. You create a thin cloud of harmless embers and coloured, scented smoke in a 5ft cube. You choose the colour and scent, and the embers can light candles, torches, or lamps in that area. The smoke's scent lingers for 1 minute. \n- **Beckon Water**. You create a spray of cool mist that lightly dampens targets in a 5-foot Cube. Alternatively, you create 1 cup of clean water either in an open container or on a surface. If left unconsumed (by life, the earth, a fire etc), the water evaporates to nothing in 1 minute. \n- **Sculpt Element**. You cause dirt, sand, fire, smoke, mist, or water that can fit in a 1ft cube to assume a crude shape (such as that of a creature) for 1 hour."
+    },
+    {
+        "name": "Empathy",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Enchantment",
+        "range": "30ft",
+        "components": "V, S",
+        "materials": "a handheld mirror",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "You reach out with your mind towards one character you can see within range. You can attempt one of two effects:\n- **Sense Emotions** - you learn the currently emotional mood and psychological state of the character, such as if they are angry, sad, hungry or bored, and you get an impression of their current thoughts (but no words or secrets).\n- **Affect Emotions** - the character makes a Willpower save. If they succeed, nothing happens. If they fail, you set their mood or psychological state, as above. This is not to the point of being effected by conditions like Charmed or Frightened. The mood fades after 1 minute."
+    },
+    {
+        "name": "Fire Bolt",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Evocation",
+        "range": "120ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": true,
+        "occult": true,
+        "description": "You hurl a mote of fire at a character or an object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Fire damage and makes a Reflex save. If they fail, they suffer the Burning (1d4 vs your Magic Save) condition. A flammable object hit by this spell automatically fails the save and starts burning."
+    },
+    {
+        "name": "Friends",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "1 minute",
+        "concentration": true,
+        "school": "Enchantment",
+        "range": "10ft",
+        "components": "S, M ",
+        "materials": "some makeup",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "You magically emanate a sense of friendship toward one character you can see within range. The target must succeed on a Willpower saving throw or have the Charmed condition for the duration. The target succeeds automatically if it isn't a Humanoid, if you're fighting it, or if you have cast this spell on it within the past 24 hours.The spell ends early if the target takes damage or if you make an attack roll, deal damage, or force anyone to make a saving throw. When the spell ends, the target knows it was Charmed by you."
+    },
+    {
+        "name": "Guidance",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "1 minute",
+        "concentration": true,
+        "school": "Divination",
+        "range": "Touch",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": true,
+        "occult": false,
+        "description": "You touch a willing character and choose a Skill. For 1 minute, the character adds 1d4 to any ability check using the chosen skill."
+    },
+    {
+        "name": "Light",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "1 hour",
+        "school": "Evocation",
+        "range": "Touch",
+        "components": "V, M ",
+        "materials": "a firefly or phosphorescent moss",
+        "consumes": false,
+        "arcane": true,
+        "divine": true,
+        "nature": true,
+        "occult": true,
+        "description": "You touch one Large or smaller object that isn't being worn or carried by someone else. For 1 hour, the object sheds Bright Light in a 20ft radius and Dim Light for an additional 20ft. The light can be coloured as you like. Covering the object with something opaque blocks the light. The spell ends early if you cast it again or cancel it as an Action."
+    },
+    {
+        "name": "Mage Hand",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "1 minute",
+        "school": "Conjuration",
+        "range": "30ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration. The hand vanishes if it is ever more than 30ft away from you or if you cast this spell again. When you cast the spell, you can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. As an Action in later Rounds, you can control the hand thus again. As part of that Action, you can move the hand up to 30ft. The hand can't attack, activate magic items, or carry more than 10 pounds."
+    },
+    {
+        "name": "Mending",
+        "magnitude": 0,
+        "casting": "1 minute",
+        "duration": "Instantaneous",
+        "school": "Transmutation",
+        "range": "Touch",
+        "components": "V, S, M ",
+        "materials": "two lodestones",
+        "consumes": false,
+        "arcane": true,
+        "divine": true,
+        "nature": true,
+        "occult": true,
+        "description": "This spell repairs a single hole, break or tear that is no larger than 1ft in any dimension in a target you touch, such as a broken chain link or torn cloak. Alternatively you connect two pieces of an object that make a whole object, such as halves of a broken key. You mend it, leaving no trace of the former damage.\n\nEnhance effect: the spell can repair one extra foot in any dimension, or one extra piece of a broken object."
+    },
+    {
+        "name": "Message",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "1 round",
+        "school": "Transmutation",
+        "range": "120ft",
+        "components": "S, M ",
+        "materials": "a copper wire",
+        "consumes": false,
+        "arcane": true,
+        "divine": true,
+        "nature": true,
+        "occult": true,
+        "description": "You point toward a character within range and whisper a message. That character hears the message whispered in their ear (or equivalent) and can reply in a whisper that you hear in yours.You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence; 1ft of stone, metal, or wood; or a thin sheet of lead blocks the spell."
+    },
+    {
+        "name": "Mind Sliver",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Enchantment",
+        "range": "60ft",
+        "components": "V",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "You try to temporarily sliver the mind of one creature you can see within range. The target must succeed on a Willpower saving throw or take 1d6 Psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn.\n\nEnhance effect: the Psychic damage and malus increase according to the following progression: 1d4 -> 1d6 -> 1d8 -> 1d10 -> 1d12 -> 2d8 -> 1d20"
+    },
+    {
+        "name": "Minor Dispel",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Evocation",
+        "range": "60ft",
+        "components": "S",
+        "consumes": false,
+        "arcane": true,
+        "divine": true,
+        "nature": false,
+        "occult": false,
+        "description": "You target one magical effect in range you can see. If the effect is of cantrip level or equivalent, it is dispelled. Alternatively, you can choose to supress the effect for as long as you Concentrate."
+    },
+    {
+        "name": "Minor Illusion",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "1 minute",
+        "school": "Illusion",
+        "range": "30ft",
+        "components": "S, M ",
+        "materials": "a bit of fleece",
+        "consumes": false,
+        "arcane": true,
+        "divine": true,
+        "nature": false,
+        "occult": true,
+        "description": "You create a sound or an image of an object within range that lasts for 1 minute. The illusion ends if you cast this spell again. If a character takes a Discern action with the Investigation skill to examine the sound or image, the creature can determine that it is an illusion if successful against your spell save DC.\n- Sound. If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated for the duration, or you can make discrete sounds at different times before the spell ends. \n- Image. If you create an image of an object such as a chair, muddy footprints, or a small chest, it must be no larger than a 5ft cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, since things can pass through it."
+    },
+    {
+        "name": "Poison Spray",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Necromancy",
+        "range": "30ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": true,
+        "occult": true,
+        "description": "You spray toxic mist at a character within range. Make a ranged spell attack against the character. On a hit, the target takes 1d12 Poison damage."
+    },
+    {
+        "name": "Prestidigitation",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "1 hour",
+        "school": "Transmutation",
+        "range": "10ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "You create a magical effect within range. Choose the effect from the options below. If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time. \n- **Sensory Effect**. You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor. \n- **Fire Play**. You instantaneously light or snuff out a candle, a torch, or a small campfire. \n- **Clean or Soil**. You instantaneously clean or soil an object that fits inside a 1ft cube. \n- **Minor Sensation**. You chill, warm, or flavor up to 1 cubic foot of edible material for 1 hour. \n- **Magic Mark**. You make a colour, a small mark, or a symbol appear on an object or a surface for 1 hour. \n- **Minor Illusion**. You create the seeming of a trinket or an illusory image that can fit in your hand, or a sound that you have heard no louder than a conversational voice, at a point you can see within range. It lasts until you stop Concentrating."
+    },
+    {
+        "name": "Produce Flame",
+        "magnitude": 0,
+        "casting": "Bonus",
+        "duration": "10 minutes",
+        "school": "Conjuration",
+        "range": "Self",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": true,
+        "occult": false,
+        "description": "A flickering flame appears in your hand and remains there for the duration. While there, the flame emits no heat and ignites nothing, but it sheds Bright Light in a 20ft radius and Dim Light for an additional 20ft. The spell ends if you cast it again. Until the spell ends, you can take an Action to hurl the fire at a target within 60ft of you. Make a ranged spell attack. On a hit, the target takes 1d8 Fire damage and must make a Reflex save. If they fail, they suffer the Burning (1d4 vs your Magic save) condition."
+    },
+    {
+        "name": "Ray of Frost",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Evocation",
+        "range": "60ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": true,
+        "occult": true,
+        "description": "A frigid beam of blue-white light streaks toward a character within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 Cold damage, and its Speed is reduced by 10ft until the start of your next turn."
+    },
+    {
+        "name": "Resistance",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "1 minute",
+        "concentration": true,
+        "school": "Abjuration",
+        "range": "Touch",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": true,
+        "occult": false,
+        "description": "You touch a willing character and choose a damage type: Acid, Bludgeoning, Cold, Fire, Lightning, Necrotic, Piercing, Poison, Radiant, Slashing, or Thunder. When the creature takes damage of the chosen type before the spell ends, the creature reduces the total damage taken by 1d4. A character can benefit from this spell only once per turn."
+    },
+    {
+        "name": "Sacred Flame",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Evocation",
+        "range": "60ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": false,
+        "occult": false,
+        "description": "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 Radiant damage. The target gains no benefit from Half Cover or Three-Quarters Cover for this save."
+    },
+    {
+        "name": "Shillelagh",
+        "magnitude": 0,
+        "casting": "Bonus",
+        "duration": "1 minute",
+        "school": "Transmutation",
+        "range": "Touch",
+        "components": "V, S, M ",
+        "materials": "mistletoe",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": true,
+        "occult": false,
+        "description": "A Club or Spear you are holding is imbued with nature's power. For the duration, you can use your Magic Statistic instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. If the attack deals damage, it can be Force damage or the weapon's normal damage type (your choice). The spell ends early if you cast it again or if you let go of the weapon."
+    },
+    {
+        "name": "Shocking Grasp",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Evocation",
+        "range": "Touch",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": true,
+        "occult": true,
+        "description": "Lightning springs from you to a character that you try to touch. Make a melee spell attack against the character. On a hit, they take 1d8 Lightning damage and must make a Fortitude save. If they fail they can't make Bonus Actions this Round."
+    },
+    {
+        "name": "Sorcerous Burst",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Evocation",
+        "range": "120ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "You cast sorcerous energy at one target within range. Make a ranged attack roll against the target. On a hit, the target takes 1d8 damage of a type you choose: Acid, Cold, Fire, Lightning, Poison, Psychic, or Thunder. If you roll an 8 on a d8 for this spell, you can roll another d8, and add it to the damage. When you cast this spell, the maximum number of these d8s you can add to the spell's damage equals your Magic Statistic."
+    },
+    {
+        "name": "Spare the Dying",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Necromancy",
+        "range": "15ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": true,
+        "occult": false,
+        "description": "Choose a character that is Dying (0 Health but not yet Dead). They become Stable.\n\nEnhance effect: the range doubles."
+    },
+    {
+        "name": "Starry Wisp",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Evocation",
+        "range": "60ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": true,
+        "occult": true,
+        "description": "You launch a mote of light at one target within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage, and until the end of your next turn, it emits Dim Light in a 10ft radius and can't benefit from the Invisible condition."
+    },
+    {
+        "name": "Thaumaturgy",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "1 minute",
+        "school": "Transmutation",
+        "range": "30ft",
+        "components": "V",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": false,
+        "occult": false,
+        "description": "You manifest a minor wonder within range. You create one of the effects below. If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time. \n- **Altered Eyes**. You alter the appearance of your eyes for 1 minute. \n- **Booming Voice**. Your voice booms up to three times as loud as normal for 1 minute. For the duration, you have Advantage on Intimidation checks. \n- **Fire Play**. You cause flames to flicker, brighten, dim, or change color for 1 minute. \n- **Invisible Hand**. You instantaneously cause an unlocked door or window to fly open or slam shut. \n- **Phantom Sound**. You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers. \n- **Tremors**. You cause harmless tremors in the ground for 1 minute."
+    },
+    {
+        "name": "Thorn Whip",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Transmutation",
+        "range": "30ft",
+        "components": "V, S, M ",
+        "materials": "the stem of a plant with thorns",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": true,
+        "occult": false,
+        "description": "You create a vine-like whip covered in thorns that lashes out at your command toward a character in range. Make a melee spell attack against the target. On a hit, the target takes 1d6 Piercing damage, and if it is Large or smaller, you can pull it up to 10ft closer to you."
+    },
+    {
+        "name": "Thunderclap",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Evocation",
+        "range": "Self (5ft radius)",
+        "components": "S",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": true,
+        "occult": true,
+        "description": "Each character in a 5ft radius around you must succeed on a Fortitude saving throw or take 1d6 Thunder damage. The spell's thunderous sound can be heard up to 100ft away."
+    },
+    {
+        "name": "Toll the Dead",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Necromancy",
+        "range": "60ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": true,
+        "nature": false,
+        "occult": true,
+        "description": "You point at one character you can see within range, and the single chime of a dolorous bell is audible from above the character. They must succeed on a Fortitude saving throw or take 1d8 Necrotic damage. If the character is missing any of its Health, it instead takes 1d12 Necrotic damage."
+    },
+    {
+        "name": "true Strike",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Divination",
+        "range": "Self",
+        "components": "S, M ",
+        "materials": "a weapon with which you have proficiency and that is worth 1+ CP",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "Guided by a flash of magical foresight, you make one weapon attack with the weapon used in the spell's casting. The attack uses your Magic Statistic for the attack and damage rolls instead of using Accuracy, Strength or Dexterity. In addition to the weapon's normal damage, the attack deals 1d6 Force damage.\n\nEnhance effect: the attack deals 1 extra die of Force damage."
+    },
+    {
+        "name": "Vicious Mockery",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Enchantment",
+        "range": "60ft",
+        "components": "V",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "You unleash a string of insults laced with subtle enchantments at one character you can see or hear within range. If the character has -3 or N/A Intelligence, the spell fails. The target must succeed on a Willpower saving throw or take 1d6 Psychic damage and have Disadvantage on the next attack it makes before the end of the Round."
     },
     {
         "name": "Word of Warding",
-        "power": "Cantrip",
-        "sphere": ["Arcane"],
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "1 minute",
         "school": "Abjuration",
-        "casting": "Action, V S",
-        "target": "Self",
+        "range": "Self (Touch)",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": false,
+        "description": "You utter a word of power and runes of warding slither across your skin. The first attack that deals bludgeoning, slashing or piercing damage against you during the duration has its damage halved as if you had Resistance, where the spell ends."
+    },
+    {
+        "name": "Word of Decay",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Evocation",
+        "range": "Self (5ft radius)",
+        "components": "V, M ",
+        "materials": "a rotten finger",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "You utter a fell word, and decaying power erupts from you. Each character of your choice that you can see within range of you must succeed on a Fortitude saving throw or take 1d6 necrotic damage."
+    },
+    {
+        "name": "Word of Radiance",
+        "magnitude": 0,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Evocation",
+        "range": "Self (5ft radius)",
+        "components": "V, M ",
+        "materials": "a sunburst token",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": false,
+        "occult": false,
+        "description": "Burning radiance erupts around you in a 5ft radius. Each character of your choice that you can see in it must succeed on a Fortitude saving throw or take 1d6 Radiant damage."
+    },
+    {
+        "name": "Alarm",
+        "magnitude": 1,
+        "casting": "1 minute",
+        "duration": "8 hours",
+        "school": "Abjuration",
+        "ritual": true,
+        "range": "30ft",
+        "components": "V, S, M ",
+        "materials": "a bell and silver wire",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": false,
+        "description": "You set an alarm against intrusion. Choose a door, a window, or an area within range that is no larger than a 20ft Cube. Until the spell ends, an alarm alerts you whenever a character touches or enters the warded area. When you cast the spell, you can designate characters that won't set off the alarm. You also choose whether the alarm is audible or mental:Audible Alarm. The alarm produces the sound of a handbell for 10 seconds within 60ft of the warded area.Mental Alarm. You are alerted by a mental ping if you are within 1 mile of the warded area. This ping awakens you if you're asleep."
+    },
+    {
+        "name": "Animal Friendship",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "24 hours",
+        "school": "Enchantment",
+        "range": "30ft",
+        "components": "V, S, M ",
+        "materials": "a morsel of food",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": true,
+        "occult": false,
+        "description": "Target a Beast per Magnitude expended that you can see within range. The target must succeed on a Willpower saving throw or have the Charmed condition for the duration. If you or one of your allies deals damage to the target, the spells ends."
+    },
+    {
+        "name": "Armour of Ice",
+        "magnitude": 1,
+        "casting": "Bonus",
+        "duration": "1 hour",
+        "school": "Abjuration",
+        "range": "Self",
+        "components": "V, S, M ",
+        "materials": "a shard of blue glass",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": true,
+        "occult": true,
+        "description": "Protective magical frost surrounds you. You gain 5 Temporary Health per Magnitude expended. If a character hits you with a melee attack before the spell ends, they take 5 x the Magnitude expended in Cold damage. The spell ends if you have no Temporary Health left, or 1 hour has passed."
+    },
+    {
+        "name": "Arms of Hadar",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Conjuration",
+        "range": "Self (10ft radius)",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "Invoking Hadar, you cause tendrils to erupt from yourself. Each character in a 10ft radius originating from you makes a Fortitude saving throw. On a failed save, a target takes 1d6 + Magnitude expended x d6 Necrotic damage and can't take an Action this round. On a successful save, a target takes half as much damage only."
+    },
+    {
+        "name": "Bane",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "1 minute",
+        "concentration": true,
+        "school": "Enchantment",
+        "range": "30ft",
+        "components": "V, S, M ",
+        "materials": "a drop of blood",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": false,
+        "occult": true,
+        "description": "Up to two + Magnitude expended characters of your choice that you can see within range must each make a Willpower saving throw. Whenever a target that fails this save makes an attack roll or a saving throw before the spell ends, the target must subtract 1d4 from the attack roll or save."
+    },
+    {
+        "name": "Bless",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "1 minute",
+        "concentration": true,
+        "school": "Enchantment",
+        "range": "30ft",
+        "components": "V, S, M ",
+        "materials": "a Holy Symbol worth 5+ GP",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": false,
+        "occult": false,
+        "description": "You bless up to two + Magnitude expended characters within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target adds 1d4 to the attack roll or save."
+    },
+    {
+        "name": "Burning Hands",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Evocation",
+        "range": "Self (15ft cone)",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": true,
+        "occult": true,
+        "description": "A thin sheet of flames shoots forth from you. Each character in a 15ft cone makes a Reflex saving throw, taking 1d6 + magnitude expended x d6 Fire damage on a failed save and suffer the Burning (Magnitude expended x d6) condition, or half as much damage on a successful one. Flammable objects in the cone that aren't being worn or carried automatically fail the save."
+    },
+    {
+        "name": "Charm Person",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "1 hour",
+        "school": "Enchantment",
+        "range": "30ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": true,
+        "occult": true,
+        "description": "You target a number of Humanoids equal to the Magnitude expended that you can see within range. Each makes a Willpower saving throw. They does so with Advantage if you or your allies are fighting them or their allies. On a failed save, the target has the Charmed condition until the spell ends or until you or your allies damage each target. When the spell ends, the targets know they were Charmed by you."
+    },
+    {
+        "name": "Chromatic Orb",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Evocation",
+        "range": "90ft",
+        "components": "V, S, M ",
+        "materials": "a diamond worth 50+ GP",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "You hurl an orb of energy at a character within range. Choose Acid, Cold, Fire, Lightning, Poison, or Thunder for the type of orb you create, and then make a ranged spell attack against the target. On a hit, the target takes 2d8 + Magnitude expended x d8 damage of the chosen type.\n\nIf you roll the same number on two or more of the d8s, the orb leaps to a different target of your choice within 30ft of the most recent target. Make a new attack roll against the new target and make a new damage roll if you hit. The orb can leap a number of times equal to the Magnitude expended."
+    },
+    {
+        "name": "Color Spray",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Illusion",
+        "range": "Self (15ft cone)",
+        "components": "V, S, M ",
+        "materials": "a pinch of colorful sand",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "You launch a dazzling array of flashing, colorful light. Each character in a 15ft Cone originating from you must succeed on a Foritude saving throw or have the Blinded condition for the round."
+    },
+    {
+        "name": "Command",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Enchantment",
+        "range": "60ft",
+        "components": "V",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": false,
+        "occult": true,
+        "description": "You speak a one-word command to a number of characters equal to the Magnitude expended that you can see within range. Each target must succeed on a Willpower saving throw or spend its Action this Round to follow the command to the best of its ability and interpretation. \n\nExample commands include:\n- **Approach**. The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5ft of you.\n- **Release**. The target drops whatever it is holding, or ends an ongoing Grapple, and then ends its turn.\n- **Flee**. The target spends its action to Move away from you by the fastest available means.\n- **Grovel**. The target goes Prone and then ends its turn.\n- **Halt**. If the target was going to Move, it instead takes no Action."
+    },
+    {
+        "name": "Compelled Duel",
+        "magnitude": 1,
+        "casting": "Bonus",
+        "duration": "1 minute",
+        "concentration": true,
+        "school": "Enchantment",
+        "range": "30ft",
+        "components": "V",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": false,
+        "occult": false,
+        "description": "You try to compel a character into a duel. One character that you can see within range makes a Willpower saving throw. On a failed save, the target has Disadvantage on attacks against targets other than you, and it can't willingly move to a space that is more than 30ft away from you. The spell ends if you make an attack against a character other than the target, if you cast a spell on an enemy other than the target, if an ally of yours damages the target, or if you end the Round more than 30ft away from the target."
+    },
+    {
+        "name": "Comprehend Languages",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "1 hour",
+        "school": "Divination",
+        "ritual": true,
+        "range": "Self",
+        "components": "V, S, M ",
+        "materials": "a pinch of soot and salt",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "For the duration, you understand the literal meaning of any language that you hear or see signed. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode symbols or secret messages."
+    },
+    {
+        "name": "Create or Destroy Water",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Transmutation",
+        "range": "30ft",
+        "components": "V, S, M ",
+        "materials": "a mix of water and sand",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": true,
+        "occult": false,
+        "description": "You do one of the following:\n- **Create Water**. You create up to 10 gallons per Magnitude expended of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot Cube within range, extinguishing exposed flames there.\n- **Destroy Water**. You destroy up to 10 gallons per Magnitude expended of water in an open container within range. Alternatively, you destroy fog in a 30-foot Cube within range.\n\nThe size of the Cube increases by 5ft per Magnitude expended above 1."
+    },
+    {
+        "name": "Cure Wounds",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Abjuration",
         "range": "Touch",
-        "desc": "You utter a word of power and runes of warding slither across your skin. The first attack that deals bludgeoning, slashing or piercing damage against you until the end of the next Round is halved as if you had Resistance"
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": true,
+        "occult": true,
+        "description": "A character you touch regains a number of Health equal to 2d8 per Magnitude expended plus your Magic Stat (minimum of 0). This spell has no effect on Undead or Constructs."
+    },
+    {
+        "name": "Detect Reason and Passion",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "10 minutes",
+        "concentration": true,
+        "school": "Divination",
+        "range": "Self (30ft radius)",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "For the duration, you sense the location of any Demons, Dragons, Jurors, or Monstrosities, within 30ft of yourself. When you cast the spell you can also specify two races of Humanoid to detect. You also sense whether the Hallow spell is active there and, if so, where. The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
+    },
+    {
+        "name": "Detect Law and Chaos",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "10 minutes",
+        "concentration": true,
+        "school": "Divination",
+        "range": "Self (30ft radius)",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": false,
+        "description": "For the duration, you sense the location of any Aberrations, Constructs, Elementals, Giants, Machines, or Sprites within 30ft of yourself. You also detect the degree of the plane you are on is to the rules of the material plane. The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
+    },
+    {
+        "name": "Detect Life and Death",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "10 minutes",
+        "concentration": true,
+        "school": "Divination",
+        "range": "Self (30ft radius)",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": true,
+        "occult": false,
+        "description": "For the duration, you sense the location of any Fey, Fell, Beasts, Lycanthropes, Oozes, or Plants within 60ft of yourself. You also know if any corpses or new life is less than a day old. The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
+    },
+    {
+        "name": "Detect Evil and Good",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "10 minutes",
+        "concentration": true,
+        "school": "Divination",
+        "range": "Self (30ft radius)",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": false,
+        "occult": false,
+        "description": "For the duration, you sense the location of any Aberrations, Fiends, Celestials, or Undead within 30ft of yourself. Additionally, you can sense if any characters you see are aligned with any planar axis (Good/Evil, Reason/Passion, Law/Chaos), and to what degree (their Faith stat). You also sense whether the Hallow spell is active there and, if so, where. The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
+    },
+    {
+        "name": "Detect Magic",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "10 minutes",
+        "concentration": true,
+        "school": "Divination",
+        "ritual": true,
+        "range": "Self (30ft radius)",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": true,
+        "nature": true,
+        "occult": true,
+        "description": "For the duration, you sense the presence of magical effects within 30ft of yourself. You see a faint aura around any visible character or object in the area that bears magic, and if an effect was created by a spell, you learn the spell's school of magic.The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
+    },
+    {
+        "name": "Detect Poison and Disease",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "10 minutes",
+        "concentration": true,
+        "school": "Divination",
+        "ritual": true,
+        "range": "Self (30ft radius)",
+        "components": "V, S, M ",
+        "materials": "a yew leaf",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": true,
+        "occult": false,
+        "description": "For the duration, you sense the location of poisons, poisonous or venomous creatures, and magical contagions within 30ft of yourself. You sense the kind of poison, creature, or contagion in each case.The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
+    },
+    {
+        "name": "Disguise Self",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "1 hour",
+        "school": "Illusion",
+        "range": "Self",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": false,
+        "description": "You make yourself, including your clothing, armour, weapons, and other belongings on your person, look different until the spell ends. You can seem 2ft shorter or taller and can appear heavier or lighter. You must adopt a form that has the same basic arrangement of limbs as you have. Otherwise, the extent of the illusion is up to you.The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing.\n\nA character can take the Discern action to inspect your appearance to see through the illusion, and must succeed on an Investigation check against your spell save DC."
+    },
+    {
+        "name": "Dissonant Whispers",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Enchantment",
+        "range": "60ft",
+        "components": "V",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "One character of your choice that you can see within range hears a discordant melody in their mind. The target makes a Wilpower saving throw. On a failed save, it takes 2d6 + Magnitude expended x d6 of Psychic damage and must use its Action to move as far away from you as it can, using the safest route, instead of its intended Action. On a successful save, the target takes half as much damage only and acts as normal."
+    },
+    {
+        "name": "Divine Favour",
+        "magnitude": 1,
+        "casting": "Bonus",
+        "duration": "1 minute",
+        "school": "Transmutation",
+        "range": "Self",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": false,
+        "occult": false,
+        "description": "Until the spell ends, your attacks with weapons deal an extra 1d4 Radiant damage on a hit."
+    },
+    {
+        "name": "Divine Smite",
+        "magnitude": 1,
+        "casting": "Bonus",
+        "duration": "Instantaneous",
+        "school": "Evocation",
+        "range": "Self",
+        "components": "V",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": false,
+        "occult": false,
+        "description": "When you hit a target with a weapon, you can cast this spell. The target takes an extra 1d8 + Magnitude expended x d8 Radiant damage from the attack. The damage increases bya further 1d8 if the target is a Fiend, Fell or an Undead."
+    },
+    {
+        "name": "Ensnaring Strike",
+        "magnitude": 1,
+        "casting": "Bonus",
+        "duration": "1 minute",
+        "concentration": true,
+        "school": "Conjuration",
+        "range": "Self",
+        "components": "V",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": true,
+        "occult": false,
+        "description": "When you hit a target with a weapon, you can cast this spell. As you hit the target, grasping vines appear on it. A character makes a Fortitude saving throw, a Large or larger character has Advantage on this save. A character who fails the save, or an Object that weighs 300lbs or less,  has the Restrained condition until the spell ends. On a successful save or on objects heavier than 300lbs, the vines shrivel away ineffective and the spell ends.\n\nWhile Restrained, the target takes Magnitude expended x d6 Piercing damage at the start of each of its turns. The target or a character within reach of it can take an Action to make a Strength check against your Magic save. On a success, the spell ends."
+    },
+    {
+        "name": "Entangle",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "1 minute",
+        "concentration": true,
+        "school": "Conjuration",
+        "range": "90ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": true,
+        "occult": false,
+        "description": "Grasping plants sprout from the ground in a 20ft square within range. For the duration, these plants turn the ground in the area into Difficult Terrain. They disappear when the spell ends. Each character other than you in the area when you cast the spell must succeed on a Fortitude saving throw or have the Immobilised condition until the spell ends. Immobilsed characters can take an Action to make an Strength check against your Magic save. On a success, they free themselves from the grasping plants and are no longer Immobilised."
+    },
+    {
+        "name": "Expeditious Dash",
+        "magnitude": 1,
+        "casting": "Bonus",
+        "duration": "10 minutes",
+        "concentration": true,
+        "school": "Transmutation",
+        "range": "Self",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": true,
+        "occult": true,
+        "description": "You take the Move Action as part of casting this spell. Until the spell ends, you can take the Move Action as a Bonus Action."
+    },
+    {
+        "name": "Faerie Fire",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "1 minute",
+        "concentration": true,
+        "school": "Evocation",
+        "range": "60ft",
+        "components": "V",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": true,
+        "occult": true,
+        "description": "Objects in a 20ft cube within range are outlined in coloured light (your choice of colour). Each character in the cube is also outlined if it fails a Reflex saving throw. For the duration, objects and affected characters shed Dim Light in a 10ft radius and can't benefit from the Invisible condition.\n\nAttack rolls against an affected creature or object have Advantage if the attacker can see it."
+    },
+    {
+        "name": "false Life",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Necromancy",
+        "range": "Self",
+        "components": "V, S, M ",
+        "materials": "a drop of alcohol",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": true,
+        "occult": true,
+        "description": "You gain 2d4 + 5 x Magnitude expended Temporary Health."
+    },
+    {
+        "name": "Feather Fall",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "1 minute",
+        "school": "Transmutation",
+        "range": "60ft",
+        "components": "V, M ",
+        "materials": "a small feather or piece of down",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "Choose up to five Falling characters within range, which can include yourself. Their rate of descent slows to 60ft per Round until the spell ends. If a character lands before the spell ends, they take no damage from the fall, they land standing, and the spell ends for that character."
+    },
+    {
+        "name": "Summon Familiar",
+        "magnitude": 1,
+        "casting": "1 Hr.",
+        "duration": "Instantaneous",
+        "school": "Conjuration",
+        "ritual": true,
+        "range": "10ft",
+        "components": "V, S, M ",
+        "materials": "burning incense worth 10+ GP, which the spell consumes",
+        "consumes": true,
+        "gold cost": 10,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "You summon the service of a familiar, a spirit that takes an animal form you choose: Bat, Cat, Frog, Hawk, Lizard, Octopus, Owl, Rat, Raven, Spider, Weasel, or another Beast that has a Challenge Rating of 0. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a Celestial, Fey, Fiend or Undead (your choice) instead of a Beast. Your familiar acts independently of you, but it obeys your commands. \n\n**Telepathic Connection**. While your familiar is within 100ft of you, you can communicate with it telepathically. Additionally, as a Bonus Action, you can shut off your senses and see through the familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses it has. \n\n**Deliver Spells**. When you cast a spell with a range of touch, your familiar can deliver the touch instead. Your familiar must be within 100ft of you, and it must take a Action to deliver the touch when you cast the spell. \n\n**Combat**. The familiar is an ally to you and your allies. It rolls its own Initiative and acts on its own turn. A familiar uses the stats and actions of its stat block as normal. \n\n**Destruction and Desummoning**. When the familiar drops to 0 Health, it disappears back to its home plane. When you cast this spell again, you can choose to summon the same spirit or a different one. As an Action, you can temporarily dismiss the familiar to its home plane. If you do so, you can cast this spell again without a Material cost to summon that same spirit. Alternatively, you can dismiss it forever, as if it had reached 0 Health. When the familiar is destroyed or desummoned, it leaves behind in its space anything it was wearing or carrying.\n\n**Changing Form**. You can't have more than one familiar at a time, but if you cast the spell again while your familiar is present and within 100ft, you do not spend the material cost and you can change which Beast form it has."
+    },
+    {
+        "name": "Fog Cloud",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "1 hour",
+        "concentration": true,
+        "school": "Conjuration",
+        "range": "120ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": true,
+        "occult": true,
+        "description": "You create a 20ft per Magnitude expended radius sphere of fog centred on a point within range. The sphere is Heavily Obscured. It lasts for the duration of 1 hour or until a strong wind (such as one created by Gust of Wind) disperses it."
+    },
+    {
+        "name": "Goodberry",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "24 hours",
+        "school": "Conjuration",
+        "range": "Touch",
+        "components": "V, S, M ",
+        "materials": "a sprig of mistletoe",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": true,
+        "occult": false,
+        "description": "Ten berries appear in your hand and are infused with magic for the duration. A character can take a Bonus Action to eat one berry. Eating, or forcing an Incapacitated character to eat, a berry restores 1 Health, and the berry provides enough nourishment to sustain a character for one day. Uneaten berries disappear when the spell ends."
+    },
+    {
+        "name": "Grease",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "1 minute",
+        "school": "Conjuration",
+        "range": "60ft",
+        "components": "V, S, M ",
+        "materials": "a bit of pork rind or butter",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "Highly flammable grease covers the ground in a 15ft circle centred on a point within range and turns it into Difficult Terrain for the duration. When the grease appears, each character standing in its area must succeed on a Reflex saving throw or have the Prone condition. A character that enters the area or ends its turn there must also succeed on that save or fall Prone. The grease automatically fails saves to suffer the Burning condition."
+    },
+    {
+        "name": "Guiding Bolt",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "1 round",
+        "school": "Evocation",
+        "range": "120ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": false,
+        "occult": false,
+        "description": "You hurl a bolt of divine light toward a character within range. Make a ranged spell attack against the character. On a hit, it takes 3d6 Radiant damage, plus 1d6 per Magnitude expended, and the next attack roll made against it during the next Round has Advantage."
+    },
+    {
+        "name": "Hail of Thorns",
+        "magnitude": 1,
+        "casting": "Bonus",
+        "duration": "Instantaneous",
+        "school": "Conjuration",
+        "range": "Self",
+        "components": "V",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": false,
+        "occult": false,
+        "description": "When you hit a character with a ranged weapon attack, you can cast this spell. You create a rain of thorns that sprouts from your Ranged weapon's ammunition, projectile or such. The target character of the attack and each character within 5ft of them make a Reflex saving throw, taking 1d10 per Magnitude expended Piercing damage on a failed save or half as much damage on a successful one."
+    },
+    {
+        "name": "Healing Word",
+        "magnitude": 1,
+        "casting": "Bonus",
+        "duration": "Instantaneous",
+        "school": "Abjuration",
+        "range": "60ft",
+        "components": "V",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": true,
+        "occult": true,
+        "description": "A creature of your choice that you can see within range regains Hit Points equal to 2d4 per Magnitude expended plus your Magic Statistic."
+    },
+    {
+        "name": "Hellish Rebuke",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Evocation",
+        "range": "60ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "When a character within range hits you with an attack, you can cast this spell. The character that damaged you is momentarily surrounded by hellish flames. It makes a Reflex saving throw, taking 1d10 Fire damage plus 1d10 per Magnitude expended and suffering the Burning (1d10 vs your Magic save) condition on a failed save, or half as much damage only on a successful one."
+    },
+    {
+        "name": "Heroism",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "1 minute",
+        "concentration": true,
+        "school": "Enchantment",
+        "range": "Touch",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": false,
+        "occult": true,
+        "description": "Willing characters you touch are imbued with bravery. Until the spell ends, they are immune to the Frightened condition and gain Temporary Health equal to your Spell Statistic (to a minimum of 1) at the start of each Round.\n\nThe number of characters you can touch with this spell is equal to the Magnitude expended."
+    },
+    {
+        "name": "Hex",
+        "magnitude": 1,
+        "casting": "Bonus",
+        "duration": "1 hour",
+        "concentration": true,
+        "school": "Enchantment",
+        "range": "90ft",
+        "components": "V, S, M ",
+        "materials": "the petrified eye of a newt",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "You place a curse on a character that you can see within range. Until the spell ends, you deal an extra 1d6 Necrotic damage to the hexed character whenever you hit it with an attack roll. Also, choose one Statistic when you cast the spell. The target has Disadvantage on checks made with the chosen statistic. If the target drops to 0 Health before this spell ends, you can take a Bonus Action to curse a new character.\n\nIf you cast this spell with Magnitude III or greater, it does not require Concentration.\n\nIf you cast this spell with Magnitude V or greater, the duration becomes 24 hours."
+    },
+    {
+        "name": "Hunter's Mark",
+        "magnitude": 1,
+        "casting": "Bonus",
+        "duration": "1 hour",
+        "concentration": true,
+        "school": "Divination",
+        "range": "90ft",
+        "components": "V",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": true,
+        "occult": false,
+        "description": "You magically mark one character you can see within range as your \"quarry\". Until the spell ends, you deal an extra 1d6 Force damage to your quarry whenever you hit it with an attack. You also have Advantage on any Perception or Intelligence checks you make to locate or research your quarry. If the quarry drops to 0 Health before this spell ends, you can take a Bonus Action to move the mark to a new character you can see within range.\n\nIf you cast this spell with Magnitude III or greater, it does not require Concentration.\n\nIf you cast this spell with Magnitude V or greater, the duration becomes 24 hours."
+    },
+    {
+        "name": "Ice Cannon",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Conjuration",
+        "range": "60ft",
+        "components": "S, M ",
+        "materials": "a drop of water or a piece of ice",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": true,
+        "occult": false,
+        "description": "You create a exposive shell of ice that fires towards one target within range. Make a ranged spell attack against the character. On a hit, the target takes 1d10 Piercing damage. Hit or miss, the shell then explodes. The target and each target within 5ft of them must succeed on a Reflex saving throw or take 1d6 Cold damage plus 1d6 Cold damage per Magnitude expended."
+    },
+    {
+        "name": "Identify",
+        "magnitude": 1,
+        "casting": "1 minute",
+        "duration": "Instantaneous",
+        "school": "Divination",
+        "ritual": true,
+        "range": "Touch",
+        "components": "V, S, M ",
+        "materials": "a pearl worth 100+ GP",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "You touch an object throughout the spell's casting. If the object is a magic item or some other magical object, you learn its properties and how to use them, whether it requires Attunement, and how many charges it has, if any. You learn whether any ongoing spells are affecting the item and what they are. If the item was created by a spell, you learn that spell's name.\n\nIf you instead touch a character throughout the casting, you learn which ongoing spells, if any, are currently affecting it."
+    },
+    {
+        "name": "Illusory Script",
+        "magnitude": 1,
+        "casting": "1 minute",
+        "duration": "10 days",
+        "school": "Illusion",
+        "ritual": true,
+        "range": "Touch",
+        "components": "S, M ",
+        "materials": "ink worth 10+ GP, which the spell consumes",
+        "consumes": true,
+        "gold cost": 10,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "You write on parchment, paper, or another suitable material and imbue it with an illusion that lasts for 10 days. To you and any characters you designate when you cast the spell, the writing appears normal, seems to be written in your hand, and conveys whatever meaning you intended when you wrote the text. To all others, the writing appears as if it were written in an unknown or magical script that is unintelligible. Alternatively, the illusion can alter the meaning, handwriting, and language of the text, though the language must be one you know. If the spell is dispelled, the original script and the illusion both disappear.A character that has truesight can read the hidden message."
+    },
+    {
+        "name": "Inflict Wounds",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Necromancy",
+        "range": "Touch",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": false,
+        "occult": true,
+        "description": "A character you touch makes a Fortitude saving throw, taking 1d10 Necrotic damage plus 1d10 Necrotic damage per Magnitude expended on a failed save or half as much damage on a successful one."
+    },
+    {
+        "name": "Jump",
+        "magnitude": 1,
+        "casting": "Bonus",
+        "duration": "1 minute",
+        "school": "Transmutation",
+        "range": "Touch",
+        "components": "V, S, M ",
+        "materials": "a grasshopper's hind leg",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": true,
+        "occult": true,
+        "description": "You touch willing characters. Until the spell ends, the characters can jump up to 30ft in any direction as a Bonus Actioin.\n\nThe number of characters you can touch with this spell is equal to the Magnitude expended."
+    },
+    {
+        "name": "Longstrider",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "1 hour",
+        "school": "Transmutation",
+        "range": "Touch",
+        "components": "V, S, M ",
+        "materials": "a pinch of dirt",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": true,
+        "occult": true,
+        "description": "You touch willing characters. The characters' Speed increases by 10ft until the spell ends.\n\nThe number of characters you can touch with this spell is equal to the Magnitude expended."
+    },
+    {
+        "name": "Mage Armor",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "8 hours",
+        "school": "Abjuration",
+        "range": "Touch",
+        "components": "V, S, M ",
+        "materials": "a piece of cured leather",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "You touch a willing character who isn't wearing armour. Until the spell ends, the target's base Defence becomes 12. The spell ends early if the target dons armour."
+    },
+    {
+        "name": "Magic Missile",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Evocation",
+        "range": "120ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": false,
+        "description": "You create two glowing darts of magical force plus one per Magnitude expended. Each dart strikes a target of your choice that you can see within range. Each dart deals 1d4 + 1 Force damage to its target. The darts all strike simultaneously, and you can direct them to hit one target or several."
+    },
+    {
+        "name": "Resistance against Magical Creatures",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "10 minutes",
+        "concentration": true,
+        "school": "Abjuration",
+        "ritual": true,
+        "range": "Touch",
+        "components": "V, S, M ",
+        "materials": "a pouch of crystalised mana powder worth 10+ GP, which the spell consumes",
+        "consumes": true,
+        "gold cost": 10,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": false,
+        "description": "Until the spell ends, one willing character you touch is protected against Magical creatures (aberrations, dragons, elementals, giants, fell, fey, monstrosities and (if one counts as made-of magic, rather than bearing-magic) undead). The resistance grants several benefits. Characters of those types have Disadvantage on spells or magical abilities against the target character. The target also can't be possessed by or gain the Charmed or Frightened conditions from them. If the target is already possessed, Charmed, or Frightened by such a creature, the target has Advantage on any new saving throw against the relevant effect."
+    },
+    {
+        "name": "Protection from Dark Creatures",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "10 minutes",
+        "concentration": true,
+        "school": "Abjuration",
+        "range": "Touch",
+        "components": "V, S, M ",
+        "materials": "a flask's worth of Holy Water worth 25+ GP, which the spell consumes",
+        "consumes": true,
+        "gold cost": 25,
+        "arcane": true,
+        "divine": true,
+        "nature": true,
+        "occult": true,
+        "description": "Until the spell ends, one willing character you touch is protected against Dark creatures (Aberrations, Demons, Fiends, Lycanthropes, Monstrosities, Fell, and Undead). The protection grants several benefits. Characters of those types have Disadvantage on attack rolls against the target character. They also can't be possessed by or gain the Charmed or Frightened conditions from them. If the target is already possessed, Charmed, or Frightened by such a character, they have Advantage on any new saving throw against the relevant effect."
+    },
+    {
+        "name": "Purify Food and Drink",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Transmutation",
+        "ritual": true,
+        "range": "10ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": true,
+        "occult": false,
+        "description": "You remove poison and rot from nonmagical food and drink in a 5ft cube, making it safe to consume."
+    },
+    {
+        "name": "Ray of Sickness",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Necromancy",
+        "range": "60ft",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "You shoot a sickening ray at a character within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Poison damage plus 1d8 poison damage per Magnitude expended, and the target character has the Poisoned condition until the end of your next turn."
+    },
+    {
+        "name": "Bestow Halo",
+        "magnitude": 1,
+        "casting": "Bonus",
+        "duration": "1 minute",
+        "school": "Abjuration",
+        "range": "30ft",
+        "components": "V, S, M ",
+        "materials": "a shard of glass from a mirror",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": false,
+        "occult": false,
+        "description": "You ward a character within range with a glowing halo above their head. Until the spell ends, any character who targets the warded character with a damaging Action or Bonus Action must succeed on a Willpower saving throw or either choose a new target or lose the Action / Bonus Action. This spell doesn't protect the warded character from areas of effect. The spell ends if the warded character makes an attack roll, casts a spell, or deals damage."
+    },
+    {
+        "name": "Searing Smite",
+        "magnitude": 1,
+        "casting": "Bonus",
+        "duration": "1 minute",
+        "school": "Evocation",
+        "range": "Self",
+        "components": "V",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": false,
+        "occult": false,
+        "description": "When you hit a character with a weapon attack, you can cast this spell. As you hit the target, it takes an extra 1d6 Fire damage per Magnitude expended from the attack. The target suffers the Burning (1d6 vs your Magic Statistic) condition."
+    },
+    {
+        "name": "Shield",
+        "magnitude": 1,
+        "casting": "Bonus",
+        "duration": "1 round",
+        "school": "Abjuration",
+        "range": "Self",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "When a character attempts to hit you, you can cast this spell. An imperceptible barrier of magical force springs up around you. Until the next Round, you have a +5 bonus to your Defence, including against the triggering attack, and you take no damage from Magic Missile or other magical ability that automatically hits."
+    },
+    {
+        "name": "Shield of Faith",
+        "magnitude": 1,
+        "casting": "Bonus",
+        "duration": "10 minutes",
+        "concentration": true,
+        "school": "Abjuration",
+        "range": "60ft",
+        "components": "V, S, M ",
+        "materials": "a prayer scroll",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": false,
+        "occult": false,
+        "description": "Floating scripture surrounds a character of your choice within range, granting them constant half cover (a +2 bonus to their Defence and Reflex saves) for 10 minutes."
+    },
+    {
+        "name": "Silent Image",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "10 minutes",
+        "concentration": true,
+        "school": "Illusion",
+        "range": "60ft",
+        "components": "V, S, M ",
+        "materials": "a bit of fleece",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 15ft cube. The image appears at a spot within range and lasts for up to 10 minutes. The image is purely visual; it isn't accompanied by sound, smell, or other sensory effects.\n\nAs an action, you can cause the image to move to any spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image.\n\nPhysical interaction with the image reveals it to be an illusion, since things can pass through it. A character that takes a Discern action to examine the image can determine that it is an illusion with a successful Investigation check against your Magic Save. If a character discerns the illusion for what it is, they can see through the image."
+    },
+    {
+        "name": "Sleep",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "1 minute",
+        "concentration": true,
+        "school": "Enchantment",
+        "range": "60ft",
+        "components": "V, S, M ",
+        "materials": "a pinch of sand or rose petals",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "Each character of your choice that you can see within range must succeed on a Willpower saving throw or fall asleep, gaining the Incapacitated and Prone conditions. At the start of each Round, every character compelled to sleep can repeat the save, waking up. The spell ends on a target character if they take damage or someone within 5ft of them takes an Action to wake them.\n\nCharacters that don't sleep, such as elves, or that have Immunity to the Exhaustion condition automatically succeed on saves against this spell."
+    },
+    {
+        "name": "Speak with Animals",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "10 minutes",
+        "school": "Divination",
+        "ritual": true,
+        "range": "Self",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": true,
+        "occult": true,
+        "description": "For 10 minutes, you can comprehend and verbally communicate with Beasts. Most Beasts have little to say about topics that don't pertain to survival or companionship, but at minimum, a Beast can give you information about nearby locations and monsters, including whatever it has perceived within the past day."
+    },
+    {
+        "name": "Tasha's Hideous Laughter",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "1 minute",
+        "concentration": true,
+        "school": "Enchantment",
+        "range": "30ft",
+        "components": "V, S, M ",
+        "materials": "a tart and a feather",
+        "consumes": false,
+        "arcane": false,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "One character per Magnitude expended of your choice that you can see within range makes a Willpower saving throw. On a failed save, it has the Prone and Incapacitated conditions for the duration. During that time, it laughs uncontrollably if it's capable of laughter, and it can't end the Prone condition on itself. At the end of each Round and each time it takes damage, it makes another Willpower saving throw. The target has Advantage on the save if the save is triggered by damage. On a successful save, the spell ends."
+    },
+    {
+        "name": "Floating Disk",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "1 hour",
+        "school": "Conjuration",
+        "ritual": true,
+        "range": "30ft",
+        "components": "V, S, M ",
+        "materials": "a drop of mercury",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": false,
+        "description": "This spell creates a circular, horizontal plane of force, 3ft in diameter and 1 inch thick, that floats 3ft above the ground in an unoccupied space of your choice that you can see within range. The disk remains for the duration and can hold up to 500lbs. If more weight is placed on it, the spell ends, and everything on the disk falls to the ground.\n\nThe disk is immobile while you are within 20ft of it. If you move more than 20ft away from it, the disk follows you so that it remains within 20ft of you. It can move across uneven terrain, up or down stairs, slopes and the like, but it can't cross an elevation change of 10ft or more. For example, the disk can't move across a 10-foot-deep pit, nor could it leave such a pit if it was created at the bottom. If you move more than 100ft from the disk (typically because it can't move around an obstacle to follow you), the spell ends."
+    },
+    {
+        "name": "Thunderous Smite",
+        "magnitude": 1,
+        "casting": "Bonus",
+        "duration": "Instantaneous",
+        "school": "Evocation",
+        "range": "Self",
+        "components": "V",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": false,
+        "occult": false,
+        "description": "When you hit a target with a melee weapon attack, you can cast this spell. Your strike rings with thunder that is audible within 300ft of you, and the target takes an extra 1d6 Thunder damage plus 1d6 Thunder damage per Magnitude expended from the attack. Additionally, if the target is a character, it must succeed on a Fortitude saving throw or be pushed 10ft away from you and have the Prone condition."
+    },
+    {
+        "name": "Thunderwave",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "Instantaneous",
+        "school": "Evocation",
+        "range": "Self (15ft radius)",
+        "components": "V, S",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": true,
+        "occult": true,
+        "description": "You unleash a wave of thunderous energy with a might boom that is audible within 300ft of you. Each character within a 15ft radius of you makes a Fortitude saving throw. On a failed save, a creature takes 1d8 Thunder damage plus 1d8 Thunder damage per Magnitude expended, and is pushed 10ft away from you. On a successful save, a character takes half as much damage only. In addition, unsecured objects that are entirely within the area are pushed 10ft away from you."
+    },
+    {
+        "name": "Unseen Servant",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "1 hour",
+        "school": "Conjuration",
+        "ritual": true,
+        "range": "60ft",
+        "components": "V, S, M ",
+        "materials": "a bit of string and of wood",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "This spell creates an Invisible Medium sized incorporeal arcane construct, a \"servant\", that acts independently and performs simple tasks to the best of its automatonic mind's ability at your command until the spell ends. If you command the servant to perform a task that would move it more than 60ft away from you, the spell ends. The servant springs into existence in an unoccupied space on the ground within range. It has the following Statistics:\n\nDefence 8, Health 1, Speed 15ft, Accuracy -3, Strength -3, Dexterity -3 and N/A everything else. It fails all saves.\n\nIt can use the Interact, Help, Move and Use actions only.\n\nIf it drops to 0 Health, the spell ends."
+    },
+    {
+        "name": "Witch Bolt",
+        "magnitude": 1,
+        "casting": "Action",
+        "duration": "1 minute",
+        "concentration": true,
+        "school": "Evocation",
+        "range": "60ft",
+        "components": "V, S, M ",
+        "materials": "a twig struck by lightning",
+        "consumes": false,
+        "arcane": true,
+        "divine": false,
+        "nature": false,
+        "occult": true,
+        "description": "A beam of crackling energy lances toward a character within range, forming a sustained arc of lightning between you and them. Make a ranged spell attack against them. On a hit, the target character takes 1d12 Lightning damage plus 1d12 Lightning damage per Magnitude expended. On subsequent Round, you can take a Bonus Action to deal 1d12 Lightning damage to the target character automatically, even if the first attack missed. The spell ends if the target is ever outside the spell's range or if it has Total Cover from you."
+    },
+    {
+        "name": "Wrathful Smite",
+        "magnitude": 1,
+        "casting": "Bonus",
+        "duration": "1 minute",
+        "school": "Necromancy",
+        "range": "Self",
+        "components": "V",
+        "consumes": false,
+        "arcane": false,
+        "divine": true,
+        "nature": false,
+        "occult": false,
+        "description": "When you hit a character with a melee weapon attack, you can cast this spell. The character takes an extra 1d6 Necrotic damage per Magnitude expended from the attack, and it must succeed on a Willpower saving throw or have the Frightened condition until the spell ends. At the end of each Round, the Frightened character repeats the save, ending the spell on itself on a success."
     }
 ]
-
-Cantrips
-
-Acid Splash
-Chill Touch
-Dancing Lights
-Druidcraft
-Eldritch Blast
-Fire Bolt
-Guidance
-Light
-Mage Hand
-Mending
-Message
-Minor Illusion
-Poison Spray
-Prestidigitation
-Produce Flame
-Ray of Frost
-Resistance
-Sacred Flame
-Shillelagh
-Shocking Grasp
-Spare the Dying
-Thaumaturgy
-True Strike
-Vicious Mockery
-
-1st Level
-
-Alarm
-Animal Friendship
-Bane
-Bless
-Burning Hands
-Charm Person
-Color Spray
-Command
-Comprehend Languages
-Create or Destroy Water
-Detect Evil and Good
-Detect Magic
-Detect Poison and Disease
-Disguise Self
-Divine Favor
-Entangle
-Expeditious Retreat
-Faerie Fire
-False Life
-Feather Fall
-Find Familiar
-Floating Disk
-Fog Cloud
-Goodberry
-Grease
-Guiding Bolt
-Healing Word
-Hellish Rebuke
-Heroism
-Hideous Laughter
-Hunter's Mark
-Identify
-Illusory Script
-Inflict Wounds
-Jump
-Longstrider
-Mage Armor
-Magic Missile
-Protection from Evil and Good
-Purify Food and Drink
-Sanctuary
-Shield
-Shield of Faith
-Silent Image
-Sleep
-Speak with Animals
-Thunderwave
-Unseen Servant
-
-2nd level
-
-Acid Arrow
-Aid
-Alter Self
-Animal Messenger
-Arcane Lock
-Arcanist's Magic Aura
-Augury
-Barkskin
-Blindness/Deafness
-Blur
-Branding Smite
-Calm Emotions
-Continual Flame
-Darkness
-Darkvision
-Detect Thoughts
-Enhance Ability
-Enlarge/Reduce
-Enthrall
-Find Steed
-Find Traps
-Flame Blade
-Flaming Sphere
-Gentle Repose
-Gust of Wind
-Heat Metal
-Hold Person
-Invisibility
-Knock
-Lesser Restoration
-Levitate
-Locate Animals or Plants
-Locate Object
-Magic Mouth
-Magic Weapon
-Mirror Image
-Misty Step
-Moonbeam
-Pass without Trace
-Prayer of Healing
-Protection from Poison
-Ray of Enfeeblement
-Rope Trick
-Scorching Ray
-See Invisibility
-Shatter
-Silence
-Spider Climb
-Spike Growth
-Spiritual Weapon
-Suggestion
-Warding Bond
-Web
-Zone of Truth
-
-3rd level
-
-Animate Dead
-Beacon of Hope
-Bestow Curse
-Blink
-Call Lightning
-Clairvoyance
-Conjure Animals
-Counterspell
-Create Food and Water
-Daylight
-Dispel Magic
-Fear
-Fireball
-Fly
-Gaseous Form
-Glyph of Warding
-Haste
-Hypnotic Pattern
-Lightning Bolt
-Magic Circle
-Major Image
-Mass Healing Word
-Meld into Stone
-Nondetection
-Phantom Steed
-Plant Growth
-Protection from Energy
-Remove Curse
-Revivify
-Sending
-Sleet Storm
-Slow
-Speak with Dead
-Speak with Plants
-Spirit Guardians
-Stinking Cloud
-Tiny Hut
-Tongues
-Vampiric Touch
-Water Breathing
-Water Walk
-Wind Wall
-
-4th level
-
-Arcane Eye
-Banishment
-Black Tentacles
-Blight
-Compulsion
-Confusion
-Conjure Minor Elementals
-Conjure Woodland Beings
-Control Water
-Death Ward
-Dimension Door
-Divination
-Dominate Beast
-Fabricate
-Faithful Hound
-Fire Shield
-Freedom of Movement
-Giant Insect
-Greater Invisibility
-Guardian of Faith
-Hallucinatory Terrain
-Ice Storm
-Locate Creature
-Phantasmal Killer
-Polymorph
-Private Sanctum
-Resilient Sphere
-Secret Chest
-Stone Shape
-Stoneskin
-Wall of Fire
-
-5th level
-
-Animate Objects
-Antilife Shell
-Arcane Hand
-Awaken
-Cloudkill
-Commune
-Commune with Nature
-Cone of Cold
-Conjure Elemental
-Contact Other Plane
-Contagion
-Creation
-Dispel Evil and Good
-Dominate Person
-Dream
-Flame Strike
-Geas
-Greater Restoration
-Hallow
-Hold Monster
-Insect Plague
-Legend Lore
-Mass Cure Wounds
-Mislead
-Modify Memory
-Passwall
-Planar Binding
-Raise Dead
-Reincarnate
-Scrying
-Seeming
-Telekinesis
-Telepathic Bond
-Teleportation Circle
-Tree Stride
-Wall of Force
-Wall of Stone
-
-6th level
-
-Blade Barrier
-Chain Lightning
-Circle of Death
-Conjure Fey
-Contingency
-Create Undead
-Disintegrate
-Eyebite
-Find the Path
-Flesh to Stone
-Forbiddance
-Freezing Sphere
-Globe of Invulnerability
-Guards and Wards
-Harm
-Heal
-Heroes' Feast
-Instant Summons
-Irresistible Dance
-Magic Jar
-Mass Suggestion
-Move Earth
-Planar Ally
-Programmed Illusion
-Sunbeam
-Transport via Plants
-True Seeing
-Wall of Ice
-Wall of Thorns
-Wind Walk
-Word of Recall
-
-7th level
-
-Arcane Sword
-Conjure Celestial
-Delayed Blast Fireball
-Divine Word
-Etherealness
-Finger of Death
-Fire Storm
-Forcecage
-Magnificent Mansion
-Mirage Arcane
-Plane Shift
-Prismatic Spray
-Project Image
-Regenerate
-Resurrection
-Reverse Gravity
-Sequester
-Simulacrum
-Symbol
-Teleport
-
-8th level
-
-Animal Shapes
-Antimagic Field
-Antipathy/Sympathy
-Clone
-Control Weather
-Demiplane
-Dominate Monster
-Earthquake
-Feeblemind
-Glibness
-Holy Aura
-Incendiary Cloud
-Maze
-Mind Blank
-Power Word Stun
-Sunburst
-
-9th level
-
-Astral Projection
-Foresight
-Gate
-Imprisonment
-Mass Heal
-Meteor Swarm
-Power Word Kill
-Prismatic Wall
-Shapechange
-Storm of Vengeance
-Time Stop
-True Polymorph
-True Resurrection
-Weird
-Wish

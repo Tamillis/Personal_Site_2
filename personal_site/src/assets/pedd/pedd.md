@@ -109,6 +109,9 @@ Also, 1 Round is 6 seconds, give or take some dramatic leeway.
 
 Power / Spell use of the words "Character" and "Target". A character is any humanoid or other type of creature. A target includes objects or particular points in space, basically anything. I'm in the process of rewording things to clearly match this definition, so use common sense if what the power / spell currently says doesn't make sense.
 
+### N/A Statistics
+I think I've written elsewhere but I can't find it now. A stat value of N/A, which only happens for NPCs, means that it is meaningless for that character to have a value for that stat. This is relatively common for Intelligence and various non-sophont characters. Any skill check that is called for using that stat automatically fails, as does any save. It may be the case that the check or save is instead done with a different stat, or entirely nullified by the GM. Many mind affecting spells don't have any affect on unintelligent creatures, for example.
+
 ### Characters, Creatures and Monsters
 Instances of 'creature' are updated to 'character' as generally the game is character focused and the clearer language helps. All monsters, beasts etc. do count as characters in this instance. However there is also a greater, clearer, emphasis on so-called 'monster types' as well, and are referenced in certain Powers. They're the (slightly expanded and rejigged) following categories known as Character Types:
 
@@ -144,6 +147,7 @@ Certain Character Types are grouped into "Creatures" for the purposes of identif
 There are many other classifications and subcategories that the Character Types can be grouped with or described by in-world:
 - **Material creatures**: beasts, constructs, giants, humanoids, lycanthropes, machines, monstrosities, oozes, plants
 - **Living creatures**: beasts, dragons, fell, fey, giants, humanoids, lycanthropes, monstrosities, oozes, plants
+- **Light creatures**: celestials, fey, jurors, and constructs
 - **Dark creatures**: aberrations, demons, fiends, lycanthropes, monstrosities (debated), fell, undead.
 - **Magical creatures**: aberrations, dragons, elementals, giants, fell, fey, monstrosities and (if one counts as made-of magic, rather than bearing-magic) undead
 
