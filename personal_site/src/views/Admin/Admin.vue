@@ -82,7 +82,7 @@ async function logout(e) {
     else {
         let data = await res.json();
         console.warn(data);
-        errMsg = data.error;
+        errMsg.value = data.error;
     }
     username.value = '';
     password.value = '';
