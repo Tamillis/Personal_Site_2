@@ -4,6 +4,12 @@
 
         <div class="flex gap align-center filter-borders">
             <h3>Filter:</h3>
+
+            <div class="flex align-center">
+                <label>By Sphere</label>
+                <input type="checkbox" class="q checkBoxQ" v-model="filter.useSpheres">
+            </div>
+
             <div class="flex align-center">
                 <label>By School</label>
                 <input type="checkbox" class="q checkBoxQ" v-model="filter.useSchools">
@@ -13,6 +19,16 @@
                 <label>By Term</label>
                 <input type="checkbox" class="q checkBoxQ" v-model="filter.useTerms">
             </div>
+        </div>
+
+        <div class="flex gap" v-if="filter.useSpheres">
+            <label>Spheres: </label>
+            <select class="tag-select" v-model="spellSphere" >
+                <option>Arcane</option>
+                <option>Divine</option>
+                <option>Nature</option>
+                <option>Occult</option>
+            </select>
         </div>
 
         <div class="flex gap" v-if="filter.useSchools">
@@ -65,7 +81,9 @@ onMounted(() => {
 const spellSchools = [... new Set(spellsData.map(s => s.school))].sort();
 
 const spellSchool = ref("Abjuration");
+const spellSphere = ref("Arcane");
 const filter = ref({
+    useSpheres: false,
     useSchools: false,
     useTerms: false,
     //usePreqs: false
@@ -73,6 +91,12 @@ const filter = ref({
 const openedSpells = ref([]);
 const filteredSpells = computed(() => {
     let spells = [...spellsData];
+    if(filter.value.useSpheres) {
+        if(spellSphere.value == "Arcane") spells = spells.filter(s => s.arcane);
+        else if(spellSphere.value == "Divine") spells = spells.filter(s => s.divine);
+        else if(spellSphere.value == "Nature") spells = spells.filter(s => s.nature);
+        else spells = spells.filter(s => s.occult);
+    }
     if(filter.value.useSchools) spells = spells.filter(s => s.school == spellSchool.value);
     if(filter.value.useTerms) spells = spells.filter(s => spellSearch.value == "" || s.name.toLowerCase().includes(spellSearch.value.toLowerCase()));
     return spells;

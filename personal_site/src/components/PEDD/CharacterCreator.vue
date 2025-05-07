@@ -11,6 +11,7 @@
 			<li>Add Powers in training section</li>
 			<li>Add Rolling functionality for attacks, spells, skills and stats</li>
 			<li>Add dynamic skill-downgrading</li>
+			<li>Special handling of Powers that change how Defence is calculated</li>
 		</ul>
 		<button class="btn mb-1r" @click="copyUrl">Copy to clipboard</button>
 		<button class="btn" @click="chosen = blankCharacter">Reset</button>
