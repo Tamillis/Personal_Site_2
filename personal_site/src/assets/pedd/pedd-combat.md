@@ -63,7 +63,7 @@ So what can that one Action can do? Quite a lot more than 5e. Every character ca
 #### Tactical Actions
 
 - **Attack of Opportunity** - if an enemy you're Engaged with moves away from you, you can spend 1 Focus to make an attack on them for free, after which they have moved away and are no longer Engaged with you for that Round.
-- **Coup de Grace** - when you make a Weapon Attack against an Incapacitated target, don't roll for Damage, instead take each dice you would roll (if any) to be the maximum result.
+- **Coup de Grace** - when you make a melee Weapon Attack against an Incapacitated target, don't roll for Damage, instead take each dice you would roll (if any) to be the maximum result.
 - **Disarm** - as an Attack or Action against an enemy in your Reach holding a weapon or shield, you make an attack roll against the enemy's passive Reflexes. If you succeed, you rip the weapon from their grasp and throw it 10ft in a direction of your choice (this does not count as a thrown weapon attack), to the ground at your feet, or equip it an empty hand of yours.
 - **Focussed Strike** - when you make a weapon attack roll against a character, you can spend 1 Focus to add d6 to the roll.
 - **Grapple** - as an Attack or Action you attempt to Grapple a Character. You make a Strength check against their passive Fortitude. If you succeed the target Character is Immobilised. On subsequent turns you can maintain the grapple (no additional roll needed) as an Action or end the grapple for free. When Grappling, you can use your Bonus Action to Move yourself and the enemy as if going through Difficult Terrain (typically, at half Speed), make yourself and the enemy Prone, or make an Unarmed Strike or Weapon Attack with the 'prone fighting' tag against the grappled character. The grappled character must use their Action to attempt to escape the Grapple, making a Strength or Dexterity check (their choice) vs your passive Fortitude, ending the grapple on a success.
@@ -232,27 +232,80 @@ Cover is functionally unchanged from 5e. Cover is a bonus to your Defence, a +2 
 ### Conditions
 The following are changes and additions to 5e's conditions (I will in time port all the conditions over including an overhaul of exhaustion).
 
-Note that durations have been separated from Conditions, so every condition, when inflicted, should also state their duration (1 Round, 1 hour etc.). If a Condition is inflicted that Round, if necessary, roll Initiative to see if the condition applies before or after the target's actions.
+Note that durations have been separated from Conditions, so every condition, when inflicted, should also state their duration (1 Round, 1 hour etc.). If a Condition is inflicted that Round, if necessary, roll Initiative to see if the condition applies before or after the target's actions. 
 
+Exhaustion does not have a duration in-so-far-as any applied level of Exhaustion always requires a Long Rest to remove, so its duration is in affect "until the next Long Rest", and then of course only reducing the effect by 1 level.
+
+As a short hand, Stunned is just Incapacitated for 1 round, so that obviously doesn't require a duration statement, and it is implied that Incapacitated occurs for more than 1 Round.
+
+Note that "Paralyzed" is carried over, but now functions the same as "Incapacitated".
+
+Note that the severity of some conditions follow levels of intensity, making it easier to know what does what: 
+
+> Immobilised -> Incapacitated / Paralyzed / Stunned  -> Unconscious
+> 
+> Immobilised -> Restrained
+
+- **Blinded / Deafened** - A blinded / deafened character can’t see / hear and automatically fails any ability check that requires sight / hearing.
 - **Bloodied** - A fan favourite, when enemy characters fall below half health, they enter the "Bloodied" condition. This is purely an descriptive marker though this also often means their behaviour, tactics and even powers may change, becoming more aggressive and desparate. The Bloodied Condition also lets Players know that the target is below half Health. Alternatively, on monsters that have 2 to 3 Wounds, its the condition after 1 Wound.
 - **Charmed** - unless otherwise stated, a charmed character considers you an ally and will heed your commands, which you can give freely, to the best of its ability. However it will not obey commands that are against its interests. If it is an intelligent character, you can attempt to persuade or otherwise convince them to obey, or that their interests lie elsewhere. For example, a charmed character will not attack another they consider an Ally, but depending on the situation, they may be persuaded to no longer consider the other character an ally.
 - **Concentrating** - when you are using your Concentration on a Spell to maintain its effect. If you take damage, you must make a Willpower save vs the damage (to a minimum of 10) to maintain concentration, otherwise the Spell ends. If you are Concentrating, you cannot use Focus.
+- **Exhaustion** - exhaustion applies in "levels". 1 level is recovered after a Long Rest. At the 6th level, you die.
+  - The target character suffers a -2 per level of Exhaustion penalty to all checks.
+  - The target character suffers a -2 per level of Exhaustion penalty to their maximum Health.
+  - The target character suffers a 5ft per level of Exhaustion penalty to their Speed.
 - **Flanked** - when you are the one in an Engagement who the foe isn’t Engaging, you have Advantage on your weapon attack rolls. You cannot flank a character 2 or more sizes larger than you.
 - **Frightened** - A Frightened character has Disadvantage on Ability checks and Attack rolls while the source of its fear is within line of sight. If it chooses to Move, the character must move away, or otherwise out of line of sight, from the source of its fear. The character doesn’t have to move into obviously dangerous ground, such as a fire or a pit.
-- **Immobilised** -the target character's Speed becomes 0, and it can't benefit from any Bonus to its Speed. Additionally, the target must use its Stationary Defence.
+- **Immobilised** - the target character cannot take the Move Action. Additionally, the target must use its Stationary Defence.
 - **Incapacitated**
   - The target character is Immobilised.
-  - The target character is Stunned.
+  - The target character cannot take Actions or Bonus Actions.
   - The target character has Disadvantage on Reflex saves.
   - Attack rolls against the target character have Advantage.
-- **Stunned** - the target character cannot take Actions or Bonus Actions.
+- **Pained** - the target character must succeed on a Concentration check to do any Action.
+- **Paralyzed** - the target character is Incapacitated
+- **Prone**
+  - A prone character's Speed is at 1/4
+  - A prone character can stand up as an Action and end the condition.
+  - A prone character has Disadvantage on attack rolls with weapons that do not have the Prone Fighting property.
+  - An attack roll against the prone character has Advantage if the attacker is within reach. Otherwise, the attack roll has Disadvantage.
+- **Restrained** - the target character is Immobilised and Attack rolls against them have Advantage, and the target character's attack rolls have Disadvantage.
+- **Poisoned** - A poisoned character has Disadvantage on attack rolls and ability checks. (Kinda lame)
+- **Sluggish** - the target character can take an Action OR a Bonus Action, not both.
+- **Stunned** - the target character is Incapacitated for the Round.
+- **Unconscious**
+  - The target character is Incapacitated, can’t speak, and is unaware of its surroundings
+  - The target character drops whatever it’s holding and falls Prone.
+  - The target character automatically fails Reflex saving throws.
+  - Attack rolls against the target character have Advantage.
 
 The following enviromental damage rules are updated and rolled into Conditions of the corresponding name:
-- **Burning (damage, DC)** - A character burns each Round. They take the amount of fire damage noted in brackets alongside the condition, default 1d6, at the start of the Round, and can take an Action to extinguish themselves. Unless another DC is stated, it is a DC 8 Reflex save to end the Burning condition.
+- **Burning (damage, DC)** - A character burns each Round. They take the amount of fire damage noted in brackets alongside the condition, default 1d6, at the start of the Round, and can take an Action to extinguish themselves. Burning caused by a spell uses the mage's Magic Save statistic for the DC. Unless another DC is stated, it is a DC 8 Fortitude save to end the Burning condition.
 - **Falling** - At the end of a fall, a character takes 1d6 bludgeoning damage for every 10ft it fell, to a maximum of 200ft for 20d6. The character lands prone, unless it avoids taking damage from the fall.
 - **Suffocating*** - A character can survive for a number of rounds equal to its Fortitude (to a minimum of 1). At the start of the next turn, it drops to 0 health and is dying, and it can’t regain health or be stabilized until it can breathe again. If it recovers from Dying with a natural 20 and is still Suffocating, it suffers the condition anew as if just running out of breath again.
 
 *Holding breath rules: A character can hold their breath for 1 minute plus their Willpower x 30 seconds (to a minimum of 30 seconds). When a character takes damage, they lose 30 seconds of breath. When a character runs out of breath they're Suffocating.
 
-#### Exhaustion
-Exhaustion is cool, but odd in application. Instead, one can gain and rest from levels of Exhaustion as before, but for each rank of Exhaustion a character has a -2 Malus to all of their Rolls, -5ft of Speed and -2 to their Maximum Health. Speed cannot go below 5ft, and Maximum Health cannot go below 1. As before, at the 6th rank of Exhaustion, a Character immediately dies.
+### Damage Conditions
+Each damage type has an associated condition or weapon special effect, which the DM will more liberally apply making damage do more than just Health numbers in most scenarios. Not every instance of each damage type should apply (indeed, the three weapon damage types apply only on crits), but it creates good opportunities for complications for a DM to apply.
+
+#### Physical
+- **Bludgeoning** -> **Dazes**
+- **Piercing** -> **Penetrates** i.e. Exhaustion (that is to say, accumulated "permanent" damage)
+- **Slashing** -> **Bleeds** 
+- **Thunder** -> **Deafened**
+
+#### Organic
+- **Acid** & Base -> **Pained**
+- **Poison** & Disease -> **Poisoned**, hey this condition already exists!
+- **Psychic** -> **Sluggish**
+
+#### Energy
+- **Fire** -> **Burning**
+- **Cold** -> **Exhaustion**
+- **Lightning** -> **Stunned**
+
+#### Mystical
+- **Necrotic** -> **Sluggish** / **Incapacitated**, depending on the severity
+- **Radiant** -> **Charmed** / **Frightened**, depending on the alignments of those involved
+- **Force** -> **Poisoned** - think radiation

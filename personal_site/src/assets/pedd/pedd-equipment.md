@@ -190,7 +190,7 @@ Armour is updated to the following table. Armour does not stack unless a + value
 - Priest's Pack - Includes a backpack, a blanket, 10 candles, a tinderbox, an alms box, 2 blocks of incense, a censer, vestments, 2 days of rations, and a waterskin.
 - Scholar's Pack - Includes a backpack, a book of lore, a bottle of ink, an ink pen, 10 sheets of parchment, a little bag of sand, and a small knife.
 
-### Alchemical Items
+### Alchemical Items WIP
 | Name | Cost | Materials | Grade | Effect |
 | --- | --- | --- | --- | --- |
 | flash bang | 1sp | herb | I | - from armories of 2nd emp |
@@ -216,7 +216,7 @@ Armour is updated to the following table. Armour does not stack unless a + value
 | soul saver | 1sp | soul boundary bridging agent, mana rich ingestants, bracing liquors | - passes death save |
 | Barkskin Salve | 1sp | cellwall-reinforcer (puréed bark), transformation jelly, inertial charge agent | activates with an Action to grant +2 constant block Defence for 1 hour. |
 
-### Runes
+### Runes WIP
 Runes come in many names, symbols, dragon-marks, elven characters and hieroglyphs, to name a few. Rune Magic is the domain of learning and using them.
 
 Each Rune represents a concept of magic made manifest, and though any normal person would feel the runes slipping from their memory the second they look away, those capable of taking in their higher existence and commiting even that to memory, can imbue runes and make use of their magical powers. Each Rune is associated with a Spell, which that Rune can be used to cast, and a magical benefit from infusing the rune into items and clothing the rune mage bears.
