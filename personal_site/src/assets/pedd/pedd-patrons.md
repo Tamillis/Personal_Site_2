@@ -2,19 +2,21 @@
 
 (TODO: Shove these Patrons into Powers)
 
-**Spellcasting Ability** - [Verdance](#-verdance-table). Additionally if your reside, spending more time than not, in a single region for a lunar month, the Verdance of that region increases by a stage (unless it is already Abundant). After this, if you leave, it reverts to the previous stage over the course of a lunar month.
+**Fey Presence** - You have the ability to project the beguiling and fearsome presence of the fey once per Short Rest. As an Action, you can cause each character in a 15ft cube centred on you to make a Willpower saving throw against your Magic Save. The characters that fail their saving throws suffer the Charmed or Frightened conditions (your choice) until the end of the next Round.
 
-**Spell List** - Primal Sphere
+**Magic Statistic** - the current [Verdance](/pedd/magic#-verdance-table) + your Bonus. Additionally if you reside, spending more time than not, in a single region for a lunar month of 28 days, the Verdance of that region increases by a stage (unless it is already Abundant). After this, if you leave, it reverts to the previous stage over the course of another lunar month of 28 days.
 
-**Emblematic Spells** TODO
+**Spell List** - If you take Pact Magic, you use the Primal Sphere spell list in addition to your Emblematic Spells. You remove your Anathema Spells from the Primal List.
+
+**Emblematic Spells**
 
 In addition to the Primal Sphere spell list
 
 | Magnitude | Spells |
-| --- | --- | 
-| Cantrip | Eldritch Blast, Vicious Mockery | 2
-| I | Arms of Hadar, Dissonant Whispers, Hex | 3
-| II | Enthrall, Immovable Object, Silence | 3
+| --- | --- |
+| Cantrip | Eldritch Blast, Empathy |
+| I | Charm Person, Dissonant Whispers, Hex, Ray of Sickness, Hideous Laughter, Unseen Servant, Witch Bolt |
+| II | , Enthrall, Silence | 3 TODO from here
 | III | Conjure Barrage, Hunger of Hadar, Meld into Stone | 3
 | IV | Compulsion, Gravity Sinkhole, Shadow of Moil | 3
 | V | Antilife Shell, Awaken, Destructive Wave | 3
@@ -28,33 +30,35 @@ In addition to the Primal Sphere spell list
 Spells from the Primal Sphere unavailable to you.
 
 | Magnitude | Spells |
-| --- | --- | 
-| Cantrip | Friends |
-| I | Cure Wounds, Protection from Good and Evil | 
-| II | Aid, Lesser Restoration | 
-| III | Catnap, Revivify | 
-| IV | Fabricate, Summon Construct | 
-| V | Dawn, Greater Restoration | 
-| VI | Sunbeam | 
-| VII | Sequester | 
-| VIII | Sunburst | 
-| IX | Wish | 
+| --- | --- |
+| Cantrip | Acid Splash, Mending |
+| I | Hunter's Mark, Protection from Dark Creatures |
+| II | Aid, Lesser Restoration | TODO from here
+| III | Catnap, Revivify |
+| IV | Fabricate, Summon Construct |
+| V | Dawn, Greater Restoration |
+| VI | Sunbeam |
+| VII | Sequester |
+| VIII | Sunburst |
+| IX | Wish |
 
 #### Fiend
 
-**Spellcasting Ability** - Charisma. Additionally, your maximum Charisma is now 6, and your Charisma increases by 1 but your Willpower decreases by 2. (If using Appearance, it further increases by 1.)
+**Fiendish Harvest** - when you reduce a hostile character to 0 Health, you gain Temporary Health equal to your Charisma + your Bonus.
+
+**Spellcasting Ability** - Charisma. Additionally, your maximum Charisma is now 6, and your Charisma increases by 1 but your Willpower decreases by 2.
 
 **Spell List** - Occult Sphere
 
-**Emblematic Spells** TODO
+**Emblematic Spells**
 
 In addition to the Arcane Sphere spell list
 
 | Magnitude | Spells |
 | --- | --- | 
-| Cantrip | Eldritch Blast, Vicious Mockery |
-| I | Arms of Hadar, Dissonant Whispers, Hex | 
-| II | Enthrall, Immovable Object, Silence | 
+| Cantrip | Guidance, Produce Flame, Thaumaturgy |
+| I | Bless, Disguise Self, Bestow Halo (but instead it is a crown of unlight) | 
+| II | Enthrall, Immovable Object, Silence | TODO from here
 | III | Conjure Barrage, Hunger of Hadar, Meld into Stone | 
 | IV | Compulsion, Gravity Sinkhole, Shadow of Moil | 
 | V | Antilife Shell, Awaken, Destructive Wave | 
@@ -63,15 +67,15 @@ In addition to the Arcane Sphere spell list
 | VIII | Dark Star, Reality Break | 
 | IX | Ravenous Void | 
 
-**Anathema** TODO
+**Anathema**
 
 Spells from the Arcane Sphere unavailable to you.
 
 | Magnitude | Spells |
 | --- | --- | 
 | Cantrip | Friends |
-| I | Cure Wounds, Protection from Good and Evil | 
-| II | Aid, Lesser Restoration | 
+| I | Cure Wounds, Protection from Dark Creatures | 
+| II | Aid, Lesser Restoration | TODO form here
 | III | Catnap, Revivify | 
 | IV | Fabricate, Summon Construct | 
 | V | Dawn, Greater Restoration | 

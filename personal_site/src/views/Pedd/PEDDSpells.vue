@@ -26,7 +26,7 @@
             <select class="tag-select" v-model="spellSphere" >
                 <option>Arcane</option>
                 <option>Divine</option>
-                <option>Nature</option>
+                <option>Primal</option>
                 <option>Occult</option>
             </select>
         </div>
@@ -57,7 +57,7 @@
                     <p><strong>{{ spell.casting }} {{ spell.range }} {{ spell.components }} <span>{{ spell.concentration
                         ? "(c)" : "" }}</span></strong></p>
                     <p>Duration: {{ spell.duration }}</p>
-                    <p v-if="spell.hasOwnProperty('materials')">Materials: {{ spell.materials }}</p>
+                    <p v-if="spell.materials != ''">Materials: {{ spell.materials }}</p>
                     <div v-html="marked.parse(spell.description)"></div>
                 </div>
             </CardContainer>

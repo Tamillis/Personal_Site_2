@@ -58,6 +58,7 @@ Prerequisite groupings:
 - "After N Role Powers"
 - {Name} Skill / {Name} Expertise
 - {Name} Cantrip / {Name} Spell
+- {Tag} Tag
 - One of (the above / separated / by / forward-slashes)
 
 ### Simulation

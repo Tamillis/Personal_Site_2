@@ -9,8 +9,34 @@
             "Dexterity +1"
         ],
         "desc": "You can push yourself beyond your normal limits for a moment. After your Action, you can take one additional Action.\n\nOnce you use this Power, you must finish a Short Rest before you can use it again.",
-        "cooldown": {
-            "short-rest": 1
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
         }
     },
     {
@@ -24,7 +50,36 @@
         "preq": [
             "Strength +1"
         ],
-        "desc": "As a Bonus Action, you can move up to your Speed while an enemy can see or hear you. You can use this Power a number of times equal to your Strength, where you must finish a Long Rest before you can use it again. Whenever you use this trait, you gain Temporary Health equal to your Strength."
+        "desc": "As a Bonus Action, you can move up to your Speed while an enemy can see or hear you. You can use this Power a number of times equal to your Strength, where you must finish a Long Rest before you can use it again. Whenever you use this trait, you gain Temporary Health equal to your Strength.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Agile Defence",
@@ -36,7 +91,36 @@
             "Accuracy +1",
             "Dexterity +1"
         ],
-        "desc": "Your ability to precisely and rapidly control the twists and bends your body makes, makes you harder to hit. When not wearing medium or heavy armour or using a shield, your Evasion is replaced by your Agility (Accuracy + Dexterity) when calculating Defence."
+        "desc": "Your ability to precisely and rapidly control the twists and bends your body makes, makes you harder to hit. When not wearing medium or heavy armour or using a shield, your Evasion is replaced by your Agility (Accuracy + Dexterity) when calculating Defence.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Agonizing Blast",
@@ -47,7 +131,36 @@
             "Eldritch Blast cantrip",
             "Pact Magic"
         ],
-        "desc": "When you cast Eldritch Blast, add your Magic Statistic to the damage it deals on a hit."
+        "desc": "When you cast Eldritch Blast, add your Magic Statistic to the damage it deals on a hit.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Akimbo",
@@ -59,7 +172,36 @@
         "preq": [
             "Accuracy +1"
         ],
-        "desc": "When wielding two Light Ranged Weapons and you make an Attack action with one, as a Bonus Action you can make an Attack with the other weapon. You do not add Accuracy to the damage roll of the second attack."
+        "desc": "When wielding two Light Ranged Weapons and you make an Attack action with one, as a Bonus Action you can make an Attack with the other weapon. You do not add Accuracy to the damage roll of the second attack.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Ancestors of Stone",
@@ -71,8 +213,39 @@
             "racial",
             "spell-like"
         ],
-        "preq": [],
-        "desc": "As an Action you make your flesh turn as hard as stone. For 1 minute you Concentrate as if on a spell, and while concentrating you have resistance to non-magical physical damage and a +2 Bonus to Armour."
+        "preq": [
+            ""
+        ],
+        "desc": "As an Action you make your flesh turn as hard as stone. For 1 minute you Concentrate as if on a spell, and while concentrating you have resistance to non-magical physical damage and a +2 Bonus to Armour.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Aptitude",
@@ -85,7 +258,36 @@
             "After 6 Powers",
             "Once every 6th Power"
         ],
-        "desc": "The value of your Bonus is increased to +3. You can take this Power two more times, increasing your Bonus to +4 and then +5."
+        "desc": "The value of your Bonus is increased to +3. You can take this Power two more times, increasing your Bonus to +4 and then +5.",
+        "repeatable": true,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Arcane Aptitude",
@@ -100,8 +302,39 @@
             "racial",
             "universal"
         ],
-        "preq": [],
-        "desc": "You have a natural grasp of arcane magic and with only a little preparation, can have ready a plethora of minor magics.\n\nYou know one cantrip of your choice from the Arcane Sphere spell list which you can switch for a different Arcane Sphere cantrip after a Long Rest. Intelligence is your Magic Statistic for it.\n\nAdditionally, you learn Arcane spells at twice the usual rate."
+        "preq": [
+            ""
+        ],
+        "desc": "You have a natural grasp of arcane magic and with only a little preparation, can have ready a plethora of minor magics.\n\nYou know one cantrip of your choice from the Arcane Sphere spell list which you can switch for a different Arcane Sphere cantrip after a Long Rest. Intelligence is your Magic Statistic for it.\n\nAdditionally, you learn Arcane spells at twice the usual rate.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Arcane Recovery",
@@ -113,7 +346,36 @@
         "preq": [
             "Arcane Spellcasting"
         ],
-        "desc": "You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a Short Rest, you can choose expended Mana Reserve to recover. The Reserve can have a combined value that is equal to your highest available Magnitude, to a maximum of 6.\n\nFor example, if you have Mana III, you can recover up to three points of Reserve, such as three Magnitude I Reserve, or one Magnitude II Reserve and one Magnitude I Reserve, or one Magnitude III Reserve."
+        "desc": "You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a Short Rest, you can choose expended Mana Reserve to recover. The Reserve can have a combined value that is equal to your highest available Magnitude, to a maximum of 6.\n\nFor example, if you have Mana III, you can recover up to three points of Reserve, such as three Magnitude I Reserve, or one Magnitude II Reserve and one Magnitude I Reserve, or one Magnitude III Reserve.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Arcane Spellcasting",
@@ -126,7 +388,36 @@
             "A spellbook",
             "Mana"
         ],
-        "desc": "You are an arcane practitioner, a mage studied enough to manipulate mana into complex spells that allow you to bend reality. You keep a repertoire of spells in a carefully curated Spellbook that you Prepare Spells from each day. Intelligence is your Magic Statistic. You can use an Arcane Focus to cast your spells, and you can cast Ritual spells from your spellbook without preparing them first.\n\n**Spellbook** - You keep your spells in a spellbook, which you can Copy, Transcribe into and Invent spells with. See PEDD Magic for rules on how to use your spellbook.\n\n**Cantrips** - Additionally, you know three cantrips of your choice from the Arcane Sphere.\n\n**Preparing and Casting Spells** - You use your Reserve of Mana to cast spells. You prepare a list of arcane spells that are available for you to cast for the day. To do so, choose a number of spells from your spellbook equal to your Intelligence + your Bonus. The spells must be of a Magnitude that you have the ability to Cast. You can change your list of Prepared Spells when you finish a long rest. Preparing a new list of arcane spells requires time spent studying your spellbook and memorizing the incantations and gestures you must make to cast the spell: at least 1 minute per spell Magnitude for each spell on your list."
+        "desc": "You are an arcane practitioner, a mage studied enough to manipulate mana into complex spells that allow you to bend reality. You keep a repertoire of spells in a carefully curated Spellbook that you Prepare Spells from each day. You can use an Arcane Focus as your Spellcasting Focus.\n\n**Magic Statistic** - your Intelligence + your Bonus\n\n**Spellbook** - You keep your spells in a spellbook, which you can Copy, Transcribe into and Invent spells with. See [PEDD Magic](\/pedd\/magic) for rules on how to use your spellbook.\n\n**Spellbook Rituals** - you can cast Ritual spells from your spellbook without preparing them first.\n\n**Cantrips** - Additionally, you know three cantrips of your choice from the Arcane Sphere.\n\n**Prepared Spells** - You prepare a list of arcane spells that are available for you to cast for the day. To do so, choose a number of spells from your spellbook equal to your Intelligence + your Bonus. The spells must be of a Magnitude of Mana that you have. You can change your list of Prepared Spells when you finish a Long Rest. Preparing a new list of arcane spells requires time spent studying your spellbook and memorizing the incantations and gestures you must make to cast the spell.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Arcane Ward",
@@ -138,7 +429,36 @@
         "preq": [
             "Arcane Spellcasting"
         ],
-        "desc": "You can amply and redirect threads of your defensive magic around yourself for greater protection. Whenever you cast an Abjuration spell of Magnitude I or higher, you can simultaneously create a magical ward on yourself or an ally within 30ft. The ward gives Temporary Health equal to your Bonus + your Intelligence."
+        "desc": "You can amply and redirect threads of your defensive magic around yourself for greater protection. Whenever you cast an Abjuration spell of Magnitude I or higher, you can simultaneously create a magical ward on yourself or an ally within 30ft. The ward gives Temporary Health equal to your Bonus + your Intelligence.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Archery",
@@ -150,7 +470,36 @@
         "preq": [
             "Accuracy +1"
         ],
-        "desc": "You gain a +2 additional Bonus to attack rolls you make with Crossbows, Bows and Slings."
+        "desc": "You gain a +2 additional Bonus to attack rolls you make with Crossbows, Bows and Slings.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Armour Expert",
@@ -373,11 +722,37 @@
             "patron"
         ],
         "preq": [
-            "Otherworldly Patron"
+            ""
         ],
-        "desc": "**Healing Light** - you gain the ability to channel celestial energy to heal wounds. You have a pool of d6s equal to your Bonus + your Faith that you regain after a Long Rest. As a Bonus Action, you can spend these d6s to heal one character you can see within 60ft of you with a word of healing power whispered into your ear by your Patron. The maximum number of dice you can spend at once equals your Faith (minimum of one die). Roll the dice you spend, add them together, and restore an amount of Health equal to the total.\n\n**Magic Statistic** - Faith. Faith for you is the following the orders, precepts and desires of your Patron. In addition, your maximum Faith is now 6, but your Faith can fall as low as -5 and is prone to fluctuating more rapidly than Divine Spellcasting spell casters (consult with your GM, but as a guide affect change at the end of each session).\n\n**Spell List** - Divine Sphere\n\n**Emblematic Spells** - In addition to the Divine Sphere spell list, you can choose from the following list.\n\n| Magnitude | Spells |\n| --- | --- |\n| Cantrip | Eldritch Blast (but radiant damage), Blade Ward |\n| I | Burning Hands, Faerie Fire (but white light), Sleep |\n| II | Flame Blade, Fortune's Favour, See Invisibility |\n| III | Call Lightning, Fear, Fly |\n| IV | Charm Monster, Compulsion, Sickening Radiance (but harsh white light) |\n| V | Contact Other Plane, Hold Monster, Wall of Light |\n| VI | Globe of Invulnerability, Mass Suggestion, Tasha's Otherwordly Guise (Upper Planes only) |\n| VII | Force Cage, Sequester |\n| VIII | Antipathy\/Sympathy, Power Word Stun |\n| IX | Wish |\n\n**Anathema** - Due to the limited nature of the Divine Sphere, the Celestial Patron finds none of its spells Anathema.",
-        "stat-max": {
-            "faith": 6
+        "desc": "**Healing Light** - you gain the ability to channel celestial energy to heal wounds. You have a pool of d6s equal to your Bonus + your Faith that you regain after a Long Rest. As a Bonus Action, you can spend these d6s to heal one character you can see within 60ft of you with a word of healing power whispered into your ear by your Patron. The maximum number of dice you can spend at once equals your Faith (minimum of one die). Roll the dice you spend, add them together, and restore an amount of Health equal to the total.\n\n**Magic Statistic** - If you take Pact Magic, your Magic Statistic is your Faith + your Bonus. Faith for you is the following the orders, precepts and desires of your Patron. In addition, your maximum Faith is now 6, but your Faith can fall as low as -5 and is prone to fluctuating more rapidly than Divine Spellcasting spell casters (consult with your GM, but as a guide affect change at the end of each session).\n\n**Spell List** - If you take Pact Magic, you use the Divine Sphere spell list in addition to your Emblematic Spells.\n\n**Emblematic Spells** - In addition to the Divine Sphere spell list, you can choose from the following list.\n\n| Magnitude | Spells |\n| --- | --- |\n| Cantrip | Eldritch Blast (but radiant damage), Blade Ward |\n| I | Burning Hands, Faerie Fire (but white light), Sleep |\n| II | Flame Blade, Fortune's Favour, See Invisibility |\n| III | Call Lightning, Fear, Fly |\n| IV | Charm Monster, Compulsion, Sickening Radiance (but harsh white light) |\n| V | Contact Other Plane, Hold Monster, Wall of Light |\n| VI | Globe of Invulnerability, Mass Suggestion, Tasha's Otherwordly Guise (Upper Planes only) |\n| VII | Force Cage, Sequester |\n| VIII | Antipathy\/Sympathy, Power Word Stun |\n| IX | Wish |\n\n**Anathema** - Due to the limited nature of the Divine Sphere, the Celestial Patron finds none of its spells Anathema.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
         }
     },
     {
@@ -607,7 +982,36 @@
             "Faith +0",
             "Mana"
         ],
-        "desc": "As a conduit for divine power, you can cast divine spells. You must have at least 0 Faith to learn and use this Power. If your Faith dips below 0, you no longer benefit from this Power or any that requires it until your Faith is restored. Faith is your Magic Statistic for your spells. You can brandish a holy symbol in lieu of material components that don't have a gold cost for your Divine spells.\n\n**Cantrips** - You know three cantrips of your choice from the Divine Sphere spell list.\n\n**Prepared Spells** - You prepare the list of Divine Sphere spells that are available for you to cast that day, choosing freely from the Divine Sphere spell list. When you do so, choose a number of spells equal to your Bonus + your Faith. The spells must be of a Magnitude for which you have Mana Reserve. You can change your list of prepared spells when you finish a Long Rest. Preparing a new list of Divine Sphere spells requires time spent in prayer and meditation: at least 1 minute per Magnitude for each spell on your list."
+        "desc": "As a conduit for divine power, you can cast divine spells. You must have at least 0 Faith to learn and use this Power. If your Faith dips below 0, you no longer benefit from this Power or any that requires it until your Faith is restored. You can brandish a holy symbol in lieu of material components that don't have a gold cost for your Divine spells.\n\n**Magic Statistic** - your Faith + your Bonus\n\n**Cantrips** - You know three cantrips of your choice from the Divine Sphere spell list.\n\n**Prepared Spells** - You prepare the list of Divine Sphere spells that are available for you to cast that day, choosing freely from a spell list selected from the Divine Sphere by your diety. When you do so, choose a number of spells equal to your Bonus + your Faith. The spells must be of a Magnitude for which you have Mana Reserve. You can change your list of prepared spells when you finish a Long Rest. Preparing a new list of Divine Sphere spells requires time spent in prayer and meditation: at least 1 minute per Magnitude for each spell on your list.",
+        "repeatable": true,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Draconic Affinity",
@@ -1168,16 +1572,38 @@
             "patron"
         ],
         "preq": [
-            "Otherworldly Patron"
+            ""
         ],
-        "stat-change": {
-            "intelligence": 1,
-            "charisma": -1
+        "desc": "**Awakened Mind** - Your alien knowledge gives you the ability to touch the minds of other characters. You can telepathically speak to any character you can see within 30ft of you. You need to share a language with the character for it to understand your telepathic utterances, but you don't need to share a language to share emotions, images and impressions. Additionally, your maximum Intelligence is now 6, and your Intelligence increases by 1 but your Charisma decreases by 1 (to a minimum of -3).\n\n**Magic Statistic** - If you take Pact Magic, your Magic Statistic is your Intelligence + your Bonus.\n\n**Spell List** - If you take Pact Magic, you use the Arcane Sphere spell list in addition to your Emblematic Spells. You remove your Anathema Spells from the Arcane List.\n\n**Emblematic Spells** - In addition to the Arcane Sphere spell list, you can choose from the following list.\n\n| Magnitude | Spells                                       |\n| --------- | -------------------------------------------- |\n| Cantrip   | Eldritch Blast, Vicious Mockery              |\n| I         | Arms of Hadar, Dissonant Whispers            |\n| II        | Enthrall, Immovable Object                   |\n| III       | Conjure Barrage, Hunger of Hadar             |\n| IV        | Compulsion, Gravity Sinkhole, Shadow of Moil |\n| V         | Awaken, Destructive Wave                     |\n| VI        | Gravity Fissure, Primordial Ward             |\n| VII       | Tether Essence                               |\n| VIII      | Dark Star, Reality Break                     |\n| IX        | Ravenous Void                                |\n\n**Anathema** - Spells from the Arcane Sphere unavailable to you.\n\n| Magnitude | Spells                                     |\n| --------- | ------------------------------------------ |\n| Cantrip   |Friends                                    |\n| I         | Cure Wounds, Protection from Good and Evil |\n| II        | Aid, Lesser Restoration                    |\n| III       | Catnap, Revivify                           |\n| IV        | Fabricate, Summon Construct                |\n| V         | Dawn, Greater Restoration                  |\n| VI        | Sunbeam                                    |\n| VII       | Sequester                                  |\n| VIII      | Sunburst                                   |\n| IX        | Wish                                       |",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": -1,
+            "int": 1
         },
-        "stat-max": {
-            "intelligence": 6
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
         },
-        "desc": "**Awakened Mind** - Your alien knowledge gives you the ability to touch the minds of other characters. You can telepathically speak to any character you can see within 30ft of you. You need to share a language with the character for it to understand your telepathic utterances, but you don't need to share a language to share emotions, images and impressions. Additionally, your maximum Intelligence is now 6, and your Intelligence increases by 1 but your Charisma decreases by 1 (to a minimum of -3).\n\n**Spell Affinity** - If you take the Pact Magic Power, Intelligence is your Magic Statistic for your spells and you use the Arcane Sphere spell list.\n\n**Emblematic Spells** - In addition to the Arcane Sphere spell list, you can choose from the following list.\n\n| Magnitude | Spells                                       |\n| --------- | -------------------------------------------- |\n| Cantrip   | Eldritch Blast, Vicious Mockery              |\n| I         | Arms of Hadar, Dissonant Whispers            |\n| II        | Enthrall, Immovable Object                   |\n| III       | Conjure Barrage, Hunger of Hadar             |\n| IV        | Compulsion, Gravity Sinkhole, Shadow of Moil |\n| V         | Awaken, Destructive Wave                     |\n| VI        | Gravity Fissure, Primordial Ward             |\n| VII       | Tether Essence                               |\n| VIII      | Dark Star, Reality Break                     |\n| IX        | Ravenous Void                                |\n\n**Anathema** - Spells from the Arcane Sphere unavailable to you.\n\n| Magnitude | Spells                                     |\n| --------- | ------------------------------------------ |\n| Cantrip   |Friends                                    |\n| I         | Cure Wounds, Protection from Good and Evil |\n| II        | Aid, Lesser Restoration                    |\n| III       | Catnap, Revivify                           |\n| IV        | Fabricate, Summon Construct                |\n| V         | Dawn, Greater Restoration                  |\n| VI        | Sunbeam                                    |\n| VII       | Sequester                                  |\n| VIII      | Sunburst                                   |\n| IX        | Wish                                       |"
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 6
+        }
     },
     {
         "name": "Great Weapon Fighting",
@@ -1397,7 +1823,36 @@
             "Action Surge",
             "After 6 Powers"
         ],
-        "desc": "You can push yourself beyond your normal limits repeatedly. After your Action, you can take one additional Action.\n\nOnce you use this Power a number of times equal to your Dexterity, you must finish a Short Rest before you can use it again."
+        "desc": "You can push yourself beyond your normal limits repeatedly. After your Action, you can take one additional Action.\n\nOnce you use this Power a number of times equal to your Dexterity, you must finish a Short Rest before you can use it again.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Improved Bardic Inspiration",
@@ -1958,7 +2413,36 @@
         "preq": [
             "Mana"
         ],
-        "desc": "An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with occultish magic. This font of magic, whatever its origin, fuels your spells. Your Magic Statistic for Occult Spellcasting depends on the school of the spell that you cast, since the power of your magic relies on your body's ability to conjure, fuel and guide the magic, rather than any specific learning.\n\n- For Abjuration, Conjuration and Divination spells you use your Fortitude (halved, rounded up).\n- For Illusion and Transmutation spells you use your Reflexes (halved, rounded up).\n- For Enchantment, Evocation and Necromancy spells you use your Willpower (halved, rounded up).\n\nYou can use an arcane focus as a spellcasting focus for your sorcerer spells.\n\n**Cantrips** - You know four cantrips of your choice from the Occult Sphere spell list.\n\n**Spells Known** - You know two Magnitude I spells of your choice from the Occult Sphere spell list as Innate Spells. When you gain a rank in the Mana Power, you learn one more Occult Sphere spell of a Magnitude which you have Reserve for, also as an Innate Spell.\n\nAdditionally, when you gain a rank in Mana, you can choose one of the Innate Occult Sphere Spells you know and replace it with another from the Occult Sphere spell list, which also must be of a Magnitude for which you have Reserve."
+        "desc": "An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with occultish magic. This font of magic, whatever its origin, fuels your spells. The power of your magic relies on your body's ability to conjure, fuel and guide this magic, rather than any specific learning. You can use an arcane focus as a spellcasting focus for your sorcerer spells.\n\n**Magic Statistic**. You use a different Stat depending on the school of the spell that you cast.\n\n- For Abjuration, Conjuration and Divination spells, your Magic Statistic is your Fortitude (halved, rounded up) + your Bonus.\n- For Illusion and Transmutation spells, your Magic Statistic is your Reflexes (halved, rounded up) + your Bonus.\n- For Enchantment, Evocation and Necromancy spells, your Magic Statistic is your Willpower (halved, rounded up) + your Bonus.\n\n**Cantrips** - You know four cantrips of your choice from the Occult Sphere spell list.\n\n**Innate Spells** - You know two Magnitude I spells of your choice from the Occult Sphere spell list as Innate Spells. When you gain a rank in the Mana Power, you learn one more Occult Sphere spell of a Magnitude which you have Reserve for, also as an Innate Spell.\n\nAdditionally, when you gain a rank in Mana, you can choose one of the Innate Occult Sphere Spells you know and replace it with another from the Occult Sphere spell list, which also must be of a Magnitude for which you have Reserve.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Open Hand Technique",
@@ -1970,15 +2454,6 @@
             "Ki"
         ],
         "desc": "You can manipulate your enemy\u2019s ki when you harness your own. Whenever you hit a Character with one of the attacks granted by your Flurry of Blows, they must make a Fortitude saving throw. If they fail, you can:\n\n- Make a free Shove action on them.\n- Stun the target for this Round."
-    },
-    {
-        "name": "Otherworldly Patron",
-        "tag": [
-            "patron",
-            "resource"
-        ],
-        "preq": [],
-        "desc": "You have struck a bargain with an otherworldly being of your choice. When you take this Power, choose one Patron Power, your Patron. You may not strike more than one bargain."
     },
     {
         "name": "Overcharge",
@@ -1998,9 +2473,38 @@
             "spellcasting"
         ],
         "preq": [
-            "Otherworldly Patron"
+            "Patron Tag"
         ],
-        "desc": "Your arcane research and the magic bestowed on you by your patron have given you facility with spells.\n\n**Cantrips** - You know two cantrips of your choice from the Spell List of your Patron. Through the Cantrip Cornucopia Invocation, you can gain more cantrips.\n\n**Stipend** - Your Patron bestows upon you a stipend of magical power, that you must expend as Mana Reserve at Magnitude I. You regain all your Stipend when you finish a Short Rest. You have 2 Charges of your Stipend, and can increase the number of Charges of it through the Overcharge Invocation, and the Magnitude through the Force of Will Invocation. All Pact Magic spells are cast at the maximum Magnitude available to you. Stipend is not Mana, and cannot be used in Mana-requiring Powers. However you may cast spells from your Patronage with your own Mana Reserve, if you have any. You can use an arcane focus as a spellcasting focus for your Occult Sphere spells.\n\n**Patronage** - Choose a number of spells from the Spell List of your Patron equal to your Bonus + your Patron's Magic Statistic (to a minimum of 1). These are Innate Spells for you. If these Stats increase, you may choose more spells. During Downtime, you can commune with your Patron and they may choose to allow you to change one, some or all of your Innate Spells up to the Magnitude you have the Stipend to cast."
+        "desc": "Your arcane research and the magic bestowed on you by your patron have given you facility with spells. You can use an arcane focus as a spellcasting focus for your Occult Sphere spells.\n\n**Magic Statistic** - your Otherworldy Patron determines this\n\n**Cantrips** - You know two cantrips of your choice from the Spell List of your Patron. Through the Cantrip Cornucopia Invocation, you can gain more cantrips.\n\n**Stipend** - Your Patron bestows upon you a stipend of magical power, that you must expend as Mana Reserve at Magnitude I. You regain all your Stipend when you finish a Short Rest. You have 2 Charges of your Stipend, and can increase the number of Charges of it through the Overcharge Invocation, and the Magnitude through the Force of Will Invocation. All Pact Magic spells are cast at the maximum Magnitude available to you. Stipend is not Mana, and cannot be used in Mana-requiring Powers. However, you may cast spells from your Patronage with your own Mana Reserve, if you have any.\n\n**Patronage** - Choose a number of spells from the Spell List of your Patron equal to your Bonus + your Magic Statistic (to a minimum of 1). These are Innate Spells for you. If these Stats increase, you may choose more spells. During Downtime, you can commune with your Patron and they may choose to allow you to change one, some or all of your Innate Spells up to the Magnitude you have the Stipend to cast.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Polyglot",
@@ -2070,7 +2574,36 @@
             "Mana",
             "Perception +1"
         ],
-        "desc": "Your connection to nature allows you to weave the power of the local environment into primal magic. You can use a druidic focus as a spellcasting focus for your Primal spells. Your Magic Statistic for your Primal Sphere spells is determined by the current Verdance of nature where you are, as detailed in the Verdance table below.\n\n**Cantrips** - You know two cantrips of your choice from the Primal Sphere.\n\n**Preparing and Casting Spells** - You use your Reserve of Mana to cast spells. In addition to any Innate spells you know, you prepare a list of primal spells that are available for you to cast each day. To do so, choose a number of spells from the Primal Sphere spell list. The spells must be of a Magnitude that you have the Reserve for. You can change your list of prepared spells when you finish a Long Rest. Preparing a new list of primal spells requires time spent communing with nature and absorbing the instincts and hidden wisdom needed to cast the spells: at least 1 minute per spell Magnitude for each spell.\n\n| Verdance | Barren | Poor | Middling | Rich | Abundant|\n|---|---|---|---|---|---|\n|Boreal|-1|0|1|2|4|\n|Deeps|-1|0|1|2|4|\n|Deserts|-1|0|1|2|4|\n|Jungles|1|2|3|4|5|\n|Plains|0|1|2|3|4|\n|Mountains|-1|0|1|2|4|\n|Shallows|1|2|3|4|5|\n|Swamps|0|1|2|3|4|\n|Underground|-1|0|1|2|4|\n|Woods|0|1|2|3|4|"
+        "desc": "Your connection to nature allows you to weave the power of the local environment into primal magic. You can use a druidic focus as a spellcasting focus for your Primal spells.\n\n**Magic Statistic** - the current Verdance of where you are + your Bonus.\n\n| Verdance | Barren | Poor | Middling | Rich | Abundant|\n|---|---|---|---|---|---|\n|Boreal|-1|0|1|2|4|\n|Deeps|-1|0|1|2|4|\n|Deserts|-1|0|1|2|4|\n|Jungles|1|2|3|4|5|\n|Plains|0|1|2|3|4|\n|Mountains|-1|0|1|2|4|\n|Shallows|1|2|3|4|5|\n|Swamps|0|1|2|3|4|\n|Underground|-1|0|1|2|4|\n|Woods|0|1|2|3|4|\n\n**Cantrips** - You know two cantrips of your choice from the Primal Sphere.\n\n**Prepared Spells** - You prepare a list of primal spells that are available for you to cast each day. To do so, choose a number of spells equal to your Expertise from the Primal Sphere spell list. The spells must be of a Magnitude that you have the Reserve for. You can change your list of prepared spells when you finish a Long Rest. Preparing a new list of primal spells requires time spent communing with nature and absorbing the instincts and hidden wisdom needed to cast the spells.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Prodigy",

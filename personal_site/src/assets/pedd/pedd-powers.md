@@ -34,6 +34,7 @@ Prerequisites are <a id="toggle-preqs">(Click here to show)</a>:
 - Once every N<sup>th</sup> Power - which means the Power can be taken multiple times, but only after N other Powers have been taken. This has nothing to do with other Powers that also have this prerequisite, so they may be "interleaved".
 - a Skill or Expertise in a Skill
 - a Cantrip or Spell known
+- another Power with a tag
 - One of A OR B - any of the above prerequisites, only obviously one or the other (or however many in the chain) are needed.
 
 </section>

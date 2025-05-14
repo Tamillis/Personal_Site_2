@@ -246,7 +246,7 @@ Note that the severity of some conditions follow levels of intensity, making it 
 > 
 > Immobilised -> Restrained
 
-- **Blinded / Deafened** - A blinded / deafened character can’t see / hear and automatically fails any ability check that requires sight / hearing.
+- **Blinded / Deafened** - A blinded / deafened character can’t see / hear and automatically fails any ability check that requires sight / hearing. If your Attacks rely on this sense, they are made at Disadvantage.
 - **Bloodied** - A fan favourite, when enemy characters fall below half health, they enter the "Bloodied" condition. This is purely an descriptive marker though this also often means their behaviour, tactics and even powers may change, becoming more aggressive and desparate. The Bloodied Condition also lets Players know that the target is below half Health. Alternatively, on monsters that have 2 to 3 Wounds, its the condition after 1 Wound.
 - **Charmed** - unless otherwise stated, a charmed character considers you an ally and will heed your commands, which you can give freely, to the best of its ability. However it will not obey commands that are against its interests. If it is an intelligent character, you can attempt to persuade or otherwise convince them to obey, or that their interests lie elsewhere. For example, a charmed character will not attack another they consider an Ally, but depending on the situation, they may be persuaded to no longer consider the other character an ally.
 - **Concentrating** - when you are using your Concentration on a Spell to maintain its effect. If you take damage, you must make a Willpower save vs the damage (to a minimum of 10) to maintain concentration, otherwise the Spell ends. If you are Concentrating, you cannot use Focus.
@@ -263,7 +263,7 @@ Note that the severity of some conditions follow levels of intensity, making it 
   - The target character has Disadvantage on Reflex saves.
   - Attack rolls against the target character have Advantage.
 - **Pained** - the target character must succeed on a Concentration check to do any Action.
-- **Paralyzed** - the target character is Incapacitated
+- **~~Paralyzed~~** - unified with Incapacitated
 - **Prone**
   - A prone character's Speed is at 1/4
   - A prone character can stand up as an Action and end the condition.

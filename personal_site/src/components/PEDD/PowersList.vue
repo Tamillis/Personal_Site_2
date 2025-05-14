@@ -57,6 +57,7 @@
                 <p>- by cantrip or spell - yet to do any progress on powers containing their spells or character
                     sheets containing their spells. I do have that excel file tho...</p>
                 <p>A OR B, I just need to do it</p>
+                <p>Power Tag (currently only "Patron Tag" since there are multiple patrons and I want to axe the "Otherworldly Patron" Power)</p>
             </div>
         </div>
     </div>

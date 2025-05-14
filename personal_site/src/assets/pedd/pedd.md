@@ -31,15 +31,47 @@ Note that all in-game terms as defined in PEDD are capitalised, like 'Action', a
 A large part of the rewrite focuses on getting the maths right for the sweeping changes being made. It does this by making the maths "flat". This makes it easier to predict and interpret, and aids with the level-less design. It also has the added benefit of making something that was dangerous, always dangerous. Flat Maths means nothing "falls off".
 
 To aid in the calculation of the maths, the following assumptions are kept to:
-- "*peasants*" face an average DC of 10, act at +0/+3 (unskilled/skilled, unskilled being the norm), have 8 Defence (unarmoured and no bonuses) and have 6 Health. 
-- "*adventurers*" face an average DC of 15, act at +2/+5 (unskilled/skilled, skilled being the norm), have 15 Defence (armoured and/or with decent reflexes), and have 14 Health (having Hardy I).*
-- "*heroes*" face an average DC of 18, act at +4/+8 (unskilled/skilled, nearly always skilled), with +12 in their focus due to Expertise, have 18 Defence (high armour and/or reflexes), and have 30 Health (having Hardy II+).*
+- "*Peasants*" face an average DC of 10, act at +0/+3 (unskilled/skilled, unskilled being the norm), have 8 Defence (unarmoured and no bonuses) and have 6 Health.
+- "*Adventurers*" face an average DC of 15, act at +2/+5 (unskilled/skilled, skilled being the norm), have 15 Defence (armoured and/or with decent reflexes), and have 14 Health (having Hardy I).*
+- "*Heroes*" face an average DC of 18, act at +4/+8 (unskilled/skilled, nearly always skilled), with +12 in their focus due to Expertise, have 18 Defence (high armour and/or reflexes), and have 30 Health (having Hardy II+).*
 
 *Note that the numbers here are slightly skewed high, as I'm assuming that characters will naturally specialise and specialists will nearly-always be the one to attempt their field. For example, the health and defence numbers are what I expect for front-line characters that are supposed to take hits.
 
-As such, all damage sources are [TODO: need to be] re-calibrated; various high-level spells and large monsters are brought down. Typically by simply reducing the dice size based on the scale of lethality (d4 for not-immediately-lethal, d6 for lethal to peasants, d12 for lethal to adventurers, d20 for lethal to heroes), and like 5e scaling number of dice with scale of monster, but also scale of damage (1 dice for medium, 2 for large, 3 for huge etc.). The idea here is that of Flat-Maths, thereby ,aking the face-value and value-spread of such abilities easier for newer players to read. Two sword strikes, a fireball, or a headshot (e.g. a critical) will drop most to 0 Health.
+#### Damage Scales
+As such, all damage sources will be re-calibrated; various high-level spells and large monsters are brought down. Typically by simply reducing the dice size based on the scale of lethality.
 
-DC's are relatively unchanged, but again become more consistant and easier to read. In [Skills](./pedd/skills) it is stated that "the maximum possible increase to a dice roll is +15". Since the probability curve for throwing one dice, the d20, is flat, this allows me to calculate the following DC's for a 50-50 chance to succeed at a given check, to which I have given rank-style descriptors to help envision who ought to be at that ability:
+Two scales are used to determine damage: the size and the damage.
+
+Size | ft (approx.) | dice
+--- | --- | ---
+Small | < 5ft | d3* / d4
+Medium | 5ft | d5* / d6
+Large | 10ft | d10 / d12
+Huge <sup>5e</sup> | 15ft | d15 (rolling a d20 and rerolling anything above 15) or d16 (i.e. 1d8 + 8 if a second dice is even)**
+Gargantuan / Huge<sup>PEDD</sup> | 20ft | d20
+
+*These dice can be just half the value of the common d6 and d10, but that'd be annoying to do all the time so I'll just upgrade them to d4 and d6 respectively.
+
+**Obviously this is kind of ridiculous to actually play with but to be honest I leave it here mostly as a demonstrator. The keen eyed will note that the scales double as you go up, and the dice remain relatively clean with the platonic solids, if you skip 5e Huge. So I will. This indeed is the basis for me ignoring the old Huge size category (and also because it better fits with my sense of fantasy Huge for Huge to actually be 5e gargantuan, and PEDD's Gargantuan to just be off the scale, literally).
+
+Damage | No. of dice
+--- | ---
+Low / Peasant | 1
+Normal / Adventurous | 2
+High / Heroic | 3
+Lethal | 4
+Destructive | 5+
+
+The idea here is that of Flat-Maths, thereby, taking the face-value and value-spread of such abilities easier for newer players to read. Two sword strikes, a fireball, or a headshot (e.g. a critical) will drop most to 0 Health.
+
+A knife attack then, is 1d4 damage (plus Stat), a small scale low damage attack according to the above scale.
+
+A fireball (8d6, which averages to about 5d10), is a destructive large scale attack, which also works out. It does concentrate the damage more in that centre, but that's OK. It's a spell, let it be special.
+
+These scales also give me a guideline with which to collapse spells. I've been uhming and ahing about collapsing the magnitudes of the spell system from I to IX to I to VI, with I to V following the above scales and VI being for wacky overpowered spells.
+
+#### DC's
+DC's are relatively unchanged, but again become more consistant and easier to read. In [Skills](./pedd/skills) it is stated that "the maximum possible increase to a dice roll is +15" (thoughthere are in fact a couple of caveats to this). Since the probability curve for throwing one dice, the d20, is flat, this allows me to calculate the following DC's for a 50-50 chance to succeed at a given check, to which I have given rank-style descriptors to help envision who ought to be at that ability:
 
 | Difficulty Class (DC) | 50-50 Chance for the |
 | --- | --- |
@@ -61,12 +93,12 @@ The first thing in Character Creation you will notice are the changed Stats. The
 PEDD's stats are (and their Raison D'Etre):
 - **Accuracy** : the ranged weapon attack stat as well as a 'move with precision' stat. Core stats should reflect core interactions, and ranged attacks (especially in my fire-arms based settings) are one of those. It is also a way to break up Dexterity, which has long been known to be over-tuned.
 - **Perception** : as the most used skill and a core interaction, and something that ought to represent a facet of a character, it ought to be a stat too. It replaces the "sensing" aspect of Wisdom as well.
-- **Strength** : unchanged, but includes most situations Constitution would be used actively (such as with endurance)
-- **Dexterity** : re-focused as the stat used in feats of adroitness and skill.
-- **Charisma** : unchanged but includes Wisdom's old domain of empathy and human-relations
-- **Intelligence** : unchanged
+- **Strength** : unchanged, but includes most situations Constitution would be used actively (such as with endurance. <small>Yes I know explosive strength and endurance strength are physically very different things but the system doesn't need such a distinction</small>)
+- **Dexterity** : re-focused as the stat used in feats of adroitness and physical skill. In game terms it becomes the "skill stat" as its primary area of concern.
+- **Charisma** : unchanged but includes Wisdom's old domain of empathy and human-relations.
+- **Intelligence** : unchanged, but also determines number of skills.
 
-These 6 stats are combined to make the 3 Resistances:
+These 6 stats are combined to make the 3 Resistances, since saves are still a thing and a line is drawn between reactive (saves) and active (stats):
 - **Reflexes** (Accuracy + Perception) : one's ability to avoid danger with accurate movements and seeing attacks coming. This also means Dexterity is not used in Defence calculations (by default).
 - **Fortitude** (Strength + Dexterity) : one's ability to power through bodily harms from the combination of the power and capability of their body. Replaces Constitution.
 - **Willpower** (Charisma + Intelligence) : one's ability to overcome mental hardship, through both aspects of their mentality.
