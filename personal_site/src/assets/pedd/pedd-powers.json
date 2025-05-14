@@ -3364,5 +3364,18 @@
         ],
         "preq": [],
         "desc": "You learn the magic of the primeval woods, which are revered and protected by your people. You learn one Primal Sphere cantrip of your choice. You also learn the Longstrider and Pass Without Trace spells, each of which you can cast once without expending Mana. You regain the ability to cast these two spells in this way when you finish a Long Rest. The Verdance of your locale is your spellcasting ability for these spells. See the [Verdance Table](\/pedd\/magic#verdance-table)."
+    },
+    {
+        "name": "Mountain Born",
+        "tag": [
+            "background",
+            "defensive",
+            "goliath",
+            "exploration",
+            "racial",
+            "combat"
+        ],
+        "preq": [],
+        "desc": "You have Resistance to Cold damage. You also naturally acclimate to high altitudes, even if you’ve never been to one. This includes elevations above 20,000 feet."
     }
 ]

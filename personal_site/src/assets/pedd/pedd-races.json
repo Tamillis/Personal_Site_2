@@ -107,8 +107,12 @@
         "desc": "Also known as the Fae-touched, Elves are a magical people of otherworldly bearing. The Fey drifted to one of two fates; living in places of ethereal natural beauty and terrible primalcy, in the midst of ancient forests of darks roots, in oases of deep deserts, in the watery depths of vibrant coral reefs; or to the courts and intrigues of mortal cities, crafting in silvery spires glittering with magic, where soft music drifts through the air and gentle fragrances waft on the breeze to counter city stench rising from the dirt streets below. Coming to be called Wild Elves and Grey Elves respectively, all Elves love life, as even now they're a reflection of the pre-world that made them.",
         "stats": [
             {
-                "desc": "Dexterity / Charisma / Perception",
-                "val": 2
+                "desc": "Perception",
+                "val": 1
+            },
+            {
+                "desc": "Any",
+                "val": 1
             },
             {
                 "desc": "Any",
@@ -505,13 +509,16 @@
         ],
         "baseHealth": 6,
         "age": "A typical Djinn has a life span of 120 years",
-        "size": [{
-            "desc": "Human origin Djinn, like Humans, vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.",
-            "val": "medium"
-        },{
-            "desc": "Halflings who contain the touch of the elements also average about 3 feet tall and weigh about 40 pounds. Your size is Small.",
-            "val": "small"
-        }],
+        "size": [
+            {
+                "desc": "Human origin Djinn, like Humans, vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.",
+                "val": "medium"
+            },
+            {
+                "desc": "Halflings who contain the touch of the elements also average about 3 feet tall and weigh about 40 pounds. Your size is Small.",
+                "val": "small"
+            }
+        ],
         "speed": {
             "desc": "Your base walking speed is 30ft",
             "val": 30
@@ -535,7 +542,6 @@
             "Mana",
             "Natural Illusionist",
             "Powerful Build",
-            "Resilient",
             "Darkvision",
             "Fleet of Foot",
             "Nimble",
@@ -543,6 +549,52 @@
             "Air Magic",
             "Fire Magic",
             "Water Magic"
+        ]
+    },
+    {
+        "name": "Goliath",
+        "desc": "Goliaths seem to be related to the giants, and they will tell you in repitition as much, though the Giants themselves remain mute, if even a little disdainful, of the issue. Much of the origins of Goliaths are as equally shrouded in ancient pre-history as that of the Giants they claim heritage of. Scholars would argue that such a relation is impossible, as impossible as the union of a man and halfling. Yet as a race they exist, taller than humans at 8ft to 9ft, and honouring of the Ordnung in their clans. Though many will note that they're still not within a hairs breadth of the size of even smaller giants, and they don't seem to be bound to the elements in any way like the giants, just an attunement for mountains and rock.",
+        "stats": [
+            {
+                "desc": "Any",
+                "val": 2
+            },
+            {
+                "desc": "Strength",
+                "val": 1
+            }
+        ],
+        "baseHealth": 6,
+        "age": "Goliaths have lifespans comparable to humans. They enter adulthood in their late teens and usually live 80 years",
+        "size": {
+            "desc": "Goliaths are between 7 and 9 feet tall and weigh between 280 and 380 pounds. Your size is Large.",
+            "val": "large"
+        },
+        "speed": {
+            "desc": "Your base walking speed is 30ft",
+            "val": 30
+        },
+        "senses": {
+            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.",
+            "val": [
+                "touch",
+                "taste",
+                "sight",
+                "sound",
+                "smell"
+            ]
+        },
+        "raceOfAthletes": "Competitions of strength, daring and skill are core to your people. You have proficiency in Athletics.",
+        "stonesEndurance": "You can supernaturally draw on unyielding stone to shrug off harm. When you take damage, you can use your Action to roll a d12. Add your Fortitude to the number rolled and reduce the damage by that total.\n\nYou can use this racial trait a number of times equal to your Bonus, and you regain all expended uses when you finish a Long Rest.",
+        "powers": [
+            "Mountain Born",
+            "Determination",
+            "Keen Senses",
+            "Long-Limbed",
+            "Menacing",
+            "Natural Earth Magic",
+            "Relentless Endurance",
+            "Stonecunning"
         ]
     }
 ]
