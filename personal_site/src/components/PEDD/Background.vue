@@ -1,8 +1,8 @@
 <template>
-    <h2>Background:</h2>
+    <h2>Background: {{ background ? background : "" }}</h2>
     <div id="backgrounds-container">
-        <CardContainer v-for="(bg, i) in backgrounds" :name="bg.name" :expanded="props.background == bg.name"
-            :class="{ hidden: props.background != '' && props.background != bg.name }"
+        <CardContainer v-for="(bg, i) in backgrounds" :name="bg.name" :chosen="props.background == bg.name"
+            :class="{ highlight: props.background == bg.name }"
             @chosen="chooseBackground(bg.name)" >
             <BackgroundContent :bg="bg" />
         </CardContainer>

@@ -1,66 +1,14 @@
 <template>
     <h2>Powers List</h2>
-    <div class="flex gap align-center filter-borders">
-        <h3>Filter:</h3>
-        <div class="flex align-center">
-            <label>By Tag</label>
-            <input type="checkbox" class="q checkBoxQ" v-model="filter.useTags">
-        </div>
-
-        <div class="flex align-center">
-            <label>By Prerequisite</label>
-            <input type="checkbox" class="q checkBoxQ" v-model="filter.usePreqs">
-        </div>
-
-        <div class="flex align-center">
-            <label>By Term</label>
-            <input type="checkbox" class="q checkBoxQ" v-model="filter.useTerms">
-        </div>
-    </div>
-
-    <div class="flex gap" v-if="filter.useTags">
-        <label>Tags: </label>
-        <select class="tag-select" v-model="roleTag">
-            <option v-for="tag in tags">{{ tag }}</option>
-        </select>
-    </div>
-
-    <div class="flex gap" v-if="filter.useTerms">
-        <label>Terms: </label>
-        <input v-model="powerSearch" class="q" />
-    </div>
-
-    <div>
-        <div v-if="filter.usePreqs">
-            <p>I have: </p>
-            <div class="flex gap">
-                <label v-for="stat in Object.keys(preqStats)" class="flex stat-inputs">
-                    <span>{{ stat.toUpperCase() }}</span>
-                    <input type="number" v-model="preqStats[stat]" class="q q-number stat-input">
-                </label>
-            </div>
-            <div class="flex gap">
-                <label v-for="stat in Object.keys(preqResistances)" class="flex stat-inputs">
-                    <span>{{ stat.toUpperCase() }}</span>
-                    <input type="number" v-model="preqResistances[stat]" class="q q-number stat-input">
-                </label>
-            </div>
-            <p v-show="openedPowers.length > 0">Chosen powers ({{ openedPowers.length }}): {{ openedPowers.join(", ") }}
-            </p>
-            <div style="color:yellowgreen">
-                <p>TODO:</p>
-                <p>- The ability to take Powers by rank (need to first go over every power and check for
-                    repeatability)</p>
-                <p>- therefore "Every X Powers" is missing</p>
-                <p>- skill or expertise is missing, need to finish going through every power and adding skills. At
-                    least I have the tool for that</p>
-                <p>- by cantrip or spell - yet to do any progress on powers containing their spells or character
-                    sheets containing their spells. I do have that excel file tho...</p>
-                <p>A OR B, I just need to do it</p>
-                <p>Power Tag (currently only "Patron Tag" since there are multiple patrons and I want to axe the "Otherworldly Patron" Power)</p>
-            </div>
-        </div>
-    </div>
+    <PowerFilter
+        :tags="tags"
+        :openedPowers="openedPowers"
+        v-model:filter="filter"
+        v-model:roleTag="roleTag"
+        v-model:powerSearch="powerSearch"
+        v-model:preqStats="preqStats"
+        v-model:preqResistances="preqResistances"
+    />
 
     <p>{{ rolePowers.length + " / " + powers.length }}</p>
     <div class="cards">
@@ -75,6 +23,7 @@
 <script setup>
 import powers from '/src/assets/pedd/pedd-powers.json';
 import PowerContent from './PowerContent.vue';
+import PowerFilter from './PowerFilter.vue';
 import CardContainer from './CardContainer.vue';
 import { ref, computed } from 'vue';
 
@@ -85,7 +34,6 @@ const filter = ref({
     useTerms: false,
     usePreqs: false
 });
-const openedPowers = ref([]);
 const roleTag = ref("All");
 const powerSearch = ref("");
 const preqStats = ref({
@@ -102,6 +50,7 @@ const preqResistances = ref({
     will: 0
 });
 
+const openedPowers = ref([]);
 let allPowers = powers.map(p => p.name);
 
 const rolePowers = computed(() => {

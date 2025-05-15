@@ -1,42 +1,37 @@
 <template>
-    <div :class="{ container: expanded, header: !expanded }">
-        <h3 @click="$emit('chosen', name)">{{ name }}<span v-if="!expanded" class="arrow">▼</span><span class="arrow"
-                v-else>▲</span></h3>
-        <div id="body" v-if="expanded" class="inner-container">
+    <div :class="{ container: expanded, header: !expanded }" >
+        <h3 class="card-title" @click="expanded = !expanded">{{ name }}<span v-if="!expanded"
+                class="arrow">▼</span><span class="arrow" v-else>▲</span></h3>
+        <div id="body" v-show="expanded" class="inner-container">
             <slot></slot>
+
+            <div>
+                <button class="btn" @click.prevent.stop="$emit('chosen', name)">{{chosen ? "Unselect" : "Select"}}</button>
+            </div>
         </div>
     </div>
 </template>
 
 <script setup>
-const props = defineProps({ name: String, expanded: Boolean });
+import { ref } from 'vue';
+const props = defineProps({ name: String, chosen: Boolean });
+
+const expanded = ref(props.chosen);
 </script>
 
 <style lang="css" scoped>
 .container {
     display: flex;
-    border-top: 2px groove var(--highlight);
-    height: fit-content;
-    text-align: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    border-top: 2px groove var(--highlight);
     border-collapse: collapse;
+
+    
 }
 
 .container:first-child {
     border-top: none;
-}
-
-@media only screen and (min-width: 600px) {
-    .container * {
-        flex-basis: 15rem;
-    }
-}
-
-@media only screen and (max-width: 599px) {
-    .container {
-        flex-direction: column;
-    }
 }
 
 .inner-container {
@@ -45,15 +40,15 @@ const props = defineProps({ name: String, expanded: Boolean });
     flex-direction: column;
     justify-content: start;
     padding: 0px 0.5rem;
-    border-left: 2px groove var(--highlight);
-    flex-grow: 4;
+
+    border-left: none;
+    border-top: 2px groove var(--highlight);
 }
 
-@media only screen and (max-width: 599px) {
-    .inner-container {
-        border-left: none;
-        border-top: 2px groove var(--highlight);
-    }
+.inner-container,
+.card-title {
+    text-align: left;
+    width: 100%
 }
 
 .header {
@@ -68,7 +63,25 @@ const props = defineProps({ name: String, expanded: Boolean });
 }
 
 .arrow {
-    float: right;
+    float:right;
     margin-right: 1rem;
 }
+
+@media only screen and (min-width: 1000px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .container .card-title {
+        width: 30%;
+    }
+
+    .inner-container {
+        width: 70%;
+        border-left: 2px groove var(--highlight);
+        border-top: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {}
 </style>

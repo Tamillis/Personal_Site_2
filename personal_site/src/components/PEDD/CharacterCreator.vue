@@ -5,13 +5,12 @@
 		<h4>TODO:</h4>
 		<ul>
 			<li>Custom Background 'any' stat and skill selectors</li>
-			<li>See <a>/PEDD/Powers</a> for tweaks to how powers work.</li>
+			<li>Add dynamic skill-downgrading</li>
 			<li>Power Ranks and the ability to take a Power more than once</li>
 			<li>Have Powers that grant stats, skills and other changes do so (in progress)</li>
+			<li>Special handling of Powers that change how Defence is calculated</li>
 			<li>Add Powers in training section</li>
 			<li>Add Rolling functionality for attacks, spells, skills and stats</li>
-			<li>Add dynamic skill-downgrading</li>
-			<li>Special handling of Powers that change how Defence is calculated</li>
 		</ul>
 		<button class="btn mb-1r" @click="copyUrl">Copy to clipboard</button>
 		<button class="btn" @click="chosen = blankCharacter">Reset</button>
@@ -38,10 +37,12 @@
 		<section id="race-section" v-show="sections.race">
 			<p v-if="chosen.race == ''" style="color:orangered">Please choose a race.</p>
 			<RaceSelector :chosenRace="chosen.race" :chosenAnyStats="chosen.anyRaceStats"
-				@race="race => (chosen.race = race)" @race-stats="stats => setAnyRaceStats(stats)" />
+				@race="setRace" @race-stats="stats => setAnyRaceStats(stats)" />
 
 			<div v-if="chosen.race">
-				<RacialPowers :chosenPowers="chosen.racialPowers" :race="chosen.race"
+				<RacialPowers 
+					:chosenPowers="chosen.racialPowers" 
+					:racePowerNames="getRacialPowers()"
 					:limit="((chosen.race == 'Half-Elf' || chosen.race == 'Tuskman') ? 3 : 2)"
 					@chosen="chooseRacialPowers" :key="`rp-${key}`" />
 			</div>
@@ -54,15 +55,15 @@
 		<section id="background-section" v-show="sections.background">
 
 			<p v-if="!chosen.background" style="color:orangered">Choose a background</p>
-			<Background :background="chosen.background" @backgroundChosen="(bg) => (chosen.background = bg)" />
+			<Background :background="chosen.background" @backgroundChosen="setBackground" />
 
 			<p v-if="chosen.background && !chosen.backgroundPower" style="color:orangered">Choose a background Power</p>
 			<div v-if="chosen.background">
 				<h2>Background Power:</h2>
 				<div class="cards">
 					<CardContainer v-for="(power, i) in backgroundPowers" :name="power.name" :class="{
-						hidden: chosen.backgroundPower != '' && chosen.backgroundPower != power.name
-					}" :expanded="chosen.backgroundPower != '' && chosen.backgroundPower == power.name"
+						highlight: chosen.backgroundPower == power.name
+					}" :chosen="chosen.backgroundPower == power.name"
 						@chosen="chooseBackgroundPower(power.name)" :key="`bgpc-${i}-${key}`">
 						<PowerContent :power="power" />
 					</CardContainer>
@@ -85,8 +86,7 @@
 			<SkillSelector :roleSkills="chosen.roleSkills" :otherSkills="otherSkills" :limit="4 + player.intelligence"
 				@skills="skills => (chosen.roleSkills = skills)" />
 
-			<RolePowers :powers="chosen.rolePowers"
-				@powersChosen="(chosenPowers) => (chosen.rolePowers = chosenPowers)" />
+			<RolePowers v-model:chosenPowers="chosen.rolePowers" :allChosenPowers="allChosenPowers" :player="player" />
 		</section>
 
 		<section id="equipment-section" v-show="sections.equipment">
@@ -97,6 +97,7 @@
 
 		<section id="spells-section" v-show="sections.spells">
 			<p>This section is entirely TODO (:</p>
+			<p>But you can go to <a href="/pedd/spells">Spells</a> to see them all for now</p>
 		</section>
 	</section>
 </template>
@@ -154,7 +155,6 @@ function setSection(section) {
 //makes loops update correctly even though vue documentation says the ref and computed stuff should automatically update (it doesn't)
 let key = ref(0);
 
-//TODO: create character reset btn that sets chosen to the following (and make sure the sheet works building from a blank)
 let blankCharacter = {
 	name: "",
 	concept: "",
@@ -188,10 +188,25 @@ let blankCharacter = {
 //TODO: convert as much as possible to use simple int/key id's to ideally compress the url
 let decodeUrl = new URLSearchParams(window.location.search).get("saved");
 let chosen = ref(decodeUrl ? JSON.parse(atob(decodeUrl)) : blankCharacter);
+let allChosenPowers = computed(() => [...chosen.value.racialPowers, chosen.value.backgroundPower, ...chosen.value.rolePowers].sort());
 
 //race any stat selections
+function setRace(race) {
+	chosen.value.race = race
+	if(!race) {
+		chosen.value.race = ""
+		chosen.value.racialPowers = [];
+	}
+}
+
 function setAnyRaceStats(stats) {
 	chosen.value.anyRaceStats = stats;
+}
+
+function getRacialPowers() {
+	let race = races.filter(r => r.name == chosen.value.race);
+	if(race.length == 0) return [];
+	return race[0].powers
 }
 
 function chooseRacialPowers(powers) {
@@ -200,6 +215,11 @@ function chooseRacialPowers(powers) {
 }
 
 //background
+function setBackground(bg) {
+	chosen.value.background = bg;
+	if(!bg) chosen.value.backgroundPower = false;
+}
+
 let backgroundPowers = computed(() => powers.filter(p => p.tag.includes("background")));
 
 let chooseUpbringing = (upbringing) => {
@@ -237,7 +257,9 @@ let player = computed(() => {
 	p.flaws = chosen.value.flaws;
 
 	p.race = chosen.value.race != "";
-	if (p.race) p.race = races.filter(r => r.name == chosen.value.race)[0];
+	if (p.race) {
+		p.race = races.filter(r => r.name == chosen.value.race)[0];
+	}
 	p.racialPowers = chosen.value.racialPowers;
 
 	p.background = false;

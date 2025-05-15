@@ -2,7 +2,7 @@
 
     <div class="stat-display-container">
         <div>
-            <h2 class="title underline">{{ player.name }}, {{ player.concept }}</h2>
+            <h2 class="title underline">{{ player.name }}{{ player.name && player.concept ? ", " : "" }}{{ player.concept }}</h2>
             <StatDisplay :player="player" :haveFaith="haveFaith" />
         </div>
         <CharacterPortrait class="character-portrait" :imgSrc="player.imgSrc"
@@ -49,8 +49,8 @@
 
 
     <div>
-        <h3 @click="showPowersSummary = !showPowersSummary"><a>Powers{{ showPowersSummary ? ":" : "..." }}</a></h3>
-        <div v-if="showPowersSummary" id="powers-summary" class="flex gap-1r flex-wrap">
+        <h3>Powers:</h3>
+        <div id="powers-summary" class="flex gap-1r flex-wrap">
             <div class="power-summary" v-for="power in selectedPowers">
                 <h4>{{ power.name }}</h4>
                 <div style="font-size:0.66em" v-html="power.desc"></div>
@@ -68,8 +68,6 @@ import CharacterPortrait from './CharacterPortrait.vue';
 
 const props = defineProps(['player', 'haveFaith']);
 const emits = defineEmits(['updateImgSrc']);
-
-const showPowersSummary = ref(false);
 
 const selectedPowers = computed(() => {
     let selectedPower = [];

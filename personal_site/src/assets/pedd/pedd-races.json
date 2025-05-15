@@ -92,7 +92,7 @@
         "darkVision": "You can see in dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey.",
         "stoneSense": "You have Tremorsense up to a 15ft radius through earth & stone, when standing on connected ground.",
         "powers": [
-            "Superior Darkvision & Sunlight Sensitivity",
+            "Troglobite",
             "Stout Resilience",
             "Stonecunning",
             "Dwarven Toughness",
@@ -148,7 +148,7 @@
         "feyAncestry": "You have advantage on saving throws against being Charmed, and magic can't put you to Sleep.",
         "powers": [
             "Darkvision",
-            "Superior Darkvision & Sunlight Sensitivity",
+            "Troglobite",
             "Drow Magic",
             "Arcane Aptitude",
             "Fleet of Foot",
@@ -160,7 +160,7 @@
             "Everchanging Nature",
             "Mana",
             "Natural Illusionist",
-            "Resilient (Reflexes)"
+            "Resilient"
         ]
     },
     {
@@ -218,7 +218,7 @@
             "Everchanging Nature",
             "Arcane Aptitude",
             "Mana",
-            "Superior Darkvision & Sunlight Sensitivity"
+            "Troglobite"
         ]
     },
     {

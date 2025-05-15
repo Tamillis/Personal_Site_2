@@ -91,7 +91,7 @@
                 </tr>
             </tbody>
         </table>
-
+<!--
         <a @click="showTertiaries = !showTertiaries">
             <h3>{{ showTertiaries ? "Tertiaries:" : "Tertiaries..." }}</h3>
         </a>
@@ -112,6 +112,7 @@
                 </div>
             </div>
         </section>
+    -->
 
     </div>
 </template>
