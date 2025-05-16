@@ -11,7 +11,7 @@
         </div>
     </section>
 </template>
-  
+
 <script setup>
 import { putMdinElement } from '../../assets/functionality';
 import { onMounted } from 'vue';
@@ -19,10 +19,12 @@ import Links from '../../components/PEDD/Links.vue';
 
 const props = defineProps(['md', 'subtitle']);
 
-onMounted(() => putMdinElement(`/src/assets/pedd/${props.md}.md`, 'pedd'));
+onMounted(() => {
+    if (props.md) { putMdinElement(`/src/assets/pedd/${props.md}.md`, 'pedd') }
+});
 
 </script>
-  
+
 <style>
 #pedd a,
 #pedd a:link,
