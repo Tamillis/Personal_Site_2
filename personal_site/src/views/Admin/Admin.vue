@@ -31,7 +31,7 @@ import Links from '../../components/PEDD/Links.vue';
 import PEDDPowersEditor from './PEDDPowersEditor.vue';
 
 import { ref } from 'vue';
-const AUTH_URL = "/api/Auth_Controller.php";
+const AUTH_URL = "/api/auth";
 const username = ref("");
 const password = ref("");
 const showLogin = ref(true);

@@ -246,7 +246,7 @@ function resetPowerForm() {
 }
 
 async function getPowers() {
-    var res = await fetch("/api/PEDD_Powers_Controller.php", {
+    var res = await fetch("/api/powers", {
         method: "GET"
     });
 
@@ -271,7 +271,7 @@ async function postPower() {
         statMaxes: statMaxes.value
     };
 
-    var res = await fetch("/api/PEDD_Powers_Controller.php", {
+    var res = await fetch("/api/powers", {
         method: isNew.value ? "POST" : "PUT",
         "headers": { "Content-Type": "application/json" },
         "body": JSON.stringify(body)

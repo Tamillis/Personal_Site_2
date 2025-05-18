@@ -14,7 +14,7 @@ try {
 }
 
 // Define the path to the JSON file
-$jsonFile = '../src/assets/pedd/pedd-powers.json';
+$jsonFilePath = $_SERVER["DOCUMENT_ROOT"] . '/src/assets/pedd/pedd-powers.json';
 
 // Protect appropraite CRUD operations with authentication
 function checkAuthentication() {
@@ -24,17 +24,17 @@ function checkAuthentication() {
 
 // Function to read the JSON file
 function readData() {
-    global $jsonFile;
+    global $jsonFilePath;
     // Check if the file exists
-    if (!file_exists($jsonFile)) {
+    if (!file_exists($jsonFilePath)) {
         // Attempt to create the file if it doesn't exist
-        $successful = file_put_contents($jsonFile, json_encode([]));
-        if (!$successful) API::respond(['error' => 'Unable to create JSON file. Check permissions.'], 500);
+        $successful = file_put_contents($jsonFilePath, json_encode([]));
+        if (!$successful) API::respond(['error' => "Unable to create JSON file at $jsonFilePath. Check permissions."], 500);
     }
 
-    $data = file_get_contents($jsonFile);
+    $data = file_get_contents($jsonFilePath);
     //Check if the file is readable too
-    if (!is_readable($jsonFile)) API::respond(['error' => 'Unable to read JSON file. Check permissions.'], 500);
+    if (!is_readable($jsonFilePath)) API::respond(['error' => 'Unable to read JSON file. Check permissions.'], 500);
 
     return json_decode($data, true);
 }
@@ -44,10 +44,10 @@ function writeData($data) {
     //always check authentication before writing
     checkAuthentication();
 
-    global $jsonFile;
-    $successful = file_put_contents($jsonFile, json_encode($data, JSON_PRETTY_PRINT));
+    global $jsonFilePath;
+    $successful = file_put_contents($jsonFilePath, json_encode($data, JSON_PRETTY_PRINT));
     // Check if the file is writable too
-    if (!is_writable($jsonFile) || !$successful) API::respond(['error' => 'Unable to write to JSON file. Check permissions.'], 500);
+    if (!is_writable($jsonFilePath) || !$successful) API::respond(['error' => 'Unable to write to JSON file. Check permissions.'], 500);
 }
 
 function getArrayElementWithName($arr, $name) {

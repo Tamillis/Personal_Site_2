@@ -12,6 +12,8 @@ try {
 //all responses will be JSON so setting that now
 header('Content-Type: application/json');
 
+//TODO: now that there's a router, split the actions into proper endpoints
+
 // Handle authentication requests
 if (isset($_GET['action'])) {
     switch ($_GET['action']) {
