@@ -1,144 +1,166 @@
 <?php
-// Includes
-require 'SessionAuth.php';
-require 'API.php';
 
-//all responses will be JSON so setting that now
-header('Content-Type: application/json');
+class PowersController
+{
+    private $auth;
+    private $powersFilePath;
+    public function __construct()
+    {
+        try {
+            $this->auth = new SessionAuth();
+        } catch (Exception $ex) {
+            API::respond(['error' => $ex->getMessage()], 500);
+        }
 
-// Initialize the session authentication
-try {
-    $auth = new SessionAuth();
-} catch (Exception $ex) {
-    API::respond(['error' => $ex->getMessage()], 500);
-}
-
-// Define the path to the JSON file
-$jsonFilePath = $_SERVER["DOCUMENT_ROOT"] . '/src/assets/pedd/pedd-powers.json';
-
-// Protect appropraite CRUD operations with authentication
-function checkAuthentication() {
-    global $auth;
-    if (!$auth->isAuthenticated()) API::respond(['error' => 'Unauthorized. Please log in.'], 401);
-}
-
-// Function to read the JSON file
-function readData() {
-    global $jsonFilePath;
-    // Check if the file exists
-    if (!file_exists($jsonFilePath)) {
-        // Attempt to create the file if it doesn't exist
-        $successful = file_put_contents($jsonFilePath, json_encode([]));
-        if (!$successful) API::respond(['error' => "Unable to create JSON file at $jsonFilePath. Check permissions."], 500);
+        $this->powersFilePath = $_SERVER["DOCUMENT_ROOT"] . '/src/assets/pedd/pedd-powers.json';
     }
 
-    $data = file_get_contents($jsonFilePath);
-    //Check if the file is readable too
-    if (!is_readable($jsonFilePath)) API::respond(['error' => 'Unable to read JSON file. Check permissions.'], 500);
+    public function index($name = null)
+    {
+        // Handle CRUD operations based on the request method
+        $method = $_SERVER['REQUEST_METHOD'];
 
-    return json_decode($data, true);
-}
+        switch ($method) {
+            case 'GET':
+                // Read operation
+                return API::respond($this->read($name));
+                break;
 
-// Function to write data to the JSON file
-function writeData($data) {
-    //always check authentication before writing
-    checkAuthentication();
+            case 'POST':
+                // Create operation
 
-    global $jsonFilePath;
-    $successful = file_put_contents($jsonFilePath, json_encode($data, JSON_PRETTY_PRINT));
-    // Check if the file is writable too
-    if (!is_writable($jsonFilePath) || !$successful) API::respond(['error' => 'Unable to write to JSON file. Check permissions.'], 500);
-}
+                //always check authentication before writing
+                $this->checkAuthentication();
+                $inputJson = json_decode(file_get_contents('php://input'), true);
+                $power = $this->bindPower($inputJson);
 
-function getArrayElementWithName($arr, $name) {
-    foreach($arr as $el) {
-        if(isset($el['name']) && $el['name'] == $name){
-            return $el;
+                //check this power doesn't already exist
+                if (!is_null($this->read($power['name']))) {
+                    API::respond(['error' => "Power " . $power['name'] . " already exists."], 400);
+                }
+
+                //write the power
+                $success = $this->write($power);
+                if ($success) API::respond(['message' => "Record {$power['name']} created successfully"]);
+                else API::respond(['error' => 'Unable to write to JSON file. Check permissions.'], 500);
+
+                break;
+
+            case 'PUT':
+                // Update operation
+                //always check authentication before writing
+                $this->checkAuthentication();
+                $inputJson = json_decode(file_get_contents('php://input'), true);
+                $power = $this->bindPower($inputJson);
+
+                //check this power exists
+                if (is_null($this->read($power['name']))) {
+                    API::respond(['error' => "Power " . $power['name'] . " doesn't exist."], 400);
+                }
+
+                $this->write($power);
+                API::respond(['message' => "Record {$power['name']} updated successfully"]);
+                break;
+
+            case 'DELETE':
+                // Delete operation
+                //always check authentication before writing
+                $this->checkAuthentication();
+
+                if(is_null($name)) API::respond(["error" => "DELETE must be called with a name"]);
+
+                $powers = $this->read();
+                $this->removePowerWithName($powers, $name);
+                $this->write($powers);
+                API::respond(['message' => "Record $name deleted successfully"]);
+                break;
+
+            default:
+                API::respond(['error' => 'Method not allowed'], 405);
+                break;
         }
     }
-    return false;
-}
 
-//adds in element, and makes sure it is ordered by name
-function addArrayElement(&$arr, $el) {
-    array_push($arr, $el);
-    usort($arr, function($a, $b) {
-        return strnatcmp($a['name'], $b['name']);
-    });
-}
-
-// WARN: this seems like a long-winded way of doing this
-// removes element with given name from passed in array
-function removeArrayElementWithName(&$arr, $name) {
-    $i = 0;
-    $n = -1;
-    foreach($arr as $el) {
-        if(isset($el['name']) && $el['name'] == $name){
-            $n = $i;
+    //binds the incoming input
+    private function bindPower($json)
+    {
+        $keys = array("name", "tag", "preq", "desc", "repeatable", "skills", "statChanges", "resistanceChanges", "secondaryStatChanges", "statMaxes");
+        foreach ($keys as $key) {
+            if (!isset($json[$key])) API::respond(['error' => "Bad binding: property '$key' is required, got: $json"], 400);
         }
-        $i++;
+        return $json;
     }
 
-    if($n == -1) return false;
-    array_splice($arr, $n, 1);
-    return true;
-}
+    private function read($name = null)
+    {
+        // Checking if the file exists, get the full content
+        if (!file_exists($this->powersFilePath) || !is_readable($this->powersFilePath)) {
+            API::respond(['error' => "Unable to find or read JSON file at $this->powersFilePath."], 500);
+        }
 
-function checkArrayHasName($arr, $name) : void {
-    if(!getArrayElementWithName($arr, $name)) API::respond(['error' => 'Record with this name doesn\'t exist'], 409);
-}
+        $json = json_decode(file_get_contents($this->powersFilePath), true);
 
-function checkArrayDoesntHaveName($arr, $name) : void {
-    if(getArrayElementWithName($arr, $name)) API::respond(['error' => 'Record with this name already exists'], 409);
-}
+        //if parameter is provided, i.e. the Primary ID key "name", filter and return that one power
+        if (!is_null($name)) {
+            $entries = array_filter($json, fn($var) => $var['name'] == $name);
+            if (count($entries) == 0) return null;
+            return array_values($entries)[0];
+        } else return $json;
+    }
 
-function getInput() {
-    $input = json_decode(file_get_contents('php://input'), true);
-    if (!isset($input['name'])) API::respond(['error' => 'Name is required'], 400);
-    return $input;
-}
+    private function write($power)
+    {
+        $powers = $this->read();
+        if ($this->getPowerWithName($powers, $power['name'])) {
+            //record already exists, "update" it by removing the old record
+            $this->removePowerWithName($powers, $power['name']);
+        }
 
-// Handle CRUD operations based on the request method
-$method = $_SERVER['REQUEST_METHOD'];
+        //create record, push it to the data and sort by name, ready for writing
+        $this->addAndSort($powers, $power);
 
-switch ($method) {
-    case 'GET':
-        // Read operation
-        API::respond(readData());
-        break;
+        //overwrite file to save it
+        $successful = file_put_contents($this->powersFilePath, json_encode($powers, JSON_PRETTY_PRINT));
+        // Check if the file is writable too
+        return is_writable($this->powersFilePath) && $successful;
+    }
 
-    case 'POST':
-        // Create operation
-        $input = getInput();
-        $data = readData();
-        checkArrayDoesntHaveName($data, $input['name']);
-        addArrayElement($data, $input);
-        writeData($data);
-        API::respond(['message' => "Record {$input['name']} created successfully"]);
-        break;
+    private function getPowerWithName($arr, $name)
+    {
+        foreach ($arr as $el) {
+            if ($el['name'] == $name) {
+                return $el;
+            }
+        }
+        return false;
+    }
 
-    case 'PUT':
-        // Update operation
-        $input = getInput();
-        $data = readData();
-        checkArrayHasName($data, $input['name']);
-        removeArrayElementWithName($data, $input['name']);
-        addArrayElement($data, $input);
-        writeData($data);
-        API::respond(['message' => "Record {$input['name']} updated successfully"]);
-        break;
+    // removes element with given name from passed in array
+    private function removePowerWithName(&$arr, $name)
+    {
+        $n = -1;
+        foreach ($arr as $el) {
+            if ($el['name'] == $name) {
+                $n = array_search($el, $arr);
+                break;
+            }
+        }
 
-    case 'DELETE':
-        // Delete operation
-        $input = getInput();
-        $data = readData();
-        checkArrayHasName($data, $input['name']);
-        removeArrayElementWithName($data, $input['name']);
-        writeData($data);
-        API::respond(['message' => "Record {$input['name']} deleted successfully"]);
-        break;
+        if ($n == -1) API::respond(["error" => "Unable to find power $name to delete it."]);
+        array_splice($arr, $n, 1);
+    }
 
-    default:
-        API::respond(['error' => 'Method not allowed'], 405);
-        break;
+    //adds in element, and makes sure it is ordered by name
+    private function addAndSort(&$arr, $el)
+    {
+        array_push($arr, $el);
+        usort($arr, function ($a, $b) {
+            return strnatcmp($a['name'], $b['name']);
+        });
+    }
+
+    private function checkAuthentication()
+    {
+        if (!$this->auth->isAuthenticated()) API::respond(['error' => 'Unauthorized. Please log in.'], 401);
+    }
 }
