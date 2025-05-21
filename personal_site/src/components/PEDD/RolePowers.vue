@@ -1,7 +1,6 @@
 <template>
     <div>
         <h2>Role Powers: <span>{{ chosenPowers.join(", ") }}</span></h2>
-        <p>TODO: properly automatically filter by prerequisites</p>
         <p v-if="chosenPowers.length < 3" style="color: orangered">Please choose 3 Powers.</p>
         
         <PowerFilter

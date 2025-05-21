@@ -1,9 +1,14 @@
 <template>
-    <div class="selection" style="max-width: 300px;">
-        <h3>Equipment Collections</h3>
+    <h3>Equipment</h3>
+    <div class="flex">
         <select id="equipment-collections" v-model="equipment">
-            <option disabled selected>Choose one...</option>
-            <option v-for="(collection, i) in equipmentCollections">{{ collection.name }}</option>
+            <option disabled selected>Choose a collection...</option>
+            <option v-for="collection in equipmentCollections">{{ collection.name }}</option>
+        </select>
+        <select id="equipment-packs" v-model="pack">
+            <option disabled selected>Choose a pack...</option>
+            <option>None</option>
+            <option v-for="pack in packs">{{ pack.name }}</option>
         </select>
     </div>
 
@@ -49,12 +54,14 @@
 </template>
 
 <script setup>
-import {ref} from 'vue';
+import { ref } from 'vue';
 import equipmentCollections from '../../assets/pedd/pedd-equipment-collections.json';
+import packs from '../../assets/pedd/pedd-packs.json';
 
 const emit = defineEmits(["refLimit"]);
 
 const equipment = defineModel('equipment');
+const pack = defineModel('pack');
 const armour = defineModel('armour');
 const helmet = defineModel('helmet');
 const shield = defineModel('shield');
@@ -71,7 +78,7 @@ const chosen = ref({
 let chosenArmour = (e) => {
     //track each ref limit
     chosen.value[e.target.dataset.prop + "RefLimit"] = Number(e.target.children[e.target.selectedIndex].dataset.refLimit);
-    
+
     //emit lowest reflexes limit
     let lowestLimit = chosen.value.armourRefLimit;
     if (chosen.value.helmetRefLimit < lowestLimit) lowestLimit = chosen.value.helmetRefLimit;

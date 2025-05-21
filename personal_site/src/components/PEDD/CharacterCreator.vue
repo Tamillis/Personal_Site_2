@@ -36,13 +36,11 @@
 
 		<section id="race-section" v-show="sections.race">
 			<p v-if="chosen.race == ''" style="color:orangered">Please choose a race.</p>
-			<RaceSelector :chosenRace="chosen.race" :chosenAnyStats="chosen.anyRaceStats"
-				@race="setRace" @race-stats="stats => setAnyRaceStats(stats)" />
+			<RaceSelector :chosenRace="chosen.race" :chosenAnyStats="chosen.anyRaceStats" @race="setRace"
+				@race-stats="stats => setAnyRaceStats(stats)" />
 
 			<div v-if="chosen.race">
-				<RacialPowers 
-					:chosenPowers="chosen.racialPowers" 
-					:racePowerNames="getRacialPowers()"
+				<RacialPowers :chosenPowers="chosen.racialPowers" :racePowerNames="getRacialPowers()"
 					:limit="((chosen.race == 'Half-Elf' || chosen.race == 'Tuskman') ? 3 : 2)"
 					@chosen="chooseRacialPowers" :key="`rp-${key}`" />
 			</div>
@@ -63,8 +61,8 @@
 				<div class="cards">
 					<CardContainer v-for="(power, i) in backgroundPowers" :name="power.name" :class="{
 						highlight: chosen.backgroundPower == power.name
-					}" :chosen="chosen.backgroundPower == power.name"
-						@chosen="chooseBackgroundPower(power.name)" :key="`bgpc-${i}-${key}`">
+					}" :chosen="chosen.backgroundPower == power.name" @chosen="chooseBackgroundPower(power.name)"
+						:key="`bgpc-${i}-${key}`">
 						<PowerContent :power="power" />
 					</CardContainer>
 				</div>
@@ -90,8 +88,8 @@
 		</section>
 
 		<section id="equipment-section" v-show="sections.equipment">
-			<EquipmentTab v-model:equipment="chosen.roleEquipment" v-model:armour="chosen.armour"
-				v-model:shield="chosen.shield" v-model:helmet="chosen.helmet"
+			<EquipmentTab v-model:pack="chosen.pack" v-model:equipment="chosen.equipmentCollection"
+				v-model:armour="chosen.armour" v-model:shield="chosen.shield" v-model:helmet="chosen.helmet"
 				@ref-limit="reflexLimit => (chosen.reflexLimit = reflexLimit)" />
 		</section>
 
@@ -123,6 +121,7 @@ import powers from "../../assets/pedd/pedd-powers.json";
 import races from "../../assets/pedd/pedd-races.json";
 import backgrounds from "../../assets/pedd/pedd-backgrounds.json";
 import equipment from "../../assets/pedd/pedd-equipment-collections.json"
+import packs from "../../assets/pedd/pedd-packs.json"
 
 //derived resources
 let stats = ["accuracy", "perception", "strength", "dexterity", "charisma", "intelligence"];
@@ -174,7 +173,8 @@ let blankCharacter = {
 	roleStatMinor: "Perception",
 	rolePowers: [],
 	roleSkills: [],
-	roleEquipment: "",
+	equipmentCollection: null,
+	pack: "None",
 	armour: 0,
 	helmet: 0,
 	shield: 0,
@@ -193,7 +193,7 @@ let allChosenPowers = computed(() => [...chosen.value.racialPowers, chosen.value
 //race any stat selections
 function setRace(race) {
 	chosen.value.race = race
-	if(!race) {
+	if (!race) {
 		chosen.value.race = ""
 		chosen.value.racialPowers = [];
 	}
@@ -205,7 +205,7 @@ function setAnyRaceStats(stats) {
 
 function getRacialPowers() {
 	let race = races.filter(r => r.name == chosen.value.race);
-	if(race.length == 0) return [];
+	if (race.length == 0) return [];
 	return race[0].powers
 }
 
@@ -217,7 +217,7 @@ function chooseRacialPowers(powers) {
 //background
 function setBackground(bg) {
 	chosen.value.background = bg;
-	if(!bg) chosen.value.backgroundPower = false;
+	if (!bg) chosen.value.backgroundPower = false;
 }
 
 let backgroundPowers = computed(() => powers.filter(p => p.tag.includes("background")));
@@ -293,7 +293,7 @@ let player = computed(() => {
 		for (let stat of p.race.stats) {
 			if (stats.includes(stat.desc.toLowerCase())) p[stat.desc.toLowerCase()] += stat.val;
 		}
-		console.log(sizeSelector.value);
+
 		let size = p.race ? (Array.isArray(p.race.size) ? (sizeSelector.value ? sizeSelector.value.value : "medium") : p.race.size.val) : "medium";
 		p.size = size;
 	}
@@ -322,7 +322,11 @@ let player = computed(() => {
 	if (p.background) p.skills = p.skills.concat(p.background.skills);
 	p.skills = p.skills.sort((s1, s2) => s1.localeCompare(s2));
 
-	p.roleEquipment = chosen.value.roleEquipment ? equipment.filter(e => e.name == chosen.value.roleEquipment)[0].equipment.split(",") : "";
+	p.equipmentCollection = chosen.value.equipmentCollection ? equipment.filter(e => e.name == chosen.value.equipmentCollection)[0].equipment.split(",") : [];
+
+	p.pack = chosen.value.pack && chosen.value.pack != "None" ? 
+		packs.filter(pk => pk.name == chosen.value.pack)[0].equipment.split(",") : 
+		[];
 
 	p.armour = chosen.value.armour + chosen.value.shield + chosen.value.helmet;
 

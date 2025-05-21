@@ -31,25 +31,22 @@
 
         <div class="summary-sub-section">
             <h3>Equipment</h3>
-            <ul v-if="player.background">
-                <li v-for="eq in player.background.equipment" class="triangle-points">{{ eq }}</li>
-            </ul>
-            <ul v-if="player.roleEquipment">
-                <li v-for="eq in player.roleEquipment" class="triangle-points">{{ eq }}</li>
+            <ul>
+                <li v-for="eq in selectedEquipment" class="triangle-points" style="font-size:0.66em">{{ eq }}</li>
             </ul>
         </div>
 
         <div class="summary-sub-section">
             <h3>Skills</h3>
             <ul>
-                <li v-for="skill in player.skills" class="triangle-points">{{ skill }}</li>
+                <li v-for="skill in player.skills" class="triangle-points" style="font-size:0.66em">{{ skill }}</li>
             </ul>
         </div>
     </div>
 
 
     <div>
-        <h3>Powers:</h3>
+        <h3>Powers</h3>
         <div id="powers-summary" class="flex gap-1r flex-wrap">
             <div class="power-summary" v-for="power in selectedPowers">
                 <h4>{{ power.name }}</h4>
@@ -68,6 +65,14 @@ import CharacterPortrait from './CharacterPortrait.vue';
 
 const props = defineProps(['player', 'haveFaith']);
 const emits = defineEmits(['updateImgSrc']);
+
+const selectedEquipment = computed(() => {
+    let equipment = [];
+    if(props.player.background) equipment.push(props.player.background.equipment);
+    if(props.player.equipmentCollection) equipment.push(props.player.equipmentCollection);
+    if(props.player.pack) equipment.push(props.player.pack);
+    return equipment.flat();
+})
 
 const selectedPowers = computed(() => {
     let selectedPower = [];
@@ -88,7 +93,7 @@ const selectedPowers = computed(() => {
 
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 .power-summary {
     width: 100%;
 }
@@ -120,7 +125,7 @@ const selectedPowers = computed(() => {
     padding-left: 0;
 }
 
-.summary h3 {
+h3 {
     text-decoration: underline;
 }
 

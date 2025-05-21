@@ -239,17 +239,3 @@ Rune | Name | Spell | Benefit
 力 | Power | * | Your Strength increases by 1, and your maximum Strength is 6. *Unlike other Runes, this Rune's "Spell" is the ability to cast any other worn Rune at one Magnitude higher than normal.
 石 | Stone | Sanctuary | you always know in what direction and what distance (to the nearest 5ft) this symbol is from you. You have proficiency in Navigation.
 嵐 | Storm | Thunderwave | you crackle with static and can cast Shocking Grasp.
-
-<div style="display:none">
-(From Symbol)
-
-Once triggered, the glyph glows, filling a 60ft radius Sphere with Dim Light for 10 minutes, after which time the spell ends. Each creature in the Sphere when the glyph activates is targeted by its effect, as is a creature that enters the Sphere for the first time on a turn or ends its turn there. A creature is targeted only once per turn.
-
-- Death. Each target makes a Constitution saving throw, taking 10d10 Necrotic damage on a failed save or half as much damage on a successful save.
-- Discord. Each target makes a Wisdom saving throw. On a failed save, a target argues with other creatures for 1 minute. During this time, it is incapable of meaningful communication and has Disadvantage on attack rolls and ability checks.
-- Fear. Each target must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute. While Frightened, the target must move at least 30ft away from the glyph on each of its turns, if able.
-- Pain. Each target must succeed on a Constitution saving throw or have the Incapacitated condition for 1 minute.
-- Sleep. Each target must succeed on a Wisdom saving throw or have the Unconscious condition for 10 minutes. A creature awakens if it takes damage or if someone takes an action to shake it awake.
-- Stunning. Each target must succeed on a Wisdom saving throw or have the Stunned condition for 1 minute.
-
-</div>

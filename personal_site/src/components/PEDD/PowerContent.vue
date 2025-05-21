@@ -4,10 +4,12 @@
         <ul>
             <li v-for="tag in power.tag" @click="$emit('highlight', tag)"><a>{{ tag }}</a></li>
         </ul>
-        <h4>Prerequisites:</h4>
-        <ul>
-            <li v-for="preq in power.preq">{{ preq }}</li>
-        </ul>
+        <div v-if="power.preq.length > 0">
+            <h4>Prerequisites:</h4>
+            <ul>
+                <li v-for="preq in power.preq">{{ preq }}</li>
+            </ul>
+        </div>
         <div v-html="marked.parse(power.desc)" class="list-circles"></div>
     </div>
 </template>

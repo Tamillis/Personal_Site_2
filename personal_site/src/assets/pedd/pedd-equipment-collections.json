@@ -1,11 +1,11 @@
 [
     {
         "name": "The Fighter",
-        "equipment": "Chainmail, a shield, 3 Martial Weapons of your choice, 2 Simple weapons of your choice, a dungeoneer's / explorer's pack"
+        "equipment": "Chainmail, a shield, 3 Martial Weapons of your choice, 2 Simple weapons of your choice"
     },
     {
         "name": "The Rogue",
-        "equipment": "Leather Armour, a melee martial weapon of your choice, a ranged martial weapon of your choice, a simple weapon of your choice, a set of tools (Thieves' / Alchemist's / Tinker's / Smith's), a Burlglar's / Dungeoneer's / Explorer's pack"
+        "equipment": "Leather Armour, a melee martial weapon of your choice, a ranged martial weapon of your choice, a simple weapon of your choice, a set of tools (Thieves' / Alchemist's / Tinker's / Smith's)"
     },
     {
         "name": "The Wizard",
@@ -13,7 +13,7 @@
     },
     {
         "name": "The Artificer",
-        "equipment": "any two Simple Weapons, a light crossbow and 20 bolts / a pistol and 20 paper cartridges, studded leather armor / scale mail, a hallmark stamp, a set of tools (Tinker's / Woodcarver's / Painter's / Jeweler's / Caligrapher's / Thieves'), a burglar's / dungeoneer's / explorer's pack"
+        "equipment": "any two Simple Weapons, a light crossbow and 20 bolts / a pistol and 20 paper cartridges, studded leather armor / scale mail, a hallmark stamp, a set of tools (Tinker's / Woodcarver's / Painter's / Jeweler's / Caligrapher's / Thieves')"
     },
     {
         "name": "The Destitute",
@@ -21,18 +21,18 @@
     },
     {
         "name": "The Cleric",
-        "equipment": "Chain Shirt, two weapons that represent your deity / path / philosophy, a holy symbol of your faith, a healer's kit, a diplomat's / priest's / scholar's pack"
+        "equipment": "Chain Shirt, two weapons that represent your deity / path / philosophy, a holy symbol of your faith, a healer's kit"
     },
     {
         "name": "The Druid",
-        "equipment": "Hide / Leather Armour, a bronze embossed shield, a non-ferrous weapon of your choice, a druidic focus, a component pouch full of natural components, a dungeoneer's / entertainer's / priest's pack"
+        "equipment": "Hide / Leather Armour, a bronze embossed shield, a non-ferrous weapon of your choice, a druidic focus, a component pouch full of natural components"
     },
     {
         "name": "The Warlock",
-        "equipment": "Padded armour, a Martial Weapon of your choice representative of your patron, a knife, an occult spellcasting wand, a set of tools (alchemist's / calligrapher's / jeweller's / disguise / forgery), a burglar's / diplomat's / priest's / scholar's pack"
+        "equipment": "Padded armour, a Martial Weapon of your choice representative of your patron, a knife, an occult spellcasting wand, a set of tools (alchemist's / calligrapher's / jeweller's / disguise / forgery)"
     },
     {
         "name": "The Bard",
-        "equipment": "Padded armour, an elegant Martial or Simple weapon of your choice, a knife, a musical instrument (lute / horn / drum / viol), a burglar's / diplomat's / entertainer's / explorer's pack"
+        "equipment": "Padded armour, an elegant Martial or Simple weapon of your choice, a knife, a musical instrument (lute / horn / drum / viol)"
     }
 ]
