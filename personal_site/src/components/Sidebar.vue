@@ -1,5 +1,5 @@
 <template>
-    <nav class="sidebar shiftOut" id="nav" @click="toggleNav()">
+    <nav class="sidebar" :class="{shiftOut: sidebarOut, shiftBack: !sidebarOut}" id="nav" @click="sidebarOut = !sidebarOut">
         <ul id="links">
             <li class="nav-item">
                 <RouterLink to="/">Home</RouterLink>
@@ -13,21 +13,21 @@
             <li class="nav-item">
                 <RouterLink to="/programming">Programming</RouterLink>
             </li>
-            <li class="nav-item">
+            <!--  <li class="nav-item">
                 <RouterLink to="/dnd">D&D</RouterLink>
-            </li>
+            </li>  -->
             <li class="nav-item">
                 <RouterLink to="/pedd">PEDD</RouterLink>
             </li>
             <li class="nav-item">
                 <RouterLink to="/mewiki">M.E. Wiki</RouterLink>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <RouterLink to="/survey">Survey</RouterLink>
             </li>
             <li class="nav-item">
                 <RouterLink to="/statistics">Statistics</RouterLink>
-            </li>
+            </li>  -->
             <li class="nav-item">
                 <RouterLink to="/transissional">Transissional English</RouterLink>
             </li>
@@ -45,26 +45,11 @@
 
 <script setup>
 import { useRoute, RouterLink } from 'vue-router';
+import { ref } from 'vue';
 
-const route = useRoute();
+useRoute();
+const sidebarOut = ref(false);
 
-let out = true;
-function toggleNav() {
-    let links = document.getElementById("links");
-    let nav = document.getElementById("nav");
-
-    //if the display of the sidebar is nill or none move items sidebar amount to the side
-    //and set the display to block, or do the reverse
-    if (out) {
-        nav.classList.remove("shiftOut");
-        nav.classList.add("shiftBack");
-    }
-    else {
-        nav.classList.remove("shiftBack");
-        nav.classList.add("shiftOut");
-    }
-    out = !out;
-}
 </script>
 
 <style lang="css" scoped>

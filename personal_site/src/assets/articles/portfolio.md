@@ -6,7 +6,7 @@ I am the sole developer for Downey Designs Ltd. here in the Jewellery Quarter in
 
 The main thrust of my role is in creating new and replacement pages for the website (which doubles as our store-front presence as well as internal administraiton platform) from older versions at various stages of .NET history, in order to one-day transition to modern .NET (that would be, at time of writing, .NET9), as well as providing new functionality for the office, our parent company and the stores on the highstreet.
 
-Before this, I worked as a C# trainer at Sparta Global, where I taught others the techniques of development (and automated testing). Working at Sparta Global, as a trainee and primarily as a trainer, I was involved in many demonstration projects for the various cohorts who were producing them to demonstrate their skills practically. 
+Before this, I worked as a C# trainer at Sparta Global, where I taught others the techniques of development (and automated testing). Working at Sparta Global, as a trainee and primarily as a trainer, I was involved in many demonstration projects for the various cohorts who were producing them to demonstrate their skills practically.
 
 Unfortunately all of the above is not something that can be shown. My SpartaGlobal account has since become inaccessible to me and for security reasons the pricate repo for my current work is not something I will share. As such, I've decided to put together a few publically available demo projects, providing a link to my public github repositories.
 
@@ -21,6 +21,15 @@ It has been steadily worked on ever since (mostly as a vehicle for my own person
 I also use this site to display my graphics programming, as can be seen by the home page's faux terminal, the snowflakes gently falling behind me, and the spinning globe on my [About](/about) page: using JS libraries (the Canvas API, ThreeJS, P5.js etc.).
 
 Check out the source code for this site [here](https://github.com/Tamillis/Personal_Site_2).
+
+### Restful API - the /api endpoints of this site
+Written in PHP as the backend to my [PEDD](/PEDD) project.
+
+See the code here: (TODO GITHUB LINK)
+
+This includes an admin page that is locked behind a login system, but see a screenshot of it here:
+
+<img alt="PEDD admin page" src="/src/assets/peddadminpage.jpg" />
 
 ### MyTools - Vanilla JS Expertise
 

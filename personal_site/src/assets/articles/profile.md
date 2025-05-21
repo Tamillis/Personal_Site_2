@@ -1,19 +1,19 @@
 ## Introduction
 
-*[9<sup>th</sup> May 2024]*
+*[9<sup>th</sup> May 2025]*
 
 Hi, my name is Peter Bellaby, as you might have already seen on the landing page's faux-terminal. 
 
-I'm the C# ASP.NET Web Developer & System Administrator at Downey Designs bespoke jewellery makers. I also train others in how to program in C# up to and including deploying websites during the weekends at [ClassGap](https://www.classgap.com/me/peter-bellaby) as a side gig.
+I'm the C# ASP.NET Web Developer & Technical Director here at Downey Designs bespoke jewellery makers.
 
-I was formerly a trainer at Sparta Global, where I trained cohorts of fresh-faces, most of whom have only a smidgen of programming experience, to become industry-standard developers and automation testers in C#, .NET, and a host of tools and frameworks. The goal of the course is to get students to become effective on-site team members after only 2 months of gruelling and intense training. 
+I was formerly a trainer at Sparta Global, where I trained cohorts of fresh-faces, most of whom have only a smidgen of programming experience, to become industry-standard developers and automation testers in C#, .NET, and a host of tools and frameworks. The goal of the course was to get students to become effective on-site team members after only 2 months of gruelling and intense training.
 
-I'm also a self-taught:
-- a Full Stack developer (currently my stack being Vue, raw PHP [with some Laravel historically], and MySQL)
-- a former English Foreign Language teacher of 6 years, living and working in Spain, Slovakia, the UK, Sweden and Japan
-- a fluent speaker of Japanese (having worked as a translator) and conversational Swedish speaker, and dabbler in many other various languages
+I'm also:
+- a self-taught Full Stack developer - currently my stack is Vue, raw PHP (with some Laravel historically), and using JSON as my data storage.
+- a former English Foreign Language teacher - for 6 years living and working in Spain, Slovakia, the UK, Sweden and Japan.
+- a fluent speaker of Japanese - having worked as a translator, I'm also a conversational Swedish speaker, and dabbler in many other various languages.
 
-Personally, I'm a happily married man to a lovely wife, a world traveller (places I've been in highlighted red on the globe there) and a massive Dungeons & Dragons geek, primarily in the role as forever-DM (so please let me know if you need a player!). This goes some-way in explaining most of the content of this site, I'm sure.
+Personally, I'm a happily married man to a lovely wife with a young son of 1 year, a world traveller (places I've been in highlighted red on the globe there) and a massive Dungeons & Dragons geek, primarily in the role as forever-DM (though currently I sink my time into my personal heartbreaker, [PEDD](/pedd)). This goes some-way in explaining most of the content of this site, I'm sure.
 
 As you can probably see in my picture, I'm also a corgi owner and dog-person.
 
