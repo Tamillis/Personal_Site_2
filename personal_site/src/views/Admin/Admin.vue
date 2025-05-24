@@ -40,7 +40,7 @@ const errMsg = ref("");
 checkAuth();
 
 async function checkAuth() {
-    const res = await fetch(`${AUTH_URL}?action=check`, { method: 'GET' });
+    const res = await fetch(`${AUTH_URL}/check`, { method: 'GET' });
     if(!res.ok) errMsg.value = res.status + " - " + res.statusText;
     const data = await res.json();
     console.log(data);
@@ -51,7 +51,7 @@ async function checkAuth() {
 
 async function login(e) {
     console.log("Logging in...")
-    let res = await fetch(AUTH_URL + "?action=login", {
+    let res = await fetch(AUTH_URL + "/login", {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -75,7 +75,7 @@ async function login(e) {
 async function logout(e) {
     console.log("Logging out " + username.value);
 
-    const res = await fetch(`${AUTH_URL}?action=logout`);
+    const res = await fetch(`${AUTH_URL}/logout`);
     if (res.ok) {
         checkAuth();
     }

@@ -7,7 +7,7 @@ class AuthController
     public function __construct()
     {
         try {
-            $auth = new SessionAuth();
+            $this->auth = new SessionAuth();
         } catch (Exception $ex) {
             API::respond(['error' => $ex->getMessage()], 500);
         }

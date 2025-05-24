@@ -5,7 +5,7 @@
 	<p v-if="props.chosenPowers.length < props.limit" style="color:orangered">Please choose {{ props.limit }} Racial Powers.</p>
 	<div class="cards">
 		<CardContainer
-			v-for="power in availableRacePowers"
+			v-for="power in props.racePowers"
 			:name="power.name"
 			:chosen="selectedPowers.includes(power.name)"
 			:class="{ highlight: selectedPowers.includes(power.name) }"
@@ -20,13 +20,11 @@
 import { ref } from "vue";
 import CardContainer from "./CardContainer.vue";
 import PowerContent from "./PowerContent.vue";
-import allPowers from '../../assets/pedd/pedd-powers.json';
 
-const props = defineProps(["chosenPowers", "racePowerNames", "limit"]);
+const props = defineProps(["chosenPowers", "racePowers", "limit"]);
 const emits = defineEmits(["chosen"]);
 
 const selectedPowers = ref(props.chosenPowers ? props.chosenPowers : []);
-const availableRacePowers = props.racePowerNames.map(powerName => allPowers.filter(p => p.name == powerName)[0]);
 
 function chosenPower(power) {
 	// remove power if already selected and then clicked on

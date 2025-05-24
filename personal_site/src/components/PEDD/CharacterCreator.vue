@@ -1,5 +1,5 @@
 <template>
-	<section>
+	<section v-if="ready">
 		<CharacterDisplay :player="player" :haveFaith="chosen.faith" @updateImgSrc="(src) => chosen.imgSrc = src" />
 
 		<h4>TODO:</h4>
@@ -40,7 +40,7 @@
 				@race-stats="stats => setAnyRaceStats(stats)" />
 
 			<div v-if="chosen.race">
-				<RacialPowers :chosenPowers="chosen.racialPowers" :racePowerNames="getRacialPowers()"
+				<RacialPowers :chosenPowers="chosen.racialPowers" :racePowers="getRacialPowers()"
 					:limit="((chosen.race == 'Half-Elf' || chosen.race == 'Tuskman') ? 3 : 2)"
 					@chosen="chooseRacialPowers" :key="`rp-${key}`" />
 			</div>
@@ -84,7 +84,7 @@
 			<SkillSelector :roleSkills="chosen.roleSkills" :otherSkills="otherSkills" :limit="4 + player.intelligence"
 				@skills="skills => (chosen.roleSkills = skills)" />
 
-			<RolePowers v-model:chosenPowers="chosen.rolePowers" :allChosenPowers="allChosenPowers" :player="player" />
+			<RolePowers v-model:chosenPowers="chosen.rolePowers" :allChosenPowers="allChosenPowers" :powers="powersJson" :player="player" />
 		</section>
 
 		<section id="equipment-section" v-show="sections.equipment">
@@ -98,10 +98,13 @@
 			<p>But you can go to <a href="/pedd/spells">Spells</a> to see them all for now</p>
 		</section>
 	</section>
+	<section v-else>
+		<p>Loading data...</p>
+	</section>
 </template>
 
 <script setup>
-import { useTemplateRef, onMounted, ref, computed } from "vue";
+import { useTemplateRef, ref, computed } from "vue";
 
 import PowerContent from "./PowerContent.vue";
 import RaceSelector from "./RaceSelector.vue";
@@ -117,11 +120,30 @@ import RolePowers from "./RolePowers.vue";
 import Background from "./Background.vue";
 
 //resources
-import powers from "../../assets/pedd/pedd-powers.json";
 import races from "../../assets/pedd/pedd-races.json";
 import backgrounds from "../../assets/pedd/pedd-backgrounds.json";
 import equipment from "../../assets/pedd/pedd-equipment-collections.json"
 import packs from "../../assets/pedd/pedd-packs.json"
+
+let powersJson = ref(null);
+
+let ready = computed(() => {
+	return powersJson.value != null;
+});
+
+fetchPowers();
+
+//fetch from api and drill down
+async function fetchPowers() {
+	let res = await fetch("/api/powers", { method: "get" });
+	if (res.ok) {
+		powersJson.value = await res.json();
+		console.log(`Successfully fetched ${powersJson.value.length} powers from /api/powers`);
+	}
+	else {
+		console.error(res, "Failed to fetch /api/powers");
+	}
+}
 
 //derived resources
 let stats = ["accuracy", "perception", "strength", "dexterity", "charisma", "intelligence"];
@@ -204,9 +226,9 @@ function setAnyRaceStats(stats) {
 }
 
 function getRacialPowers() {
-	let race = races.filter(r => r.name == chosen.value.race);
-	if (race.length == 0) return [];
-	return race[0].powers
+	let race = races.filter(r => r.name == chosen.value.race)[0];
+	let racePowers = race.powers.map(powerName => powersJson.value.filter(p => p.name == powerName)[0]);
+	return racePowers
 }
 
 function chooseRacialPowers(powers) {
@@ -220,7 +242,7 @@ function setBackground(bg) {
 	if (!bg) chosen.value.backgroundPower = false;
 }
 
-let backgroundPowers = computed(() => powers.filter(p => p.tag.includes("background")));
+let backgroundPowers = computed(() => powersJson.value.filter(p => p.tag.includes("background")));
 
 let chooseUpbringing = (upbringing) => {
 	chosen.value.upbringingSkill1 = upbringing.skill1;
@@ -324,8 +346,8 @@ let player = computed(() => {
 
 	p.equipmentCollection = chosen.value.equipmentCollection ? equipment.filter(e => e.name == chosen.value.equipmentCollection)[0].equipment.split(",") : [];
 
-	p.pack = chosen.value.pack && chosen.value.pack != "None" ? 
-		packs.filter(pk => pk.name == chosen.value.pack)[0].equipment.split(",") : 
+	p.pack = chosen.value.pack && chosen.value.pack != "None" ?
+		packs.filter(pk => pk.name == chosen.value.pack)[0].equipment.split(",") :
 		[];
 
 	p.armour = chosen.value.armour + chosen.value.shield + chosen.value.helmet;
