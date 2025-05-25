@@ -49,7 +49,7 @@ onMounted(() => {
     border-bottom: 2px solid var(--highlight);
 }
 
-#pedd p {
+#pedd p, #pedd li {
     line-height: 1.2rem;
     margin-bottom: 0.33rem;
 }
@@ -89,19 +89,5 @@ onMounted(() => {
 
 #pedd table {
     margin: 0.5rem auto;
-}
-
-.proficiencies-list ul {
-    margin-top: 0.5rem;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.proficiencies-list li {
-    list-style: none;
-    border-left: 2px groove var(--highlight);
-    border-right: 2px groove var(--highlight);
-    padding: 0px 1rem;
 }
 </style>

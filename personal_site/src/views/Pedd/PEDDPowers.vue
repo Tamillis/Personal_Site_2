@@ -42,4 +42,8 @@ function peddPowersEvents() {
 
 </script>
 
-<style></style>
+<style>
+.cards .btn {
+    display: none;
+}
+</style>

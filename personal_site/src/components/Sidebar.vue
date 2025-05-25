@@ -84,7 +84,7 @@ a:hover {
 }
 
 .shiftOut {
-    transform: translateY(-85%);
+    transform: translateY(-70%);
     background-color: var(--background-transparent);
     z-index: 5 !important;
 }

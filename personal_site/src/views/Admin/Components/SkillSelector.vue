@@ -96,14 +96,20 @@ function selectChoice(e) {
 </script>
 
 <style lang="css" scoped>
+select {
+    padding: 0.5rem;
+    width: 100%;
+}
+
 .flex-container {
     display:flex;
     flex-direction: column;
     gap: 1rem;
     align-items: start;
+    width: fit-content;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
     .flex-container {
         flex-direction: row;
         align-items: unset;

@@ -1,5 +1,5 @@
 <template>
-    <div class="section p-r">
+    <div class="p-r">
         <div class="flex justify-between">
             <h2 class="subtitle" style="margin-bottom: 0">PEDD Powers Editor</h2>
             <p>{{ serverMsg }}</p>
@@ -51,7 +51,7 @@
                     <p class="q-label">Stat Changes</p>
                     <div class="stats-container">
                         <div class="input-container sixth" v-for="stat in ['acc', 'per', 'str', 'dex', 'cha', 'int']">
-                            <label :for="`stat-change-${stat}`">{{ stat }}:</label>
+                            <label :for="`stat-change-${stat}`" class="capitalise">{{ stat }}.:</label>
                             <input type="number" :id="`stat-change-${stat}`" min="-3" max="5" step="1"
                                 class="q q-number" v-model="statChanges[stat]" />
                         </div>
@@ -62,7 +62,7 @@
                     <p class="q-label">Resistance Changes</p>
                     <div class="stats-container">
                         <div class="input-container sixth" v-for="stat in ['ref', 'fort', 'will']">
-                            <label :for="`res-change-${stat}`">{{ stat }}:</label>
+                            <label :for="`res-change-${stat}`" class="capitalise">{{ stat }}.:</label>
                             <input type="number" :id="`res-change-${stat}`" min="-6" max="10" step="1"
                                 class="q q-number" v-model="resistanceChanges[stat]" />
                         </div>
@@ -73,7 +73,7 @@
                     <p class="q-label">Secondary Stat Changes</p>
                     <div class="stats-container">
                         <div class="input-container sixth" v-for="stat in ['faith', 'speed', 'health', 'armour']">
-                            <label :for="`sec-stat-change-${stat}`">{{ stat }}:</label>
+                            <label :for="`sec-stat-change-${stat}`" class="capitalise">{{ stat }}:</label>
                             <input type="number" :id="`sec-stat-change-${stat}`" min="-6" max="10" step="1"
                                 class="q q-number" v-model="secondaryStatChanges[stat]" />
                         </div>
@@ -84,7 +84,7 @@
                     <p class="q-label">Stat Max</p>
                     <div class="stats-container">
                         <div class="input-container sixth" v-for="stat in ['acc', 'per', 'str', 'dex', 'cha', 'int']">
-                            <label :for="`max-stat-change-${stat}`">{{ stat }}:</label>
+                            <label :for="`max-stat-change-${stat}`" class="capitalise">{{ stat }}.:</label>
                             <input type="number" :id="`max-stat-change-${stat}`" min="5" max="10" step="1"
                                 class="q q-number" v-model="statMaxes[stat]" />
                         </div>
@@ -103,7 +103,7 @@
 
         <section class="bg-dark">
             <h2 class="subtitle">Powers:</h2>
-            <PowerCard v-for="power in powers" :power="power" class="border-bottom"
+            <PowerCard v-for="power in powers" :power="power" class="border-bottom pb-1r"
                 @edit-power="setFormToEdit(power)" />
         </section>
     </div>
@@ -281,10 +281,19 @@ async function postPower() {
     width: calc(16.5% - 1rem);
 }
 
-@media only screen and (min-width: 500px) {
+.capitalise {
+    text-transform: capitalize;
+}
+
+@media only screen and (min-width: 600px) {
     .input-container {
         flex-direction: row;
-        gap: 1rem;
+    }
+
+    .stats-container {
+        width: unset;
+        flex-wrap: wrap;
+        gap: 0;
     }
 
     .q-label {
@@ -293,8 +302,19 @@ async function postPower() {
         padding-right: 2px;
     }
 
+    .q-number {
+        margin-left: 0.5rem;
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .capitalise {
+        width: 4em;
+        text-align: right;
+    }
+
     .sixth {
-        width: unset;
+        width: 6em;
     }
 }
 </style>

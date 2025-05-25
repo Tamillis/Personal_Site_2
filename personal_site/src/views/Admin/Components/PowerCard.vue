@@ -1,10 +1,10 @@
 <template>
     <div>
         <div class="power-top-bar">
-            <h2 class="power-name order-1">{{ power.name }}</h2>
-            <div class="flex-grow" v-if="!hidden"></div>
-            <button class="btn mt-gap mr-gap order-3" @click="hidden = !hidden">{{hidden ? "Show" : "Hide"}}</button>
-            <button class="btn mt-gap mr-gap order-3" @click="$emit('editPower', power)">Edit</button>
+            <h2 class="power-name order-1" :class="{underline: !hidden}">{{ power.name }}</h2>
+            <div class="flex-grow order-1"></div>
+            <button class="btn ml-gap order-3" @click="hidden = !hidden">{{hidden ? "Show" : "Hide"}}</button>
+            <button class="btn ml-gap order-3" @click="$emit('editPower', power)">Edit</button>
             <div class="power-summary" v-if="hidden">
                 <p class="text-sm m0" style="margin-top:2px">{{ power.tag.join(", ") }}</p>
                 <p class="text-sm m0">{{ power.preq.join(", ") }}</p>
@@ -76,11 +76,14 @@ function getAdminDisplay(power) {
 <style lang="css" scoped>
 h2 {
     font-size: 1.5em;
+    max-width: 50%;
 }
 
 .power-top-bar {
     display: flex;
     flex-wrap: wrap;
+    margin-top: var(--gap);
+    align-items: baseline;
 }
 .power-name {
     min-width: 9em;
@@ -99,7 +102,7 @@ h2 {
         order: 3;
     }
 
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 600px){
 .power-top-bar {
     flex-wrap: none;
 }
