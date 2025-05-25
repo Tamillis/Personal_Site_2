@@ -40,15 +40,19 @@ const route = useRoute();
 </script>
 
 <style lang="css" scoped>
-ul {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
 
-ul li {
-    width: fit-content;
-    padding-right: 1rem;
+@media only screen and (min-width: 500px) {
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
 }
+    
+    ul li {
+        width: fit-content;
+        padding-right: 1rem;
+    }
 
 </style>

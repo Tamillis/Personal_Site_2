@@ -74,6 +74,10 @@
   margin-bottom: 0;
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
+
 .m-gap {
   margin: var(--gap);
 }
@@ -346,7 +350,6 @@
 @media only screen and (max-width: 599px) {
   .section {
     width: 100%;
-    height: 100%;
     padding-top: 1rem;
     border: var(--highlight) 2px groove;
     border-top: none;

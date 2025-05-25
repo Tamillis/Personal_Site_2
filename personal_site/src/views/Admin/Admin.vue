@@ -1,5 +1,7 @@
 <template>
     <section class="section bg-black-transparent-0p3">
+        <h1 class="main-title">P.E.D.D. <small style="font-size:75%"> - Admin</small></h1>
+        
         <Links class="mb-gap" />
 
         <form id="login-form" @submit.prevent="login" :class="{hidden: !showLogin}">

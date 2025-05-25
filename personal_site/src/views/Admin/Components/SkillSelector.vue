@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="flex gap">
+        <div class="flex-container">
             <select v-model="rank">
                 <option>Proficiency</option>
                 <option>Expertise</option>
@@ -19,7 +19,7 @@
             <button type="button" class="btn" @click="addSkill"
                 v-if="choice == 'Single' || choices.length > 1">Add</button>
         </div>
-        <div class="flex gap">
+        <div class="flex-container">
             <p id="skills-display" class="w-fit" v-if="chosenSkills.length > 0">
                 {{chosenSkills.map(s => Array.isArray(s) ? "[" + s.map(datum => datum.skill).join(", ") + "]" : s.skill).join(", ")}}
             </p>
@@ -96,5 +96,17 @@ function selectChoice(e) {
 </script>
 
 <style lang="css" scoped>
+.flex-container {
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: start;
+}
 
+@media only screen and (min-width: 500px) {
+    .flex-container {
+        flex-direction: row;
+        align-items: unset;
+    }
+}
 </style>

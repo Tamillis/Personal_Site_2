@@ -1,16 +1,16 @@
 <template>
     <div>
-        <div class="flex gap">
-            <h2 class="power-name">{{ power.name }}</h2>
-            <div v-if="hidden">
+        <div class="power-top-bar">
+            <h2 class="power-name order-1">{{ power.name }}</h2>
+            <div class="flex-grow" v-if="!hidden"></div>
+            <button class="btn mt-gap mr-gap order-3" @click="hidden = !hidden">{{hidden ? "Show" : "Hide"}}</button>
+            <button class="btn mt-gap mr-gap order-3" @click="$emit('editPower', power)">Edit</button>
+            <div class="power-summary" v-if="hidden">
                 <p class="text-sm m0" style="margin-top:2px">{{ power.tag.join(", ") }}</p>
                 <p class="text-sm m0">{{ power.preq.join(", ") }}</p>
             </div>
-            <div class="flex-grow"></div>
-            <button class="btn mt-gap mr-gap" @click="hidden = !hidden">{{hidden ? "Show" : "Hide"}}</button>
-            <button class="btn mt-gap mr-gap" @click="$emit('editPower', power)">Edit</button>
         </div>
-        <section v-if="!hidden">
+        <section class="power-body" v-if="!hidden">
             <div class="flex gap">
                 <h3>Tags:</h3>
                 <p>{{ power.tag.join(", ") }}</p>
@@ -74,7 +74,43 @@ function getAdminDisplay(power) {
 </script>
 
 <style lang="css" scoped>
+h2 {
+    font-size: 1.5em;
+}
+
+.power-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+}
 .power-name {
     min-width: 9em;
+}
+
+    .power-summary {
+        order: 4;
+        flex-grow: unset;
+    }
+
+    .order-1 {
+        order: 1;
+    }
+
+    .order-3 {
+        order: 3;
+    }
+
+@media only screen and (min-width: 500px){
+.power-top-bar {
+    flex-wrap: none;
+}
+    .power-name {
+        width: 5em;
+    }
+
+    .power-summary {
+        width: 30%;
+        order: 2;
+        flex-grow: 2;
+    }
 }
 </style>

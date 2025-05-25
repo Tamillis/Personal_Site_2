@@ -9,9 +9,11 @@ let showFrameRate = false;
 
 onMounted(() => {
   window.addEventListener("mousedown", (e) => {
-      if(e.clientX < 25 && e.clientY < 25) showFrameRate = !showFrameRate;
+    if (e.clientX < 25 && e.clientY < 25) showFrameRate = !showFrameRate;
   });
-  new p5(sketch, "background-canvas")
+
+  //if screen is too small, assume mobile and don't load the sketch
+  if (!detectMob()) new p5(sketch, "background-canvas")
 });
 
 const sketch = s => {
@@ -28,8 +30,8 @@ const sketch = s => {
   s.draw = function () {
     s.background(s.color("#2a312d"));
     storm.draw(s);
-    if(count++ % 6 == 0) fps = Math.floor(s.frameRate());
-    if(showFrameRate) {
+    if (count++ % 6 == 0) fps = Math.floor(s.frameRate());
+    if (showFrameRate) {
       s.push();
       s.fill("white");
       s.noStroke();
@@ -42,6 +44,22 @@ const sketch = s => {
     s.resizeCanvas(s.windowWidth, s.windowHeight);
   }
 };
+
+function detectMob() {
+  const toMatch = [
+    /Android/i,
+    /webOS/i,
+    /iPhone/i,
+    /iPad/i,
+    /iPod/i,
+    /BlackBerry/i,
+    /Windows Phone/i
+  ];
+
+  return toMatch.some((toMatchItem) => {
+    return navigator.userAgent.match(toMatchItem);
+  });
+}
 </script>
 
 <template>
