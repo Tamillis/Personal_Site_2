@@ -20,7 +20,7 @@
 
 <script setup>
 import { ref } from "vue";
-import skillsData from "../../assets/pedd/pedd-skills.json";
+import skillsData from "../../../assets/pedd/pedd-skills.json";
 
 let upbringingSkills = ref(skillsData.basicSkills.concat(skillsData.knowledgeSkills));
 upbringingSkills.value.sort((s1, s2) => s1.skill.localeCompare(s2.skill));

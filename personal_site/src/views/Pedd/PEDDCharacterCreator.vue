@@ -11,8 +11,8 @@
 </template>
   
 <script setup>
-import Links from '../../components/PEDD/Links.vue';
-import CharacterCreator from '../../components/PEDD/CharacterCreator.vue';
+import Links from './components/PEDD/Links.vue';
+import CharacterCreator from './components/PEDD/CharacterCreator.vue';
 
 </script>
   

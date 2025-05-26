@@ -15,7 +15,7 @@
 import { ref, computed } from 'vue';
 import CardContainer from './CardContainer.vue';
 import RaceContent from './RaceContent.vue';
-import races from '../../assets/pedd/pedd-races.json';
+import races from '../../../assets/pedd/pedd-races.json';
 
 const emits = defineEmits(["race", "raceStats"]);
 const props = defineProps(["chosenRace", "chosenAnyStats"])

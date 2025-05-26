@@ -15,7 +15,7 @@
 <script setup>
 import { putMdinElement } from '../../assets/functionality';
 import { onMounted } from 'vue';
-import Links from '../../components/PEDD/Links.vue';
+import Links from './Components/Links.vue';
 
 const props = defineProps(['md', 'subtitle']);
 

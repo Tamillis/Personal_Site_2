@@ -60,7 +60,7 @@
 import { computed, ref } from 'vue'
 import { marked } from 'marked';
 import StatDisplay from './StatDisplay.vue';
-import powers from '../../assets/pedd/pedd-powers.json';
+import powers from '../../../assets/pedd/pedd-powers.json';
 import CharacterPortrait from './CharacterPortrait.vue';
 
 const props = defineProps(['player', 'haveFaith']);

@@ -38,7 +38,7 @@
 
 <script setup>
 import { marked } from "marked";
-import { format } from "../../assets/functionality";
+import { format } from "../../../assets/functionality";
 import { ref } from "vue";
 import AnyStatSelector from "./AnyStatSelector.vue";
 

@@ -13,7 +13,7 @@
 import { computed } from 'vue';
 import CardContainer from './CardContainer.vue';
 import BackgroundContent from './BackgroundContent.vue';
-import backgrounds from '../../assets/pedd/pedd-backgrounds.json'
+import backgrounds from '../../../assets/pedd/pedd-backgrounds.json'
 
 const props = defineProps(['background']);
 const emits = defineEmits(['backgroundChosen'])

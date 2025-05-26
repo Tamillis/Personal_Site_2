@@ -15,7 +15,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import skillsData from "../../assets/pedd/pedd-skills.json";
+import skillsData from "../../../assets/pedd/pedd-skills.json";
 
 const props = defineProps(["roleSkills", "otherSkills", "limit"]);
 const emits = defineEmits(["skills"]);

@@ -119,7 +119,7 @@
 
 <script setup>
 import { ref, computed } from 'vue';
-import { capitalize } from '../../assets/functionality';
+import { capitalize } from '../../../assets/functionality';
 
 const props = defineProps(["player", "haveFaith"]);
 

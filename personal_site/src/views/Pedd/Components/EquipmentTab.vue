@@ -55,8 +55,8 @@
 
 <script setup>
 import { ref } from 'vue';
-import equipmentCollections from '../../assets/pedd/pedd-equipment-collections.json';
-import packs from '../../assets/pedd/pedd-packs.json';
+import equipmentCollections from '../../../assets/pedd/pedd-equipment-collections.json';
+import packs from '../../../assets/pedd/pedd-packs.json';
 
 const emit = defineEmits(["refLimit"]);
 

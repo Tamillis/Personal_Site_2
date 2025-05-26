@@ -120,10 +120,10 @@ import RolePowers from "./RolePowers.vue";
 import Background from "./Background.vue";
 
 //resources
-import races from "../../assets/pedd/pedd-races.json";
-import backgrounds from "../../assets/pedd/pedd-backgrounds.json";
-import equipment from "../../assets/pedd/pedd-equipment-collections.json"
-import packs from "../../assets/pedd/pedd-packs.json"
+import races from "../../../assets/pedd/pedd-races.json";
+import backgrounds from "../../../assets/pedd/pedd-backgrounds.json";
+import equipment from "../../../assets/pedd/pedd-equipment-collections.json"
+import packs from "../../../assets/pedd/pedd-packs.json"
 
 let powersJson = ref(null);
 
