@@ -1,8 +1,8 @@
 <template>
-  <section id="terminal-section" class="section no-border no-bg">
+  <section id="terminal-section" class="section no-border no-bg" style="min-height:80vh">
     <div id="terminal-canvas"></div>
   </section>
-
+  
   <Marquee />
 </template>
 
