@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-import PowersList from '../../components/PEDD/PowersList.vue';
+import PowersList from './Components/PowersList.vue';
 import PeddPage from './PeddPage.vue';
 
 import { ref, onMounted, onUnmounted } from 'vue';

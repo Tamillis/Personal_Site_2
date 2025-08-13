@@ -342,6 +342,8 @@
   overflow: auto;
   transition: .5s;
   min-height: 100vh;
+  background-color: var(--backgroundDark);
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -415,8 +417,6 @@
   margin-top: var(--gap);
   padding: .5em 0;
   text-indent: var(--textindent);
-  background-color: var(--backgroundDark);
-  box-shadow: var(--gap) var(--gap) var(--gap) calc(1.5*var(--gap)) var(--backgroundDark);
   text-rendering: optimizeLegibility;
 }
 

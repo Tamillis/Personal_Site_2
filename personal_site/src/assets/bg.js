@@ -1,4 +1,19 @@
 const bg = (() => {
+  // constants
+  const THRESHOLD = 4;
+  const BALL_COUNT = 100;
+  const RADIUS = 15;
+  const SPEED_MIN = 0.01;
+  const SPEED_MAX = 0.15;
+  const DRAG_COEFF = 0.05;
+  const GRAV_COEFF = 20;
+  const GRAV_RANGE = 200;
+  const BALLS_COLLIDE = true;
+  const WRAP = false;
+  const DRAW_QUADTREE = false;
+  const DRAW_BALLS = true;
+  const DRAW_BG = true;
+
   // modules/quadtree.js
   var Point = class {
     constructor(x, y, r = 1) {
@@ -227,20 +242,11 @@ const bg = (() => {
 
   // main.js
   var canvas;
-  var THRESHOLD = 4;
-  var BALL_COUNT = 250;
-  var RADIUS = 7;
-  var SPEED_MIN = 0.5;
-  var SPEED_MAX = 1;
-  var DRAG_COEFF = 0.025;
-  var GRAV_COEFF = 10;
-  var GRAV_RANGE = 100;
-  var BALLS_COLLIDE = true;
-  var WRAP = true;
   var rand = (max, min = 0) => Math.random() * (max - min) + min;
   var priorTimestamp = 0;
   var fps = (ms) => Math.floor(1e3 / ms);
   var points = [];
+
   var mouse = new Billiard(0, 0, 1);
   mouse.range = GRAV_RANGE;
   mouse.isMouse = true;
@@ -265,6 +271,8 @@ const bg = (() => {
   }
   function frame(timestamp) {
     let dt = timestamp - priorTimestamp;
+    if(DRAW_BG) canvas.clear();
+
     canvas.colour("#2a312d");
     canvas.rect(canvas.w - 30, 0, 30, 30);
     canvas.colour("white");
@@ -274,8 +282,8 @@ const bg = (() => {
     canvas.rect(0, 0, canvas.w, canvas.h);
     let quadTree = makeQuadTree(points);
     movePoints(points, quadTree);
-    drawPoints(points);
-    drawQuadTree(quadTree);
+    if(DRAW_BALLS) drawPoints(points);
+    if(DRAW_QUADTREE) drawQuadTree(quadTree);
     canvas.render();
     priorTimestamp = timestamp;
     window.requestAnimationFrame(frame);

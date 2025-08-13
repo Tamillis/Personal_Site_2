@@ -1,6 +1,20 @@
 # Personal_Site_2
 Version 2 of the ol' personal portfolio site at [bellaby.co.uk](https://bellaby.co.uk)
 
+##  Setup
+
+Install `npm`
+
+`cd ./personal_site` to be in the correct directory for the project.
+
+Install the packages for the project: `npm install`
+
+To run the website locally:
+
+Run the php files in `/api` locally. I use the `php server` extension in vs code. The vite setup and .htaccess file within api handles routing automatically.
+
+Run vite with `npm run dev`
+
 ## Version 2 Raison D'être
 The old site was a mish-mash of html, php and even a cute demonstration of react, vue and database work.
 
