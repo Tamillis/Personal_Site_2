@@ -1,31 +1,10 @@
 <template>
     <section class="section bg-black-transparent-0p3">
-        <h1 class="main-title">Programming</h1>
-        <h2 class="subtitle">My programming adventure</h2>
+        <h1 class="main-title">p5 Sketches</h1>
+        <h2 class="subsubtitle text-centre no-decoration">My programming adventure</h2>
         <div class="main-text">
             <p>
-                Over the years I've dabbled in various programming languages and environments. For me it started back in
-                sixth-form when I was 16 where I took my first Computing class that used BASIC as its language of
-                instruction and I was welcomed into the wonderful world of computer programming. Within I learned first to
-                make my form fullscreen and flash random colours. It’s been my way of saying Hello World ever since.
-            </p>
-            <p>
-                These days my language of professional capability is C#, where I would train others from near-zero up to
-                business level in ASP.NET with
-                Entity Framework. In addition to C#, I have managed to drag myself to a level of familiarity with JavaScript
-                (including React, but primarily with Vue which this site
-                is built in), as well as PHP (including with Laravel), Python, Java, C++ and many, many related tools and
-                frameworks.
-                As for my level of HTML and CSS ability, judge that for yourself by this very site!
-            </p>
-            <p>
-                Below you will find iframes of some sketches written in the handy library of P5JS, as they're easy to demo
-                and its the library I really learned JavaScript with, and relearned programming, in after coming back to it
-                during my long hiatus as a teacher. I’m afraid my old PyGame ventures in python2
-                from 16 year old me are lost to the void. Thankfully, haha.</p>
-            <p>
-                I am also working on producing a portfolio of professional level demonstrations with my C# abilities, see <a
-                    href="/portfolio">/portfolio</a> for that :) Anyway, enjoy the sketches!
+
             </p>
         </div>
 
@@ -48,7 +27,8 @@
 
         <h2 class="subtitle">Boids</h2>
         <p class="main-text">Following along with Daniel Schiffman's videos I decided to implement the flocking
-            algorithm, setting this up. It also makes use of DOM elements generated from inside the script that dynamically
+            algorithm, setting this up. It also makes use of DOM elements generated from inside the script that
+            dynamically
             effect
             the simulation. Also they flee the mouse, which I thought was cute.</p>
         <button type="button" class="btn centre" id="boids-btn"
@@ -90,9 +70,11 @@
         <div class="wrap" id="no-overlap"></div>
 
         <h2 class="subtitle">Growth by random particles</h2>
-        <p class="main-text">This sketch was an idle moment where I wanted to explore an algorithm idea I had, to see what
+        <p class="main-text">This sketch was an idle moment where I wanted to explore an algorithm idea I had, to see
+            what
             structures it would organically form.
-            It starts with a single fixed particle at the bottom of the screen, and any particle that touches it "sticks",
+            It starts with a single fixed particle at the bottom of the screen, and any particle that touches it
+            "sticks",
             itself becoming collidable. These interesting branches form quite naturally.
         </p>
         <button type="button" class="btn centre" id="random-growth-btn"

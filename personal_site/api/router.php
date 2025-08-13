@@ -27,8 +27,6 @@ header('Content-Type: application/json');
 // do routing
 if (is_null($controller)) generalErrorResponse($path, $controller, $action, $param, $queries);
 
-
-
 switch ($controller) {
     case 'powers':
         log_msg("Serving powers.");

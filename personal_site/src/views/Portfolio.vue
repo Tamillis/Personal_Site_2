@@ -1,6 +1,7 @@
 <template>
     <section class="section bg-black-transparent-0p3">
         <h1 class="main-title">Portfolio</h1>
+        <h2 class="subsubtitle text-centre no-decoration">of Software Development</h2>
 
         <div class="main-text inset">
             <div id="portfolio"></div>

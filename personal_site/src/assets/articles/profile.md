@@ -1,17 +1,18 @@
 ## Introduction
 
-*[9<sup>th</sup> May 2025]*
+*[13<sup>th</sup> August 2025]*
 
 Hi, my name is Peter Bellaby, as you might have already seen on the landing page's faux-terminal. 
 
-I'm the C# ASP.NET Web Developer & Technical Director here at Downey Designs bespoke jewellery makers.
+I'm an Internal App C# dev for (https://plumbworld.co.uk)
 
-I was formerly a trainer at Sparta Global, where I trained cohorts of fresh-faces, most of whom have only a smidgen of programming experience, to become industry-standard developers and automation testers in C#, .NET, and a host of tools and frameworks. The goal of the course was to get students to become effective on-site team members after only 2 months of gruelling and intense training.
+I was the C# ASP.NET Web Developer & Technical Director of Downey Designs bespoke jewellery makers in the Jewellery Quarter in Birmingham.
 
-I'm also:
-- a self-taught Full Stack developer - currently my stack is Vue, raw PHP (with some Laravel historically), and using JSON as my data storage.
-- a former English Foreign Language teacher - for 6 years living and working in Spain, Slovakia, the UK, Sweden and Japan.
-- a fluent speaker of Japanese - having worked as a translator, I'm also a conversational Swedish speaker, and dabbler in many other various languages.
+Before then, I was formerly a trainer at Sparta Global, where I trained cohorts of fresh-faces, most of whom have only a smidgen of programming experience, to become industry-standard developers and automation testers in C#, .NET, and a host of tools and frameworks. The goal of the course was to get students to become effective on-site team members after only 2 months of gruelling and intense training.
+
+This personal site is proof of my full stack development capability - a Vue front end, Markdown content, with a raw PHP api backend using JSON as my data storage. The first iteration of this site was the culmination of my self-study (I was fully self-taught).
+
+In my live I've also been an English Foreign Language teacher - for 6 years living and working in Spain, Slovakia, the UK, Sweden and Japan. I am a fluent speaker of Japanese - having worked as a translator. I'm also a conversational Swedish speaker, and dabbler in many other various languages.
 
 Personally, I'm a happily married man to a lovely wife with a young son of 1 year, a world traveller (places I've been in highlighted red on the globe there) and a massive Dungeons & Dragons geek, primarily in the role as forever-DM (though currently I sink my time into my personal heartbreaker, [PEDD](/pedd)). This goes some-way in explaining most of the content of this site, I'm sure.
 
@@ -58,8 +59,17 @@ _**Languages**_: Another passion of mine, I speak Japanese fluently, Swedish con
 ***
 
 ## Work/Travel History
+### ***Internal App Developer at Plumbworld, UK***
+*Dates:* July 2025 to present
+
+*Company*: Plumbworld (formerly Online Home Retailers)
+
+*Job Title:* Internal App Developer
+
+*Details of position:* I'm a C# ASP.NET developer for the company's internal tooling. IT support for the wider company and database management are also crucial aspects of the role. I'm responsible for the maintenance of Agile processes, devleopment of new features, bugfixes and refactoring of older code, maintenance and querying of the SQL databases, and general IT requirements.
+
 ### ***Web Developer at Downey Designs, UK***
-*Dates:* August 2023 to present
+*Dates:* August 2023 to July 2025
 
 *Company*: Downey Designs
 

@@ -8,10 +8,10 @@
                 <RouterLink to="/about">About</RouterLink>
             </li>
             <li class="nav-item">
-                <RouterLink to="/portfolio">Portfolio</RouterLink>
+                <RouterLink to="/portfolio">Dev Portfolio</RouterLink>
             </li>
             <li class="nav-item">
-                <RouterLink to="/programming">Programming</RouterLink>
+                <RouterLink to="/programming">P5 Sketches</RouterLink>
             </li>
             <!--  <li class="nav-item">
                 <RouterLink to="/dnd">D&D</RouterLink>

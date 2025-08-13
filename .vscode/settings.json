@@ -1,0 +1,3 @@
+{
+    "phpserver.router": "./personal_site/api/router.php"
+}

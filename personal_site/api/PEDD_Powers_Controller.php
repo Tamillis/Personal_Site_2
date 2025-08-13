@@ -12,7 +12,7 @@ class PowersController
             API::respond(['error' => $ex->getMessage()], 500);
         }
 
-        $this->powersFilePath = $_SERVER["DOCUMENT_ROOT"] . '/src/assets/pedd/pedd-powers.json';
+        $this->powersFilePath = realpath(__DIR__ . '/../src/assets/pedd/pedd-powers.json');
     }
 
     public function index($name = null)
@@ -95,7 +95,7 @@ class PowersController
     {
         // Checking if the file exists, get the full content
         if (!file_exists($this->powersFilePath) || !is_readable($this->powersFilePath)) {
-            API::respond(['error' => "Unable to find or read JSON file at $this->powersFilePath."], 500);
+            API::respond(['error' => "Unable to find or read JSON file at $this->powersFilePath"], 500);
         }
 
         $json = json_decode(file_get_contents($this->powersFilePath), true);
