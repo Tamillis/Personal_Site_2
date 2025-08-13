@@ -27,8 +27,6 @@ import WikiRoutes from '../components/WikiRoutes.vue'
 
 import routes from '../assets/wikiroutes.json'
 
-console.log(typeof routes, routes)
-
 const basepath = 'src/assets/'
 let file = ref(basepath + 'wikiRoot.md')
 

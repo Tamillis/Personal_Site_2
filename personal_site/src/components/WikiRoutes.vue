@@ -11,7 +11,6 @@
 <script setup>
 
 const props = defineProps(["routes"])
-console.log(props.routes)
 
 let configuredPath = props.routes.path.replace("./src/assets/wiki", "mewiki").replace(".md", "")
 

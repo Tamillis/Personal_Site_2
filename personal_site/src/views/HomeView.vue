@@ -163,6 +163,7 @@ const terminalSketch = t => {
 
   t.getDims = function () {
     let container = document.getElementById("terminal-canvas");
+    if(container == null) return [800,300];
     let w = t.min(container.offsetWidth * 0.8, 800);
     let h = t.max(container.offsetHeight * 0.3, 300);
     return [w, h];

@@ -1,33 +1,46 @@
 <template>
     <h2>Powers List</h2>
-    <PowerFilter
-        :tags="tags"
-        :openedPowers="openedPowers"
-        v-model:filter="filter"
-        v-model:roleTag="roleTag"
-        v-model:powerSearch="powerSearch"
-        v-model:preqStats="preqStats"
-        v-model:preqResistances="preqResistances"
-    />
+    <div v-if="powersJson != null">
+        <PowerFilter :tags="tags" :openedPowers="openedPowers" v-model:filter="filter" v-model:roleTag="roleTag"
+            v-model:powerSearch="powerSearch" v-model:preqStats="preqStats" v-model:preqResistances="preqResistances" />
 
-    <p>{{ rolePowers.length + " / " + powers.length }}</p>
-    <div class="cards">
-        <CardContainer v-for="(power, i) in rolePowers" :name="power.name" :expanded="openedPowers.includes(power.name)"
-            @chosen="togglePowerOpened(power)" :key="`rlpc-${i}-power`">
-            <PowerContent :power="power" @highlight="(tag) => highlight(tag)" />
-        </CardContainer>
-        <p v-if="rolePowers.length == 0">No Powers match :-(</p>
+        <p>{{ rolePowers.length + " / " + powersJson.length }}</p>
+        <div class="cards">
+            <CardContainer v-for="(power, i) in rolePowers" :name="power.name"
+                :expanded="openedPowers.includes(power.name)" @chosen="togglePowerOpened(power)"
+                :key="`rlpc-${i}-power`">
+                <PowerContent :power="power" @highlight="(tag) => highlight(tag)" />
+            </CardContainer>
+            <p v-if="rolePowers.length == 0">No Powers match :-(</p>
+        </div>
     </div>
 </template>
 
 <script setup>
-import powers from '/src/assets/pedd/pedd-powers.json';
 import PowerContent from './PowerContent.vue';
 import PowerFilter from './PowerFilter.vue';
 import CardContainer from './CardContainer.vue';
 import { ref, computed } from 'vue';
 
-let tags = ["All"].concat(Array.from(new Set(powers.map(p => p.tag).flat())).sort()); //don't you just love javascript?
+let tags = [];
+let allPowers = [];
+let powersJson = ref(null);
+
+fetchPowers();
+
+//fetch from api and drill down
+async function fetchPowers() {
+    let res = await fetch("/api/powers", { method: "get" });
+    if (res.ok) {
+        powersJson.value = await res.json();
+        console.log(`Successfully fetched ${powersJson.value.length} powers from /api/powers`);
+        tags = ["All"].concat(Array.from(new Set(powersJson.value.map(p => p.tag).flat())).sort()); //don't you just love javascript?
+        allPowers = powersJson.value.map(p => p.name);
+    }
+    else {
+        console.error(res, "Failed to fetch /api/powers");
+    }
+}
 
 const filter = ref({
     useTags: false,
@@ -51,10 +64,9 @@ const preqResistances = ref({
 });
 
 const openedPowers = ref([]);
-let allPowers = powers.map(p => p.name);
 
 const rolePowers = computed(() => {
-    let list = [...powers];
+    let list = [...powersJson.value];
     if (filter.value.useTags) list = list.filter(p => roleTag.value == "All" || p.tag.includes(roleTag.value));
     if (filter.value.usePreqs) list = list.filter(filterByPreq);
     if (filter.value.useTerms) list = list.filter(filterByTerm);
@@ -72,22 +84,22 @@ function filterByPreq(power) {
     //check each prerequisite - i.e. rule
     //if any rule fails, return false, otherwise keep checking. If you reach the end, return true as this should be kept
     for (let p of power.preq) {
-        
+
         //filter by After N powers
         if (p.startsWith("After") && openedPowers.value.length < Number(p[6])) return false;
-        
+
         //filter by stat
         // The OR rule can be hacked because only one Power uses it currently 
         // and ceebs to properly set up the recursive approach needed to parse and solve a chain of OR rules for a true general solution
         if (p == "One of Accuracy +3 OR Dexterity +3" && preqStats.value.acc < 3 && preqStats.value.dex < 3) return false;
-        
+
         for (let stat of Object.keys(preqStats.value)) {
             if (p.toLowerCase().startsWith(stat)) {
                 let val = Number(p.slice(-2))
                 if (preqStats.value[stat] < val) return false;
             }
         }
-        
+
 
         //filter by resistance
         for (let res of Object.keys(preqResistances.value)) {
