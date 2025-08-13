@@ -93,7 +93,7 @@
 import { onMounted, ref, computed } from 'vue';
 import spellsData from '../../assets/pedd/pedd-spells.json';
 import PeddPage from './PeddPage.vue';
-import CardContainer from '../../components/PEDD/CardContainer.vue';
+import CardContainer from './components/CardContainer.vue';
 import { marked } from 'marked';
 
 onMounted(() => {
