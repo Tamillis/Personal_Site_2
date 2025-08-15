@@ -1,6 +1,6 @@
 <template>
     <section class="section bg-black-transparent-0p3">
-        <h1 class="main-title">P.E.D.D. <small style="font-size:75%" v-if="subtitle"> - {{ subtitle }}</small></h1>
+        <h1 class="main-title">Trinitas <small style="font-size:75%" v-if="subtitle"> - {{ subtitle }}</small></h1>
 
         <Links />
 

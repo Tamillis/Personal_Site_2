@@ -1,17 +1,23 @@
-## Pete's Edition of Dungeons and Dragons
+## Trinitas
+
+### Pete's Edition of Dungeons and Dragons
 
 > This work includes material from the System Reference Document 5.2.1 (“SRD 5.2.1”) by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/ legalcode.
 
-### My 5e Overhaul
-~"One D&D"~, sorry ~"5.5"~ now, oh no wait its D&D 5e (2024), which I think is impresively an even worse name, ~is coming~ has come. Let me start that again. 
+### ~My 5e Overhaul~
+~"One D&D", sorry "5.5" now, oh no wait its D&D 5e (2024), which I think is impresively an even worse name, has come. Let me start that again.~
 
-Wizards of the Coast and Hasbro really put their PR foot in it with the OGL licensing changes (that they have also back-pedalled on so, yay for backlash I suppose. I mean, I'm using the CC-BY so who am I to complain?) and we were all ready to jump ship. I, however, found myself remaking the ship, taking what I thought worked well, and changing, exchanging and adding in what I would like the game to have. 
+~Wizards of the Coast and Hasbro really put their PR foot in it with the OGL licensing changes (that they have also back-pedalled on so, yay for backlash I suppose. I mean, I'm using the CC-BY so who am I to complain?) and we were all ready to jump ship. I, however, found myself remaking the ship, taking what I thought worked well, and changing, exchanging and adding in what I would like the game to have.~
 
-Eventually I found myself having slipped well down the slippery slope of the heartbreaker (I mean what is this but a "fix" for what I find "broken" about D&D, literally about D&D), and that my "5.75e" had become its own system entirely. An evolution with many of the same hallmarks and perhaps even a few vestigal pieces, of the 5e that birthed it. Such is tinkering, I suppose. Originally I'd asked myself, if I were to make a 6th edition of a fashion that suited my tastes and that allowed me to explore, reformulate and refine areas of mechanics in which I personally have an interest, while keeping as keeping as much as I could the same (oh how I failed on that front), this would be that. A "Pete's Edition of Dungeons & Dragons", you might say.
+~Eventually I found myself having slipped well down the slippery slope of the heartbreaker (I mean what is this but a "fix" for what I find "broken" about D&D, literally about D&D), and that my "5.75e" had become its own system entirely. An evolution with many of the same hallmarks and perhaps even a few vestigal pieces, of the 5e that birthed it. Such is tinkering, I suppose. Originally I'd asked myself, if I were to make a 6th edition of a fashion that suited my tastes and that allowed me to explore, reformulate and refine areas of mechanics in which I personally have an interest, while keeping as keeping as much as I could the same (oh how I failed on that front), this would be that. A "Pete's Edition of Dungeons & Dragons", you might say.~
 
-Frankly, by now, this is not an updated edition of D&D 5e, but a total overhaul or, in other words, just my own heroic fantasy roleplaying system with familiar spells and features lifted from 5e. But hey, here we are. Seeing as I keep getting more and more serious about this little side project, I've started (and please don't sue me on this front, I really have only just started) implementing the legal-use of the 5e SRD. That means that there are probably chunks of D&D 5e that I've lifted that are not strictly part of the SRD and so need to be re-imagined in order to be compliant. I'm getting there.
+~Frankly, by now, this is not an updated edition of D&D 5e, but a total overhaul or, in other words, just my own heroic fantasy roleplaying system with familiar spells and features lifted from 5e. But hey, here we are. Seeing as I keep getting more and more serious about this little side project, I've started (and please don't sue me on this front, I really have only just started) implementing the legal-use of the 5e SRD. That means that there are probably chunks of D&D 5e that I've lifted that are not strictly part of the SRD and so need to be re-imagined in order to be compliant. I'm getting there.~
 
-In addition to mechanics and gameplay that I personally find interesting, a lot of the changes I've made are minor tweaks I've done over the years for new player friendliness. Many times now, I've found myself the DM for a group of newbies who I've coaxed into the hobby or given at last an outlet for their pent-up interest, and these changes better enable newer folks to enjoy the hobby without needing to work their way past legacy systems and jargon. Or so I've found. While some changes do add complexity, all are done with new players in mind as well, and all of PEDD is written with that understanding. So apologies to veterans if it feels like I'm belabouring the point.
+~In addition to mechanics and gameplay that I personally find interesting, a lot of the changes I've made are minor tweaks I've done over the years for new player friendliness. Many times now, I've found myself the DM for a group of newbies who I've coaxed into the hobby or given at last an outlet for their pent-up interest, and these changes better enable newer folks to enjoy the hobby without needing to work their way past legacy systems and jargon. Or so I've found. While some changes do add complexity, all are done with new players in mind as well, and all of PEDD is written with that understanding. So apologies to veterans if it feels like I'm belabouring the point.~
+
+### Introduction
+
+Welcome to Trinitas.
 
 ### Example Archetypes
 
