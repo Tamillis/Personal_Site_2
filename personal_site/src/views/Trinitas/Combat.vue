@@ -1,12 +1,12 @@
 <template>
-    <PeddPage md="pedd-combat" subtitle="Combat" />
+    <BasePage md="pedd-combat" subtitle="Combat" />
 </template>
 
 <script setup>
 import { onUnmounted } from 'vue';
 import p5 from 'p5';
 import sketch from '../../assets/pedd/pedd_movement_1';
-import PeddPage from './PeddPage.vue';
+import BasePage from './Components/BasePage.vue';
 
 window.addEventListener("MarkedDone", peddCombatEvents);
 

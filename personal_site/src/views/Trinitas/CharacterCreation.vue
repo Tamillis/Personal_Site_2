@@ -1,10 +1,10 @@
 <template>
-    <PeddPage md="pedd-character-creation" subtitle="Character Creation" />
+    <BasePage md="pedd-character-creation" subtitle="Character Creation" />
 </template>
 
 <script setup>
 import { onUnmounted } from 'vue';
-import PeddPage from './PeddPage.vue';
+import BasePage from './Components/BasePage.vue';
 
 window.addEventListener("MarkedDone", peddCharacterCreationEvents)
 

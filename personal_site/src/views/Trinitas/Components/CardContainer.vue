@@ -5,7 +5,7 @@
         <div id="body" v-show="expanded" class="inner-container">
             <slot></slot>
 
-            <div>
+            <div v-if="!readOnly">
                 <button class="btn" @click.prevent.stop="$emit('chosen', name)">{{chosen ? "Unselect" : "Select"}}</button>
             </div>
         </div>
@@ -14,7 +14,7 @@
 
 <script setup>
 import { ref } from 'vue';
-const props = defineProps({ name: String, chosen: Boolean });
+const props = defineProps({ name: String, chosen: Boolean, readOnly: Boolean });
 
 const expanded = ref(props.chosen);
 </script>

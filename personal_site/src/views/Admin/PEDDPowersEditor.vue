@@ -5,6 +5,8 @@
             <p>{{ serverMsg }}</p>
         </div>
 
+        <p>Bug: you can't edit a Power's name since it looks for an existing power with the new name and fails</p>
+
         <form id="pedd-power-form" class="" @submit.prevent="postPower">
 
             <h3 class="subsubtitle" ref="powerTitle"><span>{{ isNew ? "New" : "Edit" }}</span> Power</h3>

@@ -29,7 +29,7 @@
 </template>
 
 <script setup>
-import Links from '../Pedd/Components/Links.vue';
+import Links from '../Trinitas/Components/Links.vue';
 import PEDDPowersEditor from './PEDDPowersEditor.vue';
 
 import { ref } from 'vue';

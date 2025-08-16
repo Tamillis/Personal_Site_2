@@ -6,10 +6,12 @@
                     <RouterLink class="intext-link" :to="{ name: 'trinitas' }">Introduction</RouterLink>
                 </li>
                 <li class="triangle-points">
-                    <RouterLink class="intext-link" :to="{ name: 'trinitas-combat' }">Combat</RouterLink>
+                    <RouterLink class="intext-link" :to="{ name: 'trinitas-character-creation' }">Character Creation
+                    </RouterLink>
                 </li>
                 <li class="triangle-points">
-                    <RouterLink class="intext-link" :to="{ name: 'trinitas-magic' }">Magic</RouterLink>
+                    <RouterLink class="intext-link" :to="{ name: 'trinitas-character-creator' }">Character Creator
+                    </RouterLink>
                 </li>
                 <li class="triangle-points">
                     <RouterLink class="intext-link" :to="{ name: 'admin' }">Admin</RouterLink>
@@ -19,20 +21,27 @@
         <li class="no-list">
             <ul class="col">
                 <li class="triangle-points">
-                    <RouterLink class="intext-link" :to="{ name: 'trinitas-character-creation' }">Character Creation</RouterLink>
+                    <RouterLink class="intext-link" :to="{ name: 'trinitas-core-rolls' }">Core Rolls</RouterLink>
                 </li>
                 <li class="triangle-points">
-                    <RouterLink class="intext-link" :to="{ name: 'trinitas-character-creator' }">Character Creator</RouterLink>
+                    <RouterLink class="intext-link" :to="{ name: 'trinitas-role' }">Role & Power Progression
+                    </RouterLink>
+                </li>
+                <li class="triangle-points">
+                    <RouterLink class="intext-link" :to="{ name: 'trinitas-combat' }">Combat</RouterLink>
+                </li>
+                <li class="triangle-points">
+                    <RouterLink class="intext-link" :to="{ name: 'trinitas-magic' }">Magic</RouterLink>
                 </li>
             </ul>
         </li>
         <li class="no-list">
             <ul class="col">
                 <li class="triangle-points">
-                    <RouterLink class="intext-link" :to="{ name: 'trinitas-races' }">Races*</RouterLink>
+                    <RouterLink class="intext-link" :to="{ name: 'trinitas-races' }">Races</RouterLink>
                 </li>
                 <li class="triangle-points">
-                    <RouterLink class="intext-link" :to="{ name: 'trinitas-backgrounds' }">Backgrounds*</RouterLink>
+                    <RouterLink class="intext-link" :to="{ name: 'trinitas-backgrounds' }">Backgrounds</RouterLink>
                 </li>
                 <li class="triangle-points">
                     <RouterLink class="intext-link" :to="{ name: 'trinitas-powers' }">Powers</RouterLink>
@@ -74,13 +83,13 @@ const route = useRoute();
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
-        
+
         .col {
             flex-direction: column;
         }
     }
 
-    .no-list{
+    .no-list {
         max-width: 33%;
     }
 }

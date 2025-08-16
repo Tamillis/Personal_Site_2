@@ -1,6 +1,3 @@
-## PEDD Equipment
-
-As PEDD has grown ever larger and even graduated into its own stand-alone system, I found myself needing to make a compendium and reference of its items.
 
 ### Weapons
 
@@ -138,33 +135,31 @@ Strength or Dexterity for the attack and damage rolls. You must use the same mod
 - **Scatter X** – weapons with this property also target any Character within 5ft of the target, using the same to hit roll, for the damage indicated in X. The scatter property is not in effect if the primary target is 10ft or less from the attacker.
 
 ### Armour
-Armour is updated to the following table. Armour does not stack unless a + value is stated.
+The following table lists the kinds of armour in the game. Armour's Armour property does not stack unless a + value is stated.
 
-| Name | Cost | Armour | Property |
-| --- | --- | --- | --- |
+| Name | Cost | Armour | Property | Strength Requirement
+| --- | --- | --- | --- | --- |
 | **Body Armour** |
-| Padded | 5gp | 1 | Light, Loud |
-| Leather | 10gp | 1 | Light |
-| Studded Leather | 45gp | 2 | Light |
-| Hide | 10gp | 2 | Medium |
-| Chain shirt | 50gp | 3 | Medium |
-| Scale mail | 50gp | 4 | Medium, Loud |
-| Breastplate | 400gp | 4 | Medium |
-| Half plate | 750gp | 5 | Medium, Loud |
-| Ring mail | 30gp | 4 | Heavy, Loud |
-| Chain mail | 75gp | 6 | Heavy, Loud |
-| Splint | 200gp | 7 | Heavy, Loud |
-| Plate mail | 1,500gp | 8 | Heavy, Loud |
+| Padded | 5gp | 1 | Loud | N/A |
+| Leather | 10gp | 1 | | N/A |
+| Studded Leather | 45gp | 2 | | N/A |
+| Hide | 10gp | 2 | Stiff | 1 |
+| Chain shirt | 50gp | 3 | Stiff | 1 |
+| Scale mail | 50gp | 4 | Stiff, Loud | 1 |
+| Breastplate | 400gp | 4 | Stiff | 1 |
+| Half plate | 750gp | 5 | Stiff, Loud | 1 |
+| Ring mail | 30gp | 4 | Heavy, Loud | 3 |
+| Chain mail | 75gp | 6 | Heavy, Loud | 3 |
+| Splint | 200gp | 7 | Heavy, Loud | 3 |
+| Plate mail | 1,500gp | 8 | Heavy, Loud | 3 |
 | **Auxilliary** |
-| Lobster Pot | 15gp | +1 | Medium, Helmet |
-| Great Helm | 15gp | +2 | Blinkered, Heavy, Helmet |
-| Buckler | 5gp | +1 | Light, Shield |
-| Shield | 10gp | +2 | Medium, Shield |
-| Tower Shield | 75gp | +3 | Heavy, Loud, Shield |
+| Lobster Pot | 15gp | +1 | Stiff, Helmet | 1 |
+| Great Helm | 15gp | +2 | Blinkered, Heavy, Helmet | 3 |
+| Buckler | 5gp | +1 | Stiff | N/A |
+| Shield | 10gp | +2 | Medium, Shield | 1 |
+| Tower Shield | 75gp | +3 | Heavy, Loud, Shield | 3 |
 
-**Light** - no limit on Reflexes
-
-**Medium** - your Reflexes cannot be greater than 2.
+**Stiff** - your Reflexes cannot be greater than 2.
 
 **Heavy** - you do not use Reflexes in calculations of Defence, and your Reflexes are limited to 2.
 
@@ -175,10 +170,6 @@ Armour is updated to the following table. Armour does not stack unless a + value
 **Blinkered** - you have Disadvantage on Perception checks
 
 **Shield** - equipped in 1 hand, you must use a Bonus Action to Block to gain the bonus to Armour. If you use two shields, and use your Bonus Action and Action to Block, yes you may gain both shields' defence bonuses.
-
-### Equipment Collections
-
-<div id="pedd-equipment-collections"></div>
 
 ### Equipment Packs
 

@@ -1,5 +1,5 @@
 <template class="page">
-    <PeddPage subtitle="Spells">
+    <BasePage subtitle="Spells">
         <h2>Spells</h2>
 
         <p>All spells officially ported from the 2024 SRD that are currently available to view, and soon in the
@@ -65,7 +65,7 @@
         </div>
 
         <section v-if="filteredSpells.length > 0">
-            <CardContainer v-for="(spell, i) in filteredSpells" :name="spell.name"
+            <CardContainer v-for="(spell, i) in filteredSpells" :name="spell.name" :read-only="true"
                 :expanded="openedSpells.includes(spell.name)" @chosen="toggleSpellOpened(spell.name)"
                 :key="`card-${i}-spell`">
                 <div>
@@ -86,13 +86,13 @@
             <p>No spells found</p>
         </section>
 
-    </PeddPage>
+    </BasePage>
 </template>
 
 <script setup>
 import { onMounted, ref, computed } from 'vue';
 import spellsData from '../../assets/pedd/pedd-spells.json';
-import PeddPage from './PeddPage.vue';
+import BasePage from './Components/BasePage.vue';
 import CardContainer from './components/CardContainer.vue';
 import { marked } from 'marked';
 

@@ -1,5 +1,5 @@
 <template>
-    <h2>Powers List</h2>
+    
     <div v-if="powersJson != null">
         <PowerFilter :tags="tags" :openedPowers="openedPowers" v-model:filter="filter" v-model:roleTag="roleTag"
             v-model:powerSearch="powerSearch" v-model:preqStats="preqStats" v-model:preqResistances="preqResistances" />

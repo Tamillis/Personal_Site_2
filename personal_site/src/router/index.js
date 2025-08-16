@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
-const peddPages = ["combat", "character-creation", "character-creator", "equipment", "skills", "powers", "backgrounds", "races", "magic", "spells", "admin"];
-const toPeddRoutes = (name) => {
+const trinitasPages = ["combat", "character-creation", "character-creator", "core-rolls", "equipment", "skills", "powers", "backgrounds", "races", "magic", "spells", "admin", "role"];
+const toTrinitasRoutes = (name) => {
   let parts = name.split("-");
-  let componentLink = "../views/trinitas/PEDD" + parts.map(part => part[0].toUpperCase() + part.slice(1)).join("") + ".vue";
+  let componentLink = "../views/trinitas/" + parts.map(part => part[0].toUpperCase() + part.slice(1)).join("") + ".vue";
   return {
     path: "/Trinitas/" + name,
     name: "trinitas-" + name,
-    component: () => import(componentLink)
+    component: () => import(componentLink/* @vite-ignore */)
   };
 }
 
@@ -44,7 +44,7 @@ let routes = [
   {
     path: '/trinitas',
     name: 'trinitas',
-    component: () => import('../views/Trinitas/PEDD.vue')
+    component: () => import('../views/Trinitas/Introduction.vue')
   },
   {
     path: '/mewiki',
@@ -78,7 +78,7 @@ let routes = [
   }
 ];
 
-routes = [...routes, ...peddPages.map(toPeddRoutes)];
+routes = [...routes, ...trinitasPages.map(toTrinitasRoutes)];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

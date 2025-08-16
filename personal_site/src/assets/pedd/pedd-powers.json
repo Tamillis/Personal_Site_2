@@ -1140,8 +1140,39 @@
             "racial",
             "spellcasting"
         ],
-        "preq": [],
-        "desc": "You learn the magic of the raiders of the dark places. You learn the Dancing Lights cantrip. You also learn the Faerie Fire and Darkness spells, each of which you can cast once without expending Mana. You regain the ability to cast these two spells in this way when you finish a Long Rest. Charisma is your Magic Statistic for these spells."
+        "preq": [
+            "Mana"
+        ],
+        "desc": "You learn the magic of the raiders of the dark places. You learn the Dancing Lights cantrip. You also learn the Faerie Fire and Darkness spells, each of which you can cast once without expending Mana. You regain the ability to cast these two spells in this way when you finish a Long Rest. Charisma is your Magic Statistic for these spells.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Druidic Apprentice",
