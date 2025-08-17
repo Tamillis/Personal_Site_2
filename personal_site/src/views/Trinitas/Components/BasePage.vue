@@ -1,6 +1,7 @@
 <template>
     <section class="section bg-black-transparent-0p3">
-        <h1 class="main-title">Trinitas <small style="font-size:75%" v-if="subtitle"> - {{ subtitle }}</small></h1>
+        <h1 class="main-title cinzel" style="margin-bottom:-1rem;">Trinitas</h1>
+        <h2 class="subsubtitle cinzel text-centre" style="text-indent: 0px;" v-if="subtitle">{{ subtitle }}</h2>
 
         <Links />
 
@@ -49,9 +50,19 @@ onMounted(() => {
     border-bottom: 2px solid var(--highlight);
 }
 
-#pedd p, #pedd li {
+#pedd p,
+#pedd li {
     line-height: 1.2rem;
     margin-bottom: 0.33rem;
+}
+
+.cinzel,
+#pedd h1,
+#pedd h2,
+#pedd h3 {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 #pedd h1 {

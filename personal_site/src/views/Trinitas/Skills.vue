@@ -16,7 +16,7 @@
 
                 <div v-else>
                     <div v-for="stat in ['Accuracy', 'Perception', 'Strength', 'Dexterity', 'Intelligence', 'Charisma']">
-                        <h3>{{ stat }}</h3>
+                        <h3 class="cinzel">{{ stat }}</h3>
                         <ul>
                             <li v-for="skill in skills.filter(s => s.stat == stat)">{{ skill.skill }}</li>
                         </ul>
@@ -33,7 +33,7 @@ import skillsData from '../../assets/pedd/pedd-skills.json';
 import BasePage from './Components/BasePage.vue';
 
 let useStat = ref(false);
-let skills = [...skillsData.basicSkills, ...skillsData.knowledgeSkills, ...skillsData.martialSkills].sort((s1,s2) => s1.skill.localeCompare(s2.skill));
+let skills = skillsData.sort((s1,s2) => s1.skill.localeCompare(s2.skill));
 
 </script>
 

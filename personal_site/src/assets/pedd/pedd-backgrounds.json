@@ -35,8 +35,8 @@
             "Persuasion",
             "Religion",
             "Languages (one)",
-            "Medium Armour",
-            "Clubs & Axes"
+            "Observation",
+            "Clubs"
         ],
         "equipment": [
             "a holy symbol (a gift to you when you entered your society)",
@@ -85,7 +85,7 @@
             "Intimidation",
             "Sleight of Hand",
             "Stealth",
-            "Thrown",
+            "Slings & Thrown",
             "Blades"
         ],
         "equipment": [
@@ -130,7 +130,7 @@
             "Musical Instruments",
             "Disguise",
             "Knives",
-            "Thrown"
+            "Slings & Thrown"
         ],
         "equipment": [
             "A musical instrument (one of your choice)",
@@ -152,8 +152,8 @@
             "Body",
             "Engineering",
             "Driving",
-            "Medium Armour",
-            "Clubs & Axes"
+            "Axes",
+            "Clubs"
         ],
         "equipment": [
             "a set of artisan's tools (one of your choice)",
@@ -175,7 +175,7 @@
             "Acrobatics",
             "Blades",
             "Exotic Weapon (Net)",
-            "Light Armour",
+            "Intimidation",
             "Performance",
             "Spears"
         ],
@@ -199,8 +199,8 @@
             "Engineering",
             "History",
             "Observation",
-            "Light Armour",
-            "Clubs & Axes"
+            "Persuasion",
+            "Clubs"
         ],
         "equipment": [
             "A set of artisan's tools (one of your choice)",
@@ -267,7 +267,7 @@
         "skills": [
             "Blades",
             "Riding",
-            "Heavy Armour",
+            "Charm",
             "Shields",
             "Exotic Weapon (Lance)",
             "Strategy"
@@ -292,7 +292,7 @@
             "History",
             "Charm",
             "Blades",
-            "Crossbows",
+            "Bows & Crossbows",
             "Languages (one)",
             "Strategy"
         ],
@@ -401,7 +401,7 @@
             "Athletics",
             "Firearms & Pistols",
             "Intimidation",
-            "Medium Armour",
+            "Heavy Arms",
             "Pole-arms",
             "Survival"
         ],

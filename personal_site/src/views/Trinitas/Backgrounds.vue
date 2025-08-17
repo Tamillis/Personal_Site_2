@@ -1,6 +1,6 @@
 <template>
     <BasePage subtitle="Backgrounds">
-        <CardContainer v-for="(bg, i) in backgrounds" :name="bg.name">
+        <CardContainer v-for="bg in backgrounds.sort((bg1,bg2) => bg1.name.localeCompare(bg2.name))" :name="bg.name">
             <BackgroundContent :bg="bg" />
         </CardContainer>
     </BasePage>

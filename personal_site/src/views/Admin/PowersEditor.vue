@@ -1,7 +1,7 @@
 <template>
     <div class="p-r">
         <div class="flex justify-between">
-            <h2 class="subtitle" style="margin-bottom: 0">PEDD Powers Editor</h2>
+            <h2 class="subtitle" style="margin-bottom: 0">Powers Editor</h2>
             <p>{{ serverMsg }}</p>
         </div>
 

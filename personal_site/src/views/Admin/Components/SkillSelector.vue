@@ -10,8 +10,7 @@
                 <option>Selection of</option>
             </select>
             <select v-model="chosenSkill">
-                <option v-for="skill in skills" :value="skill.skill">{{ skill.skill }} - {{ skill.category }} / {{
-                    skill.stat }}</option>
+                <option v-for="skill in skills" :value="skill.skill">{{ skill.skill }}</option>
             </select>
             <button type="button" class="btn" v-if="choice !== 'Single'" @click="addChoice">+</button>
             <p id="choices-display" v-if="choices.length > 0">Choices: {{choices.map(s => s.skill).join(", ")}}</p>
@@ -33,18 +32,14 @@
 import skillsData from '/src/assets/pedd/pedd-skills.json';
 import { ref } from 'vue';
 
-let allSkills = [
-    ...skillsData.basicSkills.map(s => { return { ...s, category: "Core" } }),
-    ...skillsData.knowledgeSkills.map(s => { return { ...s, category: "Knowledge" } }),
-    ...skillsData.martialSkills.map(s => { return { ...s, category: "Martial" } })]
-    .sort((a, b) => a.skill.localeCompare(b.skill));
+let allSkills = skillsData.sort((a, b) => a.skill.localeCompare(b.skill));
 
 let skills = ref(
-    [{ skill: "Any", stat: "Any", category: "Any" },
-    { skill: "Any Core", stat: "Any", category: "Core" },
-    { skill: "Any Knowledge", stat: "Any", category: "Knowledge" },
-    { skill: "Any Martial", stat: "Any", category: "Martial" },
-    { skill: "Existing", stat: "Any", category: "Any" },
+    [{ skill: "Any", stat: "Any"},
+    { skill: "Any Core", stat: "Any"},
+    { skill: "Any Knowledge", stat: "Any", knowledge: true },
+    { skill: "Any Martial", stat: "Any", martial: true },
+    { skill: "Existing", stat: "Any" },
     ...allSkills]
 );
 let rank = ref("Proficiency");

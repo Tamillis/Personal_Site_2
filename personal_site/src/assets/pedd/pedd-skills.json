@@ -1,214 +1,201 @@
-{
-    "basicSkills": [
-        {
-            "skill": "Acrobatics",
-            "stat": "Dexterity"
-        },
-        {
-            "skill": "Alchemy",
-            "stat": "Intelligence"
-        },
-        {
-            "skill": "Animal Handling",
-            "stat": "Charisma"
-        },
-        {
-            "skill": "Athletics",
-            "stat": "Strength"
-        },
-        {
-            "skill": "Charm",
-            "stat": "Charisma"
-        },
-        {
-            "skill": "Deception",
-            "stat": "Charisma"
-        },
-        {
-            "skill": "Disguise",
-            "stat": "Dexterity"
-        },
-        {
-            "skill": "Driving",
-            "stat": "Dexterity"
-        },
-        {
-            "skill": "Engineering",
-            "stat": "Dexterity"
-        },
-        {
-            "skill": "Insight",
-            "stat": "Perception"
-        },
-        {
-            "skill": "Intimidation",
-            "stat": "Strength"
-        },
-        {
-            "skill": "Investigation",
-            "stat": "Perception"
-        },
-        {
-            "skill": "Musical Instruments",
-            "stat": "Dexterity"
-        },
-        {
-            "skill": "Navigation",
-            "stat": "Perception"
-        },
-        {
-            "skill": "Observation",
-            "stat": "Perception"
-        },
-        {
-            "skill": "Performance",
-            "stat": "Charisma"
-        },
-        {
-            "skill": "Persuasion",
-            "stat": "Charisma"
-        },
-        {
-            "skill": "Riding",
-            "stat": "Dexterity"
-        },
-        {
-            "skill": "Sailing",
-            "stat": "Dexterity"
-        },
-        {
-            "skill": "Sleight of Hand",
-            "stat": "Dexterity"
-        },
-        {
-            "skill": "Stealth",
-            "stat": "Dexterity"
-        },
-        {
-            "skill": "Strategy",
-            "stat": "Intelligence"
-        },
-        {
-            "skill": "Survival",
-            "stat": "Perception"
-        }
-    ],
-    "knowledgeSkills": [
-        {
-            "skill": "Arcana",
-            "stat": "Intelligence"
-        },
-        {
-            "skill": "Culture",
-            "stat": "Intelligence"
-        },
-        {
-            "skill": "Languages (one)",
-            "stat": "Intelligence"
-        },
-        {
-            "skill": "History",
-            "stat": "Intelligence"
-        },
-        {
-            "skill": "Medicine",
-            "stat": "Intelligence"
-        },
-        {
-            "skill": "Occultism",
-            "stat": "Intelligence"
-        },
-        {
-            "skill": "Nature",
-            "stat": "Intelligence"
-        },
-        {
-            "skill": "Religion",
-            "stat": "Intelligence"
-        }
-    ],
-    "martialSkills": [
-        {
-            "skill": "Battle-Axes",
-            "preq": "Clubs & Axes",
-            "stat": "Strength"
-        },
-        {
-            "skill": "Blades",
-            "preq": "Knives",
-            "stat": "Strength"
-        },
-        {
-            "skill": "Body",
-            "stat": "Strength"
-        },
-        {
-            "skill": "Bows",
-            "stat": "Accuracy"
-        },
-        {
-            "skill": "Clubs & Axes",
-            "stat": "Strength"
-        },
-        {
-            "skill": "Crossbows",
-            "stat": "Accuracy"
-        },
-        {
-            "skill": "Firearms & Pistols",
-            "stat": "Accuracy"
-        },
-        {
-            "skill": "Heavy Armour",
-            "preq": "Medium Armour",
-            "stat": "Strength"
-        },
-        {
-            "skill": "Heavy Blades",
-            "preq": "Blades",
-            "stat": "Strength"
-        },
-        {
-            "skill": "Knives",
-            "stat": "Strength"
-        },
-        {
-            "skill": "Light Armour",
-            "stat": "Strength"
-        },
-        {
-            "skill": "Mauls",
-            "preq": "Clubs & Axes",
-            "stat": "Strength"
-        },
-        {
-            "skill": "Medium Armour",
-            "stat": "Strength"
-        },
-        {
-            "skill": "Pole-Arms",
-            "preq": "Spears",
-            "stat": "Strength"
-        },
-        {
-            "skill": "Shields",
-            "stat": "Strength"
-        },
-        {
-            "skill": "Slings",
-            "stat": "Accuracy"
-        },
-        {
-            "skill": "Spears",
-            "stat": "Strength"
-        },
-        {
-            "skill": "Thrown",
-            "stat": "Accuracy"
-        },
-        {
-            "skill": "Exotic Weapons (one)",
-            "stat": "Strength"
-        }
-    ]
-}
+[
+    {
+        "skill": "Acrobatics",
+        "stat": "Dexterity"
+    },
+    {
+        "skill": "Alchemy",
+        "stat": "Intelligence"
+    },
+    {
+        "skill": "Animal Handling",
+        "stat": "Charisma"
+    },
+    {
+        "skill": "Athletics",
+        "stat": "Strength"
+    },
+    {
+        "skill": "Charm",
+        "stat": "Charisma"
+    },
+    {
+        "skill": "Deception",
+        "stat": "Charisma"
+    },
+    {
+        "skill": "Disguise",
+        "stat": "Dexterity"
+    },
+    {
+        "skill": "Driving",
+        "stat": "Dexterity"
+    },
+    {
+        "skill": "Engineering",
+        "stat": "Dexterity"
+    },
+    {
+        "skill": "Insight",
+        "stat": "Perception"
+    },
+    {
+        "skill": "Intimidation",
+        "stat": "Strength"
+    },
+    {
+        "skill": "Investigation",
+        "stat": "Intelligence"
+    },
+    {
+        "skill": "Musical Instruments",
+        "stat": "Dexterity"
+    },
+    {
+        "skill": "Navigation",
+        "stat": "Perception"
+    },
+    {
+        "skill": "Observation",
+        "stat": "Perception"
+    },
+    {
+        "skill": "Performance",
+        "stat": "Charisma"
+    },
+    {
+        "skill": "Persuasion",
+        "stat": "Charisma"
+    },
+    {
+        "skill": "Riding",
+        "stat": "Dexterity"
+    },
+    {
+        "skill": "Sailing",
+        "stat": "Dexterity"
+    },
+    {
+        "skill": "Sleight of Hand",
+        "stat": "Dexterity"
+    },
+    {
+        "skill": "Stealth",
+        "stat": "Dexterity"
+    },
+    {
+        "skill": "Strategy",
+        "stat": "Intelligence"
+    },
+    {
+        "skill": "Survival",
+        "stat": "Perception"
+    },
+    {
+        "skill": "Arcana",
+        "stat": "Intelligence",
+        "knowledge": true
+    },
+    {
+        "skill": "Culture",
+        "stat": "Intelligence",
+        "knowledge": true
+    },
+    {
+        "skill": "Languages (one)",
+        "stat": "Intelligence",
+        "custom": true,
+        "knowledge": true
+    },
+    {
+        "skill": "History",
+        "stat": "Intelligence",
+        "knowledge": true
+    },
+    {
+        "skill": "Medicine",
+        "stat": "Intelligence",
+        "knowledge": true
+    },
+    {
+        "skill": "Occultism",
+        "stat": "Intelligence",
+        "knowledge": true
+    },
+    {
+        "skill": "Nature",
+        "stat": "Intelligence",
+        "knowledge": true
+    },
+    {
+        "skill": "Religion",
+        "stat": "Intelligence",
+        "knowledge": true
+    },
+    {
+        "skill": "Blades",
+        "stat": "Strength",
+        "martial": true
+    },
+    {
+        "skill": "Unarmed Fighting",
+        "stat": "Dexterity",
+        "martial": true
+    },
+    {
+        "skill": "Bows & Crossbows",
+        "stat": "Accuracy",
+        "martial": true
+    },
+    {
+        "skill": "Clubs",
+        "stat": "Strength",
+        "martial": true
+    },
+    {
+        "skill": "Axes",
+        "stat": "Strength",
+        "martial": true
+    },
+    {
+        "skill": "Firearms & Pistols",
+        "stat": "Accuracy",
+        "martial": true
+    },
+    {
+        "skill": "Knives",
+        "stat": "Strength",
+        "martial": true
+    },
+    {
+        "skill": "Heavy Arms",
+        "stat": "Strength",
+        "martial": true
+    },
+    {
+        "skill": "Pole-Arms",
+        "stat": "Strength",
+        "martial": true
+    },
+    {
+        "skill": "Shields",
+        "stat": "Strength",
+        "martial": true
+    },
+    {
+        "skill": "Spears",
+        "stat": "Strength",
+        "martial": true
+    },
+    {
+        "skill": "Slings & Thrown",
+        "stat": "Accuracy",
+        "martial": true
+    },
+    {
+        "skill": "Exotic Weapon (one)",
+        "stat": "Strength",
+        "custom": true,
+        "martial": true
+    }
+]

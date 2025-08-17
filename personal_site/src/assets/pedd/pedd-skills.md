@@ -34,10 +34,3 @@ In Trinitas no Skill is automatically associated with a Stat, though there are s
 
 **Note** for weapon attacks, the Stats used are fixed: **Strength** for Melee, **Accuracy** for Ranged. If the weapon has the property "Finesse" you can instead use **Dexterity** for the attacks (melee or ranged).
 
-### Changes
-I'm considering:
-- removing armour skills entirely, just set a Strength req on Medium armour of 1 and on Heavy armour of 3
-- Clubs & Axes -> "Club" skill & "Axe" skill
-- Body rename to "Martial Arts" to better reflect its intent
-- Introduce a "Heavy Weaponry" skill to use as a double-requirement on heavy weapons, remove "Battle axes", "Heavy club", "Great Sword" etc
-- With the above, remove all "must have skill X to get skill Y" requirements (i.e. no such thing as skill requirements)

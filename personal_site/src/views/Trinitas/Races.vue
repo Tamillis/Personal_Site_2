@@ -1,6 +1,6 @@
 <template>
     <BasePage subtitle="Races">
-        <CardContainer v-for="race in races" :name="race.name" :read-only="true">
+        <CardContainer v-for="race in races.sort((r1,r2) => r1.name.localeCompare(r2.name))" :name="race.name" :read-only="true">
             <RaceContent :race="race" />
         </CardContainer>
     </BasePage>

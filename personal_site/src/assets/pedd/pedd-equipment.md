@@ -9,25 +9,25 @@ Bludgeoning -> blg, Piercing -> prc, Slashing -> slash
 | --- | --- | --- | --- | --- | --- |
 | **Simple Melee Weapons** |
 | Cestus* | Body | 1gp | 1d4 blg | 0.5lbs | Light, Nonlethal |
-| Club | Clubs & Axes | 1sp | 1d4 blg | 2lbs | Light, Nonlethal, Block |
+| Club | Clubs | 1sp | 1d4 blg | 2lbs | Light, Nonlethal, Block |
 | Dagger | Knives | 2gp | 1d4 prc / slash | 1lbs | Finesse, Finisher, Light, Nnlethal |
-| Great Club | Clubs & Axes | 5sp | 2d4 blg | 10lbs | Heavy, Two-handed, Dazes, Knockback |
-| Handaxe | Clubs & Axes / Thrown | 3gp | 1d6 slash | 2lbs | Light, Thrown (20/75) |
-| Javelin | Spear / Thrown | 5sp | 1d6 prc | 2lbs | Thrown (30/120) |
-| Light Hammer | Clubs & Axes, thrown | 2sp | 1d4 blg | 2lbs | Light, Dazes, Thrown (20/60) |
-| Mace | Clubs & Axes | 5gp | 1d6 blg | 4lbs | Light Armour Piercing |
+| Great Club | Clubs, Heavy Arms | 5sp | 2d4 blg | 10lbs | Heavy, Two-handed, Dazes, Knockback |
+| Handaxe | Axes / Slings & Thrown | 3gp | 1d6 slash | 2lbs | Light, Thrown (20/75) |
+| Javelin | Spear / Slings & Thrown | 5sp | 1d6 prc | 2lbs | Thrown (30/120) |
+| Light Hammer | Clubs, Slings & Thrown | 2sp | 1d4 blg | 2lbs | Light, Dazes, Thrown (20/60) |
+| Mace | Clubs | 5gp | 1d6 blg | 4lbs | Light Armour Piercing |
 | Quarterstaff | Spear | 2sp | 1d6 blg | 4lbs | Nonlethal, Versatile (2d4), Block |
 | Shiv* | Knives | 5cp | 1d4 prc | 0.5lbs | Light, Nonlethal |
 | Short Spear | Spear | 1gp | 1d6 prc | 3lbs | Finisher, Nonlethal |
 | Sickle | Knives | 1gp | 1d4 slash | 2lbs | Light, Bleeds |
-| Spear Club (Goedendag) | Spear / Clubs & Axes | 5sp | 1d4 blg / prc | 3lbs | Finisher, Light Armour Piercing |
+| Spear Club (Goedendag) | Spear / Clubs | 5sp | 1d4 blg / prc | 3lbs | Finisher, Light Armour Piercing |
 | Spear | Spear | 1gp | 1d8 prc | 4lbs | Reach, Two-Handed, Block |
 | Winged Spear | Spear | 5gp | 1d6 prc | 5lbs | Versatile (1d8), Winged, Block |
 | **Martial Melee Weapons** |
 | Battleaxe | Battleaxes | 10gp | 1d8 slash | 4lbs | Bleeds, Sweeping, Versatile (1d10) |
 | Esctoc | Blades | 20gp | 1d8 prc | 2lbs | Finesse, Parry, Lightly Armour Piercing |
 | Falchion | Blades | 25gp | 1d8 slash | 2lbs | Bleeds, Finesse, Parry |
-| Flail | Mauls | 10gp | 1d8 blg / prc | 2lbs | Ensnaring, Wind-up |
+| Flail | Clubs, Heavy Arms | 10gp | 1d8 blg / prc | 2lbs | Ensnaring, Wind-up |
 | Garotte Wire* | Exotic (Garrote Wire) | 5gp | 1d6 slash | 1/4lbs | Finesse, Light, Two-Handed |
 | Glaive | Pole-arms | 20gp | 1d10 slash | 6lbs | Heavy, Reach, Sweeping, Two-Handed |
 | Greataxe | Battleaxes | 30gp | 1d12 slash | 9lbs | Heavy, Finisher, Bleeds, Two-Handed |
@@ -36,8 +36,8 @@ Bludgeoning -> blg, Piercing -> prc, Slashing -> slash
 | Lance* | Exotic (Lance) | 10gp | 1d12 prc | 6lbs | Reach, Dazes |
 | Longsword | Blades | 15gp | 1d8 prc / slash | 3lbs | Parry, Bleeds, Versatile (1d10), Block |
 | Lucerne Hammer | Pole-arms | 20gp | 1d10 blg / prc | 7lbs | Heavy, Reach, Lightly Armour Piercing, Two-Handed |
-| Maul | Mauls | 10gp | 2d6 blg | 12lbs | Heavy, Reach, Dazes, Lightly Armour Piercing, Two-Handed, Knockback |
-| Morningstar | Mauls | 15gp | 1d8 blg / prc | 4lbs | Dazes, Finisher |
+| Maul | Clubs, Heavy Arms | 10gp | 2d6 blg | 12lbs | Heavy, Reach, Dazes, Lightly Armour Piercing, Two-Handed, Knockback |
+| Morningstar | Clubs, Heavy Arms | 15gp | 1d8 blg / prc | 4lbs | Dazes, Finisher |
 | Parrying Dagger | Knives | 3gp | 1d4 prc | 1lb | Finesse, Finisher, Light, Parry, Prone Fighting, Block |
 | Pike | Pole-arms | 5gp | 1d10 prc | 13lbs | Heavy, Reach, Two-Handed, Wind-Up |
 | Pollaxe | Pole-arms | 35gp | 1d10 blg / prc / slash | 10lbs | Bleeds, Dazes, Two-Handed |
@@ -45,22 +45,22 @@ Bludgeoning -> blg, Piercing -> prc, Slashing -> slash
 | Scimitar | Blades | 15gp | 1d6 slash | 3lbs | Light, Bleeds, Finesse, Parry |
 | Shortsword | Blades | 10gp | 1d6 prc / slash | 2lbs | Light, Finesse, Finisher, Parry |
 | Trident | Spears | 5gp | 2d4 prc | 4lbs | Finisher, Versatile (1d10), Winged, Block |
-| War Pick | Mauls | 5gp | 1d8 prc | 2lbs | Finisher, Versatile (1d10), Lightly Armour Piercing |
-| Warhammer | Mauls | 15gp | 1d8 blg | 3lbs | Finisher, Dazes, Lightly Armour Piercing, Versatile (1d10), Knockback |
+| War Pick | Clubs | 5gp | 1d8 prc | 2lbs | Finisher, Versatile (1d10), Lightly Armour Piercing |
+| Warhammer | Clubs, Heavy Arms | 15gp | 1d8 blg | 3lbs | Finisher, Dazes, Lightly Armour Piercing, Versatile (1d10), Knockback |
 | War Scythe (Guisarme) | Pole-arms | 5gp | 1d10 prc | 8lbs | Ensnaring, Heavy, Reach, Two-Handed |
 | Whip* | Exotic (Whip) | 2gp | 1d4 slash | 3lbs | Ensnaring, Finesse, Reach |
 | Winged Pike (Ranseur) | Pole-arms | 25gp | 1d10 prc / slash | 8lbs | Heavy, Reach, Winged |
 | **Traditional Ranged Weapons** |
 | Blowgun* | Exotic (Blowgun) | 5sp | 1 prc | 1lb | Ammunition (25/100), Loading |
-| Dart | Thrown | 5cp | 1d4 prc | 1/4lbs | Finesse, Thrown (20/60) |
-| Hand Crossbow | Crossbows | 75gp | 1d6 prc | 3lbs | Ammunition (30/120), Light, Loading, Prone-fighting |
-| Heavy Crossbow | Crossbows | 50gp | 1d10 prc | 12lbs | Ammunition (100/300), Heavy, Loading, Bleeds, Lightly Armour Piercing, Two-Handed |
-| Light Crossbow | Crossbows | 25gp | 1d8 prc | 5lbs | Ammunition (80/320), Loading, Two-Handed |
-| Longbow | Bows | 75gp | 1d10 prc | 2lbs | Ammunition (200/600), Heavy, Bleeds, Two Handed |
+| Dart | Slings & Thrown | 5cp | 1d4 prc | 1/4lbs | Finesse, Thrown (20/60) |
+| Hand Crossbow | Bows & Crossbows | 75gp | 1d6 prc | 3lbs | Ammunition (30/120), Light, Loading, Prone-fighting |
+| Heavy Crossbow | Bows & Crossbows | 50gp | 1d10 prc | 12lbs | Ammunition (100/300), Heavy, Loading, Bleeds, Lightly Armour Piercing, Two-Handed |
+| Light Crossbow | Bows & Crossbows | 25gp | 1d8 prc | 5lbs | Ammunition (80/320), Loading, Two-Handed |
+| Longbow | Bows & Crossbows | 75gp | 1d10 prc | 2lbs | Ammunition (200/600), Heavy, Bleeds, Two Handed |
 | Net* | Exotic (Net) | 1gp | - | 3lbs | Thrown (15/30) |
-| Recurve Bow | Bows | 50gp | 1d8 prc | 3lbs | Ammunition (150/600), Two-Handed |
-| Shortbow | Bows | 15gp | 1d6 prc | 2lbs | Ammunition (100/150), Two-Handed |
-| Sling | Slings | 1sp | 1d4 blg | 1/4lbs | Ammunition (30/120) |
+| Recurve Bow | Bows & Crossbows | 50gp | 1d8 prc | 3lbs | Ammunition (150/600), Two-Handed |
+| Shortbow | Bows & Crossbows | 15gp | 1d6 prc | 2lbs | Ammunition (100/150), Two-Handed |
+| Sling | Slings & Thrown | 1sp | 1d4 blg | 1/4lbs | Ammunition (30/120) |
 | **Firearms** |
 | *Longarms* |
 | Arquebus | Firearms & Pistols | 20gp | 1d10 piercing | 9lbs | Ammunition (60/300), cartridge loading, light armour piercing, misfire, two-handed |
@@ -73,10 +73,10 @@ Bludgeoning -> blg, Piercing -> prc, Slashing -> slash
 | Sawn-Off Gun | Firearms & Pistols | 30gp | 2d4 slashing | 6lps | Ammunition (20/40), cartridge loading, scatter (1d4) |
 | *Munitions* |
 | Demo-barrel | - | 50gp | 4d6 bludgeoning & 4d6 burning<sup>b</sup> | 75lbs | Knockback (+2 / 10ft per barrel*), Area (10ft radius per barrel*) *to a maximum of 60ft. |
-| Flashbomb | Thrown | 5gp | Blinds & Deafens until the end of the target’s next turn | 1lbs | Thrown (20/60), Area (10ft radius)<sup>d</sup> |
+| Flashbomb | Slings & Thrown | 5gp | Blinds & Deafens until the end of the target’s next turn | 1lbs | Thrown (20/60), Area (10ft radius)<sup>d</sup> |
 | Fire Lance | Exotic (Lance) | 35gp | 2d8 burning<sup>b</sup> | 11lbs | Ammunition (5/10), reach, heavy, two-handed, special<sup>c<sup> |
-| Firebomb | Thrown | 10gp | 2d10 burning<sup>b</sup> | 2lbs | Thrown (20/60), Area (5ft radius)<sup>d</sup> |
-| Grenade | Thrown | 5gp | 1d8 slashing, 1d8 burning<sup>b</sup> | 1lbs | Thrown (20/60), Knockdown (+2), Area (5ft radius)d |
+| Firebomb | Slings & Thrown | 10gp | 2d10 burning<sup>b</sup> | 2lbs | Thrown (20/60), Area (5ft radius)<sup>d</sup> |
+| Grenade | Slings & Thrown | 5gp | 1d8 slashing, 1d8 burning<sup>b</sup> | 1lbs | Thrown (20/60), Knockdown (+2), Area (5ft radius)d |
 
 a.	The X in Ammunition X refers to the number of times the weapon can be fired before needing to be reloaded. No value means one shot per reload.
 
@@ -226,7 +226,7 @@ Rune | Name | Spell | Benefit
 坂 | Hill | Goodberry | you have advantage on Exhaustion checks and saves.
 旅 | Journey | Longstrider | speed increases by 5ft and your travel speed by 800 yards.
 王 | King | Command | others assume you’re a higher station than them. You have proficiency in Willpower saves.
-山 | Mountain | Entangle | you have proficiency in Athletics and Thrown.
+山 | Mountain | Entangle | you have proficiency in Athletics and Slings & Thrown.
 力 | Power | * | Your Strength increases by 1, and your maximum Strength is 6. *Unlike other Runes, this Rune's "Spell" is the ability to cast any other worn Rune at one Magnitude higher than normal.
 石 | Stone | Sanctuary | you always know in what direction and what distance (to the nearest 5ft) this symbol is from you. You have proficiency in Navigation.
 嵐 | Storm | Thunderwave | you crackle with static and can cast Shocking Grasp.

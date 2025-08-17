@@ -22,7 +22,7 @@
 import { ref } from "vue";
 import skillsData from "../../../assets/pedd/pedd-skills.json";
 
-let upbringingSkills = ref(skillsData.basicSkills.concat(skillsData.knowledgeSkills));
+let upbringingSkills = ref(skillsData.filter(s => !s.martial));
 upbringingSkills.value.sort((s1, s2) => s1.skill.localeCompare(s2.skill));
 
 const props = defineProps(["chosenUpbringingSkills", "chosenUpbringingLanguage"]);

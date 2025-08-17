@@ -1,36 +1,35 @@
 <template>
-    <section class="section bg-black-transparent-0p3">
-        <h1 class="main-title">P.E.D.D. <small style="font-size:75%"> - Admin</small></h1>
+    <BasePage subtitle="Admin">
 
-        <Links class="mb-gap" />
-
-        <form id="login-form" @submit.prevent="login" :class="{ hidden: !showLogin }">
-            <div class="login-container">
-                <label for="username">Username:</label>
-                <input id="username" v-model="username" class="q text-entry" type="text" />
-                <label for="password">Password:</label>
-                <input id="password" v-model="password" class="q text-entry" type="password" />
-                <button type="submit" id="login-btn" class="btn">Login</button>
-            </div>
-            <p :class="{ hidden: !errMsg }" class="error-text m-gap">{{ errMsg }}</p>
-        </form>
-
-        <section id="logged-in" :class="{ hidden: showLogin }">
-            <div class="logout-container gap justify-end">
-                <p>Logged in as <span id="username-display">{{ username }}</span></p>
-                <button id="log-out-btn" class="btn" @click="logout">Log Out</button>
-            </div>
-            <hr />
-            <section class="">
-                <PEDDPowersEditor />
+        <div>
+            <form id="login-form" @submit.prevent="login" :class="{ hidden: !showLogin }">
+                <div class="login-container">
+                    <label for="username">Username:</label>
+                    <input id="username" v-model="username" class="q text-entry" type="text" />
+                    <label for="password">Password:</label>
+                    <input id="password" v-model="password" class="q text-entry" type="password" />
+                    <button type="submit" id="login-btn" class="btn">Login</button>
+                </div>
+                <p :class="{ hidden: !errMsg }" class="error-text m-gap">{{ errMsg }}</p>
+            </form>
+    
+            <section id="logged-in" :class="{ hidden: showLogin }">
+                <div class="logout-container gap justify-end">
+                    <p>Logged in as <span id="username-display">{{ username }}</span></p>
+                    <button id="log-out-btn" class="btn" @click="logout">Log Out</button>
+                </div>
+                <hr />
+                <section class="">
+                    <PowersEditor />
+                </section>
             </section>
-        </section>
-    </section>
+        </div>
+    </BasePage>
 </template>
 
 <script setup>
-import Links from '../Trinitas/Components/Links.vue';
-import PEDDPowersEditor from './PEDDPowersEditor.vue';
+import BasePage from '../Trinitas/Components/BasePage.vue';
+import PowersEditor from './PowersEditor.vue';
 
 import { ref } from 'vue';
 const AUTH_URL = "/api/auth";
