@@ -1,9 +1,20 @@
 <template>
     <h3>Equipment</h3>
+
+    <p>TODO: automatically include the <i style="font-style: italic;">Starting Equipment</i></p>
+
+    <ul>
+        <li>a set of travelling clothes</li>
+        <li>a Backpack (or equivilant, like a knapsack)</li>
+        <li>an empty waterskin</li>
+        <li>5 rations</li>
+        <li>a simple melee weapon of your choice</li>
+    </ul>
+
     <div class="flex">
         <select id="equipment-collections" v-model="equipment">
             <option disabled selected>Choose a collection...</option>
-            <option v-for="collection in equipmentCollections">{{ collection.name }}</option>
+            <option v-for="collection in equipmentCollections.sort((e1,e2) => e1.name.localeCompare(e2.name))">{{ collection.name }}</option>
         </select>
         <select id="equipment-packs" v-model="pack">
             <option disabled selected>Choose a pack...</option>
@@ -15,6 +26,7 @@
     <div class="flex">
         <div class="selection">
             <h3>Body Armour</h3>
+            <p>TODO: have this populate automatically from equipment list</p>
             <select data-prop="armour" v-model.number="armour" @change="chosenArmour">
                 <option value="0" data-ref-limit="99">None</option>
                 <option value="1" data-ref-limit="99">+1 Padded (Loud)</option>

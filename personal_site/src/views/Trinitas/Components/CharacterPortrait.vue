@@ -35,12 +35,13 @@ img {
     border-radius: 50%;
     border: 2px var(--highlight) groove;
     width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     text-indent: 0;
 }
 
 .square {
     display: block;
-    aspect-ratio: 1 / 1;
     font-size: 1em;
     text-align: center;
     padding-top: calc(50% - 1em);

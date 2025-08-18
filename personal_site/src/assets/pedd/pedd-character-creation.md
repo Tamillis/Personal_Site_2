@@ -164,8 +164,6 @@ You can pick any skills freely from [Skills](/trinitas/skills) section.
 #### Equipment
 Finally, the possessions you have on you at the start of your adventure. Take a note of the equipment you already have from your background, and then choose one collection of equipment that fits the image of your Role: [See Collections](/trinitas/equipment#equipment-collections)
 
-When you have options (denoted by a /), choose 1. The packs and tool kits are suggestions, you can take any pack or toolkit.
+**Starting Equipment** - All characters start their adventure with a set of travelling clothes, a Backpack (or equivilant, like a knapsack), an empty waterskin, 5 rations and a simple melee weapon of their choice.
 
-Pack's, for reference (you may with your GM's permission swap your pack for any other pack): [See Packs](/trinitas/equipment#equipment-packs)
-
-See the Weapons and Armour sections for details about those specific items.
+See the Weapons and Armour sections for details about those items.

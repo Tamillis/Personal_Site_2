@@ -1,8 +1,8 @@
 <template>
     <BasePage md="pedd-equipment" subtitle="Equipment">
         <div>
-            <h3>Equipment Collections</h3>
-            <div v-for="ec in peddEquipment">
+            <h3 id="equipment-collections" class="cinzel">Equipment Collections</h3>
+            <div v-for="ec in peddEquipment.sort((e1,e2) => e1.name.localeCompare(e2.name))">
                 <p><strong>{{ ec.name }}</strong> - {{ ec.equipment }}</p>
             </div>
         </div>

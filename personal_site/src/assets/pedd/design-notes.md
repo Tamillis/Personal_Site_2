@@ -82,6 +82,21 @@ To address these issues, I've split wisdom in twain. Willpower is willpower, eve
 
 This does leave the window open for those hankering for a sense of “wise”, as in an individual who has a broad body of experience to call upon and errs on the side of patience. Characters still have the various Knowledge skills, and there is now the "Learned" Power for wisdom in the sense of being broadly knowledgeable, educated, well-read, etc., and the “Wisened” background that is wisdom in the sense of a wide body of practiced wisdom coming from age and life experience; the non-academic sage. It is also, I find, mostly simply a matter of role-play. Stop me if you have heard of a high-wisdom character who's player hasn't been capable of acting wisely?
 
+### Combat Notes
+The goals were to make combat:
+ 1. More consistently dangerous (so slightly less dangerous at "level one")
+ 2. More engaging on a player level
+ 3. More tactical
+ 4. (And the seemingly incompatible with the above) More snappy
+
+The first point is a combination of the fact that low level combat was too dangerous but higher level combat quickly became trivially easy to survive. Characters became health sponges that you end up playing whack-a-mole with, and monsters much the same. It was also very slow to play through at higher levels. The fact that interesting combat relied on DM's to employ various twists and challenges on top of typical combat rules to make it engaging says more about the base combat system than being critical of DM's who didn't go that far.
+
+Getting rid of HP scaling (starting higher 'Health' but not going up unless explicitely empowered) fixes the health sponge issue, and combined with lower average Defence and the Defence Stat rework makes combat more consistently dangerous (as does the general trend of [Flat Maths](/pedd#flat-maths)).
+
+The second point of tactical choice is improved by bringing more possible [Actions](#combat-actions) to the table, remaking [Weapons](#weapons) and [Armour](#armour) with expanded and active [Weapon Properties](#weapon-properties), and lastly by folding Battle Master Manoeuvers into basic combat actions with the experimental [Focus](#focus) system.
+
+Snappiness was a major motivator for this rewrite of combat. I wanted to erase the issue of players switching off when its not their turn during combat that I frequently observed, no matter how different and engaging I tried to make combat. So I got rid of turns with the [One Action All At Once](#one-action-all-at-once) system. This is a much more engaging system as everyone is playing together and at once, getting rid of the slow round-the-robin of turn based combat. Everyone only having one Action also means each round is resolved much more quickly.
+
 ### Retrospectives on PEDD
 Having played a recent game for a group of newbies I've noticed that there is *still* a lot of up-front work even with the presentation of cards for easy pick-and-mix character creation.
 
@@ -237,7 +252,9 @@ All of these are now "Skills" in which you have "Proficiency", or not, meaning y
 In other words, on a roll, you will never get more than your Bonus or Expertise in addition to your Stat increase, and the maximum possible increase to a dice roll is +15 (+5 Stat, +5 Bonus x2 with Expertise). This does mean that the few Powers that break this rule need to do so carefully, and it probably would be better to rewrite most that currently do, as they weren't written with the above maths in mind.
 
 ### Knowledge and Martial Skills
-There are two kinds of specialist skills:
+This idea has since been axed.
+
+There were two kinds of specialist skills:
 - **Knowledge Skills** - skills which most of the time you *cannot* attempt the actions that would be governed by this skill unless Proficient. You either know something, or you do not. For example the new skill 'Culture', which represents learning in the cultural mores and sociology both generally and for specific areas.
 - **Martial Skills** - skills with weapons, armour and shields. Unlike other skills, some Martial Skills are marked with an *, meaning they require other Martial Skills before they can be taken. If a Background or Power provide Proficiency in such a skill before you have the requirement, you "Downgrade" it to the required Skill instead.
   - Heavy Armour requires Medium Armour which requires Light Armour.
@@ -260,3 +277,21 @@ Tools the item still exist and can be used just like any other item in the game,
 | **Strategy** | For thinking game sets like Chess
 | **Naviagation** | Navigators tools |
 | **Disguise** | Disguise kit, forgery kit when forging stamps and such apparel |
+
+### Charisma Rolls
+
+I recently came across Shadow of the Demon Lord and it's take on stats (Agility, Strength, Intellect, Will) is intriguing. Notably its lack of charisma at all.
+
+Instead they have "Social Attacks" (Actions really):
+- Befriend: Will vs. Will
+- Deceive: Intellect vs. Intellect
+- Intimidate: Will (or Strength) vs. Will
+- Persuade: Will vs. Will
+- Taunt: Intellect vs. Will
+
+Perception & Power are tied to Intellect
+
+Insanity is tied to Will, but Trinitas doesn't use a Sanity system so eh.
+
+Health & Defense seem to be their own thing.
+

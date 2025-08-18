@@ -1,27 +1,34 @@
-## Combat
-PEDD significantly changes how combat works both at the character level, through [Combat Statistics](#combat-statistics) (see below), and at the game level in the following rules of [New Combat](#new-combat).
+- [Combat Rules](#combat-rules)
+  - [One Action All At Once](#one-action-all-at-once)
+  - [Combat Actions](#combat-actions)
+  - [Move Action](#move-action)
+- [Combat Statistics](#combat-statistics)
+  - [Focus](#focus)
+  - [Health](#health)
+  - [Defence](#defence)
+- [Damage, Dying, Wounds and Recovery](#damage-dying-wounds-and-recovery)
+  - [Damage](#damage)
+  - [Recovery](#recovery)
+  - [Short and Long Rests, Sleep and Downtime](#short-and-long-rests-sleep-and-downtime)
+  - [Dying and Wounds](#dying-and-wounds)
+  - [Wounds and Major Enemies](#wounds-and-major-enemies)
+  - [Conditions](#conditions)
+  - [Environmental Damage](#environmental-damage)
+  - [Damage Types & Conditions](#damage-types---conditions)
 
-The goals were to make combat:
- 1. More consistently dangerous
- 2. More tactical
- 3. (And the seemingly incompatible with the above) snappier
 
-The first point is a combination of the fact that low level combat was too dangerous but higher level combat quickly became trivially easy to survive and very slow to play through. Characters became health sponges that you end up playing whack-a-mole with, and monsters much the same. The fact that interesting combat relied on DM's to employ various twists and challenges on top of typical combat rules to make it engaging says more about the base combat system than being critical of DM's who didn't go that far.
+Trinitas combat is a marked step away from typical OCR and D20 combat systems.
 
-Getting rid of HP scaling (starting higher 'Health' but not going up unless explicitely empowered) fixes the health sponge issue, and combined with lower average Defence and the Defence Stat rework makes combat more consistently dangerous (as does the general trend of [Flat Maths](/pedd#flat-maths)).
+I hope you find it tactical, quick, cooperative and above all, dramatic.
 
-The second point of tactical choice is improved by bringing more possible [Actions](#combat-actions) to the table, remaking [Weapons](#weapons) and [Armour](#armour) with expanded and active [Weapon Properties](#weapon-properties), and lastly by folding Battle Master Manoeuvers into basic combat actions with the experimental [Focus](#focus) system.
-
-Snappiness was a major motivator for this rewrite of combat. I wanted to erase the issue of players switching off when its not their turn during combat that I frequently observed, no matter how different and engaging I tried to make combat. So I got rid of turns with the [One Action All At Once](#one-action-all-at-once) system. This is a much more engaging system as everyone is playing together and at once, getting rid of the slow round-the-robin of turn based combat. Everyone only having one Action also means each round is resolved much more quickly.
-
-## New Combat
+## Combat Rules
 
 ### One Action All At Once
-A radical change to basic combat: where, simply, all characters in a **Round** of combat have one **Action**, and everyone acts at once, no initiative. No taking "turns".
+All characters in a **Round** of combat have one **Action**, and everyone acts at once, no initiative. No taking "turns". OAAAO!
 
 How on Earth does that work? You might be thinking.
 
-For starters, it is a bit of a misnomer. All characters still have access to Bonus Actions, from various Powers and Spells, in addition to their Action. Movement also does not technically occur at the same time as the other Actions, as it is resolved last (see below).
+For starters, it is a bit of a misnomer. All characters still have access to Bonus Actions, from various Powers and Spells, in addition to their Action. Movement also does not technically occur at the same time as the other Actions, as it is resolved last (see below), even if it is declared alongside all other Actions in a Round.
 
 However, the main thrust of the system works like this. The GM declares the intentions of most enemies in the scene at the start of a Round, just as their movements would give away what they're about to do. Then all players decide among themselves what they're going to do that Round. When everyone is happy with their Actions, you "resolve" the round in whatever order works. Only in the edge case when the order of actions matters does Initiative need to be determined, using an [Initiative Contest](#initiative-contest).
 
@@ -74,7 +81,7 @@ So what can that one Action can do? Quite a lot more than 5e. Every character ca
 - **Power Strike** - when you hit a character with a weapon attack, you can spend 1 Focus to add d6 to the damage roll.
 - **Shove** - as an Attack or Action you attempt to make an Enemy Prone or move 10ft in a direction of your choice. You make a Strength check against their passive Fortitude.
 
-### Move Action
+#### Move Action
 The Move Action sees a character move a distance in feet equal to their Speed towards a stated target. This can be in a straight line or other path of their choice, so long as the path is traversible. Like all Actions, they are declared at the same time as everyone else, however they're unique in that they're only resolved at the end, after all other Actions and Engagements (see Engagement).
 
 Difficult terrain doubles the Speed required, with swimming / climbing requiring quadruple the speed, and impassible terrain must be circumnavigated.
@@ -92,7 +99,7 @@ Another situation may be: A is moving to B, who is moving to C, who is running a
 
 If it is *not* clear, make an Initiative Contest check to see who goes first, and then resolve from there.
 
-#### Engagement
+### Engagement
 To help with handling fights with little to no initiative and create a natural ebb-and-flow to combat, combatants are "paired off" in Engagements. These are the momentary pairs or small groups that naturally form in the middle of any chaotic fight, and allows us as the players to "zoom in" on little microcosms of fights with the camera, as it were, focusing on resolving pairing after pairing. This can help with indicisive players where ready pairings can resolve first.
 
 Engagements are resolved effectively simultaneously and the order of Engagements doesn’t matter, as with only 1 Action per turn melees rarely effect each other.
@@ -124,17 +131,15 @@ Additionally, a character can only be engaged by a maximum number of characters 
 - larger - 8
 - 2+ sizes larger - any
 
-#### Mounted Combat & Unstable Platforms
+### Mounted Combat
 Fighting on the back of a mount, such as a horse, flying carpet or dune worm, is tricky for the untrained. 
 
 When mounted: 
-- You suffer from the 'Unstable Platform' effect. 
+- You suffer from the 'Unstable' condition. 
 - You gain the benefit of +5ft of reach, if your mount is a size larger than you
 - When your mount uses its Action to Move, it automatically moves you (and is not slowed, such as when grappled characters move each other). Since Movement happens last, any actions from the back of a mount occur before it moves apart from a 'Combined Charge'.
 
 It takes an Action to Mount or Dismount a mount. If you are knocked from your mount, you fall Prone. If your mount is two sizes larger than you, or more, the GM should consider fall damage.
-
-**Unstable Platform** - When unstable, such as being on a mount or standing in an earthquake, you have Disadvantage on Ranged Attacks and cannot attack beyond normal range.
 
 **Combined Charge** - You and your mount both use your Actions. The mount Moves in a straight line towards a target that is within its movement. At the end of that movement, the rider can make one Attack at Advantage against that target. If the mount cannot reach the target with a straight movement, you cannot use Combined Charge.
 
@@ -148,48 +153,13 @@ Characters start with their Willpower of Focus (to a minimum of 1). Each point o
 Focus and Concentration are "exclusionary partners" becase when you are Concentrating on a spell, you use cannot use Focus. If you must use Focus, you break concentration.
 
 ### Health
-Health starts higher than the HP that it replaces, with the name also shaking out the video game connetations and helping players who don't come from a video-game background to engage with the Stat. It purposefuly does not progress unless specifically empowered. Health is naturally limited and only those who invest in it become the ineffible heroes who seem to be able to take punch after punch where others would fall to the first blow no matter how many fights they'd been in.
+Your Health maximum is:
 
-NOTE: OK, so just spit-balling here but, what if Base Health is removed from races, with a simple health bonus as part of their race, and size dictates base health just like it already did at the design stage. It means there's one less awkwardly named stat to care about: Base Health. This also means Size dynamically scales your Health, which could be cool or could be a ball-ache. We'll see.
+> your Size's Base Health (+ any racial Health Bonuses or - any Health Maluses your character may have) + your Fortitude + your Willpower. 
 
-#### Recovering Health, removing Hit Dice
-On the topic of health, recovery of that Health has also changed. No matter what the sheer iverisimilitude of full recoveries every Long Rest (which inevitably meant a few z's were enough to fix broken bones and burnt flesh) always took me out of a game. So I changed it.
+It represents both your body's physical capability to take damage, and your mind's ability to soldier on while under assault. You reduce your current Health by any damage taken during play, and restore it through recovery.
 
-Hit Dice are an older mechanic that is mostly vestigial. It, too, is removed. Instead, when Resting, you recover your Race's Baseline Health as a flat amount to your current Health. You regain Health one Short Rest per Long Rest (and every Long Rest). Meaning, per day, you can at maximum regain 2 × your Race's Baseline Health, unless your ability to recover is further empowered of course.
-
-If you seek professional medical attention or magical healing, you may yet recover a lot more Health in a day. Few will be capable of fully recoving in a single day, not at least without a significant expenditure of resources.
-
-If you undergo a period of downtime, or due to other exceptional circumstance, the GM may allow for a "Full Recovery", removing all ongoing conditions, maluses and recovering all Health and resources.
-
-#### Short and Long Rests, Sleep and Downtime
-Apart from Health recovery, Short Rests and Long Rests are mostly unchanged, with the caveat that explicitely, yes, a Long Rest counts as a Short Rest. For this reason all Powers that key off of "A Short or Long Rest" now simply state "Short Rest". Simplifying and unifying that oddity.
-
-Additionally the meaning of a rest is clarified:
-- **Short Rests** are 1 hour periods of light activity and / or rest.
-- **Long Rests** are 8 hour periods of light activity and / or rest.
-- **Light Activity** includes reading, talking, eating, or standing watch. If a Check is needed, it is not Light Activity, including crafting or other professional activity.
-
-Every Character must, in addition, **Sleep** for at least 6 reasonably-continuous hours every 24 hour period, unless some Power or racial feature says otherwise (such as Elves, who cannot sleep). Failure to do so means you gain a point of Exhaustion. Sleeping counts as Resting, though not all Rest needs to be sleep; say if you were keeping watch.
-
-**Downtime** - PEDD introduces a third level of resting, Downtime, which is a 2 day+ period of non-adventuring activity. As Short Rests are part of Long Rests, Long Rests are part of Downtime, though many other activities can be gotten up to during Downtime. Just as in the base game, feel free to train, pursue professions, craft, carouse, or any other Downtime Activity. After a Downtime, you gain a Full Recovery.
-
-#### Dying and Wounds
-When you reach 0 Health, you enter the "Dying" state. You collapse Unconscious, and cannot take Actions. Additionally, you gain a rank of the Wounded condition. This is another addressment of the wack-a-mole issue. Entering the Dying state is now cumulatively dangerous as when you enter the Dying state you gain a rank in the Wounded condition (Wounded I, initially), which affects one's chances with Death Saves, and has a chance to leave permanent marks.
-
-**Wounded [Rank]** - When your Health is reduced to 0 and you don't already have the Wounded condition, you go Unconscious and you gain the Wounded 1 condition. Each time you go Unconscious from your Health dropping to 0, your Wounded condition increases by 1. Wounds are severe physical and mental damage that threatens your continued existence. The Wounded X condition loses one rank per Long Rest, and one rank per successful Medicine check made against a DC of the Wounded condition rank × 5 (the same like a Death Save). This Medicine check can be made once per day on a wounded character, regardless of success or failure.
-
-The Dying condition is therefore updated:
-
-**Dying** - now when you are Dying and you make Death Saves, the DC is not 10, it is your Wounded condition's rank × 5. So at Wounded I, Death Saves are made against a DC of 5, at Wounded II a DC of 10, Wounded III at DC 15 etc. Otherwise Dying is unchanged (3 saves to stabilise, 3 failed saves and death, coming conscious erases all death saves).
-
-The more you're knocked down, the more likely you are to stay down, forever.
-
-#### Wounds and Major Enemies
-Enemy characters function just like player characters in that they have health and defence, but certain powerful enemies, for reference purposes known as "Major Enemies", can even suffer the "Wounded" condition: a simple twist that changes what it is like to play against them.
-
-Most smaller enemy characters die immediately (or are otherwise defeated) when they reach 0 Health, not having access to Death Saves. Some important humanoid NPCs may go on to have Death Saves. Some power NPC's don't. They can take multiple "Wounds", and may lose parts of themselves (such as a tail, layer of armour, claws, part of their construction...), and will act differently, have access (or greater access) to certain powers etc.
-
-A character with Wounds, when their Health reaches 0, instead lose one Wound and their Health resets to full. Meaning, each wound they can take is effectively an additional health pool. Such enemies, great monsters and infamous villains, must have their wounds be burnt through first, with every tier presenting a different kind of foe and challenge.
+Unlike other level-based TTRPG's, it does not increase unless specifically empowered through the `Health Increase` Power or other. Health is naturally limited and only those who invest in it become the ineffible heroes who seem to be able to take punch after punch where others would fall to the first blow no matter how many fights they'd been in.
 
 ### Defence
 The Defence Stat replaces AC, and is a dynamic value made of three parts:
@@ -216,40 +186,71 @@ Smaller characters are harder to hit. Player characters can potentially be Small
 | Large | 6 |
 | Huge | 2 |
 
-### Weapons and Armour
-Weapons are a well known weakpoint of 5e and have been addressed many times. In fact, I used to use, and continue to take heavy inspiration from, the homebrew; Weapon's Revised https://1drv.ms/b/s!Aq2B34oritBLmmrdNLmMeUrxi5kM
-
-The list of weapons, weapon attributes and armour that PEDD makes use of can be found [in equipment](/PEDD/equipment).
-
-More details about guns, munitions, weapons and specific technological and magical items as they pertain to my setting can be found in my [Armouries of the Second Empire](/mewiki/Mitteland/ArmouriesOfTheSecondEmpire).
-
 #### Natural Armour
 Many creatures have Natural Armour, and so might you through strange Powers. Natural Armour grants an armour value, cannot be doffed and is always 'light', i.e. never limits Reflexes. Like other body armour, it does not stack, so to benefit from greater armour values, you must wear armour with a greater value than your natural armour.
 
 #### Cover
 Cover is functionally unchanged from 5e. Cover is a bonus to your Defence, a +2 for 'Half Cover' and a +5 for 'Three Quarters Cover'. This is independent of Armour and Evasion, so consider it part of your Base Defence. Additionally, these bonuses apply to Reflex Saves.
 
+## Damage, Dying, Wounds and Recovery
+
+### Damage
+After an Attack or other damaging Action occurs to a character, they take the final value calculated away from their Health. Once their Health runs out (reaches 0), that character is rendered Unconscious and Dying, see below.
+
+Health is regained through recovery.
+
+### Recovery
+When Resting, you recover your Fortitude as a flat amount to your current Health, up to your maximum Health. You regain Health one Short Rest per Long Rest (and every Long Rest). Meaning, per day, you can at maximum regain 2 × your Race's Baseline Health, unless your ability to recover is further empowered of course.
+
+If you seek professional medical attention or magical healing, you may yet recover a lot more Health in a day. Few will be capable of fully recoving in a single day, not at least without a significant expenditure of resources.
+
+If you undergo a period of downtime, or due to other exceptional circumstance, the GM may allow for a "Full Recovery", removing all ongoing conditions, maluses and recovering all Health and resources.
+
+### Short and Long Rests, Sleep and Downtime
+Apart from Health recovery, Short Rests and Long Rests are mostly unchanged, with the caveat that explicitely, yes, a Long Rest counts as a Short Rest. For this reason all Powers that key off of "A Short or Long Rest" now simply state "Short Rest". Simplifying and unifying that oddity.
+
+Additionally the meaning of a rest is clarified:
+- **Short Rests** are 1 hour periods of light activity and / or rest.
+- **Long Rests** are 8 hour periods of light activity and / or rest.
+- **Light Activity** includes reading, talking, eating, or standing watch. If a Check is needed, it is not Light Activity, including crafting or other professional activity.
+
+Every Character must, in addition, **Sleep** for at least 6 reasonably-continuous hours every 24 hour period, unless some Power or racial feature says otherwise (such as Elves, who cannot sleep). Failure to do so means you gain a point of Exhaustion. Sleeping counts as Resting, though not all Rest needs to be sleep; say if you were keeping watch.
+
+**Downtime** - PEDD introduces a third level of resting, Downtime, which is a 2 day+ period of non-adventuring activity. As Short Rests are part of Long Rests, Long Rests are part of Downtime, though many other activities can be gotten up to during Downtime. Just as in the base game, feel free to train, pursue professions, craft, carouse, or any other Downtime Activity. After a Downtime, you gain a Full Recovery.
+
+### Dying and Wounds
+When you reach 0 Health, you enter the "Dying" state. You collapse Unconscious, and cannot take Actions. Additionally, you gain a rank of the Wounded condition. This is another addressment of the wack-a-mole issue. Entering the Dying state is now cumulatively dangerous as when you enter the Dying state you gain a rank in the Wounded condition (Wounded I, initially), which affects one's chances with Death Saves, and has a chance to leave permanent marks.
+
+**Wounded [Rank]** - When your Health is reduced to 0 and you don't already have the Wounded condition, you go Unconscious and you gain the Wounded 1 condition. Each time you go Unconscious from your Health dropping to 0, your Wounded condition increases by 1. Wounds are severe physical and mental damage that threatens your continued existence. The Wounded X condition loses one rank per Long Rest, and one rank per successful Medicine check made against a DC of the Wounded condition rank × 5 (the same like a Death Save). This Medicine check can be made once per day on a wounded character, regardless of success or failure.
+
+The Dying condition is therefore updated:
+
+**Dying** - now when you are Dying and you make Death Saves, the DC is not 10, it is your Wounded condition's rank × 5. So at Wounded I, Death Saves are made against a DC of 5, at Wounded II a DC of 10, Wounded III at DC 15 etc. Otherwise Dying is unchanged (3 saves to stabilise, 3 failed saves and death, coming conscious erases all death saves).
+
+The more you're knocked down, the more likely you are to stay down, forever.
+
+### Wounds and Major Enemies
+Enemy characters function just like player characters in that they have health and defence, but certain powerful enemies, for reference purposes known as "Major Enemies", can even suffer the "Wounded" condition: a simple twist that changes what it is like to play against them.
+
+Most smaller enemy characters die immediately (or are otherwise defeated) when they reach 0 Health, not having access to Death Saves. Some important humanoid NPCs may go on to have Death Saves. Some power NPC's don't. They can take multiple "Wounds", and may lose parts of themselves (such as a tail, layer of armour, claws, part of their construction...), and will act differently, have access (or greater access) to certain powers etc.
+
+A character with Wounds, when their Health reaches 0, instead lose one Wound and their Health resets to full. Meaning, each wound they can take is effectively an additional health pool. Such enemies, great monsters and infamous villains, must have their wounds be burnt through first, with every tier presenting a different kind of foe and challenge.
+
 ### Conditions
-The following are changes and additions to 5e's conditions (I will in time port all the conditions over including an overhaul of exhaustion).
+Other than straight damage, characters can suffer the effects of a **Condition**, some (typically ongoing) negative affect. 
 
-Note that durations have been separated from Conditions, so every condition, when inflicted, should also state their duration (1 Round, 1 hour etc.). If a Condition is inflicted that Round, if necessary, roll Initiative to see if the condition applies before or after the target's actions. 
+Every condition, when inflicted, will state a duration (1 Round, 1 hour etc.). If a Condition is inflicted that Round, if necessary, roll Initiative to see if the condition applies before or after the target's Actions.
 
-Exhaustion does not have a duration in-so-far-as any applied level of Exhaustion always requires a Long Rest to remove, so its duration is in affect "until the next Long Rest", and then of course only reducing the effect by 1 level.
+*Exhaustion* does not have a duration in-so-far-as any applied level of Exhaustion always requires a Long Rest to remove, so its duration is in affect "until the next Long Rest", and then of course only reducing the effect by 1 level.
 
 As a short hand, Stunned is just Incapacitated for 1 round, so that obviously doesn't require a duration statement, and it is implied that Incapacitated occurs for more than 1 Round.
 
-Note that "Paralyzed" is carried over, but now functions the same as "Incapacitated".
-
-Note that the severity of some conditions follow levels of intensity, making it easier to know what does what: 
-
-> Immobilised -> Incapacitated / Paralyzed / Stunned  -> Unconscious
-> 
-> Immobilised -> Restrained
-
 - **Blinded / Deafened** - A blinded / deafened character can’t see / hear and automatically fails any ability check that requires sight / hearing. If your Attacks rely on this sense, they are made at Disadvantage.
+- **Bleeding (Damage)** - A character takes the damage in brackets at the end of each Round until they use an appropriate Action to staunch the bleeding (such as using bandages). Non-living characters and others that don't bleed are immune to this condition.
 - **Bloodied** - A fan favourite, when enemy characters fall below half health, they enter the "Bloodied" condition. This is purely an descriptive marker though this also often means their behaviour, tactics and even powers may change, becoming more aggressive and desparate. The Bloodied Condition also lets Players know that the target is below half Health. Alternatively, on monsters that have 2 to 3 Wounds, its the condition after 1 Wound.
 - **Charmed** - unless otherwise stated, a charmed character considers you an ally and will heed your commands, which you can give freely, to the best of its ability. However it will not obey commands that are against its interests. If it is an intelligent character, you can attempt to persuade or otherwise convince them to obey, or that their interests lie elsewhere. For example, a charmed character will not attack another they consider an Ally, but depending on the situation, they may be persuaded to no longer consider the other character an ally.
 - **Concentrating** - when you are using your Concentration on a Spell to maintain its effect. If you take damage, you must make a Willpower save vs the damage (to a minimum of 10) to maintain concentration, otherwise the Spell ends. If you are Concentrating, you cannot use Focus.
+- *Dazed* - The target's Concentration, if any, is broken, and the next attack roll next Round it makes is made with Disadvantage.
 - **Exhaustion** - exhaustion applies in "levels". 1 level is recovered after a Long Rest. At the 6th level, you die.
   - The target character suffers a -2 per level of Exhaustion penalty to all checks.
   - The target character suffers a -2 per level of Exhaustion penalty to their maximum Health.
@@ -263,7 +264,6 @@ Note that the severity of some conditions follow levels of intensity, making it 
   - The target character has Disadvantage on Reflex saves.
   - Attack rolls against the target character have Advantage.
 - **Pained** - the target character must succeed on a Concentration check to do any Action.
-- **~~Paralyzed~~** - unified with Incapacitated
 - **Prone**
   - A prone character's Speed is at 1/4
   - A prone character can stand up as an Action and end the condition.
@@ -278,34 +278,35 @@ Note that the severity of some conditions follow levels of intensity, making it 
   - The target character drops whatever it’s holding and falls Prone.
   - The target character automatically fails Reflex saving throws.
   - Attack rolls against the target character have Advantage.
+- **Unstable** - When Unstable, such as being on a mount or standing in an earthquake, you have Disadvantage on Ranged Attacks and cannot attack beyond normal range.
 
+### Environmental Damage
 The following enviromental damage rules are updated and rolled into Conditions of the corresponding name:
-- **Burning (damage, DC)** - A character burns each Round. They take the amount of fire damage noted in brackets alongside the condition, default 1d6, at the start of the Round, and can take an Action to extinguish themselves. Burning caused by a spell uses the mage's Magic Save statistic for the DC. Unless another DC is stated, it is a DC 8 Fortitude save to end the Burning condition.
+- **Burning (damage, DC)** - A character burns for the amount of fire damage noted in brackets alongside the condition if they fail the save that causes the condition (also noted in brackets), and at the end of each following Round after failing the same DC again. If the save is made, no burning damage is taken. If no damage is listed, the default is 1d6. If no DC is listed, it is a DC 8 Fortitude save. Burning caused by a spell uses the mage's Magic Save statistic for the DC. They can take an Action to extinguish themselves.
 - **Falling** - At the end of a fall, a character takes 1d6 bludgeoning damage for every 10ft it fell, to a maximum of 200ft for 20d6. The character lands prone, unless it avoids taking damage from the fall.
 - **Suffocating*** - A character can survive for a number of rounds equal to its Fortitude (to a minimum of 1). At the start of the next turn, it drops to 0 health and is dying, and it can’t regain health or be stabilized until it can breathe again. If it recovers from Dying with a natural 20 and is still Suffocating, it suffers the condition anew as if just running out of breath again.
 
 *Holding breath rules: A character can hold their breath for 1 minute plus their Willpower x 30 seconds (to a minimum of 30 seconds). When a character takes damage, they lose 30 seconds of breath. When a character runs out of breath they're Suffocating.
 
-### Damage Conditions
+### Damage Types &  Conditions
 Each damage type has an associated condition or weapon special effect, which the DM will more liberally apply making damage do more than just Health numbers in most scenarios. Not every instance of each damage type should apply (indeed, the three weapon damage types apply only on crits), but it creates good opportunities for complications for a DM to apply.
 
-#### Physical
-- **Bludgeoning** -> **Dazes**
-- **Piercing** -> **Penetrates** i.e. Exhaustion (that is to say, accumulated "permanent" damage)
-- **Slashing** -> **Bleeds** 
-- **Thunder** -> **Deafened**
-
-#### Organic
-- **Acid** & Base -> **Pained**
-- **Poison** & Disease -> **Poisoned**, hey this condition already exists!
-- **Psychic** -> **Sluggish**
-
-#### Energy
-- **Fire** -> **Burning**
-- **Cold** -> **Exhaustion**
-- **Lightning** -> **Stunned**
-
-#### Mystical
-- **Necrotic** -> **Sluggish** / **Incapacitated**, depending on the severity
-- **Radiant** -> **Charmed** / **Frightened**, depending on the alignments of those involved
-- **Force** -> **Poisoned** - think radiation
+| Damage | Type | Condition |
+| --- | --- | --- |
+| *Physical* | - | - |
+| **Bludgeoning** | Blunt force trauma. | **Dazed** |
+| **Piercing** | Deeep tissue penetration and internal bleeding. | An internal wound, i.e. a level of **Exhaustion** |
+| **Slashing** | Long serations and dermalogical damage. | **Bleeding (your Bonus)**. |
+| **Thunder** | The shockwave of an incredible blast when loud enough to burst ear drums abnd throw bodies | **Deafened** |
+| *Organic* | - | - |
+| **Acid** / Base | The result of chemical processes unmaking targets. | **Pained** |
+| **Poison** & Disease | compounds and diseases hurting from within. | **Poisoned** |
+| **Psychic** | The unseen force that targets the sanctity of the mind. | **Sluggish** |
+| *Energy* | - | - |
+| **Fire** | The heat that transforms matter to ash. | **Burning** |
+| **Cold** | The frost that turns anything solid and brittle | **Exhaustion** |
+| **Lightning** | The flash of brilliant energy that cooks within and rips molecules and flesh apart. | **Stunned** |
+| *Mystical* | - | - |
+| **Necrotic** | The dark force of death and black anima to unmake life at its most fundamental. | **Sluggish** / **Incapacitated**, depending on the severity
+| **Radiant** | The light force of life and the breath of the gods, both healing and scouring. | **Charmed** / **Frightened**, depending on the alignments of those involved. |
+| **Force** | The most fundamental energy below all others, making and unmaking. | **Poisoned** - think radiation |
