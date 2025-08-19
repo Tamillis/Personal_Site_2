@@ -1,7 +1,9 @@
 - [Combat Rules](#combat-rules)
   - [One Action All At Once](#one-action-all-at-once)
   - [Combat Actions](#combat-actions)
-  - [Move Action](#move-action)
+  - [Engagement](#engagement)
+  - [Resolving a Round](#resolving-a-round)
+  - [Mounted Combat](#mounted-combat)
 - [Combat Statistics](#combat-statistics)
   - [Focus](#focus)
   - [Health](#health)
@@ -14,8 +16,7 @@
   - [Wounds and Major Enemies](#wounds-and-major-enemies)
   - [Conditions](#conditions)
   - [Environmental Damage](#environmental-damage)
-  - [Damage Types & Conditions](#damage-types---conditions)
-
+  - [Damage Types \&  Conditions](#damage-types---conditions)
 
 Trinitas combat is a marked step away from typical OCR and D20 combat systems.
 
