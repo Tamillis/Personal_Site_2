@@ -28,40 +28,45 @@ All characters in a **Round** of combat have one **Action**, and everyone acts a
 
 How on Earth does that work? You might be thinking.
 
-For starters, it is a bit of a misnomer. All characters still have access to Bonus Actions, from various Powers and Spells, in addition to their Action. Movement also does not technically occur at the same time as the other Actions, as it is resolved last (see below), even if it is declared alongside all other Actions in a Round.
+For starters, it is a bit of a misnomer. All characters also have access to Bonus Actions, from various Powers and Spells, in addition to their Action. Movement also does not technically occur at the same time as the other Actions, as it is resolved last (see below), even if it is declared alongside all other Actions in a Round.
 
-However, the main thrust of the system works like this. The GM declares the intentions of most enemies in the scene at the start of a Round, just as their movements would give away what they're about to do. Then all players decide among themselves what they're going to do that Round. When everyone is happy with their Actions, you "resolve" the round in whatever order works. Only in the edge case when the order of actions matters does Initiative need to be determined, using an [Initiative Contest](#initiative-contest).
+However, the main thrust of the system works like this; 
+- The GM declares the intentions of enemies in the scene at the start of a Round, just as their movements would give away what they're about to do. See [Hidden Enemy Action](#hidden-enemy-actions) for when this is not the case.
+- All players decide among themselves what they're going to do that Round.
+- When everyone is happy with their Actions, you "resolve" the Round in whatever order works. Only in the edge case when the order of actions matters does Initiative need to be determined, using an [Initiative Contest](#initiative-contests).
 
-Often, some players may still be thinking while others already know what they want to do. Resolve the actions of the decided players and their engagements (see Engagement below), and you'll often find the remaining players now know what to do.
+Most Actions, however, can be resolved simultaneously. Attacks for example; two characters just try to hit each other, damage each other, and collapse wounded at the same time if that is what happens.
 
-Only powerful or well-trained enemies will be capable of **Hidden Actions**, where their intentions are not stated by the GM but kept secret until after players commit to their own Actions, but player characters can always attempt to **Discern** enemy moves anyway (see [Tactical Actions](#tactical-actions)). In these cases, if fairness needs to clear, GM's are encouraged to write down the intended action on a scratchpad, which also comes in handy for the reveal of a successful discern action.
+Bonus Actions are best thought of as 'concurrent actions', happening at the same time and therefore not significantly interrupting the character's main action. 
 
-Most Actions, however, can be resolved simultaneously. Attacks for example; two people just try to hit each other, damage each other, and collapse wounded at the same time if that is what happens.
+Reactions are a natural part of the cooperative nature of Action decleration - you see that goblin trying to stab your face, so you reactively raise your shield as a Bonus Action, and stab back at it, etc.
 
-Since everyone gets only one Action, the old action / bonus-action / movement economy of 5e collapses. Movement is simply another Action, making the "Dash" action and the "Movement Action" synonymous. Bonus Actions are mostly unchanged but are best thought of as 'concurrent actions', happening at the same time and therefore not significantly interrupting the character's main action. Reactions, interestingly, disappear.
+Movement, as mentioned, is special in that it is always resolved last.
 
-#### Converting Reactions and Ready Actions
-Any "Reactions" are considered "Actions". As Turns are simultaneous their triggers don't matter. If anything, the "triggers" are natural consequences of play. "Oh, the zombie is attempting to bite my face? I block!" The same goes for the Ready Action, no need to setup and wait for a trigger, as it becomes a natural part of play.
+Some players may still be thinking while others already know what they want to do. Resolve the actions of the decided players and their engagements (see [Engagement](#engagement) below), and you'll often find the remaining players now know what to do.
 
-Note that one particularly common Reaction of 5e, Attacks of Opportunity, and its paired Action Disengage, have become a Tactical Action in the former and completely removed in the latter. Further, some Tactical Actions allow for attacks "for free", which means outside of needing to make an Attack Action, Bonus Action etc.
+#### Hidden Enemy Actions
+Only powerful or well-trained enemies will be capable of **Hidden Actions**, where their intentions are not stated by the GM but kept secret. Typically jotted on a slip of overturned paper, until after players commit to their own Actions. Player characters can always attempt to **Discern** enemy moves anyway (see [Tactical Actions](#tactical-actions)), with the GM flipping the paper over and revealing the Action to all players on a success.
 
-#### Initiative Contest
-For any situations where the order of actions matters, the two (or more) characters involved roll off with the most appropriate skill, to see who can get the higher value. For "slow" enemies / mooks the DM will just let the players go first, so-called "player's advantage". For example; "I try to grab the bag of gold before him", "OK, you and the white dragon need to make a Dexterity Check."
+#### Initiative Contests
+For any situations where the order of actions matters, the two (or more) characters involved roll off with the most appropriate skill, to see who can get the higher value. For "slow" enemies / mooks the DM will just let the players go first. For example; "I try to grab the bag of gold before him", "OK, you and the white dragon need to make a Sleight of Hand Check to see who can snatch it faster."
+
+You can use 1 Focus to add d6 to the roll.
 
 ### Combat Actions
-So what can that one Action can do? Quite a lot more than 5e. Every character can perform Core Combat Actions and a variety of Tactical Actions. Note that many are keyed to "an Attack or Action", so if you have more than one attack, you can potentially take more than one "action" on your turn. Note there are several Powers that provide further and enhanced Tactical Actions.
+So what can that one Action can do? Actions any character can perform are split between Core Combat Actions and a variety of Tactical Actions. Note that many are keyed to "an Attack or Action", so if you have more than one attack from the `Extra Attack` power, you can potentially take more than one "action" on your turn. Note there are several Powers that provide further and enhanced Tactical Actions.
 
 #### Core Combat Actions
 
-- **Attack** - as an Action, you make your weapon or spell attack/s against characters in reach / range. One attack Action may involve a number of Attacks on a number of targets depending on the weapon, spell or some Power such as Extra Attack. If multiple targets are all within reach / range and you have multiple Attacks as part of the Attack Action, you may freely choose who to direct attacks at, and make Attack Rolls per Attack. As in 5e, this is the distinction between the "Attack Action" and specific "Attacks", as well as "Weapon Attacks" and "Spell Attacks". Unless otherwise stated, full attack action attacks are with lethal intent (see Non-Lethal Strike).
-  - **Unarmed Strike** - in PEDD, this simply means a weapon Attack using Body, instead of a traditional weapon.
-  - **Improvised Strike** - in PEDD, this simply means a weapon Attack using a piece of the environment. Ask your GM for appropriate statistics to use.
-- **Block** - as a Bonus Action, you raise your shield, or weapon if it has the Block property, to gain the item's Armour bonus. This prevents you using that item as a weapon to attack. The Armour bonus lasts for the rest of the Round.
+- **Attack** - as an Action, you make your Weapon or Spell Attack/s against characters in reach / range. One Attack Action may involve a number of Attacks on a number of targets depending on the weapon, spell or some Power such as Extra Attack. If multiple targets are all within reach / range and you have multiple Attacks as part of the Attack Action, you may freely choose who to direct attacks at. You make Attack Rolls per Attack. Unless otherwise stated, each Attack Action attack is with lethal intent (see Non-Lethal Strike).
+  - **Unarmed Strike** - a weapon Attack using your body and the Unarmed Fighting skill, instead of a traditional weapon.
+  - **Improvised Strike** - a weapon Attack using a piece of the environment or non-weapon object. Ask your GM for appropriate statistics to use (such as that of the Club).
+- **Block** - as a Bonus Action, you raise your shield, or weapon if it has the Block property, to gain the item's Armour bonus to your Defence for this Round. This prevents you using that item as a weapon to attack.
 - **Discern** - as an Attack or Action, you can make a Perception check against one enemy whose has a Hidden Action. If successful (the GM will decide the DC), their Action is no longer hidden and everyone in the combat can know.
 - **Dodge** - as an Action, you make a Reflex Saving Throw and the result (or your Stationary Defence, if that is higher) replaces your Defence value for the rest of the Round.
 - **Go to Cover / Go Prone / Stand** - as a Bonus Action you make yourself Prone, or enter adjacent cover. The Prone condition or being in cover uses Stationary Defence. Prone makes being shot at occur at Disadvantage, and cover is +2/+5 to Defence for half / ¾ cover respectively (see [Conditions](#conditions)). Going from cover or Prone to standing takes a Stand Bonus Action.
 - **Help** - as an Action, you aid an ally in attacking an enemy within your reach. You feint, distract the target, or in some other way team up to make your ally's attack more effective. If your ally Attacks the target this Round, the first Attack is made with Advantage.
-- **Hide** - as an Action, you make a Stealth check in an attempt to hide from those you are obscured from (in 3/4's cover or out of line of sight), versus a DC of 15. If you succeed, you gain the benefits of being Invisible: Attacks against you have Disadvantage, and your Attacks have Advantage. When you make an Attack, you are no longer hidden. If you or others Move such that you are no longer obscured, you are no longer Hidden from them.
+- **Hide** - as an Action, you make a Stealth check in an attempt to hide from those you are obscured from (in 3/4's cover or out of line of sight), versus a DC of their passive Perception. If you succeed, you gain the benefits of being Invisible: Attacks against you have Disadvantage, and your Attack has Advantage. When you make an Attack, you are no longer Hidden. If you or others Move such that you are no longer obscured, you are no longer Hidden from them.
 - **Interact** - as an Action, you interact, a short series of motions that achieves a simple goal, with something or someone. This includes; giving an unconscious ally a health potion, arranging the runes of a magical interface, frisking a character for weapons, pulling the chains of a pulley, finding a particular page of a book, or creating a rough sketch in the sand
 - **Mount / Dismount** - as an Action, you safely get on or get off a mount within your reach.
 - **Move** - move your Speed along a path of your choice towards a target. See [Move Action](#move-action) for details.
@@ -69,20 +74,20 @@ So what can that one Action can do? Quite a lot more than 5e. Every character ca
 
 #### Tactical Actions
 
-- **Attack of Opportunity** - if an enemy you're Engaged with moves away from you, you can spend 1 Focus to make an attack on them for free, after which they have moved away and are no longer Engaged with you for that Round.
+- **Attack of Opportunity** - if an enemy you're Engaged with moves away from you, you can spend 1 Focus to make an attack on them for free, after which they have moved away and are no longer Engaged with you.
 - **Coup de Grace** - when you make a melee Weapon Attack against an Incapacitated target, don't roll for Damage, instead take each dice you would roll (if any) to be the maximum result.
 - **Disarm** - as an Attack or Action against an enemy in your Reach holding a weapon or shield, you make an attack roll against the enemy's passive Reflexes. If you succeed, you rip the weapon from their grasp and throw it 10ft in a direction of your choice (this does not count as a thrown weapon attack), to the ground at your feet, or equip it an empty hand of yours.
 - **Focussed Strike** - when you make a weapon attack roll against a character, you can spend 1 Focus to add d6 to the roll.
-- **Grapple** - as an Attack or Action you attempt to Grapple a Character. You make a Strength check against their passive Fortitude. If you succeed the target Character is Immobilised. On subsequent turns you can maintain the grapple (no additional roll needed) as an Action or end the grapple for free. When Grappling, you can use your Bonus Action to Move yourself and the enemy as if going through Difficult Terrain (typically, at half Speed), make yourself and the enemy Prone, or make an Unarmed Strike or Weapon Attack with the 'prone fighting' tag against the grappled character. The grappled character must use their Action to attempt to escape the Grapple, making a Strength or Dexterity check (their choice) vs your passive Fortitude, ending the grapple on a success.
+- **Grapple** - as an Attack or Action you attempt to Grapple a Character. You make a Strength check against their passive Fortitude. If you succeed the target Character is Immobilised. On subsequent turns you can maintain the grapple (no additional roll needed) as an Action or end the grapple for free. When Grappling, you can use your Action to Move yourself and the enemy as if going through Difficult Terrain (typically, at half Speed), make yourself and the enemy Prone, or make an Unarmed Strike or Weapon Attack with the 'prone fighting' tag against the grappled character. Despite being Incapacitated, the grappled character can use their Action to attempt to escape the Grapple, making a Strength or Dexterity check (their choice) vs your passive Fortitude, ending the grapple on a success.
 - **Lunge** - When you make a melee weapon attack, you can attack at Disadvantage but double your Reach for that attack. You can spend 1 Focus to ignore the Disadvantage.
 - **Non-lethal Strike** (a.k.a. Knockout Strike) - you make an Attack Action with the intention to knock unconscious rather than kill. Don't roll for Damage, instead take each dice roll (if any) to have been a 1. If the target reaches 0 Health, they enter the Unconscious condition.
-- **Off-Hand Strike** - when you make an Attack with a weapon with the Light Property, you may use your Bonus Action to do a second Attack with the other weapon in your off-hand, which also must have the Light property. This second attack does not benefit from the Statistic to the damage roll.
-- **Parry** - as an Attack or Action, if your weapon has the Parry Property and when another character damages you with a melee attack, you can reduce the damage by your Dexterity and proficiency Bonus with the weapon (if any), to a minimum of 0, if you succeed at a weapon skill check vs the enemy's passive Reflexes.
+- **Off-Hand Strike** - when you make an Attack Action with a weapon with the Light Property, you may use your Bonus Action to do a second Weapon Attack with the other weapon in your off-hand, which also must have the Light property. This second attack does not benefit from the Statistic to the damage roll.
+- **Parry** - if your weapon has the Parry Property and another character damages you with a melee attack, as an Attack or Action, you can make weapon skill check vs the enemy's passive Reflexes. If you succeed, you can reduce the damage by your Dexterity and proficiency Bonus with the weapon (if any), to a minimum of 0.
 - **Power Strike** - when you hit a character with a weapon attack, you can spend 1 Focus to add d6 to the damage roll.
 - **Shove** - as an Attack or Action you attempt to make an Enemy Prone or move 10ft in a direction of your choice. You make a Strength check against their passive Fortitude.
 
 #### Move Action
-The Move Action sees a character move a distance in feet equal to their Speed towards a stated target. This can be in a straight line or other path of their choice, so long as the path is traversible. Like all Actions, they are declared at the same time as everyone else, however they're unique in that they're only resolved at the end, after all other Actions and Engagements (see Engagement).
+The Move Action sees a character move a distance in feet equal to their Speed towards a stated target. This can be in a straight line or other path of their choice, so long as the path is traversible. Like all Actions, they are declared at the same time as everyone else, however they're unique in that they're only resolved at the end, after all other Actions and Engagements (see [Engagement](#engagement).
 
 Difficult terrain doubles the Speed required, with swimming / climbing requiring quadruple the speed, and impassible terrain must be circumnavigated.
 
@@ -90,29 +95,26 @@ When more than one character takes the Move action with respect to other charact
 
 For example, if we have Mr A, Mr B and Mr C in the awkward face off of A moving to B, B to C and C to A, where does everyone end up? Bunched in the middle: because when viewed through the lense of their targets, the natural result is that they all start moving towards each other (this way, A gets to B, who gets to C, who gets to A). 
 
-I'm a programmer so you don't have to believe me, just watch:
-
 <script src="pedd_movement_1.js"></script>
 <div id="movement-1-canvas"></div>
 
-Another situation may be: A is moving to B, who is moving to C, who is running away from A (or B really). In this case, they all move linearly in the direction of C's flight (which is away from A (or B)). 
+Another situation may be: A is moving to B, who is moving to C, who is running away from A. In this case, they all move linearly in the direction of C's flight (which is away from A). 
 
-If it is *not* clear, make an Initiative Contest check to see who goes first, and then resolve from there.
+If it is *not* clear, make an Initiative Contest check to see who goes first, and then resolve in sequence.
 
 ### Engagement
-To help with handling fights with little to no initiative and create a natural ebb-and-flow to combat, combatants are "paired off" in Engagements. These are the momentary pairs or small groups that naturally form in the middle of any chaotic fight, and allows us as the players to "zoom in" on little microcosms of fights with the camera, as it were, focusing on resolving pairing after pairing. This can help with indicisive players where ready pairings can resolve first.
+To help with handling fights with little to no initiative and create a natural ebb-and-flow to combat, combatants are ["paired off"](#pairing-off) into **Engagements**. These are the momentary pairs or small groups that naturally form in the middle of any chaotic fight, and allows us as the players to "zoom in" on little microcosms of fights with the camera, as it were, focusing on resolving pairing after pairing. 
 
-Engagements are resolved effectively simultaneously and the order of Engagements doesn’t matter, as with only 1 Action per turn melees rarely effect each other.
+> This can help with indicisive players where ready pairings can resolve their Actions first.
 
-All combat is resolved in two simple steps*:
+Engagements are resolved simultaneously in-story and in-reality the order of Engagements doesn’t matter, as with only 1 Action per turn melees do not effect each other.
 
-1. **Determine Engagements** - (if this step is necessary) where combatents pair off with ["Zone of Engagement"](#zone-of-engagement). This may seem complex at the outset, but these rules mostly only exist to resolve edge-cases and opinions of conflict. 9 times out of 10 the GM simply needs to ask "OK, so who's fighting the Ogre wacking Gary and who's shooting back at the goblins?".
-2. **Resolve Engagements** - resolving pairs/groups in a sensible/cinematic sequence. Melee conflicts are easily resolved in their engagements. Ranged attacks naturally involve unpaired individuals but often can be smoothly resolved at the start or end of a Round. Resolve conflicts of interest with an Initiative Contest.
+#### Pairing Off
+The rules of pairing off.
 
-#### Zone of Engagement
-The rules of pairing off, pulling and turning.
+How do you avoid a long conga-line chain of awkwardly connected characters fighting someone who isn't fighting them? "**Pairing off**". 
 
-How do you avoid a long conga-line chain of awkwardly connected characters fighting each other? "Pairing off". Sometimes if you want to attack Mr A, even if they're attacking Mr B, because Mr C is attacking you and is otherwise unengaged, you have no choice but to "**Turn**" from your initial intended target, who is said to "**Pull**" you, and "**Pair Off**" with them. In other words, you cannot be "pulled" if you are "paired off": engaged with someone who is engaged with you.
+Sometimes if you want to attack Mr A, even if they're attacking Mr B, because Mr C is attacking you and is otherwise unengaged, you have no choice but to be pulled from your initial intended target, who is said to "**Pull**" you, where you "**Pair Off**" with them. In other words, you cannot be "pulled" if you are "paired off": engaged with someone who is engaged with you.
 
 Intent:
 
@@ -122,14 +124,22 @@ Result:
 
 > Mr C <-> You | Mr A <-> Mr B ...
 
-“Pulling” and “turning”, if in conflict, are an Initiative Contest.
+“Pulling”, if in conflict, is resolve with an Initiative Contest. I've never had to use this rule, which shows how rare this situation is.
 
-Additionally, a character can only be engaged by a maximum number of characters according to their relative size. Sometimes someone is surrounded by attackers, and even if you wanted to join in on the bullying, you're crowded out. The maximum number of opponents a character of a given relative size can have is:
+#### Maximum Engagement
+A character can only be engaged by a maximum number of characters according to their relative Size. Sometimes someone is surrounded by attackers, and even if you wanted to join in on the bullying, you're crowded out. The maximum number of opponents a character of a given relative size can have is:
 - 2+ sizes smaller - 1
 - smaller - 2
 - same - 4
 - larger - 8
 - 2+ sizes larger - any
+
+### Resolving a Round
+All combat is resolved in three simple steps:
+
+1. **Determine Engagements** - (if this step is necessary) where combatents pair off. This may seem complex at the outset, but these rules mostly only exist to resolve edge-cases and opinions of conflict. 9 times out of 10 the GM simply needs to ask "OK, so who's fighting the Ogre wacking Gary and who's shooting back at the goblins?".
+2. **Resolve Engagements** - resolving pairs/groups in a sensible/cinematic sequence. Melee conflicts are easily resolved in their engagements. Ranged attacks naturally involve unpaired individuals and so can be simply resolved. Determine any conflicts of interest with an Initiative Contest: such as "I cast Hold Person on him! Does he still hit me with his mace?" - roll initiative to see if the hold person went off in time.
+3. **Resolve Movement** - finally, resolve any ongoing movement.
 
 ### Mounted Combat
 Fighting on the back of a mount, such as a horse, flying carpet or dune worm, is tricky for the untrained. 
@@ -137,20 +147,22 @@ Fighting on the back of a mount, such as a horse, flying carpet or dune worm, is
 When mounted: 
 - You suffer from the 'Unstable' condition. 
 - You gain the benefit of +5ft of reach, if your mount is a size larger than you
-- When your mount uses its Action to Move, it automatically moves you (and is not slowed, such as when grappled characters move each other). Since Movement happens last, any actions from the back of a mount occur before it moves apart from a 'Combined Charge'.
+- When your mount uses its Action to Move, it automatically moves you (and is not slowed, such as when grappled characters move). Since Movement happens last, any actions from the back of a mount occur before it moves apart from a 'Combined Charge' (see below).
 
 It takes an Action to Mount or Dismount a mount. If you are knocked from your mount, you fall Prone. If your mount is two sizes larger than you, or more, the GM should consider fall damage.
 
-**Combined Charge** - You and your mount both use your Actions. The mount Moves in a straight line towards a target that is within its movement. At the end of that movement, the rider can make one Attack at Advantage against that target. If the mount cannot reach the target with a straight movement, you cannot use Combined Charge.
+**Combined Charge** - You and your mount both use your Actions. The mount Moves towards a target that is within its movement. At the end of that movement, the rider can make one Weapon Attack at Advantage against that target. If the mount cannot reach the target with a straight-ish movement, you cannot use Combined Charge.
 
 ## Combat Statistics
 
 ### Focus
-Focus is both a replacement of Battle Master's unnamed superiority dice pool and an exclusionary partner of the "Concentration" condition. 
+Focus is a resource used by fighters taking certain Tactical Actions and is an exclusionary partner of the Concentration condition. 
 
-Characters start with their Willpower of Focus (to a minimum of 1). Each point of Focus can be expended on certain Tactical Actions or to boost an initiative contest roll by d6, and you regain all used Focus on a Short Rest. This gives all characters a small (by default) pool of special moves they can pull off during a fight. There are Powers to boost your Focus pool, provide more Focus recovery and make new Tactical Actions available.
+Characters start with their Willpower of Focus (to a minimum of 1). Each point of Focus can be expended on certain Tactical Actions or to boost an initiative contest roll by d6, and you regain all used Focus on a Short Rest. This gives all characters a small (by default) pool of special moves they can pull off during a fight. 
 
-Focus and Concentration are "exclusionary partners" becase when you are Concentrating on a spell, you use cannot use Focus. If you must use Focus, you break concentration.
+There are Powers to boost your Focus pool, provide more Focus recovery and make new Tactical Actions available.
+
+Focus and Concentration are "exclusionary partners" becase when you are Concentrating on a spell, you use cannot use Focus. If you must use Focus, you break Concentration.
 
 ### Health
 Your Health maximum is:
@@ -162,18 +174,16 @@ It represents both your body's physical capability to take damage, and your mind
 Unlike other level-based TTRPG's, it does not increase unless specifically empowered through the `Health Increase` Power or other. Health is naturally limited and only those who invest in it become the ineffible heroes who seem to be able to take punch after punch where others would fall to the first blow no matter how many fights they'd been in.
 
 ### Defence
-The Defence Stat replaces AC, and is a dynamic value made of three parts:
-- a Base Defence value that keys off of Size, 8 for Medium characters. See the Base Defence Table below.
-- an Armour value determined by worn Equipment (see [Armour](./pedd/combat#armour)) and other sources
-- your Reflexes to a minimum of 0 (which can be limited by worn Equipment) which is also known as your "Evasion". Some Powers change how Evasion is calculated.
+The Defence Stat is a dynamic value made of three parts:
+- a Base Defence value that keys off of Size, 8 for Medium characters. See the [Base Defence Table](#base-defence=table) below.
+- a bonus from your worn Armour (see [Armour](./pedd/combat#armour)) and other sources
+- a Stat bonus, which is by default your Reflexes (which can be limited / ignored by worn Equipment). Some Powers, like `Foresighted Defence` change which Stat/s are used.
 
-It is intented to be, on average, lower than AC, making combat more dangerous. However this is only passive defence, Actions such as Block, and Powers, play a more significant role in increasing Defence, making it more active and combat in general more engaging.
+The Block Action increases your Defence for a Round, and is an important tool in any character's repertoire.
 
-In most situations, Defence is the simple sum of Base Defence, Armour and Evasion. There are two special scenarios that use a more limited form of Defence:
-- **Stationary Defence** - Defence without the benefit of Evasion. Some effects target Stationary Defence directly, and Surprised, Stunned and Immobilised targets only get their Stationary Defence. Any character whose Speed is 0, such as one suffering the Immobilised condition, uses its Stationary Defence.
+There are two special scenarios that use a more limited form of Defence:
+- **Stationary Defence** - Defence without the benefit of Reflexes. Some effects target Stationary Defence directly, and Surprised, Stunned and Immobilised targets only get their Stationary Defence. Any character whose Speed is 0, such as one suffering the Immobilised condition, uses its Stationary Defence.
 - **Unarmoured Defence** - Defence without the benefit of Armour, though armour limits on Reflexes are still applied (if appropriate). A few effects target Unarmoured Defence, notably Armour Piercing Weapons.
-
-Remember that the Armour value also changes during play as you don and doff Equipment, and especially from bonuses such as spells, helmets or whether you Block with your Shield or not!
 
 #### Base Defence Table
 Smaller characters are harder to hit. Player characters can potentially be Small, Medium or Large as that is interesting, and Tiny and Huge are added incase size, through magic or other means, is altered during play.
@@ -266,7 +276,7 @@ As a short hand, Stunned is just Incapacitated for 1 round, so that obviously do
 - **Pained** - the target character must succeed on a Concentration check to do any Action.
 - **Prone**
   - A prone character's Speed is at 1/4
-  - A prone character can stand up as an Action and end the condition.
+  - A prone character can use the Stand Bonus Action to end the condition.
   - A prone character has Disadvantage on attack rolls with weapons that do not have the Prone Fighting property.
   - An attack roll against the prone character has Advantage if the attacker is within reach. Otherwise, the attack roll has Disadvantage.
 - **Restrained** - the target character is Immobilised and Attack rolls against them have Advantage, and the target character's attack rolls have Disadvantage.
