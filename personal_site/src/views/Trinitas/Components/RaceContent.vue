@@ -13,22 +13,18 @@
 				<AnyStatSelector :val="stat.val" :initialStat="stat.desc" @stat-chosen="chosenStat => anyStatChosen(chosenStat, stat.val, i)" />
 			</li>
 		</ul>
-		<h4>
-			Base Health: <span>{{ race.baseHealth }}</span>
-		</h4>
 		<h4>Age:</h4>
 		<div v-html="marked.parse(race.age)"></div>
 		<h4>Size:</h4>
 		<div v-if="Array.isArray(race.size)">
-			<select ref="race-size-selector">
-				<option v-for="size in race.size" :value="size.val">{{ size.desc }}</option>
-			</select>
+			<div v-for="size in race.size" class="flex align-centre pl-r gap">
+				<input type="radio" name="raceSize" :value="size.val" class="radioQ">
+				<p style="text-indent: 0px;">{{ size.desc }}</p>
+			</div>
 		</div>
 		<div v-else v-html="marked.parse(race.size.desc)"></div>
 		<h4>Speed:</h4>
 		<div v-html="marked.parse(race.speed.desc)"></div>
-		<h4>Senses:</h4>
-		<div v-html="marked.parse(race.senses.desc)"></div>
 		<div v-for="extra in extras">
 			<h4>{{ format(extra) }}:</h4>
 			<div v-html="marked.parse(race[extra])"></div>
@@ -48,7 +44,7 @@ const emit = defineEmits(["selectedStats"]);
 let standardHeadings = ["name", "desc", "stats", "baseHealth", "age", "size", "speed", "senses", "powers"];
 
 let extras = Object.keys(props.race).filter(key => !standardHeadings.includes(key));
-
+console.log(extras);
 //chosenAnyStats of the form [{desc, val},{desc,val}...] ... defaults will be passed in.
 const currentAnyStats = ref(props.chosenAnyStats ? props.chosenAnyStats : props.race.stats.filter(stat => stat.desc == "Any"));
 

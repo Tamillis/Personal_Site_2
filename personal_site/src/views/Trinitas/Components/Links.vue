@@ -24,7 +24,7 @@
                     <RouterLink class="intext-link" :to="{ name: 'trinitas-core-rolls' }">Core Rolls</RouterLink>
                 </li>
                 <li class="triangle-points">
-                    <RouterLink class="intext-link" :to="{ name: 'trinitas-role' }">Role & Power Progression
+                    <RouterLink class="intext-link" :to="{ name: 'trinitas-progression' }">Progression
                     </RouterLink>
                 </li>
                 <li class="triangle-points">

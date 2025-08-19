@@ -27,7 +27,7 @@ Welcome to Trinitas.
 The old base of DnD is gone. No more relying on the old books! This will go horribly wrong.
 
 ### Game Terms
-Note that all in-game terms as defined in PEDD are capitalised, like 'Action', and that a corresponding entry in the Index (a WIP) can be quickly found, but not necessarily all capitalised words are in-game terms. If I get the implementation going, each term's index entry will be quickly visible via pop-up, automatic highlighting etc.
+Note that all in-game terms as defined in Trinitas are capitalised, like 'Action', and that a corresponding entry in the Index (a WIP) can be quickly found, but not necessarily all capitalised words are in-game terms. If I get the implementation going, each term's index entry will be quickly visible via pop-up, automatic highlighting etc.
 
 ### Example Characters
 

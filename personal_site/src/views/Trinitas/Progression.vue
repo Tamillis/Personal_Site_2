@@ -1,5 +1,5 @@
 <template>
-    <BasePage md="trinitas-role" subtitle="Role & Power Progression"/>
+    <BasePage md="progression" subtitle="Progression"/>
 </template>
 
 <script setup>

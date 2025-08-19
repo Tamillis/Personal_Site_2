@@ -16,7 +16,7 @@
   align-items: start;
 }
 
-.align-center {
+.align-center, .align-centre {
   align-items: center;
 }
 
@@ -270,6 +270,10 @@
 
 .p-r {
   padding: 1rem;
+}
+
+.pl-r {
+  padding-left: 1rem;
 }
 
 .py-gap {
@@ -606,9 +610,10 @@ input[type=number].q::-webkit-inner-spin-button {
 
 .checkBoxQ,
 .radioQ {
-  width: 12px;
+  aspect-ratio: 1 / 1;
   height: 12px;
   margin: 2px 5px 0 5px;
+  padding: 0px;
   transition: .2s all linear;
   border: white solid 1px;
   border-radius: 50%;

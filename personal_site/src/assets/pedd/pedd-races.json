@@ -1,7 +1,7 @@
 [
     {
         "name": "Human",
-        "desc": "Humans represent the best and worst of civilization, and every other part of the spectrum, and are known primarily for their short lives, industriousness, and their lasting institutions.\n\nThat they are productive, conscientious, and promiscuous is without doubt, for human nations rule much of all the known Materiae, and even in wild and primal Tlancayo the greatest tribal territories and nations are governed, at least partially, by a human hand.\n\nBut \"Humanity\" is not a term usually used to mean the modern human race alone. Any and all of the races that descend from the First Men fall under the umbrella of humanity, be they a \"touched\" bloodline or descendant race. Even the haughty and capricious Eladrin, dwellers and custodians of the Fae Wyld, acknowledge this origin.\n\nHumans, as in modern humans, are said by some to be the purest and most direct descendant of the First Men. The Religion of the Father, and the successor faith, the Everlight, both preach this as fact and unalienable right. Others say that humans are just as corrupted from the First Men as any of the other bloodlines, as they are not capable of the feats the First Men were described as accomplishing.",
+        "desc": "Humans represent the best and worst of civilization, and every other part of the spectrum, and are known primarily for their short lives, industriousness, and their lasting institutions.",
         "stats": [
             {
                 "desc": "Any",
@@ -16,7 +16,6 @@
                 "val": -1
             }
         ],
-        "baseHealth": 6,
         "age": "Humans reach adulthood in their late teens and have a typical lifespan of 80 years.",
         "size": {
             "desc": "Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.",
@@ -25,16 +24,6 @@
         "speed": {
             "desc": "Your base walking speed is 30ft",
             "val": 30
-        },
-        "senses": {
-            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.",
-            "val": [
-                "touch",
-                "taste",
-                "sight",
-                "sound",
-                "smell"
-            ]
         },
         "tenaciousWill": "You gain proficiency in Willpower Saves.",
         "powers": [
@@ -50,14 +39,14 @@
     },
     {
         "name": "Dwarf",
-        "desc": "From kingdoms rich in ancient grandeur lost to the Cataclysm, the Dwarves are a people believed to be carved from the roots of mountains, which would certainly describe their supernatural sense for stone. They are so like Men and Little People, just stockier and of a height between them, yet they're utterly unable to form bloodlines. They, of all the races that shun the sun, have no weakness to it. They're renowned smiths and artisans with clever fingers many shards-over. A commitment to family or clan and unearthing lost traditions, and a burning hatred of drow and other dark creatures that kicked them when they were down, are the common threads that unite all dwarves.",
+        "desc": "These stocky folk of a height between Humans and Halflings, and heavier than both, of all the races that shun the sun have no weakness to it. They're renowned smiths and artisans with clever fingers many shards-over. A commitment to family or clan and unearthing lost traditions, and a burning hatred of drow and other dark creatures, are the common threads that unite all dwarves.",
         "stats": [
             {
                 "desc": "Strength",
                 "val": 1
             },
             {
-                "desc": "Dexterity",
+                "desc": "Accuracy",
                 "val": 1
             },
             {
@@ -69,14 +58,13 @@
                 "val": -1
             }
         ],
-        "baseHealth": 8,
         "age": "Dwarves mature slower than humans, until their 30's, but they're considered young until they reach the age of 50. On average, they live about 350 years.",
         "size": {
             "desc": "Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium",
             "val": "medium"
         },
         "speed": {
-            "desc": "Your base walking speed is 25ft. Your speed is not reduced by wearing heavy armor.",
+            "desc": "Your base walking speed is 25ft.",
             "val": 25
         },
         "senses": {
@@ -89,8 +77,11 @@
                 "smell"
             ]
         },
+        "healthBonus": "You have +2 Health.",
+        "loadBearing": "Your speed is not reduced by wearing heavy armor.",
         "darkVision": "You can see in dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey.",
         "stoneSense": "You have Tremorsense up to a 15ft radius through earth & stone, when standing on connected ground.",
+        "homogeneous": "You can only choose 1 Racial Power",
         "powers": [
             "Troglobite",
             "Stout Resiliance",
@@ -104,14 +95,14 @@
     },
     {
         "name": "Elf",
-        "desc": "Also known as the Fae-touched, Elves are a magical people of otherworldly bearing. The Fey drifted to one of two fates; living in places of ethereal natural beauty and terrible primalcy, in the midst of ancient forests of darks roots, in oases of deep deserts, in the watery depths of vibrant coral reefs; or to the courts and intrigues of mortal cities, crafting in silvery spires glittering with magic, where soft music drifts through the air and gentle fragrances waft on the breeze to counter city stench rising from the dirt streets below. Coming to be called Wild Elves and Grey Elves respectively, all Elves love life, as even now they're a reflection of the pre-world that made them.",
+        "desc": "Elves are a ethereal people, long-lived and a reflection of the pre-world that moulded them. The Fey drifted to one of two fates; living in places of natural beauty and terrible primalcy, ancient forests, oases of deep deserts, the watery depths of vibrant reefs; or to the courts and intrigues of mortal cities playing soft music that drifts through the air and crafting gentle fragrances to counter the city stench. Coming to be called Wild Elves and Grey Elves, respectively.",
         "stats": [
             {
                 "desc": "Perception",
                 "val": 1
             },
             {
-                "desc": "Any",
+                "desc": "Dexterity",
                 "val": 1
             },
             {
@@ -123,8 +114,7 @@
                 "val": -1
             }
         ],
-        "baseHealth": 5,
-        "age": "Although elves reach physical maturity at about the same age as humans (unless the child doesn't wish to group up yet), the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. A wild elf typically claims adulthood and an adult name around the age of 100 and can live for a millenium or more, depending on how intertwined with nature they are and Elves deep in the glades rumoured to never age, whereas more urbane Elves seems to share lifespans of 'only' a century or two.",
+        "age": "Although elves reach physical maturity at about the same age as humans (unless the child doesn't wish to group up yet), the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. A wild elf typically claims adulthood and an adult name around the age of 100 and can live for a millenium or more, depending on how intertwined with nature they are. Elves deep in the glades are rumoured to never age, whereas more urbane Elves seems to share lifespans of 'only' a century or three.",
         "size": {
             "desc": "Elves range from under 5 to over 6 feet tall and have slender builds and exaggerated features. Your size is Medium.",
             "val": "medium"
@@ -133,18 +123,9 @@
             "desc": "Your base walking speed is 35ft.",
             "val": 35
         },
-        "senses": {
-            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.",
-            "val": [
-                "touch",
-                "taste",
-                "sight",
-                "sound",
-                "smell"
-            ]
-        },
+        "healthMalus": "You have -1 Health.",
         "keenSight": "You can see further and clearer than other races, details rising to notice faster. You add your Bonus to any Perception checks for sight, when no Skill is in use.",
-        "trance": "Elves cannot sleep. Their blood is severed from dreams. Instead they meditate deeply, remaining conscious but unobservant. While meditating, Elves make a pale attempt at dreaming; such dreams are actually mental exercises that have become reflexive after years of practice. After resting in this way, you gain the same benefit a human would from 8 hours of sleep.",
+        "trance": "Elves cannot sleep. Their blood is severed from dreams. Instead they meditate deeply, remaining conscious but unobservant. While meditating, Elves make a pale attempt at dreaming; such dreams are actually mental exercises that have become reflexive after years of practice. After resting in this way for 4 hours, you gain the same benefit a human would from 8 hours of sleep.",
         "feyAncestry": "You have advantage on saving throws against being Charmed, and magic can't put you to Sleep.",
         "powers": [
             "Darkvision",
@@ -165,22 +146,21 @@
     },
     {
         "name": "Gnome",
-        "desc": "A constant hum of busy activity pervades the warrens and neighborhoods where gnomes live, at least for the time they're there. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor explosion there, a yelp of surprise or triumph, and especially bursts of laughter and cries of 'Eureka'!\n\nGnomes are infected with the desire to be where the action is, or simply to *be* the action. They are prone to travel, to follow the other races to see what's going on, as ever since leaving the Fractal Dream they fall prey to a sickness or palsy if they can't sate their curiosity.\n\nThey are particularly present at the borders between peoples where, as they see it, the fun really is. That gnomish curiosity has a twofold tragic downside though. Often, they are caught in many a crossfire between conflicting groups, distrusted as travellers, foreigners and potential spies. Secondly, many of them fall into what others call \"Mist Madness\". This almost uncontrollable wanderlust takes over when at the Mistal breaches, and few Gnomes can stare at that ever-changing fractal joy and not be taken by the desire to walk deep within it. Most are never seen again. Of the very few who return from such an investigation, they are inevitably changed, often hailing from different materiae. And times.",
+        "desc": "A constant hum of busy activity pervades the warrens and neighborhoods where gnomes live, at least for the time they're there. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor magical explosion there, a yelp of surprise, and especially bursts of laughter and cries of 'Eureka'!",
         "stats": [
             {
-                "desc": "Intelligence",
+                "desc": "Any",
                 "val": 2
             },
             {
-                "desc": "Accuracy",
+                "desc": "Intelligence",
                 "val": 1
             },
             {
-                "desc": "Perception",
+                "desc": "Any",
                 "val": -1
             }
         ],
-        "baseHealth": 4,
         "age": "Gnomes mature at the same rate as humans, and most are expected to settle into adult life around the age of 40. They can live to 350 years on average, but it's not too uncommon for them to reach 500 years of age.",
         "size": {
             "desc": "Gnomes are between 3 and 4 feet tall and weigh around 40 pounds. Your size is Small.",
@@ -189,16 +169,6 @@
         "speed": {
             "desc": "Your base walking speed is 25ft.",
             "val": 25
-        },
-        "senses": {
-            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.",
-            "val": [
-                "touch",
-                "taste",
-                "sight",
-                "sound",
-                "smell"
-            ]
         },
         "gnomeCunning": "Magic and formulae comes to your people easily, and can be just as easily refuted. You have Advantage on all Willpower saves against memetics and magic spells, but not spell-like effects",
         "chromopalsy": "If you go 24 hours without experiencing something new, you have Disadvantage on all Willpower saves against resisting temptations, be they from the world, charms of a creature or effects of a spell or spell-like effect.",
@@ -223,7 +193,7 @@
     },
     {
         "name": "Halfling",
-        "desc": "Humans call them Halflings, but they call themselves \"The Little People\" in their own language, which by-and-large they keep secret. Their origins are much of a mystery, though they are ubiquitous, sometimes more so even than humans, with whom they have been working hand in hand with since the beginning of time, oft retold in the household tale of \"The First Fast Friendship\". Halflings covet and espouse the comforts of home, and work readily with others, well known for their loyalty to their friends, halfling or otherwise.\n\nLittle Peoples can be found across the shards, of course, making up members of tribes, villages and cities throughout the whole of the Materiae. The one little-known exception is The Shard of Three Isles, where they are mysteriously and curiously absent. Often times Halfling societies are uniformly Halfling, peaceful shires of little round houses and pleasant gardens, far from marauding monsters and clashing armies. Sometimes, the little folk are often found underfoot in the cities and towns of the world, making up significant portions of settlements and tribes the shards over, with families forming districts within cities where the building regulations tend to fit a smaller clientele, greasing the wheels and filling the stomachs of civilisation.",
+        "desc": "Humans call them Halflings, but they call themselves \"The Little People\" in their own language, which by-and-large they keep secret. They are ubiquitous, sometimes more so even than humans. Halflings covet and espouse the comforts of home, and work readily with others, well known for their loyalty to their friends, no matter in what shape or size they come.",
         "stats": [
             {
                 "desc": "Any",
@@ -234,26 +204,16 @@
                 "val": 1
             }
         ],
-        "baseHealth": 5,
         "age": "Typical mature rate and age of majority, avergage lifespan",
         "size": {
             "desc": "Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small.",
             "val": "small"
         },
         "speed": {
-            "desc": "Your base walking speed is 25ft",
-            "val": 25
+            "desc": "Your base walking speed is 30ft",
+            "val": 30
         },
-        "senses": {
-            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.",
-            "val": [
-                "touch",
-                "taste",
-                "sight",
-                "sound",
-                "smell"
-            ]
-        },
+        "healthBonus": "You have +1 Health.",
         "lucky": "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die. You must use the new result, even if it is a 1.",
         "brave": "You have advantage on saving throws against being Frightened.",
         "powers": [
@@ -269,7 +229,7 @@
     },
     {
         "name": "Half-Elf",
-        "desc": "One of the most common and well known of the bloodlines are the Fey Touched of the green blood, the Half-Elves. Having had their bloodline meddled by fey powers, they bare resemblance to the folk that hail from there. Ever since the green flight and Elves flocked to the cities and courts, they've become a fairly common member of many a shard.\n\nWalking in two worlds but truly belonging to neither, Half-Elves combine what some say are the best qualities of their Elf and Human parents: Human industriousnous, inventiveness, and ambition tempered by the refined senses, love of subtlety, and artistic expression of the Elves.",
+        "desc": "One of the most common and well known of the bloodlines is the green blood, the Fae-Touched Half-Elves. Walking in two worlds but truly belonging to neither, they combine what some say are the best qualities of their Elf and Human parents: Human industriousnous, inventiveness, and ambition tempered by the refined senses, love of subtlety, and artistic expression of the Elves.",
         "stats": [
             {
                 "desc": "Charisma",
@@ -284,8 +244,7 @@
                 "val": -1
             }
         ],
-        "baseHealth": 6,
-        "age": "Half-Elves age at much the same rate as humans, reaching adulthood in their late teens. Depending on the strength of the Fae-Touch, they can live much longer than Humans, exceeding 3 centuries.",
+        "age": "Half-Elves age at much the same rate as humans, reaching adulthood in their late teens. Depending on the strength of the Fae-Touch, they can live much longer than Humans, exceeding 2 centuries.",
         "size": {
             "desc": "Half-Elves are more or less the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium.",
             "val": "medium"
@@ -293,16 +252,6 @@
         "speed": {
             "desc": "Your base walking speed is 30ft",
             "val": 30
-        },
-        "senses": {
-            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.",
-            "val": [
-                "touch",
-                "taste",
-                "sight",
-                "sound",
-                "smell"
-            ]
         },
         "versatileHeritage": "Your people pull on a broad history of mixing between human and fae, and each Half-Elf is as distinct from each other as an elf is to a man. You pick 3 Racial Powers instead of 2.",
         "powers": [
@@ -323,28 +272,27 @@
             "Mana",
             "Psychic Sense",
             "Natural Illusionist",
-            "Resilient (Reflexes)"
+            "Resilient"
         ]
     },
     {
         "name": "Tuskman",
-        "desc": "The orc God took some First Men, and in an attempt to spite and better the other Gods, \"blessed\" them. Concentrating their life energy, He made them tall, savage, strong and fast breeding, shorter lives spans a worthy sacrifice for warriors who should die on the field. He made them mottled green, sand tan and the dark pitch of marsh peate to conceal themselves, and most importantly He made them as equally full of rage as He; even as it corrupted and wilted their minds. He charged His progeny to sally forth into the world and make life tremble and fear His name. The orcs, minds twisted, did so with gusto.\n\nThe ancient legends tell of great orc hordes, crusades of the Red if you will, sweeping from horizon to horizon, burning and pillaging, reaving and looting all in sight, all in honour of Gruumsh. Orcs spread and multiplied until they covered the world, the pride of Gruumsh, and kingdoms of Eden had to rally great armies to push them back. The Legions of Terror would have such an impact their legacy would echo well after the Shattering.\n\nHowever, the curse is now old enough to be more myth than legend. Today most can throw the yolk of their anger off entirely, or at least keep it contained as the 'red rage'. They join civilized society or form more stable societies of their own, apart from the raving orc hordes, and call themselves the Tuskmen and they fight against the legacy of their ancestors.",
+        "desc": "The curse of Gruumsh and the raging Legions of Terror are now old enough to be more myth than legend, but even now their mark, and the spectre of still-raving cousins, marks orcs in eyes of society. Today Orcs that can keep their \"Red Rage\" at bay call themselves Tuskmen. They join civilized society or form more communities of their own, where they fight against the legacy of their ancestors.",
         "stats": [
             {
-                "desc": "Strength",
+                "desc": "Any",
                 "val": 2
             },
             {
-                "desc": "Dexterity",
+                "desc": "Strength",
                 "val": 1
             },
             {
-                "desc": "Charisma",
+                "desc": "Any",
                 "val": -1
             }
         ],
-        "baseHealth": 8,
-        "age": "Tuskmen mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 75 years",
+        "age": "Tuskmen mature faster than humans, reaching adulthood around age 14, and they age noticeably faster and rarely live longer than 60 years",
         "size": {
             "desc": "Tuskmen are somewhat larger and bulkier than humans, and they range from 5 to well over 6 feet tall. Your size is Medium.",
             "val": "medium"
@@ -353,18 +301,9 @@
             "desc": "Your base walking speed is 30ft",
             "val": 30
         },
-        "senses": {
-            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.",
-            "val": [
-                "touch",
-                "taste",
-                "sight",
-                "sound",
-                "smell"
-            ]
-        },
+        "healthBonus": "You have +2 Health.",
         "keenHearingAndSmell": "You add your Bonus to any Perception checks for hearing or smell, when no Skill is in use.",
-        "redRage": "Even now your people bear Grummsh' mark, and though any tuskman can throw off the yolk, sometimes they choose to indulge. In addition to your Racial Power choices, you can also take either: Adrenaline Rush, Menacing, Relentless Endurance, Savage Attacks or Savage Magic.",
+        "redRage": "Even now your people bear Grummsh' mark, and though any tuskman can throw off the yolk, sometimes they choose to indulge. In addition to your Racial Power choices, you can also take one of: Adrenaline Rush, Menacing, Relentless Endurance, Savage Attacks or Savage Magic.",
         "powers": [
             "Extra Childhood Language",
             "Keen Senses",
@@ -384,40 +323,31 @@
     },
     {
         "name": "Dragonborn",
-        "desc": "At some point in history, the first dragon made the first dragonborn out of a First Man, shaping it into its own likeness. To what end is unknown and lost to time, but now various dragons over the ages have made their own dragonborn, out of jealous imitation or genuine desire, or perhaps on the whimsy of granting a mad man's request. Those twisted by the dragon's curse gain many physical benefits and magical powers, not least biological immortality, but many revile their visage and the dragon madness; that hungering greed, the hollowing emptiness that can never be filled.\n\nThe dragonborn walk lightly through a world that greets them with fearful incomprehension. Some dragonborn are faithful servants to true dragons, especially the metallic guardians of the Edict, others form the ranks of soldiers in travelling mercenary bands, and still others find themselves keeping to secluded clans based strictly on their chromatic hue, perservering up to the present. With their heritage always setting them apart, tying them eternally to creatures powerful and anathema to humanity, such individuals must struggle to make their way in life.\n\nDragonborn are technically a human bloodline, and can even mingle and produce offspring with their soft-skin cousins, but the magic that made them was primeval and strong, and the children of such unions are, the vast majority of the time, dragonborn themselves, fully inflicted with the dragon's curse. Such is the strength of that primeval magic, that dragonborn do not have mixed blood, and cannot hold onto other Touches.",
+        "desc": "Various dragons over the ages have twisted humanoids into their own likeness, the dragonborn, out of jealous imitation or genuine desire, or perhaps on the whimsy of granting a mad man's request. Those twisted by the dragon's curse gain many physical benefits and magical powers, not least biological immortality, but many revile their visage, the crippling drawbacks unique to each hue, and the dragon madness; that hungering greed - the hollowing emptiness that can never be filled.",
         "stats": [
             {
-                "desc": "Strength",
+                "desc": "Any",
                 "val": 2
             },
             {
-                "desc": "Charisma",
-                "val": 1
+                "desc": "Any",
+                "val": 2
             },
             {
-                "desc": "Accuracy",
-                "val": -1
+                "desc": "Any",
+                "val": -2
             }
         ],
-        "baseHealth": 8,
-        "age": "Young dragonborn grow quickly. They walk hours after leaving the pouch, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 14. Draconic energy sets them apart, and they don't grow old, only slowly increasing in size year by year until death takes them, typically violence from the fearful or starvation from lack of sustanence for the constant growth.",
-        "size": {
-            "desc": "Young dragonborn are on par with humans in height and weight with adult dragonborn being taller and heavier, standing well over 6 feet tall and averaging almost 250 pounds. Your size if you're a young or adult Dragonborn is Medium. \n\nRarer to find senior Dragonborn stand over 9 feet tall and if you are senior your size is Large and your Base Health is instead 9. Note that as a Large character, your Base Defence is now 6. \n\n Some mythical 'ancient' Dragonborn are said to be as tall as giants, their size being Huge or greater, but such rare and terrible creatures are not fit for Player Characters.",
-            "val": "large"
-        },
+        "age": "Young dragonborn grow quickly. They walk hours after leaving the pouch, attain the size and development of a 10-year-old human child by the age of 3, and reach physical maturity by 7. Draconic energy sets them apart, and they don't grow old, only slowly increasing in size year by year until death takes them, typically violence from the fearful or starvation from lack of sustanence for the constant growth.",
+        "size": [{
+            "desc": "Young dragonborn are on par with humans in height if skinnier, with adult dragonborn being taller and heavier, standing well over 6ft tall and averaging almost 250 pounds. Your size if you're a young or adult Dragonborn is Medium. \n\n",
+            "val": "medium"
+        }, {
+            "desc": "Rarer to find are elder Dragonborn who stand over 9ft tall, weighing over 300 pounds. Your size is Large. \n\nSome mythical 'ancient' Dragonborn are said to be as tall as giants, their size being Huge or greater, but such rare and terrible creatures are not fit for Player Characters."
+        }],
         "speed": {
             "desc": "Your base walking speed is 30ft.",
             "val": 30
-        },
-        "senses": {
-            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.",
-            "val": [
-                "touch",
-                "taste",
-                "sight",
-                "sound",
-                "smell"
-            ]
         },
         "draconicAncestry": "You are distantly related to a particular kind of dragon. Choose a type of dragon from the table below; this determines the effect, area and type of your breath weapon.\n\n| Dragon Ancestry | Effect | Area | Save |\n| --- | --- | --- | --- |\n| Black | Acid - 1d10 fire damage on a failed save, and half as much damage on a successful one. | 5ft by 30ft line | Reflex save |\n| Blue | Lightning - 1d10 lightning damage on a failed save, and half as much damage on a successful one. | 5ft by 30ft line | Reflex save |\n| Brass | Sleep - On a failed save, the character falls unconscious for 1 minute. This effect ends for a character if the character takes damage or someone uses an Action to wake it.| 5ft by 30ft line | Willpower save |\n| Bronze | Repulsion - On a failed save, the character is pushed to the nearest free space at the end of the effect's line area. | 5ft by 30ft line | Reflex save |\n| Copper | Slow - On a failed save, the character's speed is halved, and it can't make more than one attack in the Round, and they can use either an Action or a Bonus Action in the Round, but not both. These effects last for 1 minute. The character can repeat the saving throw at the end of each Round, ending the effect on with a successful save. | 5ft by 30ft line | Willpower save |\n| Green | Poison - 1d6 poison damage and suffer the Poison condition on a failed save, or half as much damage on a successful one. | 15ft cone | Fortitude save |\n| Gold | Weaken - On a failed save, the character has disadvantage on Strength-based attack rolls, Strength checks, and Fortitude saving throws for 1 minute. A character can repeat the saving throw at the end of each Round, ending the effect on itself on a success. | 15ft cone | Fortitude save |\n| Red | Fire - 1d10 fire damage on a failed save, and half as much damage on a successful one. | 15ft cone | Reflex save |\n| Silver | Paralyse - on a failed save, the character is paralyzed for the next Round. | 15ft cone | Fortitude save |\n| White | Cold - 1d10 cold damage on a failed save, and half as much damage on a successful one. | 15ft cone | Fortitude save |",
         "breathWeapon": "You can use your Action to exhale primeval draconic energy. When you use your breath weapon, all characters in the area must make a saving throw, the type of which is determined by the Ancestry table above, against the effect described. The DC of the save is 8 + your Fortitude + your Bonus. You may use your breath weapon a number of times equal to your Fortitude (minimum 1). You regain expended uses on a Short Rest.",
@@ -437,14 +367,14 @@
     },
     {
         "name": "Goblinoid",
-        "desc": "Goblins are small, squat creatures whose heads are almost too large for their bodies. They have tan skin that has orange highlights and a mouth filled with too many sharp teeth, often riddle with forgotten bits of rotting meat. They use their claw-like nails or crude clubs to attack their foes, and dress in filthy rags (if anything at all). They have a mop of greasy hair whose hairline is too high, and tufts of mud-caked fur on their feet and knees.\n\nGoblins struggle in their manic compulsions, typically towards acquiring shiny things and being vicious, and are the perennial boogie-man of the countryside. And yet they can, in time, transform from their pitiful selves into Bugbears (powerful ones) or Nilbogs (smart ones), and from there into upright and prideful Hobgoblins. These are the Goblinoids, creatures born of the principle of Struggle, Survival and Competition to the point where their very bodies are product of struggle for betterment, improvement, and superiority, starting from arguably one of the most pitiful self-knowing creatures, into one of the most powerful.",
+        "desc": "Goblins are small, squat creatures whose heads are almost too large for their bodies. They have tan skin that has orange and blue highlights that stand out in any terrain and a mouth filled with too many sharp teeth, often riddle with forgotten bits of rotting meat. They use their claw-like nails or crude clubs to attack their foes.\n\nGoblins struggle in their manic compulsions, typically towards acquiring shiny things and being vicious. And yet they can, in time, transform from their pitiful selves into Bugbears (powerful ones) or Nilbogs (smart ones), and from there into upright and prideful Hobgoblins.",
         "stats": [
             {
                 "desc": "Dexterity",
                 "val": 1
             },
             {
-                "desc": "Perception",
+                "desc": "Any",
                 "val": 1
             },
             {
@@ -452,29 +382,21 @@
                 "val": -1
             }
         ],
-        "baseHealth": 4,
-        "age": "Goblinoids are born as Goblins and mature incredibly quickly, reaching adulthood at 3 years. If they fail to undergo metamorphosis they do not tend to live long, and finding a goblin older than 35 is rare. Hobgoblin lifetimes, if not cut short by war, can stretch to a century.",
-        "size": {
-            "desc": "Goblins and Nilbogs are diminutive yet varied, ranging from 2 to 4 feet in height. Your size is Small. Bugbears and Hobgoblins stand tall and stooped (in the former) or proud (in the later). Your size is medium.",
+        "age": "Goblinoids are born as Goblins and mature quickly, reaching physical maturity at 6 years. If they fail to undergo metamorphosis they do not tend to live long, and finding a goblin older than 35 is rare. Hobgoblin lifetimes, if not cut short by war, are the same as Humans, usually living for 80 years.",
+        "size": [{
+            "desc": "Goblins and Nilbogs are diminutive yet varied, ranging from 2 to 4 feet in height. Your size is Small.",
             "val": "small"
-        },
+        },{
+            "desc": "Bugbears and Hobgoblins stand tall and stooped (in the former) or proud (in the later). Your size is Medium.",
+            "val": "medium"
+        }],
         "speed": {
             "desc": "Your base walking speed is 30ft",
             "val": 30
         },
-        "senses": {
-            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.",
-            "val": [
-                "touch",
-                "taste",
-                "sight",
-                "sound",
-                "smell"
-            ]
-        },
         "darkVision": "You can see in dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
         "giftOfMaglubiyet": "Goblinoids are born of stuggle and strife, and adapt and grow accordingly. When you take the Statistic Increase Power, you can choose to evolve. If your new Intelligence is +2 or more, you can evolve from Goblin to Nilbog. If your new Strength is +2 or more, you can evolve from Goblin to Bugbear. If you're already Bugbear or Nilbog, and your new Strength and Intelligence are both +2 or more, you can evolve to Hobgoblin. Additionally, you can swap one or both of your Racial Powers for ones you have the prerequisites for when you evolve any time you take the Statistic Increase Power.",
-        "furyOfTheSmall": "If you are a Goblin: when you damage a character with an attack or a spell and the character's size is larger than yours, you can cause the attack or spell to deal extra damage to the character. The extra damage equals your Bonus. Once you use this trait, you can't use it again until you finish a short rest.",
+        "furyOfTheSmall": "If you are a Goblin: when you damage a character with an attack or a spell and the character's size is larger than yours, you can cause the attack or spell to deal extra damage to the character. The extra damage equals your Bonus. Once you use this trait, you can't use it again until you finish a Short Rest.",
         "legacyOfEvolution": "If you are a Nilbog or Bugbear, choose one Racial Power from your previous Evolution to make an inherant racial trait for you. If you are a Hobgoblin, choose two.",
         "powers": [
             "Keen Senses",
@@ -496,7 +418,7 @@
     },
     {
         "name": "Djinn",
-        "desc": "Tracing their ancestry to the genies of the Elemental Braid, each Djinn can tap into the power of one of the elements. Air, earth, fire, and water — the four fundamental physical forms of the Material Plane, beget the four types of Djinn. Some are direct descendants of a genie, while others were born to a bloodline who lived are suffused with a genie’s magic that once again manifests.",
+        "desc": "The four fundamental physical forms of the Material Plane - Air, earth, fire, and water, beget the four types of Djinn. Some are direct descendants of actual genies yet resident in the Elemental Braid, while others were born to a bloodline suffused with elemental magic that once again manifests.",
         "stats": [
             {
                 "desc": "Any",
@@ -507,7 +429,6 @@
                 "val": -1
             }
         ],
-        "baseHealth": 6,
         "age": "A typical Djinn has a life span of 120 years",
         "size": [
             {
@@ -523,17 +444,7 @@
             "desc": "Your base walking speed is 30ft",
             "val": 30
         },
-        "senses": {
-            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.",
-            "val": [
-                "touch",
-                "taste",
-                "sight",
-                "sound",
-                "smell"
-            ]
-        },
-        "elementalHeritage": "Choose one of the four elements that is your heritage: Earth, Air, Fire, Water. Depending on your heritage you gain the following benefits:\n\n**Earth**\n - Earth Walk - You can move across difficult terrain without expending extra movement if you are using your walking speed on the ground or a floor.\n - Bludgeoning Resistance - You have resistance to non-magical bludgeoning damage.\n\n**Air**\n - Unending Breath - You can hold your breath indefinitely while you’re not incapacitated.\n - Lightning Resistance - You have resistance to lightning damage.\n\n**Fire**\n - Nimble - You can move through the space of any character that is of a size larger than yours, and you gain proficiency in Acrobatics or Athletics (your choice). You have Advantage on Athletics or Acrobatics (depending on which you chose) checks to escape being Grappled.\n - Unending Warmth - You never feel cold or suffer from a cold environment, and you're always feverish to the touch.\n - Fire Resistance - You have resistance to fire damage.\n\n**Water**\n - Slashing Resistance - You have resistance to non-magical slashing damage.\n - Amphibious - You can breathe air and water.",
+        "elementalHeritage": "Choose one of the four elements that is your heritage: Earth, Air, Fire, Water. Depending on your heritage you gain the following benefits:\n\n**Earth**\n - *Earth Walk* - You can move across difficult terrain without expending extra movement if you are using your walking speed on the ground or a floor.\n - *Bludgeoning Resistance* - You have resistance to non-magical bludgeoning damage.\n\n**Air**\n - *Unending Breath* - You can hold your breath indefinitely while you’re not incapacitated.\n - *Lightning Resistance* - You have resistance to lightning damage.\n\n**Fire**\n - *Nimble* - You can move through the space of any character that is of a size larger than yours, and you gain proficiency in Acrobatics or Athletics (your choice). You have Advantage on Athletics or Acrobatics (depending on which you chose) checks to escape being Grappled.\n - *Fire Resistance* - You have resistance to fire damage.\n\n**Water**\n - *Amphibious* - You can breathe air and water.\n - *Slashing Resistance* - You have resistance to non-magical slashing damage.",
         "powers": [
             "Keen Senses",
             "Extra Childhood Language",
@@ -553,7 +464,7 @@
     },
     {
         "name": "Goliath",
-        "desc": "Goliaths seem to be related to the giants, and they will tell you in repitition as much, though the Giants themselves remain mute, if even a little disdainful, of the issue. Much of the origins of Goliaths are as equally shrouded in ancient pre-history as that of the Giants they claim heritage of. Scholars would argue that such a relation is impossible, as impossible as the union of a man and halfling. Yet as a race they exist, taller than humans at 8ft to 9ft, and honouring of the Ordnung in their clans. Though many will note that they're still not within a hairs breadth of the size of even smaller giants, and they don't seem to be bound to the elements in any way like the giants, just an attunement for mountains and rock.",
+        "desc": "Goliaths seem to be giantkin humans, and they will tell you in repitition that they're family with the great giants, though the Giants themselves remain tight-lipped. Scholars would argue that such a relation is impossible, as impossible as the union of a man and halfling. Yet they exist, far taller than humans, and honouring the Ordnung in their clans. Though many will note that they're still not within a hairs breadth of the size of even smaller true giants, and that they don't seem to be bound to the elements in any way like the giants, just an affinity for mountains and rock.",
         "stats": [
             {
                 "desc": "Any",
@@ -564,25 +475,14 @@
                 "val": 1
             }
         ],
-        "baseHealth": 6,
         "age": "Goliaths have lifespans comparable to humans. They enter adulthood in their late teens and usually live 80 years",
         "size": {
-            "desc": "Goliaths are between 7 and 9 feet tall and weigh between 280 and 380 pounds. Your size is Large.",
+            "desc": "Goliaths are between 8 and 10ft tall and weigh between 280 and 380 pounds. Your size is Large.",
             "val": "large"
         },
         "speed": {
             "desc": "Your base walking speed is 30ft",
             "val": 30
-        },
-        "senses": {
-            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.",
-            "val": [
-                "touch",
-                "taste",
-                "sight",
-                "sound",
-                "smell"
-            ]
         },
         "raceOfAthletes": "Competitions of strength, daring and skill are core to your people. You have proficiency in Athletics.",
         "stonesEndurance": "You can supernaturally draw on unyielding stone to shrug off harm. When you take damage, you can use your Action to roll a d12. Add your Fortitude to the number rolled and reduce the damage by that total.\n\nYou can use this racial trait a number of times equal to your Bonus, and you regain all expended uses when you finish a Long Rest.",

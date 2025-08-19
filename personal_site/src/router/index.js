@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
-const trinitasPages = ["combat", "character-creation", "character-creator", "core-rolls", "equipment", "skills", "powers", "backgrounds", "races", "magic", "spells", "admin", "role"];
+const trinitasPages = ["combat", "character-creation", "character-creator", "core-rolls", "equipment", "skills", "powers", "backgrounds", "races", "magic", "spells", "admin", "progression"];
 const toTrinitasRoutes = (name) => {
   let parts = name.split("-");
   let componentLink = "../views/trinitas/" + parts.map(part => part[0].toUpperCase() + part.slice(1)).join("") + ".vue";

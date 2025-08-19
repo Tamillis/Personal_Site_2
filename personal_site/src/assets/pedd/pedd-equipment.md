@@ -164,13 +164,13 @@ The following table lists the kinds of armour in the game. Armour's Armour prope
 
 **Stiff** - your Reflexes cannot be greater than 2.
 
-**Heavy** - you do not use Reflexes in calculations of Defence, and your Reflexes are limited to 2.
+**Heavy** - you do not use Reflexes in calculations of Defence, and your Reflexes are limited to 2. Your Speed is reduced by 5ft (this effect is not cumulative with other Heavy pieces of armour).
 
 **Loud** - you have Disadvantage on Stealth checks.
 
-**Helmet** - worn on the head, you can only wear one helmet at a time
+**Helmet** - worn on the head, you can only wear one helmet at a time.
 
-**Blinkered** - you have Disadvantage on Perception checks
+**Blinkered** - you have Disadvantage on Perception checks.
 
 **Shield** - equipped in 1 hand, you must use a Bonus Action to Block to gain the bonus to Armour. If you use two shields, and use your Bonus Action and Action to Block, yes you may gain both shields' defence bonuses.
 

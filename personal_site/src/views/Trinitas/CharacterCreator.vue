@@ -223,6 +223,8 @@ let allChosenPowers = computed(() => [...chosen.value.racialPowers, chosen.value
 
 //race any stat selections
 function setRace(race) {
+    console.log("Setting race", race)
+
     chosen.value.race = race
     if (!race) {
         chosen.value.race = ""

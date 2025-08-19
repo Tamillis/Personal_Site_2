@@ -26,8 +26,6 @@ const expanded = ref(props.chosen);
     flex-wrap: wrap;
     border-top: 2px groove var(--highlight);
     border-collapse: collapse;
-
-    
 }
 
 .container:first-child {

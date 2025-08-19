@@ -16,7 +16,7 @@
   - [Wounds and Major Enemies](#wounds-and-major-enemies)
   - [Conditions](#conditions)
   - [Environmental Damage](#environmental-damage)
-  - [Damage Types \&  Conditions](#damage-types---conditions)
+  - [Damage Types](#damage-types)
 
 Trinitas combat is a marked step away from typical OCR and D20 combat systems.
 
@@ -176,7 +176,7 @@ Unlike other level-based TTRPG's, it does not increase unless specifically empow
 
 ### Defence
 The Defence Stat is a dynamic value made of three parts:
-- a Base Defence value that keys off of Size, 8 for Medium characters. See the [Base Defence Table](#base-defence=table) below.
+- a Base Defence value that keys off of Size, 8 for Medium characters. See the [Size Table](/trinitas/character-creation#secondary-statistics) on character creation for details.
 - a bonus from your worn Armour (see [Armour](./pedd/combat#armour)) and other sources
 - a Stat bonus, which is by default your Reflexes (which can be limited / ignored by worn Equipment). Some Powers, like `Foresighted Defence` change which Stat/s are used.
 
@@ -185,17 +185,6 @@ The Block Action increases your Defence for a Round, and is an important tool in
 There are two special scenarios that use a more limited form of Defence:
 - **Stationary Defence** - Defence without the benefit of Reflexes. Some effects target Stationary Defence directly, and Surprised, Stunned and Immobilised targets only get their Stationary Defence. Any character whose Speed is 0, such as one suffering the Immobilised condition, uses its Stationary Defence.
 - **Unarmoured Defence** - Defence without the benefit of Armour, though armour limits on Reflexes are still applied (if appropriate). A few effects target Unarmoured Defence, notably Armour Piercing Weapons.
-
-#### Base Defence Table
-Smaller characters are harder to hit. Player characters can potentially be Small, Medium or Large as that is interesting, and Tiny and Huge are added incase size, through magic or other means, is altered during play.
-
-| Size | Base Defence |
-| --- | --- |
-| Tiny | 14 |
-| Small | 10 |
-| Medium | 8 |
-| Large | 6 |
-| Huge | 2 |
 
 #### Natural Armour
 Many creatures have Natural Armour, and so might you through strange Powers. Natural Armour grants an armour value, cannot be doffed and is always 'light', i.e. never limits Reflexes. Like other body armour, it does not stack, so to benefit from greater armour values, you must wear armour with a greater value than your natural armour.
@@ -299,8 +288,10 @@ The following enviromental damage rules are updated and rolled into Conditions o
 
 *Holding breath rules: A character can hold their breath for 1 minute plus their Willpower x 30 seconds (to a minimum of 30 seconds). When a character takes damage, they lose 30 seconds of breath. When a character runs out of breath they're Suffocating.
 
-### Damage Types &  Conditions
-Each damage type has an associated condition or weapon special effect, which the DM will more liberally apply making damage do more than just Health numbers in most scenarios. Not every instance of each damage type should apply (indeed, the three weapon damage types apply only on crits), but it creates good opportunities for complications for a DM to apply.
+### Damage Types
+Damage in Trinitas is defined as physical, organic, energy or mystical. Of each of these, it is further specified into types of damage that characters will encounter in their adventures. Each type also has an associated condition that they may also suffer, or inflict, when dealing with large or intense amounts of it.
+
+Your GM liberally apply these affects, making damage do more than just Health numbers in many scenarios. Not every instance of each damage type should apply (indeed, the three weapon damage types apply on crits), but it creates good opportunities for complications for the GM to apply.
 
 | Damage | Type | Condition |
 | --- | --- | --- |
