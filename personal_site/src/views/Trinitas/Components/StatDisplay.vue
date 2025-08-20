@@ -91,29 +91,6 @@
                 </tr>
             </tbody>
         </table>
-<!--
-        <a @click="showTertiaries = !showTertiaries">
-            <h3>{{ showTertiaries ? "Tertiaries:" : "Tertiaries..." }}</h3>
-        </a>
-        <section v-if="showTertiaries">
-            <p style="margin:0 0 2px 0;"><small>Don't forget these are just for flavour.</small></p>
-            <div class="flex table-like">
-                <div>
-                    <p>Appearance: {{ player.strength + player.charisma }}</p>
-                    <small>(Str. + Cha.)</small>
-                </div>
-                <div>
-                    <p>Agility: {{ player.dexterity + player.accuracy }}</p>
-                    <small>(Dex. + Acc.)</small>
-                </div>
-                <div>
-                    <p>Foresight: {{ player.perception + player.intelligence }}</p>
-                    <small>(Per. + Int.)</small>
-                </div>
-            </div>
-        </section>
-    -->
-
     </div>
 </template>
 
@@ -125,18 +102,18 @@ const props = defineProps(["player", "haveFaith"]);
 
 const showHealthInfo = ref(false);
 const healthInfo = computed(() => {
-    return `${props.player.race ? props.player.race.name : 'Race'} base (${props.player.race ? props.player.race.baseHealth : 0}) + ` +
+    return `${capitalize(props.player.size)} base (${props.player.baseHealth}) + ` +
         `Fortitude (${props.player.fortitude}) + ` +
         `Willpower (${props.player.willpower}) = `;
 });
 
 const showDefenceInfo = ref(false)
 const defenceInfo = computed(() => {
-    return `${props.player.race ? capitalize(props.player.size) + " " : ""} Size (${props.player.baseDefence}) + ` +
+    return `${capitalize(props.player.size)} Size (${props.player.baseDefence}) + ` +
         `Armour (${props.player.armour}) + ` +
         `Evasion (${props.player.reflexLimited ? props.player.reflexLimit : props.player.reflexes}) = `;
 });
-const showTertiaries = ref(false);
+
 </script>
 
 <style lang="css" scoped>

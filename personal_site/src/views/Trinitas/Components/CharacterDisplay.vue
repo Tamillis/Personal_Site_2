@@ -44,7 +44,6 @@
         </div>
     </div>
 
-
     <div>
         <h3>Powers</h3>
         <div id="powers-summary" class="flex gap-1r flex-wrap">

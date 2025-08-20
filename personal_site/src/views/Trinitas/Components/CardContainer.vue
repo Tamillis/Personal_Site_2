@@ -16,7 +16,7 @@
 import { ref } from 'vue';
 const props = defineProps({ name: String, chosen: Boolean, readOnly: Boolean });
 
-const expanded = ref(props.chosen);
+const expanded = ref(false);
 </script>
 
 <style lang="css" scoped>

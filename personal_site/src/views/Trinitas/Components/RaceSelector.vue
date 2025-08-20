@@ -1,10 +1,11 @@
 <template>
     <h2>Race: {{ selectedRace }}</h2>
-    <CardContainer v-for="race in races" 
+    <CardContainer v-for="(race, i) in races" 
         :name="race.name" 
         :chosen="selectedRace == race.name"
         :class="{ highlight: selectedRace == race.name }"
-        @chosen="(chosenRaceName) => chooseRace(chosenRaceName)">
+        @chosen="(chosenRaceName) => chooseRace(chosenRaceName)"
+        :key="`race-${i}`">
         <RaceContent 
             :race="race" @selected-stats="(stats) => $emit('raceStats', stats)"
             :chosenAnyStats="chosenAnyStats" />
@@ -18,8 +19,10 @@ import RaceContent from './RaceContent.vue';
 import raceData from '../../../assets/pedd/pedd-races.json';
 
 const races = computed(() => {
-    console.log(props.chosenRace, selectedRace.value)
-    return raceData.filter(r => !selectedRace.value || selectedRace.value == r.name)
+    console.log("computing races", )
+    let rd = raceData.filter(r => selectedRace.value == "" || selectedRace.value == r.name);
+    console.log(rd, "selectedRace: " + selectedRace.value);
+    return rd;
 })
 
 const emits = defineEmits(["race", "raceStats"]);

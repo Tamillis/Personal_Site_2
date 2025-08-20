@@ -7,6 +7,7 @@
 		<CardContainer
 			v-for="power in props.racePowers"
 			:name="power.name"
+			:read-only="false"
 			:chosen="selectedPowers.includes(power.name)"
 			:class="{ highlight: selectedPowers.includes(power.name) }"
 			@chosen="chosenPower"

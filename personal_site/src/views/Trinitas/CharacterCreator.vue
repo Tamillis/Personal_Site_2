@@ -5,9 +5,11 @@
 
             <h4>TODO:</h4>
             <ul>
-                <li>Custom Background 'any' stat and skill selectors</li>
-                <li>Add dynamic skill-downgrading</li>
+                <li>Custom Background in separate section to typical bg</li>
                 <li>Power Ranks and the ability to take a Power more than once</li>
+                <li>Separate character creation and character sheet</li>
+                <li>In Character display show Racial Features</li>
+                <li>Caluclate Health using racial Health Bonus / Health Malus correctly</li>
                 <li>Have Powers that grant stats, skills and other changes do so (in progress)</li>
                 <li>Special handling of Powers that change how Defence is calculated</li>
                 <li>Add Powers in training section</li>
@@ -53,9 +55,6 @@
             </section>
 
             <section id="background-section" v-show="sections.background">
-
-                <p> TODO: I think the "custom" background would be better served as a simple direct interface rather than making something special work within the bg card</p>
-
                 <p v-if="!chosen.background" style="color:orangered">Choose a background</p>
                 <Background :background="chosen.background" @backgroundChosen="setBackground" />
 
@@ -157,14 +156,20 @@ async function fetchPowers() {
 //derived resources
 let stats = ["accuracy", "perception", "strength", "dexterity", "charisma", "intelligence"];
 
-const sizeSelector = useTemplateRef('race-size-selector');
-
-let baseDefence = {
+let sizeDefence = {
     tiny: 16,
     small: 10,
     medium: 8,
     large: 6,
     huge: 2
+};
+
+let sizeHealth = {
+    tiny: 2,
+    small: 4,
+    medium: 6,
+    large: 12,
+    huge: 25
 };
 
 //tab state
@@ -238,7 +243,11 @@ function setAnyRaceStats(stats) {
 
 function getRacialPowers() {
     let race = races.filter(r => r.name == chosen.value.race)[0];
-    let racePowers = race.powers.map(powerName => powersJson.value.filter(p => p.name == powerName)[0]);
+    let racePowers = race.powers.map(powerName => {
+        let powers = powersJson.value.filter(p => p.name == powerName);
+        if(powers.length == 0) throw Error("No power found for [" + powerName + "]")
+        else return powers[0];
+    });
     return racePowers
 }
 
@@ -301,6 +310,7 @@ let player = computed(() => {
 
     p.rolePowers = chosen.value.rolePowers;
 
+    // stat choices
     let ss = {
         strength: 0,
         dexterity: 0,
@@ -322,14 +332,18 @@ let player = computed(() => {
     p.perception = ss.perception;
     p.intelligence = ss.intelligence;
     p.charisma = ss.charisma;
+
     if (p.race) {
+        //set fixed racial stat bonuses
         for (let stat of p.race.stats) {
             if (stats.includes(stat.desc.toLowerCase())) p[stat.desc.toLowerCase()] += stat.val;
         }
-
-        let size = p.race ? (Array.isArray(p.race.size) ? (sizeSelector.value ? sizeSelector.value.value : "medium") : p.race.size.val) : "medium";
-        p.size = size;
     }
+
+    //set selected size - TODO: make this actually selectable when presented an option
+    let size = p.race ? (Array.isArray(p.race.size) ? p.race.size[0].val : p.race.size.val) : "medium";
+    p.size = size;
+
     if (p.background) {
         for (let statDesc of p.background.stats) {
             let stat = statDesc.toLowerCase();
@@ -342,7 +356,10 @@ let player = computed(() => {
     p.reflexLimit = chosen.value.reflexLimit;
     p.reflexLimited = p.reflexes > p.reflexLimit
     p.willpower = p.intelligence + p.charisma;
-    p.health = p.fortitude + p.willpower + (p.race ? p.race.baseHealth : 0)
+
+    console.log(p.size)
+    p.baseHealth = sizeHealth[p.size];
+    p.health = p.baseHealth + p.fortitude + p.willpower
 
     p.faith = 2; //TODO: make faith input based
 
@@ -363,7 +380,7 @@ let player = computed(() => {
 
     p.armour = chosen.value.armour + chosen.value.shield + chosen.value.helmet;
 
-    p.baseDefence = baseDefence[p.size];
+    p.baseDefence = sizeDefence[p.size];
     p.defence = Number(p.baseDefence) + Number(p.armour) + Number(p.reflexLimited ? p.reflexLimit : p.reflexes);
 
     p.imgSrc = chosen.value.imgSrc;

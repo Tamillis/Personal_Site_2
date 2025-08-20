@@ -27,7 +27,7 @@
 		<div v-html="marked.parse(race.speed.desc)"></div>
 		<div v-for="extra in extras">
 			<h4>{{ format(extra) }}:</h4>
-			<div v-html="marked.parse(race[extra])"></div>
+			<div v-html="marked.parse(race[extra] ?? '')"></div>
 		</div>
 	</div>
 </template>
@@ -44,7 +44,7 @@ const emit = defineEmits(["selectedStats"]);
 let standardHeadings = ["name", "desc", "stats", "baseHealth", "age", "size", "speed", "senses", "powers"];
 
 let extras = Object.keys(props.race).filter(key => !standardHeadings.includes(key));
-console.log(extras);
+
 //chosenAnyStats of the form [{desc, val},{desc,val}...] ... defaults will be passed in.
 const currentAnyStats = ref(props.chosenAnyStats ? props.chosenAnyStats : props.race.stats.filter(stat => stat.desc == "Any"));
 
