@@ -228,8 +228,6 @@ let allChosenPowers = computed(() => [...chosen.value.racialPowers, chosen.value
 
 //race any stat selections
 function setRace(race) {
-    console.log("Setting race", race)
-
     chosen.value.race = race
     if (!race) {
         chosen.value.race = ""
@@ -245,7 +243,7 @@ function getRacialPowers() {
     let race = races.filter(r => r.name == chosen.value.race)[0];
     let racePowers = race.powers.map(powerName => {
         let powers = powersJson.value.filter(p => p.name == powerName);
-        if(powers.length == 0) throw Error("No power found for [" + powerName + "]")
+        if (powers.length == 0) throw Error("No power found for [" + powerName + "]")
         else return powers[0];
     });
     return racePowers
@@ -289,7 +287,6 @@ let otherSkills = computed(() => {
 
 //computer player stats from chosen values
 let player = computed(() => {
-    //console.log("Chosen raceStats", chosen.value.anyRaceStats);
     let p = {};
 
     p.name = chosen.value.name;
@@ -338,6 +335,13 @@ let player = computed(() => {
         for (let stat of p.race.stats) {
             if (stats.includes(stat.desc.toLowerCase())) p[stat.desc.toLowerCase()] += stat.val;
         }
+
+        let standardHeadings = ["name", "desc", "stats", "age", "size", "speed", "powers"];
+        let racialFeatures = Object.keys(p.race).filter(key => !standardHeadings.includes(key));
+        p.racialFeatures = racialFeatures.map(rf => {
+            return { "name": rf, "desc": p.race[rf] };
+        });
+        console.log(p.racialFeatures);
     }
 
     //set selected size - TODO: make this actually selectable when presented an option
@@ -351,13 +355,13 @@ let player = computed(() => {
         }
     }
 
-    p.fortitude = p.strength + p.dexterity;
-    p.reflexes = p.accuracy + p.perception;
+    let setResistance = (s1, s2) => Math.round((s1 + s2) / 2);
+    p.reflexes = setResistance(p.accuracy, p.perception);
     p.reflexLimit = chosen.value.reflexLimit;
     p.reflexLimited = p.reflexes > p.reflexLimit
-    p.willpower = p.intelligence + p.charisma;
+    p.fortitude = setResistance(p.strength, p.dexterity);
+    p.willpower = setResistance(p.intelligence, p.charisma);
 
-    console.log(p.size)
     p.baseHealth = sizeHealth[p.size];
     p.health = p.baseHealth + p.fortitude + p.willpower
 

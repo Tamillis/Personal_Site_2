@@ -13,15 +13,26 @@
                     <RouterLink class="intext-link" :to="{ name: 'trinitas-character-creator' }">Character Creator
                     </RouterLink>
                 </li>
-                <li class="triangle-points">
-                    <RouterLink class="intext-link" :to="{ name: 'admin' }">Admin</RouterLink>
-                </li>
             </ul>
         </li>
         <li class="no-list">
             <ul class="col">
                 <li class="triangle-points">
-                    <RouterLink class="intext-link" :to="{ name: 'trinitas-core-rolls' }">Core Rolls</RouterLink>
+                    <RouterLink class="intext-link" :to="{ name: 'admin' }">Admin</RouterLink>
+                </li>
+                <li class="triangle-points">
+                    <RouterLink class="intext-link" :to="{ name: 'trinitas-appendices' }">Appendices</RouterLink>
+                </li>
+                <li class="triangle-points">
+                    <RouterLink class="intext-link" :to="{ name: 'trinitas-design-notes' }">Design Notes</RouterLink>
+                </li>
+
+            </ul>
+        </li>
+        <li class="no-list">
+            <ul class="col">
+                <li class="triangle-points">
+                    <RouterLink class="intext-link" :to="{ name: 'trinitas-core-rolls' }">Core Rolls & Statistics</RouterLink>
                 </li>
                 <li class="triangle-points">
                     <RouterLink class="intext-link" :to="{ name: 'trinitas-progression' }">Progression

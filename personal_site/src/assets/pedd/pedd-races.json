@@ -67,16 +67,6 @@
             "desc": "Your base walking speed is 25ft.",
             "val": 25
         },
-        "senses": {
-            "desc": "You have the typical 5 senses of touch, taste, sight, sound and smell.",
-            "val": [
-                "touch",
-                "taste",
-                "sight",
-                "sound",
-                "smell"
-            ]
-        },
         "healthBonus": "You have +2 Health.",
         "loadBearing": "Your speed is not reduced by wearing heavy armor.",
         "darkVision": "You can see in dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey.",

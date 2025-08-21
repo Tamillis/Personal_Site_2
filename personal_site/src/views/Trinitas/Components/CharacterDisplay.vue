@@ -43,7 +43,15 @@
             </ul>
         </div>
     </div>
-
+    <div v-if="player.racialFeatures">
+        <h3>Racial Features</h3>
+        <div id="powers-summary" class="flex gap-1r flex-wrap">
+            <div class="power-summary" v-for="rf in player.racialFeatures">
+                <h4>{{ format(rf.name) }}</h4>
+                <div style="font-size:0.66em" v-html="rf.desc"></div>
+            </div>
+        </div>
+    </div>
     <div>
         <h3>Powers</h3>
         <div id="powers-summary" class="flex gap-1r flex-wrap">
@@ -57,6 +65,7 @@
 
 <script setup>
 import { computed, ref } from 'vue'
+import { format } from '../../../assets/functionality';
 import { marked } from 'marked';
 import StatDisplay from './StatDisplay.vue';
 import powers from '../../../assets/pedd/pedd-powers.json';

@@ -19,9 +19,9 @@ import RaceContent from './RaceContent.vue';
 import raceData from '../../../assets/pedd/pedd-races.json';
 
 const races = computed(() => {
-    console.log("computing races", )
+
     let rd = raceData.filter(r => selectedRace.value == "" || selectedRace.value == r.name);
-    console.log(rd, "selectedRace: " + selectedRace.value);
+
     return rd;
 })
 

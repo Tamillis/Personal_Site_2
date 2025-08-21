@@ -1,3 +1,11 @@
+Small rules that didn't deserve their own page.
+
+- [Characters, Creatures and Monsters](#characters-creatures-and-monsters)
+  - [Character Types](#character-types)
+- [Miscellaneous Changes](#miscellaneous-changes)
+  - [Metric 'Conversions' and other Term Clarifications](#metric-conversions-and-other-term-clarifications)
+  - [N/A Statistics](#na-statistics)
+
 ## Characters, Creatures and Monsters
 Instances of 'creature' are updated to 'character' as generally the game is character focused and the clearer language helps. All monsters, beasts etc. do count as characters in this instance. However there is also a greater, clearer, emphasis on so-called 'monster types' as well, and are referenced in certain Powers. They're the (slightly expanded and rejigged) following categories known as Character Types:
 

@@ -1,4 +1,30 @@
-### Flat Maths
+When PEDD became Trinitas, the various musings on design and justifactions were removed from the pages, and left here. I've yet to properly organise this, so for now you get to see it as one long dump.
+
+- [Flat Maths](#flat-maths)
+  - [Damage Scales](#damage-scales)
+  - [DC's](#dcs)
+- [Stat Changes - Where's Wisdom?](#stat-changes---wheres-wisdom)
+- [Combat Notes](#combat-notes)
+- [Retrospectives on PEDD](#retrospectives-on-pedd)
+- [Converting from 5e](#converting-from-5e)
+  - [Features](#features)
+  - [Spells and Flat Math Damage Rescaling](#spells-and-flat-math-damage-rescaling)
+  - [Converting Saves](#converting-saves)
+  - [Converting Races](#converting-races)
+  - [Converting Spells](#converting-spells)
+- [Powers Development](#powers-development)
+  - [A Reflection on Powers](#a-reflection-on-powers)
+  - [Power Sets](#power-sets)
+  - [Power Requirements](#power-requirements)
+    - [Power Acquirements](#power-acquirements)
+  - [Simulation](#simulation)
+- [Skills \& Proficiency](#skills--proficiency)
+  - [Max Roll Modifier](#max-roll-modifier)
+  - [Knowledge and Martial Skills](#knowledge-and-martial-skills)
+  - [Tools](#tools)
+  - [Charisma Rolls](#charisma-rolls)
+
+## Flat Maths
 A large part of the rewrite focuses on getting the maths right for the sweeping changes being made. It does this by making the maths "flat". This makes it easier to predict and interpret, and aids with the level-less design. It also has the added benefit of making something that was dangerous, always dangerous. Flat Maths means nothing "falls off".
 
 To aid in the calculation of the maths, the following assumptions are kept to:
@@ -8,7 +34,7 @@ To aid in the calculation of the maths, the following assumptions are kept to:
 
 *Note that the numbers here are slightly skewed high, as I'm assuming that characters will naturally specialise and specialists will nearly-always be the one to attempt their field. For example, the health and defence numbers are what I expect for front-line characters that are supposed to take hits.
 
-#### Damage Scales
+### Damage Scales
 As such, all damage sources will be re-calibrated; various high-level spells and large monsters are brought down. Typically by simply reducing the dice size based on the scale of lethality.
 
 Two scales are used to determine damage: the size and the damage.
@@ -41,7 +67,7 @@ A fireball (8d6, which averages to about 5d10), is a destructive large scale att
 
 These scales also give me a guideline with which to collapse spells. I've been uhming and ahing about collapsing the magnitudes of the spell system from I to IX to I to VI, with I to V following the above scales and VI being for wacky overpowered spells.
 
-#### DC's
+### DC's
 DC's are relatively unchanged, but again become more consistant and easier to read. In [Skills](./pedd/skills) it is stated that "the maximum possible increase to a dice roll is +15" (thoughthere are in fact a couple of caveats to this). Since the probability curve for throwing one dice, the d20, is flat, this allows me to calculate the following DC's for a 50-50 chance to succeed at a given check, to which I have given rank-style descriptors to help envision who ought to be at that ability:
 
 | Difficulty Class (DC) | 50-50 Chance for the |
@@ -58,7 +84,7 @@ DC's are relatively unchanged, but again become more consistant and easier to re
 
 You'll note that the numbers don't progress "cleanly" such as 5, 10, 15, 20... etc. That's because these numbers have been calculated rather than thrown out there as a target or rough guide. Hopefully as I test the system, I can adjust these numbers to reflect not just predictions, but empirical results.
 
-### Stat Changes - Where's Wisdom?
+## Stat Changes - Where's Wisdom?
 The first thing in Character Creation you will notice are the changed Stats. The 6 stats of D&D are so iconic they've become ubiquitous, appearing in systems that frankly do not need them. This has highlighted their idiosynchrosies and pitfalls time and again, and changing these was something I just couldn't resist. I've griped about them to my friends often enough, they wouldn't be surprised by this change. This was also the beginning of the slide down the slippery slope to full overhaul.
 
 PEDD's stats are (and their Raison D'Etre):
@@ -82,7 +108,7 @@ To address these issues, I've split wisdom in twain. Willpower is willpower, eve
 
 This does leave the window open for those hankering for a sense of “wise”, as in an individual who has a broad body of experience to call upon and errs on the side of patience. Characters still have the various Knowledge skills, and there is now the "Learned" Power for wisdom in the sense of being broadly knowledgeable, educated, well-read, etc., and the “Wisened” background that is wisdom in the sense of a wide body of practiced wisdom coming from age and life experience; the non-academic sage. It is also, I find, mostly simply a matter of role-play. Stop me if you have heard of a high-wisdom character who's player hasn't been capable of acting wisely?
 
-### Combat Notes
+## Combat Notes
 The goals were to make combat:
  1. More consistently dangerous (so slightly less dangerous at "level one")
  2. More engaging on a player level
@@ -97,7 +123,7 @@ The second point of tactical choice is improved by bringing more possible [Actio
 
 Snappiness was a major motivator for this rewrite of combat. I wanted to erase the issue of players switching off when its not their turn during combat that I frequently observed, no matter how different and engaging I tried to make combat. So I got rid of turns with the [One Action All At Once](#one-action-all-at-once) system. This is a much more engaging system as everyone is playing together and at once, getting rid of the slow round-the-robin of turn based combat. Everyone only having one Action also means each round is resolved much more quickly.
 
-### Retrospectives on PEDD
+## Retrospectives on PEDD
 Having played a recent game for a group of newbies I've noticed that there is *still* a lot of up-front work even with the presentation of cards for easy pick-and-mix character creation.
 
 The main issue was with the presentation and determination of stats, which makes me want to simplify them. In retrospect, I've ended up with a system of 11 Stats! 15 (!) if you count Health, Defence, Speed and Initiative, which in a way my players did. They're all just terms given the same amount of attention to them. Which, to be fair, is a bit mental. If you get really gnarly, you can add Armour and Base Defence in there too.
@@ -162,12 +188,12 @@ Spells are mostly left as is, but the use of Flat Math means that damage does ne
 
 Another are that needs redoing are Reaction spells. By default, change Reaction to Bonus Action. It may make sense to rejig the effect slightly as well, such as "until the start/end of their next turn" to "this turn" since that's how that works now.
 
-# Powers Development
+## Powers Development
 I have also taken this opportunity to reduce the amount of nitpick and special pleading many features used to come with, where a lot of powers would work in similar but not quite the same ways, making it difficult to recall exactly how anything worked unless you'd memorised every little iota. I seek to inject balance and consistency, as well as also making every Power on roughly equal footing in terms of impact, so that each is worth taking in its own right: cutting down or even combining some of the more superfluous ribbon abilities, buffing others, and bringing everything in line.
 
 Some thoughts and musings on the development of Powers, the core of the PEDD system.
 
-## A Reflection on Powers
+### A Reflection on Powers
 Obviously, what I'd decided to do was translate the features of 5e as-is as much as possible: for the twin reasons of simplicity and familiarity. However seeing as PEDD is drifting further and further from its point of origin, and now we have this pretty list of often rather fine grained powers with plenty of awkward prerequisites, odd benefits and often boxed in bizare categories, me thinks it is time to start making more serious changes.
 
 Primarily, I'm inspired by another classless system I saw that also did away with any pretense at connecting to the old classes, but I wish to retain a much greater connection than that. It is simply that, more than anything, I wish to streamline some of the powers, bring them in line with my own sensibilities and implied setting, and explore some of my own ideas. By streamline, I do mean to remove as many Powers as possible by combining them, crunching them down and translating them into other aspects of the system (as already done with the Battlemaster Fighter into Tactical Actions).
@@ -186,36 +212,6 @@ An idea for Power rewriting Powers is to guide myself by organising Powers under
 ### Power Requirements
 On an unrelated note, I've sat down to set out the framework for Power Requirements, so it can be programmed for a proper build system be built, where Players only see the powers they qualify for (and to have fun features like a character randomizer that actually produces legal results). The character creator also needs to factor in changes to a character caused by Powers, such as skills, expertise marking, Stat increases etc, which means that when deselecting a Power, first the new state must be checked to see if the current powers still qualify and if invalid, ignore the deselect. Or better yet, display in some way that the power is not deselectable.
 
-#### TODO
-- mark all Stat-boosting & skill granting Powers with that data in ther json for the character creator to read out
-- for resource powers, when selected they need to flag that the associated powers have a cost of 1
-- many powers can be taken more than once. Make this possible.
-- Sorcerous Origin and Occult Spellcasting is a special case and needs proper handling. Mana becomes a required pick but retro-actively.
-- Powers that grant Skills at Expertise are marked with *, just Skill proficiency (no mark) or Skill proficiency or Expertise if already earned with ^
-- Skill/Stat increase choices need to be handled. Currently set as either using the "Any" keyword or an array of choices
-- Powers that can be taken multiple times that scale their prerequisites, the scaling needs to be machine readable in some way. Starting with RANK as a keyword (i.e. Dexterity +RANK).
-
-Skills are set on power by skill attribute which leads to an object of {core, knowledge, martial} mirroring how the pedd-skill object works like:
-
-```json
-"skill": {
-    "core":[["Arcana*", "History*", "Nature*", "Religion*"], ["Arcana*", "History*", "Nature*", "Religion*"]],
-    "knowledge": "Language (Any)",
-    "martial": ["Blade^", "Bows^", "Mauls^" "Rogue^"]
-}
-```
-
-Actually the above needs to change to accomodate skill choices between arrays that cover more than one skill category
-
-Also there are special names for "Any Martial", "Any", and "Current^" which means upgrade any Current Skill from Proficiency to Expertise
-
-- SkillName^ skill Proficiency or upgrade to Expertise if already earned
-- SkillName* skill at Expertise
-
-For Stats:
-- stat-change: { stat: val etc.} - note that stat can be the statistics or the secondaries like speed
-- stat-max: {stat: val etc.}
-
 Prerequisite groupings:
 - {Stat name} {value}
 - {Power name}
@@ -225,6 +221,19 @@ Prerequisite groupings:
 - {Name} Cantrip / {Name} Spell
 - {Tag} Tag
 - One of (the above / separated / by / forward-slashes)
+
+#### Power Acquirements
+- Powers that grant Skills at Expertise are marked with *, just Skill proficiency (no mark) or Skill proficiency or Expertise if already earned with ^
+- Sorcerous Origin and Occult Spellcasting is a special case and needs proper handling. Mana becomes a required pick but retro-actively.
+
+Powers that can be taken multiple times that scale their prerequisites, the scaling needs to be machine readable in some way. Starting with RANK as a keyword (i.e. Dexterity +RANK).
+
+- SkillName^ skill Proficiency or upgrade to Expertise if already earned
+- SkillName* skill at Expertise
+
+For Stats:
+- stat-change: { stat: val etc.} - note that stat can be the statistics or the secondaries like speed
+- stat-max: {stat: val etc.}
 
 ### Simulation
 So begins the idea of adding everything needed to powers to fully simulate them in a virtual tabletop.
