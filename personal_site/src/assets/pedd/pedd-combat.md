@@ -175,59 +175,75 @@ It represents both your body's physical capability to take damage, and your mind
 Unlike other level-based TTRPG's, it does not increase unless specifically empowered through the `Health Increase` Power or other. Health is naturally limited and only those who invest in it become the ineffible heroes who seem to be able to take punch after punch where others would fall to the first blow no matter how many fights they'd been in.
 
 ### Defence
-The Defence Stat is a dynamic value made of three parts:
+The Defence Stat is a dynamic value made of three* parts:
 - a Base Defence value that keys off of Size, 8 for Medium characters. See the [Size Table](/trinitas/character-creation#secondary-statistics) on character creation for details.
-- a bonus from your worn Armour (see [Armour](./pedd/combat#armour)) and other sources
+- an Armour bonus from your worn Armour (see [Armour](./pedd/combat#armour)) and other sources
 - a Stat bonus, which is by default your Reflexes (which can be limited / ignored by worn Equipment). Some Powers, like `Foresighted Defence` change which Stat/s are used.
 
 The Block Action increases your Defence for a Round, and is an important tool in any character's repertoire.
 
 There are two special scenarios that use a more limited form of Defence:
-- **Stationary Defence** - Defence without the benefit of Reflexes. Some effects target Stationary Defence directly, and Surprised, Stunned and Immobilised targets only get their Stationary Defence. Any character whose Speed is 0, such as one suffering the Immobilised condition, uses its Stationary Defence.
+- **Stationary Defence** - Defence without the benefit of Reflexes. Some effects target Stationary Defence directly, and Surprised, Stunned and Immobilised targets only get their Stationary Defence. Any character whose Speed is 0, such as one suffering the Immobilised condition, uses its Stationary Defence. Powers that change the Stat bonus will note if the Stat can be used in Stationary Defence.
 - **Unarmoured Defence** - Defence without the benefit of Armour, though armour limits on Reflexes are still applied (if appropriate). A few effects target Unarmoured Defence, notably Armour Piercing Weapons.
 
 #### Natural Armour
-Many creatures have Natural Armour, and so might you through strange Powers. Natural Armour grants an armour value, cannot be doffed and is always 'light', i.e. never limits Reflexes. Like other body armour, it does not stack, so to benefit from greater armour values, you must wear armour with a greater value than your natural armour.
+Many creatures have Natural Armour, and so might you through unusual Powers and strange spells. Natural Armour grants an armour bonus, cannot be doffed and never limits Reflexes. 
 
-#### Cover
-Cover is functionally unchanged from 5e. Cover is a bonus to your Defence, a +2 for 'Half Cover' and a +5 for 'Three Quarters Cover'. This is independent of Armour and Evasion, so consider it part of your Base Defence. Additionally, these bonuses apply to Reflex Saves.
+Like other body armour, it does not stack, so to benefit from greater armour values, you must wear armour with a greater value than your natural armour.
+
+#### Cover*
+Cover is a sort of "fourth part" of defence.
+
+Cover is a bonus to your Base Defence, a +2 for 'Half Cover' and a +5 for 'Three Quarters Cover'. This is independent of an Armour bonus or Stat bonus. 
+
+For example: 
+
+> a Medium character (8 Base Defence) wearing leather armour (1 Defence) with 3 Reflexes and in Half Cover (+2) has a Defence value of 14 (8+1+3+2)
+
+Additionally, Cover bonuses apply to Reflex Saves.
 
 ## Damage, Dying, Wounds and Recovery
 
 ### Damage
-After an Attack or other damaging Action occurs to a character, they take the final value calculated away from their Health. Once their Health runs out (reaches 0), that character is rendered Unconscious and Dying, see below.
+After an Attack or other damaging Action occurs to a character, they take the final value calculated away from their Health. Once their Health runs out (reaches 0), that character is rendered Unconscious and Dying.
 
-Health is regained through recovery.
+Health is regained through Recovery, see below.
 
-### Recovery
-When Resting, you recover your Fortitude as a flat amount to your current Health, up to your maximum Health. You regain Health one Short Rest per Long Rest (and every Long Rest). Meaning, per day, you can at maximum regain 2 × your Race's Baseline Health, unless your ability to recover is further empowered of course.
+### Dying and Death Saves
+When you reach 0 Health, you enter the "Dying" state. You collapse Unconscious, a kind of Condition, and cannot take Actions. Additionally, you gain a rank of the Wounded condition.
 
-If you seek professional medical attention or magical healing, you may yet recover a lot more Health in a day. Few will be capable of fully recoving in a single day, not at least without a significant expenditure of resources.
+Entering the Dying state is cumulatively dangerous, as the rank of the Wounded condition determines the chances of your character's Death Saves, and the chance to suffer permanent damage.
 
-If you undergo a period of downtime, or due to other exceptional circumstance, the GM may allow for a "Full Recovery", removing all ongoing conditions, maluses and recovering all Health and resources.
+**Dying** - your Health is 0, you are Unconscious and you can take no Actions. Each Round you make a Death Save. At 3 failed saves, you die. At 3 success, you stabilise and the condition is removed (leaving you Unconscious).
 
-### Short and Long Rests, Sleep and Downtime
-Apart from Health recovery, Short Rests and Long Rests are mostly unchanged, with the caveat that explicitely, yes, a Long Rest counts as a Short Rest. For this reason all Powers that key off of "A Short or Long Rest" now simply state "Short Rest". Simplifying and unifying that oddity.
-
-Additionally the meaning of a rest is clarified:
-- **Short Rests** are 1 hour periods of light activity and / or rest.
-- **Long Rests** are 8 hour periods of light activity and / or rest.
-- **Light Activity** includes reading, talking, eating, or standing watch. If a Check is needed, it is not Light Activity, including crafting or other professional activity.
-
-Every Character must, in addition, **Sleep** for at least 6 reasonably-continuous hours every 24 hour period, unless some Power or racial feature says otherwise (such as Elves, who cannot sleep). Failure to do so means you gain a point of Exhaustion. Sleeping counts as Resting, though not all Rest needs to be sleep; say if you were keeping watch.
-
-**Downtime** - PEDD introduces a third level of resting, Downtime, which is a 2 day+ period of non-adventuring activity. As Short Rests are part of Long Rests, Long Rests are part of Downtime, though many other activities can be gotten up to during Downtime. Just as in the base game, feel free to train, pursue professions, craft, carouse, or any other Downtime Activity. After a Downtime, you gain a Full Recovery.
-
-### Dying and Wounds
-When you reach 0 Health, you enter the "Dying" state. You collapse Unconscious, and cannot take Actions. Additionally, you gain a rank of the Wounded condition. This is another addressment of the wack-a-mole issue. Entering the Dying state is now cumulatively dangerous as when you enter the Dying state you gain a rank in the Wounded condition (Wounded I, initially), which affects one's chances with Death Saves, and has a chance to leave permanent marks.
-
-**Wounded [Rank]** - When your Health is reduced to 0 and you don't already have the Wounded condition, you go Unconscious and you gain the Wounded 1 condition. Each time you go Unconscious from your Health dropping to 0, your Wounded condition increases by 1. Wounds are severe physical and mental damage that threatens your continued existence. The Wounded X condition loses one rank per Long Rest, and one rank per successful Medicine check made against a DC of the Wounded condition rank × 5 (the same like a Death Save). This Medicine check can be made once per day on a wounded character, regardless of success or failure.
-
-The Dying condition is therefore updated:
-
-**Dying** - now when you are Dying and you make Death Saves, the DC is not 10, it is your Wounded condition's rank × 5. So at Wounded I, Death Saves are made against a DC of 5, at Wounded II a DC of 10, Wounded III at DC 15 etc. Otherwise Dying is unchanged (3 saves to stabilise, 3 failed saves and death, coming conscious erases all death saves).
+**Death Saves** - when you are Dying you make Death Saves. The DC is the rank of the Wounded condition your character has multiplied by 5. So at Wounded I, Death Saves are made against a DC of 5, at Wounded II a DC of 10, Wounded III at DC 15 etc.
 
 The more you're knocked down, the more likely you are to stay down, forever.
+
+#### Wounded and Wounds
+**Wounded [Rank]** - When your Health is reduced to 0 and you don't already have the Wounded condition, you go Unconscious and you gain the Wounded 1 condition. Each time you go Unconscious from your Health dropping to 0, your Wounded condition increases by 1. 
+
+Wounds are severe physical and mental damage that threatens your continued existence. Each time you suffer the Wounded condition, make a Fortitude save vs a DC of the Wounded condition rank × 5. If you fail, roll on the wounds table below:
+
+| d20 | Wound |
+| --- | --- |
+| 1 | **Dramatic Death** - you've taken a sudden and lethal wound, but fate has given you one last chance. At the end of the Round, you have one extra Action. |
+| 2 | **Lose the left eye** - your left eye is irreparably damaged. Any Perception checks that rely on sight are at Disadvantage. If you have lost your right eye as well, you are permanently Blinded. |
+| 3 | **Lose the right eye** - your right eye is irreparably damaged. Any Perception checks that rely on sight are at Disadvantage. If you have lost your left eye as well, you are permanently Blinded. |
+| 4 | **Lose the tongue** - your mouth is badly damaged and your tongue cut loose. You cannot speak (you can still yell or make noise), and cannot cast spells with the Verbal component. |
+| 5 | **Lose the nose** - your nose is irreparably damaged. Any Perception checks that rely on smell automatically fail. |
+| 6-7 | **Lose the left ear** - your left ear is cut off. Any Perception checks that rely on hearing are at Disadvantage. If you have lost your right ear as well, you are permanently Deafened. |
+| 8-9 | **Lose the right ear** - your left ear is cut off. Any Perception checks that rely on hearing are at Disadvantage. If you have lost your right ear as well, you are permanently Deafened. |
+| 10-11 | **Facial Disfigurement**
+| 12 | left arm |
+| 13 | right arm |
+| 14-15 | chest wound |
+| 16 | left leg |
+| 17 | right leg |
+| 18-19 | heavy scarring |
+| 20 | **Light Scarring** - you gain a score of scars that should heal to leave an intimidating visage. You have Advantage on Intimidation when you put your scars to use. |
+
+The Wounded condition loses one rank per Long Rest, and one rank per successful Medicine check made against a DC of the Wounded condition rank × 5 (the same as a Death Save). This Medicine check can be made once per day on a wounded character, regardless of success or failure, or who administers it.
 
 ### Wounds and Major Enemies
 Enemy characters function just like player characters in that they have health and defence, but certain powerful enemies, for reference purposes known as "Major Enemies", can even suffer the "Wounded" condition: a simple twist that changes what it is like to play against them.
@@ -235,6 +251,33 @@ Enemy characters function just like player characters in that they have health a
 Most smaller enemy characters die immediately (or are otherwise defeated) when they reach 0 Health, not having access to Death Saves. Some important humanoid NPCs may go on to have Death Saves. Some power NPC's don't. They can take multiple "Wounds", and may lose parts of themselves (such as a tail, layer of armour, claws, part of their construction...), and will act differently, have access (or greater access) to certain powers etc.
 
 A character with Wounds, when their Health reaches 0, instead lose one Wound and their Health resets to full. Meaning, each wound they can take is effectively an additional health pool. Such enemies, great monsters and infamous villains, must have their wounds be burnt through first, with every tier presenting a different kind of foe and challenge.
+
+### Rests, Sleep and Downtime
+During an adventuring day, your characters will tire and need a moment to catch their breath, as represented by the many Powers and systems that have a number of uses "per Short / Long Rest".
+
+- **Short Rests** are 1 hour periods of Light Activity and / or Sleep.
+- **Long Rests** are 8 reasonably-continuous hour periods of Light Activity and / or Sleep.
+
+All Long Rests count as Short Rests.
+
+**Light Activity** includes reading, talking, eating, or any other activity that needs little concentration. Generally, if a Check is needed, it is not Light Activity, including crafting, keeping watch or other professional activity.
+
+**Sleep** - for those that can, every Character must Sleep for at least 8 reasonably-continuous hours every 24 hour period, unless some Power or racial feature says otherwise (such as Elves, who cannot sleep). Failure to sleep at all for 24 hours means you gain a point of Exhaustion. One does not need to sleep to undergo rest, although sleep counts as rest. 
+
+#### Keeping Watch
+Reasonably-continuous is a term specifically meant to allow characters to take Watch rotations of up to 2 hours each, where they can indeed make Checks for keeping watch as normal (if required), without breaking the 8 hours of a long rest.
+
+#### Downtime
+Trinitas has a third level of resting, Downtime, which is a 24 hour+ period of non-adventuring activity. As Short Rests are part of Long Rests, Long Rests are part of a Downtime, though many other activities can be gotten up to during Downtime. 
+
+Downtimes are when character are free to train, pursue professions, craft, carouse, gather material, gather intelligence, manage business and any other Downtime Activity you can think of. 
+
+### Recovery
+When Resting, you recover your Fortitude as a flat amount to your current Health, up to your maximum Health. You regain Health one Short Rest per Long Rest (and every Long Rest). Meaning, per day, you can at maximum regain 2 × your Race's Baseline Health, unless your ability to recover is further empowered of course.
+
+If you seek professional medical attention or magical healing, you may yet recover a lot more Health in a day. Few will be capable of fully recoving in a single day, not at least without a significant expenditure of resources.
+
+**Full Recovery** - If you undergo a Downtime, or due to other exceptional circumstance the GM may decide, you gain a Full Recovery, where your character loses all ongoing conditions and maluses, and recovers all Health.
 
 ### Conditions
 Other than straight damage, characters can suffer the effects of a **Condition**, some (typically ongoing) negative affect. 
@@ -245,7 +288,7 @@ Every condition, when inflicted, will state a duration (1 Round, 1 hour etc.). I
 
 As a short hand, Stunned is just Incapacitated for 1 round, so that obviously doesn't require a duration statement, and it is implied that Incapacitated occurs for more than 1 Round.
 
-- **Blinded / Deafened** - A blinded / deafened character can’t see / hear and automatically fails any ability check that requires sight / hearing. If your Attacks rely on this sense, they are made at Disadvantage.
+- **Blinded / Deafened** - A blinded / deafened character can’t see / hear and automatically fails any check that requires sight / hearing, respectively. If your Attacks rely on this sense, they are made at Disadvantage.
 - **Bleeding (Damage)** - A character takes the damage in brackets at the end of each Round until they use an appropriate Action to staunch the bleeding (such as using bandages). Non-living characters and others that don't bleed are immune to this condition.
 - **Bloodied** - A fan favourite, when enemy characters fall below half health, they enter the "Bloodied" condition. This is purely an descriptive marker though this also often means their behaviour, tactics and even powers may change, becoming more aggressive and desparate. The Bloodied Condition also lets Players know that the target is below half Health. Alternatively, on monsters that have 2 to 3 Wounds, its the condition after 1 Wound.
 - **Charmed** - unless otherwise stated, a charmed character considers you an ally and will heed your commands, which you can give freely, to the best of its ability. However it will not obey commands that are against its interests. If it is an intelligent character, you can attempt to persuade or otherwise convince them to obey, or that their interests lie elsewhere. For example, a charmed character will not attack another they consider an Ally, but depending on the situation, they may be persuaded to no longer consider the other character an ally.
