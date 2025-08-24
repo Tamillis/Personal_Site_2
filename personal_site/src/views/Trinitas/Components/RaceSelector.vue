@@ -1,15 +1,17 @@
 <template>
     <h2>Race: {{ selectedRace }}</h2>
-    <CardContainer v-for="(race, i) in races" 
-        :name="race.name" 
-        :chosen="selectedRace == race.name"
-        :class="{ highlight: selectedRace == race.name }"
-        @chosen="(chosenRaceName) => chooseRace(chosenRaceName)"
-        :key="`race-${i}`">
-        <RaceContent 
-            :race="race" @selected-stats="(stats) => $emit('raceStats', stats)"
-            :chosenAnyStats="chosenAnyStats" />
-    </CardContainer>
+    <div v-for="(race, i) in races">
+        <CardContainer
+            :name="race.name" 
+            :chosen="selectedRace == race.name"
+            :class="{ highlight: selectedRace == race.name }"
+            @chosen="(chosenRaceName) => chooseRace(chosenRaceName)"
+            :key="`race-${i}`">
+            <RaceContent 
+                :race="race" @selected-stats="(stats) => $emit('raceStats', stats)"
+                :chosenAnyStats="chosenAnyStats" />
+        </CardContainer>
+    </div>
 </template>
 
 <script setup>

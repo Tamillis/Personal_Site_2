@@ -4,14 +4,14 @@
 		<p>{{ race.desc }}</p>
 		<h4>Stats:</h4>
 		<ul>
-			<li v-for="(stat) in race.stats.filter(s => s.desc != 'Any')">
+			<li v-for="(stat) in race.stats">
 				<p style="margin: 0">
 					{{ stat.desc }} <span>{{ stat.val >= 0 ? "+" + stat.val : stat.val }}</span>
 				</p>
 			</li>
-			<li v-for="(stat, i) in currentAnyStats">
+			<!-- <li v-for="(stat, i) in currentAnyStats">
 				<AnyStatSelector :val="stat.val" :initialStat="stat.desc" @stat-chosen="chosenStat => anyStatChosen(chosenStat, stat.val, i)" />
-			</li>
+			</li> -->
 		</ul>
 		<h4>Age:</h4>
 		<div v-html="marked.parse(race.age)"></div>
@@ -25,7 +25,7 @@
 		<div v-else v-html="marked.parse(race.size.desc)"></div>
 		<h4>Speed:</h4>
 		<div v-html="marked.parse(race.speed.desc)"></div>
-		<div v-for="extra in extras">
+		<div v-for="extra in racialFeatures">
 			<h4>{{ format(extra) }}:</h4>
 			<div v-html="marked.parse(race[extra] ?? '')"></div>
 		</div>
@@ -35,7 +35,7 @@
 <script setup>
 import { marked } from "marked";
 import { format } from "../../../assets/functionality";
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import AnyStatSelector from "./AnyStatSelector.vue";
 
 const props = defineProps(["race", "chosenAnyStats"]);
@@ -43,7 +43,7 @@ const emit = defineEmits(["selectedStats"]);
 
 let standardHeadings = ["name", "desc", "stats", "baseHealth", "age", "size", "speed", "senses", "powers"];
 
-let extras = Object.keys(props.race).filter(key => !standardHeadings.includes(key));
+let racialFeatures = computed(() => Object.keys(props.race).filter(key => !standardHeadings.includes(key)));
 
 //chosenAnyStats of the form [{desc, val},{desc,val}...] ... defaults will be passed in.
 const currentAnyStats = ref(props.chosenAnyStats ? props.chosenAnyStats : props.race.stats.filter(stat => stat.desc == "Any"));

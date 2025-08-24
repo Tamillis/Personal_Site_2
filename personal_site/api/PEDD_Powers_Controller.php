@@ -34,6 +34,9 @@ class PowersController
                 $inputJson = json_decode(file_get_contents('php://input'), true);
                 $power = $this->bindPower($inputJson);
 
+                //set "old name" to name, since there is no old name but that's how writing works.
+                $power["oldName"] = $power["name"];
+
                 //check this power doesn't already exist
                 if (!is_null($this->read($power['name']))) {
                     API::respond(['error' => "Power " . $power['name'] . " already exists."], 400);
@@ -54,8 +57,12 @@ class PowersController
                 $power = $this->bindPower($inputJson);
 
                 //check this power exists
-                if (is_null($this->read($power['name']))) {
-                    API::respond(['error' => "Power " . $power['name'] . " doesn't exist."], 400);
+                if (is_null($this->read($power['oldName']))) {
+                    API::respond(['error' => "Power " . $power['oldName'] . " doesn't exist."], 400);
+                }
+                //and that the new name, if its not the same as the oldName, doesn't already exist
+                if ($power["name"] != $power["oldName"] && !is_null($this->read($power['name']))) {
+                    API::respond(['error' => "Power " . $power['name'] . " already exists."], 400);
                 }
 
                 $this->write($power);
@@ -81,10 +88,10 @@ class PowersController
         }
     }
 
-    //binds the incoming input
+    //"binds" the incoming input but just checks to see if it has the right keys
     private function bindPower($json)
     {
-        $keys = array("name", "tag", "preq", "desc", "repeatable", "skills", "statChanges", "resistanceChanges", "secondaryStatChanges", "statMaxes");
+        $keys = array("name", "oldName", "tag", "preq", "desc", "repeatable", "skills", "statChanges", "resistanceChanges", "secondaryStatChanges", "statMaxes");
         foreach ($keys as $key) {
             if (!isset($json[$key])) API::respond(['error' => "Bad binding: property '$key' is required, got: $json"], 400);
         }
@@ -111,9 +118,10 @@ class PowersController
     private function write($power)
     {
         $powers = $this->read();
-        if ($this->getPowerWithName($powers, $power['name'])) {
-            //record already exists, "update" it by removing the old record
-            $this->removePowerWithName($powers, $power['name']);
+
+        //record already exists, "update" it by removing the old record
+        if ($this->getPowerWithName($powers, $power['oldName'])) {
+            $this->removePowerWithName($powers, $power['oldName']);
         }
 
         //create record, push it to the data and sort by name, ready for writing

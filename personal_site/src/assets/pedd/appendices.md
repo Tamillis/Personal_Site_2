@@ -7,7 +7,9 @@ Small rules that didn't deserve their own page.
   - [N/A Statistics](#na-statistics)
 
 ## Characters, Creatures and Monsters
-Instances of 'creature' are updated to 'character' as generally the game is character focused and the clearer language helps. All monsters, beasts etc. do count as characters in this instance. However there is also a greater, clearer, emphasis on so-called 'monster types' as well, and are referenced in certain Powers. They're the (slightly expanded and rejigged) following categories known as Character Types:
+Like any TTRPG, Trinitas is focused around characters which as a term in the system means any individual (or swarm/group, in the case of blobbed enemies), associated with a block of stats and Actions they can do. All Player Characters are Character, but also all monsters, beasts, villains etc. are characters too.
+
+There is also a clear emphasis on 'monster types' as well, called **Creature Types** which are referenced in certain Powers. They're the following categories:
 
 ### Character Types
 - **Aberrations** - so-called 'true outsiders', enigmatic and horrifying beings from beyond the outer planes and the boundary of Time and Space itself, sometimes referred to as the 'Far Planes'
@@ -45,19 +47,24 @@ There are many other classifications and subcategories that the Character Types 
 - **Dark creatures**: aberrations, demons, fiends, lycanthropes, monstrosities (debated), fell, undead.
 - **Magical creatures**: aberrations, dragons, elementals, giants, fell, fey, monstrosities and (if one counts as made-of magic, rather than bearing-magic) undead
 
-
-## Miscellaneous Changes
-Changes to D&D 5e that don't fit in one of the major categories above. As PEDD has grown, this section has shrunk as what was here, has now become their own sections.
+## Miscellaneous Rules
 
 ### Metric 'Conversions' and other Term Clarifications
 Certain measures consistently crop up so for reference here's what they would roughly be in metric:
-30ft - 10 metres
-5ft - 2 metres
-10 gallons - 40 litres
 
-Also, 1 Round is 6 seconds, give or take some dramatic leeway.
+| Imperial | Metric |
+| --- | --- |
+| 30ft | 10 metres |
+| 5ft | 2 metres |
+| 10 gallons | 40 litres |
+| 5lbs | 2kg |
+| 10lbs |4.5kg / 5kg |
 
-Power / Spell use of the words "Character" and "Target". A character is any humanoid or other type of creature. A target includes objects or particular points in space, basically anything. I'm in the process of rewording things to clearly match this definition, so use common sense if what the power / spell currently says doesn't make sense.
+1 Round is 5 seconds, give or take some dramatic leeway.
+
+Power / Spell use of the words "Character" and "Target". A character is any Character, including not just humanoids but all types of creature. 
+
+A **target** includes objects or particular points in space, basically any valid target of the Power / Spell. I'm in the process of rewording things to clearly match this definition, so use common sense if what the power / spell currently says doesn't make sense.
 
 ### N/A Statistics
-I think I've written elsewhere but I can't find it now. A stat value of N/A, which only happens for NPCs, means that it is meaningless for that character to have a value for that stat. This is relatively common for Intelligence and various non-sophont characters. Any skill check that is called for using that stat automatically fails, as does any save. It may be the case that the check or save is instead done with a different stat, or entirely nullified by the GM. Many mind affecting spells don't have any affect on unintelligent creatures, for example.
+A stat value of N/A, which only happens for NPCs, means that it is meaningless for that character to have a value for that stat. This is relatively common for Intelligence and various non-sophont characters. Any skill check that is called for using that stat automatically fails, as does any save. It may be the case that the check or save is instead done with a different stat, or entirely nullified by the GM. Many mind affecting spells don't have any affect on unintelligent creatures, for example.

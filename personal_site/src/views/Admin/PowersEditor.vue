@@ -5,8 +5,6 @@
             <p>{{ serverMsg }}</p>
         </div>
 
-        <p>Bug: you can't edit a Power's name since it looks for an existing power with the new name and fails</p>
-
         <form id="pedd-power-form" class="" @submit.prevent="postPower">
 
             <h3 class="subsubtitle" ref="powerTitle"><span>{{ isNew ? "New" : "Edit" }}</span> Power</h3>
@@ -14,7 +12,11 @@
             <div class="input-container">
                 <label for="name" class="q-label">Name</label>
                 <input type="text" id="name" name="name" required class="q text-entry grow" v-model="name"
-                    placeholder="Name...">
+                placeholder="Name...">
+            </div>
+            <div class="input-container" v-if="name != oldName">
+                <strong class="q-label">Previous Name:</strong>
+                <p>{{ oldName }}</p>
             </div>
             <div class="input-container">
                 <label for="tag" class="q-label">Tags</label>
@@ -105,7 +107,7 @@
 
         <section class="bg-dark">
             <h2 class="subtitle">Powers:</h2>
-            <PowerCard v-for="power in powers" :power="power" class="border-bottom pb-1r"
+            <PowerCard v-for="power in powers" :power="power" class="border-bottom pb-1r" :id="toId(power.name)"
                 @edit-power="setFormToEdit(power)" />
         </section>
     </div>
@@ -121,6 +123,8 @@ const serverMsg = ref("");
 const powerTitle = ref();
 
 const name = ref("");
+const oldName = ref("");
+
 const tags = ref("");
 const preqs = ref("");
 const desc = ref("");
@@ -153,15 +157,20 @@ const statMaxes = ref({
     cha: 5,
     int: 5
 });
-const isNew = ref(true); //could be PUT
+const isNew = ref(true); //used to switch between POST and PUT
 const powers = ref([]);
 
 getPowers();
+
+function toId(name) {
+    return name.toLowerCase().replaceAll(" ", "-");
+}
 
 function setFormToEdit(power) {
     resetPowerForm();
     isNew.value = false;
     name.value = power.name;
+    oldName.value = power.name;
     tags.value = power.tag.join(", ");
     preqs.value = power.preq.join(", ");
     desc.value = power.desc;
@@ -176,6 +185,7 @@ function setFormToEdit(power) {
 
 function resetPowerForm() {
     powerTitle.value.scrollIntoView({ behavior: "smooth" });
+
     isNew.value = true;
     name.value = "";
     tags.value = "";
@@ -227,6 +237,7 @@ async function postPower() {
 
     let body = {
         name: name.value,
+        oldName: oldName.value,
         tag: tags.value.split(",").map(t => t.trim()),
         preq: preqs.value.split(",").map(t => t.trim()),
         desc: desc.value,
@@ -248,7 +259,10 @@ async function postPower() {
     if (data.message) serverMsg.value = data.message;
 
     resetPowerForm();
-    getPowers();
+    await getPowers();
+
+    if(!isNew) document.getElementById(toId(name.value)).scrollIntoView({ behavior: "smooth" });
+    oldName.value = "";
 }
 
 </script>

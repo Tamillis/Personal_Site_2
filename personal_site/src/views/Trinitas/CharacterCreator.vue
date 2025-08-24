@@ -5,15 +5,14 @@
 
             <h4>TODO:</h4>
             <ul>
+                <li>Fix Any Stat selector for races or just move them over to the stat display entirely</li>
                 <li>Custom Background in separate section to typical bg</li>
                 <li>Power Ranks and the ability to take a Power more than once</li>
+                <li>Power prerequisites</li>
                 <li>Separate character creation and character sheet</li>
-                <li>In Character display show Racial Features</li>
-                <li>Caluclate Health using racial Health Bonus / Health Malus correctly</li>
-                <li>Have Powers that grant stats, skills and other changes do so (in progress)</li>
+                <li>Caluclate Health using racial Health Bonus / Health Malus</li>
+                <li>Have Powers that grant stats, skills and other changes do so (in progress via admin)</li>
                 <li>Special handling of Powers that change how Defence is calculated</li>
-                <li>Add Powers in training section</li>
-                <li>Add Rolling functionality for attacks, spells, skills and stats</li>
             </ul>
             <button class="btn mb-1r" @click="copyUrl">Copy to clipboard</button>
             <button class="btn" @click="chosen = blankCharacter">Reset</button>
@@ -91,6 +90,9 @@
 
                 <RolePowers v-model:chosenPowers="chosen.rolePowers" :allChosenPowers="allChosenPowers"
                     :powers="powersJson" :player="player" />
+
+                <h2>Powers in Progress:</h2>
+                <input class="text-entry" placeholder="..."  v-model="chosen.pip" />
             </section>
 
             <section id="equipment-section" v-show="sections.equipment">
@@ -111,7 +113,7 @@
 </template>
 
 <script setup>
-import { useTemplateRef, ref, computed } from "vue";
+import { ref, computed } from "vue";
 
 import BasePage from './Components/BasePage.vue';
 import PowerContent from "./Components/PowerContent.vue";
@@ -215,7 +217,8 @@ let blankCharacter = {
     helmet: 0,
     shield: 0,
     reflexLimit: 99,
-    imgSrc: ""
+    imgSrc: "",
+    pip: ""
 };
 
 //NOTE: can use url saving like I planned, or if the JSON gets too dense and therefore the url is too long, could experiment with downloading and uploading JSON purely through the frontend:

@@ -83,6 +83,7 @@
     },
     {
         "name": "Agile Defence",
+        "oldName": "Agile Defencessss",
         "tag": [
             "combat",
             "defensive"
@@ -124,6 +125,7 @@
     },
     {
         "name": "Agonizing Blast",
+        "oldName": "Agonizing Blast",
         "tag": [
             "invocation"
         ],
@@ -671,6 +673,7 @@
     },
     {
         "name": "Bountiful Luck",
+        "oldName": "Bountiful Luck",
         "tag": [
             "roll-effecting",
             "universal",
@@ -679,17 +682,76 @@
         "preq": [
             "Lucky"
         ],
-        "desc": "Your people have extraordinary luck, which you have learned to mystically lend to your companions whenever you see them falter. You're not sure how you do it, you just wish it, and it happens. Surely a sign of fortune's favor.\n\nWhen an ally you can see within 30ft of you rolls a 1 on the d20 for an attack roll, an ability check, or a saving throw, you can use your Bonus Action to let the ally reroll the die. The ally must use the new roll, even if it is a 1.\n\nWhen you use this Power, you can't use your Lucky racial trait before the end of your next turn."
+        "desc": "Your people have extraordinary luck, which you have learned to mystically lend to your companions whenever you see them falter. You're not sure how you do it, you just wish it, and it happens. Surely a sign of fortune's favour.\n\nWhen an ally you can see within 30ft of you rolls a 1 on the d20 for an attack roll, an ability check, or a saving throw, you can use your Bonus Action to let the ally reroll the die. The ally must use the new roll, even if it is a 1.\n\nWhen you use this Power, you cant benefit from Lucky or use Bountiful Luck next Round.",
+        "repeatable": true,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Cantrip Cornucopia",
+        "oldName": "Cantrip Cornucopia",
         "tag": [
             "invocation"
         ],
         "preq": [
             "Pact Magic"
         ],
-        "desc": "You learn another cantrip from your Patron's spell list, and one more cantrip of your choice from the list;\n\n- Chill Touch\n- Dancing Lights\n- Eldritch Blast\n- Gust\n- Infestation\n- Lightning Lure\n- Magic Stone\n- Mind Sliver\n- Minor Illusion\n- Prestidigitation\n- Sapping Sting\n- Shocking Grasp\n- Thaumaturgy\n- Vicious Mockery\n- Word of Decay"
+        "desc": "You learn another cantrip from your Patron's spell list or a cantrip of your choice from the list;\n\n- Chill Touch\n- Dancing Lights\n- Eldritch Blast\n- Gust\n- Infestation\n- Lightning Lure\n- Magic Stone\n- Mind Sliver\n- Minor Illusion\n- Prestidigitation\n- Sapping Sting\n- Shocking Grasp\n- Thaumaturgy\n- Vicious Mockery\n- Word of Decay",
+        "repeatable": true,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Careful Spell",
@@ -757,6 +819,7 @@
     },
     {
         "name": "Close Quarters Shooter",
+        "oldName": "Close Quarters Shooter",
         "tag": [
             "combat",
             "offensive",
@@ -767,7 +830,36 @@
             "Accuracy +1",
             "Dexterity +1"
         ],
-        "desc": "When making a ranged attack while you are within 5ft of a hostile character, you do not have Disadvantage on the attack roll. Your ranged attacks ignore half cover and three-quarters cover against targets within 30ft of you. You have a +1 Bonus to attack rolls on ranged attacks."
+        "desc": "When making a ranged attack while you are within 5ft of a hostile character, you do not have Disadvantage on the attack roll. Your ranged attacks ignore half cover and three-quarters cover against targets within 30ft of you. You have a +1 Bonus to attack rolls on ranged attacks.",
+        "repeatable": true,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Combat Expert",
