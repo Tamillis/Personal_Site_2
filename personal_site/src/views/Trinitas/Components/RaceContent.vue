@@ -4,14 +4,14 @@
 		<p>{{ race.desc }}</p>
 		<h4>Stats:</h4>
 		<ul>
-			<li v-for="(stat) in race.stats">
+			<li v-for="(stat) in pureStats">
 				<p style="margin: 0">
 					{{ stat.desc }} <span>{{ stat.val >= 0 ? "+" + stat.val : stat.val }}</span>
 				</p>
 			</li>
-			<!-- <li v-for="(stat, i) in currentAnyStats">
+			<li v-for="(stat, i) in currentAnyStats">
 				<AnyStatSelector :val="stat.val" :initialStat="stat.desc" @stat-chosen="chosenStat => anyStatChosen(chosenStat, stat.val, i)" />
-			</li> -->
+			</li>
 		</ul>
 		<h4>Age:</h4>
 		<div v-html="marked.parse(race.age)"></div>
@@ -45,8 +45,10 @@ let standardHeadings = ["name", "desc", "stats", "baseHealth", "age", "size", "s
 
 let racialFeatures = computed(() => Object.keys(props.race).filter(key => !standardHeadings.includes(key)));
 
+const pureStats = computed(() => props.race.stats.filter(s => s.desc !='Any'));
+
 //chosenAnyStats of the form [{desc, val},{desc,val}...] ... defaults will be passed in.
-const currentAnyStats = ref(props.chosenAnyStats ? props.chosenAnyStats : props.race.stats.filter(stat => stat.desc == "Any"));
+const currentAnyStats = computed(() => props.chosenAnyStats ? props.chosenAnyStats : props.race.stats.filter(stat => stat.desc == "Any"));
 
 function anyStatChosen(stat, val, n) {
 	currentAnyStats.value[n] = { desc: stat, val: val };

@@ -155,7 +155,7 @@ async function fetchPowers() {
     }
 }
 
-//derived resources
+//reference resources
 let stats = ["accuracy", "perception", "strength", "dexterity", "charisma", "intelligence"];
 
 let sizeDefence = {
@@ -235,6 +235,7 @@ function setRace(race) {
     if (!race) {
         chosen.value.race = ""
         chosen.value.racialPowers = [];
+        chosen.value.anyRaceStats = false;
     }
 }
 
@@ -344,7 +345,6 @@ let player = computed(() => {
         p.racialFeatures = racialFeatures.map(rf => {
             return { "name": rf, "desc": p.race[rf] };
         });
-        console.log(p.racialFeatures);
     }
 
     //set selected size - TODO: make this actually selectable when presented an option
