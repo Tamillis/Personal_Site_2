@@ -111,7 +111,7 @@ Modern ranged weapons employed by militaries and the keen amatuer, even if that 
 | Pistol | Firearms & Pistols | 10gp | 1d8 piercing | 3lbs | Ammunition (20/120), cartridge loading, light armour piercing, misfire, light |
 | Sawn-Off | Firearms & Pistols | 30gp | 2d4 slashing | 6lps | Ammunition (20/40), cartridge loading, scatter (1d4) |
 | **Munitions** |
-| Demo-barrel | - | 50gp | 4d6 bludgeoning & 4d6 burning<sup>b</sup> | 75lbs | Knockback, Area (10ft radius per barrel to a maximum of 60ft) |
+| Demo-barrel | - | 50gp | 4d6 bludgeoning | 75lbs | Knockback, Burning (4d6), Area (10ft radius per barrel to a maximum of 60ft) |
 | Flashbomb | Slings & Thrown | 5gp | Blinds & Deafens until the end of the target’s next turn | 1lbs | Thrown (20/60), Area (15ft radius)<sup>g</sup> |
 | Fire Lance* | Exotic (Lance) | 35gp | 2d8 | 11lbs | Ammunition (5/10), burning (2d8) reach, heavy, two-handed |
 | Firebomb | Slings & Thrown | 10gp | 2d10 | 2lbs | Thrown (20/60), burning (2d10) Area (5ft radius)<sup>c</sup> |
@@ -192,6 +192,10 @@ The following table lists the kinds of armour in the game. Armour's Armour prope
 **Stiff** - your Reflexes cannot be greater than 2.
 
 ### Alchemical Items WIP
+_Materials_ are intended to be part of a crafting system (which is very WIP and not posted yet).
+
+_Grade_ is a sort of spell-magnitude equivalent.
+
 | Name | Cost | Materials | Grade | Effect |
 | --- | --- | --- | --- | --- |
 | flash bang | 1sp | herb | I | - from armories of 2nd emp |
@@ -211,11 +215,19 @@ The following table lists the kinds of armour in the game. Armour's Armour prope
 | tripwire alarm | 1sp | herb | I | |
 | weapon coatings | 1sp | herb | I | |
 | armour resistance coatings | 1sp | herb | I |, armour buffs |
-| stat buffs | 1sp | herb | I | / stat maluses, 6 / 9 related items one for each stat. Bullish Strength, Agility of the Hare, Anteater's Accuracy, Eyes of the Eagle, Charm of the Cat, Fox's Wiles |
-| elixer of life | 1gp | elan catalyst, biological nucelae (yolk, seeds etc), blood-bind fibres | I | heal 1d6 + 3 and advantage on saves vs disease and poison, immediate save against ongoing disease / poison, cannot benefit from Elixer of Life for 10 minutes. |
-| liquid luck | 1sp | herb | - adv on next roll within 1 minute |
-| soul saver | 1sp | soul boundary bridging agent, mana rich ingestants, bracing liquors | - passes death save |
-| Barkskin Salve | 1sp | cellwall-reinforcer (puréed bark), transformation jelly, inertial charge agent | activates with an Action to grant +2 constant block Defence for 1 hour. |
+| Bullish Strength | 2gp | herb | I | For the next minute, you have +1 Strength |
+| Agility of the Hare | 2gp | herb | I | For the next minute, you have +1 Dexterity |
+| Owl's Precision | 2gp | herb | I | For the next minute, you have +1 Accuracy |
+| Eagle's Eye | 2gp | herb | I | For the next minute, you have +1 Perception |
+| Cat's Charm | 2gp | herb | I | For the next minute, you have +1 Charisma |
+| Fox's Wiles | 2gp | herb | I | For the next minute, you have +1 Intelligence |
+| Heightened Reflexes | 2gp | herb | I | For the next minute, you have +1 Reflexes |
+| Hardened Fortitude | 2gp | herb | I | For the next minute, you have +1 Fortitude |
+| Liquid Courage | 2gp | herb | I | For the next minute, you have +1 Willpower |
+| elixer of life | 1gp | herb | I |  elan catalyst, biological nucelae (yolk, seeds etc), blood-bind fibres | I | heal 1d6 + 3 and advantage on saves vs disease and poison, immediate save against ongoing disease / poison, cannot benefit from Elixer of Life for 10 minutes. |
+| liquid luck | 1sp | herb | I | adv on next roll within 1 minute |
+| soul saver | 1sp | dreamweaver thread, vial of mana dew, anima-exa lense | I | - passes death save |
+| Barkskin Salve | 1sp | puréed bark, transformation jelly, inertial charge agent | I | activates with an Action to grant +2 constant block Defence for 1 hour. |
 
 ### Runes
 Runes come in many names, symbols, dragon-marks, elven characters and hieroglyphs, to name a few. Rune Magic is the domain of learning and using them.
