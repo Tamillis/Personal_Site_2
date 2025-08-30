@@ -20,11 +20,12 @@ const trinitasPages = [
 ];
 const toTrinitasRoutes = (name) => {
   let parts = name.split("-");
-  let componentLink = "../views/trinitas/" + parts.map(part => part[0].toUpperCase() + part.slice(1)).join("") + ".vue";
+  let componentLink = parts.map(part => part[0].toUpperCase() + part.slice(1)).join("");
+
   return {
     path: "/Trinitas/" + name,
     name: "trinitas-" + name,
-    component: () => import(componentLink/* @vite-ignore */)
+    component: () => import(`../views/trinitas/${componentLink}.vue`)
   };
 }
 

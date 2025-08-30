@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="power-top-bar">
+        <div class="power-top-bar" :class="{highlight: !power.hasOwnProperty('repeatable') }">
             <h2 class="power-name order-1" :class="{underline: !hidden}">{{ power.name }}</h2>
             <div class="flex-grow order-1"></div>
             <button class="btn ml-gap order-3" @click="hidden = !hidden">{{hidden ? "Show" : "Hide"}}</button>
@@ -85,6 +85,11 @@ h2 {
     margin-top: var(--gap);
     align-items: baseline;
 }
+
+.highlight {
+    background-color: var(--highlight);
+}
+
 .power-name {
     min-width: 9em;
 }

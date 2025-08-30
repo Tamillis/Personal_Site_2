@@ -545,6 +545,7 @@
     },
     {
         "name": "Armour of Shadows",
+        "oldName": "Armour of Shadows",
         "tag": [
             "invocation"
         ],
@@ -552,10 +553,40 @@
             "Pact Magic",
             "Mage Armour Spell"
         ],
-        "desc": "You can cast Mage Armour on yourself at will, without spellcasting, expending your Stipend \/ Mana, or needing material components."
+        "desc": "You can cast Mage Armour on yourself at will, without spellcasting, expending your Stipend \/ Mana, or needing material components.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Artificer's Lore",
+        "oldName": "Artificer's Lore",
         "tag": [
             "background",
             "skill",
@@ -564,20 +595,80 @@
         "preq": [
             "History Skill"
         ],
-        "desc": "Whenever you make a History check related to magical, alchemical, or technological items, your proficiency Bonus is considered instead to be Expertise."
+        "desc": "Whenever you make a History check related to magical, alchemical, or technological items, you have Advantage.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Aspect of the Moon",
+        "oldName": "Aspect of the Moon",
         "tag": [
             "invocation"
         ],
         "preq": [
             "Pact Magic"
         ],
-        "desc": "You can no longer sleep and can't be forced to sleep by any means. You do not suffer Exhaustion for not sleeping. To gain the benefits of a Long Rest, you can spend all 8 hours doing light activity, such as divining the night sky or keeping watch."
+        "desc": "Your pact severs you from the wild. You can no longer sleep and can't be forced to sleep by any means. You do not suffer Exhaustion for not sleeping. To gain the benefits of a Long Rest, you can spend all 8 hours doing light activity, such as divining the night sky, cooking up rations or keeping watch.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Bardic Inspiration",
+        "oldName": "Bardic Inspiration",
         "tag": [
             "combat",
             "social",
@@ -586,7 +677,36 @@
         "preq": [
             "Charisma +1"
         ],
-        "desc": "You can inspire others through stirring words or music. To do so, you use your Bonus Action to choose one character other than yourself within 60ft of you who can hear you. That creature gains one Bardic Inspiration die, a d6.\n\nOnce within the next Short Rest, the character can roll the die and add the number rolled to one ability check, attack roll, or saving throw they make. The character can wait until after they roll the d20 before deciding to use the Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A character can have only one Bardic Inspiration die at a time.\n\nYou can use this Power a number of times equal to your Charisma. You regain any expended uses when you finish a Long Rest."
+        "desc": "You can inspire others through stirring words, song and music. You can use your Bonus Action, choose one character other than yourself within 60ft of you who can hear you, and give them one Bardic Inspiration die: a d4.\n\nOnce before the next Short Rest, the character can roll the die and add the number rolled to one check or saving throw they make. The character can wait until after they roll the d20 before deciding to use the Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A character can have only one Bardic Inspiration die at a time.\n\nYou can use this Power a number of times equal to your Charisma. You regain any expended uses when you finish a Long Rest.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Beast Speech",
@@ -2010,6 +2130,7 @@
     },
     {
         "name": "Improved Bardic Inspiration",
+        "oldName": "Improved Bardic Inspiration",
         "tag": [
             "combat",
             "social",
@@ -2019,7 +2140,36 @@
             "Charisma +3",
             "After 6 Powers"
         ],
-        "desc": "You can use the Bardic Inspiration Power a number of times equal to your Charisma + your Bonus and the die increases from a d6 to a d10."
+        "desc": "You can use the Bardic Inspiration Power a number of times equal to your Charisma + your Bonus and the die increases from a d4 to a d8.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Improved Focus",
@@ -2462,6 +2612,7 @@
     },
     {
         "name": "Minor Alchemy",
+        "oldName": "Minor Alchemy",
         "tag": [
             "exploration",
             "utility"
@@ -2469,7 +2620,36 @@
         "preq": [
             "Arcane Spellcasting"
         ],
-        "desc": "When you studied transmutation, you learned to temporarily alter the physical properties of one nonmagical object, changing it from one substance into another. You perform a special alchemical procedure on one object composed entirely of wood, stone (but not a gemstone), lead, iron or other common metals, or silver, transforming it into a different one of those materials. For each 10 minutes you spend performing the procedure, you can transform up to 1 cubic foot of material. After 1 hour, or until you lose your concentration (as if you were concentrating on a spell), the material reverts to its original substance."
+        "desc": "When you studied transmutation, you learned to temporarily alter the physical properties of one nonmagical object, changing it from one substance into another. You perform a special alchemical Ritual on one object composed entirely of wood, stone (not gemstone), lead, iron or other common metals, or silver, transforming it into a different one of those materials while Concentrating. \n\nFor each 10 minutes you spend performing the Ritual, you can transform up to 1 cubic foot of material. After 1 hour, or until you lose your Concentration, the material reverts to its original substance.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Minor Conjuration",
