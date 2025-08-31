@@ -1,43 +1,60 @@
 ## Spheres of Magic
-Spellcasting has undergone a serious remake. Gone are spell casting classes, of course, and spell lists for each class, and even the confusingly labelled 'spell-levels'. Now all spell lists are combined into 4 “Spheres of Magic”; Arcane, Divine, Primal and Occult. 
+Magic is split into 4 “Spheres of Magic”: Arcane, Divine, Primal and Occult.
 
-The schizophrenic "Spellcasting" feature has been separated into 5 different spellcasting Powers, one for each Sphere as well as one for Pact Magic. Each are fundamentally unique Powers that operate on their own principles, adding both flavour and mechanical differentiation. The aspects of the spellcasting features that were common have been extracted out to rules here.
+It is primary accessed through the "Spellcasting" Powers, one for each sphere as well as one for Pact Magic.
+
+Each are fundamentally unique Powers that operate on their own principles, adding both flavour and mechanical differentiation. Aspects of the spellcasting powers that are in common are repeated as magic rules here.
+
+All give access to "Spells" which are special actions, pieces of magic, with a myriad of effects both active and passive. Magic is almost limitless in what it can do, and the range of spells gives an idea of that.
 
 Note that there is significant overlap for the spheres, many spells belong to, and are usable by, more than one sphere.
 
-All Spellcasting requires either Mana, or is limited to a certain number of casts per spell per day.
+### Spellcasting
+All spellcasting powers allow characters to cast magic. They denote what Statistic is used for this kind of spellcasting, and whether a focus (see below) is available for use.
 
-### Magic Statistic & Save, Mana, Ritual Spells and Spellcasting Foci
-All spellcasting powers denote what value is used for spellcasting, and whether a focus is available for use, but only that. It is left to this section to explain clearly that:
+**Spell Attacks**, like weapon attacks and other checks, use your Stat and your Bonus. You always gain your Bonus to Spell Attacks from Spellcasting. The Stat, your **Magic Statistic**, is noted in the spellcasting Power.
 
-**Magic Statistic**. As for 5e's Spell Attack Modifier and Spell Save DC, these in PEDD have been combined to the corresponding **Magic Statistic**. The Passive value of this is also known as your **Magic Save**, i.e. your 8 + Spellcasting Value + your Bonus.
+The Passive value of the Magic Statistic is used in determining the DC for your **Spell Saves**, also known as:
+> **Magic Save** = 8 + your Magic Statistic + your Bonus
 
-**Casting Spells with Mana**. You use 1 Reserve of a Magnitude of Mana of your choice, that you have available, to cast 1 spell. The Magnitude must meet the minimum required by the spell. If you have run out, you cannot cast that spell until you finish a Long Rest and your Mana replenishes.
+### Mana, Magnitude and Reserve
+All spellcasting Powers also require the Mana power, which means the character has a well of mystical energy they can draw on to cast magic spells.
 
-**Ritual Spells** - are spells available to you that can be cast without spending Mana if cast for an extra 10 minutes. In affect, anyone who knows or has prepared a ritual spell, can cast that spell as a ritual. Arcane Spellcasting is special in that even unprepared ritual spells from the spellbook can also be cast, which is denoted in the Power.
-**Spellcasting Focus** - this item can be used in lieu of any material components, unless those material components have a gold cost listed, such as Find Familiar's 10gp of incense.
+**Magnitude** - Mana comes in Magnitudes, up to 9 (I'm planning on dropping this to 5 / 6 and rewriting high and low-level spells to reflect this change, but that's WIP). Casting a spell at a certain magnitude determines the scale of its effect (if appropriate), and more powerful spells have a minimum magnitude greater than 1.
 
-### Mana Magnitude and Reserve
-Spell levels and spell slots have received a semantic rework as can be seen in the 'Mana' Power, as the spell-level and spell-slot naming conventions were old and counter-intertuitive. Countless times I've had new players get confused about levels, spell levels and how spell slots work. Now admittedly with the removal of classes and character levels, I could have left spell levels in without ambiguity, but I didn't as apparently I'm anethema to the word levels. Spell levels are relabelled to "Magnitude", values denoted in roman numerals, and spell slots to "Reserve". A spellcaster has "X Reserve of Y Magnitude", with one spell cast using up 1 Reserve of a given Magnitude expended. "Upcasting" is shorthand for casting a spell at a certain Magnitude using a higher Magnitude Reserve if that's all you have left, and every spell denotes, if any, what casting a spell at a certain Magnitude gives. Most spells scale in some way, but many simply do not.
+**Reserve** - According to the rank of the Mana power, you will have certain "Reserves" of Mana per magnitude. One cast of a spell uses up one Reserve.
 
-### Innate Spells, and Prepared Spells & Sources
-Another semantic rework is the clear definition of "Prepared Spells" and "Innate Spells".
+**Casting Spells with Mana**. You use 1 Reserve of a Magnitude of Mana of your choice, that you have available, to cast 1 spell. The Magnitude must meet the minimum required by the spell. If you have run out of necessary Reserve (or higher, see Upcasting), you cannot cast that spell until your Mana replenishes.
 
-**Innate Spells**. These are learned spells memorised, made reflexive or integral to the caster: they never need to be prepared. All Cantrips, for example, are Innate (and also take 0 Reserve to cast).
+**Upcasting** a spell is casting a spell at a higher than minimum Magnitude if that's all you have left, even if the spell denotes no scaling effect. The higher Magnitude Reserve is used up and the spell occurs as normal.
 
-**Prepared Spells**. These are spells a caster chooses to make ready at the end of a Long Rest for use, until they have another Long Rest and choose their Prepared Spells again. If a spell is not Prepared or Innate, it cannot be cast. Prepared Spells are chosen from a list that depends on the Sphere, known as their **Source**":
+### Spell Details
+Spells have components to show how they can be cast:
+
+- **Verbal Components** - A spell that needs Verbal components must be spoken. A silenced mage cannot cast this spell.
+- **Somati Components** - A spell that requires bodily gestures, through hands or similar apendages. A restrained mage cannot cast this spell.
+- **Material Components** - A spell that requires physical catalysts. The items listed in the material component of the spell must be in the mage's hands to cast the spell. If the components are consumed, they are turned to dust (or similar) and are gone as part of the action (regardless of spell success), but otherwise materials are not consumed. Additionally, if a mage has access to a Focus, they can use the focus in lieu of any non-consumed materials.
+
+**Spellcasting Focus** - this item, if the spellcasting power has one and the spellcaster possesses one, is used in lieu of any material components, unless those Material Components are consumed.
+
+**Ritual Spells** are spells available to you that can be cast without spending Mana if cast for an extra 10 minutes in silent and stationary Concentration. In affect, anyone who knows or has prepared a ritual spell, can cast that spell as a ritual for "free" given the extra time and chance to do so. Ritual spells, if they require Material Components, still do when cast as a ritual.
+
+**Cantrips** are small magics, often with a wide range of effects, that a mage has learned over the course of their studies. Their minor effects means that they take no Mana to cast, and are embedded in the mage's mind as Innate Spells.
+
+**Innate Spells** - these are spells that are bestowed / memorised / reflexive and otherwise integral to the caster: they never need to be prepared. All Cantrips, for example, are Innate.
+
+**Prepared Spells** - are those spells a caster chooses to make ready at the end of a Long Rest for use, until they have another Long Rest and choose their Prepared Spells again. If a spell is not Prepared or Innate (i.e. "unprepared"), it cannot be cast. Prepared Spells are chosen from a list as determined by the spellcasting Power.
+
+### Spell Lists and Sources of Magic
+Spells are sourced from a "spell list", that depends on the sphere of magic and kind of spellcasting:
 
 - The **Source of Arcane** spells is the wizard’s spellbook, which they accrue over time by writing down Arcane Sphere spells they encounter and invent.
-- The **Source of Divine** spells are that devotee's deity. This is a spell list which the deity, in all their wisdom and might, chooses for the day from all the Divine Sphere spells. Ultimately the GM, somewhat knowing the future with their preparation and who acts as the deity in question, produces a subset of the divine sphere which the character can then choose from. Alternatively, the GM and player check whether the spell list the player wants for that day is OK by the diety. It might be that, for a given day, a deity requires a character to prepare a particular spell, that certain spells on the Divine list are anethema to that Deity, or the Deity feels a certain spell not on the Divine list ought to be (so it is).
+- The **Source of Divine** spells are that devotee's deity or other righteous fuel. This is a spell list which the deity, in all their wisdom and might, chooses for the day from all the Divine Sphere spells. Ultimately the GM, somewhat knowing the future with their preparation and who acts as the deity in question, produces a subset of the divine sphere which the character can then choose from. Alternatively, the GM and player check whether the spell list the player wants for that day is OK by the diety. It might be that, for a given day, a deity requires a character to prepare a particular spell, that certain spells on the Divine list are anethema to that Deity, or the Deity feels a certain spell not on the Divine list ought to be (so it is).
 - The **Source of Primal** spells is nature itself, meaning all primal spells can be prepared at any time from the entire Primal sphere of magic. Nature spells are fundamentally limited in breadth and scope compared to the others so this seeming advantage balances out.
-
-Occult Spellcasting is inherantly innate, so its Source isn't used for Prepared Spellcasting, only to know what spells to choose new Innate Spells from.
 - The **Source of Occult** spells are many, varied and esoteric, as is only expected. Their magic could be from the bloodline of a sorcerer to the pact of a warlock to the power of storytelling itself. Generally speaking, occult spellcasters have access to the entire occult sphere, but they're encourage to roleplay their spell choices, and GM's are encouraged to be a lot more loose with what spells any given occultist has access to, both adding to and taking away from their Source.
 
-Pact Magic uses Innate Spells embedded by the Patron, which also determines the Source of their spell list the Magic Statistic they use.
-
 ### The Arcane Sphere and the Spellbook
-Arcane magic practitioners, commonly called wizards, are your typical learned mage. They collect a large repertoire of Prepared spells in their iconic item: the Spellbook. Through intense study they can memorise the immense complexities of a select few spells in their book each day, preparing as they think they will need from their reportoire on a day per day basis. Famously, wizards are known to invent spells [choosing any spell from the Arcane Sphere or working with the GM to craft custom spells] as a down-time activity.
+Arcane magic practitioners, commonly called wizards, are your typical learned mage. They collect a large repertoire of Prepared spells in their iconic item: the Spellbook. Through intense study they can memorise the immense complexities of a select few spells in their book each day, preparing as they think they will need from their reportoire on a day per day basis. Famously, wizards are known to invent spells.
 
 Arcane magic is used through the Arcane Spellcasting Power, which is centered around the Spellbook and the filling of that book with Spells by copying or creating them. That section of the Power is transcribed here for reference:
 
@@ -54,15 +71,11 @@ You can only invent and copy spells that you have the mana Magnitude for.
 **The Book's Appearance** - Your spellbook is a unique compilation of spells, with its own decorative flourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-edged tome you found in an ancient library or even a loose collection of notes scrounged together after you lost your previous spellbook in a mishap.
 
 ### The Divine Sphere
- > Spell list - Cleric, Paladin
-
-Divine Magic is that which is bestowed upon loyal followers by divine beings and auspicious fates. Divine spell casters can have innate spells, their so-called "domain" spells, and prepared spells. Uniquely, Divine spells are cast using an entirely separate statistic: Faith, which becomes a new Stat for characters with access to the Divine Sphere. 
+Divine Magic is that which is bestowed upon loyal followers by divine beings and auspicious fates. Divine spell casters can have innate spells, their so-called "domain" spells, and prepared spells. Uniquely, Divine spells are cast using an entirely separate statistic: Faith, which becomes a new Stat for characters with access to the Divine Sphere.
 
 When a character takes any Power that gives them access to Divine spells, they must add the Faith Stat to their character sheet. They must also note to which deity or cause their Faith belongs, and therefore have a rough idea of what it means to be faithful to that cause, to uphold its virtues and abhor its vices. It starts at +2, but due to character actions, with player collaboration, the GM can choose to increase or decrease the Stat, typically by 1 in either direction during monumental actions that go for or against the faith. It is expected for Faith to change once every 2-6 sessions.
 
 ### The Primal Sphere
-> Spell list - Druid, Ranger
-
 Primal Magic is driven by the user's connection to the power of nature, wherever it is they find themselves. At the end of each Long Rest the caster must, in addition to preparing spells, commune with nature to be empowered by the 'Verdance' of the current locale. Consult the Verdance table below, also found in the "Primal Spellcasting" Power, and your GM to calculate the Verdance you use for your Primal Spells in the coming day, as well as any Powers that modify the Verdance you can access.
 
 #### Verdance Table
@@ -77,9 +90,7 @@ Primal Magic is driven by the user's connection to the power of nature, wherever
 The Primal Mage can freely choose from the entire Primal Sphere when preparing spells, limited as it is. Life is consistent in its tenacity, so is life magic. Limited in scope but steady in power, caring little for the whims of the individual, but implaccable in its march.
 
 ### The Occult Sphere
-> Spell list - Bard, Sorcerer & Warlock
-
-Occult magic is that which refutes study, bends logic and breaks minds. Those that practice it rarely chose to do so, or came to use it through a myriad of unorthodox ways. Such spells are always Innate; esoteric knowledge carved into the mind and body of the Sorcerer. It is not prepared, or one might say it is prepared into their very souls. 
+Occult magic is that which refutes study, bends logic and breaks minds. Those that practice it rarely chose to do so, or came to use it through a myriad of unorthodox ways. Such spells are always Innate; esoteric knowledge carved into the mind and body of the Sorcerer. It is not prepared, or one might say it is prepared into their very souls.
 
 Occult spellcasting uses Fortitude, Reflexes or Willpower, halved and rounded up (so a +5 Willpower is a +3 Spell Casting Modifier etc.), to cast spells: depending on the spell's school, as they rely on their being to conjure the magic.
 - **Fortitude** - Abjuration, Conjuration and Enchantment
@@ -140,10 +151,3 @@ Due to its rarity and difficulty for mortal humanoids to wrap their linear minds
 
 #### Spell-like and Spellcasting Powers
 Many Powers grant "spellcasting", where the character learns spells and through Mana or the details of the Power, can cast them at certain Magnitudes. Some Powers grant "spell-like" abilities where the effect of the Power is the same as the state spell, but the character does *not* know the spell outright, meaning that if they gain Mana they still cannot "cast" the spell, as it were. Spell-like Powers can be thought of as independent access to the spell, or even physical and mental abilities that bring about coincidentally the same effect. After all, it is said many scholars craft spells to mimic supernatural phenomena and abilities of powerful creatures.
-
-### To Vancian, or not Vancian
-So I kinda like the quirkiness of the tiered resource pool that is the D&D mana system ("spell slots and spell levels" in 5e). One obvious point of change would be to switch to a mana points system, such as the one suggested in the DMG (I actually haven't checked the 2024 DMG so IDK if its still there, but I'm talking about the one in the 2014 one for now, though I won't quote it since I'm not using that particular SRD anymore).
-
-Another is to use a more simplified one with hard limits on spells cast above 5th level, or Magnitude V in PEDD, such as the one proposed by "Ronny": https://olddungeonmaster.com/2017/04/13/dd-5e-mana-based-spellcasting-variant-rule/.
-
-For now I'm leaving in the system of Magnitude and Reserve (it even has an in-world explanation in my setting) but I'll mull over the point some more.

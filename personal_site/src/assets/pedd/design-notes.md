@@ -1,4 +1,4 @@
-When PEDD became Trinitas, the various musings on design and justifactions were removed from the pages, and left here. I've yet to properly organise this, so for now you get to see it as one long dump.
+When PEDD became Trinitas, the various musings on design and justifactions were removed from the pages, and left here. I've yet to properly organise this, so for now you get to see it as one long dump, mostly referring to the game as PEDD, since it was.
 
 - [Flat Maths](#flat-maths)
   - [Damage Scales](#damage-scales)
@@ -122,6 +122,16 @@ Getting rid of HP scaling (starting higher 'Health' but not going up unless expl
 The second point of tactical choice is improved by bringing more possible [Actions](#combat-actions) to the table, remaking [Weapons](#weapons) and [Armour](#armour) with expanded and active [Weapon Properties](#weapon-properties), and lastly by folding Battle Master Manoeuvers into basic combat actions with the experimental [Focus](#focus) system.
 
 Snappiness was a major motivator for this rewrite of combat. I wanted to erase the issue of players switching off when its not their turn during combat that I frequently observed, no matter how different and engaging I tried to make combat. So I got rid of turns with the [One Action All At Once](#one-action-all-at-once) system. This is a much more engaging system as everyone is playing together and at once, getting rid of the slow round-the-robin of turn based combat. Everyone only having one Action also means each round is resolved much more quickly.
+
+### Why Mana Magnitude and Reserve
+Spell levels and spell slots have received a semantic rework as can be seen in the 'Mana' Power, as the spell-level and spell-slot naming conventions were old and counter-intertuitive. Countless times I've had new players get confused about levels, spell levels and how spell slots work. Now admittedly with the removal of classes and character levels, I could have left spell levels in without ambiguity, but I didn't as apparently I'm anethema to the word levels. Spell levels are relabelled to "Magnitude", values denoted in roman numerals, and spell slots to "Reserve". A spellcaster has "X Reserve of Y Magnitude", with one spell cast using up 1 Reserve of a given Magnitude expended.
+
+### To Vancian, or not Vancian
+So I kinda like the quirkiness of the tiered resource pool that is the D&D mana system ("spell slots and spell levels" in 5e). One obvious point of change would be to switch to a mana points system, such as the one suggested in the DMG (I actually haven't checked the 2024 DMG so IDK if its still there, but I'm talking about the one in the 2014 one for now, though I won't quote it since I'm not using that particular SRD anymore).
+
+Another is to use a more simplified one with hard limits on spells cast above 5th level, or Magnitude V in PEDD, such as the one proposed by "Ronny": https://olddungeonmaster.com/2017/04/13/dd-5e-mana-based-spellcasting-variant-rule/.
+
+For now I'm leaving in the system of Magnitude and Reserve (it even has an in-world explanation in my setting) but I'll mull over the point some more.
 
 ## Retrospectives on PEDD
 Having played a recent game for a group of newbies I've noticed that there is *still* a lot of up-front work even with the presentation of cards for easy pick-and-mix character creation.
