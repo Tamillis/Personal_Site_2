@@ -1,18 +1,18 @@
-## Spheres of Magic
-Magic is split into 4 “Spheres of Magic”: Arcane, Divine, Primal and Occult.
+TOC
 
-It is primary accessed through the "Spellcasting" Powers, one for each sphere as well as one for Pact Magic.
+## Magic
+Trinitas has 4 Spellcasting Powers, Pact Magic and various Spell-granting Powers that give characters access to fantasy magic Spells which are special actions, pieces of magic, with a myriad of effects both active and passive. Magic is almost limitless in what it can do, as you can see in the range of [Spells](/trinitas/spells) adapted to the Trinitas system so far.
+
+### Spheres of Magic and Spellcasting
+Magic is split into 4 “Spheres of Magic”: Arcane, Divine, Primal and Occult which has an associated "Spellcasting" Power each.
 
 Each are fundamentally unique Powers that operate on their own principles, adding both flavour and mechanical differentiation. Aspects of the spellcasting powers that are in common are repeated as magic rules here.
 
-All give access to "Spells" which are special actions, pieces of magic, with a myriad of effects both active and passive. Magic is almost limitless in what it can do, and the range of spells gives an idea of that.
+### Magic Statistic
+All spellcasting Powers allow characters to cast magic. Which Stat you use for casting magic, your **Magic Statistic**, is noted in the spellcasting Power. This may be one of your other Stats, a function of them, or some external value such as Verdance for Primal magic.
 
-Note that there is significant overlap for the spheres, many spells belong to, and are usable by, more than one sphere.
-
-### Spellcasting
-All spellcasting powers allow characters to cast magic. They denote what Statistic is used for this kind of spellcasting, and whether a focus (see below) is available for use.
-
-**Spell Attacks**, like weapon attacks and other checks, use your Stat and your Bonus. You always gain your Bonus to Spell Attacks from Spellcasting. The Stat, your **Magic Statistic**, is noted in the spellcasting Power.
+Spell Attacks, like weapon attacks and other checks, use your Stat and your Bonus. You always gain your Bonus to Spell Attacks from Spellcasting.
+> **Spell Attack** - your Magic Statistic + your Bonus
 
 The Passive value of the Magic Statistic is used in determining the DC for your **Spell Saves**, also known as:
 > **Magic Save** = 8 + your Magic Statistic + your Bonus
@@ -46,15 +46,17 @@ Spells have components to show how they can be cast:
 **Prepared Spells** - are those spells a caster chooses to make ready at the end of a Long Rest for use, until they have another Long Rest and choose their Prepared Spells again. If a spell is not Prepared or Innate (i.e. "unprepared"), it cannot be cast. Prepared Spells are chosen from a list as determined by the spellcasting Power.
 
 ### Spell Lists and Sources of Magic
-Spells are sourced from a "spell list", that depends on the sphere of magic and kind of spellcasting:
+All spellcasting Powers allow you to choose the spells you know Innately, or Prepare daily, from a "spell list" known as their **Source**. It depends on the sphere of magic and kind of spellcasting:
 
-- The **Source of Arcane** spells is the wizard’s spellbook, which they accrue over time by writing down Arcane Sphere spells they encounter and invent.
-- The **Source of Divine** spells are that devotee's deity or other righteous fuel. This is a spell list which the deity, in all their wisdom and might, chooses for the day from all the Divine Sphere spells. Ultimately the GM, somewhat knowing the future with their preparation and who acts as the deity in question, produces a subset of the divine sphere which the character can then choose from. Alternatively, the GM and player check whether the spell list the player wants for that day is OK by the diety. It might be that, for a given day, a deity requires a character to prepare a particular spell, that certain spells on the Divine list are anethema to that Deity, or the Deity feels a certain spell not on the Divine list ought to be (so it is).
-- The **Source of Primal** spells is nature itself, meaning all primal spells can be prepared at any time from the entire Primal sphere of magic. Nature spells are fundamentally limited in breadth and scope compared to the others so this seeming advantage balances out.
+- The **Source of Arcane** spells is the reportoire kept in the wizard’s spellbook, which they accrue over time by writing down Arcane Sphere spells they encounter and invent.
+- The **Source of Divine** spells are that devotee's deity or other righteous font. This is a spell list which the deity, in all their wisdom and might, chooses for the day from all the Divine Sphere spells. Ultimately the GM, somewhat knowing the future with their preparation and who acts as the deity in question, produces a subset of the divine sphere which the character can then choose from. Alternatively, the GM and player check whether the spell list the player wants for that day is OK by the diety. It might be that, for a given day, a deity requires a character to prepare a particular spell, that certain spells on the Divine list are anethema to that Deity, or the Deity feels a certain spell not on the Divine list ought to be (so it is).
+- The **Source of Primal** spells is nature itself, meaning all primal spells can be prepared from for the entire Primal sphere of magic. Nature spells are fundamentally limited in breadth and scope compared to the others so this seeming advantage balances out.
 - The **Source of Occult** spells are many, varied and esoteric, as is only expected. Their magic could be from the bloodline of a sorcerer to the pact of a warlock to the power of storytelling itself. Generally speaking, occult spellcasters have access to the entire occult sphere, but they're encourage to roleplay their spell choices, and GM's are encouraged to be a lot more loose with what spells any given occultist has access to, both adding to and taking away from their Source.
 
-### The Arcane Sphere and the Spellbook
-Arcane magic practitioners, commonly called wizards, are your typical learned mage. They collect a large repertoire of Prepared spells in their iconic item: the Spellbook. Through intense study they can memorise the immense complexities of a select few spells in their book each day, preparing as they think they will need from their reportoire on a day per day basis. Famously, wizards are known to invent spells.
+Each Spellcasting Power, and Pact Magic, denotes its source. Pact Magic is known, among certain circles, to be sourced from their patron who themselves can be of any of the spheres, and thus each practitioner can be expected to use wildly different magic to the other.
+
+### Spellbooks
+Arcane magic practitioners, commonly called wizards, are your typical learned mage. They collect a large repertoire of Prepared spells in their iconic item: the Spellbook. Through intense study they can memorise the immense complexities of a select few spells in their book each day, preparing as they think they will need from their reportoire on a day per day basis. Famously, wizards are known to copy and invent spells.
 
 Arcane magic is used through the Arcane Spellcasting Power, which is centered around the Spellbook and the filling of that book with Spells by copying or creating them. That section of the Power is transcribed here for reference:
 
