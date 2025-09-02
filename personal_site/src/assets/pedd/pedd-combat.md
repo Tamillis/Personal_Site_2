@@ -225,6 +225,8 @@ The more you're knocked down, the more likely you are to stay down, forever.
 
 Wounds are severe physical and mental damage that threatens your continued existence. Each time you suffer the Wounded condition, make a Fortitude save vs a DC of the Wounded condition rank × 5. If you fail, roll on the wounds table below:
 
+Table WIP - I'm going to balance the numbers with feedback
+
 | d20 | Wound |
 | --- | --- |
 | 1 | **Dramatic Death** - you've taken a sudden and lethal wound, but fate has given you one last chance. At the end of the Round, you have one extra Action. |
@@ -232,15 +234,15 @@ Wounds are severe physical and mental damage that threatens your continued exist
 | 3 | **Lose the right eye** - your right eye is irreparably damaged. Any Perception checks that rely on sight are at Disadvantage. If you have lost your left eye as well, you are permanently Blinded. |
 | 4 | **Lose the tongue** - your mouth is badly damaged and your tongue cut loose. You cannot speak (you can still yell or make noise), and cannot cast spells with the Verbal component. |
 | 5 | **Lose the nose** - your nose is irreparably damaged. Any Perception checks that rely on smell automatically fail. |
-| 6-7 | **Lose the left ear** - your left ear is cut off. Any Perception checks that rely on hearing are at Disadvantage. If you have lost your right ear as well, you are permanently Deafened. |
-| 8-9 | **Lose the right ear** - your left ear is cut off. Any Perception checks that rely on hearing are at Disadvantage. If you have lost your right ear as well, you are permanently Deafened. |
-| 10-11 | **Facial Disfigurement**
-| 12 | left arm |
-| 13 | right arm |
-| 14-15 | chest wound |
-| 16 | left leg |
-| 17 | right leg |
-| 18-19 | heavy scarring |
+| 6 | **Lose the left ear** - your left ear is cut off. Any Perception checks that rely on hearing are at Disadvantage. If you have lost your right ear as well, you are permanently Deafened. |
+| 7 | **Lose the right ear** - your left ear is cut off. Any Perception checks that rely on hearing are at Disadvantage. If you have lost your right ear as well, you are permanently Deafened. |
+| 10 | **Facial Disfigurement** - your face is visibly damaged making others instinctively flinch. Any Charismachecks that rely on looks are at Disadvantage. |
+| 11 | **Lose the left arm** - your left arm is missing from above the elbow. You cannot hold more than one item or weapon. If you have lost your right arm as well, you cannot hold any items and cannot cast spells with a Somatic component. |
+| 12 | **Lose the right arm** - your right arm is missing from above the elbow. You cannot hold more than one item or weapon. If you have lost your left arm as well, you cannot hold any items and cannot cast spells with a Somatic component. |
+| 13-15 | **Chest wound** - you take a chest wound, an internal injury. You take a permanent level of exhaustion that cannot be recovered. You can suffer this injury repeatedly. |
+| 16 | left leg - -5ft movement. Permamnet Slowed if both. |
+| 17 | right leg - -5ft movement. Permamnet Slowed if both. |
+| 18-19 | heavy scarring - tight and painful scars criss cross large sections of your body. The GM has a Disadvantage token each session to spend on you, when your scars flare up and make a task harder. |
 | 20 | **Light Scarring** - you gain a score of scars that should heal to leave an intimidating visage. You have Advantage on Intimidation when you put your scars to use. |
 
 The Wounded condition loses one rank per Long Rest, and one rank per successful Medicine check made against a DC of the Wounded condition rank × 5 (the same as a Death Save). This Medicine check can be made once per day on a wounded character, regardless of success or failure, or who administers it.

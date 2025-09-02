@@ -10,6 +10,7 @@ Each are fundamentally unique Powers that operate on their own principles, addin
 - the Magic Statistic(s) it uses
 - any Initial Cantrips available to it
 - the Source of their Spell List that they use to choose Innate Spells and Prepare Prepared Spells
+- the number of Prepared Spells they can Prepare at the end of a Long Rest, if any
 - whether it uses a magical Focus
 
 ### Magic Statistic
@@ -36,12 +37,12 @@ All spellcasting Powers also require the Mana power, which means the character h
 Spells have components to show how they can be cast:
 
 - **Verbal Components** - A spell that needs Verbal components must be spoken. A silenced mage cannot cast this spell.
-- **Somati Components** - A spell that requires bodily gestures, through hands or similar apendages. A restrained mage cannot cast this spell.
+- **Somatic Components** - A spell that requires bodily gestures, through hands or similar appendages. A restrained mage cannot cast this spell.
 - **Material Components** - A spell that requires physical catalysts. The items listed in the material component of the spell must be in the mage's hands to cast the spell. If the components are consumed, they are turned to dust (or similar) and are gone as part of the action (regardless of spell success), but otherwise materials are not consumed. Additionally, if a mage has access to a Focus, they can use the focus in lieu of any non-consumed materials.
 
 **Spellcasting Focus** - this item, if the spellcasting power has one and the spellcaster possesses one, is used in lieu of any material components, unless those Material Components are consumed.
 
-**Ritual Spells** are spells available to you that can be cast without spending Mana if cast for an extra 10 minutes in silent and stationary Concentration. In affect, anyone who knows or has prepared a ritual spell, can cast that spell as a ritual for "free" given the extra time and chance to do so. Ritual spells, if they require Material Components, still do when cast as a ritual.
+**Ritual Spells** - spells that can be cast without spending Mana if cast for an extra 10 minutes in silent and stationary Concentration. In affect, anyone who knows or has prepared a ritual spell, can cast that spell as a ritual for "free" given the extra time and chance to do so. Ritual spells, if they require Material Components, still do when cast as a ritual.
 
 **Cantrips** are small magics, often with a wide range of effects, that a mage has learned over the course of their studies. Their minor effects means that they take no Mana to cast, and are embedded in the mage's mind as Innate Spells.
 
@@ -60,7 +61,7 @@ Some Powers grant "spell-like" abilities where the effect of the Power is the sa
 Each Spellcasting Power, and Pact Magic, denotes its Source. Pact Magic is known, among certain circles, to be sourced from their patron who themselves can be of any of the spheres, and thus each practitioner can be expected to use wildly different magic to the other.
 
 ### The Arcane Sphere and Spellbooks
-Arcane magic practitioners, commonly called wizards, are your typical learned mage. They collect a large repertoire of Prepared spells in their iconic item: the Spellbook. Through intense study they can memorise the immense complexities of a select few spells in their book each day, preparing as they think they will need from their reportoire on a day per day basis. Famously, wizards are known to copy and invent spells.
+Arcane magic practitioners, commonly called wizards, are your typical learned mage. They collect a large repertoire of Prepared spells in their iconic item: the Spellbook. Through intense study they can memorise the immense complexities of a select few spells in their book each day, preparing as they think they will need from their repertoire on a day per day basis. Famously, wizards are known to copy and invent spells.
 
 Arcane magic is used through the Arcane Spellcasting Power, which is centered around the Spellbook and the filling of that book with Spells by copying or creating them. That section of the Power is transcribed here for reference:
 
@@ -72,9 +73,7 @@ Arcane magic is used through the Arcane Spellcasting Power, which is centered ar
 
 You can only invent and copy spells that you have the mana Magnitude for.
 
-**Replacing the Book** - You can copy a spell from your own spellbook into another book. For example, if you want to make a backup copy of your spellbook. This is just like copying a new spell into your spellbook, but faster and easier, since you understand your own studies and already know how to cast the spell. You need spend only 1 hour and 10 gp for each level of the copied spell. If you lose your spellbook, you can use the same procedure to transcribe the spells that you have prepared in your mind into a new spellbook. Filling out the remainder of your spellbook requires you to find new spells to do so, as normal. For this reason, many wizards keep backup spellbooks in a safe place.
-
-**The Book's Appearance** - Your spellbook is a unique compilation of spells, with its own decorative flourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-edged tome you found in an ancient library or even a loose collection of notes scrounged together after you lost your previous spellbook in a mishap.
+**Replacing the Book** - You can copy a spell from your own spellbook into another book. For example, if you want to make a backup copy of your spellbook. This is just like copying a new spell into your spellbook, but faster and easier, since you understand your own studies and already know how to cast the spell. You need spend only 1 hour and 10 gp for each Magnitude of the copied spell. If you lose your spellbook, you can use the same procedure to transcribe the spells that you have prepared in your mind into a new spellbook. Filling out the remainder of your spellbook requires you to find new spells to do so, as normal. For this reason, many wizards keep backup spellbooks in a safe place.
 
 ### The Divine Sphere and Faith
 The **Source** of Divine spells are that devotee's deity or other righteous font. This is a spell list which the deity, in all their wisdom and might, chooses for the day from all the Divine Sphere spells. Ultimately the GM, somewhat knowing the future with their preparation and who acts as the deity in question, produces a subset of the divine sphere which the character can then choose from. Alternatively, the GM and player check whether the spell list the player wants for that day is OK by the diety. It might be that, for a given day, a deity requires a character to prepare a particular spell, that certain spells on the Divine list are anethema to that Deity, or the Deity feels a certain spell not on the Divine list ought to be (so it is).
