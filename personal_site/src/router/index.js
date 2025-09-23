@@ -29,6 +29,17 @@ const toTrinitasRoutes = (name) => {
   };
 }
 
+const toPeddLegacyRoutes = (name) => {
+  let parts = name.split("-");
+  let componentLink = parts.map(part => part[0].toUpperCase() + part.slice(1)).join("");
+
+  return {
+    path: "/PEDD/" + name,
+    name: "legacy-pedd-" + name,
+    component: () => import(`../views/trinitas/${componentLink}.vue`)
+  };
+}
+
 let routes = [
   {
     path: '/',
@@ -95,7 +106,7 @@ let routes = [
   }
 ];
 
-routes = [...routes, ...trinitasPages.map(toTrinitasRoutes)];
+routes = [...routes, ...trinitasPages.map(toTrinitasRoutes), ...trinitasPages.map(toPeddLegacyRoutes)];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
