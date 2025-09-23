@@ -1965,18 +1965,6 @@
         "desc": "Your steadfast ability to take hits sees you through. When not wearing Medium (excluding Hide Armour) or Heavy Armour, instead of Reflexes, your Fortitude is used in your Defence calculations. You can use a shield and still gain this benefit."
     },
     {
-        "name": "Hale Recovery",
-        "tag": [
-            "exploration",
-            "recovery"
-        ],
-        "preq": [
-            "After 3 Powers",
-            "Once every 4th Power"
-        ],
-        "desc": "During a Short Rest you regain two times your Baseline Health during Recovery. You can take this power up to 3 times, where you regain three times, then four times your Baseline Health."
-    },
-    {
         "name": "Healer",
         "tag": [
             "background",
@@ -2000,7 +1988,7 @@
             "After 3 Powers",
             "Once every 4th Power"
         ],
-        "desc": "Increase your Health by your Fortitude + Willpower (to a minimum increase of 1) to your Health total. If you increase or decrease your Fortitude or Willpower at other times in the game, recalculate your Health Bonus from Health Increase using the new values."
+        "desc": "Increase your Health by your Fortitude + Willpower (to a minimum increase of 1) to your Health total. If you increase or decrease your Fortitude or Willpower at other times in the game, recalculate your Health Bonus from Health Increase using the new values.\n\nAdditionally, when you Recover, you recover an additional amount of Health equal to your Fortitude + Willpower (to a minimum of 1)."
     },
     {
         "name": "Heaven's Fall",
