@@ -88,7 +88,7 @@ So what can that one Action can do? Actions any character can perform are split 
 - **Shove** - as an Attack or Action you attempt to make an Enemy Prone or move 10ft in a direction of your choice. You make a Strength check against their passive Fortitude.
 
 #### Move Action
-The Move Action sees a character move a distance in feet equal to their Speed towards a stated target. This can be in a straight line or other path of their choice, so long as the path is traversible. Like all Actions, they are declared at the same time as everyone else, however they're unique in that they're only resolved at the end, after all other Actions and Engagements (see [Engagement](#engagement).
+The Move Action sees a character move a distance in feet equal to their Speed towards a stated target. This can be in a straight line or other path of their choice, so long as the path is traversible. Like all Actions, they are declared at the same time as everyone else, however they're unique in that they're only resolved at the end, after all other Actions and Engagements (see [Engagement](#engagement)).
 
 Difficult terrain doubles the Speed required, with swimming / climbing requiring quadruple the speed, and impassible terrain must be circumnavigated.
 
@@ -230,20 +230,26 @@ Table WIP - I'm going to balance the numbers with feedback
 | d20 | Wound |
 | --- | --- |
 | 1 | **Dramatic Death** - you've taken a sudden and lethal wound, but fate has given you one last chance. At the end of the Round, you have one extra Action. |
-| 2 | **Lose the left eye** - your left eye is irreparably damaged. Any Perception checks that rely on sight are at Disadvantage. If you have lost your right eye as well, you are permanently Blinded. |
-| 3 | **Lose the right eye** - your right eye is irreparably damaged. Any Perception checks that rely on sight are at Disadvantage. If you have lost your left eye as well, you are permanently Blinded. |
-| 4 | **Lose the tongue** - your mouth is badly damaged and your tongue cut loose. You cannot speak (you can still yell or make noise), and cannot cast spells with the Verbal component. |
-| 5 | **Lose the nose** - your nose is irreparably damaged. Any Perception checks that rely on smell automatically fail. |
-| 6 | **Lose the left ear** - your left ear is cut off. Any Perception checks that rely on hearing are at Disadvantage. If you have lost your right ear as well, you are permanently Deafened. |
-| 7 | **Lose the right ear** - your left ear is cut off. Any Perception checks that rely on hearing are at Disadvantage. If you have lost your right ear as well, you are permanently Deafened. |
-| 10 | **Facial Disfigurement** - your face is visibly damaged making others instinctively flinch. Any Charismachecks that rely on looks are at Disadvantage. |
-| 11 | **Lose the left arm** - your left arm is missing from above the elbow. You cannot hold more than one item or weapon. If you have lost your right arm as well, you cannot hold any items and cannot cast spells with a Somatic component. |
-| 12 | **Lose the right arm** - your right arm is missing from above the elbow. You cannot hold more than one item or weapon. If you have lost your left arm as well, you cannot hold any items and cannot cast spells with a Somatic component. |
-| 13-15 | **Chest wound** - you take a chest wound, an internal injury. You take a permanent level of exhaustion that cannot be recovered. You can suffer this injury repeatedly. |
-| 16 | left leg - -5ft movement. Permamnet Slowed if both. |
-| 17 | right leg - -5ft movement. Permamnet Slowed if both. |
-| 18-19 | heavy scarring - tight and painful scars criss cross large sections of your body. The GM has a Disadvantage token each session to spend on you, when your scars flare up and make a task harder. |
+| 2-5 | **Facial Injury** - see Facial Injuries below. |
+| 6-7 | **Facial Disfigurement** - your face is visibly damaged making others instinctively flinch. Any Charisma Checks that rely on looks are at Disadvantage. Any further Facial Disfigurement becomes a Facial Injury. |
+| 8 | **Lose an arm** - your arm is missing from above the elbow. You cannot hold more than one item or weapon, until the limb is replaced. You can take this injury wtice, where you lose both arms. You cannot hold any items and cannot cast spells with a Somatic component. Only powerful magic or advanced technological replacement hands allow for dexterous action like writing or spellcasting. |
+| 9 | **Lose a leg** - your leg is missing from above the knew. Your Speed is halved as if you're constantly moving through difficult terrain, until the limb is replaced. You can take this injury twice, losing both legs. |
+| 10-15 | **Chest wound** - you take a chest wound, an internal injury. You take a permanent level of exhaustion that cannot be recovered without a Full Recovery, where the injury transforms to Heavy Scarring. You can suffer this injury repeatedly. |
+| 16-19 | **Heavy Scarring** - tight and painful scars criss cross large sections of your body. The GM has a Disadvantage token each session to spend on you, when your scars flare up and make a task harder. |
 | 20 | **Light Scarring** - you gain a score of scars that should heal to leave an intimidating visage. You have Advantage on Intimidation when you put your scars to use. |
+
+###### Facial Injuries
+
+Roll a d6.
+
+| D6 | Facial Injury
+| --- | --- |
+| 1 | **Left Eye** - Your left eye is irreparably damaged. Any Perception checks that rely on sight are at Disadvantage. If you have lost your right eye as well, you are permanently Blinded.
+| 2 | **Right Eye** - Your right eye is irreparably damaged. Any Perception checks that rely on sight are at Disadvantage. If you have lost your left eye as well, you are permanently Blinded.
+| 3 | **Tongue** - Your mouth is badly damaged and your tongue cut loose. You cannot speak (you can still yell or make noise), and cannot cast spells with the Verbal component.
+| 4 | **Nose** - Your nose is irreparably damaged. Any Perception checks that rely on smell automatically fail. 
+| 5 | **Left Ear** - Your left ear is cut off. Any Perception checks that rely on hearing are at Disadvantage. If you have lost your right ear as well, you are permanently Deafened.
+| 6 | **Right Ear** - Your left ear is cut off. Any Perception checks that rely on hearing are at Disadvantage. If you have lost your right ear as well, you are permanently Deafened. 
 
 The Wounded condition loses one rank per Long Rest, and one rank per successful Medicine check made against a DC of the Wounded condition rank × 5 (the same as a Death Save). This Medicine check can be made once per day on a wounded character, regardless of success or failure, or who administers it.
 
