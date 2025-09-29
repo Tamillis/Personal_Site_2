@@ -233,8 +233,8 @@ Table WIP - I'm going to balance the numbers with feedback
 
 | d20 | Wound |
 | --- | --- |
-| 1 | **Dramatic Death** - you've taken a sudden and lethal wound, but fate has given you one last chance. At the end of the Round, you have one extra Action. |
-| 2-5 | **Facial Injury** - see Facial Injuries below. |
+| 1 | **Dramatic Death** - you've taken a sudden and lethal wound, but fate has given you one last chance. At the end of the Round, you have one extra Action, after which you die. |
+| 2-5 | **Facial Injury** - see Facial Injuries below. If you reroll the same Facial Injury, you instead suffer a Dramatic Death. |
 | 6-7 | **Facial Disfigurement** - your face is visibly damaged making others instinctively flinch. Any Charisma Checks that rely on looks are at Disadvantage. Any further Facial Disfigurement becomes a Facial Injury. |
 | 8 | **Lose an arm** - your arm is missing from above the elbow. You cannot hold more than one item or weapon, until the limb is replaced. You can take this injury wtice, where you lose both arms. You cannot hold any items and cannot cast spells with a Somatic component. Only powerful magic or advanced technological replacement hands allow for dexterous action like writing or spellcasting. |
 | 9 | **Lose a leg** - your leg is missing from above the knew. Your Speed is halved as if you're constantly moving through difficult terrain, until the limb is replaced. You can take this injury twice, losing both legs. |
@@ -277,7 +277,7 @@ All Long Rests count as Short Rests.
 **Sleep** - for those that can, every Character must Sleep for at least 8 reasonably-continuous hours every 24 hour period, unless some Power or racial feature says otherwise (such as Elves, who cannot sleep). Failure to sleep at all for 24 hours means you gain a point of Exhaustion. One does not need to sleep to undergo rest, although sleep counts as rest. 
 
 #### Keeping Watch
-Reasonably-continuous is a term specifically meant to allow characters to take Watch rotations of up to 2 hours each, where they can indeed make Checks for keeping watch as normal (if required), without breaking the 8 hours of a long rest.
+Reasonably-continuous is a term specifically meant to allow characters to take Watch rotations of up to 2 hours each, where they can indeed make Checks for keeping watch as normal (if required), without breaking the 8 hours of a long rest. This means a typical long rest includes 4 watches.
 
 #### Downtime
 Trinitas has a third level of resting, Downtime, which is a 24 hour+ period of non-adventuring activity. As Short Rests are part of Long Rests, Long Rests are part of a Downtime, though many other activities can be gotten up to during Downtime. 
