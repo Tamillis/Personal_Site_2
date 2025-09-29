@@ -7,8 +7,9 @@
 - [Combat Statistics](#combat-statistics)
   - [Focus](#focus)
   - [Health](#health)
+    - [Recovery](#recovery)
   - [Defence](#defence)
-- [Damage, Dying, Wounds and Recovery](#damage-dying-wounds-and-recovery)
+- [Damage, Dying, Wounds and Rests](#damage-dying-wounds-and-rests)
   - [Damage](#damage)
   - [Recovery](#recovery)
   - [Short and Long Rests, Sleep and Downtime](#short-and-long-rests-sleep-and-downtime)
@@ -50,9 +51,9 @@ Some players may still be thinking while others already know what they want to d
 Only powerful or well-trained enemies will be capable of **Hidden Actions**, where their intentions are not stated by the GM but kept secret. Typically jotted on a slip of overturned paper, until after players commit to their own Actions. Player characters can always attempt to **Discern** enemy moves anyway (see [Tactical Actions](#tactical-actions)), with the GM flipping the paper over and revealing the Action to all players on a success.
 
 #### Initiative Contests
-For any situations where the order of actions matters, the two (or more) characters involved roll off with the most appropriate skill, to see who can get the higher value. For "slow" enemies / mooks the DM will just let the players go first. For example; "I try to grab the bag of gold before him", "OK, you and the white dragon need to make a Sleight of Hand Check to see who can snatch it faster."
+For any situations where the order of actions matters, the two (or more) characters involved roll off with the most appropriate skill, to see who can get the higher value. For "slow" enemies / mooks the GM will just let the players go first. For example; "I try to grab the bag of gold before him", "OK, you and the white dragon need to make a Sleight of Hand Check to see who can snatch it faster."
 
-You can use 1 Focus to add d6 to the roll.
+**Boosting Initiative** - You can use 1 Focus to add d6 to the roll.
 
 ### Combat Actions
 So what can that one Action can do? Actions any character can perform are split between Core Combat Actions and a variety of Tactical Actions. Note that many are keyed to "an Attack or Action", so if you have more than one attack from the `Extra Attack` power, you can potentially take more than one "action" on your turn. Note there are several Powers that provide further and enhanced Tactical Actions.
@@ -76,7 +77,7 @@ So what can that one Action can do? Actions any character can perform are split 
 #### Tactical Actions
 
 - **Attack of Opportunity** - if an enemy you're Engaged with moves away from you, you can spend 1 Focus to make an attack on them for free, after which they have moved away and are no longer Engaged with you.
-- **Coup de Grace** - when you make a melee Weapon Attack against an Incapacitated target, don't roll for Damage, instead take each dice you would roll (if any) to be the maximum result.
+- **Coup de Grâce** - when you make a melee Weapon Attack against an Incapacitated target, don't roll for Damage, instead take each dice you would roll (if any) to be the maximum result.
 - **Disarm** - as an Attack or Action against an enemy in your Reach holding a weapon or shield, you make an attack roll against the enemy's passive Reflexes. If you succeed, you rip the weapon from their grasp and throw it 10ft in a direction of your choice (this does not count as a thrown weapon attack), to the ground at your feet, or equip it an empty hand of yours.
 - **Focussed Strike** - when you make a weapon attack roll against a character, you can spend 1 Focus to add d6 to the roll.
 - **Grapple** - as an Attack or Action you attempt to Grapple a Character. You make a Strength check against their passive Fortitude. If you succeed the target Character is Immobilised. On subsequent turns you can maintain the grapple (no additional roll needed) as an Action or end the grapple for free. When Grappling, you can use your Action to Move yourself and the enemy as if going through Difficult Terrain (typically, at half Speed), make yourself and the enemy Prone, or make an Unarmed Strike or Weapon Attack with the 'prone fighting' tag against the grappled character. Despite being Incapacitated, the grappled character can use their Action to attempt to escape the Grapple, making a Strength or Dexterity check (their choice) vs your passive Fortitude, ending the grapple on a success.
@@ -104,28 +105,24 @@ Another situation may be: A is moving to B, who is moving to C, who is running a
 If it is *not* clear, make an Initiative Contest check to see who goes first, and then resolve in sequence.
 
 ### Engagement
-To help with handling fights with little to no initiative and create a natural ebb-and-flow to combat, combatants are ["paired off"](#pairing-off) into **Engagements**. These are the momentary pairs or small groups that naturally form in the middle of any chaotic fight, and allows us as the players to "zoom in" on little microcosms of fights with the camera, as it were, focusing on resolving pairing after pairing. 
+To help with handling fights with little to no initiative and create a natural ebb-and-flow to combat, combatants are paired off into **Engagements**. These are the momentary pairs or small groups that naturally form in the middle of any chaotic fight, and allows us as the players to "zoom in" on little microcosms of fights with the camera, as it were, focusing on resolving pairing after pairing. Importantly, it prevents characters from forming long conga-lines but mutual pairings and groupings.
 
-> This can help with indicisive players where ready pairings can resolve their Actions first.
+> This can help with indicisive players where ready pairings can resolve their Actions first while others are still deciding.
 
-Engagements are resolved simultaneously in-story and in-reality the order of Engagements doesn’t matter, as with only 1 Action per turn melees do not effect each other.
+Determining engagements is sometimes necessary if a melee contains many individuals. For example, if you want to attack foe A, but they're attacking ally B, because foe C is attacking you and is otherwise unengaged, you have no choice but to be pulled from your initial intended target. In other words, you cannot be "pulled" if you are engaged with someone who is engaged with you, you're "paired off".
 
-#### Pairing Off
-The rules of pairing off.
+<table>
+  <tr>
+    <td> Intent:</td>
+    <td> Foe C -> You -> Foe A -> Ally B -> ... </td>
+  </tr>
+  <tr>
+    <td> Result: </td>
+    <td> Foe C <-> You | Foe A <-> Ally B ... </td>
+  </tr>
+</table>
 
-How do you avoid a long conga-line chain of awkwardly connected characters fighting someone who isn't fighting them? "**Pairing off**". 
-
-Sometimes if you want to attack Mr A, even if they're attacking Mr B, because Mr C is attacking you and is otherwise unengaged, you have no choice but to be pulled from your initial intended target, who is said to "**Pull**" you, where you "**Pair Off**" with them. In other words, you cannot be "pulled" if you are "paired off": engaged with someone who is engaged with you.
-
-Intent:
-
-> Mr C -> You -> Mr A -> Mr B -> ...
-
-Result:
-
-> Mr C <-> You | Mr A <-> Mr B ...
-
-“Pulling”, if in conflict, is resolve with an Initiative Contest. I've never had to use this rule, which shows how rare this situation is.
+Engagements are resolved simultaneously in-story and in-reality the order of resolving Engagements doesn’t matter. If necessary, resolve engagement pairings with an initiative contest.
 
 #### Maximum Engagement
 A character can only be engaged by a maximum number of characters according to their relative Size. Sometimes someone is surrounded by attackers, and even if you wanted to join in on the bullying, you're crowded out. The maximum number of opponents a character of a given relative size can have is:
@@ -174,6 +171,13 @@ It represents both your body's physical capability to take damage, and your mind
 
 Unlike other level-based TTRPG's, it does not increase unless specifically empowered through the `Health Increase` Power or other. Health is naturally limited and only those who invest in it become the ineffible heroes who seem to be able to take punch after punch where others would fall to the first blow no matter how many fights they'd been in.
 
+#### Recovery
+At the end of a Long Rest, you recover your Fortitude + your Willpower (to a minimum of 1) to your current Health, up to your maximum Health.
+
+If you seek professional medical attention or magical healing, you may yet recover a lot more Health in a day. Few will be capable of fully recoving in a single day, not at least without a significant expenditure of resources.
+
+**Full Recovery** - If you undergo a Downtime, or due to other exceptional circumstance the GM may decide, you gain a Full Recovery, where your character loses all ongoing conditions and maluses, and recovers all Health.
+
 ### Defence
 The Defence Stat is a dynamic value made of three* parts:
 - a Base Defence value that keys off of Size, 8 for Medium characters. See the [Size Table](/trinitas/character-creation#secondary-statistics) on character creation for details.
@@ -202,7 +206,7 @@ For example:
 
 Additionally, Cover bonuses apply to Reflex Saves.
 
-## Damage, Dying, Wounds and Recovery
+## Damage, Dying, Wounds and Rests
 
 ### Damage
 After an Attack or other damaging Action occurs to a character, they take the final value calculated away from their Health. Once their Health runs out (reaches 0), that character is rendered Unconscious and Dying.
@@ -280,13 +284,6 @@ Trinitas has a third level of resting, Downtime, which is a 24 hour+ period of n
 
 Downtimes are when character are free to train, pursue professions, craft, carouse, gather material, gather intelligence, manage business and any other Downtime Activity you can think of. 
 
-### Recovery
-When Resting, you recover your Fortitude as a flat amount to your current Health, up to your maximum Health. You regain Health one Short Rest per Long Rest (and every Long Rest). Meaning, per day, you can at maximum regain 2 × your Race's Baseline Health, unless your ability to recover is further empowered of course.
-
-If you seek professional medical attention or magical healing, you may yet recover a lot more Health in a day. Few will be capable of fully recoving in a single day, not at least without a significant expenditure of resources.
-
-**Full Recovery** - If you undergo a Downtime, or due to other exceptional circumstance the GM may decide, you gain a Full Recovery, where your character loses all ongoing conditions and maluses, and recovers all Health.
-
 ### Conditions
 Other than straight damage, characters can suffer the effects of a **Condition**, some (typically ongoing) negative affect. 
 
@@ -314,6 +311,7 @@ As a short hand, Stunned is just Incapacitated for 1 round, so that obviously do
   - The target character cannot take Actions or Bonus Actions.
   - The target character has Disadvantage on Reflex saves.
   - Attack rolls against the target character have Advantage.
+  - Any melee Weapon Attacks against an Incapacitated target don't roll for Damage, instead take each dice you would roll (if any) to be the maximum result.
 - **Pained** - the target character must succeed on a Concentration check to do any Action.
 - **Prone**
   - A prone character's Speed is at 1/4
