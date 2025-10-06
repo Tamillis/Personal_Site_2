@@ -24,28 +24,30 @@ Trinitas combat is a marked step away from typical OCR and D20 combat systems.
 I hope you find it tactical, quick, cooperative and above all, dramatic.
 
 ## Combat Rules
+When a fight begins, the game is played by resolving a series of **Rounds** (a dramatically significant period of around 5 seconds) where every character in the combat takes one "Action".
 
 ### One Action All At Once
-All characters in a **Round** of combat have one **Action**, and everyone acts at once, no initiative. No taking "turns". OAAAO!
+All characters in a Round of combat have one **Action**, and everyone acts "at once" within the fiction of the game. There is no initiative system or turn order.
 
 How on Earth does that work? You might be thinking.
 
-For starters, it is a bit of a misnomer. All characters also have access to Bonus Actions, from various Powers and Spells, in addition to their Action. Movement also does not technically occur at the same time as the other Actions, as it is resolved last (see below), even if it is declared alongside all other Actions in a Round.
+For starters, it is a bit of a misnomer. All characters also have access to Bonus Actions, from various Powers and Spells, in addition to their Action, which is best thought of as a sort of quick action talented characters are able to pull off concurrent to their Action.
 
-However, the main thrust of the system works like this; 
+Movement also does not technically occur at the same time as the other Actions, as it is resolved last (see below), even if it is declared alongside all other Actions in a Round.
+
+The main thrust of the system works like this; 
 - The GM declares the intentions of enemies in the scene at the start of a Round, just as their movements would give away what they're about to do. See [Hidden Enemy Action](#hidden-enemy-actions) for when this is not the case.
 - All players decide among themselves what they're going to do that Round.
 - When everyone is happy with their Actions, you "resolve" the Round in whatever order works. Only in the edge case when the order of actions matters does Initiative need to be determined, using an [Initiative Contest](#initiative-contests).
+- Lastly, you resolve any movement, treating all initial resolution occuring while they're at their starting position.
 
-Most Actions, however, can be resolved simultaneously. Attacks for example; two characters just try to hit each other, damage each other, and collapse wounded at the same time if that is what happens.
+When you think about it, most Actions can be resolved simultaneously. Attacks for example; two characters just try to hit each other, damage each other, and collapse wounded at the same time if that is what happens as the GM dramatically narrates how one character's hammer blow knocks their foe unconscious, only to realise during the swing a dagger had been buried between their ribs.
 
-Bonus Actions are best thought of as 'concurrent actions', happening at the same time and therefore not significantly interrupting the character's main action. 
+Reactions are a natural part of this cooperative nature of Action decleration - you see that goblin trying to stab your face, so you reactively raise your shield as a Bonus Action, and stab back at it, etc.
 
-Reactions are a natural part of the cooperative nature of Action decleration - you see that goblin trying to stab your face, so you reactively raise your shield as a Bonus Action, and stab back at it, etc.
+Movement, as mentioned, is special in that it is always resolved last: see [Move Action](#move-aciton).
 
-Movement, as mentioned, is special in that it is always resolved last.
-
-Some players may still be thinking while others already know what they want to do. Resolve the actions of the decided players and their engagements (see [Engagement](#engagement) below), and you'll often find the remaining players now know what to do.
+Some players may still be thinking while others already know what they want to do. Resolve the actions of the decided players and their engagements (see [Engagement](#engagement) below) first, and you'll often find the remaining players now know what to do. Otherwise follow the action in whatever order makes the most sense.
 
 #### Hidden Enemy Actions
 Only powerful or well-trained enemies will be capable of **Hidden Actions**, where their intentions are not stated by the GM but kept secret. Typically jotted on a slip of overturned paper, until after players commit to their own Actions. Player characters can always attempt to **Discern** enemy moves anyway (see [Tactical Actions](#tactical-actions)), with the GM flipping the paper over and revealing the Action to all players on a success.
@@ -63,6 +65,8 @@ So what can that one Action can do? Actions any character can perform are split 
 - **Attack** - as an Action, you make your Weapon or Spell Attack/s against characters in reach / range. One Attack Action may involve a number of Attacks on a number of targets depending on the weapon, spell or some Power such as Extra Attack. If multiple targets are all within reach / range and you have multiple Attacks as part of the Attack Action, you may freely choose who to direct attacks at. You make Attack Rolls per Attack. Unless otherwise stated, each Attack Action attack is with lethal intent (see Non-Lethal Strike).
   - **Unarmed Strike** - a weapon Attack using your body and the Unarmed Fighting skill, instead of a traditional weapon.
   - **Improvised Strike** - a weapon Attack using a piece of the environment or non-weapon object. Ask your GM for appropriate statistics to use (such as that of the Club).
+  - **Ranged Weapon Attack** - a weapon Attack made at range. If the target is made at Long Range (beyond normal Range), it is made at Disadvantage. If another enemy is Engaged with you, you make the attack at Disadvantage.
+  - **Spell Attack** - you cast a spell as an Action or Bonus Action (see the spell for details). If another enemy is Engaged with you, you make the attack at Disadvantage.
 - **Block** - as a Bonus Action, you raise your shield, or weapon if it has the Block property, to gain the item's Armour bonus to your Defence for this Round. This prevents you using that item as a weapon to attack.
 - **Discern** - as an Attack or Action, you can make a Perception check against one enemy whose has a Hidden Action. If successful (the GM will decide the DC), their Action is no longer hidden and everyone in the combat can know.
 - **Dodge** - as an Action, you make a Reflex Saving Throw and the result (or your Stationary Defence, if that is higher) replaces your Defence value for the rest of the Round.
@@ -236,9 +240,9 @@ Table WIP - I'm going to balance the numbers with feedback
 | 1 | **Dramatic Death** - you've taken a sudden and lethal wound, but fate has given you one last chance. At the end of the Round, you have one extra Action, after which you die. |
 | 2-5 | **Facial Injury** - see Facial Injuries below. If you reroll the same Facial Injury, you instead suffer a Dramatic Death. |
 | 6-7 | **Facial Disfigurement** - your face is visibly damaged making others instinctively flinch. Any Charisma Checks that rely on looks are at Disadvantage. Any further Facial Disfigurement becomes a Facial Injury. |
-| 8 | **Lose an arm** - your arm is missing from above the elbow. You cannot hold more than one item or weapon, until the limb is replaced. You can take this injury wtice, where you lose both arms. You cannot hold any items and cannot cast spells with a Somatic component. Only powerful magic or advanced technological replacement hands allow for dexterous action like writing or spellcasting. |
-| 9 | **Lose a leg** - your leg is missing from above the knew. Your Speed is halved as if you're constantly moving through difficult terrain, until the limb is replaced. You can take this injury twice, losing both legs. |
-| 10-15 | **Chest wound** - you take a chest wound, an internal injury. You take a permanent level of exhaustion that cannot be recovered without a Full Recovery, where the injury transforms to Heavy Scarring. You can suffer this injury repeatedly. |
+| 8-9 | **Lose an arm** - your arm is missing from above the elbow. You cannot hold more than one item or weapon, until the limb is replaced. You can take this injury wtice, where you lose both arms. You cannot hold any items and cannot cast spells with a Somatic component. Only powerful magic or advanced technological replacement hands allow for dexterous action like writing or spellcasting. |
+| 10-11 | **Lose a leg** - your leg is missing from above the knew. Your Speed is halved as if you're constantly moving through difficult terrain, until the limb is replaced. You can take this injury twice, losing both legs. |
+| 12-15 | **Chest wound** - you take a chest wound, an internal injury. You take a permanent level of exhaustion that cannot be recovered without a Full Recovery, where the injury transforms to Heavy Scarring. You can suffer this injury repeatedly. |
 | 16-19 | **Heavy Scarring** - tight and painful scars criss cross large sections of your body. The GM has a Disadvantage token each session to spend on you, when your scars flare up and make a task harder. |
 | 20 | **Light Scarring** - you gain a score of scars that should heal to leave an intimidating visage. You have Advantage on Intimidation when you put your scars to use. |
 
@@ -305,6 +309,7 @@ As a short hand, Stunned is just Incapacitated for 1 round, so that obviously do
   - The target character suffers a 5ft per level of Exhaustion penalty to their Speed.
 - **Flanked** - when you are the one in an Engagement who the foe isn’t Engaging, you have Advantage on your weapon attack rolls. You cannot flank a character 2 or more sizes larger than you.
 - **Frightened** - A Frightened character has Disadvantage on Ability checks and Attack rolls while the source of its fear is within line of sight. If it chooses to Move, the character must move away, or otherwise out of line of sight, from the source of its fear. The character doesn’t have to move into obviously dangerous ground, such as a fire or a pit.
+- **Hidden** - attacks against the target character are at Disadvantage and their attacks against those they are Hidden from are at Advantage. Taking an Attack Action, or other action the GM considers to be too eye-catching, automatically ends the Hidden condition.
 - **Immobilised** - the target character cannot take the Move Action. Additionally, the target must use its Stationary Defence.
 - **Incapacitated**
   - The target character is Immobilised.
