@@ -26,7 +26,9 @@
                 <li class="triangle-points">
                     <RouterLink class="intext-link" :to="{ name: 'trinitas-design-notes' }">Design Notes</RouterLink>
                 </li>
-
+                <li class="triangle-points">
+                    <RouterLink class="intext-link" :to="{ name: 'trinitas-stat-blocks' }">Stat Blocks</RouterLink>
+                </li>
             </ul>
         </li>
         <li class="no-list">

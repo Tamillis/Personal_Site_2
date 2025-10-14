@@ -24,6 +24,22 @@ When PEDD became Trinitas, the various musings on design and justifactions were 
   - [Tools](#tools)
   - [Charisma Rolls](#charisma-rolls)
 
+## Change Log
+
+### XX.10.25
+In no particular order.
+
+- PEDD is now Trinitas. Much change, very wow. Officially no longer a D&D 5e overhaul, but a standalone game that is intended to be an evolution of 5e. A slew of utility rules currently missing currently such as travel speeds, general equipment, adventuring rules, GM guidance etc. One day, maybe. Hah.
+- Combat document has many rewording passes and fat-trimming. Better conditions.
+- Spells up to Magnitude III incorporated, including a few spells set to Magnitude II.
+- Number of Skills reduced and equipment list correspondingly updated.
+- Invocations moved to Magic page, removed from Powers.
+- Powers massively overhauled, see below.
+
+**Power Changes**
+
+
+
 ## Flat Maths
 A large part of the rewrite focuses on getting the maths right for the sweeping changes being made. It does this by making the maths "flat". This makes it easier to predict and interpret, and aids with the level-less design. It also has the added benefit of making something that was dangerous, always dangerous. Flat Maths means nothing "falls off".
 
@@ -313,4 +329,3 @@ Perception & Power are tied to Intellect
 Insanity is tied to Will, but Trinitas doesn't use a Sanity system so eh.
 
 Health & Defense seem to be their own thing.
-

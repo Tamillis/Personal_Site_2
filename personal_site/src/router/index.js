@@ -16,7 +16,8 @@ const trinitasPages = [
   "admin", 
   "progression",
   "appendices",
-  "design-notes"
+  "design-notes",
+  "stat-blocks"
 ];
 const toTrinitasRoutes = (name) => {
   let parts = name.split("-");

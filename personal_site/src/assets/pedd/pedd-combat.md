@@ -297,18 +297,18 @@ Every condition, when inflicted, will state a duration (1 Round, 1 hour etc.). I
 
 As a short hand, Stunned is just Incapacitated for 1 round, so that obviously doesn't require a duration statement, and it is implied that Incapacitated occurs for more than 1 Round.
 
-- **Blinded / Deafened** - A blinded / deafened character can’t see / hear and automatically fails any check that requires sight / hearing, respectively. If your Attacks rely on this sense, they are made at Disadvantage.
+- **Blinded / Deafened** - A blinded / deafened character can’t see / hear and automatically fails any check that requires sight / hearing, respectively. If their Attacks rely on this sense, they are made at Disadvantage.
 - **Bleeding (Damage)** - A character takes the damage in brackets at the end of each Round until they use an appropriate Action to staunch the bleeding (such as using bandages). Non-living characters and others that don't bleed are immune to this condition.
 - **Bloodied** - A fan favourite, when enemy characters fall below half health, they enter the "Bloodied" condition. This is purely an descriptive marker though this also often means their behaviour, tactics and even powers may change, becoming more aggressive and desparate. The Bloodied Condition also lets Players know that the target is below half Health. Alternatively, on monsters that have 2 to 3 Wounds, its the condition after 1 Wound.
 - **Charmed** - unless otherwise stated, a charmed character considers you an ally and will heed your commands, which you can give freely, to the best of its ability. However it will not obey commands that are against its interests. If it is an intelligent character, you can attempt to persuade or otherwise convince them to obey, or that their interests lie elsewhere. For example, a charmed character will not attack another they consider an Ally, but depending on the situation, they may be persuaded to no longer consider the other character an ally.
 - **Concentrating** - when you are using your Concentration on a Spell to maintain its effect. If you take damage, you must make a Willpower save vs the damage (to a minimum of 10) to maintain concentration, otherwise the Spell ends. If you are Concentrating, you cannot use Focus.
-- *Dazed* - The target's Concentration, if any, is broken, and the next attack roll next Round it makes is made with Disadvantage.
+- **Dazed** - The target's Concentration, if any, is broken, and the next attack roll next Round it makes is made with Disadvantage.
 - **Exhaustion** - exhaustion applies in "levels". 1 level is recovered after a Long Rest. At the 6th level, you die.
   - The target character suffers a -2 per level of Exhaustion penalty to all checks.
   - The target character suffers a -2 per level of Exhaustion penalty to their maximum Health.
   - The target character suffers a 5ft per level of Exhaustion penalty to their Speed.
 - **Flanked** - when you are the one in an Engagement who the foe isn’t Engaging, you have Advantage on your weapon attack rolls. You cannot flank a character 2 or more sizes larger than you.
-- **Frightened** - A Frightened character has Disadvantage on Ability checks and Attack rolls while the source of its fear is within line of sight. If it chooses to Move, the character must move away, or otherwise out of line of sight, from the source of its fear. The character doesn’t have to move into obviously dangerous ground, such as a fire or a pit.
+- **Frightened** - A Frightened character has Disadvantage on Ability checks and Attack rolls while the source of its fear is within line of sight. If it chooses to Move, the character must move away, or otherwise out of line of sight, from the source of its fear. The character doesn’t have to move into obviously dangerous ground, such as a fire or a pit. Characters with N/A Intelligence are immune to this condition.
 - **Hidden** - attacks against the target character are at Disadvantage and their attacks against those they are Hidden from are at Advantage. Taking an Attack Action, or other action the GM considers to be too eye-catching, automatically ends the Hidden condition.
 - **Immobilised** - the target character cannot take the Move Action. Additionally, the target must use its Stationary Defence.
 - **Incapacitated**
@@ -324,7 +324,7 @@ As a short hand, Stunned is just Incapacitated for 1 round, so that obviously do
   - A prone character has Disadvantage on attack rolls with weapons that do not have the Prone Fighting property.
   - An attack roll against the prone character has Advantage if the attacker is within reach. Otherwise, the attack roll has Disadvantage.
 - **Restrained** - the target character is Immobilised and Attack rolls against them have Advantage, and the target character's attack rolls have Disadvantage.
-- **Poisoned** - A poisoned character has Disadvantage on attack rolls and ability checks. (Kinda lame)
+- **Poisoned** - A poisoned character has Disadvantage on attack rolls and ability checks.
 - **Sluggish** - the target character can take an Action OR a Bonus Action, not both.
 - **Stunned** - the target character is Incapacitated for the Round.
 - **Unconscious**

@@ -17,6 +17,7 @@ There is also a clear emphasis on 'monster types' as well, called **Creature Typ
 - **Celestials** - beings of the Good planes
 - **Constructs** - beings of the plane of Logic 
   - **Machines** - other constructs built by the hands of mortals in the image of divine logic or otherwise, on the material plane. This means there are "Outsider Constructs" and "Material Machines". That only Constructs seem capable of sentience, no matter how clever the Machine, is a matter of some theology.
+    - **Automatons** - so-called sentient machines with souls.
 - **Dragons** - beings of ancient power and deep hunger, said to be all that's left of the three Creators
 - **Demons** - beings of the plane of Passion
 - **Elementals** - beings of the four ribbons of the elemntal braid, those old things from when the creators first wove the physical realms, or newer spirits of the lands, seas and skies.
@@ -68,3 +69,31 @@ A **target** includes objects or particular points in space, basically any valid
 
 ### N/A Statistics
 A stat value of N/A, which only happens for NPCs, means that it is meaningless for that character to have a value for that stat. This is relatively common for Intelligence and various non-sophont characters. Any skill check that is called for using that stat automatically fails, as does any save. It may be the case that the check or save is instead done with a different stat, or entirely nullified by the GM. Many mind affecting spells don't have any affect on unintelligent creatures, for example.
+
+### Vision
+
+The specific rules for Vision.
+
+Your vision is "Normal" unless stated otherwise, but other kinds of vision exist, such as:
+
+- **Darkvision** - 
+- **Truesight** - Characters with Truesight can see invisible characters and objects, automatically succeed to see through illusions, and see into the ethereal plane where it intersects and other planar boundaries.
+- **Devil's Sight** - You gain the effects of “Darkvision”. Additionally, you can see in both magical and nonmagical darkness, as if it were dim light to a distance of 120ft.
+
+Vision varies based on Light Conditions, which are:
+
+- **Bright Light** - Virtually all light sources produce bright light, and even "gloomy" daytime environments are still considered bright.
+- **Dim Light** - The soft light of twilight and dawn, or the boundary between bright light and darkness. Also called "shadows" or "lightly obscured."
+- **Darkness** - Heavily obscured. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a room with no windows, or in an area of magical darkness
+- **Blinded** - A blinded character can’t see and automatically fails any check that requires sight. If their Attacks rely on this sense, they are made at Disadvantage.
+
+This looks like:
+
+| - | Normal Vision | Darkvision | Truesight | Devil's Sight |
+| --- | --- | --- | --- | --- |
+| **Bright Light** | See normally | See normally | See normally | See normally |
+| **Dim Light** | Disadvantage on PER checks; -5 to passive perception | See normally | See normally | See normally |
+| **Darkness** | Blinded | Disadvantage on PER checks; -5 to passive perception | See normally | See normally (120ft) |
+| **Magical Darkness** | Blinded | Varies by Spell | See normally | See normally (120ft) |
+
+
