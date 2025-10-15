@@ -1,4 +1,28 @@
-TOC
+- [Rules of Magic](#rules-of-magic)
+  - [Spheres of Magic and Spellcasting](#spheres-of-magic-and-spellcasting)
+  - [Magic Statistic](#magic-statistic)
+  - [Mana, Magnitude and Reserve](#mana-magnitude-and-reserve)
+  - [Spell Details](#spell-details)
+  - [Spell-like and Spellcasting Power Tags](#spell-like-and-spellcasting-power-tags)
+- [The Spheres of Magic and Spell Lists](#the-spheres-of-magic-and-spell-lists)
+  - [The Arcane Sphere and Spellbooks](#the-arcane-sphere-and-spellbooks)
+  - [The Divine Sphere and Faith](#the-divine-sphere-and-faith)
+  - [The Primal Sphere and Verdance](#the-primal-sphere-and-verdance)
+    - [Verdance Table](#verdance-table)
+  - [The Occult Sphere](#the-occult-sphere)
+  - [Pact Magic](#pact-magic)
+- [The Schools of Spells](#the-schools-of-spells)
+  - [Abjuration – Barrier Magic](#abjuration--barrier-magic)
+  - [Conjuration – Summoning Magic](#conjuration--summoning-magic)
+  - [Divination – Portent Magic](#divination--portent-magic)
+  - [Enchantment – Mind Magic](#enchantment--mind-magic)
+  - [Evocation – Energy Magic](#evocation--energy-magic)
+  - [Illusion – Phantom Magic](#illusion--phantom-magic)
+  - [Necromancy – Soul Magic](#necromancy--soul-magic)
+  - [Consumption Magic](#consumption-magic)
+  - [Transmutation – Form Magic](#transmutation--form-magic)
+  - [Entropic Magic](#entropic-magic)
+
 
 ## Rules of Magic
 Trinitas has 4 Spellcasting Powers, Pact Magic and various Spell-granting Powers that give characters access to fantasy magic Spells which are special actions, pieces of magic, with a myriad of effects both active and passive. Magic is almost limitless in what it can do, as you can see in the range of [Spells](/trinitas/spells) adapted to the Trinitas system so far.
@@ -26,6 +50,17 @@ The Passive value of the Magic Statistic is used in determining the DC for your 
 All spellcasting Powers also require the Mana power, which means the character has a well of mystical energy they can draw on to cast magic spells.
 
 **Magnitude** - Mana comes in Magnitudes, up to 9 (I'm planning on dropping this to 5 / 6 and rewriting high and low-level spells to reflect this change, but that's WIP). Casting a spell at a certain magnitude determines the scale of its effect (if appropriate), and more powerful spells have a minimum magnitude greater than 1.
+
+<div class="list-style-roman">
+
+1. Simple Spells, 1dX direct damage or minor utility effects
+2. A few 3dX direct damage. Introducing 1dX damage + auxiliiary effect. Greater focus on pure utility effects, with broader range of such.
+3. Powerful direct damage 5dX, or 3dX with significant auxilliary, or power standalone utility (like Fly, Conjure etc.)
+4. Very Powerful
+5. Most Powerful
+6. Beyond Mortal scale. I.e. Wish, or other Dieficly large / powerful / awe-inspiring effect.
+
+</div>
 
 **Reserve** - According to the rank of the Mana power, you will have certain "Reserves" of Mana per magnitude. One cast of a spell uses up one Reserve.
 

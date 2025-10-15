@@ -264,6 +264,10 @@
   gap: 2rem;
 }
 
+.list-style-roman,.list-style-roman li {
+  list-style-type: upper-roman;
+}
+
 .pb-1r {
   padding-bottom: 1rem;
 }
