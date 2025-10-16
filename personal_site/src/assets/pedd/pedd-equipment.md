@@ -82,11 +82,11 @@ Those used for generations, both by nobles and peasants, and still effective in 
 
 | Name | Skill | Cost | Damage | Weight | Properties |
 | --- | --- | --- | --- | --- | --- |
-| Blowgun* | Exotic (Blowgun) | 5sp | 1 piercing | 1lb | Ammunition (25/100), Loading |
+| Blowgun* | Exotic (Blowgun) | 5sp | 1 piercing | 1lb | Ammunition (25/100) |
 | Dart | Slings & Thrown | 5cp | 1d4 piercing | 1/4lbs | Finesse, Thrown (20/60) |
-| Hand Crossbow | Bows & Crossbows | 75gp | 1d6 piercing | 3lbs | Ammunition (30/120), Light, Loading, Prone-fighting |
-| Heavy Crossbow | Bows & Crossbows | 50gp | 1d10 piercing | 12lbs | Ammunition (100/300), Heavy, Loading, Bleeds, Lightly Armour Piercing, Two-Handed |
-| Light Crossbow | Bows & Crossbows | 25gp | 1d8 piercing | 5lbs | Ammunition (80/320), Loading, Two-Handed |
+| Hand Crossbow | Bows & Crossbows | 75gp | 1d6 piercing | 3lbs | Ammunition (30/120), Light, Prone-fighting |
+| Heavy Crossbow | Bows & Crossbows | 50gp | 1d10 piercing | 12lbs | Ammunition (100/300), Heavy, Slow Loading, Bleeds, Lightly Armour Piercing, Two-Handed |
+| Light Crossbow | Bows & Crossbows | 25gp | 1d8 piercing | 5lbs | Ammunition (80/320), Two-Handed |
 | Longbow | Bows & Crossbows | 75gp | 1d10 piercing | 2lbs | Ammunition (200/600), Heavy, Bleeds, Two Handed |
 | Net* | Exotic (Net) | 1gp | - | 3lbs | Thrown (15/30) |
 | Recurve Bow | Bows & Crossbows | 50gp | 1d8 piercing | 3lbs | Ammunition (150/600), Two-Handed |
@@ -103,13 +103,13 @@ Modern ranged weapons employed by militaries and the keen amatuer, even if that 
 
 | Name | Skill | Cost | Damage | Weight | Properties |
 | --- | --- | --- | --- | --- | --- |
-| Arquebus | Firearms & Pistols | 20gp | 1d10 piercing | 9lbs | Ammunition (60/300), cartridge loading, light armour piercing, misfire, two-handed |
-| Buckshot Gun | Firearms & Pistols | 40gp | 2d6 slashing | 9lbs | Ammunition (30/60), cartridge loading, scatter (1d6), two-handed |
-| Carbine | Firearms & Pistols | 40gp | 1d10 piercing | 7lbs | Ammunition (40/150), cartridge loading, armour piercing |
-| Musket | Firearms & Pistols | 50gp | 1d12 piercing | 12lbs | Ammunition (120/500), cartridge loading, armour piercing, heavy, two-handed |
-| Pepperbox* | Firearms & Pistols | 40gp | 1d8 piercing | 6lbs | Ammunition 6 (20/100), cartridge loading, light armour piercing |
-| Pistol | Firearms & Pistols | 10gp | 1d8 piercing | 3lbs | Ammunition (20/120), cartridge loading, light armour piercing, misfire, light |
-| Sawn-Off | Firearms & Pistols | 30gp | 2d4 slashing | 6lps | Ammunition (20/40), cartridge loading, scatter (1d4) |
+| Arquebus | Firearms & Pistols | 20gp | 1d10 piercing | 9lbs | Ammunition (60/300), Slow Loading, light armour piercing, misfire, two-handed |
+| Buckshot Gun | Firearms & Pistols | 40gp | 2d6 slashing | 9lbs | Ammunition (30/60), Slow Loading, scatter (1d6), two-handed |
+| Carbine | Firearms & Pistols | 40gp | 1d10 piercing | 7lbs | Ammunition (40/150), Slow Loading, armour piercing |
+| Musket | Firearms & Pistols | 50gp | 1d12 piercing | 12lbs | Ammunition (120/500), Slow Loading, armour piercing, heavy, two-handed |
+| Pepperbox* | Firearms & Pistols | 40gp | 1d8 piercing | 6lbs | Ammunition 6 (20/100), Slow Loading, light armour piercing |
+| Pistol | Firearms & Pistols | 10gp | 1d8 piercing | 3lbs | Ammunition (20/120), Slow Loading, light armour piercing, misfire, light |
+| Sawn-Off | Firearms & Pistols | 30gp | 2d4 slashing | 6lps | Ammunition (20/40), Slow Loading, scatter (1d4) |
 | **Munitions** |
 | Demo-barrel | - | 50gp | 4d6 bludgeoning | 75lbs | Knockback, Burning (4d6), Area (10ft radius per barrel to a maximum of 60ft) |
 | Flashbomb | Slings & Thrown | 5gp | Blinds & Deafens until the end of the target’s next turn | 1lbs | Thrown (20/60), Area (15ft radius)<sup>g</sup> |
@@ -129,7 +129,6 @@ g.	Grenades and Firebombs effect an area, as such instead of attack rolls effect
 - **Armour Piercing** & **Light Armour Piercing** – the weapon ignores some benefit of Armour to a target's Defence. The target's Armour is reduced, to a minimum of 0, by 2 for Light Armour Piercing and by 6 for Armour Piercing.
 - **Bleeds** - critical hits with this weapon when doing Slashing damage inflict gaping wounds and profuse bleeding, immediately inflicting the Bleeding (your Bonus) condition. Non-living character types are immune to this condition.
 - **Block** - You can raise this weapon like a shield, using your Bonus Action to Block, gaining a bonus of 1 to Defence.
-- **Cartridge Loading** – due to the elaborate procedure of preparing a muzzle loading gun for its next shot, it takes an attack or an action to reload firearms, and a free hand.
 - **Dazes** - critical hits with this weapon when doing Bludgeoning damage hit with a singularly boneshaking blow, immediately inflicting the Dazed condition. The target's Concentration, if any, is broken, and the next attack roll next Round it makes is made with Disadvantage.
 - **Ensnaring** - When you hit an attack with an ensnaring weapon, you may use your Bonus Action to attempt the Grapple action on the target or Shove them or make them Prone, using your weapon attack modifier in place of Strength. If you grapple a target with an ensnaring weapon, the grapple is automatically ended if you make another attack roll with that weapon.
 - **Finesse** - The weapon lends itself to dexterous combat due to features that make it more reliant on technique than brute force. When attacking with a finesse weapon, you use your choice of your
@@ -139,7 +138,7 @@ Strength or Dexterity for the attack and damage rolls. You must use the same mod
   - A heavy weapon allows you to make an attack relying upon on raw strength instead of technique. When you attack with a heavy weapon that you're proficient in, you can forego adding your proficiency bonus to the attack roll. If the attack hits, you add that proficiency bonus to the damage roll instead. You must decide to do this before making the attack roll.
 - **Knockback** – When you deal damage against a character the same size as you, they make a Fortitude save against your passive Strength and on a failure are thrown 10ft away or made Prone
 - **Light** - A light weapon is small and easy to handle. When you take the Attack action and attack with a light melee weapon that you’re holding in one hand, you can use a Bonus Action to attack with a different light melee weapon that you’re holding in the other hand. You don’t add your Stat to the damage of the bonus attack, unless that modifier is negative. 
-- **Loading** & **Slow Loading** - due to the elaborate procedure of preparing the weapon for its next shot, it takes an Attack, Action or Bonus Action to reload, and a free hand. Slow Loading weapons take an Attack or Action to reload.
+- **Slow Loading** - due to the elaborate procedure of preparing the weapon for its next shot, it takes an Attack or Action to reload.
 - **Misfire** - on an attack roll of 1, the gun misfires; the attack fails, and a clearing bonus action to clean the gun is required before it can be fired again, leaving it unloaded.
 - **Nonlethal** - The weapon is designed to incapacitate or is otherwise capable of delivering a hit that does not kill the target. Non-lethal Strikes can be made with normal damage rolls.
 - **Parry** - The weapon has some weapon catching or deflecting feature, allowing it to be used to take the Riposte or Parry Actions.
