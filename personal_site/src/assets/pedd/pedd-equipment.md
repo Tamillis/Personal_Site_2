@@ -21,7 +21,7 @@ Those familiar to men and women across the shards.
 | --- | --- | --- | --- | --- | --- |
 | Battleaxe | Axes | 10gp | 1d8 slashing | 4lbs | Bleeds, Sweeping, Versatile (1d10) |
 | Club | Clubs | 1sp | 1d4 bludgeoning | 2lbs | Light, Nonlethal, Block |
-| Dagger | Knives | 2gp | 1d4 piercing / slashing | 1lbs | Finesse, Finisher, Light, Nnlethal |
+| Dagger | Knives | 2gp | 1d4 piercing / slashing | 1lbs | Finesse, Light, Nnlethal |
 | Hammer | Clubs, Slings & Thrown | 2sp | 1d4 bludgeoning | 2lbs | Light, Dazes, Thrown (20/60) |
 | Handaxe | Axes, Slings & Thrown | 3gp | 1d6 slashing | 2lbs | Light, Thrown (20/75) |
 | Heavy Club | Clubs, Heavy Arms | 5sp | 2d4 bludgeoning | 10lbs | Heavy, Two-handed, Dazes, Knockback |
@@ -29,20 +29,20 @@ Those familiar to men and women across the shards.
 | Longsword | Blades | 15gp | 1d8 piercing / slashing | 3lbs | Parry, Bleeds, Versatile (1d10), Block |
 | Mace | Clubs | 5gp | 1d6 bludgeoning | 4lbs | Light Armour Piercing |
 | Maul | Clubs, Heavy Arms | 10gp | 2d6 bludgeoning | 12lbs | Heavy, Reach, Dazes, Lightly Armour Piercing, Two-Handed, Knockback |
-| Pike | Spear, Heavy Arms | 5gp | 1d10 piercing | 13lbs | Heavy, Reach, Two-Handed, Wind-Up |
+| Pike | Spear, Heavy Arms | 5gp | 1d10 piercing | 13lbs | Heavy, Reach, Two-Handed |
 | Quarterstaff | Spear | 2sp | 1d6 bludgeoning | 4lbs | Nonlethal, Versatile (2d4), Block |
 | Shiv* | Knives | 5cp | 1d4 piercing | 0.5lbs | Light, Nonlethal |
-| Short Spear | Spear | 1gp | 1d6 piercing | 3lbs | Finisher, Nonlethal |
-| Shortsword | Blades | 10gp | 1d6 piercing / slashing | 2lbs | Light, Finesse, Finisher, Parry |
+| Short Spear | Spear | 1gp | 1d6 piercing | 3lbs | Nonlethal |
+| Shortsword | Blades | 10gp | 1d6 piercing / slashing | 2lbs | Light, Finesse, Parry |
 | Sickle | Knives | 1gp | 1d4 slashing | 2lbs | Light, Bleeds |
 | Spear | Spear | 1gp | 1d8 piercing | 4lbs | Reach, Two-Handed, Block |
-| Spear Club (Goedendag) | Clubs, Spear | 5sp | 1d4 bludgeoning / piercing | 3lbs | Finisher, Light Armour Piercing |
+| Spear Club (Goedendag) | Clubs, Spear | 5sp | 1d4 bludgeoning / piercing | 3lbs | Light Armour Piercing |
 | Whip* | Exotic (Whip) | 2gp | 1d4 slashing | 3lbs | Ensnaring, Finesse, Reach |
-| Winged Spear | Spear | 5gp | 1d6 piercing | 5lbs | Versatile (1d8), Winged, Block |
+| Winged Spear | Spear | 5gp | 1d6 piercing | 5lbs | Versatile (1d8), "Winged", Block |
 
 **Shiv** - Crude and simply made, a shiv is the weapon of the desparate. If you make an attack roll with this weapon and the dice result is 1, the Shiv breaks.
 
-**Whip** - When you deal damage against a character one size larger than you, or less, that character cannot move toward you that Round.
+**Whip** - When you deal damage against a character the same size as you, that character cannot move toward you that Round.
 
 #### Specialist Weapons
 Those normally reserved for the hands of the well trained and militarily inclined. Rarer, but not necessary exclusive.
@@ -52,22 +52,22 @@ Those normally reserved for the hands of the well trained and militarily incline
 | Cestus* | Body | 1gp | 1d4 bludgeoning | 0.5lbs | Light, Nonlethal |
 | Esctoc | Blades | 20gp | 1d8 piercing | 2lbs | Finesse, Parry, Lightly Armour Piercing |
 | Falchion | Blades | 25gp | 1d8 slashing | 2lbs | Bleeds, Finesse, Parry |
-| Flail | Clubs, Heavy Arms | 10gp | 1d8 bludgeoning / piercing | 2lbs | Ensnaring, Wind-up |
+| Flail | Clubs, Heavy Arms | 10gp | 1d8 bludgeoning / piercing | 2lbs | Ensnaring |
 | Garotte Wire* | Exotic (Garrote Wire) | 5gp | 1d6 slashing | 1/4lbs | Finesse, Light, Two-Handed |
 | Glaive | Spear, Heavy Arms | 20gp | 1d10 slashing | 6lbs | Heavy, Reach, Sweeping, Two-Handed |
-| Greataxe | Axes, Heavy Arms | 30gp | 1d12 slashing | 9lbs | Heavy, Finisher, Bleeds, Two-Handed |
+| Greataxe | Axes, Heavy Arms | 30gp | 1d12 slashing | 9lbs | Heavy, Bleeds, Two-Handed |
 | Greatsword | Blades, Heavy Arms | 50gp | 2d6 piercing / slashing | 7lbs | Heavy, Bleeds, Sweeping, Two-Handed |
 | Halberd | Spear, Heavy Arms | 20gp | 1d10 piercing / slashing | 7lbs | Heavy, Reach, Bleeds, Two-Handed |
 | Lance* | Exotic (Lance) | 10gp | 1d12 piercing | 6lbs | Reach, Dazes |
 | Lucerne Hammer | Spear, Clubs, Heavy Arms | 20gp | 1d10 bludgeoning / piercing | 7lbs | Heavy, Reach, Lightly Armour Piercing, Two-Handed |
-| Morningstar | Clubs, Heavy Arms | 15gp | 1d8 bludgeoning / piercing | 4lbs | Dazes, Finisher |
-| Parrying Dagger | Knives | 3gp | 1d4 piercing | 1lb | Finesse, Finisher, Light, Parry, Prone Fighting, Block |
+| Morningstar | Clubs, Heavy Arms | 15gp | 1d8 bludgeoning / piercing | 4lbs | Dazes |
+| Parrying Dagger | Knives | 3gp | 1d4 piercing | 1lb | Finesse, Light, Parry, Prone Fighting, Block |
 | Pollaxe | Spear, Heavy Arms | 35gp | 1d10 bludgeoning / piercing / slashing | 10lbs | Bleeds, Dazes, Two-Handed |
-| Rapier | Blades | 25gp | 1d8 piercing | 2lbs | Finesse, Parry, Finisher |
+| Rapier | Blades | 25gp | 1d8 piercing | 2lbs | Finesse, Parry |
 | Scimitar | Blades | 15gp | 1d6 slashing | 3lbs | Light, Bleeds, Finesse, Parry |
-| Trident | Spears | 5gp | 2d4 piercing | 4lbs | Finisher, Versatile (1d10), Winged, Block |
-| War Pick | Clubs | 5gp | 1d8 piercing | 2lbs | Finisher, Versatile (1d10), Lightly Armour Piercing |
-| Warhammer | Clubs, Heavy Arms | 15gp | 1d8 bludgeoning | 3lbs | Finisher, Dazes, Lightly Armour Piercing, Versatile (1d10), Knockback |
+| Trident | Spears | 5gp | 2d4 piercing | 4lbs | Versatile (1d10), Winged, Block |
+| War Pick | Clubs | 5gp | 1d8 piercing | 2lbs | Versatile (1d10), Lightly Armour Piercing |
+| Warhammer | Clubs, Heavy Arms | 15gp | 1d8 bludgeoning | 3lbs | Dazes, Lightly Armour Piercing, Versatile (1d10), Knockback |
 | War Scythe (Guisarme) | Spear, Heavy Arms | 5gp | 1d10 piercing | 8lbs | Ensnaring, Heavy, Reach, Two-Handed |
 | Winged Pike (Ranseur) | Spear, Heavy Arms | 25gp | 1d10 piercing / slashing | 8lbs | Heavy, Reach, Winged |
 
@@ -125,7 +125,7 @@ g.	Grenades and Firebombs effect an area, as such instead of attack rolls effect
 
 #### Weapon Properties
 
-- **Ammunition W (X/Y)** - You can use a weapon that has the Ammunition property to make a ranged attack only if you have Ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a weapon). Expended arrows, bolts and darts can be recovered, by taking a minute to search the battlefield, but guns that use paper cartridges cannot. X denotes the short range of the weapon, and Y the long range (attacks at Disadvantage). Some weapons, like the Pepperbox, have a number of shots (W) that can be made before reloading is necessary.
+- **Ammunition W (X/Y)** - You can use a weapon that has the Ammunition property to make a ranged attack only if you have Ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition and must Reload. X denotes the short range of the weapon, and Y the long range (attacks at Disadvantage). W, 1 if not if present, shows how many attacks can be made before needing to Reload.
 - **Armour Piercing** & **Light Armour Piercing** – the weapon ignores some benefit of Armour to a target's Defence. The target's Armour is reduced, to a minimum of 0, by 2 for Light Armour Piercing and by 6 for Armour Piercing.
 - **Bleeds** - critical hits with this weapon when doing Slashing damage inflict gaping wounds and profuse bleeding, immediately inflicting the Bleeding (your Bonus) condition. Non-living character types are immune to this condition.
 - **Block** - You can raise this weapon like a shield, using your Bonus Action to Block, gaining a bonus of 1 to Defence.
@@ -134,11 +134,10 @@ g.	Grenades and Firebombs effect an area, as such instead of attack rolls effect
 - **Ensnaring** - When you hit an attack with an ensnaring weapon, you may use your Bonus Action to attempt the Grapple action on the target or Shove them or make them Prone, using your weapon attack modifier in place of Strength. If you grapple a target with an ensnaring weapon, the grapple is automatically ended if you make another attack roll with that weapon.
 - **Finesse** - The weapon lends itself to dexterous combat due to features that make it more reliant on technique than brute force. When attacking with a finesse weapon, you use your choice of your
 Strength or Dexterity for the attack and damage rolls. You must use the same modifier for both rolls.
-- **Finisher** - Finisher weapons are well-suited to executing enemies that are at your mercy. When you make an attack against a Prone or Incapacitated character, you roll one additional damage die.
 - **Heavy** - These weapons are larger and unwieldier than most, lending them unique advantages and challenges:
   - Small characters make attacks with heavy weapons at Disadvantage.
   - A heavy weapon allows you to make an attack relying upon on raw strength instead of technique. When you attack with a heavy weapon that you're proficient in, you can forego adding your proficiency bonus to the attack roll. If the attack hits, you add that proficiency bonus to the damage roll instead. You must decide to do this before making the attack roll.
-- **Knockback** – on a hit target characters make a Fortitude save vs the passive Strength of the attacker or be thrown 10ft away and made Prone
+- **Knockback** – When you deal damage against a character the same size as you, they make a Fortitude save against your passive Strength and on a failure are thrown 10ft away or made Prone
 - **Light** - A light weapon is small and easy to handle. When you take the Attack action and attack with a light melee weapon that you’re holding in one hand, you can use a Bonus Action to attack with a different light melee weapon that you’re holding in the other hand. You don’t add your Stat to the damage of the bonus attack, unless that modifier is negative. 
 - **Loading** & **Slow Loading** - due to the elaborate procedure of preparing the weapon for its next shot, it takes an Attack, Action or Bonus Action to reload, and a free hand. Slow Loading weapons take an Attack or Action to reload.
 - **Misfire** - on an attack roll of 1, the gun misfires; the attack fails, and a clearing bonus action to clean the gun is required before it can be fired again, leaving it unloaded.
@@ -150,8 +149,7 @@ Strength or Dexterity for the attack and damage rolls. You must use the same mod
 - **Scatter X** – weapons with this property also target any Character within 5ft of the target, using the same to hit roll, for the damage indicated in X. The scatter property is not in effect if the primary target is 10ft or less from the attacker.
 - **Sweeping** - These weapons strike in broad, sweeping motions. When you make an attack with a sweeping weapon that deals slashing damage, you may use a Bonus Action to deal the weapon's damage die in damage against a second target within your reach that is adjacent to the first, provided that your attack roll would also hit that target.
 - **Versatile** - This weapon can be used with one or two hands. A damage value in parentheses appears with the property–the damage when the weapon is used with two hands.
-- **Wind-up** - The weapon can be used to spend time preparing an attack to be even more effective. On your turn you can use an attack or Bonus Action to swing up or set your weapon. On the next attack you make that Round with the weapon you can add an additional weapon die to that attack if it hits. A weapon can only add one such damage die in this way.
-- **Winged** - These weapons have specially-shaped heads that halt the movement of their target toward the user and can also be used to catch shields and weapons. When you deal piercing damage against a character one size larger than you, or less, with a winged weapon, that character cannot move toward you that Round. Additionally can use the Disarm action with this weapon, using your Proficiency with the weapon's skill.
+- **Winged** - When you deal piercing damage against a character one size larger than you, or less, with a winged weapon, that character cannot move toward you that Round. Additionally can use the Disarm action with this weapon, using your Proficiency with the weapon's skill.
 
 ### Armour
 The following table lists the kinds of armour in the game. Armour's Armour property does not stack unless a + value is stated.
