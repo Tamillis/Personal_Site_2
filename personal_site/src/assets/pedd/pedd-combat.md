@@ -76,6 +76,7 @@ So what can that one Action can do? Actions any character can perform are split 
 - **Interact** - as an Action, you interact, a short series of motions that achieves a simple goal, with something or someone. This includes; giving an unconscious ally a health potion, arranging the runes of a magical interface, frisking a character for weapons, pulling the chains of a pulley, finding a particular page of a book, or creating a rough sketch in the sand
 - **Mount / Dismount** - as an Action, you safely get on or get off a mount within your reach.
 - **Move** - move your Speed along a path of your choice towards a target. See [Move Action](#move-action) for details.
+- **Reload** - you reload the ammunition from a quiver, case, or other container as part of the attack but you need a free hand. If the weapon is "Slow Loading", a separate Attack or Action is necessary.
 - **Use** - as a Bonus Action, you make a single motion to use an item or device. This includes: pulling a lever, pushing a button, drinking a potion readily available, sending a signal (hand, flag, flare etc.), or unlocking a chest with a readily available key.
 
 #### Tactical Actions
