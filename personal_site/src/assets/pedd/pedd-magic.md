@@ -153,29 +153,32 @@ Lastly, the Spellcasting Ability that governs the magic casting is also dictated
 
 Pact Magic does not count as one of the 'Spellcasting' Powers for the purpose of the 'spellcasting' prerequisite of some Powers (which is why it doesn't have that tag).
 
-### Invocations
-- **Agonizing Blast** - When you cast Eldritch Blast, add your Magic Stat to the damage it deals on a hit.
-- **Armour of Shadows** - You can cast Mage Armour on yourself at will as an Action, without expending your Stipend / Mana, or needing material components.
-- **Archfey’s Touch** - Your ears taper, eye’s glow faintly and your skin gains the pearlescent unreal cast of the fey. You gain the effects of “Fey Ancestry”.
-- **Beastial Tongue** - Your tongue is long and animalistic. You can cast Speak with Animals at will as an Action, without expending your Stipend / Mana.
-- **Bountiful Cantrips** - You learn another cantrip from your Patron's spell list or a cantrip of your choice from the list; Chill Touch, Eldritch Blast, Elementalism, Empathy, Minor Illusion, Prestidigitation, Shocking Grasp, Sorcerous Burst, Thaumaturgy, Vicious Mockery or Word of Decay.
-- **Devil's Sight** - Your pupils turn cat-like and jagged, and your irises the burn with the shades of fire. You gain the effects of “Darkvision”. Additionally, you can see in both magical and nonmagical darkness, as if it were dim light to a distance of 120ft.
-- **Eldritch Drain** - When you cast Eldritch Blast and hit a character, their Speed is reduced by 10ft for the Round.
-- **Eldritch Mind** - Under your hair, thick blue veins bulge. You have Advantage on Fortitude saving throws that you make to maintain your concentration on a spell.
-- **Mana Sensing** - A line of sensing pits line under your eyes. You can cast Detect Magic as an Action at will, without expending your Stipend / Mana, or needing material components.
-- **Eldritch Spear** - When you cast Eldritch Blast, its range is 300ft.
-- **Expanded Repertoire** - Your Known Innate Spells increases to your Expertise + your Magic Stat (to a minimum of 2), and you may prepare your list of Spells anew as if completing a Communion.
-- **Unnatural Vigour** - As a spell-like 1 minute ritual, you gain 10 Temporary Health.
-- **Gaze of Two Minds** - You can use your Action to touch a willing humanoid and create ore refresh a bond between your minds. As a further Action, you can perceive through the bonded character’s senses until the end of the Round, as long as the bonded character is on the same plane of existence as you. While perceiving through the other character's senses, you benefit from any special senses possessed by that character, and you are Blinded and Deafened to your own surroundings. The bond breaks after 24 hours.
-- **Blessing of the Deep** - Fish gills open on your neck. You can breathe underwater, and you gain a Swim Speed equal to your Speed. Once per Long Rest, you can touch your Bonus number of willing characters, and grant them the same benefit, which lasts for 1 hour.
-- **Grasp of the Dark Star** - Once per Round when you hit a character with your Eldritch Blast, you can move that character in a straight line 10ft in a direction of your choice.
-- **Green Laird's Gift** - Whenever you regain Health from magic, you treat any dice rolled to determine the amount of Health you regain as having rolled their maximum value.
-- **Lessons of the First Ones** - You have received secret knowledge from your Patron. Choose two skills of your choice to gain Proficiency in, or Expertise for skills you already have. You can change which skills after a Communion.
-- **Mask of Many Faces** - Your face’s stronger characteristics fade toward a neutral unassuming face. You can cast Disguise Self as an Action at will, without expending your Stipend / Mana, or needing material components.
-- **Misty Visions** - Your arms and hands trail ghostly afterimages when you cast magic. You can cast Silent Image as an Action at will, without expending your Stipend / Mana, or needing material components.
-- **One with Shadows** - Shadows on your body are unnaturally dark and spread like oil. You can cast Invisibility on yourself as an Action at will, without expending your Stipend / Mana, or needing material components.
-- **Otherworldly Leap** - Your legs snap to digitigrade, your feet elongating. You can cast Jump on yourself as an Action at will, without expending your Stipend / Mana.
+#### Invocations
+The invocations available to the followers of Patrons are listed below. They're specialised powers the patron grants them, stretching magic and spell-like affects to grant unique abilities found no-where else: the great power of the patron bending and breaking the normal rules.
 
+| Invocation | Effect |
+| --- | --- |
+| **Agonizing Blast** | When you cast Eldritch Blast, add your Magic Stat to the damage it deals on a hit.
+| **Armour of Shadows** | You can cast Mage Armour on yourself at will as an Action, without expending your Stipend / Mana, or needing material components.
+| **Archfey’s Touch** | Your ears taper, eye’s glow faintly and your skin gains the pearlescent unreal cast of the fey. You gain the effects of “Fey Ancestry”.
+| **Beastial Tongue** | Your tongue is long and animalistic. You can cast Speak with Animals at will as an Action, without expending your Stipend / Mana.
+| **Bountiful Cantrips** | You learn another cantrip from your Patron's spell list or a cantrip of your choice from the list; Chill Touch, Eldritch Blast, Elementalism, Empathy, Minor Illusion, Prestidigitation, Shocking Grasp, Sorcerous Burst, Thaumaturgy, Vicious Mockery or Word of Decay.
+| **Devil's Sight** | Your pupils turn cat-like and jagged, and your irises the burn with the shades of fire. You gain the effects of “Darkvision”. Additionally, you can see in both magical and nonmagical darkness, as if it were dim light to a distance of 120ft.
+| **Eldritch Drain** | When you cast Eldritch Blast and hit a character, their Speed is reduced by 10ft for the Round.
+| **Eldritch Mind** | Under your hair, thick blue veins bulge. You have Advantage on Fortitude saving throws that you make to maintain your concentration on a spell.
+| **Mana Sensing** | A line of sensing pits line under your eyes. You can cast Detect Magic as an Action at will, without expending your Stipend / Mana, or needing material components.
+| **Eldritch Spear** | When you cast Eldritch Blast, its range is 300ft.
+| **Expanded Repertoire** | Your Known Innate Spells increases to your Expertise + your Magic Stat (to a minimum of 2), and you may prepare your list of Spells anew as if completing a Communion.
+| **Unnatural Vigour** | As a spell-like 1 minute ritual, you gain 10 Temporary Health.
+| **Gaze of Two Minds** | You can use your Action to touch a willing humanoid and create ore refresh a bond between your minds. As a further Action, you can perceive through the bonded character’s senses until the end of the Round, as long as the bonded character is on the same plane of existence as you. While perceiving through the other character's senses, you benefit from any special senses possessed by that character, and you are Blinded and Deafened to your own surroundings. The bond breaks after 24 hours.
+| **Blessing of the Deep** | Fish gills open on your neck. You can breathe underwater, and you gain a Swim Speed equal to your Speed. Once per Long Rest, you can touch your Bonus number of willing characters, and grant them the same benefit, which lasts for 1 hour.
+| **Grasp of the Dark Star** | Once per Round when you hit a character with your Eldritch Blast, you can move that character in a straight line 10ft in a direction of your choice.
+| **Green Laird's Gift** | Whenever you regain Health from magic, you treat any dice rolled to determine the amount of Health you regain as having rolled their maximum value.
+| **Lessons of the First Ones** | You have received secret knowledge from your Patron. Choose two skills of your choice to gain Proficiency in, or Expertise for skills you already have. You can change which skills after a Communion.
+| **Mask of Many Faces** | Your face’s stronger characteristics fade toward a neutral unassuming face. You can cast Disguise Self as an Action at will, without expending your Stipend / Mana, or needing material components.
+| **Misty Visions** | Your arms and hands trail ghostly afterimages when you cast magic. You can cast Silent Image as an Action at will, without expending your Stipend / Mana, or needing material components.
+| **One with Shadows** | Shadows on your body are unnaturally dark and spread like oil. You can cast Invisibility on yourself as an Action at will, without expending your Stipend / Mana, or needing material components.
+| **Otherworldly Leap** | Your legs snap to digitigrade, your feet elongating. You can cast Jump on yourself as an Action at will, without expending your Stipend / Mana.
 
 ## The Schools of Spells
 Spell schools are another vestigial part of the D&D system, but I think they're actually quite interesting and deserve a bit more love. Now many Powers key specifically off a spell's school, notably Occult Spellcasting and my Goblinoid's race, hopefully making them more interesting and useful! Magic, as it has been "put under the knife", keeps both the traditional spell school names, and modern names.

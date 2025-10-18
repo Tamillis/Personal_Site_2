@@ -17,12 +17,13 @@ But Trinitas offers a *lot* of differences both fine-tune and broad in nature: w
 Welcome to Trinitas.
 
 - [Character Creation](/trinitas/character-creation) - a walkthrough of what makes a character in the Trinitas system through race, background and role.
-- [Core Rolls & Statistics](/trinitas/skills) - how task resolution works and the Statistics Trinitas uses to interact with the world
+- [Core Rolls & Statistics](/trinitas/core-rolls) - how task resolution works and the Statistics Trinitas uses to interact with the world
 - [Role & Power Progression](/trinitas/role) - introduction to the classless and leveless system of Trinitas, what Powers are and how Progression works.
 - [Power Progression](/trinitas/powers) - how characters progress in Trinitas is tied to their growth in Powers, which is a steady process thanks to the Powers In Training system
 - [Combat & Actions](/trinitas/combat) - Trinitas uses a combat system based on simulteneaty and single actions, for fast, tactical and cooperative combat.
 - [Magic](/trinitas/magic) **&** [Spells](/trinitas/spells) - a very familiar, if reimagined, spellcasting system, where each sphere of magic works in its own way
-- [Equipment](/trinitas/equipment) - incorporating the best of "Weapons Remastered, Revised" whose author I cannot find, and my own setting's emphasis on gunpowder weapons, as well as alchemical items and magical runes.
+- [Skills](/trinitas/skills) - the skills a character has trained and practiced in to make them better at certain actions, granting their Bonus to their Checks.
+- [Equipment](/trinitas/equipment) - incorporating the best of "Weapons Remastered, Revised" whose author I cannot find, and my own setting's emphasis on gunpowder weapons, as well as alchemical items and magical runes. WIP general equipment.
 
 ### Game Terms
 Note that all in-game terms as defined in Trinitas are capitalised, like 'Action', and that a corresponding entry in the Index (a WIP) can be quickly found, but not necessarily all capitalised words are in-game terms. If I get the implementation going, each term's index entry will be quickly visible via pop-up, automatic highlighting etc.
