@@ -42,7 +42,8 @@ A spell notes:
 - **School** - the spell school of the spell
 - **Ritual** - whether the spell is a Ritual or not.
 - **Range** - the range of the effect in the description  (I'm in the process of incorporating this properly in that description so in the future this will be removed)
-- **Components** - V S M (see Spell Details)
+- **Verbal** - whether the spell require words to be spoken to cast. If you are Silenced, you cannot cast this spell.
+- **Somatic** - whether the spell requires gestures to be made to cast. If you are Immobilised or your hands (or equivalent) are bound etc., you cannot cast this spell.
 - **Materials** - the material catalyst or sacrifice needed to cast the spell.
 - **Consumes** - whether the spell consumes a gold-cost of material. (I'm in the process of changing this and Materials to more sensibly reflect the concept of Catalyst and Sacrifice)
 - **Gold Cost** - see above
@@ -247,6 +248,14 @@ Due to its rarity and difficulty for mortal humanoids to wrap their linear minds
 ### Meta-Magic
 Powerful magic-users take pride in their ability to bend magic and spells to their needs, using techniques known as "Meta-Magic". The specific kinds of meta magic abilities are listed below:
 
-| Meta-Magic | Effect |
+| Meta-Magic | Requirement | Effect |
 | --- | --- |
-| Careful Spell | When you cast a spell that forces other characters to make a Save, you can protect some of those characters from the spell's full force. Choose a number of those characters up to your Magic Stat. Chosen characters automatically succeed on their Save. You can do this your Magic Stat number of times per Long Rest. |
+| Careful Spell | Willpower +1 | When you cast a spell that forces other characters to make a Save, you can protect some of those characters from the spell's full force. Choose a number of those characters up to your Magic Stat. Chosen characters automatically succeed on their Save. You can do this your Magic Stat number of times per Long Rest. |
+| Distant Spell | Reflexes +1 | When you cast a spell that has a range of 5ft or greater, you can double the range of the spell. When you cast a spell that has a range of touch, you can make the range of the spell 30ft. You can do this your Magic Stat number of times per Long Rest. |
+| Empowered Spell | Willpower +1 | When you roll a 1 or 2 on a damage die for a Spell, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. You can do this your Magic Stat number of times per Long Rest. |
+| Extended Spell | Fortitude +1 | When you cast a spell that has a duration of 1 minute or longer, you can double its duration to a maximum of 24 hours. You can do this your Magic Stat number of times per Long Rest. |
+| Homing Spell | Reflexes +1 |
+| Quickened Spell | Reflexes + 1 | When you cast a spell that has a casting time of an Action, you can change the casting time to a Bonus Action for this casting. You can do this your Magic Stat number of times per Long Rest. |
+| Subtle Spell | | |
+| Transient Spell | | |
+| Vampiric Spell | You can reap life energy from Living Creatures: Beasts, Dragons, Fell, Fey, Giants, Lycanthropes, Monstrosities, Oozes, or Plants. When you damage one with a spell, you gain Temporary Health equal to twice the spell's Magnitude, or three times its Magnitude if the spell belongs to the School of Necromancy. You can do this your Magic Stat number of times per Long Rest. |
