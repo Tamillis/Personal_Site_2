@@ -13,6 +13,23 @@ This does imply a sort of two-tier approach for professions: item producing prof
 ## Gathering
 That said, the "skill" of gathering professions is more A: the ability to successfully harvest the resource (which most of the time should be automatic, and when interesting, a single skill check), and B: everything else which the exploration pillar of regular play entails (prospecting, hauling etc.), and not necessarily a system to be simulated and gamified (most likely poorly, given the scope of such an activity).
 
+## Engineering
+
+Tinkerer Power:
+
+You gain proficiency with in the Engineering Skill. Using Tinkerer's tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (1 Health, 5 Defence). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your Action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose one of the following options:
+
+- Clockwork Toy. This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents.
+- Fire Starter. The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
+- Music Box. When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.
+- Alarm: This device senses when a charater moves to within 15ft of it without speaking aloud a password chosen when you create it. One round after a character moves into range, the alarm makes a shrill ringing that lasts for 1 minute and can be heard from up to 300ft away.
+- Mechanical Calculator: This device makes doing sums trivial.
+- Lifter: This device can be used as a block and tackle, allowing its user to hoist five times the weight the user can normally lift.
+- Timekeeper: This pocket watch keeps accurate time.
+- Weather Sensor: When used as an action, this device predicts weather conditions in a 1-mile radius over the next 4 hours, showing one symbol (clouds, sun/moon, rain, or snow) for each hour
+
+At your DM's discretion, you may make other objects with effects similar in power to these. The Prestidigitation cantrip is a good baseline for such effects.
+
 ## Blacksmithing
 As the ur system, and first tree to use as a basis for system creation. Start with armour and weapons. The core of much of D&D's items anyway. I don't really see a reason to separate them into Weapon and Armour Smithing beyond maybe some Powers-based bonuses.
 

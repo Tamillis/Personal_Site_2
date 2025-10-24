@@ -249,13 +249,13 @@ Due to its rarity and difficulty for mortal humanoids to wrap their linear minds
 Powerful magic-users take pride in their ability to bend magic and spells to their needs, using techniques known as "Meta-Magic". The specific kinds of meta magic abilities are listed below:
 
 | Meta-Magic | Requirement | Effect |
-| --- | --- |
+| --- | --- | --- |
 | Careful Spell | Willpower +1 | When you cast a spell that forces other characters to make a Save, you can protect some of those characters from the spell's full force. Choose a number of those characters up to your Magic Stat. Chosen characters automatically succeed on their Save. You can do this your Magic Stat number of times per Long Rest. |
 | Distant Spell | Reflexes +1 | When you cast a spell that has a range of 5ft or greater, you can double the range of the spell. When you cast a spell that has a range of touch, you can make the range of the spell 30ft. You can do this your Magic Stat number of times per Long Rest. |
 | Empowered Spell | Willpower +1 | When you roll a 1 or 2 on a damage die for a Spell, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. You can do this your Magic Stat number of times per Long Rest. |
 | Extended Spell | Fortitude +1 | When you cast a spell that has a duration of 1 minute or longer, you can double its duration to a maximum of 24 hours. You can do this your Magic Stat number of times per Long Rest. |
-| Homing Spell | Reflexes +1 |
+| Homing Spell | Reflexes +1 | When you cast a spell that requires you to make a spell attack roll you can target the character's Stationary Defence, or if you cast a spell that makes the character take a Reflex Save, you can make them do so with Disadvantage. In either case, you can ignore the effects of cover. You can do this your Magic Stat number of times per Long Rest. |
 | Quickened Spell | Reflexes + 1 | When you cast a spell that has a casting time of an Action, you can change the casting time to a Bonus Action for this casting. You can do this your Magic Stat number of times per Long Rest. |
-| Subtle Spell | | |
-| Transient Spell | | |
-| Vampiric Spell | You can reap life energy from Living Creatures: Beasts, Dragons, Fell, Fey, Giants, Lycanthropes, Monstrosities, Oozes, or Plants. When you damage one with a spell, you gain Temporary Health equal to twice the spell's Magnitude, or three times its Magnitude if the spell belongs to the School of Necromancy. You can do this your Magic Stat number of times per Long Rest. |
+| Subtle Spell | Fortitude +1 | When you cast a spell, you can cast it without any somatic or verbal components. You can do this your Magic Stat number of times per Long Rest. |
+| Transmuted Spell | Fortitude +1 | When you cast a spell that deals acid, cold, fire, lightning, poison, or psychic damage, you can change that damage type to one of the others. You can do this your Magic Stat number of times per Long Rest. |
+| Vampiric Spell | Willpower +1 | You can reap life energy from Living Creatures: Beasts, Dragons, Fell, Fey, Giants, Lycanthropes, Monstrosities, Oozes, or Plants. When you damage one with a spell, you gain Temporary Health equal to twice the spell's Magnitude, or three times its Magnitude if the spell belongs to the School of Necromancy. You can do this your Magic Stat number of times per Long Rest. |

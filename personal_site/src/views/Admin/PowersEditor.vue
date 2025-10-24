@@ -20,7 +20,13 @@
             </div>
             <div class="input-container">
                 <label for="tag" class="q-label">Tags</label>
-                <input type="text" id="tag" name="tag" class="q text-entry grow" v-model="tags" placeholder="Tags...">
+                <input type="text" id="tag" name="tag" class="q text-entry grow" v-model="tags" placeholder="Tags..." list="existing-tags">
+                <datalist id="existing-tags">
+                    <option v-for="tag in unusedTags">{{ tag }}</option>
+                </datalist>
+            </div>
+            <div class="input-container">
+                <small>{{ unusedTags.join(", ") }}</small>
             </div>
             <div class="input-container">
                 <label for="preq" class="q-label">Prerequisites</label>
@@ -117,7 +123,7 @@
 import SkillSelector from './Components/SkillSelector.vue';
 import PowerCard from './Components/PowerCard.vue';
 
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 
 const serverMsg = ref("");
 const powerTitle = ref();
@@ -159,6 +165,17 @@ const statMaxes = ref({
 });
 const isNew = ref(true); //used to switch between POST and PUT
 const powers = ref([]);
+
+const unusedTags = computed(() => {
+    let allTags = Array.from(new Set(powers.value.flatMap(p => p.tag))).sort();
+    let takenTags = tags.value.split(",").map(t2 => t2.toLowerCase().trim());
+    console.log(takenTags);
+    let remainingTags = allTags.filter(t => !takenTags.includes(t.toLowerCase()));
+
+    console.log(remainingTags)
+
+    return remainingTags;
+})
 
 getPowers();
 
