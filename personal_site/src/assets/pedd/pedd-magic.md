@@ -25,7 +25,29 @@
 
 
 ## Rules of Magic
-Trinitas has 4 Spellcasting Powers, Pact Magic and various Spell-granting Powers that give characters access to fantasy magic Spells which are special actions, pieces of magic, with a myriad of effects both active and passive. Magic is almost limitless in what it can do, as you can see in the range of [Spells](/trinitas/spells) adapted to the Trinitas system so far.
+Trinitas has your archetypical fantasy magic accessed through 4 Spellcasting Powers, the Pact Magic Power and various Spell-granting or Spell-Like Powers. 
+
+Spells are special actions, pieces of magic, that have a myriad of effects both active and passive enabling a character to affect the world in wonderous and unique ways. Magic is almost limitless in what it can do.
+
+The specific spells of Trinitas are based on the 2024 D&D SRD spell list, plus and minus spells and reworded and rework descriptions which you can see at [Spells](/trinitas/spells). (Up to Magnitude III so far)
+
+### Spells
+A spell notes:
+
+- **Name**
+- **Magnitude** - the minimum magnitude the spell can be cast at. Most spells include scaling effects when up-cast at higher magnitudes.
+- **Casting** - whether a spell requires an Action, a Bonus Action, or a ritual of a certain length of time (such as 1 minute), in order to cast.
+- **Duration** - the duration of the effect in the description (I'm in the process of incorporating this properly in that description so in the future this will be removed)
+- **Concentration** - whether the spell requires the magic user to enter the Concentration Condition.
+- **School** - the spell school of the spell
+- **Ritual** - whether the spell is a Ritual or not.
+- **Range** - the range of the effect in the description  (I'm in the process of incorporating this properly in that description so in the future this will be removed)
+- **Components** - V S M (see Spell Details)
+- **Materials** - the material catalyst or sacrifice needed to cast the spell.
+- **Consumes** - whether the spell consumes a gold-cost of material. (I'm in the process of changing this and Materials to more sensibly reflect the concept of Catalyst and Sacrifice)
+- **Gold Cost** - see above
+- **Spheres** - what Spheres have access to this spell
+- **Description** - what the spell actually does.
 
 ### Spheres of Magic and Spellcasting
 Magic is split into 4 “Spheres of Magic”: Arcane, Divine, Primal and Occult which has an associated "Spellcasting" Power each.
@@ -95,9 +117,10 @@ Some Powers grant "spell-like" abilities where the effect of the Power is the sa
 
 Each Spellcasting Power, and Pact Magic, denotes its Source. Pact Magic is known, among certain circles, to be sourced from their patron who themselves can be of any of the spheres, and thus each practitioner can be expected to use wildly different magic to the other.
 
-### The Arcane Sphere and Spellbooks
+### The Arcane Sphere
 Arcane magic practitioners, commonly called wizards, are your typical learned mage. They collect a large repertoire of Prepared spells in their iconic item: the Spellbook. Through intense study they can memorise the immense complexities of a select few spells in their book each day, preparing as they think they will need from their repertoire on a day per day basis. Famously, wizards are known to copy and invent spells.
 
+#### Spellbooks
 Arcane magic is used through the Arcane Spellcasting Power, which is centered around the Spellbook and the filling of that book with Spells by copying or creating them. That section of the Power is transcribed here for reference:
 
 **Spellbook** - You have a spellbook containing six 1st-Magnitude arcane spells of your choice. Your spellbook is the repository of the spells you know, except your Innate spells, which are fixed in your mind. You can add to your spellbook through two methods: spell invention or by copying spells you encounter in your adventures. Spell invention is a Downtime Activity, where you 'invent' a spell of your choice from the Arcane Sphere spell list.
@@ -220,3 +243,10 @@ Magic that manipulates the aspects and forms of physical things, including life,
 
 ### Entropic Magic
 Due to its rarity and difficulty for mortal humanoids to wrap their linear minds around, a domain of magic as yet not enshrined in a school is Entropic Magic – the manipulation of time and space, creating fields and zones of alternate time (frozen, changed rate, unwinding) and alternate space (different relational properties, different dimensions, different causalities). The only field of Entropic magic with any level of understanding are Portals, and even then they are known for the difficulty and danger.
+
+### Meta-Magic
+Powerful magic-users take pride in their ability to bend magic and spells to their needs, using techniques known as "Meta-Magic". The specific kinds of meta magic abilities are listed below:
+
+| Meta-Magic | Effect |
+| --- | --- |
+| Careful Spell | When you cast a spell that forces other characters to make a Save, you can protect some of those characters from the spell's full force. Choose a number of those characters up to your Magic Stat. Chosen characters automatically succeed on their Save. You can do this your Magic Stat number of times per Long Rest. |
