@@ -729,16 +729,6 @@
         "desc": "Your healing spells are miraculously more effective. Whenever you use a spell of Magnitude 1 or higher to restore Health to a Character, the Character regains additional Health equal to 2 + the spell's Magnitude. You do not need to Channel Divinity to benefit from this Miracle."
     },
     {
-        "name": "Discovery",
-        "tag": [
-            "background",
-            "social",
-            "exploration"
-        ],
-        "preq": [],
-        "desc": "From the quiet seclusion of extended hermitage, the sudden revelation of a cosmic insight, the convalescence of years of studies or other such momentous personal event, you gain access to a unique and powerful discovery. The exact nature of this revelation depends on the nature of your seclusion. It might be a great truth about the cosmos, God, the ethereal beings of the psychic realm, or the forces of nature. It could be a site that no one else has ever seen. You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history. Work with your GM to determine the details of your discovery and its impact on the campaign."
-    },
-    {
         "name": "Divine Domain",
         "tag": [
             "resource",
