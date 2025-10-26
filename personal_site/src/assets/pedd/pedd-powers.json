@@ -2956,18 +2956,47 @@
         "desc": "You gain the following Tactical Actions:\n\n- **Evasive Footwork** - when you take the Move action, you can spend 1 Focus and roll a d6. You add the number rolled to your Defence until you stop moving. So if you take the Move action in the following Round\/s, the bonus is carried forward.\n- **Feint** - as a Bonus Action, you can choose one character within 5ft of you as your target to Feint against. You then have Advantage on your next Attack roll against that character this Round.\n- **Goad** - as an Action, when a target Character that can see or hear you has an Intelligence Stat, you can attempt to goad the target into attacking you. You must make a Charisma check vs their passive Willpower. On a success, the target has Disadvantage on all attack rolls against targets other than you until the end of the Round."
     },
     {
-        "name": "Troglobite",
+        "name": "Troglodyte",
+        "oldName": "Troglodyte",
         "tag": [
-            "dwarf",
-            "elf",
             "exploration",
             "racial",
             "roll-effecting",
-            "sense",
-            "gnome"
+            "sense"
         ],
-        "preq": [],
-        "desc": "You have Superior Darkvision:\n- You gain the Power Darkvision but to a range of 120ft, instead of 60ft. \n\nHowever, you have Sunlight Sensitivity:\n- You have Disadvantage on attack rolls and Perception checks that rely on sight when you, the target of the attack, or whatever you are trying to perceive is in direct sunlight."
+        "preq": [
+            ""
+        ],
+        "desc": "You have excellent night vision, but sensitivity to sunlight.\n\n- Non-magical darkness is dim-light to you up to a range of 120ft.\n- Dim-light is bright light for you up to a range of 60ft.\n- Bright light is uncomfortable for you.\n- Direct or magical sunlight gives you Disadvantage on attack rolls and Perception checks that rely on sight when you, the target of the attack, or whatever you are trying to perceive is in it.",
+        "repeatable": false,
+        "skills": [],
+        "statChanges": {
+            "acc": 0,
+            "per": 0,
+            "str": 0,
+            "dex": 0,
+            "cha": 0,
+            "int": 0
+        },
+        "resistanceChanges": {
+            "ref": 0,
+            "fort": 0,
+            "will": 0
+        },
+        "secondaryStatChanges": {
+            "faith": 0,
+            "speed": 0,
+            "health": 0,
+            "armour": 0
+        },
+        "statMaxes": {
+            "acc": 5,
+            "per": 5,
+            "str": 5,
+            "dex": 5,
+            "cha": 5,
+            "int": 5
+        }
     },
     {
         "name": "Turn Undead",

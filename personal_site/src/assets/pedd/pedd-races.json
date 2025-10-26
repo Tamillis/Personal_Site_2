@@ -27,14 +27,13 @@
         },
         "tenaciousWill": "You gain proficiency in Willpower Saves.",
         "powers": [
-            "Extra Childhood Language",
+            "Extra Native Language",
             "Prodigy",
             "Natural Aptitude",
             "Determination",
             "Arcane Aptitude",
             "Mana",
-            "Psychic Sense",
-            "Tinkerer"
+            "Psychic Sense"
         ]
     },
     {
@@ -75,7 +74,6 @@
         "powers": [
             "Troglobite",
             "Stout Resiliance",
-            "Stonecunning",
             "Dwarven Toughness",
             "Ancestors of Stone",
             "Squat and Nimble",

@@ -1,29 +1,5 @@
 [
     {
-        "name": "Custom",
-        "desc": "It is up to you to say where you came from, what profession or way of life it was that you kept to before you took on the mantle of your adventuring role.",
-        "stats": [
-            "Any",
-            "Any"
-        ],
-        "skills": [
-            "Any",
-            "Any",
-            "Any",
-            "Any",
-            "Any",
-            "Any"
-        ],
-        "equipment": [
-            "a set of tools (one of your choice)",
-            "3 miscellaneous items worth less than 1gp each",
-            "a set of common clothes",
-            "a trinket (one of your choice that has meaning to your background)",
-            "a pouch containing 3 + 2d6 gp"
-        ],
-        "suggestedPower": "Any"
-    },
-    {
         "name": "Acolyte",
         "desc": "You have spent your life in the service of a temple, god, divine-path or philosophy. You act as an intermediary between the realm of the holy and the mortal world, performing sacred rites and offering sacrifices in order to conduct worshipers into the presence of the divine. You and your adventuring companions can expect to receive free healing and care at places of your worship, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.",
         "stats": [

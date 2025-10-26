@@ -10,7 +10,7 @@
                 <li>Power Ranks and the ability to take a Power more than once</li>
                 <li>Power prerequisites</li>
                 <li>Separate character creation and character sheet</li>
-                <li>Caluclate Health using racial Health Bonus / Health Malus</li>
+                <li>Calculate Health using racial Health Bonus / Health Malus</li>
                 <li>Have Powers that grant stats, skills and other changes do so (in progress via admin)</li>
                 <li>Special handling of Powers that change how Defence is calculated</li>
             </ul>
@@ -264,7 +264,8 @@ function setBackground(bg) {
     if (!bg) chosen.value.backgroundPower = false;
 }
 
-let backgroundPowers = computed(() => powersJson.value.filter(p => p.tag.includes("background")));
+let powerNames = computed(() => powersJson.value.map(p => p.name));
+let backgroundPowers = computed(() => powersJson.value.filter(p => !p.preq.some(item => powerNames.value.includes(item))));
 
 let chooseUpbringing = (upbringing) => {
     chosen.value.upbringingSkill1 = upbringing.skill1;
