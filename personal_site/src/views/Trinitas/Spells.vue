@@ -5,7 +5,7 @@
         <p>All spells officially ported from the 2024 SRD that are currently available to view, and soon in the
             character creator.</p>
         <p>If you wish to use other spells please consult with your GM to convert them as appropriate.</p>
-        <p>Cantrips, Magnitude I and Magnitude II Spells are currently available</p>
+        <p>Cantrips, Magnitude I, II and III Spells are currently available</p>
 
         <div class="flex gap align-center filter-borders">
             <h3>Filter:</h3>
@@ -37,7 +37,7 @@
             <div class="flex gap" v-if="filter.useMagnitudes">
                 <label>Magnitude: </label>
                 <select class="tag-select" v-model="magnitude">
-                    <option v-for="n in 10" :value="n-1">{{ valToMagnitude(n - 1) }}</option>
+                    <option v-for="n in 6" :value="n-1">{{ valToMagnitude(n - 1) }}</option>
                 </select>
             </div>
 
@@ -71,7 +71,7 @@
                 <div>
                     <div>
                         <h4>{{ spell.name }}</h4>
-                        <span>&nbsp;<em>{{ spell.school }}</em></span>
+                        <span>&nbsp;<em>{{ spell.school }}</em> ({{ valToMagnitude(spell.magnitude) }})</span>
                     </div>
                     <p><strong>{{ spell.casting }} {{ spell.range }} {{ spell.components }} <span>{{
                         spell.concentration
@@ -91,7 +91,7 @@
 
 <script setup>
 import { onMounted, ref, computed } from 'vue';
-import spellsData from '../../assets/pedd/pedd-spells.json';
+import spellsData from '../../assets/pedd/trinitas-spells.json';
 import BasePage from './Components/BasePage.vue';
 import CardContainer from './components/CardContainer.vue';
 import { marked } from 'marked';

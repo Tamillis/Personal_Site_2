@@ -96,4 +96,6 @@ This looks like:
 | **Darkness** | Blinded | Disadvantage on PER checks; -5 to passive perception | See normally | See normally (120ft) |
 | **Magical Darkness** | Blinded | Varies by Spell | See normally | See normally (120ft) |
 
+### Familiar
 
+ A character, creature or object you are "Familiar" with means on you have personally met in close physical proximity. Alternatively it can be a character, creature or object you have sufficiently studied through descriptions, histories, pictures etc.
