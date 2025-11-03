@@ -1,17 +1,17 @@
 - [My Programming Journey](#my-programming-journey)
 - [Professional Work](#professional-work)
 - [Github Projects](#github-projects)
-  - [This Site ("Personal Site 2") - ***Vue3*** Demo and General Website Building Expertise](#this-site-personal-site-2---vue3-demo-and-general-website-building-expertise)
-  - [Restful API - the ***PHP*** /api endpoints of this site](#restful-api---the-php-api-endpoints-of-this-site)
-  - [MyTools - ***Vanilla JS*** Expertise](#mytools---vanilla-js-expertise)
+  - [This Site - ***Vue3*** demo](#this-site-personal-site-2---vue3-demo-and-general-website-building-expertise)
+  - [The /api endpoints behind this site - ***PHP*** \& Restful api demo](#restful-api---the-php-api-endpoints-of-this-site)
+  - [MyTools \& TableMaker JS Framework - ***Javascript*** demo](#mytools---vanilla-js-expertise)
   - [PostIt - ***C#*** .NET 8 ASP.NET MVC \& Razor Pages Demo](#postit---c-net-8-aspnet-mvc--razor-pages-demo)
-  - [My own Content Management System - ***Python*** and ***MD*** based](#my-own-content-management-system---python-and-md-based)
+  - [My own Content Management System - ***Python*** \& ***MD*** demo](#my-own-content-management-system---python-and-md-based)
 
 ## My Programming Journey
 
 Over the years I've dabbled in various programming languages and environments. For me it started back in sixth-form when I was 16 where I took my first Computing class that used BASIC as its language of instruction and I was welcomed into the wonderful world of computer programming. Within I learned first to make my form fullscreen and flash random colours. It’s been my way of saying Hello World ever since.
 
-These days my language of professional capability is C#, particularly in the world of .NET (framework & Core) using ASP, where I would train others from near-zero up to business level. In addition to C#, I have managed to drag myself to a level of familiarity with JavaScript (including React, but primarily with Vue which this site is built in), as well as PHP. 
+These days my language of professional capability is C#, particularly in the world of .NET (framework & Core) using ASP, where I would train others from near-zero up to business level. In addition to C#, I have managed to drag myself to a level of familiarity with JavaScript (including React, but primarily with Vue3 which this site is built in), as well as PHP. 
 
 As for my level of HTML and CSS ability, judge that for yourself by this very site!
 
@@ -21,13 +21,7 @@ Below you will find iframes of some sketches written in the handy library of P5J
 
 Professsionally, I've worked as a developer since just before returning to the UK in 2022. If you want to know more about my professional career and personal travels, please see [my about page](/about).
 
-I am the sole developer for Downey Designs Ltd. here in the Jewellery Quarter in Birmingham, ensuring both steady progress and modernisation of the site, new features, bug fixes and system maintenance. A large part of the latter is administration of the remote Windows Server we run through HostingUK, and all other IT tasks here in the office. As such I spend just as much of my time in Visual Studio coding C# for ASP.NET MVC as a I do writing SQLServer queries on the database or updating the front end in my custom Javascript framework. I'm also responsible for managing accounts and access in Microsoft 365 Admin; installing, uninstalling and setting up software and hardware in the office (phones, computers, scanners etc...); and much more.
-
-The main thrust of my role is in creating new and replacement pages for the website (which doubles as our store-front presence as well as internal administraiton platform) from older versions at various stages of .NET history, in order to one-day transition to modern .NET (that would be, at time of writing, .NET9), as well as providing new functionality for the office, our parent company and the stores on the highstreet.
-
-Before this, I worked as a C# trainer at Sparta Global, where I taught others the techniques of development (and automated testing). Working at Sparta Global, as a trainee and primarily as a trainer, I was involved in many demonstration projects for the various cohorts who were producing them to demonstrate their skills practically.
-
-Unfortunately all of the above is not something that can be shown. My SpartaGlobal account has since become inaccessible to me and for security reasons the pricate repo for my current work is not something I will share. As such, I've decided to put together a few publically available demo projects, providing a link to my public github repositories.
+Unfortunately my professional work cannot be easily demonstrated as it is not something that can be shown due to both non-public access and security reasons. My SpartaGlobal account has since become inaccessible to me and for security reasons the pricate repo for my current work is not something I will share. As such, I've decided to put together a few publically available demo projects, providing a link to my public github repositories.
 
 ## Github Projects
 
