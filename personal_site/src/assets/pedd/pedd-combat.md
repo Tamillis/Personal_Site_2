@@ -1,30 +1,11 @@
-- [Combat Rules](#combat-rules)
-  - [One Action All At Once](#one-action-all-at-once)
-  - [Combat Actions](#combat-actions)
-  - [Engagement](#engagement)
-  - [Resolving a Round](#resolving-a-round)
-  - [Mounted Combat](#mounted-combat)
-- [Combat Statistics](#combat-statistics)
-  - [Focus](#focus)
-  - [Health](#health)
-    - [Recovery](#recovery)
-  - [Defence](#defence)
-- [Damage, Dying, Wounds and Rests](#damage-dying-wounds-and-rests)
-  - [Damage](#damage)
-  - [Recovery](#recovery)
-  - [Short and Long Rests, Sleep and Downtime](#short-and-long-rests-sleep-and-downtime)
-  - [Dying and Wounds](#dying-and-wounds)
-  - [Wounds and Major Enemies](#wounds-and-major-enemies)
-  - [Conditions](#conditions)
-  - [Environmental Damage](#environmental-damage)
-  - [Damage Types](#damage-types)
+[T.O.C. todo]
 
 Trinitas combat is a marked step away from typical OCR and D20 combat systems.
 
 I hope you find it tactical, quick, cooperative and above all, dramatic.
 
 ## Combat Rules
-When a fight begins, the game is played by resolving a series of **Rounds** (a dramatically significant period of around 5 seconds) where every character in the combat takes one "Action".
+When a fight begins, the game is played by resolving a series of **Rounds** (a dramatically significant period of around 5 seconds) where every character in the combat takes one **Action**.
 
 ### One Action All At Once
 All characters in a Round of combat have one **Action**, and everyone acts "at once" within the fiction of the game. There is no initiative system or turn order.
@@ -33,7 +14,7 @@ How on Earth does that work? You might be thinking.
 
 For starters, it is a bit of a misnomer. All characters also have access to Bonus Actions, from various Powers and Spells, in addition to their Action, which is best thought of as a sort of quick action talented characters are able to pull off concurrent to their Action.
 
-Movement also does not technically occur at the same time as the other Actions, as it is resolved last (see below), even if it is declared alongside all other Actions in a Round.
+Movement also does not technically occur at the same time as the other Actions, as it is resolved last (see [Move Action](#move-aciton)), even if it is declared alongside all other Actions in a Round.
 
 The main thrust of the system works like this; 
 - The GM declares the intentions of enemies in the scene at the start of a Round, just as their movements would give away what they're about to do. See [Hidden Enemy Action](#hidden-enemy-actions) for when this is not the case.
@@ -45,9 +26,28 @@ When you think about it, most Actions can be resolved simultaneously. Attacks fo
 
 Reactions are a natural part of this cooperative nature of Action decleration - you see that goblin trying to stab your face, so you reactively raise your shield as a Bonus Action, and stab back at it, etc.
 
-Movement, as mentioned, is special in that it is always resolved last: see [Move Action](#move-aciton).
-
 Some players may still be thinking while others already know what they want to do. Resolve the actions of the decided players and their engagements (see [Engagement](#engagement) below) first, and you'll often find the remaining players now know what to do. Otherwise follow the action in whatever order makes the most sense.
+
+### Attack Rolls and Damage Rolls
+Every attack requires either a Roll to hit, or a Roll to save against. If the attack is successful (you hit the enemy, or the enemy fails their save) you deal damage according to the profile of the attack.
+
+The attack will also note what damage roll to make, such as a d6 for a Shortsword. Some attacks, especially spells, have many other effects that can also occur.
+
+Attacks come in five different kinds:
+- **Melee Weapon Attacks** - a Strength check to hit an enemy, using their Defence value as the DC. You deal Strength + the weapon's Damage.
+- **Ranged Weapon Attack** - an Accuracy check to hit an enemy at range, using their Defence value as the DC. You deal Accuracy + the weapon's Damage. If the enemy is in the weapon's Long Range, or another enemy is Engaged with you, you make the attack at Disadvantage.
+- **Area Weapon Attacks** - the enemy makes a save against the DC listed on the weapon. You deal the damage and/or other effects as detailed in the weaopon's description.
+- **Melee Spell Attacks** - a Magic Stat check to hit an enemy, using their Defence value as the DC. You deal the damage and/or other effects as detailed in the spell.
+- **Ranged Spell Attacks** - a Magic Stat check to hit an enemy at range, using their Defence value as the DC. You deal the damage and/or other effects as detailed in the spell. If another enemy is Engaged with you, you make the attack at Disadvantage.
+- **Spell Save Attacks** - the enemy makes a save against the DC listed in the spell. You deal the damage and/or other effects as detailed in the spell.
+
+Damage is subtracted from a damaged character's Health. Once their Health runs out (reaches 0), that character is rendered Unconscious and Dying.
+
+Health is regained through Recovery.
+
+**Improvised Weapons** - A melee or ranged weapon attack can be made using a piece of the environment or non-weapon object. Ask your GM for appropriate statistics to use (such as that of the Club).
+
+**Unarmed Strikes** - a melee weapon attack can be made using your body, using Strength + your Unarmed Fighting skill proficiency, instead of a traditional weapon. The damage is just your Strength (to a minimum of 1).
 
 #### Hidden Enemy Actions
 Only powerful or well-trained enemies will be capable of **Hidden Actions**, where their intentions are not stated by the GM but kept secret. Typically jotted on a slip of overturned paper, until after players commit to their own Actions. Player characters can always attempt to **Discern** enemy moves anyway (see [Tactical Actions](#tactical-actions)), with the GM flipping the paper over and revealing the Action to all players on a success.
@@ -55,32 +55,28 @@ Only powerful or well-trained enemies will be capable of **Hidden Actions**, whe
 #### Initiative Contests
 For any situations where the order of actions matters, the two (or more) characters involved roll off with the most appropriate skill, to see who can get the higher value. For "slow" enemies / mooks the GM will just let the players go first. For example; "I try to grab the bag of gold before him", "OK, you and the white dragon need to make a Sleight of Hand Check to see who can snatch it faster."
 
-**Boosting Initiative** - You can use 1 Focus to add d6 to the roll.
+**Boosting Initiative** - You can spend 1 Focus to add d6 to the roll.
 
 ### Combat Actions
-So what can that one Action can do? Actions any character can perform are split between Core Combat Actions and a variety of Tactical Actions. Note that many are keyed to "an Attack or Action", so if you have more than one attack from the `Extra Attack` power, you can potentially take more than one "action" on your turn. Note there are several Powers that provide further and enhanced Tactical Actions.
+So what can that one Action can do? Actions any character can perform are split between Core Combat Actions, Utility Actions and a variety of Tactical Actions. Note there are several Powers that provide further and enhanced Tactical Actions, such as the power `Skirmishing Tactics`. These categories are for ease of understanding, and have no additional affect other than what each Action says it does.
 
 #### Core Combat Actions
-
 - **Attack** - as an Action, you make your Weapon or Spell Attack/s against characters in reach / range. One Attack Action may involve a number of Attacks on a number of targets depending on the weapon, spell or some Power such as Extra Attack. If multiple targets are all within reach / range and you have multiple Attacks as part of the Attack Action, you may freely choose who to direct attacks at. You make Attack Rolls per Attack. Unless otherwise stated, each Attack Action attack is with lethal intent (see Non-Lethal Strike).
-  - **Unarmed Strike** - a weapon Attack using your body and the Unarmed Fighting skill, instead of a traditional weapon.
-  - **Improvised Strike** - a weapon Attack using a piece of the environment or non-weapon object. Ask your GM for appropriate statistics to use (such as that of the Club).
-  - **Ranged Weapon Attack** - a weapon Attack made at range. If the target is made at Long Range (beyond normal Range), it is made at Disadvantage. If another enemy is Engaged with you, you make the attack at Disadvantage.
-  - **Spell Attack** - you cast a spell as an Action or Bonus Action (see the spell for details). If another enemy is Engaged with you, you make the attack at Disadvantage.
 - **Block** - as a Bonus Action, you raise your shield, or weapon if it has the Block property, to gain the item's Armour bonus to your Defence for this Round. This prevents you using that item as a weapon to attack.
-- **Discern** - as an Attack or Action, you can make a Perception check against one enemy whose has a Hidden Action. If successful (the GM will decide the DC), their Action is no longer hidden and everyone in the combat can know.
 - **Dodge** - as an Action, you make a Reflex Saving Throw and the result (or your Stationary Defence, if that is higher) replaces your Defence value for the rest of the Round.
-- **Go to Cover / Go Prone / Stand** - as a Bonus Action you make yourself Prone, or enter adjacent cover. The Prone condition or being in cover uses Stationary Defence. Prone makes being shot at occur at Disadvantage, and cover is +2/+5 to Defence for half / ¾ cover respectively (see [Conditions](#conditions)). Going from cover or Prone to standing takes a Stand Bonus Action.
+- **Move** - as an Action, you move your Speed along a path of your choice towards a target. See [Move Action](#move-action) for details.
+- **Reload** - as part of an Attack Action, you reload the ammunition from a quiver, case, or other container as part of the attack but you need a free hand. If the weapon is "Slow Loading", a separate Action is necessary.
+
+#### Utility Actions
+- **Discern** - as an Action, you can make a Perception check against one enemy whose has a Hidden Action. If successful (the GM will decide the DC), their Action is no longer hidden and everyone in the combat can know. You can spend 1 Focus to Discen as a Bonus Action.
+-  **Go to Cover / Go Prone / Stand** - as a Bonus Action you make yourself Prone, or enter adjacent cover. The Prone condition or being in cover uses Stationary Defence. Prone makes being shot at occur at Disadvantage, and cover is +2/+5 to Defence for half / ¾ cover respectively (see [Conditions](#conditions)). Going from cover or Prone to standing takes a Stand Bonus Action.
 - **Help** - as an Action, you aid an ally in attacking an enemy within your reach. You feint, distract the target, or in some other way team up to make your ally's attack more effective. If your ally Attacks the target this Round, the first Attack is made with Advantage.
 - **Hide** - as an Action, you make a Stealth check in an attempt to hide from those you are obscured from (in 3/4's cover or out of line of sight), versus a DC of their passive Perception. If you succeed, you gain the benefits of being Hidden: Attacks against you have Disadvantage, and your Attack has Advantage. When you make an Attack, you are no longer Hidden. If you or others Move such that you are no longer obscured, you are no longer Hidden from them.
 - **Interact** - as an Action, you interact, a short series of motions that achieves a simple goal, with something or someone. This includes; giving an unconscious ally a health potion, arranging the runes of a magical interface, frisking a character for weapons, pulling the chains of a pulley, finding a particular page of a book, or creating a rough sketch in the sand
 - **Mount / Dismount** - as an Action, you safely get on or get off a mount within your reach.
-- **Move** - move your Speed along a path of your choice towards a target. See [Move Action](#move-action) for details.
-- **Reload** - you reload the ammunition from a quiver, case, or other container as part of the attack but you need a free hand. If the weapon is "Slow Loading", a separate Attack or Action is necessary.
 - **Use** - as a Bonus Action, you make a single motion to use an item or device. This includes: pulling a lever, pushing a button, drinking a potion readily available, sending a signal (hand, flag, flare etc.), or unlocking a chest with a readily available key.
-
+- 
 #### Tactical Actions
-
 - **Attack of Opportunity** - if an enemy you're Engaged with moves away from you, you can spend 1 Focus to make an attack on them for free, after which they have moved away and are no longer Engaged with you.
 - **Coup de Grâce** - when you make a melee Weapon Attack against an Incapacitated target, don't roll for Damage, instead take each dice you would roll (if any) to be the maximum result.
 - **Disarm** - as an Attack or Action against an enemy in your Reach holding a weapon or shield, you make an attack roll against the enemy's passive Reflexes. If you succeed, you rip the weapon from their grasp and throw it 10ft in a direction of your choice (this does not count as a thrown weapon attack), to the ground at your feet, or equip it an empty hand of yours.
@@ -212,12 +208,7 @@ For example:
 
 Additionally, Cover bonuses apply to Reflex Saves.
 
-## Damage, Dying, Wounds and Rests
-
-### Damage
-After an Attack or other damaging Action occurs to a character, they take the final value calculated away from their Health. Once their Health runs out (reaches 0), that character is rendered Unconscious and Dying.
-
-Health is regained through Recovery, see below.
+## Wounds, Dying and Rests
 
 ### Dying and Death Saves
 When you reach 0 Health, you enter the "Dying" state. You collapse Unconscious, a kind of Condition, and cannot take Actions. Additionally, you gain a rank of the Wounded condition.
