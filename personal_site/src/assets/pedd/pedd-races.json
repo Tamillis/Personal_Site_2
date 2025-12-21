@@ -147,7 +147,7 @@
         "racialFeatures": {
         "draconicAncestry": "You are distantly related to a particular kind of dragon. Choose a type of dragon from the table below; this determines the effect, area and type of your breath weapon.\n\n| Dragon Ancestry | Effect | Area | Save |\n| --- | --- | --- | --- |\n| Black | Acid - 1d10 fire damage on a failed save, and half as much damage on a successful one. | 5ft by 30ft line | Reflex save |\n| Blue | Lightning - 1d10 lightning damage on a failed save, and half as much damage on a successful one. | 5ft by 30ft line | Reflex save |\n| Brass | Sleep - On a failed save, the character falls unconscious for 1 minute. This effect ends for a character if the character takes damage or someone uses an Action to wake it.| 5ft by 30ft line | Willpower save |\n| Bronze | Repulsion - On a failed save, the character is pushed to the nearest free space at the end of the effect's line area. | 5ft by 30ft line | Reflex save |\n| Copper | Slow - On a failed save, the character's speed is halved, and it can't make more than one attack in the Round, and they can use either an Action or a Bonus Action in the Round, but not both. These effects last for 1 minute. The character can repeat the saving throw at the end of each Round, ending the effect on with a successful save. | 5ft by 30ft line | Willpower save |\n| Green | Poison - 1d6 poison damage and suffer the Poison condition on a failed save, or half as much damage on a successful one. | 15ft cone | Fortitude save |\n| Gold | Weaken - On a failed save, the character has disadvantage on Strength-based attack rolls, Strength checks, and Fortitude saving throws for 1 minute. A character can repeat the saving throw at the end of each Round, ending the effect on itself on a success. | 15ft cone | Fortitude save |\n| Red | Fire - 1d10 fire damage on a failed save, and half as much damage on a successful one. | 15ft cone | Reflex save |\n| Silver | Paralyse - on a failed save, the character is paralyzed for the next Round. | 15ft cone | Fortitude save |\n| White | Cold - 1d10 cold damage on a failed save, and half as much damage on a successful one. | 15ft cone | Fortitude save |",
         "breathWeapon": "You can use your Action to exhale primeval draconic energy. When you use your breath weapon, all characters in the area must make a saving throw, the type of which is determined by the Ancestry table above, against the effect described. The DC of the save is 8 + your Fortitude + your Bonus. You may use your breath weapon a number of times equal to your Fortitude (minimum 1). You regain expended uses on a Short Rest.",
-        }
+        },
         "heritagePowers": [
             "Darkvision",
             "Draconic Language",
@@ -164,123 +164,79 @@
     },
     {
         "name": "Goblinoid",
-        "desc": "Goblins are small, squat creatures whose heads are almost too large for their bodies. They have tan skin that has orange and blue highlights that stand out in any terrain and a mouth filled with too many sharp teeth, often riddle with forgotten bits of rotting meat. They use their claw-like nails or crude clubs to attack their foes. Goblins struggle in their manic compulsions, typically towards acquiring shiny things and being vicious. And yet they can, in time, transform from their pitiful selves into Bugbears (powerful ones) or Nilbogs (smart ones), and from there into upright and prideful Hobgoblins.",
+        "desc": "Goblins are small, squat creatures whose heads are almost too large for their bodies. They have tan skin that has orange and blue highlights that stand out in any terrain and a mouth filled with too many sharp teeth. Goblins struggle in their manic compulsions, typically towards acquiring shiny things and being vicious. Goblinoids were created a mistake, but through the gift of stuggle and strife, they became able to adapt and grow: evolving during a single lifetime.  They can transform from their pitiful selves into Bugbears (powerful ones) or Nilbogs (smart ones), and from there into upright and prideful Hobgoblins. Goblins mature quickly, reaching physical maturity at 6 years. If they fail to undergo metamorphosis they do not tend to live long, and finding a goblin older than 35 is rare. Hobgoblin lifetimes, if not cut short by war, are the same as Humans, usually living for 80 years. Goblins and Nilbogs are diminutive, shorter than most halflings, but Bugbears and Hobgoblins evolve to be tall and muscular like any Tuskman.",
         "recommendedStatBoons": ["Accuracy", "Dexterity"],
-        "age": "Goblinoids are born as Goblins and mature quickly, reaching physical maturity at 6 years. If they fail to undergo metamorphosis they do not tend to live long, and finding a goblin older than 35 is rare. Hobgoblin lifetimes, if not cut short by war, are the same as Humans, usually living for 80 years.",
-        "size": [{
-            "desc": "Goblins and Nilbogs are diminutive yet varied, ranging from 2 to 4 feet in height. Your size is Small.",
-            "val": "small"
-        },{
-            "desc": "Bugbears and Hobgoblins stand tall and stooped (in the former) or proud (in the later). Your size is Medium.",
-            "val": "medium"
-        }],
-        "speed": {
-            "desc": "Your base walking speed is 30ft",
-            "val": 30
+        "recommendedStatMalus": "Intelligence",
+        "size": ["Small", "Medium"],
+        "racialFeatures": {
+            "darkVision": "You can see in dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+            "giftOfMaglubiyet": "When you take the Statistic Increase Power, you can choose to evolve. If your new Intelligence is +2 or more, you can evolve from Goblin to Nilbog. If your new Strength is +2 or more, you can evolve from Goblin to Bugbear (becoming Medium Size). If you're already Bugbear or Nilbog, and your Strength and Intelligence are both +2 or more, you can evolve to Hobgoblin.",
+            "furyOfTheSmall": "If you are a Goblin or Nilbog: when you damage a character with an attack or a spell and the character's size is larger than yours, you can cause the attack or spell to deal extra damage to the character. The extra damage equals your Bonus. Once you use this trait, you can't use it again until you finish a Short Rest.",
+            "reversalOfMania": "If you are a Nilbog or Hobgoblin: your days of being subject to your own urges are gone, and you have achieved a discipline of mind that most creatures of the material world find astounding, especially in contrast to normal Goblins. You have Advantage on any Save caused by a spell from the enchantment school of magic. You also have advantage on any further Saves made to end an ongoing enchantment spell's effect.",
+            "longLimbed": "If you are a Bugbear or Hobgoblin: when you make a melee attack, your reach for it is 5ft greater than normal."
         },
-        "darkVision": "You can see in dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
-        "giftOfMaglubiyet": "Goblinoids are born of stuggle and strife, and adapt and grow accordingly. When you take the Statistic Increase Power, you can choose to evolve. If your new Intelligence is +2 or more, you can evolve from Goblin to Nilbog. If your new Strength is +2 or more, you can evolve from Goblin to Bugbear. If you're already Bugbear or Nilbog, and your new Strength and Intelligence are both +2 or more, you can evolve to Hobgoblin. Additionally, you can swap one or both of your Racial Powers for ones you have the prerequisites for when you evolve any time you take the Statistic Increase Power.",
-        "furyOfTheSmall": "If you are a Goblin: when you damage a character with an attack or a spell and the character's size is larger than yours, you can cause the attack or spell to deal extra damage to the character. The extra damage equals your Bonus. Once you use this trait, you can't use it again until you finish a Short Rest.",
-        "reversalOfMania": "If you are a Nilbog: your days of being subject to your own urges are gone, and you have achieved a discipline of mind that most creatures of the material world find astounding, especially in contrast to normal Goblins. You have Advantage on any Save caused by a spell from the enchantment school of magic. You also have advantage on any further Saves made to end an ongoing enchantment spell's effect.",
-        "legacyOfEvolution": "If you are a Nilbog or Bugbear, choose one Racial Power from your previous Evolution to make an inherant racial trait for you. If you are a Hobgoblin, choose two.",
-        "powers": [
+        "heritagePowers": [
             "Keen Senses",
             "Arcane Aptitude",
             "Fleet of Foot",
-            "Natural Camouflage",
+            "Camouflage",
             "Mana",
             "Psychic Sense",
-            "Squat and Nimble",
+            "Nimble",
             "Escape Artist",
-            "Tinkerer",
-            "Reversal of Mania",
-            "Sneaky",
-            "Long-Limbed",
+            "Magical Tinkering",
+            "Stealth Expert",
             "Powerful Build",
-            "Hooked Claws",
+            "Retractable Claws",
             "Martial Heritage"
-        ]
+        ],
+        "heritages": 1
     },
     {
         "name": "Djinn",
-        "desc": "The four fundamental physical forms of the Material Plane - Air, earth, fire, and water, beget the four types of Djinn. Some are direct descendants of actual genies yet resident in the Elemental Braid, while others were born to a bloodline suffused with elemental magic that once again manifests.",
-        "stats": [
-            {
-                "desc": "Any",
-                "val": 2
-            },
-            {
-                "desc": "Any",
-                "val": -1
-            }
-        ],
-        "age": "A typical Djinn has a life span of 120 years",
-        "size": [
-            {
-                "desc": "Human origin Djinn, like Humans, vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.",
-                "val": "medium"
-            },
-            {
-                "desc": "Halflings who contain the touch of the elements also average about 3 feet tall and weigh about 40 pounds. Your size is Small.",
-                "val": "small"
-            }
-        ],
-        "speed": {
-            "desc": "Your base walking speed is 30ft",
-            "val": 30
-        },
+        "desc": "The four fundamental physical forms of the Material Plane - Air, earth, fire, and water, beget the four types of Djinn. Some are direct descendants of actual genies yet resident in the Elemental Braid, while others were born to a bloodline suffused with elemental magic that once again manifests. A Djinn's height and build depend entirely on if they come from a line of Humans, or a line of Halflings, although in both cases the power of the elements seems to extend their typical lifespan by a few decades.",
+        "recommendedStatBoons": ["Dexterity", "Charisma"],
+        "recommendedStatMalus": "Accuracy",
+        "size": ["Small", "Medium"],
         "elementalHeritage": "Choose one of the four elements that is your heritage: Earth, Air, Fire, Water. Depending on your heritage you gain the following benefits:\n\n**Earth**\n - *Earth Walk* - You can move across difficult terrain without expending extra movement if you are using your walking speed on the ground or a floor.\n - *Bludgeoning Resistance* - You have resistance to non-magical bludgeoning damage.\n\n**Air**\n - *Unending Breath* - You can hold your breath indefinitely while you’re not incapacitated.\n - *Lightning Resistance* - You have resistance to lightning damage.\n\n**Fire**\n - *Nimble* - You can move through the space of any character that is of a size larger than yours, and you gain proficiency in Acrobatics or Athletics (your choice). You have Advantage on Athletics or Acrobatics (depending on which you chose) checks to escape being Grappled.\n - *Fire Resistance* - You have resistance to fire damage.\n\n**Water**\n - *Amphibious* - You can breathe air and water.\n - *Slashing Resistance* - You have resistance to non-magical slashing damage.",
-        "powers": [
+        "heritagePowers": [
             "Keen Senses",
-            "Extra Childhood Language",
+            "Extra Native Language",
             "Prodigy",
             "Arcane Aptitude",
             "Mana",
             "Natural Illusionist",
-            "Powerful Build",
             "Darkvision",
             "Fleet of Foot",
-            "Squat and Nimble",
+            "Nimble",
             "Natural Earth Magic",
             "Natural Air Magic",
             "Natural Fire Magic",
             "Natural Water Magic"
-        ]
+        ],
+        "heritages": 1
     },
     {
         "name": "Goliath",
-        "desc": "Goliaths seem to be giantkin humans, and they will tell you in repitition that they're family with the great giants, though the Giants themselves remain tight-lipped. Scholars would argue that such a relation is impossible, as impossible as the union of a man and halfling. Yet they exist, far taller than humans, and honouring the Ordnung in their clans. Though many will note that they're still not within a hairs breadth of the size of even smaller true giants, and that they don't seem to be bound to the elements in any way like the giants, just an affinity for mountains and rock.",
-        "stats": [
-            {
-                "desc": "Any",
-                "val": 2
-            },
-            {
-                "desc": "Strength",
-                "val": 1
-            }
-        ],
-        "age": "Goliaths have lifespans comparable to humans. They enter adulthood in their late teens and usually live 80 years",
-        "size": {
-            "desc": "Goliaths are between 8 and 10ft tall and weigh between 280 and 380 pounds. Your size is Large.",
-            "val": "large"
-        },
-        "speed": {
-            "desc": "Your base walking speed is 30ft",
-            "val": 30
-        },
+        "desc": "Goliaths seem to be giantkin humans, and they will tell you in repitition that they're family with the great giants, though the Giants themselves remain tight-lipped. Scholars would argue that such a relation is impossible, as impossible as the union of a man and halfling. Yet they exist, far taller than humans, and honouring the Ordnung in their clans. Though they have lifespans comparable to humans, they tower over them at 2 and half to 3 metres tall and normally weigh in over 150kg. They don't seem to be bound to the elements in any way like the giants, just an affinity for mountains and rock.",
+        "recommendedStatBoons": ["Strength", "Charisma"],
+        "recommendedStatMalus": "Intelligence",
+        "size": "Large",
+        "racialFeatures": {
         "raceOfAthletes": "Competitions of strength, daring and skill are core to your people. You have proficiency in Athletics.",
-        "stonesEndurance": "You can supernaturally draw on unyielding stone to shrug off harm. When you take damage, you can use your Action to roll a d12. Add your Fortitude to the number rolled and reduce the damage by that total.\n\nYou can use this racial trait a number of times equal to your Bonus, and you regain all expended uses when you finish a Long Rest.",
-        "powers": [
+        "stonesEndurance": "You can supernaturally draw on unyielding stone to shrug off harm. When you take damage, you can use your Action to roll a d12. Add your Fortitude to the number rolled and reduce the damage by that total. You can do this your Bonus number of times per Long Rest."
+        },
+        "heritagePowers": [
             "Mountain Born",
             "Determination",
             "Keen Senses",
             "Long-Limbed",
-            "Menacing",
+            "Intimidating Visage",
             "Natural Earth Magic",
             "Relentless Endurance",
             "Stonecunning",
             "Elemental Affinity"
-        ]
+        ],
+        "heritages": 1
     }
 ]
