@@ -5,6 +5,7 @@ const trinitasPages = [
   "combat", 
   "character-creation", 
   "character-creator", 
+  "character-sheet",
   "core-rolls", 
   "equipment", 
   "skills", 

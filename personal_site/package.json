@@ -7,6 +7,7 @@
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
+    "jsoncrush": "^1.1.8",
     "marked": "^4.1.0",
     "p5": "^1.4.2",
     "three": "^0.144.0",

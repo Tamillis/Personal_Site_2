@@ -15,7 +15,7 @@
 
             <button class="btn mb-1r" @click="openCharacterSheet">Open Character Sheet</button>
 
-            <button class="btn" @click="chosen = blankCharacter">Reset</button>
+            <a class="btn" :href="getUrlFromCharacter(chosen)">Reset</a>
 
             <hr />
 
@@ -114,6 +114,8 @@
 
 <script setup>
 import { ref, computed } from "vue";
+import jsoncrush from "JSONCrush"
+import Character from "../../assets/pedd/character.js";
 
 import BasePage from './Components/BasePage.vue';
 import PowerContent from "./Components/PowerContent.vue";
@@ -191,42 +193,27 @@ function setSection(section) {
 //makes loops update correctly even though vue documentation says the ref and computed stuff should automatically update (it doesn't)
 let key = ref(0);
 
-let blankCharacter = {
-    name: "",
-    concept: "",
-    bonds: "",
-    ideals: "",
-    flaws: "",
-    faith: false,
-    race: "",
-    anyRaceStats: false,
-    racialPowers: [],
-    background: "",
-    backgroundPower: "",
-    upbringingSkill1: "Acrobatics",
-    upbringingSkill2: "Alchemy",
-    upbringingLanguage: "Common",
-    roleStatMajor: "Accuracy",
-    roleStatMinor: "Perception",
-    rolePowers: [],
-    roleSkills: [],
-    equipmentCollection: null,
-    pack: "None",
-    armour: 0,
-    helmet: 0,
-    shield: 0,
-    reflexLimit: 99,
-    imgSrc: "",
-    pip: ""
-};
-
 //NOTE: can use url saving like I planned, or if the JSON gets too dense and therefore the url is too long, could experiment with downloading and uploading JSON purely through the frontend:
 // https://stackoverflow.com/questions/23344776/how-to-access-data-of-uploaded-json-file
 
-//TODO: convert as much as possible to use simple int/key id's to ideally compress the url
-//TODO: change "saved" to "c" (not doing right now because of conflict issues) and use w/e I found last time who knows
-let decodeUrl = new URLSearchParams(window.location.search).get("saved");
-let chosen = ref(decodeUrl ? JSON.parse(atob(decodeUrl)) : blankCharacter);
+
+function getCharacterFromUrl(url) {
+    let c = new URLSearchParams(new URL(url).search).get("c");
+    return c ? Object.assign(new Character(), JSON.parse(jsoncrush.uncrush(c))) : new Character();
+}
+
+function getUrlFromCharacter(character) {
+    if(!character) character = chosen.value;
+
+    if(!(character instanceof Character)) throw Error("AAAAA character isn't a Character object:" + JSON.stringify(character));
+
+    let c = encodeURIComponent(jsoncrush.crush(JSON.stringify(character)));
+    return new URL(window.location.origin + "/CharacterSheet?c=" + c).href;
+}
+
+let chosen = ref(getCharacterFromUrl(window.location.href));
+console.log("chosen", chosen.value);
+
 let allChosenPowers = computed(() => [...chosen.value.racialPowers, chosen.value.backgroundPower, ...chosen.value.rolePowers].sort());
 
 //race any stat selections
@@ -394,8 +381,7 @@ let player = computed(() => {
     p.imgSrc = chosen.value.imgSrc;
 
     //encode chosen into url for easy saving and sharing
-    let saved = btoa(JSON.stringify(chosen.value));
-    history.pushState({}, null, new URL(window.location.href.split("?")[0] + "?saved=" + saved));
+    history.pushState({}, null, getUrlFromCharacter(chosen.value));
 
     //TODO: switch chosen to just use id's, i.e. names, for race and powers to reduce encoded size and maybe even just stop using btoa
     return p;

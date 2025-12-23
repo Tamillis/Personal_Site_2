@@ -1,4 +1,4 @@
-class Character {
+export default class Character {
     constructor() {
         this.name = "";
         this.secret = "";

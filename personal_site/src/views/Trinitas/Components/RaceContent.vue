@@ -2,59 +2,42 @@
 	<div>
 		<h4>Description:</h4>
 		<p>{{ race.desc }}</p>
-		<h4>Stats:</h4>
+		<h4>Recommended Stat Boons:</h4>
 		<ul>
-			<li v-for="(stat) in pureStats">
-				<p style="margin: 0">
-					{{ stat.desc }} <span>{{ stat.val >= 0 ? "+" + stat.val : stat.val }}</span>
-				</p>
-			</li>
-			<li v-for="(stat, i) in currentAnyStats">
-				<AnyStatSelector :val="stat.val" :initialStat="stat.desc" @stat-chosen="chosenStat => anyStatChosen(chosenStat, stat.val, i)" />
+			<li v-for="(stat) in race.recommendedStatBoons">
+				<p style="margin: 0">{{ stat }}</p>
 			</li>
 		</ul>
-		<h4>Age:</h4>
-		<div v-html="marked.parse(race.age)"></div>
+		<h4>Recommended Stat Malus</h4>
+		<ul>
+			<li>{{ race.recommendedStatMalus }}</li>
+		</ul>
 		<h4>Size:</h4>
 		<div v-if="Array.isArray(race.size)">
-			<div v-for="size in race.size" class="flex align-centre pl-r gap">
-				<input type="radio" name="raceSize" :value="size.val" class="radioQ">
-				<p style="text-indent: 0px;">{{ size.desc }}</p>
-			</div>
+			<ul>
+				<li v-for="size of race.size">{{ size }}</li>
+			</ul>
 		</div>
-		<div v-else v-html="marked.parse(race.size.desc)"></div>
-		<h4>Speed:</h4>
-		<div v-html="marked.parse(race.speed.desc)"></div>
-		<div v-for="extra in racialFeatures">
-			<h4>{{ format(extra) }}:</h4>
-			<div v-html="marked.parse(race[extra] ?? '')"></div>
+		<div v-else v-html="marked.parse(race.size)"></div>
+
+		<div v-for="(desc, rf) in race.racialFeatures">
+			<h4>{{ format(rf) }}:</h4>
+			<div v-html="marked.parse(desc ?? '')"></div>
 		</div>
+
+		<h4>Heritage Powers <small>(choose {{ race.heritages }})</small></h4>
+		<ul>
+			<li v-for="power of race.heritagePowers.sort()">{{ power }}</li>
+		</ul>
 	</div>
 </template>
 
 <script setup>
 import { marked } from "marked";
 import { format } from "../../../assets/functionality";
-import { ref, computed } from "vue";
-import AnyStatSelector from "./AnyStatSelector.vue";
 
-const props = defineProps(["race", "chosenAnyStats"]);
-const emit = defineEmits(["selectedStats"]);
+const props = defineProps(["race"]);
 
-let standardHeadings = ["name", "desc", "stats", "baseHealth", "age", "size", "speed", "senses", "powers"];
-
-let racialFeatures = computed(() => Object.keys(props.race).filter(key => !standardHeadings.includes(key)));
-
-const pureStats = computed(() => props.race.stats.filter(s => s.desc !='Any'));
-
-//chosenAnyStats of the form [{desc, val},{desc,val}...] ... defaults will be passed in.
-const currentAnyStats = computed(() => props.chosenAnyStats ? props.chosenAnyStats : props.race.stats.filter(stat => stat.desc == "Any"));
-
-function anyStatChosen(stat, val, n) {
-	currentAnyStats.value[n] = { desc: stat, val: val };
-
-	emit("selectedStats", currentAnyStats.value);
-}
 </script>
 
 <style lang="css" scoped>

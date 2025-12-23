@@ -2,13 +2,17 @@
     {
         "name": "Human",
         "desc": "Humans represent the best and worst of civilization, and every other part of the spectrum, and are known primarily for their short lives, their industriousness and creative machines, and their lasting social institutions. Humans reach adulthood after their mid teens and have a typical lifespan of 80 years. For Medium Size creatures, Humans can range widely in height and build to not much taller than a halfling, to well over 2 metres tall.",
-        "recommendedStatBoons":  ["Dexterity", "Charisma"],
+        "recommendedStatBoons": [
+            "Dexterity",
+            "Charisma"
+        ],
         "recommendedStatMalus": "Perception",
         "size": "Medium",
         "racialFeatures": {
             "tenaciousWill": "You gain proficiency in Willpower Saves.",
-            "determination": "Once per Short Rest, when you make an attack roll, an ability check, or a saving throw, you can do so with Advantage."},
-        "heritageOptions": [
+            "determination": "Once per Short Rest, when you make an attack roll, an ability check, or a saving throw, you can do so with Advantage."
+        },
+        "heritagePowers": [
             "Extra Native Language",
             "Prodigy",
             "Arcane Aptitude",
@@ -22,7 +26,10 @@
     {
         "name": "Dwarf",
         "desc": "These stocky folk, , of all the races that shun the sun have no weakness to it. Dwarves mature slower than humans, reaching majority in their 30's, and on average live about 350 years. They are of a height between Humans and Halflings, and heavier than both. They're renowned smiths and artisans with clever fingers many shards-over, tall prides and long grudges including a traditional burning hatred for drow. They do have a strong sense of commitment to family or clan, or whatever the stand-in for that is for a given Dwarf.",
-        "recommendedStatBoons": ["Accuracy", "Strength"],
+        "recommendedStatBoons": [
+            "Accuracy",
+            "Strength"
+        ],
         "recommendedStatMalus": "Charisma",
         "size": "Medium",
         "racialFeatures": {
@@ -42,13 +49,16 @@
     {
         "name": "Elf",
         "desc": "Elves are a ethereal people, long-lived and a reflection of the pre-world that moulded them. The Fey drifted to one of two broad fates after returning to the material world - living in places of natural beauty and terrible primalcy; or to the courts and intrigues of mortal cities and the soft music, poisoned wine and hidden daggers of the courts. These Elves came to be called Wild Elves and Grey Elves, respectively. Both kinds are considered 'waifish' by human standards, standing as tall or taller than them. Although elves reach physical maturity around the same as humans (unless the elfling doesn't wish to group up yet), the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. A wild elf typically claims adulthood and an adult name around the age of 100 and can live for a millenium or more, depending on how intertwined with nature they are. More urbane Elves seems to share lifespans of 'only' a few centuries similar to Dwarves.",
-        "recommendedStatBoons": ["Perception", "Charisma"],
+        "recommendedStatBoons": [
+            "Perception",
+            "Charisma"
+        ],
         "recommendedStatMalus": "Strength",
         "size": "Medium",
         "racialFeatures": {
             "keenSight": "Your sight is better; seeing further and clearer than other races. When using this sense, treat your Perception as 1 higher, to a maximum of 6.",
-            "feyAncestry": "You have Advantage on saving throws against being Charmed. Additionally, you cannot sleep and magic can't put you to Sleep. To gain the benefit of 8 hours of Sleep, you must medititate deeply, remaining conscious but unobservant for 4 hours.",
-        }
+            "feyAncestry": "You have Advantage on saving throws against being Charmed. Additionally, you cannot sleep and magic can't put you to Sleep. To gain the benefit of 8 hours of Sleep, you must medititate deeply, remaining conscious but unobservant for 4 hours."
+        },
         "heritagePowers": [
             "Darkvision",
             "Troglodyte",
@@ -61,18 +71,21 @@
             "Mana",
             "Natural Illusionist"
         ],
-            "heritages": 1
+        "heritages": 1
     },
     {
         "name": "Gnome",
         "desc": "Busy activity pervades the warrens and neighborhoods host to gnomes. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor magical explosion there, a yelp of surprise, and especially bursts of laughter and cries of 'Eureka'! Gnomes mature at the same rate as humans, and most that reach old age live to 350 years on average, but it's not too uncommon for their drive for new experiences to have tragic consequences. Gnomes are smaller than halflings on average, and weigh around 20 kilos.",
-        "recommendedStatBoons": ["Intelligence", "Dexterity"],
+        "recommendedStatBoons": [
+            "Intelligence",
+            "Dexterity"
+        ],
         "recommendedStatMalus": "Strength",
         "size": "Small",
         "racialFeatures": {
             "gnomeCunning": "Magic and formulae comes to your people easily, and can be just as easily refuted. You have Advantage on all Willpower saves against memetics and magic",
-            "chromopalsy": "If you go 24 hours without experiencing something new, you have Disadvantage on all Willpower saves against resisting temptations, be they from the world, charms of a creature or effects of a spell or spell-like effect.",
-        }
+            "chromopalsy": "If you go 24 hours without experiencing something new, you have Disadvantage on all Willpower saves against resisting temptations, be they from the world, charms of a creature or effects of a spell or spell-like effect."
+        },
         "heritagePowers": [
             "Darkvision",
             "Fey Ancestry",
@@ -90,12 +103,15 @@
             "Mana",
             "Troglodyte"
         ],
-            "heritages": 2
+        "heritages": 2
     },
     {
         "name": "Halfling",
         "desc": "Humans call them Halflings, but they call themselves 'The Little People' in their own language, which by-and-large they keep secret. They are ubiquitous, sometimes more so even than humans, working side by side with their taller compatriots covetting and espousing the comforts of home. Like humans, they typically mature after their mid teens and live on avergage for 80 years. Halflings are well-known for their uncanny good luck, and their loyalty to their friends; no matter in what shape or size they come. They themselves average about a metre and weigh about 25 kilos.",
-        "recommendedStatBoons": ["Perception", "Dexterity"],
+        "recommendedStatBoons": [
+            "Perception",
+            "Dexterity"
+        ],
         "size": "Small",
         "racialFeatures": {
             "lucky": "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die. You must use the new result, even if it is a 1.",
@@ -116,11 +132,14 @@
     {
         "name": "Tuskman",
         "desc": "The curse of Gruumsh and the raging Legions of Terror are now old enough to be more myth than legend, but even now their mark, and the spectre of still-raving cousins, marks orcs in eyes of society. Today Orcs that can keep their 'Red Rage' at bay call themselves Tuskmen, seeing 'Orc' as a slur. They join civilized society or form more communities of their own, but always they fight against their legacy. Due to this, they often value restraint and intellectual debate despite their natural inclination for Strength. Tuskmen mature faster than humans, reaching adulthood around age 14, and they age noticeably faster and rarely live longer than 60 years. On averge, they are larger and bulkier than humans, and they are normally more than 2 metres tall.",
-        "recommendedStatBoons": ["Strength", "Intelligence"],
+        "recommendedStatBoons": [
+            "Strength",
+            "Intelligence"
+        ],
         "recommendedStatMalus": "Dexterity",
         "size": "Medium",
         "racialFeatures": {
-                "redRage": "Even now your people bear Grummsh' mark, and though any Tuskman can throw off the yolk, sometimes they choose to indulge. You gain one additional Heritage than normal, but you must take one of: Bullrush, Intimidating Visage, Rage, Relentless Endurance, Savage Attacks or Savage Magic.",
+            "redRage": "Even now your people bear Grummsh' mark, and though any Tuskman can throw off the yolk, sometimes they choose to indulge. You gain one additional Heritage than normal, but you must take one of: Bullrush, Intimidating Visage, Rage, Relentless Endurance, Savage Attacks or Savage Magic."
         },
         "heritagePowers": [
             "Extra Native Language",
@@ -143,10 +162,13 @@
     {
         "name": "Dragonborn",
         "desc": "Various dragons over the ages have twisted humanoids into their own likeness, the dragonborn. Those twisted by the dragon's curse gain many physical benefits and magical powers, not least biological immortality, but many revile their visage, the crippling drawbacks unique to each hue, and the dragon madness; that hungering greed - the hollowing emptiness that can never be filled. Young dragonborn grow quickly. They walk days after leaving the pouch, attain the size and development of a 10-year-old human child by the age of 3, and reach physical maturity by 7. Draconic energy sets them apart, and they don't grow old, only slowly increasing in size year by year until death takes them, typically violence from the fearful or starvation from lack of sustanence for the constant growth. As such their height and build can range from a scrawny teen to matching that of a frost giant (although this is exceedingly rare).",
-        "size": ["Small", "Medium"],
+        "size": [
+            "Small",
+            "Medium"
+        ],
         "racialFeatures": {
-        "draconicAncestry": "You are distantly related to a particular kind of dragon. Choose a type of dragon from the table below; this determines the effect, area and type of your breath weapon.\n\n| Dragon Ancestry | Effect | Area | Save |\n| --- | --- | --- | --- |\n| Black | Acid - 1d10 fire damage on a failed save, and half as much damage on a successful one. | 5ft by 30ft line | Reflex save |\n| Blue | Lightning - 1d10 lightning damage on a failed save, and half as much damage on a successful one. | 5ft by 30ft line | Reflex save |\n| Brass | Sleep - On a failed save, the character falls unconscious for 1 minute. This effect ends for a character if the character takes damage or someone uses an Action to wake it.| 5ft by 30ft line | Willpower save |\n| Bronze | Repulsion - On a failed save, the character is pushed to the nearest free space at the end of the effect's line area. | 5ft by 30ft line | Reflex save |\n| Copper | Slow - On a failed save, the character's speed is halved, and it can't make more than one attack in the Round, and they can use either an Action or a Bonus Action in the Round, but not both. These effects last for 1 minute. The character can repeat the saving throw at the end of each Round, ending the effect on with a successful save. | 5ft by 30ft line | Willpower save |\n| Green | Poison - 1d6 poison damage and suffer the Poison condition on a failed save, or half as much damage on a successful one. | 15ft cone | Fortitude save |\n| Gold | Weaken - On a failed save, the character has disadvantage on Strength-based attack rolls, Strength checks, and Fortitude saving throws for 1 minute. A character can repeat the saving throw at the end of each Round, ending the effect on itself on a success. | 15ft cone | Fortitude save |\n| Red | Fire - 1d10 fire damage on a failed save, and half as much damage on a successful one. | 15ft cone | Reflex save |\n| Silver | Paralyse - on a failed save, the character is paralyzed for the next Round. | 15ft cone | Fortitude save |\n| White | Cold - 1d10 cold damage on a failed save, and half as much damage on a successful one. | 15ft cone | Fortitude save |",
-        "breathWeapon": "You can use your Action to exhale primeval draconic energy. When you use your breath weapon, all characters in the area must make a saving throw, the type of which is determined by the Ancestry table above, against the effect described. The DC of the save is 8 + your Fortitude + your Bonus. You may use your breath weapon a number of times equal to your Fortitude (minimum 1). You regain expended uses on a Short Rest.",
+            "draconicAncestry": "You are distantly related to a particular kind of dragon. Choose a type of dragon from the table below; this determines the effect, area and type of your breath weapon.\n\n| Dragon Ancestry | Effect | Area | Save |\n| --- | --- | --- | --- |\n| Black | Acid - 1d10 fire damage on a failed save, and half as much damage on a successful one. | 5ft by 30ft line | Reflex save |\n| Blue | Lightning - 1d10 lightning damage on a failed save, and half as much damage on a successful one. | 5ft by 30ft line | Reflex save |\n| Brass | Sleep - On a failed save, the character falls unconscious for 1 minute. This effect ends for a character if the character takes damage or someone uses an Action to wake it.| 5ft by 30ft line | Willpower save |\n| Bronze | Repulsion - On a failed save, the character is pushed to the nearest free space at the end of the effect's line area. | 5ft by 30ft line | Reflex save |\n| Copper | Slow - On a failed save, the character's speed is halved, and it can't make more than one attack in the Round, and they can use either an Action or a Bonus Action in the Round, but not both. These effects last for 1 minute. The character can repeat the saving throw at the end of each Round, ending the effect on with a successful save. | 5ft by 30ft line | Willpower save |\n| Green | Poison - 1d6 poison damage and suffer the Poison condition on a failed save, or half as much damage on a successful one. | 15ft cone | Fortitude save |\n| Gold | Weaken - On a failed save, the character has disadvantage on Strength-based attack rolls, Strength checks, and Fortitude saving throws for 1 minute. A character can repeat the saving throw at the end of each Round, ending the effect on itself on a success. | 15ft cone | Fortitude save |\n| Red | Fire - 1d10 fire damage on a failed save, and half as much damage on a successful one. | 15ft cone | Reflex save |\n| Silver | Paralyse - on a failed save, the character is paralyzed for the next Round. | 15ft cone | Fortitude save |\n| White | Cold - 1d10 cold damage on a failed save, and half as much damage on a successful one. | 15ft cone | Fortitude save |",
+            "breathWeapon": "You can use your Action to exhale primeval draconic energy. When you use your breath weapon, all characters in the area must make a saving throw, the type of which is determined by the Ancestry table above, against the effect described. The DC of the save is 8 + your Fortitude + your Bonus. You may use your breath weapon a number of times equal to your Fortitude (minimum 1). You regain expended uses on a Short Rest."
         },
         "heritagePowers": [
             "Darkvision",
@@ -160,14 +182,20 @@
             "Cursed",
             "Intimidating Visage"
         ],
-            "heritages": 1
+        "heritages": 1
     },
     {
         "name": "Goblinoid",
         "desc": "Goblins are small, squat creatures whose heads are almost too large for their bodies. They have tan skin that has orange and blue highlights that stand out in any terrain and a mouth filled with too many sharp teeth. Goblins struggle in their manic compulsions, typically towards acquiring shiny things and being vicious. Goblinoids were created a mistake, but through the gift of stuggle and strife, they became able to adapt and grow: evolving during a single lifetime.  They can transform from their pitiful selves into Bugbears (powerful ones) or Nilbogs (smart ones), and from there into upright and prideful Hobgoblins. Goblins mature quickly, reaching physical maturity at 6 years. If they fail to undergo metamorphosis they do not tend to live long, and finding a goblin older than 35 is rare. Hobgoblin lifetimes, if not cut short by war, are the same as Humans, usually living for 80 years. Goblins and Nilbogs are diminutive, shorter than most halflings, but Bugbears and Hobgoblins evolve to be tall and muscular like any Tuskman.",
-        "recommendedStatBoons": ["Accuracy", "Dexterity"],
+        "recommendedStatBoons": [
+            "Accuracy",
+            "Dexterity"
+        ],
         "recommendedStatMalus": "Intelligence",
-        "size": ["Small", "Medium"],
+        "size": [
+            "Small",
+            "Medium"
+        ],
         "racialFeatures": {
             "darkVision": "You can see in dim light within 60ft of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
             "giftOfMaglubiyet": "When you take the Statistic Increase Power, you can choose to evolve. If your new Intelligence is +2 or more, you can evolve from Goblin to Nilbog. If your new Strength is +2 or more, you can evolve from Goblin to Bugbear (becoming Medium Size). If you're already Bugbear or Nilbog, and your Strength and Intelligence are both +2 or more, you can evolve to Hobgoblin.",
@@ -195,9 +223,15 @@
     {
         "name": "Djinn",
         "desc": "The four fundamental physical forms of the Material Plane - Air, earth, fire, and water, beget the four types of Djinn. Some are direct descendants of actual genies yet resident in the Elemental Braid, while others were born to a bloodline suffused with elemental magic that once again manifests. A Djinn's height and build depend entirely on if they come from a line of Humans, or a line of Halflings, although in both cases the power of the elements seems to extend their typical lifespan by a few decades.",
-        "recommendedStatBoons": ["Dexterity", "Charisma"],
+        "recommendedStatBoons": [
+            "Dexterity",
+            "Charisma"
+        ],
         "recommendedStatMalus": "Accuracy",
-        "size": ["Small", "Medium"],
+        "size": [
+            "Small",
+            "Medium"
+        ],
         "elementalHeritage": "Choose one of the four elements that is your heritage: Earth, Air, Fire, Water. Depending on your heritage you gain the following benefits:\n\n**Earth**\n - *Earth Walk* - You can move across difficult terrain without expending extra movement if you are using your walking speed on the ground or a floor.\n - *Bludgeoning Resistance* - You have resistance to non-magical bludgeoning damage.\n\n**Air**\n - *Unending Breath* - You can hold your breath indefinitely while you’re not incapacitated.\n - *Lightning Resistance* - You have resistance to lightning damage.\n\n**Fire**\n - *Nimble* - You can move through the space of any character that is of a size larger than yours, and you gain proficiency in Acrobatics or Athletics (your choice). You have Advantage on Athletics or Acrobatics (depending on which you chose) checks to escape being Grappled.\n - *Fire Resistance* - You have resistance to fire damage.\n\n**Water**\n - *Amphibious* - You can breathe air and water.\n - *Slashing Resistance* - You have resistance to non-magical slashing damage.",
         "heritagePowers": [
             "Keen Senses",
@@ -219,12 +253,15 @@
     {
         "name": "Goliath",
         "desc": "Goliaths seem to be giantkin humans, and they will tell you in repitition that they're family with the great giants, though the Giants themselves remain tight-lipped. Scholars would argue that such a relation is impossible, as impossible as the union of a man and halfling. Yet they exist, far taller than humans, and honouring the Ordnung in their clans. Though they have lifespans comparable to humans, they tower over them at 2 and half to 3 metres tall and normally weigh in over 150kg. They don't seem to be bound to the elements in any way like the giants, just an affinity for mountains and rock.",
-        "recommendedStatBoons": ["Strength", "Charisma"],
+        "recommendedStatBoons": [
+            "Strength",
+            "Charisma"
+        ],
         "recommendedStatMalus": "Intelligence",
         "size": "Large",
         "racialFeatures": {
-        "raceOfAthletes": "Competitions of strength, daring and skill are core to your people. You have proficiency in Athletics.",
-        "stonesEndurance": "You can supernaturally draw on unyielding stone to shrug off harm. When you take damage, you can use your Action to roll a d12. Add your Fortitude to the number rolled and reduce the damage by that total. You can do this your Bonus number of times per Long Rest."
+            "raceOfAthletes": "Competitions of strength, daring and skill are core to your people. You have proficiency in Athletics.",
+            "stonesEndurance": "You can supernaturally draw on unyielding stone to shrug off harm. When you take damage, you can use your Action to roll a d12. Add your Fortitude to the number rolled and reduce the damage by that total. You can do this your Bonus number of times per Long Rest."
         },
         "heritagePowers": [
             "Mountain Born",
