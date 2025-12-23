@@ -1,8 +1,6 @@
 <template>
     <BasePage subtitle="Character Creator">
         <section v-if="ready">
-            <CharacterDisplay :player="player" :haveFaith="chosen.faith" @updateImgSrc="(src) => chosen.imgSrc = src" />
-
             <h4>TODO:</h4>
             <ul>
                 <li>Fix Any Stat selector for races or just move them over to the stat display entirely</li>
@@ -14,7 +12,9 @@
                 <li>Have Powers that grant stats, skills and other changes do so (in progress via admin)</li>
                 <li>Special handling of Powers that change how Defence is calculated</li>
             </ul>
-            <button class="btn mb-1r" @click="copyUrl">Copy to clipboard</button>
+
+            <button class="btn mb-1r" @click="openCharacterSheet">Open Character Sheet</button>
+
             <button class="btn" @click="chosen = blankCharacter">Reset</button>
 
             <hr />
@@ -122,7 +122,6 @@ import CardContainer from "./Components/CardContainer.vue";
 import StatSelector from "./Components/StatSelector.vue";
 import CharacterConcept from "./Components/CharacterConcept.vue";
 import SkillSelector from "./Components/SkillSelector.vue";
-import CharacterDisplay from "./Components/CharacterDisplay.vue";
 import EquipmentTab from "./Components/EquipmentTab.vue";
 import RacialPowers from "./Components/RacialPowers.vue";
 import Upbringing from "./Components/Upbringing.vue";
@@ -225,6 +224,7 @@ let blankCharacter = {
 // https://stackoverflow.com/questions/23344776/how-to-access-data-of-uploaded-json-file
 
 //TODO: convert as much as possible to use simple int/key id's to ideally compress the url
+//TODO: change "saved" to "c" (not doing right now because of conflict issues) and use w/e I found last time who knows
 let decodeUrl = new URLSearchParams(window.location.search).get("saved");
 let chosen = ref(decodeUrl ? JSON.parse(atob(decodeUrl)) : blankCharacter);
 let allChosenPowers = computed(() => [...chosen.value.racialPowers, chosen.value.backgroundPower, ...chosen.value.rolePowers].sort());
