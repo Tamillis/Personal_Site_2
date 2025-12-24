@@ -26,7 +26,7 @@ When PEDD became Trinitas, the various musings on design and justifactions were 
 
 ## Change Log
 
-### XX.10.25
+### October to the end of 2025 work
 In no particular order.
 
 - PEDD is now Trinitas. Much change, very wow. Officially no longer a D&D 5e overhaul, but a standalone game that is intended to be an evolution of 5e. A slew of utility rules currently missing currently such as travel speeds, general equipment, adventuring rules, GM guidance etc. One day, maybe. Hah.
@@ -36,8 +36,254 @@ In no particular order.
 - Invocations moved to Magic page, removed from Powers.
 - Powers massively overhauled, see below.
 
-**Power Changes**
+### Power Changes
 
+Distilled the essence of the many “Powers” that I’ve derived from D&D features into a not overwhelmingly-large list of impactful, flavourful Powers. Axed the very particular and often distinctly D&D vestigial abilities. 
+
+There were 217, now there's 133.
+
+In general Power Names have been made more self-evident.
+
+**Core Powers**
+
+- Action Surge -> mark as Powerful and change prereq to Fortitude +1
+- Adrenaline Rush -> rename Bullrush (remove orcish connotation) 
+- Agile Defence -> unchanged
+- Aptitude -> unchanged
+- Arcane Recovery -> unchanged
+- Arcane Spellcasting -> unchanged
+- Arcane Ward -> unchanged
+- Armour Expert -> unchanged
+- Bardic Inspiration -> unchanged
+- Blessings of Knowledge -> combine with Knowledge of the Ages as “Gnostic Miracle”
+- Bountiful Luck -> remove?
+- Combat Expert ->  remove, Engagements just don’t come up enough
+- Commander Tactics -> unchanged
+- Cunning Action -> unchanged
+- Cursed -> unchanged
+- Danger Sense -> updated to use latest combat states and reworded.
+- Determination -> removed along with Natural Aptitude
+- Disciple of Life -> miracle
+- Discovery -> remove
+- Divine Domain -> reworded
+- Divine Sense -> minor reword
+- Divine Smite -> minor nerf & reword
+- Divine Spellcasting -> unchanged
+- Draconic Affinity -> rewrite to Elemental Affinity and make generic, premanent resistance.
+- Draconic Bloodline -> rewrite to be standalone. Rename to “Draconic Touch”. Make racial for all.
+- Dwarven Toughness -> rename to Toughness and make generic
+- Elven Accuracy -> Rename as “Uncanny Accuracy” and make generic flavour. Change to “Bonus per Long Rest you gain Advantage on a Ranged Spell or Weapon Attack.”
+- Escape Artist -> remove, rolled into Cunning Action
+- Extra Attack -> unchanged
+- Extra Language -> removed
+- Favoured Enemy -> minor reword
+- Field Alchemy -> unchanged
+- Foresighted Defence -> unchanged
+- Grappler -> review in light of updated grappling rules, and bring in-line with Ensnaring weapon property
+- Grudge Bearer -> include Occultism and Nature to check list, set to just Advantage.
+- Gruumsh's Fury -> remove, too heavily invested in purely Tuskman stuff and steps on Action Surge and Heavy Attack
+- Hale Defence
+- Hale Recovery -> combine(d) into Health Increase already
+- Healer -> unchanged
+- Health Increase -> unchanged
+- Heaven's Fall -> remove and expand Celestial Patron with this or something
+- Heavy Attack -> unchanged
+- Hypnotic Gaze -> removed spellcasting prereq, add spell-like tag, update with new conditions and lower wordage
+- Innate Spells -> steps on other specific ways of getting Innates so, remove
+- Inspiring Leader -> it had disappeared but, its back now and better worded
+- Jack of All Trades -> unchanged
+- Journeyman Mage -> removed as it overshadowed the various Magic powers and Arcane Apprentice
+- Knowledge of the Ages -> Combined with Blessing of Knowledge as “Miracle of Knowledge”
+- Lay on Hands -> unchanged
+- Learned -> reworded
+- Leatherlung Tactics -> unchanged
+- Lightning Reflexes -> new
+- Lucky -> unchanged
+- Mana -> reduce to Magnitude V
+- Mana Manipulation -> reword to single Action of direct conversion so that “Mana Points” aren’t floating around and need to be tracked. Rename to “Mana Conversion”?
+- Martial Arts -> reworded
+- Martial Heritage -> Removed, overshadows Armour Expert
+- Martial Master -> Removed, steps on Skilled.
+- Menacing -> rename “Intimidating Visage”, and gave Action to Frigthen character. Merged into Dragon Fear.
+- Minor Alchemy -> removed 
+- Minor Conjuration -> removed
+- Mist Mad -> renamed to “Major Mist Mutation” and reworded as not a racial power
+- Mountain Born ->  removed, made a racial trait of goliaths
+- Natural Aptitude -> removed, add a racial trait of the same name to humans to pick any Power instead
+- Natural Artifice -> just removed
+- Natural Camouflage -> rename to Camouflage and reword to not have the ridiculous bonus and instead use Flat Maths
+- Natural Explorer -> remove initiative reference, remove “alert to danger” line, changed scavange to “if your group forage 1 ration, you instead gain 2”. Reduced tracking wordage.
+- Observant -> removed
+- Occult Spellcasting -> unchanged
+- Polyglot -> combined with Extra Language
+- Portent -> removed Mana prereq
+- Powerful Build -> removed, D&Dee and never used frankly
+- Powerful Cantrips -> unchanged
+- Primal Spellcasting -> unchanged
+- Protective Fighter -> 5ft to Reach
+- Psychic Sense -> unchanged
+- Rage - updated wording
+- Reckless Attack -> unchanged
+- Refocus -> removed by putting into Improved Focus
+- Relentless Endurance -> changed wording to include “gain a rank in the Wounded condition”
+- Resilient -> unchanged
+- Resistance Increase -> removed in favour of Resilient
+- Riposte -> Removed, this is now a Tactical action.
+- Rune Magic -> unchanged
+- Savage Attacks -> unchanged
+- Savage Magic -> unchanged
+- Savant -> renamed to Arcane Savant
+- Second Chance -> just removed, a lot of overlap with Lucky and Cursed
+- Second Wind -> unchanged
+- Secret Language -> unchanged
+- Secrets of the Land -> rename to “Primal Sect” and renamed Land Spells to Sect Spells.
+- Skirmisher Tactics -> unchanged
+- Song of Rest -> change to “Your Willpower” on recovery and also a preq of Willpower 1
+- Sorcerous Origin -> remove
+- Speak with Small Beasts -> remove
+- Squat and Nimble -> rename and generalise to “Nimble”. Make same size or larger, and remove skill gain. Make Advantage of grapple escape a flat advantage regardless of values used. Included Fortitude expertise on being grappled. Remove skill proficiency.
+- Statistic Increase -> Add a bit of flavour and reword to “up to your Maximum for that Stat, by default 5.” Or maybe just remove the max stat increase from Trinitas.
+- Stonecunning -> remove?
+- Stout Resilience -> combine with Toughness? Nah, remove.
+- Swift -> combine with Fleet of Foot
+- Tactical Wit -> removed, too small
+- Tricky Tactics -> unchanged
+- Turn Undead -> remove. It’s in Divine Domain??
+- Unhindered Movement -> unchanged
+- Unleashed Wild Shape -> Improved Primal Shapeshifting
+- Vanguard Tactics -> unchanged
+- Warding Flare -> rename Waring Flare Miracle
+- Wild Magic -> rewrite to be standalone, racial for all, rename to “Wild Magic Touch”
+- Wild Shape -> rename “Primal Shapeshift”. Reworded.
+
+**Improved Powers**
+
+Including regularisation of improved-like Powers
+
+- Improved Action Surge -> probably OP so removed
+- Improved Bardic Inspiration -> unchanged
+- Improved Focus -> unchanged
+- Improved Minor Illusion - too minor, removed
+- Improved Rage -> rolled into repeatable bit of Rage
+- Improved Ki → see Ki changes
+- Improved Primal Shapeshifting -> renamed from Unleashed Wild Shape
+
+**Pure Racial Traits**
+
+I.e. these should only be taken as physical features of the character as a Race option, i.e. not available as a Background / Role Power. Individual racial tags removed.
+
+- Ancestors of Stone -> unchanged Power but updated tags
+- Darkvision -> unchanged but Vision Rules help clarify
+- Extra Childhood Language -> renamed Extra Native Language
+- Fleet of Foot -> unchanged
+- Fey Ancestry -> rolled in Trance.
+- Heritage of the Sea -> rename “Seaborne”
+- Hooked Claws -> to balance with “Retractable Claws” set to d4 and reword
+- Keen Senses -> change to “When using this sense, your Perception is 1 more to a maximum of 6”
+- Long-Limbed
+- Prodigy -> simplify to “Any 1 Skill, Any 1 Expertise” and change “quicker” to “twice”
+- Reversal of Mania -> removed to goblinoid racial feature.
+- Troglobite -> rename to “Trogolodyte” because its better known, and rewrite to not reference other power & also use vision rules
+
+**Dragon Racial Traits **
+
+- Draconic Language -> removed Dragonborn tag
+- Draconic Resistance -> removed, in favour of Elemental Affinity
+- Draconic Warding -> removed. Just, nah. This is abuse bait.
+- Dragon Fear -> removed in favour of “Intimidating Visage”, formerly Menacing
+- Dragon Hide -> rename to generic “Tough Hide”, separate out “Retractable Claws” with much better wording christ
+- Dragon Wings -> rename to “Winged”.
+- Greater Breath Weapon -> unchanged
+
+**Magic casting Powers**
+
+- Arcane Aptitude -> renamed to “Arcane Apprentice”.
+- Blessed -> rename to “Divine Acolyte”, copy Arcane Apprentice format
+- Druidic Apprentice -> rename to “Primal Acolyte”, copy Arcane Apprentice format
+- Natural Magic - condensed and regularised
+- Drow High Magic -> Hunters Mark (at III), Hold Person (II), Dispel Magic (I), kinda steps on Finder’s magic which I like as is, and this specific combi is quite powerful. Remove.
+- Drow Magic -> Dancing Lights (cantrip), Faerie Fire (I), Darkness (II), rename to “Luminator’s Magic”
+- Duergar Magic -> Enlarge/Reduce (II), Invisibility (II), willpower -> rename to “Giant’s Magic”, Shillelagh cantrip, Enhance Ability (I), Enlarge/Reduce (II)
+- Everchanging Nature -> rename to “Mistal Magic” and remove the flavour. Eldritch Blast (cantrip), Arms of the Dark Star (I), Alter Self (II)
+- Fey Teleportation -> rename to “Fey Magic”. Friends cantrip, Speak with Animals (I), Misty Step (II).
+- Finder's High Magic -> Locate Animals or Plants, Locate Creature, subset of Scry
+- Finder's Magic -> Hunter’s Mark (I), Locate Object (II).
+- Natural Air Magic -> Shocking Grasp cantrip, Feather Fall (I) and Levitate (II). Update Willpower calc
+- Natural Earth Magic -> Blade Ward cantrip, Entangle (I) and Spike Growth (II) Update fortitude calc
+- Natural Fire Magic -> Produce Flame cantrip, Burning Hands (I) and Flame Blade (II) Update Fortitude calc
+- Natural Illusionist -> Minor Illusion cantrip, Silent Image (I) and Mirror Image (II)
+- Natural Water Magic -> Acid Splash cantrip, Create or Destroy Water (I), Water Walk (II). Update Willpower calc
+- Scrivener's Magic -> Message cantrip, Comprehend Languages (I) and Detect Thoughts (II) (Read Thoughts only, physical sight, no VSM)
+- Svirfneblin Magic -> cantrip X, Disguise Self (I), Blur (II) for Hider. Blindness/Deafness (I), Invisibility (II), and Nondetection (targetting only yourself but without needing the 25gp material component): III subset for High Hider.
+- Witching Apprentice -> new, occult version of Arcane Apprentice. 
+- Wood Elf Magic -> Rename to “Ranger Magic”, Any -> Druidcraft Cantrip, Longstrider (I), Pass Without Trace (II)
+
+**Pact Magic refinement**
+- Celestial Patron -> rolled “Healing Hands” into Lay on Hands and otherwise rolled into Pact Magic
+- Expanded Repertoire -> combined into updated repeatable Pact Magic
+- Force of Will -> Magnitude Increase combined into new repeatable “Improved Pact Magic”
+- Great Old One Patron -> extracted “Awakened Mind” as separate Power and otherwise rolled into Pact Magic
+- Overcharge -> combined into updated repeatable Pact Magic
+- Pact Magic -> rewritten entirely to include Patrons and scaling Stipend, and clear “Communion” interaction.
+
+Invocations -> removed and placed into in Trinitas Magic rules
+
+**Meta Magic**
+
+Moved to Trinitas Magic page. Heightened Spell, Sculpt Spells, Seeking Spell  and Twinned Spell removed.
+
+- Careful Spell -> remove Mag I resource usage, set to “Magic Stat per Long Rest” and targeting “Magic Stat number of characters”.
+- Distant Spell -> replace Mag I resource usage to Magic Stat per Long Rest
+- Empowered Spell -> rewrite as “roll a 1 or 2 on damage dice, reroll and keep new value, Magic Stat per Long Rest”.
+- Extended Spell -> replace Mag I resource usage to Magic Stat per Long Rest
+- Grim Harvest -> rename “Vampiric Spell”, add meta-magic tag, replace “kill” with “damage”, “Health” with “Temporary Health” and add “Magic Stat per Long Rest” resource.
+- Homing Spell -> changed to Stationary Defence / Disadvantage on Reflex save w/ ignore cover.
+- Quickened Spell -> change to “Magic Stat per Long Rest”.
+- Subtle Spell -> reword, Magic Stat per Long Rest
+- Transmuted Spell -> reword, Magic Stat per Long Rest
+
+**Ki**
+- Deepened Ki -> rename to Improved Ki - increase Ki Points and Ki Save by your Bonus. Also gained Ki Actions
+- Ki -> rewritten
+- Open Hand Technique -> removed
+
+**Skill Powers**
+- Artificer's Lore -> Remove, just use Expertise
+- Expertise -> good
+- Magical Tinkering -> reword to remove D&Dee-ness, see Tinkerer
+- Professional Artisan -> fine
+- Skilled -> “Any 3 Skills” and let that be the baseline
+- Tinkerer -> this is too D&Dee and also a overly wordy and meh Power so I’ll remove it completely and use the examples to “Crafting” as an idea of what Engineering and Tool Sets can be used for.
+- Wonder Maker -> remove, see Tinkerer
+
+**Roguish Powers** condensed
+- Naturally Stealthy. -> Added in: 
+- When you are hidden from a character and miss it with a ranged weapon attack, making the attack doesn't reveal your position.
+- You gain Expertise in Stealth.Stealth Proficiency is now prereq
+- Renamed to “Stealth Expert”
+- Skulker - Removed
+- Sneak Attack -> reworded to use “Engaged” instead of the various qualifiers
+- Sneaky -> remove, just use normal skill / expertise gain systems
+
+**Weapon Specialist Powers** (combine into fewer and more generalised effects)
+- Akimbo -> removed, its already part of Off-Hand Strike
+- Archery -> removed because it breaks the flat math and other applications of Bonus
+- Blind Fighting -> reworded to include Blinded and Deafened, darkness and obscuration, and made to be always instead of combat only. Prereq is now Perception +3
+- Close Quarters Shooter -> removed, too niche.
+- Cavalier -> changed preq to Dexterity +1
+- Duellist -> changed to “your Bonus to damage rolls”.
+- Great Weapon Fighting - add fighting style tag, change to “two handed and heavy properties”. Prereq now Strength +3
+- Mariner -> removed, very niche and D&D coded
+- Marksman - removed. Clashes with Skirmisher Tactics
+- Sniper -> including in Fighting Styles, changed such that “range is increased by 60ft up to a maximum of the Long Range of the weapon”.
+- Thrown Weapon Fighting - removed. Clashes with Skirmisher Tactics
+- Two Weapon Fighting -> renamed “Secondary Strike Specialist”. And reworded with flavour.
+
+*New Powers*
+- Awakened Mind - Your alien knowledge gives you the ability to touch the minds of other characters. You can telepathically speak to any character you can see within 30ft of you. You need to share a language with the character for it to understand your telepathic utterances, but you don't need to share a language to share emotions, images and impressions. Additionally, your maximum Intelligence is now 6, and your Intelligence increases by 1 but your Charisma decreases by 1 (to a minimum of -3).
+- Stubborn Defence - new Power. Willpower based defence: Base Defence + Willpower + Armour
+- Vampiric Bite - health drain on dying enemies.
+- Wuxia Arts - Ki-based spell-like minor spellcasting Power.
 
 
 ## Flat Maths
