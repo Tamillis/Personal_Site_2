@@ -3,21 +3,20 @@
         <section v-if="ready">
             <h4>TODO:</h4>
             <ul>
-                <li>Fix Any Stat selector for races or just move them over to the stat display entirely</li>
-                <li>Custom Background in separate section to typical bg</li>
-                <li>Power Ranks and the ability to take a Power more than once</li>
-                <li>Power prerequisites</li>
-                <li>Separate character creation and character sheet</li>
-                <li>Calculate Health using racial Health Bonus / Health Malus</li>
-                <li>Have Powers that grant stats, skills and other changes do so (in progress via admin)</li>
+                <li>New Race picker based on presets</li>
+                <li>New background picker based on presets</li>
+                <li>Ability to take repeatable Powers more than once inc Rank display</li>
+                <li>Have Powers that grant stats, skills and other changes do so</li>
                 <li>Special handling of Powers that change how Defence is calculated</li>
             </ul>
 
-            <button class="btn mb-1r" @click="openCharacterSheet">Open Character Sheet</button>
+            <a class="btn" :href="getUrlFromCharacter(chosen)">Open {{player.name ? player.name + "'s" : "Blank"}} Character Sheet</a>
 
-            <a class="btn" :href="getUrlFromCharacter(chosen)">Reset</a>
-
-            <hr />
+            <div id="simple-stat-display" class="flex">
+                <div v-for="stat in core.stats">
+                    <p :id="stat + '-control'">{{ stat }} {{ player[stat.toLowerCase()] }}</p>
+                </div>
+            </div>
 
             <div id="section-tabs">
                 <button @click="setSection('concept')" :class="{ selected: sections.concept }">1. Concept</button>
@@ -39,12 +38,25 @@
 
             <section id="race-section" v-show="sections.race">
                 <p v-if="chosen.race == ''" style="color:orangered">Please choose a race.</p>
-                <RaceSelector :chosenRace="chosen.race" :chosenAnyStats="chosen.anyRaceStats" @race="setRace"
-                    @race-stats="stats => setAnyRaceStats(stats)" />
+                <RaceSelector :chosenRaceName="chosen.race" @race="setRace" />
+
+                <div class="flex">
+                    <div class="flex-grow">
+                        <h3>Stat Boons</h3>
+                        <div class="flex gap">
+                            <StatSelector v-model="chosen.raceStatBoon[0]" val="1"/>
+                            <StatSelector v-model="chosen.raceStatBoon[1]" val="1"/>
+                        </div>
+                    </div>
+                    <div class="flex-grow gap">
+                        <h3>Stat Malus</h3>
+                        <StatSelector v-model="chosen.raceStatMalus" val="-1"/>
+                    </div>
+                </div>
 
                 <div v-if="chosen.race">
                     <RacialPowers :chosenPowers="chosen.racialPowers" :racePowers="getRacialPowers()"
-                        :limit="((chosen.race == 'Half-Elf' || chosen.race == 'Tuskman') ? 3 : 2)"
+                        :limit="chosen.race.heritages"
                         @chosen="chooseRacialPowers" :key="`rp-${key}`" />
                 </div>
 
@@ -116,6 +128,7 @@
 import { ref, computed } from "vue";
 import jsoncrush from "JSONCrush"
 import Character from "../../assets/pedd/character.js";
+import core from "../../assets/pedd/trinitas-core.json";
 
 import BasePage from './Components/BasePage.vue';
 import PowerContent from "./Components/PowerContent.vue";
@@ -156,25 +169,6 @@ async function fetchPowers() {
     }
 }
 
-//reference resources
-let stats = ["accuracy", "perception", "strength", "dexterity", "charisma", "intelligence"];
-
-let sizeDefence = {
-    tiny: 16,
-    small: 10,
-    medium: 8,
-    large: 6,
-    huge: 2
-};
-
-let sizeHealth = {
-    tiny: 2,
-    small: 4,
-    medium: 6,
-    large: 12,
-    huge: 25
-};
-
 //tab state
 let sections = ref({
     concept: true,
@@ -208,31 +202,28 @@ function getUrlFromCharacter(character) {
     if(!(character instanceof Character)) throw Error("AAAAA character isn't a Character object:" + JSON.stringify(character));
 
     let c = encodeURIComponent(jsoncrush.crush(JSON.stringify(character)));
-    return new URL(window.location.origin + "/CharacterSheet?c=" + c).href;
+    return new URL(window.location.origin + "/trinitas/character-sheet?c=" + c).href;
 }
 
 let chosen = ref(getCharacterFromUrl(window.location.href));
-console.log("chosen", chosen.value);
+console.log(chosen.value);
 
 let allChosenPowers = computed(() => [...chosen.value.racialPowers, chosen.value.backgroundPower, ...chosen.value.rolePowers].sort());
 
 //race any stat selections
-function setRace(race) {
-    chosen.value.race = race
-    if (!race) {
+function setRace(raceName) {
+    if (!raceName) {
         chosen.value.race = ""
         chosen.value.racialPowers = [];
         chosen.value.anyRaceStats = false;
     }
-}
-
-function setAnyRaceStats(stats) {
-    chosen.value.anyRaceStats = stats;
+    else chosen.value.race = raceName;
 }
 
 function getRacialPowers() {
     let race = races.filter(r => r.name == chosen.value.race)[0];
-    let racePowers = race.powers.map(powerName => {
+
+    let racePowers = race.heritagePowers.map(powerName => {
         let powers = powersJson.value.filter(p => p.name == powerName);
         if (powers.length == 0) throw Error("No power found for [" + powerName + "]")
         else return powers[0];
@@ -287,9 +278,9 @@ let player = computed(() => {
     p.ideals = chosen.value.ideals;
     p.flaws = chosen.value.flaws;
 
-    p.race = chosen.value.race != "";
-    if (p.race) {
-        p.race = races.filter(r => r.name == chosen.value.race)[0];
+    let race = false;
+    if (chosen.value.race != "") {
+        race = races.filter(r => r.name == chosen.value.race)[0];
     }
     p.racialPowers = chosen.value.racialPowers;
 
@@ -300,44 +291,19 @@ let player = computed(() => {
     p.rolePowers = chosen.value.rolePowers;
 
     // stat choices
-    let ss = {
-        strength: 0,
-        dexterity: 0,
-        accuracy: 0,
-        perception: 0,
-        intelligence: 0,
-        charisma: 0
-    };
-    ss[chosen.value.roleStatMajor.toLowerCase()] = 2;
-    ss[chosen.value.roleStatMinor.toLowerCase()] = 1;
-
-    if (chosen.value.anyRaceStats) for (let stat of chosen.value.anyRaceStats) {
-        ss[stat.desc.toLowerCase()] += stat.val;
+    for(let stat of core.stats) {
+        p[stat.toLowerCase()] = 0;
     }
 
-    p.strength = ss.strength;
-    p.dexterity = ss.dexterity;
-    p.accuracy = ss.accuracy;
-    p.perception = ss.perception;
-    p.intelligence = ss.intelligence;
-    p.charisma = ss.charisma;
+    p[chosen.value.roleStatMajor] += 2;
+    p[chosen.value.roleStatMinor] += 1;
 
-    if (p.race) {
-        //set fixed racial stat bonuses
-        for (let stat of p.race.stats) {
-            if (stats.includes(stat.desc.toLowerCase())) p[stat.desc.toLowerCase()] += stat.val;
-        }
-
-        let standardHeadings = ["name", "desc", "stats", "age", "size", "speed", "powers"];
-        let racialFeatures = Object.keys(p.race).filter(key => !standardHeadings.includes(key));
-        p.racialFeatures = racialFeatures.map(rf => {
-            return { "name": rf, "desc": p.race[rf] };
-        });
-    }
-
+    p[chosen.value.raceStatBoon[0].toLowerCase()] += 1;
+    p[chosen.value.raceStatBoon[1].toLowerCase()] += 1;
+    p[chosen.value.raceStatMalus.toLowerCase()] += -1;
+    
     //set selected size - TODO: make this actually selectable when presented an option
-    let size = p.race ? (Array.isArray(p.race.size) ? p.race.size[0].val : p.race.size.val) : "medium";
-    p.size = size;
+    p.size = race ? (Array.isArray(race.size) ? race.size[0] : race.size) : "Medium";
 
     if (p.background) {
         for (let statDesc of p.background.stats) {
@@ -353,7 +319,8 @@ let player = computed(() => {
     p.fortitude = setResistance(p.strength, p.dexterity);
     p.willpower = setResistance(p.intelligence, p.charisma);
 
-    p.baseHealth = sizeHealth[p.size];
+    let chosenSize = core.sizes.filter(s => s.val == p.size)[0]
+    p.baseHealth = chosenSize.health;
     p.health = p.baseHealth + p.fortitude + p.willpower
 
     p.faith = 2; //TODO: make faith input based
@@ -375,15 +342,11 @@ let player = computed(() => {
 
     p.armour = chosen.value.armour + chosen.value.shield + chosen.value.helmet;
 
-    p.baseDefence = sizeDefence[p.size];
+    p.baseDefence = chosenSize.defence;
     p.defence = Number(p.baseDefence) + Number(p.armour) + Number(p.reflexLimited ? p.reflexLimit : p.reflexes);
 
     p.imgSrc = chosen.value.imgSrc;
 
-    //encode chosen into url for easy saving and sharing
-    history.pushState({}, null, getUrlFromCharacter(chosen.value));
-
-    //TODO: switch chosen to just use id's, i.e. names, for race and powers to reduce encoded size and maybe even just stop using btoa
     return p;
 });
 

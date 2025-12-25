@@ -144,8 +144,8 @@ In general Power Names have been made more self-evident.
 - Squat and Nimble -> rename and generalise to “Nimble”. Make same size or larger, and remove skill gain. Make Advantage of grapple escape a flat advantage regardless of values used. Included Fortitude expertise on being grappled. Remove skill proficiency.
 - Statistic Increase -> Add a bit of flavour and reword to “up to your Maximum for that Stat, by default 5.” Or maybe just remove the max stat increase from Trinitas.
 - Stonecunning -> remove?
-- Stout Resilience -> combine with Toughness? Nah, remove.
-- Swift -> combine with Fleet of Foot
+- Stout Resilience -> combined with Tough
+- Swift -> combined with Fleet
 - Tactical Wit -> removed, too small
 - Tricky Tactics -> unchanged
 - Turn Undead -> remove. It’s in Divine Domain??

@@ -15,7 +15,7 @@
         "heritagePowers": [
             "Extra Native Language",
             "Prodigy",
-            "Arcane Aptitude",
+            "Arcane Apprentice",
             "Mana",
             "Psychic Sense",
             "Second Wind",
@@ -62,9 +62,9 @@
         "heritagePowers": [
             "Darkvision",
             "Troglodyte",
-            "Drow Magic",
-            "Arcane Aptitude",
-            "Fleet of Foot",
+            "Luminator's Magic",
+            "Arcane Apprentice",
+            "Fleet",
             "Camouflage",
             "Uncanny Accuracy",
             "Fey Magic",
@@ -89,17 +89,15 @@
         "heritagePowers": [
             "Darkvision",
             "Fey Ancestry",
-            "Speak with Small Beasts",
             "Natural Illusionist",
-            "Natural Artifice",
             "Magical Tinkering",
             "Scrivener's Magic",
             "Hider's Magic",
             "Nimble",
             "Psychic Sense",
             "Mistal Magic",
-            "Major Mistal Mutation",
-            "Arcane Aptitude",
+            "Major Mist Mutation",
+            "Arcane Apprentice",
             "Mana",
             "Troglodyte"
         ],
@@ -119,9 +117,9 @@
         },
         "heritagePowers": [
             "Extra Native Language",
-            "Fleet of Foot",
+            "Fleet",
             "Nimble",
-            "Naturally Stealthy",
+            "Stealth Expert",
             "Resilient",
             "Psychic Sense",
             "Bountiful Luck",
@@ -144,7 +142,7 @@
         "heritagePowers": [
             "Extra Native Language",
             "Keen Senses",
-            "Stout Resiliance",
+            "Tough",
             "Camouflage",
             "Darkvision",
             "Rage",
@@ -173,11 +171,11 @@
         "heritagePowers": [
             "Darkvision",
             "Draconic Language",
-            "Draconic Resistance",
+            "Elemental Affinity",
             "Greater Breath Weapon",
-            "Wings",
+            "Winged",
             "Tough Hide",
-            "Arcane Aptitude",
+            "Arcane Apprentice",
             "Mana",
             "Cursed",
             "Intimidating Visage"
@@ -205,18 +203,16 @@
         },
         "heritagePowers": [
             "Keen Senses",
-            "Arcane Aptitude",
-            "Fleet of Foot",
+            "Arcane Apprentice",
+            "Fleet",
             "Camouflage",
             "Mana",
             "Psychic Sense",
             "Nimble",
-            "Escape Artist",
+            "Cunning Action",
             "Magical Tinkering",
             "Stealth Expert",
-            "Powerful Build",
-            "Retractable Claws",
-            "Martial Heritage"
+            "Retractable Claws"
         ],
         "heritages": 1
     },
@@ -237,12 +233,13 @@
             "Keen Senses",
             "Extra Native Language",
             "Prodigy",
-            "Arcane Aptitude",
+            "Arcane Apprentice",
             "Mana",
             "Natural Illusionist",
             "Darkvision",
-            "Fleet of Foot",
+            "Fleet",
             "Nimble",
+            "Tough",
             "Natural Earth Magic",
             "Natural Air Magic",
             "Natural Fire Magic",
@@ -261,17 +258,16 @@
         "size": "Large",
         "racialFeatures": {
             "raceOfAthletes": "Competitions of strength, daring and skill are core to your people. You have proficiency in Athletics.",
-            "stonesEndurance": "You can supernaturally draw on unyielding stone to shrug off harm. When you take damage, you can use your Action to roll a d12. Add your Fortitude to the number rolled and reduce the damage by that total. You can do this your Bonus number of times per Long Rest."
+            "stonesEndurance": "You can supernaturally draw on unyielding stone to shrug off harm. When you take damage, you can use your Action to roll a d12. Add your Fortitude to the number rolled and reduce the damage by that total. You can do this your Bonus number of times per Long Rest.",
+            "stoneSense": "You have Tremorsense up to a 15ft radius through earth & stone, when standing on connected ground."
         },
         "heritagePowers": [
-            "Mountain Born",
-            "Determination",
+            "Grudge Bearer",
             "Keen Senses",
             "Long-Limbed",
             "Intimidating Visage",
             "Natural Earth Magic",
             "Relentless Endurance",
-            "Stonecunning",
             "Elemental Affinity"
         ],
         "heritages": 1

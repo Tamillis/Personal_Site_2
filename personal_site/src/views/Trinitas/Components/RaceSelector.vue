@@ -1,47 +1,33 @@
 <template>
-    <h2>Race: {{ selectedRace }}</h2>
-    <div v-for="(race, i) in races">
-        <CardContainer
-            :name="race.name" 
-            :chosen="selectedRace == race.name"
-            :class="{ highlight: selectedRace == race.name }"
-            @chosen="(chosenRaceName) => chooseRace(chosenRaceName)"
-            :key="`race-${i}`">
-            <RaceContent 
-                :race="race" @selected-stats="(stats) => $emit('raceStats', stats)"
-                :chosenAnyStats="chosenAnyStats" />
-        </CardContainer>
+    <div>
+        <div class="flex gap">
+            <button class="btn" style="width: 2rem; height: 2rem" @click="incrementChosenRace(-1)">&larr;</button>
+            <div class="flex-grow flex gap">
+                <h4 v-for="race in raceData" class="w-fit pointer" :class="{bold: race.name == selectedRace.name}" @click="$emit('race', race.name)">{{ race.name }}</h4>
+            </div>
+            <button class="btn" style="width: 2rem; height: 2rem" @click="incrementChosenRace(1)">&rarr;</button>
+        </div>
+        <RaceContent :race="selectedRace" />
     </div>
 </template>
 
 <script setup>
 import { ref, computed } from 'vue';
-import CardContainer from './CardContainer.vue';
 import RaceContent from './RaceContent.vue';
 import raceData from '../../../assets/pedd/pedd-races.json';
 
-const races = computed(() => {
-
-    let rd = raceData.filter(r => selectedRace.value == "" || selectedRace.value == r.name);
-
-    return rd;
-})
-
 const emits = defineEmits(["race", "raceStats"]);
-const props = defineProps(["chosenRace", "chosenAnyStats"])
-const selectedRace = ref(props.chosenRace);
+const props = defineProps(["chosenRaceName"])
+const selectedRace = computed(() => raceData.filter(r => r.name == (props.chosenRaceName))[0]);
 
-function chooseRace(race) {
-    if (selectedRace.value == race) {
-        console.log("Unselecting race: " + race)
-        selectedRace.value = "";
-        emits('race', false);
-    }
-    else {
-        console.log("selecting race: " + race)
-        selectedRace.value = race;
-        emits('race', race);
-    }
+function incrementChosenRace(val) {
+    let raceNames = raceData.map(r => r.name);
+    let currentIndex = raceNames.indexOf(props.chosenRaceName);
+    currentIndex += val;
+    if(currentIndex == raceNames.length) currentIndex = 0;
+    if(currentIndex < 0) currentIndex = raceNames.length - 1;
+
+    emits('race', raceNames[currentIndex]);
 }
 
 </script>

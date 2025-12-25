@@ -1,5 +1,5 @@
 <template>
-	<h3>Upbringing</h3>
+	<h3>Upbringing Skills</h3>
 
 	<div class="flex gap-1r">
 		<select v-model="skill1" @change="emitUpbringing">

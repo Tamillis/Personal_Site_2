@@ -1,19 +1,15 @@
 export default class Character {
     constructor() {
-        this.name = "";
+        this.name = "Dan";
         this.secret = "";
-        this.concept = "";
-        this.bonds = "";
-        this.ideals = "";
-        this.flaws = "";
+        this.concept = "Smith";
+        this.bonds = "The workshop";
+        this.ideals = "Something worth making, is worth making well.";
+        this.flaws = "Weakness for sweet things.";
         this.hasFaith = false;
-        this.accChange = 0;
-        this.perChange = 0;
-        this.strChange = 0;
-        this.dexChange = 0;
-        this.chaChange = 0;
-        this.intChange = 0;
-        this.race = "";
+        this.race = "Human";
+        this.raceStatBoon = ["Accuracy", "Perception"]
+        this.raceStatMalus = "Intelligence"
         this.anyRaceStats = false;
         this.racialPowers = [];
         this.background = "";
@@ -21,8 +17,8 @@ export default class Character {
         this.upbringingSkill1 = "Acrobatics";
         this.upbringingSkill2 = "Alchemy";
         this.upbringingLanguage = "Common";
-        this.roleStatMajor = "Accuracy";
-        this.roleStatMinor = "Perception";
+        this.roleStatMajor = "accuracy";
+        this.roleStatMinor = "perception";
         this.rolePowers = [];
         this.roleSkills = [];
         this.equipmentCollection = null;

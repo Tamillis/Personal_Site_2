@@ -1,15 +1,14 @@
 <template>
     <div class="flex">
         <select v-model="model">
-            <option v-for="s in stats">{{ s }}</option>
+            <option v-for="s in core.stats">{{ s }}</option>
         </select>
         <label>{{ props.val < 0 ? props.val : '+' + props.val }}</label>
     </div>
 </template>
 
 <script setup>
-
-let stats = ["Accuracy", "Perception", "Strength", "Dexterity", "Charisma", "Intelligence"];
+import core from "../../../assets/pedd/trinitas-core.json"
 
 const props = defineProps(["val"]);
 const model = defineModel();
