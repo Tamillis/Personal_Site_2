@@ -110,6 +110,7 @@
             "Perception",
             "Dexterity"
         ],
+        "recommendedStatMalus": "Perception",
         "size": "Small",
         "racialFeatures": {
             "lucky": "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die. You must use the new result, even if it is a 1.",
@@ -164,6 +165,8 @@
             "Small",
             "Medium"
         ],
+        "recommendedStatBoons" : ["Strength", "Perception"],
+        "recommendedStatMalus" : "Charisma",
         "racialFeatures": {
             "draconicAncestry": "You are distantly related to a particular kind of dragon. Choose a type of dragon from the table below; this determines the effect, area and type of your breath weapon.\n\n| Dragon Ancestry | Effect | Area | Save |\n| --- | --- | --- | --- |\n| Black | Acid - 1d10 fire damage on a failed save, and half as much damage on a successful one. | 5ft by 30ft line | Reflex save |\n| Blue | Lightning - 1d10 lightning damage on a failed save, and half as much damage on a successful one. | 5ft by 30ft line | Reflex save |\n| Brass | Sleep - On a failed save, the character falls unconscious for 1 minute. This effect ends for a character if the character takes damage or someone uses an Action to wake it.| 5ft by 30ft line | Willpower save |\n| Bronze | Repulsion - On a failed save, the character is pushed to the nearest free space at the end of the effect's line area. | 5ft by 30ft line | Reflex save |\n| Copper | Slow - On a failed save, the character's speed is halved, and it can't make more than one attack in the Round, and they can use either an Action or a Bonus Action in the Round, but not both. These effects last for 1 minute. The character can repeat the saving throw at the end of each Round, ending the effect on with a successful save. | 5ft by 30ft line | Willpower save |\n| Green | Poison - 1d6 poison damage and suffer the Poison condition on a failed save, or half as much damage on a successful one. | 15ft cone | Fortitude save |\n| Gold | Weaken - On a failed save, the character has disadvantage on Strength-based attack rolls, Strength checks, and Fortitude saving throws for 1 minute. A character can repeat the saving throw at the end of each Round, ending the effect on itself on a success. | 15ft cone | Fortitude save |\n| Red | Fire - 1d10 fire damage on a failed save, and half as much damage on a successful one. | 15ft cone | Reflex save |\n| Silver | Paralyse - on a failed save, the character is paralyzed for the next Round. | 15ft cone | Fortitude save |\n| White | Cold - 1d10 cold damage on a failed save, and half as much damage on a successful one. | 15ft cone | Fortitude save |",
             "breathWeapon": "You can use your Action to exhale primeval draconic energy. When you use your breath weapon, all characters in the area must make a saving throw, the type of which is determined by the Ancestry table above, against the effect described. The DC of the save is 8 + your Fortitude + your Bonus. You may use your breath weapon a number of times equal to your Fortitude (minimum 1). You regain expended uses on a Short Rest."

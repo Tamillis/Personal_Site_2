@@ -3,8 +3,7 @@
         <section v-if="ready">
             <h4>TODO:</h4>
             <ul>
-                <li>New Race picker based on presets</li>
-                <li>New background picker based on presets</li>
+                <li>Get Character Sheet Working</li>
                 <li>Ability to take repeatable Powers more than once inc Rank display</li>
                 <li>Have Powers that grant stats, skills and other changes do so</li>
                 <li>Special handling of Powers that change how Defence is calculated</li>
@@ -37,7 +36,6 @@
             </section>
 
             <section id="race-section" v-show="sections.race">
-                <p v-if="chosen.race == ''" style="color:orangered">Please choose a race.</p>
                 <RaceSelector :chosenRaceName="chosen.race" @race="setRace" />
 
                 <div class="flex">
@@ -66,8 +64,7 @@
             </section>
 
             <section id="background-section" v-show="sections.background">
-                <p v-if="!chosen.background" style="color:orangered">Choose a background</p>
-                <Background :background="chosen.background" @backgroundChosen="setBackground" />
+                <BackgroundSelector :selected-bg="chosen.background" />
 
                 <p v-if="chosen.background && !chosen.backgroundPower" style="color:orangered">Choose a background Power
                 </p>
@@ -141,7 +138,7 @@ import EquipmentTab from "./Components/EquipmentTab.vue";
 import RacialPowers from "./Components/RacialPowers.vue";
 import Upbringing from "./Components/Upbringing.vue";
 import RolePowers from "./Components/RolePowers.vue";
-import Background from "./Components/Background.vue";
+import BackgroundSelector from "./Components/BackgroundSelector.vue";
 
 //resources
 import races from "../../assets/pedd/pedd-races.json";
@@ -211,13 +208,19 @@ console.log(chosen.value);
 let allChosenPowers = computed(() => [...chosen.value.racialPowers, chosen.value.backgroundPower, ...chosen.value.rolePowers].sort());
 
 //race any stat selections
+setRace(chosen.value.race);
 function setRace(raceName) {
     if (!raceName) {
         chosen.value.race = ""
         chosen.value.racialPowers = [];
         chosen.value.anyRaceStats = false;
     }
-    else chosen.value.race = raceName;
+    else {
+        let race = races.filter(r => r.name == raceName)[0];
+        chosen.value.race = raceName;
+        chosen.value.raceStatBoon = race.recommendedStatBoons;
+        chosen.value.raceStatMalus = race.recommendedStatMalus;
+    }
 }
 
 function getRacialPowers() {
@@ -234,12 +237,6 @@ function getRacialPowers() {
 function chooseRacialPowers(powers) {
     chosen.value.racialPowers = powers;
     key.value++;
-}
-
-//background
-function setBackground(bg) {
-    chosen.value.background = bg;
-    if (!bg) chosen.value.backgroundPower = false;
 }
 
 let powerNames = computed(() => powersJson.value.map(p => p.name));
@@ -284,8 +281,7 @@ let player = computed(() => {
     }
     p.racialPowers = chosen.value.racialPowers;
 
-    p.background = false;
-    if (chosen.background != '') p.background = backgrounds.filter(bg => chosen.value.background == bg.name)[0];
+    p.background = backgrounds.filter(bg => chosen.value.background == bg.name)[0];
     p.backgroundPower = chosen.value.backgroundPower;
 
     p.rolePowers = chosen.value.rolePowers;
@@ -295,8 +291,8 @@ let player = computed(() => {
         p[stat.toLowerCase()] = 0;
     }
 
-    p[chosen.value.roleStatMajor] += 2;
-    p[chosen.value.roleStatMinor] += 1;
+    p[chosen.value.roleStatMajor.toLowerCase()] += 2;
+    p[chosen.value.roleStatMinor.toLowerCase()] += 1;
 
     p[chosen.value.raceStatBoon[0].toLowerCase()] += 1;
     p[chosen.value.raceStatBoon[1].toLowerCase()] += 1;
@@ -305,12 +301,7 @@ let player = computed(() => {
     //set selected size - TODO: make this actually selectable when presented an option
     p.size = race ? (Array.isArray(race.size) ? race.size[0] : race.size) : "Medium";
 
-    if (p.background) {
-        for (let statDesc of p.background.stats) {
-            let stat = statDesc.toLowerCase();
-            if (stats.includes(stat)) p[stat]++;
-        }
-    }
+    for(let stat of p.background.stats) p[stat.toLowerCase()] += 1;
 
     let setResistance = (s1, s2) => Math.round((s1 + s2) / 2);
     p.reflexes = setResistance(p.accuracy, p.perception);

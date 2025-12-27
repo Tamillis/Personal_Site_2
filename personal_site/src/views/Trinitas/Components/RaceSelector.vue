@@ -7,16 +7,22 @@
             </div>
             <button class="btn" style="width: 2rem; height: 2rem" @click="incrementChosenRace(1)">&rarr;</button>
         </div>
-        <RaceContent :race="selectedRace" />
+
+        <hr/>
+
+		<h2>{{ selectedRace.name }}</h2>
+
+		<div v-html="marked.parse(selectedRace.desc ?? '')"></div>
     </div>
 </template>
 
 <script setup>
 import { ref, computed } from 'vue';
-import RaceContent from './RaceContent.vue';
+import { marked } from "marked";
+
 import raceData from '../../../assets/pedd/pedd-races.json';
 
-const emits = defineEmits(["race", "raceStats"]);
+const emits = defineEmits(["race"]);
 const props = defineProps(["chosenRaceName"])
 const selectedRace = computed(() => raceData.filter(r => r.name == (props.chosenRaceName))[0]);
 

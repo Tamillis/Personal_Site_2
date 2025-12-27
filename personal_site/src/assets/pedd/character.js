@@ -12,13 +12,13 @@ export default class Character {
         this.raceStatMalus = "Intelligence"
         this.anyRaceStats = false;
         this.racialPowers = [];
-        this.background = "";
+        this.background = "Soldier";
         this.backgroundPower = "";
         this.upbringingSkill1 = "Acrobatics";
         this.upbringingSkill2 = "Alchemy";
         this.upbringingLanguage = "Common";
-        this.roleStatMajor = "accuracy";
-        this.roleStatMinor = "perception";
+        this.roleStatMajor = "Accuracy";
+        this.roleStatMinor = "Perception";
         this.rolePowers = [];
         this.roleSkills = [];
         this.equipmentCollection = null;
