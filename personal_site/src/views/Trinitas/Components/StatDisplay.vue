@@ -11,51 +11,49 @@
             <tbody>
                 <tr>
                     <td>Accuracy:</td>
-                    <td>{{ player.accuracy }}</td>
+                    <td>{{ chosen.Accuracy }}</td>
                     <td>Perception:</td>
-                    <td>{{ player.perception }}</td>
+                    <td>{{ chosen.Perception }}</td>
                     <td>Reflexes:</td>
-                    <td><span v-if=player.reflexLimited>
-                            <span style="text-decoration: line-through;">{{ player.reflexes }}</span>
-                            (<span style="color:var(--highlight); font-weight:bold;">{{ player.reflexLimit }}</span>)
+                    <td><span v-if=reflexIsLimited>
+                            <span style="text-decoration: line-through;">{{ reflexes }}</span>
+                            (<span style="color:var(--highlight); font-weight:bold;">{{ limitedReflexes }}</span>)
                         </span>
-                        <span v-else>{{ player.reflexes }}</span>
+                        <span v-else>{{ reflexes }}</span>
                     </td>
                     <td class="screen-1000">
                         <a @click="showDefenceInfo = !showDefenceInfo">Defence: </a>
                         <span v-if="showDefenceInfo">{{ defenceInfo }}</span>
                     </td>
-                    <td class="screen-1000">{{ player.defence }}</td>
+                    <td class="screen-1000">{{ defence }}</td>
                 </tr>
                 <tr>
                     <td>Strength:</td>
-                    <td>{{ player.strength }}</td>
+                    <td>{{ chosen.strength }}</td>
                     <td>Dexterity: </td>
-                    <td>{{ player.dexterity }}</td>
+                    <td>{{ chosen.dexterity }}</td>
                     <td>Fortitude: </td>
-                    <td> {{ player.fortitude }}</td>
+                    <td> {{ fortitude }}</td>
                     <td class="screen-1000">
                         <a @click="showHealthInfo = !showHealthInfo">Health: </a>
                         <span v-if="showHealthInfo">{{ healthInfo }}</span>
                     </td>
-                    <td class="screen-1000">{{ player.health }}</td>
+                    <td class="screen-1000">{{ health }}</td>
                 </tr>
                 <tr>
                     <td>Charisma:</td>
-                    <td>{{ player.charisma }}</td>
+                    <td>{{ chosen.charisma }}</td>
                     <td>Intelligence:</td>
-                    <td>{{ player.intelligence }}</td>
+                    <td>{{ chosen.intelligence }}</td>
                     <td>Willpower:</td>
-                    <td>{{ player.willpower }}</td>
+                    <td>{{ willpower }}</td>
                     <td class="screen-1000">Focus:</td>
-                    <td class="screen-1000">{{ player.willpower < 1 ? 1 : player.willpower }}</td>
+                    <td class="screen-1000">{{ willpower < 1 ? 1 : willpower }}</td>
                 </tr>
                 <tr>
-                    <td><span v-if="haveFaith">Faith:</span></td>
-                    <td><span v-if="haveFaith">{{ player.faith }}</span></td>
-                    <td colspan="4"></td>
-                    <td class="screen-1000">Speed:</td>
-                    <td class="screen-1000">{{ player.race ? player.race.speed.val : "" }}</td>
+                    <td><span>Faith:</span></td>
+                    <td><span>{{ chosen.faith }}</span></td>
+                    <td colspan="6"></td>
                 </tr>
             </tbody>
         </table>
@@ -72,22 +70,18 @@
                         <a @click="showDefenceInfo = !showDefenceInfo">Defence: </a>
                         <span v-if="showDefenceInfo">{{ defenceInfo }}</span>
                     </td>
-                    <td>{{ player.defence }}</td>
+                    <td>{{ defence }}</td>
                 </tr>
                 <tr>
                     <td>
                         <a @click="showHealthInfo = !showHealthInfo">Health: </a>
                         <span v-if="showHealthInfo">{{ healthInfo }}</span>
                     </td>
-                    <td>{{ player.health }}</td>
+                    <td>{{ health }}</td>
                 </tr>
                 <tr>
                     <td>Focus:</td>
-                    <td>{{ player.willpower < 1 ? 1 : player.willpower }}</td>
-                </tr>
-                <tr>
-                    <td>Speed:</td>
-                    <td>{{ player.race ? player.race.speed.val : "" }}</td>
+                    <td>{{ willpower < 1 ? 1 : willpower }}</td>
                 </tr>
             </tbody>
         </table>
@@ -97,21 +91,38 @@
 <script setup>
 import { ref, computed } from 'vue';
 import { capitalize } from '../../../assets/functionality';
+import core from '../../../assets/pedd/trinitas-core.json'
 
-const props = defineProps(["player", "haveFaith"]);
+const props = defineProps(["chosen"]);
+console.log(props.chosen);
+
+const reflexIsLimited = ref(false);
+const limitedReflexes = ref(0);
+
+const makeResistance = (val1, val2) => Math.round((Number(val1) + Number(val2)) / 2)
+
+const reflexes = ref(makeResistance(props.chosen.Accuracy, props.chosen.Perception));
+const willpower = ref(makeResistance(props.chosen.Intelligence, props.chosen.Charisma));
+const fortitude = ref(makeResistance(props.chosen.Strength, props.chosen.Dexterity));
+const armour = ref(0);  //TODO: build from chosen worn equipment
+
+let size = core.sizes.filter(s => s.val == props.chosen.size)[0];
+console.log(size)
+const defence = computed(() => size.defence + reflexes.value + armour.value);
+const health = computed(() => size.health + fortitude.value + willpower.value);
 
 const showHealthInfo = ref(false);
 const healthInfo = computed(() => {
-    return `${capitalize(props.player.size)} base (${props.player.baseHealth}) + ` +
-        `Fortitude (${props.player.fortitude}) + ` +
-        `Willpower (${props.player.willpower}) = `;
+    return `${size.val} base (${size.health}) + ` +
+        `Fortitude (${fortitude.value}) + ` +
+        `Willpower (${willpower.value}) = `;
 });
 
 const showDefenceInfo = ref(false)
 const defenceInfo = computed(() => {
-    return `${capitalize(props.player.size)} Size (${props.player.baseDefence}) + ` +
-        `Armour (${props.player.armour}) + ` +
-        `Evasion (${props.player.reflexLimited ? props.player.reflexLimit : props.player.reflexes}) = `;
+    return `${size.val} Size (${size.defence}) + ` +
+        `Armour (${armour.value}) + ` +
+        `Reflexes (${reflexIsLimited.value ? limitedReflexes.value : reflexes.value}) = `;
 });
 
 </script>

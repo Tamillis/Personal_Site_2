@@ -1,9 +1,10 @@
 <template>
     <BasePage subtitle="Character Creator">
         <section v-if="ready">
+            <CharacterDisplay :chosen="chosen" />
+
             <h4>TODO:</h4>
             <ul>
-                <li>Get Character Sheet Working</li>
                 <li>Ability to take repeatable Powers more than once inc Rank display</li>
                 <li>Have Powers that grant stats, skills and other changes do so</li>
                 <li>Special handling of Powers that change how Defence is calculated</li>
@@ -15,6 +16,7 @@
                 <div v-for="stat in core.stats">
                     <p :id="stat + '-control'">{{ stat }} {{ player[stat.toLowerCase()] }}</p>
                 </div>
+                <p>{{ player.size }}</p>
             </div>
 
             <div id="section-tabs">
@@ -139,6 +141,7 @@ import RacialPowers from "./Components/RacialPowers.vue";
 import Upbringing from "./Components/Upbringing.vue";
 import RolePowers from "./Components/RolePowers.vue";
 import BackgroundSelector from "./Components/BackgroundSelector.vue";
+import CharacterDisplay from "./Components/CharacterDisplay.vue";
 
 //resources
 import races from "../../assets/pedd/pedd-races.json";
@@ -203,7 +206,6 @@ function getUrlFromCharacter(character) {
 }
 
 let chosen = ref(getCharacterFromUrl(window.location.href));
-console.log(chosen.value);
 
 let allChosenPowers = computed(() => [...chosen.value.racialPowers, chosen.value.backgroundPower, ...chosen.value.rolePowers].sort());
 
@@ -211,13 +213,15 @@ let allChosenPowers = computed(() => [...chosen.value.racialPowers, chosen.value
 setRace(chosen.value.race);
 function setRace(raceName) {
     if (!raceName) {
-        chosen.value.race = ""
+        chosen.value.race = "Human"
+        chosen.value.size = "Medium"
         chosen.value.racialPowers = [];
-        chosen.value.anyRaceStats = false;
     }
     else {
         let race = races.filter(r => r.name == raceName)[0];
         chosen.value.race = raceName;
+        if(Array.isArray(race.size)) chosen.value.size = race.size[0];
+        else chosen.value.size = race.size;
         chosen.value.raceStatBoon = race.recommendedStatBoons;
         chosen.value.raceStatMalus = race.recommendedStatMalus;
     }

@@ -2,30 +2,29 @@
 
     <div class="stat-display-container">
         <div>
-            <h2 class="title underline">{{ player.name }}{{ player.name && player.concept ? ", " : "" }}{{ player.concept }}</h2>
-            <StatDisplay :player="player" :haveFaith="haveFaith" />
+            <h2 class="title underline">{{ props.chosen.name }}{{ props.chosen.name && props.chosen.concept ? ", " : "" }}{{ props.chosen.concept }}</h2>
+            <StatDisplay :chosen="props.chosen" />
         </div>
-        <CharacterPortrait class="character-portrait" :imgSrc="player.imgSrc"
-            @updateImgSrc="(imgSrc) => $emit('updateImgSrc', imgSrc)" />
+        <CharacterPortrait class="character-portrait" :imgSrc="props.chosen.imgSrc" />
     </div>
 
     <div class="summary">
         <div>
             <div class="flex flex-align-center">
                 <h3 style="width:125px">Race</h3>
-                <p>- {{ player.race ? player.race.name : "None chosen" }}</p>
+                <p>{{ props.chosen.race }}</p>
             </div>
 
             <div class="flex flex-align-center">
                 <h3 style="width:125px">Background</h3>
-                <p>- {{ player.background ? player.background.name : "None chosen" }}</p>
+                <p>{{ props.chosen.background }}</p>
             </div>
 
             <div>
                 <h3>Personal</h3>
-                <p>{{ player.bonds }}</p>
-                <p>{{ player.ideals }}</p>
-                <p>{{ player.flaws }}</p>
+                <p>{{ props.chosen.bonds }}</p>
+                <p>{{ props.chosen.ideals }}</p>
+                <p>{{ props.chosen.flaws }}</p>
             </div>
         </div>
 
@@ -39,16 +38,16 @@
         <div class="summary-sub-section">
             <h3>Skills</h3>
             <ul>
-                <li v-for="skill in player.skills" class="triangle-points" style="font-size:0.66em">{{ skill }}</li>
+                <li v-for="skill in props.chosen.skills" class="triangle-points" style="font-size:0.66em">{{ skill }}</li>
             </ul>
         </div>
     </div>
-    <div v-if="player.racialFeatures">
+    <div>
         <h3>Racial Features</h3>
         <div id="powers-summary" class="flex gap-1r flex-wrap">
-            <div class="power-summary" v-for="rf in player.racialFeatures">
-                <h4>{{ format(rf.name) }}</h4>
-                <div style="font-size:0.66em" v-html="rf.desc"></div>
+            <div class="power-summary" v-for="(rf, prop) in selectedRace.racialFeatures">
+                <h4>{{ format(prop) }}</h4>
+                <div style="font-size:0.66em" v-html="rf"></div>
             </div>
         </div>
     </div>
@@ -69,24 +68,27 @@ import { format } from '../../../assets/functionality';
 import { marked } from 'marked';
 import StatDisplay from './StatDisplay.vue';
 import powers from '../../../assets/pedd/pedd-powers.json';
+import races from '../../../assets/pedd/pedd-races.json';
+import backgrounds from '../../../assets/pedd/pedd-backgrounds.json';
 import CharacterPortrait from './CharacterPortrait.vue';
 
-const props = defineProps(['player', 'haveFaith']);
-const emits = defineEmits(['updateImgSrc']);
+const props = defineProps(['chosen']);
 
 const selectedEquipment = computed(() => {
     let equipment = [];
-    if(props.player.background) equipment.push(props.player.background.equipment);
-    if(props.player.equipmentCollection) equipment.push(props.player.equipmentCollection);
-    if(props.player.pack) equipment.push(props.player.pack);
+    if(props.chosen.background) equipment.push(props.chosen.background.equipment);
+    if(props.chosen.equipmentCollection) equipment.push(props.chosen.equipmentCollection);
+    if(props.chosen.pack) equipment.push(props.chosen.pack);
     return equipment.flat();
-})
+});
 
+const selectedRace = computed(() => races.filter(r => r.name == props.chosen.race)[0]);
+const selectedBg = computed(() => backgrounds.filter(r => r.backgrounds == props.chosen.background)[0]);
 const selectedPowers = computed(() => {
     let selectedPower = [];
-    if (props.player.racialPowers) selectedPower = selectedPower.concat(props.player.racialPowers);
-    if (props.player.backgroundPower) selectedPower.push(props.player.backgroundPower);
-    if (props.player.rolePowers && Array.isArray(props.player.rolePowers)) selectedPower = selectedPower.concat(props.player.rolePowers);
+    if (props.chosen.racialPowers) selectedPower = selectedPower.concat(props.chosen.racialPowers);
+    if (props.chosen.backgroundPower) selectedPower.push(props.chosen.backgroundPower);
+    if (props.chosen.rolePowers && Array.isArray(props.chosen.rolePowers)) selectedPower = selectedPower.concat(props.chosen.rolePowers);
 
     selectedPower = selectedPower.map(sp => {
         let power = powers.filter(p => sp && p.name == sp)[0]
@@ -96,7 +98,7 @@ const selectedPowers = computed(() => {
         }
     });
 
-    return selectedPower;
+    return selectedPower.sort((a,b) => a.name.localeCompare(b.name));
 });
 
 </script>
