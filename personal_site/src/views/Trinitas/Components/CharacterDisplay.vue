@@ -2,29 +2,29 @@
 
     <div class="stat-display-container">
         <div>
-            <h2 class="title underline">{{ props.chosen.name }}{{ props.chosen.name && props.chosen.concept ? ", " : "" }}{{ props.chosen.concept }}</h2>
+            <h2 class="title underline">{{ chosen.name }}{{ chosen.name && chosen.concept ? ", " : "" }}{{ chosen.concept }}</h2>
             <StatDisplay :chosen="props.chosen" />
         </div>
-        <CharacterPortrait class="character-portrait" :imgSrc="props.chosen.imgSrc" />
+        <CharacterPortrait class="character-portrait" :imgSrc="chosen.imgSrc" />
     </div>
 
     <div class="summary">
         <div>
             <div class="flex flex-align-center">
                 <h3 style="width:125px">Race</h3>
-                <p>{{ props.chosen.race }}</p>
+                <p>{{ chosen.race }}</p>
             </div>
 
             <div class="flex flex-align-center">
                 <h3 style="width:125px">Background</h3>
-                <p>{{ props.chosen.background }}</p>
+                <p>{{ chosen.background }}</p>
             </div>
 
             <div>
                 <h3>Personal</h3>
-                <p>{{ props.chosen.bonds }}</p>
-                <p>{{ props.chosen.ideals }}</p>
-                <p>{{ props.chosen.flaws }}</p>
+                <p>{{ chosen.bonds }}</p>
+                <p>{{ chosen.ideals }}</p>
+                <p>{{ chosen.flaws }}</p>
             </div>
         </div>
 
@@ -63,7 +63,7 @@
 </template>
 
 <script setup>
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
 import { format } from '../../../assets/functionality';
 import { marked } from 'marked';
 import StatDisplay from './StatDisplay.vue';
@@ -73,6 +73,8 @@ import backgrounds from '../../../assets/pedd/pedd-backgrounds.json';
 import CharacterPortrait from './CharacterPortrait.vue';
 
 const props = defineProps(['chosen']);
+
+console.log(props.chosen.imgSrc);
 
 const selectedEquipment = computed(() => {
     let equipment = [];

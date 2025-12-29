@@ -22,10 +22,17 @@ import CardContainer from './CardContainer.vue';
 import PowerContent from './PowerContent.vue';
 import PowerFilter from './PowerFilter.vue';
 
-const props = defineProps(["allChosenPowers", "player", "powers"]);
+import core from '../../../assets/pedd/trinitas-core.json';
+import powers from '../../../assets/pedd/pedd-powers.json';
+import races from '../../../assets/pedd/pedd-races.json';
+import backgrounds from '../../../assets/pedd/pedd-backgrounds.json';
+
+const props = defineProps(["allChosenPowers", "chosen", "powers"]);
 let tags = ["All"].concat(Array.from(new Set(props.powers.map(p => p.tag).flat())).sort()); //don't you just love javascript?
 
 const chosenPowers = defineModel('chosenPowers');
+
+const player = computed(() => props.chosen.getPlayer(core, races, backgrounds));
 
 const filter = ref({
     useTags: false,
@@ -37,18 +44,18 @@ const searchTerm = ref("");
 const searchTag = ref("All");
 
 const preqStats = ref({
-    acc: props.player.accuracy,
-    per: props.player.perception,
-    str: props.player.strength,
-    dex: props.player.dexterity,
-    cha: props.player.charisma,
-    int: props.player.intelligence,
-    faith: props.player.faith
+    acc: player.value.Accuracy,
+    per: player.value.Perception,
+    str: player.value.Strength,
+    dex: player.value.Dexterity,
+    cha: player.value.Charisma,
+    int: player.value.Intelligence,
+    faith: player.value.faith
 });
 const preqResistances = ref({
-    ref: props.player.reflexes,
-    fort: props.player.fortitude,
-    will: props.player.willpower
+    ref: player.value.reflexes,
+    fort: player.value.fortitude,
+    will: player.value.willpower
 });
 
 let allPowerNames = props.powers.map(p => p.name);

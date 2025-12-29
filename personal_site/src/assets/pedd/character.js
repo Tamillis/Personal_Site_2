@@ -20,14 +20,15 @@ export default class Character {
         this.roleStatMinor = "Perception";
         this.rolePowers = ["Action Surge", "Bullrush", "Keen Senses"];
         this.roleSkills = [];
-        this.equipmentCollection = null;
+        this.equipment = [];
         this.armour = "";
         this.helmet = "";
+        this.weapons = [];
         this.imgSrc = "https://picsum.photos/200";
         this.pip = "";
     };
 
-    getPlayer(races, backgrounds, powers) {
+    getPlayer(core, races, backgrounds) {
         let p = {};
 
         p.name = this.name;

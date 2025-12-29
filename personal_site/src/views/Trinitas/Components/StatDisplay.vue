@@ -90,11 +90,12 @@
 
 <script setup>
 import { ref, computed } from 'vue';
-import { capitalize } from '../../../assets/functionality';
 import core from '../../../assets/pedd/trinitas-core.json'
+import races from '../../../assets/pedd/pedd-races.json'
+import backgrounds from '../../../assets/pedd/pedd-backgrounds.json'
 
 const props = defineProps(["chosen"]);
-console.log(props.chosen);
+const player = computed(() => props.chosen.getPlayer(core, races, backgrounds))
 
 const reflexIsLimited = ref(false);
 const limitedReflexes = ref(0);

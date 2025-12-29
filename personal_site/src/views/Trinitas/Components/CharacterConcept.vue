@@ -8,6 +8,10 @@
             <label for="character-concept">Character Concept: </label>
             <input id="character-concept" class="text-entry" placeholder="..."  v-model="concept" />
         </div>
+        <div>
+            <label for="character-img">Character Image: </label>
+            <input id="character-img" class="text-entry" placeholder="..." v-model="imgSrc" />
+        </div>
     </div>
     <div class="flex-col justify-around gap-1r w-100">
         <div class="w-100">
@@ -33,6 +37,7 @@ const concept = defineModel('concept');
 const bonds = defineModel('bonds');
 const ideals = defineModel('ideals');
 const flaws = defineModel('flaws');
+const imgSrc = defineModel('img-src');
 </script>
 
 <style lang="css" scoped>

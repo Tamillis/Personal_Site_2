@@ -1,7 +1,7 @@
 <template>
     <BasePage subtitle="Character Creator">
         <section v-if="ready">
-            <CharacterDisplay :chosen="chosen" />
+            <CharacterDisplay :chosen="chosen" :key="key" />
 
             <h4>TODO:</h4>
             <ul>
@@ -10,14 +10,7 @@
                 <li>Special handling of Powers that change how Defence is calculated</li>
             </ul>
 
-            <a class="btn" :href="getUrlFromCharacter(chosen)">Open {{player.name ? player.name + "'s" : "Blank"}} Character Sheet</a>
-
-            <div id="simple-stat-display" class="flex">
-                <div v-for="stat in core.stats">
-                    <p :id="stat + '-control'">{{ stat }} {{ player[stat.toLowerCase()] }}</p>
-                </div>
-                <p>{{ player.size }}</p>
-            </div>
+            <a class="btn" :href="getUrlFromCharacter(chosen)">Open {{chosen.name ? chosen.name + "'s" : "Blank"}} Character Sheet</a>
 
             <div id="section-tabs">
                 <button @click="setSection('concept')" :class="{ selected: sections.concept }">1. Concept</button>
@@ -34,7 +27,7 @@
 
             <section id="concept-section" v-show="sections.concept">
                 <CharacterConcept v-model:name="chosen.name" v-model:concept="chosen.concept"
-                    v-model:bonds="chosen.bonds" v-model:ideals="chosen.ideals" v-model:flaws="chosen.flaws" />
+                    v-model:bonds="chosen.bonds" v-model:ideals="chosen.ideals" v-model:flaws="chosen.flaws" v-model:img-src="chosen.imgSrc" @update:img-src="key++"/>
             </section>
 
             <section id="race-section" v-show="sections.race">
@@ -54,15 +47,15 @@
                     </div>
                 </div>
 
+                <Upbringing :chosenUpbringingSkills="[chosen.upbringingSkill1, chosen.upbringingSkill2]"
+                    :chosenUpbringingLanguage="chosen.upbringingLanguage"
+                    @upbringing="upbringing => chooseUpbringing(upbringing)" />
+
                 <div v-if="chosen.race">
                     <RacialPowers :chosenPowers="chosen.racialPowers" :racePowers="getRacialPowers()"
                         :limit="chosen.race.heritages"
                         @chosen="chooseRacialPowers" :key="`rp-${key}`" />
                 </div>
-
-                <Upbringing :chosenUpbringingSkills="[chosen.upbringingSkill1, chosen.upbringingSkill2]"
-                    :chosenUpbringingLanguage="chosen.upbringingLanguage"
-                    @upbringing="upbringing => chooseUpbringing(upbringing)" />
             </section>
 
             <section id="background-section" v-show="sections.background">
@@ -93,14 +86,13 @@
                 </div>
 
                 <h3>Role Skills</h3>
-                <p>4 + your Intelligence ({{ player.intelligence }}) = {{ 4 + player.intelligence }}. It is wise to pick
+                <p>4 + your Intelligence ({{ chosen.Intelligence }}) = {{ 4 + chosen.Intelligence }}. It is wise to pick
                     up
                     some combat skills if you don't have enough yet.</p>
                 <SkillSelector :roleSkills="chosen.roleSkills" :otherSkills="otherSkills"
-                    :limit="4 + player.intelligence" @skills="skills => (chosen.roleSkills = skills)" />
+                    :limit="4 + chosen.Intelligence" @skills="skills => (chosen.roleSkills = skills)" />
 
-                <RolePowers v-model:chosenPowers="chosen.rolePowers" :allChosenPowers="allChosenPowers"
-                    :powers="powersJson" :player="player" />
+                <RolePowers v-model:chosenPowers="chosen.rolePowers" :powers="powersJson" :chosen="chosen" />
 
                 <h2>Powers in Progress:</h2>
                 <input class="text-entry" placeholder="..."  v-model="chosen.pip" />
@@ -127,7 +119,6 @@
 import { ref, computed } from "vue";
 import jsoncrush from "JSONCrush"
 import Character from "../../assets/pedd/character.js";
-import core from "../../assets/pedd/trinitas-core.json";
 
 import BasePage from './Components/BasePage.vue';
 import PowerContent from "./Components/PowerContent.vue";
@@ -144,6 +135,7 @@ import BackgroundSelector from "./Components/BackgroundSelector.vue";
 import CharacterDisplay from "./Components/CharacterDisplay.vue";
 
 //resources
+import core from "../../assets/pedd/trinitas-core.json";
 import races from "../../assets/pedd/pedd-races.json";
 import backgrounds from "../../assets/pedd/pedd-backgrounds.json";
 import equipment from "../../assets/pedd/pedd-equipment-collections.json"
@@ -207,8 +199,6 @@ function getUrlFromCharacter(character) {
 
 let chosen = ref(getCharacterFromUrl(window.location.href));
 
-let allChosenPowers = computed(() => [...chosen.value.racialPowers, chosen.value.backgroundPower, ...chosen.value.rolePowers].sort());
-
 //race any stat selections
 setRace(chosen.value.race);
 function setRace(raceName) {
@@ -267,82 +257,6 @@ let otherSkills = computed(() => {
         skills = skills.concat(background.skills);
     }
     return skills;
-});
-
-//computer player stats from chosen values
-let player = computed(() => {
-    let p = {};
-
-    p.name = chosen.value.name;
-    p.concept = chosen.value.concept;
-    p.bonds = chosen.value.bonds;
-    p.ideals = chosen.value.ideals;
-    p.flaws = chosen.value.flaws;
-
-    let race = false;
-    if (chosen.value.race != "") {
-        race = races.filter(r => r.name == chosen.value.race)[0];
-    }
-    p.racialPowers = chosen.value.racialPowers;
-
-    p.background = backgrounds.filter(bg => chosen.value.background == bg.name)[0];
-    p.backgroundPower = chosen.value.backgroundPower;
-
-    p.rolePowers = chosen.value.rolePowers;
-
-    // stat choices
-    for(let stat of core.stats) {
-        p[stat.toLowerCase()] = 0;
-    }
-
-    p[chosen.value.roleStatMajor.toLowerCase()] += 2;
-    p[chosen.value.roleStatMinor.toLowerCase()] += 1;
-
-    p[chosen.value.raceStatBoon[0].toLowerCase()] += 1;
-    p[chosen.value.raceStatBoon[1].toLowerCase()] += 1;
-    p[chosen.value.raceStatMalus.toLowerCase()] += -1;
-    
-    //set selected size - TODO: make this actually selectable when presented an option
-    p.size = race ? (Array.isArray(race.size) ? race.size[0] : race.size) : "Medium";
-
-    for(let stat of p.background.stats) p[stat.toLowerCase()] += 1;
-
-    let setResistance = (s1, s2) => Math.round((s1 + s2) / 2);
-    p.reflexes = setResistance(p.accuracy, p.perception);
-    p.reflexLimit = chosen.value.reflexLimit;
-    p.reflexLimited = p.reflexes > p.reflexLimit
-    p.fortitude = setResistance(p.strength, p.dexterity);
-    p.willpower = setResistance(p.intelligence, p.charisma);
-
-    let chosenSize = core.sizes.filter(s => s.val == p.size)[0]
-    p.baseHealth = chosenSize.health;
-    p.health = p.baseHealth + p.fortitude + p.willpower
-
-    p.faith = 2; //TODO: make faith input based
-
-    p.skills = [];
-    p.skills = chosen.value.roleSkills ? chosen.value.roleSkills.slice() : []; //copy array by value not ref
-    p.skills.push(chosen.value.upbringingSkill1);
-    p.skills.push(chosen.value.upbringingSkill2);
-    p.skills.push(`Language (${chosen.value.upbringingLanguage})`);
-
-    if (p.background) p.skills = p.skills.concat(p.background.skills);
-    p.skills = p.skills.sort((s1, s2) => s1.localeCompare(s2));
-
-    p.equipmentCollection = chosen.value.equipmentCollection ? equipment.filter(e => e.name == chosen.value.equipmentCollection)[0].equipment.split(",") : [];
-
-    p.pack = chosen.value.pack && chosen.value.pack != "None" ?
-        packs.filter(pk => pk.name == chosen.value.pack)[0].equipment.split(",") :
-        [];
-
-    p.armour = chosen.value.armour + chosen.value.shield + chosen.value.helmet;
-
-    p.baseDefence = chosenSize.defence;
-    p.defence = Number(p.baseDefence) + Number(p.armour) + Number(p.reflexLimited ? p.reflexLimit : p.reflexes);
-
-    p.imgSrc = chosen.value.imgSrc;
-
-    return p;
 });
 
 function copyUrl() {
