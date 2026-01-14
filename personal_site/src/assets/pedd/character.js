@@ -1,8 +1,8 @@
 export default class Character {
     constructor() {
-        this.name = "Dan";
-        this.concept = "Smith";
-        this.bonds = "The workshop";
+        this.name = "Nhoj Eod";
+        this.concept = "Ordinary Man in Extraordinary Circumstances";
+        this.bonds = "The workshop of his father.";
         this.ideals = "Something worth making, is worth making well.";
         this.flaws = "Weakness for sweet things.";
         this.faith = 2;
@@ -21,8 +21,9 @@ export default class Character {
         this.rolePowers = ["Action Surge", "Bullrush", "Keen Senses"];
         this.roleSkills = [];
         this.equipment = [];
-        this.armour = "";
-        this.helmet = "";
+        this.armour = 0;
+        this.helmet = 0;
+        this.shield = 0;
         this.weapons = [];
         this.imgSrc = "https://picsum.photos/200";
         this.pip = "";
@@ -71,6 +72,7 @@ export default class Character {
         p.reflexLimited = p.reflexes > p.reflexLimit
         p.fortitude = setResistance(p.strength, p.dexterity);
         p.willpower = setResistance(p.intelligence, p.charisma);
+        p.focus = p.willpower < 1 ? 1 : p.willpower;
 
         let chosenSize = core.sizes.filter(s => s.val == p.size)[0]
         p.baseHealth = chosenSize.health;

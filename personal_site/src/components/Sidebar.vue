@@ -39,7 +39,6 @@
             <li class="nav-item"><a href="mailto:peter@bellaby.co.uk?subject=Enquiry for Peter Bellaby"
                     class="nav-item-a">Email Me</a></li>
         </ul>
-        <div class="triangle-point"></div>
     </nav>
 </template>
 

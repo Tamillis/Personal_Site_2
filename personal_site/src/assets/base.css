@@ -99,7 +99,11 @@ blockquote {
   border-bottom: 2px solid var(--highlight);
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
 }
 
@@ -171,4 +175,21 @@ textarea {
   outline: none;
   border: none;
   text-align: left;
+}
+
+.mobile-only {}
+
+.non-mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 660px) {
+
+  .mobile-only {
+    display: none;
+  }
+
+  .non-mobile {
+    display: revert;
+  }
 }

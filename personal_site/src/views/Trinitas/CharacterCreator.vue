@@ -10,7 +10,7 @@
                 <li>Special handling of Powers that change how Defence is calculated</li>
             </ul>
 
-            <a class="btn" :href="getUrlFromCharacter(chosen)">Open {{chosen.name ? chosen.name + "'s" : "Blank"}} Character Sheet</a>
+            <!-- <a class="btn" :href="getUrlFromCharacter(chosen)">Open {{chosen.name ? chosen.name + "'s" : "Blank"}} Character Sheet</a> -->
 
             <div id="section-tabs">
                 <button @click="setSection('concept')" :class="{ selected: sections.concept }">1. Concept</button>

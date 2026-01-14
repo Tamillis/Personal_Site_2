@@ -473,6 +473,16 @@
   display: inline-block;
 }
 
+.triangle-point::after {
+  margin-left: 1em;
+  content: '▷'
+}
+
+.triangle-point-reverse::after {
+  margin-left: 1em;
+  content: '◁'
+}
+
 .triangle-points {
   list-style: '▷ ' inside;
 }

@@ -1,11 +1,11 @@
 <template>
     <section class="section bg-black-transparent-0p3">
-        <h1 class="main-title cinzel" style="margin-bottom:-1rem;">Trinitas</h1>
+        <h1 class="main-title cinzel" style="margin-bottom: 0px">Trinitas</h1>
         <h2 class="subsubtitle cinzel text-centre" style="text-indent: 0px;" v-if="subtitle">{{ subtitle }}</h2>
 
         <Links />
 
-        <div class="main-text inset">
+        <div class="main-text inset" style="margin-top:0px">
             <div id="pedd"></div>
 
             <slot></slot>
