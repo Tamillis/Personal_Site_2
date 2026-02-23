@@ -175,12 +175,13 @@
         "tag": [
             "cantrip",
             "spellcasting",
-            "universal"
+            "universal",
+            "core"
         ],
         "preq": [
             ""
         ],
-        "desc": "You have become a course of arcane study, learning to wield a handful of magic innately.\n\nYou know two cantrips of your choice from the Arcane Sphere. You know 1 Magnitude I spell of your choice (except spells with a gold cost) from the Arcane Sphere, which you can cast your Intelligence number of times per Long Rest without expending Mana.\n\nIntelligence is your Magic Statistic for this magic, and use a wand as a Spellcasting Focus.",
+        "desc": "You have become a student of arcane study, learning to wield a handful of magic innately.\n\nYou know two cantrips of your choice from the Arcane Sphere. You know 1 Magnitude I spell of your choice (except spells with a gold cost) from the Arcane Sphere, which you can cast your Intelligence number of times per Long Rest without expending Mana.\n\nIntelligence is your Magic Statistic for this magic, and use a wand as a Spellcasting Focus.",
         "repeatable": false,
         "skills": [],
         "statChanges": {
@@ -217,12 +218,13 @@
         "tag": [
             "recovery",
             "universal",
-            "utility"
+            "utility",
+            "core"
         ],
         "preq": [
             "Arcane Spellcasting"
         ],
-        "desc": "You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a Short Rest, you can choose expended Mana Reserve to recover. The Reserve can have a combined value that is equal to your highest available Magnitude, to a maximum of 6.\n\nFor example, if you have Mana III, you can recover up to three points of Reserve, such as three Magnitude I Reserve, or one Magnitude II Reserve and one Magnitude I Reserve, or one Magnitude III Reserve.",
+        "desc": "You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a Short Rest, you can choose expended Mana Reserve to recover. The Reserve can have a combined value that is equal to your highest available Magnitude.\n\nFor example, if you have Mana III, you can recover three Magnitude I Reserve (1 + 1 + 1), or one Magnitude II Reserve and one Magnitude I Reserve (2 + 1), or one Magnitude III Reserve.",
         "repeatable": false,
         "skills": [],
         "statChanges": {
@@ -300,7 +302,8 @@
         "oldName": "Arcane Spellcasting",
         "tag": [
             "spellcasting",
-            "universal"
+            "universal",
+            "powerful"
         ],
         "preq": [
             "Intelligence +1",
@@ -384,7 +387,8 @@
         "name": "Armour Expert",
         "tag": [
             "combat",
-            "defensive"
+            "defensive",
+            "core"
         ],
         "preq": [
             "Strength +1"
@@ -468,12 +472,13 @@
         "tag": [
             "combat",
             "social",
-            "utility"
+            "utility",
+            "powerful"
         ],
         "preq": [
             "Charisma +1"
         ],
-        "desc": "You can inspire others through stirring words, song and music. You can use your Bonus Action to choose one other character within 60ft of you who can hear you, and give them one Bardic Inspiration die: a d4.\n\nOnce before the next Short Rest, the character can roll the die and add the number rolled to one Check or Save they make. The character can wait until after they roll the d20 before deciding to use the Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A character can have only one Bardic Inspiration die at a time.\n\nYou can use this Power your Charisma number of times per Long Rest.",
+        "desc": "You can inspire others through stirring words, song and music. You can use your Bonus Action to choose one other character within 60ft of you who can hear you, and give them one Bardic Inspiration die: a d4.\n\nOnce before the next Short Rest, the character can use up the die and roll it to add the number rolled to one Check or Save they make: after rolling the d20 but before hearing the result. A character can have only one Bardic Inspiration die at a time.\n\nYou can use this Power your Charisma number of times per Long Rest.",
         "repeatable": false,
         "skills": [],
         "statChanges": {
@@ -601,7 +606,7 @@
         "preq": [
             "Strength +1"
         ],
-        "desc": "As a Bonus Action, you can move up to your Speed while an enemy can see or hear you. You also gain Temporary Health equal to your Strength. You can use this Power your Strength number of times per Long Rest.",
+        "desc": "As a Bonus Action, you can move up to your Speed toward an enemy can see or hear. You also gain Temporary Health equal to your Strength. You can use this Power your Strength number of times per Long Rest.",
         "repeatable": false,
         "skills": [],
         "statChanges": {
@@ -679,7 +684,8 @@
         "tag": [
             "combat",
             "utility",
-            "focus"
+            "focus",
+            "core"
         ],
         "preq": [
             "Intelligence +1"
@@ -721,7 +727,8 @@
         "tag": [
             "combat",
             "movement",
-            "utility"
+            "utility",
+            "core"
         ],
         "preq": [
             "Dexterity +3"
@@ -892,7 +899,8 @@
         "tag": [
             "spellcasting",
             "universal",
-            "utility"
+            "utility",
+            "core"
         ],
         "preq": [
             "Faith +1"
@@ -933,7 +941,8 @@
         "oldName": "Divine Domain",
         "tag": [
             "spell-like",
-            "universal"
+            "universal",
+            "powerful"
         ],
         "preq": [
             "Once every 4th Power"
@@ -1058,7 +1067,8 @@
         "oldName": "Divine Spellcasting",
         "tag": [
             "spellcasting",
-            "universal"
+            "universal",
+            "powerful"
         ],
         "preq": [
             "Faith +0",
@@ -1282,7 +1292,8 @@
         "preq": [
             "After 3 Powers",
             "Once every 3rd Power",
-            "Intelligence +1"
+            "Intelligence +1",
+            "core"
         ],
         "desc": "Choose two skills with which you are proficient. You now have Expertise in those skills.\n\nIf you take this Power again, you choose two others of your proficienct Skills to gain Expertise in.",
         "repeatable": true,
@@ -1544,7 +1555,8 @@
         "oldName": "Field Alchemy",
         "tag": [
             "combat",
-            "utility"
+            "utility",
+            "powerful"
         ],
         "preq": [
             "Intelligence +1",
@@ -2094,7 +2106,8 @@
         "tag": [
             "background",
             "combat",
-            "healing"
+            "healing",
+            "core"
         ],
         "preq": [
             "Medicine"
@@ -2355,7 +2368,7 @@
             "Charisma +3",
             "After 6 Powers"
         ],
-        "desc": "You can use the Bardic Inspiration Power a number of times equal to your Charisma + your Bonus per Long Rest.\n\nYou Bardic Inspiration dice increases from a d4 to a d8.",
+        "desc": "You can use the Bardic Inspiration Power a number of times equal to your Charisma + your Bonus per Long Rest.\n\nYour Bardic Inspiration die increases from a d4 to a d8.",
         "repeatable": false,
         "skills": [],
         "statChanges": {
@@ -2609,7 +2622,8 @@
         "tag": [
             "background",
             "exploration",
-            "skill"
+            "skill",
+            "core"
         ],
         "preq": [
             ""
@@ -2696,12 +2710,13 @@
             "defensive",
             "movement",
             "offensive",
-            "crowd-control"
+            "crowd-control",
+            "powerful"
         ],
         "preq": [
             "Willpower +1"
         ],
-        "desc": "Your inner training allows you to control and focus your body\u2019s life force: ki.\n\n**Ki Points** - Your access to this energy is represented by a number of Ki Points equal to your Willpower. You regain all spent Ki points during a Short Rest by spending 30 minutes meditating.\n\n**Ki Actions**:\n- **Quick Jab** - spend 1 Ki Point to make an Unarmed Strike as a Bonus Action with Advantage.\n- **Deft Dodge** - Spend 1 Ki Point to take the Dodge Action as a Bonus Action with proficiency.\n- **Sudden Speed** - Spend 1 Ki Point to take the Move Action as a Bonus Action, and your jump distance is doubled for the Round.\n- **Fold Foe** - When you hit a character with an Unarmed Strike, spend 1 Ki Point to make them make a Ki Save. If they fail, you can make them Prone or move them 10ft in a direction of your choice.\n\n**Ki Save** - the save DC for certain Ki Actions is 8 + your Willpower.",
+        "desc": "Your mindful training allows you to control and focus your body's life force: ki.\n\n**Ki Points** - Your access to this energy is represented by a number of Ki Points equal to your Willpower. You regain all spent Ki points during a Short Rest by spending 30 minutes meditating.\n\n**Ki Actions**:\n- **Quick Jab** - spend 1 Ki Point to make an Unarmed Strike as a Bonus Action with Advantage.\n- **Deft Dodge** - Spend 1 Ki Point to take the Dodge Action as a Bonus Action with proficiency.\n- **Sudden Speed** - Spend 1 Ki Point to take the Move Action as a Bonus Action, and your jump distance is doubled for the Round.\n- **Fold Foe** - When you hit a character with an Unarmed Strike, spend 1 Ki Point to make them make a Ki Save. If they fail, you can make them Prone or move them 10ft in a direction of your choice.\n\n**Ki Save** - the save DC for certain Ki Actions is 8 + your Willpower.",
         "repeatable": false,
         "skills": [],
         "statChanges": {
@@ -2991,7 +3006,8 @@
         "tag": [
             "background",
             "roll-effecting",
-            "universal"
+            "universal",
+            "powerful"
         ],
         "preq": [
             ""
@@ -3114,7 +3130,7 @@
         }
     },
     {
-        "name": "Major Mist Mutation",
+        "name": "Major Mutation",
         "oldName": "Major Mist Mutation",
         "tag": [
             "cantrip",
@@ -3130,7 +3146,7 @@
         "preq": [
             ""
         ],
-        "desc": "Those that survive the embrace of the Mists are inevitably deeply changed, and far from home. You have several major mutations warping and twisting your body in many locations, which have a collective effect. The effect of these mutations is not only to make you look like the horror that peasants tell tales of to frighten their children, but one of the following (choose one):\n\n- **Bulging Skin-Bursting Muscles** - you ignore the heavy property of weapons, you gain Proficiency in Athletics, and your Strength and Maximum Strength are increased by 1\n- **Pawed digitigrade Hooves and Tail** - your movement speed increases by 10ft, you gain Proficiency in Acrobatics, and your Dexterity and Maximum Dexterity are increased by 1\n- **Armoured Shell and Scales** - you gain Natural Armour of 4. You are resistant to Slashing damage, and you gain Proficiency in Fortitude Saves.\n- **Headful of Mismatched Eyes** - you can cast Detect Magic once per Long Rest as a 1 minute ritual without need Mana or Materials. You gain Proficiency in Observation, and your Perception and Maximum Perception is increased by 1.\n- **Hypnotic Bioluminescence** - you know the Friends cantrip, using your Charisma to cast the spell, you gain Proficiency in Persuasion, and your Charisma and Maximum Charisma is increased by 1.\n\nIf you suffer this Power again, choose a different effect.",
+        "desc": "You have several major mutations warping and twisting your body in many locations, which have a collective effect. The effect of these mutations is not only to make you look like the horror that peasants tell tales of to frighten their children, but one of the following (choose one):\n\n- **Bulging Skin-Bursting Muscles** - you ignore the heavy property of weapons, you gain Proficiency in Athletics, and your Strength and Maximum Strength are increased by 1\n- **Pawed digitigrade Hooves and Tail** - your movement speed increases by 10ft, you gain Proficiency in Acrobatics, and your Dexterity and Maximum Dexterity are increased by 1\n- **Armoured Shell and Scales** - you gain Natural Armour of 4. You are resistant to Slashing damage, and you gain Proficiency in Fortitude Saves.\n- **Headful of Mismatched Eyes** - you can cast Detect Magic once per Long Rest as a 1 minute ritual without need Mana or Materials. You gain Proficiency in Observation, and your Perception and Maximum Perception is increased by 1.\n- **Hypnotic Bioluminescence** - you know the Friends cantrip, using your Charisma to cast the spell, you gain Proficiency in Persuasion, and your Charisma and Maximum Charisma is increased by 1.\n\nIf you suffer this Power again, choose a different effect.",
         "repeatable": true,
         "skills": [],
         "statChanges": {
@@ -3251,7 +3267,8 @@
         "oldName": "Martial Arts",
         "tag": [
             "combat",
-            "offensive"
+            "offensive",
+            "powerful"
         ],
         "preq": [
             "Unarmed Fighting Skill",
@@ -3674,7 +3691,8 @@
         "name": "Occult Spellcasting",
         "tag": [
             "spellcasting",
-            "universal"
+            "universal",
+            "powerful"
         ],
         "preq": [
             "Mana"
@@ -3715,7 +3733,8 @@
         "oldName": "Pact Magic",
         "tag": [
             "spellcasting",
-            "universal"
+            "universal",
+            "powerful"
         ],
         "preq": [
             "Every 4th Power"
@@ -3884,7 +3903,8 @@
         "tag": [
             "universal",
             "spellcasting",
-            "utility"
+            "utility",
+            "core"
         ],
         "preq": [
             "Nature"
@@ -3972,7 +3992,8 @@
             "movement",
             "sense",
             "spell-like",
-            "utility"
+            "utility",
+            "powerful"
         ],
         "preq": [
             "Primal Spellcasting",
@@ -4013,7 +4034,8 @@
         "name": "Primal Spellcasting",
         "tag": [
             "spellcasting",
-            "universal"
+            "universal",
+            "powerful"
         ],
         "preq": [
             "Mana",
@@ -4231,7 +4253,8 @@
             "damage-reduction",
             "offensive",
             "roll-effecting",
-            "utility"
+            "utility",
+            "powerful"
         ],
         "preq": [
             "Strength +1"
@@ -4400,7 +4423,8 @@
             "combat",
             "exploration",
             "defensive",
-            "roll-effecting"
+            "roll-effecting",
+            "core"
         ],
         "preq": [
             ""
@@ -4483,7 +4507,8 @@
         "oldName": "Rune Magic",
         "tag": [
             "spellcasting",
-            "universal"
+            "universal",
+            "powerful"
         ],
         "preq": [
             "Once every 3rd Power"
@@ -4694,7 +4719,8 @@
             "combat",
             "healing",
             "utility",
-            "background"
+            "background",
+            "core"
         ],
         "preq": [
             "Fortitude +1"
@@ -4819,7 +4845,8 @@
         "tag": [
             "exploration",
             "skill",
-            "background"
+            "background",
+            "core"
         ],
         "preq": [
             "Intelligence +1"
@@ -4875,7 +4902,8 @@
             "combat",
             "offensive",
             "utility",
-            "focus"
+            "focus",
+            "core"
         ],
         "preq": [
             "Accuracy +1"
@@ -4916,7 +4944,8 @@
         "oldName": "Sneak Attack",
         "tag": [
             "combat",
-            "offensive"
+            "offensive",
+            "powerful"
         ],
         "preq": [
             "Accuracy +1 OR Dexterity +1",
@@ -5089,7 +5118,8 @@
             "combat",
             "exploration",
             "movement",
-            "skill"
+            "skill",
+            "core"
         ],
         "preq": [
             "Stealth Skill"
@@ -5179,7 +5209,8 @@
             "health",
             "racial",
             "stat",
-            "universal"
+            "universal",
+            "core"
         ],
         "preq": [
             ""
@@ -5265,7 +5296,8 @@
             "offensive",
             "defensive",
             "utility",
-            "focus"
+            "focus",
+            "core"
         ],
         "preq": [
             "Dexterity +1"
@@ -5477,7 +5509,8 @@
             "combat",
             "offensive",
             "utility",
-            "focus"
+            "focus",
+            "core"
         ],
         "preq": [
             "Strength +1"
@@ -5647,7 +5680,8 @@
         "tag": [
             "spellcasting",
             "universal",
-            "utility"
+            "utility",
+            "core"
         ],
         "preq": [
             ""
