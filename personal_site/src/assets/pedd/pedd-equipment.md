@@ -10,7 +10,9 @@
 - [Runes](#runes)
 
 ### Weapons
-For ease of use, weapons are broken down into the following thematic categories: "Simple" weapons, "Specialist" weapons, "Traditional Ranged" weapons and "Firearms", which also includes munitions.
+Weapons are the tools a character uses to make war. The manner of weapon dictates the skill needed to use it, and any special properties it might have with which a character can take actions outside the usual.
+
+Weapons are broken down into the following categories: "Simple" weapons, "Specialist" weapons, "Traditional Ranged" weapons and "Firearms", which also includes munitions.
 
 Weapons with an *, like the Lance, have special properties described below the table.
 
@@ -19,10 +21,10 @@ Those familiar to men and women across the shards.
 
 | Name | Skill | Cost | Damage | Weight | Properties |
 | --- | --- | --- | --- | --- | --- |
-| Battleaxe | Axes | 10gp | 1d8 slashing | 4lbs | Bleeds, Sweeping, Versatile (1d10) |
-| Club | Clubs | 1sp | 1d4 bludgeoning | 2lbs | Light, Nonlethal, Block |
-| Dagger | Knives | 2gp | 1d4 piercing / slashing | 1lbs | Finesse, Light, Nnlethal |
-| Hammer | Clubs, Slings & Thrown | 2sp | 1d4 bludgeoning | 2lbs | Light, Dazes, Thrown (20/60) |
+| Battleaxe | Bludgeoning | 10gp | 1d8 slashing | 4lbs | Bleeds, Sweeping, Versatile (1d10) |
+| Club | Bludgeoning | 1sp | 1d4 bludgeoning | 2lbs | Light, Nonlethal, Block |
+| Dagger | Scrapping | 2gp | 1d4 piercing / slashing | 1lbs | Finesse, Light, Nonlethal |
+| Hammer | Bludgeoning | 2sp | 1d4 bludgeoning | 2lbs | Light, Dazes, Thrown (20/60) |
 | Handaxe | Axes, Slings & Thrown | 3gp | 1d6 slashing | 2lbs | Light, Thrown (20/75) |
 | Heavy Club | Clubs, Heavy Arms | 5sp | 2d4 bludgeoning | 10lbs | Heavy, Two-handed, Dazes, Knockback |
 | Javelin | Spear, Slings & Thrown | 5sp | 1d6 piercing | 2lbs | Thrown (30/120) |
@@ -62,6 +64,7 @@ Those normally reserved for the hands of the well trained and militarily incline
 | Lucerne Hammer | Spear, Clubs, Heavy Arms | 20gp | 1d10 bludgeoning / piercing | 7lbs | Heavy, Reach, Lightly Armour Piercing, Two-Handed |
 | Morningstar | Clubs, Heavy Arms | 15gp | 1d8 bludgeoning / piercing | 4lbs | Dazes |
 | Parrying Dagger | Knives | 3gp | 1d4 piercing | 1lb | Finesse, Light, Parry, Prone Fighting, Block |
+| Punching Dagger | Knives | 4gp | 1d4 piercing | 1lb | Finesse, Light, Armour Piercing I, Prone Fighting |
 | Pollaxe | Spear, Heavy Arms | 35gp | 1d10 bludgeoning / piercing / slashing | 10lbs | Bleeds, Dazes, Two-Handed |
 | Rapier | Blades | 25gp | 1d8 piercing | 2lbs | Finesse, Parry |
 | Scimitar | Blades | 15gp | 1d6 slashing | 3lbs | Light, Bleeds, Finesse, Parry |
@@ -71,7 +74,7 @@ Those normally reserved for the hands of the well trained and militarily incline
 | War Scythe (Guisarme) | Spear, Heavy Arms | 5gp | 1d10 piercing | 8lbs | Ensnaring, Heavy, Reach, Two-Handed |
 | Winged Pike (Ranseur) | Spear, Heavy Arms | 25gp | 1d10 piercing / slashing | 8lbs | Heavy, Reach, Winged |
 
-**Cestus** - The weapon is not held in the hand, instead being wrapped around the wrist, held between the fingers, or covering the knuckles. Wielding this weapon does not prevent you from grappling or shoving an enemy, using an item, or interacting with an object, but you cannot wield other weapons with that hand.
+**Cestus** - The weapon is not held in the hand, instead being wrapped around the wrist, held between the fingers, or covering the knuckles. Wielding this weapon does not prevent you from grappling or shoving an enemy, using an item, or interacting with an object as if you were holding no weapon, but you cannot wield other weapons with that hand.
 
 **Garotte Wire** - Garrote Wire can only be used on a character the same size or smaller than the user, when the user has advantage against that character. On a hit the target is automatically grappled. Until the grapple ends, the target cannot breath and begins to Suffocate, if they can, and Garotte Wire attacks against the target automatically hit.
 
@@ -85,15 +88,15 @@ Those used for generations, both by nobles and peasants, and still effective in 
 | Blowgun* | Exotic (Blowgun) | 5sp | 1 piercing | 1lb | Ammunition (25/100) |
 | Dart | Slings & Thrown | 5cp | 1d4 piercing | 1/4lbs | Finesse, Thrown (20/60) |
 | Hand Crossbow | Bows & Crossbows | 75gp | 1d6 piercing | 3lbs | Ammunition (30/120), Light, Prone-fighting |
-| Heavy Crossbow | Bows & Crossbows | 50gp | 1d10 piercing | 12lbs | Ammunition (100/300), Heavy, Slow Loading, Bleeds, Lightly Armour Piercing, Two-Handed |
-| Light Crossbow | Bows & Crossbows | 25gp | 1d8 piercing | 5lbs | Ammunition (80/320), Two-Handed |
-| Longbow | Bows & Crossbows | 75gp | 1d10 piercing | 2lbs | Ammunition (200/600), Heavy, Bleeds, Two Handed |
+| Heavy Crossbow | Bows & Crossbows | 50gp | 1d10 piercing | 12lbs | Ammunition (100/300), Heavy, Slow Loading, Penetrates, Armour Piercing II, Two-Handed |
+| Light Crossbow | Bows & Crossbows | 25gp | 1d8 piercing | 5lbs | Ammunition (80/320), Two-Handed, Penetrates, Armour Piercing I |
+| Longbow | Bows & Crossbows | 75gp | 1d10 piercing | 2lbs | Ammunition (200/600), Heavy, Penetrates, Two Handed |
 | Net* | Exotic (Net) | 1gp | - | 3lbs | Thrown (15/30) |
 | Recurve Bow | Bows & Crossbows | 50gp | 1d8 piercing | 3lbs | Ammunition (150/600), Two-Handed |
 | Shortbow | Bows & Crossbows | 15gp | 1d6 piercing | 2lbs | Ammunition (100/150), Two-Handed |
 | Sling | Slings & Thrown | 1sp | 1d4 bludgeoning | 1/4lbs | Ammunition (30/120) |
 
-**Blowgun** - Ammunition for this weapon is made up of small, fine needles that are especially potent when paired with a poison coating. When applying poison to ammunition for this weapon (blowgun needles), it can cover 10 pieces of ammunition instead of the usual 3.
+**Blowgun** - Ammunition for this weapon is made up of small, fine needles that are especially potent when paired with a poison coating or other alchemical substance (see Alchmey below).
 
 **Net** - A character hit by a Net of its size or one larger is Immobilised until it is freed. A Net has no effect on characters that are formless, or
 creatures that are two sizes or more larger than it. A character can use an Action to make a DC 10 Strength check, freeing itself or another character within its reach from a Net on a success. Dealing 5 slashing damage to the net (Defence 10) destroys the Net and frees the character without harming it.
@@ -103,13 +106,13 @@ Modern ranged weapons employed by militaries and the keen amatuer, even if that 
 
 | Name | Skill | Cost | Damage | Weight | Properties |
 | --- | --- | --- | --- | --- | --- |
-| Arquebus | Firearms & Pistols | 20gp | 1d10 piercing | 9lbs | Ammunition (60/300), Slow Loading, light armour piercing, misfire, two-handed |
-| Buckshot Gun | Firearms & Pistols | 40gp | 2d6 slashing | 9lbs | Ammunition (30/60), Slow Loading, scatter (1d6), two-handed |
-| Carbine | Firearms & Pistols | 40gp | 1d10 piercing | 7lbs | Ammunition (40/150), Slow Loading, armour piercing |
-| Musket | Firearms & Pistols | 50gp | 1d12 piercing | 12lbs | Ammunition (120/500), Slow Loading, armour piercing, heavy, two-handed |
-| Pepperbox* | Firearms & Pistols | 40gp | 1d8 piercing | 6lbs | Ammunition 6 (20/100), Slow Loading, light armour piercing |
-| Pistol | Firearms & Pistols | 10gp | 1d8 piercing | 3lbs | Ammunition (20/120), Slow Loading, light armour piercing, misfire, light |
-| Sawn-Off | Firearms & Pistols | 30gp | 2d4 slashing | 6lps | Ammunition (20/40), Slow Loading, scatter (1d4) |
+| Arquebus | Firearms & Pistols | 20gp | 1d10 piercing | 9lbs | Ammunition (60/300), Slow Loading, Armour Piercing I, misfire, Two-Handed |
+| Buckshot Gun | Firearms & Pistols | 40gp | 2d6 slashing | 9lbs | Ammunition (30/60), Slow Loading, Sweeping, Two-Handed |
+| Carbine | Firearms & Pistols | 40gp | 1d10 piercing | 7lbs | Ammunition (40/150), Slow Loading, Armour Piercing II |
+| Musket | Firearms & Pistols | 50gp | 1d12 piercing | 12lbs | Ammunition (120/500), Slow Loading, Armour Piercing III, Heavy, Two-Handed |
+| Pepperbox* | Firearms & Pistols | 40gp | 1d8 piercing | 6lbs | Ammunition 6 (20/100), Slow Loading, Armour Piercing I |
+| Pistol | Firearms & Pistols | 10gp | 1d8 piercing | 3lbs | Ammunition (20/120), Slow Loading, Armour Piercing I, Misfire, light |
+| Sawn-Off | Firearms & Pistols | 30gp | 2d4 slashing | 6lps | Ammunition (20/40), Slow Loading, Sweeping |
 | **Munitions** |
 | Demo-barrel | - | 50gp | 4d6 bludgeoning | 75lbs | Knockback, Burning (4d6), Area (10ft radius per barrel to a maximum of 60ft) |
 | Flashbomb | Slings & Thrown | 5gp | Blinds & Deafens until the end of the target’s next turn | 1lbs | Thrown (20/60), Area (15ft radius)<sup>g</sup> |
@@ -127,8 +130,9 @@ g.	Grenades and Firebombs effect an area, as such instead of attack rolls effect
 
 - **Ammunition W (X/Y)** - You can use a weapon that has the Ammunition property to make a ranged attack only if you have Ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition and must Reload. X denotes the short range of the weapon, and Y the long range (attacks at Disadvantage). W, 1 if not if present, shows how many attacks can be made before needing to Reload.
 - **Armour Piercing** & **Light Armour Piercing** – the weapon ignores some benefit of Armour to a target's Defence. The target's Armour is reduced, to a minimum of 0, by 2 for Light Armour Piercing and by 6 for Armour Piercing.
-- **Bleeds** - critical hits with this weapon when doing Slashing damage inflict gaping wounds and profuse bleeding, immediately inflicting the Bleeding (your Bonus) condition. Non-living character types are immune to this condition.
+- **Bleeds** - critical hits with this weapon when doing Slashing damage inflict gaping wounds and profuse bleeding, immediately inflicting the Bleeding (your Bonus) condition. Characters that do not bleed are immune to this condition.
 - **Block** - You can raise this weapon like a shield, using your Bonus Action to Block, gaining a bonus of 1 to Defence.
+- **Burning** - attacks with this weapon cause the target to make a Reflex save vs a DC of 10 or suffer the Burning condition.
 - **Dazes** - critical hits with this weapon when doing Bludgeoning damage hit with a singularly boneshaking blow, immediately inflicting the Dazed condition. The target's Concentration, if any, is broken, and the next attack roll next Round it makes is made with Disadvantage.
 - **Ensnaring** - When you hit an attack with an ensnaring weapon, you may use your Bonus Action to attempt the Grapple action on the target or Shove them or make them Prone, using your weapon attack modifier in place of Strength. If you grapple a target with an ensnaring weapon, the grapple is automatically ended if you make another attack roll with that weapon.
 - **Finesse** - The weapon lends itself to dexterous combat due to features that make it more reliant on technique than brute force. When attacking with a finesse weapon, you use your choice of your
@@ -140,53 +144,45 @@ Strength or Dexterity for the attack and damage rolls. You must use the same mod
 - **Light** - A light weapon is small and easy to handle. When you take the Attack action and attack with a light melee weapon that you’re holding in one hand, you can use a Bonus Action to attack with a different light melee weapon that you’re holding in the other hand. You don’t add your Stat to the damage of the bonus attack, unless that modifier is negative. 
 - **Slow Loading** - due to the elaborate procedure of preparing the weapon for its next shot, it takes an Attack or Action to reload.
 - **Misfire** - on an attack roll of 1, the gun misfires; the attack fails, and a clearing bonus action to clean the gun is required before it can be fired again, leaving it unloaded.
-- **Nonlethal** - The weapon is designed to incapacitate or is otherwise capable of delivering a hit that does not kill the target. Non-lethal Strikes can be made with normal damage rolls.
+- **Nonlethal** - The weapon is designed to incapacitate, capable of delivering a full power hit that does not kill the target. Non-lethal Strikes can be made with normal damage rolls.
 - **Parry** - The weapon has some weapon catching or deflecting feature, allowing it to be used to take the Riposte or Parry Actions.
 - **Penetrates** - Critical hits with this weapon when doing Piercing damage sink deep into the tissue and tear at soft innards. The target must make a Fortitude save vs the attack roll or suffer a point of Exhaustion.
 - **Prone Fighting** - When you are prone and make a melee attack with this weapon, you do not suffer Disadvantage for being prone.
 - **Reach** - This weapon's extended length adds 5 ft to your Reach when you attack with it.
-- **Scatter X** – weapons with this property also target any Character within 5ft of the target, using the same to hit roll, for the damage indicated in X. The scatter property is not in effect if the primary target is 10ft or less from the attacker.
-- **Sweeping** - These weapons strike in broad, sweeping motions. When you make an attack with a sweeping weapon that deals slashing damage, you may use a Bonus Action to deal the weapon's damage die in damage against a second target within your reach that is adjacent to the first, provided that your attack roll would also hit that target.
+- **Sweeping** - These weapons strike in broad, sweeping motions, or fire in a cone around a target. When you make an attack with such a weapon, you may use a Bonus Action to deal the weapon's damage die in damage against a second target within range / reach that is adjacent to the first, provided that your attack roll would also hit that target.
+- **Thrown** - this weapon can be used to make a ranged weapon attack by throwing it. Use the "Thrown" skill instead of the usual weapon skill.
 - **Versatile** - This weapon can be used with one or two hands. A damage value in parentheses appears with the property–the damage when the weapon is used with two hands.
 - **Winged** - When you deal piercing damage against a character one size larger than you, or less, with a winged weapon, that character cannot move toward you that Round. Additionally can use the Disarm action with this weapon, using your Proficiency with the weapon's skill.
 
 ### Armour
 The following table lists the kinds of armour in the game. Armour's Armour property does not stack unless a + value is stated.
 
-| Name | Cost | Armour | Property | Strength Requirement
-| --- | --- | --- | --- | --- |
+| Name | Cost | Armour | Properties |
+| --- | --- | --- | --- |
 | **Body Armour** |
-| Padded | 5gp | 1 | Loud | N/A |
-| Leather | 10gp | 1 | | N/A |
-| Studded Leather | 45gp | 2 | | N/A |
-| Hide | 10gp | 2 | Stiff | 1 |
-| Chain shirt | 50gp | 3 | Stiff | 1 |
-| Scale mail | 50gp | 4 | Stiff, Loud | 1 |
-| Breastplate | 400gp | 4 | Stiff | 1 |
-| Half plate | 750gp | 5 | Stiff, Loud | 1 |
-| Ring mail | 30gp | 4 | Heavy, Loud | 3 |
-| Chain mail | 75gp | 6 | Heavy, Loud | 3 |
-| Splint | 200gp | 7 | Heavy, Loud | 3 |
-| Plate mail | 1,500gp | 8 | Heavy, Loud | 3 |
+| Padded Cloth | 1gp | 1 | Lightweight, Loud |
+| Leather | 1gp | 1 | |
+|  | 5gp | 2 | | - |
+| Chain shirt / Breastplate | 50gp | 3 | Stiff |
+| Ring mail / Chain mail | 50gp | 4 | Heavy, Loud |
+| Plate mail | 1000gp | 5 | Heavy, Loud |
 | **Auxilliary** |
-| Lobster Pot | 15gp | +1 | Stiff, Helmet | 1 |
-| Great Helm | 15gp | +2 | Blinkered, Heavy, Helmet | 3 |
-| Buckler | 5gp | +1 | Stiff | N/A |
-| Shield | 10gp | +2 | Medium, Shield | 1 |
-| Tower Shield | 75gp | +3 | Heavy, Loud, Shield | 3 |
+| Lobster Pot | 15gp | +1 | Stiff, Helmet |
+| Great Helm | 15gp | +2 | Blinkered, Heavy, Helmet |
+| Buckler | 5gp | +1 | Shield |
+| Shield | 10gp | +2 | Stiff, Shield |
+| Tower Shield | 75gp | +3 | Heavy, Loud, Shield |
+
+Note: the Strength requirement for armour is equal to the highest Armour value you're wearing. If you do not meet the requirement and don the armour, you suffer the Sluggish condition until you doff it. For example, a character in a Chain Shirt, Lobster Pot and Shield has a total Armour of 6 with a strength requirement of 3.
 
 #### Armour Properties
-**Blinkered** - you have Disadvantage on Perception checks.
-
-**Heavy** - you do not use Reflexes in calculations of Defence, and your Reflexes are limited to 2. Your Speed is reduced by 5ft (this effect is not cumulative with other Heavy pieces of armour).
-
-**Helmet** - worn on the head, you can only wear one helmet at a time.
-
-**Loud** - you have Disadvantage on Stealth checks.
-
-**Shield** - equipped in 1 hand, you must use a Bonus Action to Block to gain the bonus to Armour. If you use two shields, and use your Bonus Action and Action to Block, yes you may gain both shields' defence bonuses.
-
-**Stiff** - your Reflexes cannot be greater than 2.
+- **Blinkered** - you have Disadvantage on Perception checks.
+- **Heavy** - your Agility is limited to 2, and your Speed is reduced by 5ft (this effect is not cumulative with other Heavy pieces of armour).
+- **Helmet** - worn on the head, you can only wear one helmet at a time.
+- **Lightweight** - no strength requirement
+- **Loud** - you have Disadvantage on Stealth checks.
+- **Shield** - equipped in 1 hand, you must use a Bonus Action to Block to gain the bonus to Armour. If you use two shields, and use your Bonus Action and Action to Block, yes you may gain both shields' defence bonuses.
+- **Stiff** - your Agility is limited to 2
 
 ### Alchemical Items WIP
 _Materials_ are intended to be part of a crafting system (which is very WIP and not posted yet).
