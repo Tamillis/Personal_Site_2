@@ -14,7 +14,7 @@ Weapons are the tools a character uses to make war. The manner of weapon dictate
 
 Weapons are broken down into the following categories: "Simple" weapons, "Specialist" weapons, "Traditional Ranged" weapons and "Firearms", which also includes munitions.
 
-Weapons with an *, like the Lance, have special properties described below the table.
+Weapons with an * on their name, like the Lance, have special properties described below the table. Those with a * in the skill are "Exotic" weapons that use their own Custom Skill.
 
 #### Simple Weapons
 Those familiar to men and women across the shards.
@@ -25,54 +25,52 @@ Those familiar to men and women across the shards.
 | Club | Bludgeoning | 1sp | 1d4 bludgeoning | 2lbs | Light, Nonlethal, Block |
 | Dagger | Scrapping | 2gp | 1d4 piercing / slashing | 1lbs | Finesse, Light, Nonlethal |
 | Hammer | Bludgeoning | 2sp | 1d4 bludgeoning | 2lbs | Light, Dazes, Thrown (20/60) |
-| Handaxe | Axes, Slings & Thrown | 3gp | 1d6 slashing | 2lbs | Light, Thrown (20/75) |
-| Heavy Club | Clubs, Heavy Arms | 5sp | 2d4 bludgeoning | 10lbs | Heavy, Two-handed, Dazes, Knockback |
-| Javelin | Spear, Slings & Thrown | 5sp | 1d6 piercing | 2lbs | Thrown (30/120) |
-| Longsword | Blades | 15gp | 1d8 piercing / slashing | 3lbs | Parry, Bleeds, Versatile (1d10), Block |
-| Mace | Clubs | 5gp | 1d6 bludgeoning | 4lbs | Light Armour Piercing |
-| Maul | Clubs, Heavy Arms | 10gp | 2d6 bludgeoning | 12lbs | Heavy, Reach, Dazes, Lightly Armour Piercing, Two-Handed, Knockback |
-| Pike | Spear, Heavy Arms | 5gp | 1d10 piercing | 13lbs | Heavy, Reach, Two-Handed |
-| Quarterstaff | Spear | 2sp | 1d6 bludgeoning | 4lbs | Nonlethal, Versatile (2d4), Block |
-| Shiv* | Knives | 5cp | 1d4 piercing | 0.5lbs | Light, Nonlethal |
-| Short Spear | Spear | 1gp | 1d6 piercing | 3lbs | Nonlethal |
-| Shortsword | Blades | 10gp | 1d6 piercing / slashing | 2lbs | Light, Finesse, Parry |
-| Sickle | Knives | 1gp | 1d4 slashing | 2lbs | Light, Bleeds |
-| Spear | Spear | 1gp | 1d8 piercing | 4lbs | Reach, Two-Handed, Block |
-| Spear Club (Goedendag) | Clubs, Spear | 5sp | 1d4 bludgeoning / piercing | 3lbs | Light Armour Piercing |
-| Whip* | Exotic (Whip) | 2gp | 1d4 slashing | 3lbs | Ensnaring, Finesse, Reach |
-| Winged Spear | Spear | 5gp | 1d6 piercing | 5lbs | Versatile (1d8), "Winged", Block |
+| Handaxe | Bludgeoning | 3gp | 1d6 slashing | 2lbs | Light, Thrown (20/75) |
+| Heavy Club | Bludgeoning | 5sp | 2d4 bludgeoning | 10lbs | Heavy, Two-handed, Dazes, Knockback |
+| Javelin | Spear Fighting | 5sp | 1d6 piercing | 2lbs | Thrown (30/120) |
+| Longsword | Duelling | 15gp | 1d8 piercing / slashing | 3lbs | Parry, Bleeds, Versatile (1d10), Block |
+| Mace | Bludgeoning | 5gp | 1d6 bludgeoning | 4lbs | Armour Piercing I |
+| Maul | Bludgeoning | 10gp | 2d6 bludgeoning | 12lbs | Heavy, Reach, Dazes, Lightly Armour Piercing, Two-Handed, Knockback |
+| Pike | Spear Fighting | 5gp | 1d10 piercing | 13lbs | Heavy, Reach, Two-Handed |
+| Quarterstaff | Spear Fighting | 2sp | 1d6 bludgeoning | 4lbs | Nonlethal, Versatile (2d4), Block |
+| Shiv* | Scrapping | 5cp | 1d4 piercing | 0.5lbs | Light, Nonlethal |
+| Short Spear | Spear Fighting | 1gp | 1d6 piercing | 3lbs | Nonlethal |
+| Shortsword | Duelling | 10gp | 1d6 piercing / slashing | 2lbs | Light, Finesse, Parry |
+| Sickle | Scrapping | 1gp | 1d4 slashing | 2lbs | Light, Bleeds |
+| Spear | Spear Fighting | 1gp | 1d8 piercing | 4lbs | Reach, Two-Handed, Block |
+| Spear Club (Goedendag) | Spear Fighting | 5sp | 1d4 bludgeoning / piercing | 3lbs | Armour Piercing I |
+| Whip | * | 2gp | 1d4 slashing | 3lbs | Ensnaring, Finesse, Reach |
+| Winged Spear | Spear Fighting | 5gp | 1d6 piercing | 5lbs | Versatile (1d8), "Winged", Block |
 
 **Shiv** - Crude and simply made, a shiv is the weapon of the desparate. If you make an attack roll with this weapon and the dice result is 1, the Shiv breaks.
-
-**Whip** - When you deal damage against a character the same size as you, that character cannot move toward you that Round.
 
 #### Specialist Weapons
 Those normally reserved for the hands of the well trained and militarily inclined. Rarer, but not necessary exclusive.
 
 | Name | Skill | Cost | Damage | Weight | Properties |
 | --- | --- | --- | --- | --- | --- |
-| Cestus* | Body | 1gp | 1d4 bludgeoning | 0.5lbs | Light, Nonlethal |
-| Esctoc | Blades | 20gp | 1d8 piercing | 2lbs | Finesse, Parry, Lightly Armour Piercing |
-| Falchion | Blades | 25gp | 1d8 slashing | 2lbs | Bleeds, Finesse, Parry |
-| Flail | Clubs, Heavy Arms | 10gp | 1d8 bludgeoning / piercing | 2lbs | Ensnaring |
-| Garotte Wire* | Exotic (Garrote Wire) | 5gp | 1d6 slashing | 1/4lbs | Finesse, Light, Two-Handed |
-| Glaive | Spear, Heavy Arms | 20gp | 1d10 slashing | 6lbs | Heavy, Reach, Sweeping, Two-Handed |
-| Greataxe | Axes, Heavy Arms | 30gp | 1d12 slashing | 9lbs | Heavy, Bleeds, Two-Handed |
-| Greatsword | Blades, Heavy Arms | 50gp | 2d6 piercing / slashing | 7lbs | Heavy, Bleeds, Sweeping, Two-Handed |
-| Halberd | Spear, Heavy Arms | 20gp | 1d10 piercing / slashing | 7lbs | Heavy, Reach, Bleeds, Two-Handed |
-| Lance* | Exotic (Lance) | 10gp | 1d12 piercing | 6lbs | Reach, Dazes |
-| Lucerne Hammer | Spear, Clubs, Heavy Arms | 20gp | 1d10 bludgeoning / piercing | 7lbs | Heavy, Reach, Lightly Armour Piercing, Two-Handed |
-| Morningstar | Clubs, Heavy Arms | 15gp | 1d8 bludgeoning / piercing | 4lbs | Dazes |
-| Parrying Dagger | Knives | 3gp | 1d4 piercing | 1lb | Finesse, Light, Parry, Prone Fighting, Block |
-| Punching Dagger | Knives | 4gp | 1d4 piercing | 1lb | Finesse, Light, Armour Piercing I, Prone Fighting |
-| Pollaxe | Spear, Heavy Arms | 35gp | 1d10 bludgeoning / piercing / slashing | 10lbs | Bleeds, Dazes, Two-Handed |
-| Rapier | Blades | 25gp | 1d8 piercing | 2lbs | Finesse, Parry |
-| Scimitar | Blades | 15gp | 1d6 slashing | 3lbs | Light, Bleeds, Finesse, Parry |
-| Trident | Spears | 5gp | 2d4 piercing | 4lbs | Versatile (1d10), Winged, Block |
-| War Pick | Clubs | 5gp | 1d8 piercing | 2lbs | Versatile (1d10), Lightly Armour Piercing |
-| Warhammer | Clubs, Heavy Arms | 15gp | 1d8 bludgeoning | 3lbs | Dazes, Lightly Armour Piercing, Versatile (1d10), Knockback |
-| War Scythe (Guisarme) | Spear, Heavy Arms | 5gp | 1d10 piercing | 8lbs | Ensnaring, Heavy, Reach, Two-Handed |
-| Winged Pike (Ranseur) | Spear, Heavy Arms | 25gp | 1d10 piercing / slashing | 8lbs | Heavy, Reach, Winged |
+| Cestus* | Scrapping | 1gp | 1d4 bludgeoning | 0.5lbs | Light, Nonlethal |
+| Estoc | Duelling | 20gp | 1d8 piercing | 2lbs | Finesse, Parry, Armour Piercing I |
+| Falchion | Duelling | 25gp | 1d8 slashing | 2lbs | Bleeds, Finesse, Parry |
+| Flail | Bludgeoning | 10gp | 1d8 bludgeoning / piercing | 2lbs | Ensnaring |
+| Garotte Wire* | *| 5gp | 1d6 slashing | 1/4lbs | Finesse, Light, Two-Handed |
+| Glaive | Spear Fighting | 20gp | 1d10 slashing | 6lbs | Heavy, Reach, Sweeping, Two-Handed |
+| Greataxe | Bludgeoning | 30gp | 1d12 slashing | 9lbs | Heavy, Bleeds, Two-Handed |
+| Greatsword | * | 50gp | 2d6 piercing / slashing | 7lbs | Heavy, Bleeds, Sweeping, Two-Handed |
+| Halberd | Spear Fighting | 20gp | 1d10 piercing / slashing | 7lbs | Heavy, Reach, Bleeds, Two-Handed |
+| Lance* | * | 10gp | 1d12 piercing | 6lbs | Reach, Dazes |
+| Lucerne Hammer | Bludgeoning | 20gp | 1d10 bludgeoning / piercing | 7lbs | Heavy, Reach, Lightly Armour Piercing, Two-Handed |
+| Morningstar | Bludgeoning | 15gp | 1d8 bludgeoning / piercing | 4lbs | Dazes |
+| Parrying Dagger | Duelling | 3gp | 1d4 piercing | 1lb | Finesse, Light, Parry, Prone Fighting, Block |
+| Punching Dagger | Scrapping | 4gp | 1d4 piercing | 1lb | Finesse, Light, Armour Piercing I, Prone Fighting |
+| Pollaxe | Spear Fighting | 35gp | 1d10 bludgeoning / piercing / slashing | 10lbs | Bleeds, Dazes, Two-Handed |
+| Rapier | Duelling | 25gp | 1d8 piercing | 2lbs | Finesse, Parry |
+| Scimitar | Duelling | 15gp | 1d6 slashing | 3lbs | Light, Bleeds, Finesse, Parry |
+| Trident | Spear Fighting | 5gp | 2d4 piercing | 4lbs | Versatile (1d10), Winged, Block |
+| War Pick | Bludgeoning | 5gp | 1d8 piercing | 2lbs | Versatile (1d10), Lightly Armour Piercing |
+| Warhammer | Bludgeoning | 15gp | 1d8 bludgeoning | 3lbs | Dazes, Lightly Armour Piercing, Versatile (1d10), Knockback |
+| War Scythe (Guisarme) | Spear Fighting | 5gp | 1d10 piercing | 8lbs | Ensnaring, Heavy, Reach, Two-Handed |
+| Winged Pike (Ranseur) | Spear Fighting | 25gp | 1d10 piercing / slashing | 8lbs | Heavy, Reach, Winged |
 
 **Cestus** - The weapon is not held in the hand, instead being wrapped around the wrist, held between the fingers, or covering the knuckles. Wielding this weapon does not prevent you from grappling or shoving an enemy, using an item, or interacting with an object as if you were holding no weapon, but you cannot wield other weapons with that hand.
 
@@ -85,16 +83,16 @@ Those used for generations, both by nobles and peasants, and still effective in 
 
 | Name | Skill | Cost | Damage | Weight | Properties |
 | --- | --- | --- | --- | --- | --- |
-| Blowgun* | Exotic (Blowgun) | 5sp | 1 piercing | 1lb | Ammunition (25/100) |
-| Dart | Slings & Thrown | 5cp | 1d4 piercing | 1/4lbs | Finesse, Thrown (20/60) |
-| Hand Crossbow | Bows & Crossbows | 75gp | 1d6 piercing | 3lbs | Ammunition (30/120), Light, Prone-fighting |
-| Heavy Crossbow | Bows & Crossbows | 50gp | 1d10 piercing | 12lbs | Ammunition (100/300), Heavy, Slow Loading, Penetrates, Armour Piercing II, Two-Handed |
-| Light Crossbow | Bows & Crossbows | 25gp | 1d8 piercing | 5lbs | Ammunition (80/320), Two-Handed, Penetrates, Armour Piercing I |
-| Longbow | Bows & Crossbows | 75gp | 1d10 piercing | 2lbs | Ammunition (200/600), Heavy, Penetrates, Two Handed |
-| Net* | Exotic (Net) | 1gp | - | 3lbs | Thrown (15/30) |
-| Recurve Bow | Bows & Crossbows | 50gp | 1d8 piercing | 3lbs | Ammunition (150/600), Two-Handed |
-| Shortbow | Bows & Crossbows | 15gp | 1d6 piercing | 2lbs | Ammunition (100/150), Two-Handed |
-| Sling | Slings & Thrown | 1sp | 1d4 bludgeoning | 1/4lbs | Ammunition (30/120) |
+| Blowgun* | * | 5sp | 1 piercing | 1lb | Ammunition (25/100) |
+| Dart | Thrown | 5cp | 1d4 piercing | 1/4lbs | Finesse, Thrown (20/60) |
+| Hand Crossbow | Bowyer | 75gp | 1d6 piercing | 3lbs | Ammunition (30/120), Light, Prone-fighting |
+| Heavy Crossbow | Bowyer | 50gp | 1d10 piercing | 12lbs | Ammunition (100/300), Heavy, Slow Loading, Penetrates, Armour Piercing II, Two-Handed |
+| Light Crossbow | Bowyer | 25gp | 1d8 piercing | 5lbs | Ammunition (80/320), Two-Handed, Penetrates, Armour Piercing I |
+| Longbow | Bowyer | 75gp | 1d10 piercing | 2lbs | Ammunition (200/600), Heavy, Penetrates, Two Handed |
+| Net* | * | 1gp | - | 3lbs | Thrown (15/30) |
+| Recurve Bow | Bowyer | 50gp | 1d8 piercing | 3lbs | Ammunition (150/600), Two-Handed |
+| Shortbow | Bowyer | 15gp | 1d6 piercing | 2lbs | Ammunition (100/150), Two-Handed |
+| Sling | Thrown | 1sp | 1d4 bludgeoning | 1/4lbs | Ammunition (30/120) |
 
 **Blowgun** - Ammunition for this weapon is made up of small, fine needles that are especially potent when paired with a poison coating or other alchemical substance (see Alchmey below).
 
@@ -106,19 +104,19 @@ Modern ranged weapons employed by militaries and the keen amatuer, even if that 
 
 | Name | Skill | Cost | Damage | Weight | Properties |
 | --- | --- | --- | --- | --- | --- |
-| Arquebus | Firearms & Pistols | 20gp | 1d10 piercing | 9lbs | Ammunition (60/300), Slow Loading, Armour Piercing I, misfire, Two-Handed |
-| Buckshot Gun | Firearms & Pistols | 40gp | 2d6 slashing | 9lbs | Ammunition (30/60), Slow Loading, Sweeping, Two-Handed |
-| Carbine | Firearms & Pistols | 40gp | 1d10 piercing | 7lbs | Ammunition (40/150), Slow Loading, Armour Piercing II |
-| Musket | Firearms & Pistols | 50gp | 1d12 piercing | 12lbs | Ammunition (120/500), Slow Loading, Armour Piercing III, Heavy, Two-Handed |
-| Pepperbox* | Firearms & Pistols | 40gp | 1d8 piercing | 6lbs | Ammunition 6 (20/100), Slow Loading, Armour Piercing I |
-| Pistol | Firearms & Pistols | 10gp | 1d8 piercing | 3lbs | Ammunition (20/120), Slow Loading, Armour Piercing I, Misfire, light |
-| Sawn-Off | Firearms & Pistols | 30gp | 2d4 slashing | 6lps | Ammunition (20/40), Slow Loading, Sweeping |
+| Arquebus | Firearms | 20gp | 1d10 piercing | 9lbs | Ammunition (60/300), Slow Loading, Armour Piercing I, misfire, Two-Handed |
+| Buckshot Gun | Firearms | 40gp | 2d6 slashing | 9lbs | Ammunition (30/60), Slow Loading, Sweeping, Two-Handed |
+| Carbine | Firearms | 40gp | 1d10 piercing | 7lbs | Ammunition (40/150), Slow Loading, Armour Piercing II |
+| Musket | Firearms | 50gp | 1d12 piercing | 12lbs | Ammunition (120/500), Slow Loading, Armour Piercing III, Heavy, Two-Handed |
+| Pepperbox* | Firearms | 40gp | 1d8 piercing | 6lbs | Ammunition 6 (20/100), Slow Loading, Armour Piercing I |
+| Pistol | Firearms | 10gp | 1d8 piercing | 3lbs | Ammunition (20/120), Slow Loading, Armour Piercing I, Misfire, light |
+| Sawn-Off | Firearms | 30gp | 2d4 slashing | 6lps | Ammunition (20/40), Slow Loading, Sweeping |
 | **Munitions** |
 | Demo-barrel | - | 50gp | 4d6 bludgeoning | 75lbs | Knockback, Burning (4d6), Area (10ft radius per barrel to a maximum of 60ft) |
-| Flashbomb | Slings & Thrown | 5gp | Blinds & Deafens until the end of the target’s next turn | 1lbs | Thrown (20/60), Area (15ft radius)<sup>g</sup> |
-| Fire Lance* | Exotic (Lance) | 35gp | 2d8 | 11lbs | Ammunition (5/10), burning (2d8) reach, heavy, two-handed |
-| Firebomb | Slings & Thrown | 10gp | 2d10 | 2lbs | Thrown (20/60), burning (2d10) Area (5ft radius)<sup>c</sup> |
-| Grenade | Slings & Thrown | 5gp | 1d8 slashing | 1lbs | Thrown (20/60), Burning (1d8), Knockback, Area (5ft radius)<sup>g</sup> |
+| Flashbomb | Thrown | 5gp | Blinds & Deafens until the end of the target’s next turn | 1lbs | Thrown (20/60), Area (15ft radius)<sup>g</sup> |
+| Fire Lance* | * | 35gp | 2d8 | 11lbs | Ammunition (5/10), burning (2d8) reach, heavy, two-handed |
+| Firebomb | Thrown | 10gp | 2d10 | 2lbs | Thrown (20/60), burning (2d10) Area (5ft radius)<sup>c</sup> |
+| Grenade | Thrown | 5gp | 1d8 slashing | 1lbs | Thrown (20/60), Burning (1d8), Knockback, Area (5ft radius)<sup>g</sup> |
 
 g.	Grenades and Firebombs effect an area, as such instead of attack rolls effected creatures make a reflex save vs a DC of 8 + the thrower’s accuracy + the thrower’s proficiency Bonus if relevant. On a successful save the target takes half damage from grenades and firebombs or does not suffer the effects of the flashbomb.
 
