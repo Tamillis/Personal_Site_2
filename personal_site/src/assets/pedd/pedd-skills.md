@@ -5,7 +5,16 @@ All Checks in Trinitas follow the formula:
 
 > d20 + Stat + Bonus vs DC
 
-**DC** - an older gaming term meaning "Difficulty Class", that basically means "Target Number". Beat or meet this number to "succeed". The GM is responsible for determining the DC, and may keep the value hidden, simply stating the result. Some areas of the game, such as saves, provide DC's instead of GM fiat.
+**DC** - an traditional gaming term meaning "Difficulty Class", that basically means "Target Number". Beat or meet this number to "succeed". The GM is responsible for determining the DC, and may keep the value hidden, simply stating the result. Some areas of the game, such as saves, provide DC's instead of GM fiat.
+
+Generally speaking, DCs follow a pattern of:
+
+| DC | Meaning |
+| --- | --- |
+| 5 | Easy |
+| 10 | Normal |
+| 15 | Hard |
+| 20 | Legendary |
 
 **Stat** - a Statistic of your character. See below.
 
@@ -19,6 +28,46 @@ Two major aspects affect the above formula: Advantage and Bonuses.
 **Bonus** - due to various sources: Powers, Skill Proficiencies, GM fiat etc., you add a value to your roll. This starts at +2. Except in exceptional circumstances the GM and the table feel are valid, you don't gain more than 1 Bonus to a roll at a time.
 
 A special powerful Power, “Aptitude”, increases the value of your Bonus to +3, then to +4 and finally to +5.
+
+## New Statistics
+This is a new approach to Stats that I'm getting very keen on. Keeps things simpliar imho.
+
+- **Strength** - old Strength & Fortitude - melee
+- **Agility** - old Dexterity, Reflexes and Accuracy - ranged
+- **Perception** - no change (but considering getting rid of the “observe” skill cos, when are you not just “observing”, haven’t i just remade the “perception” skill problem??). Replace with “Search” skill for “spot things that are hiding”? Fuck it. “Spot Hidden”.
+- **Intelligence** - no change (this is fine. Knowledge skills are fine. Using Intelligence with any skill as “Knowledge of X” is encouraged)
+- **Spirit** - old Willpower and Faith
+
+No resistances.
+
+### New Secondaries
+**Health** - Size + Strength + Spirit - recover 1* Strength min 1 per long rest, Spirit Health per short rest
+**Evasion** - Size + Agility + Perception
+
+**Skill Ranks** - 4 + Intelligence min 1
+
+**Armour** = Damage Reduction (literally just, Armour 5 = 5 less damage per attack) - should work with the flat damage math.
+
+### Size
+| Size | Health | Evasion |
+| --- | --- | --- |
+| Tiny | 1 | 14 |
+| Small | 4 | 10 |
+| Medium | 8 | 8 |
+| Large | 16 | 6 |
+
+Stat + Skill + d20 vs TN for checks
+
+### No Charisma - Social Interaction
+
+A clear paradigm of interaction with NPCs and the skills that affect them, since Charisma is not a thing anymore.
+
+- Entertain with Music or a Charming performance (Agility) - makes an NPC happier
+- Impress with Charm (Spirit) - puts an NPC in a more favourable disposition to you and your party. From unfriendly to neutral, neutral to friendly and friendly to Charmed.
+- Deceive with Deception (Intelligence) - get an NPC to believe a falsehood is true, such as your party being without weapons.
+- Intimidate with Initimidation (Strength) - get an NPC to fear you.
+- Convince with Persuade (Intelligence) - argue an NPC into supporting you
+- Cold reading a target (perception) - lay a targets motives and reactions bare
 
 ## Statistics
 
