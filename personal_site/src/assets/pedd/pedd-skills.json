@@ -1,201 +1,122 @@
 [
     {
-        "skill": "Acrobatics",
-        "stat": "Dexterity"
+        "name": "First Aid",
+        "description": " deftly seeing to others’ hurts, the skill of practical medicinal actions",
+        "type": "skill"
     },
     {
-        "skill": "Alchemy",
-        "stat": "Intelligence"
+        "name": "Animal Handling",
+        "description": " understanding and being understood by animals, and riding them.",
+        "type": "skill"
     },
     {
-        "skill": "Animal Handling",
-        "stat": "Charisma"
+        "name": "Art",
+        "description": " playing music, singing, performing, painting",
+        "type": "skill"
     },
     {
-        "skill": "Athletics",
-        "stat": "Strength"
+        "name": "Charm",
+        "description": " proper etiquette, pleasing performance, schmoozing etc.",
+        "type": "skill"
     },
     {
-        "skill": "Charm",
-        "stat": "Charisma"
+        "name": "Crafting",
+        "description": " the act of making objects",
+        "type": "skill"
     },
     {
-        "skill": "Deception",
-        "stat": "Charisma"
+        "name": "Deception",
+        "description": " your ability to lie, apply and wear disguises, impersonate etc.",
+        "type": "skill"
     },
     {
-        "skill": "Disguise",
-        "stat": "Dexterity"
+        "name": "Search",
+        "description": " the act of investigation, spotting things hidden, as well as researching texts",
+        "type": "skill"
     },
     {
-        "skill": "Driving",
-        "stat": "Dexterity"
+        "name": "Insight",
+        "description": " reading people and discerning lies and motives",
+        "type": "skill"
     },
     {
-        "skill": "Engineering",
-        "stat": "Dexterity"
+        "name": "Intimidation",
+        "description": " the art of browbeating",
+        "type": "skill"
     },
     {
-        "skill": "Insight",
-        "stat": "Perception"
+        "name": "Knowledge",
+        "description": " a kind of learning. When taking this skill, choose one like: Alchemy / Arcana / Culture / Engineering / History / Medicine / Nature / Occult / Religion. You can take multiple different instances of Knowledge.",
+        "type": "skill"
     },
     {
-        "skill": "Intimidation",
-        "stat": "Strength"
+        "name": "Logic",
+        "description": " skill of applying logical thinking and such philosophy, as well as Strategy and Tactics, and piecing together evidence",
+        "type": "skill"
     },
     {
-        "skill": "Investigation",
-        "stat": "Intelligence"
+        "name": "Persuasion",
+        "description": " the skills of turning people around to your point of view",
+        "type": "skill"
     },
     {
-        "skill": "Musical Instruments",
-        "stat": "Dexterity"
+        "name": "Piloting",
+        "description": " your ability to drive carts, sail boats and navigate a map",
+        "type": "skill"
     },
     {
-        "skill": "Navigation",
-        "stat": "Perception"
+        "name": "Subterfuge",
+        "description": "Skill in the arts of subtler crime: forgery, lockpicking, spying etc.",
+        "type": "skill"
     },
     {
-        "skill": "Observation",
-        "stat": "Perception"
+        "name": "Stealth",
+        "description": "The ability to hide and remain unnoticed, and construct camouflage.",
+        "type": "skill"
     },
     {
-        "skill": "Performance",
-        "stat": "Charisma"
+        "name": "Wilderness",
+        "description": " your ability to survive the wild, including navigation, tracking, finding sustenance and shelter. Interacting with the natural world",
+        "type": "skill"
     },
     {
-        "skill": "Persuasion",
-        "stat": "Charisma"
+        "name": "Blocking",
+        "description": "The ability to intercept strikes without harm",
+        "type": "combat"
     },
     {
-        "skill": "Riding",
-        "stat": "Dexterity"
+        "name": "Bludgeoning",
+        "description": "The skill of being particularly effective at beating people (and other targets) with sticks.",
+        "type": "combat"
     },
     {
-        "skill": "Sailing",
-        "stat": "Dexterity"
+        "name": "Bowyer",
+        "description": "The ability to draw and fire a bow quickly and accurately.",
+        "type": "combat"
     },
     {
-        "skill": "Sleight of Hand",
-        "stat": "Dexterity"
+        "name": "Duelling",
+        "description": "The skill-at-arms for various technical weapons like swords, tridents and war-axes.",
+        "type": "combat"
     },
     {
-        "skill": "Stealth",
-        "stat": "Dexterity"
+        "name": "Firearms",
+        "description": "The knowledge and skill of using and maintaining firearms.",
+        "type": "combat"
     },
     {
-        "skill": "Strategy",
-        "stat": "Intelligence"
+        "name": "Scrapping",
+        "description": "The ability to fight with hands, feet, knives and improvised weaponry.",
+        "type": "combat"
     },
     {
-        "skill": "Survival",
-        "stat": "Perception"
+        "name": "Spear Fighting",
+        "description": "Your aptness with a stick.",
+        "type": "combat"
     },
     {
-        "skill": "Arcana",
-        "stat": "Intelligence",
-        "knowledge": true
-    },
-    {
-        "skill": "Culture",
-        "stat": "Intelligence",
-        "knowledge": true
-    },
-    {
-        "skill": "Languages (one)",
-        "stat": "Intelligence",
-        "custom": true,
-        "knowledge": true
-    },
-    {
-        "skill": "History",
-        "stat": "Intelligence",
-        "knowledge": true
-    },
-    {
-        "skill": "Medicine",
-        "stat": "Intelligence",
-        "knowledge": true
-    },
-    {
-        "skill": "Occultism",
-        "stat": "Intelligence",
-        "knowledge": true
-    },
-    {
-        "skill": "Nature",
-        "stat": "Intelligence",
-        "knowledge": true
-    },
-    {
-        "skill": "Religion",
-        "stat": "Intelligence",
-        "knowledge": true
-    },
-    {
-        "skill": "Blades",
-        "stat": "Strength",
-        "martial": true
-    },
-    {
-        "skill": "Unarmed Fighting",
-        "stat": "Dexterity",
-        "martial": true
-    },
-    {
-        "skill": "Bows & Crossbows",
-        "stat": "Accuracy",
-        "martial": true
-    },
-    {
-        "skill": "Clubs",
-        "stat": "Strength",
-        "martial": true
-    },
-    {
-        "skill": "Axes",
-        "stat": "Strength",
-        "martial": true
-    },
-    {
-        "skill": "Firearms & Pistols",
-        "stat": "Accuracy",
-        "martial": true
-    },
-    {
-        "skill": "Knives",
-        "stat": "Strength",
-        "martial": true
-    },
-    {
-        "skill": "Heavy Arms",
-        "stat": "Strength",
-        "martial": true
-    },
-    {
-        "skill": "Pole-Arms",
-        "stat": "Strength",
-        "martial": true
-    },
-    {
-        "skill": "Shields",
-        "stat": "Strength",
-        "martial": true
-    },
-    {
-        "skill": "Spears",
-        "stat": "Strength",
-        "martial": true
-    },
-    {
-        "skill": "Slings & Thrown",
-        "stat": "Accuracy",
-        "martial": true
-    },
-    {
-        "skill": "Exotic Weapon (one)",
-        "stat": "Strength",
-        "custom": true,
-        "martial": true
+        "name": "Throwing",
+        "description": "Skill at throwing items accurately and powerfully",
+        "type": "combat"
     }
 ]
