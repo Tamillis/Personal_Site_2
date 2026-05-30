@@ -18,10 +18,10 @@ let camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
 
 let gmtry = new THREE.SphereGeometry(1, 32, 32);
 let mat = new THREE.MeshPhongMaterial();
-mat.map = new THREE.TextureLoader().load("src/assets/globe_assets/earthmap1kwithcountries.jpg");
-mat.bumpMap = new THREE.TextureLoader().load("src/assets/globe_assets/earthbump1k.jpg");
+mat.map = new THREE.TextureLoader().load("/globe_assets/earthmap1kwithcountries.jpg");
+mat.bumpMap = new THREE.TextureLoader().load("/globe_assets/earthbump1k.jpg");
 mat.bumpScale = 0.5;
-mat.specularMap = new THREE.TextureLoader().load("src/assets/globe_assets/earthspec1k.jpg");
+mat.specularMap = new THREE.TextureLoader().load("/globe_assets/earthspec1k.jpg");
 mat.specular = new THREE.Color("grey");
 
 let earth = new THREE.Mesh(gmtry, mat);

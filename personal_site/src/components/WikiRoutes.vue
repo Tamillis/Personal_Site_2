@@ -12,7 +12,7 @@
 
 const props = defineProps(["routes"])
 
-let configuredPath = props.routes.path.replace("./src/assets/wiki", "mewiki").replace(".md", "")
+let configuredPath = props.routes.path.replace("/mewiki", "mewiki").replace(".md", "")
 
 </script>
 
