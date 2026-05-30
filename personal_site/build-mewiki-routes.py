@@ -13,7 +13,7 @@ def path_to_dict(path):
         d['type'] = 'file'
     return d
 
-route_map = path_to_dict("./public/assets/mewiki")
+route_map = path_to_dict("./public/mewiki")
 print(json.dumps(route_map, indent=4))
 
 f = open("./src/assets/wikiroutes.json", "w")
