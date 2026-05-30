@@ -17,7 +17,7 @@
                 <RouterLink to="/dnd">D&D</RouterLink>
             </li>  -->
             <li class="nav-item">
-                <RouterLink to="/trinitas">Trinitas</RouterLink>
+                <a href="/trinitas">Trinitas</a>
             </li>
             <li class="nav-item">
                 <RouterLink to="/mewiki">M.E. Wiki</RouterLink>
