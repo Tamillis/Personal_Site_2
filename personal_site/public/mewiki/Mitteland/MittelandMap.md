@@ -4,5 +4,5 @@ This is a map of the Imperial Heartlands of Mitteland, the western third of the 
 
 ### The Imperial Heartlands
 <div class="img-wrap">
-    <img src="/src/assets/ImperialHeartlands.jpg">
+    <img src="/mewiki/ImperialHeartlands.jpg">
 </div>

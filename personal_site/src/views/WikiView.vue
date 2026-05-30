@@ -27,11 +27,8 @@ import WikiRoutes from '../components/WikiRoutes.vue'
 
 import routes from '../assets/wikiroutes.json'
 
-const basepath = 'src/assets/'
-let file = ref(basepath + 'wikiRoot.md')
-
 onMounted(() => {
-  putMdinElement(file.value, 'wiki')
+  putMdinElement("/mewiki/mewiki-introduction.md", 'wiki')
 });
 
 </script>

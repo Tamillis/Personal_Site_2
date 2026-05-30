@@ -7,7 +7,7 @@ Now a conflict of three ideologies rears as times are changing in the arboreal v
 
 ### The Many Kingdoms of Ihleiska
 <div class="img-wrap">
-    <img src="/src/assets/Ihleiska.png">
+    <img src="/mewiki/Ihleiska.png">
 </div>
 
 ## The Many Kingdoms of Ihleiska

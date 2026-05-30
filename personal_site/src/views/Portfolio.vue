@@ -13,7 +13,7 @@
 import { putMdinElement } from '../assets/functionality';
 import { onMounted } from 'vue';
 
-onMounted(() => putMdinElement('src/assets/articles/portfolio.md', 'portfolio'));
+onMounted(() => putMdinElement('/articles/portfolio.md', 'portfolio'));
 </script>
 
 <style>

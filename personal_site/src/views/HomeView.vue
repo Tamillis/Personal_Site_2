@@ -56,10 +56,10 @@ const terminalSketch = t => {
   var curLine = "Default text";
 
   t.preload = function () {
-    t.font = t.loadFont("src/assets/terminal/IBMPlexMono-Regular.ttf");
+    t.font = t.loadFont("/terminal/IBMPlexMono-Regular.ttf");
 
     //load the text into the file
-    script = t.loadStrings("src/assets/terminal/messages.txt");
+    script = t.loadStrings("/terminal/messages.txt");
   }
 
   t.setup = function () {

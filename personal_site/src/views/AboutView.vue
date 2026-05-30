@@ -4,7 +4,7 @@ import { putMdinElement } from '../assets/functionality'
 import { onMounted } from 'vue';
 
 onMounted(() => {
-    putMdinElement('src/assets/articles/profile.md', 'profile');
+    putMdinElement('/articles/profile.md', 'profile');
 });
 </script>
 
@@ -14,7 +14,7 @@ onMounted(() => {
     <h1 class="main-title mb0">About Me</h1>
     <h2 class="subsubtitle text-centre no-decoration">A Resume Profile</h2>
 
-    <div class="profile-pic-container"><img class="profile-pic" src="../assets/profile-pic.jpg"></div>
+    <div class="profile-pic-container"><img class="profile-pic" src="/profile-pic.jpg"></div>
 
     <div id="profile" class="inset main-text"></div>
 

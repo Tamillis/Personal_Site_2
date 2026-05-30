@@ -21,7 +21,7 @@ Other locations beyond the big three in Salsburry include:
 [It is merry wee England, fertile farmland caught in the cultural fusion between German-inspired Crownlands, and the more latinised folk of Damaran-Olistia]
 
 <div class="img-wrap">
-    <img src="/src/assets/Salsburry.png">
+    <img src="/mewiki/Salsburry.png">
 </div>
 
 ### Avonsby

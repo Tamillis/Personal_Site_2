@@ -12,7 +12,7 @@ import { onMounted } from 'vue';
 import { useRoute, RouterLink } from 'vue-router';
 import { putMdinElement } from '../assets/functionality';
 
-const basepath = '/src/assets/wiki/'
+const basepath = '/mewiki/'
 const route = useRoute();
 //setup this page to yoink the md filepath from the route parameter
 onMounted(() => {

@@ -5,7 +5,7 @@ def path_to_dict(path):
     name = 'Wiki' if os.path.basename(path) == '' else os.path.basename(path)
     d = {}
     d['name'] = name
-    d['path'] = path
+    d['path'] = path.replace('./public', '')
     if os.path.isdir(path):
         d['type'] = 'dir'
         d['contents'] = [path_to_dict(path+'/'+content) for content in os.listdir(path)]
@@ -13,7 +13,7 @@ def path_to_dict(path):
         d['type'] = 'file'
     return d
 
-route_map = path_to_dict("./src/assets/wiki")
+route_map = path_to_dict("./public/assets/mewiki")
 print(json.dumps(route_map, indent=4))
 
 f = open("./src/assets/wikiroutes.json", "w")
