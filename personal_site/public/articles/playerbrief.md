@@ -75,9 +75,9 @@ In the unlikely situation where high level characters find themselves with the *
 
 Meanwhile, chases and chasing another creature is a skill challenge and is not invalidated by the speed value of one creature being greater than another’s. Large speed differences can grant advantages/disadvantages to certain rolls or modify DC's, depending on how the player has their character interact with the chase, but otherwise a character's combat "Movement" value doesn't represent their raw speed, and doesn't affect chases. (I'm not sorry, Monks and Tabaxi).
 
-**Unstable Platform** – when shooting from an unstable platform, such as quicksand, the back of a moving mount (horse, broomstick etc) or when actively flying (i.e. not with the fly or levitate spells, or similar), you make ranged weapon attacks and ranged spell attacks that have somatic components with disadvantage. This rule creates the feat “Mounted Archery”. See the Materium Existantiae Core Setting document for details. 
+**Unstable Platform** – when shooting from an unstable platform, such as quicksand, the back of a moving mount (horse, broomstick etc) or when actively flying (i.e. not with the fly or levitate spells, or similar), you make ranged weapon attacks and ranged spell attacks that have somatic components with disadvantage.
 
-**First Level Features*** – With your background feat you could choose to take as your feat (instead of from the normal and expanded feat lists) one of the class features listed below but using the prerequisites; 
+**First Level Features*** – With your background feat you could choose to take as your feat (instead of the normal or expanded feat lists) one of the class features listed below, using the following prerequisites;
 
 Class | Feature | Prerequisite
 ---|---|---
