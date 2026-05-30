@@ -3,9 +3,10 @@ if [ ! -d ~/PersonalSite ]; then
 fi
 
 cd ~/PersonalSite
-git fetch origin main
 
 git pull origin main
+
+cd ~/PersonalSite/personal_site
 npm install
 npm run build
 
