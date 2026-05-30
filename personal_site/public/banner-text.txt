@@ -1,1 +1,1 @@
-| Proficiencies: BASIC Python C# Java JavaScript Processing3 P5JS ThreeJS PlotlyJS Visual_Studio VS_Code HTML CSS C C++ Node.js React Vue PHP SQL MySQL Laravel Entity_Framework .NET NUnit Selenium SpecFlow |
+| C# JavaScript CanvasAPI ThreeJS Visual_Studio VS_Code HTML CSS C Node Vue3 PHP MySQL SQLite SQL_Server IIS Windows_Server Windows Linux Entity_Framework ASP.NET .NET_Framework MVC WebForms Azure SAAS NUnit Selenium SpecFlow Github_Actions SSH VPS CICD |

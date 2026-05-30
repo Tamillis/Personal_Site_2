@@ -8,14 +8,17 @@
                 <RouterLink to="/about">About</RouterLink>
             </li>
             <li class="nav-item">
+                <a href="https://bell-soft.co.uk/chat" class="nav-item-a" target="_blank">Chat Room</a>
+            </li>
+            <li class="nav-item">
                 <RouterLink to="/portfolio">Dev Portfolio</RouterLink>
             </li>
             <li class="nav-item">
                 <RouterLink to="/programming">P5 Sketches</RouterLink>
             </li>
-            <!--  <li class="nav-item">
+            <li class="nav-item">
                 <RouterLink to="/dnd">D&D</RouterLink>
-            </li>  -->
+            </li>
             <li class="nav-item">
                 <a href="/trinitas">Trinitas</a>
             </li>
@@ -36,8 +39,6 @@
             <li class="nav-item"><a href="https://www.linkedin.com/in/peter-bellaby-40b93022b/" class="nav-item-a"
                     target="_blank">LinkedIn</a>
             </li>
-            <li class="nav-item"><a href="mailto:peter@bellaby.co.uk?subject=Enquiry for Peter Bellaby"
-                    class="nav-item-a">Email Me</a></li>
         </ul>
     </nav>
 </template>
