@@ -4,7 +4,8 @@ fi
 
 cd ~/PersonalSite
 
-git pull origin main
+git fetch origin main
+git reset --hard origin/main
 
 cd ~/PersonalSite/personal_site
 npm install
