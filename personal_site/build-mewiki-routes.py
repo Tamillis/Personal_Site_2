@@ -8,7 +8,11 @@ def path_to_dict(path):
     d['path'] = path.replace('./public', '')
     if os.path.isdir(path):
         d['type'] = 'dir'
-        d['contents'] = [path_to_dict(path+'/'+content) for content in os.listdir(path)]
+        d['contents'] = [
+            path_to_dict(path+'/'+content) 
+            for content in os.listdir(path) 
+            if os.path.isdir(path+'/'+content) or content.endswith('.md')
+        ]
     else:
         d['type'] = 'file'
     return d
