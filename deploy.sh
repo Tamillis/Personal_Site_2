@@ -1,10 +1,8 @@
 if [ ! -d ~/PersonalSite ]; then
   git clone https://github.com/Tamillis/Personal_Site_2.git ~/PersonalSite
-  npm install
 fi
 
 cd ~/PersonalSite
-
 git fetch origin main
 
 git pull origin main
