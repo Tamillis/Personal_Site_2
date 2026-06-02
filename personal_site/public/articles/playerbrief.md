@@ -11,8 +11,6 @@ My grandest of world building projects, [also visible on this site](/mewiki), is
 
 For players in my D&D games, this page is a starting point of any campaign for them to dig into the slight changes I often use, and for any visitors I hope it can give you ideas and perhaps even introduce you to some new and exciting content. While I use the base game mostly as is, I have this following collection of homebrew that I have curated from the internet or on occasion come up with myself.
 
-As an aside, I now run my own D&D overhaul which I call [Trinitas](https://bell-soft.co.uk/trinitas).
-
 ### Official Material I run:
 
 All D&D 5e official WoTC printed books, including those that come out in the future (PHB, SCAG, Xanathar's, etc).
