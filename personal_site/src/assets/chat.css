@@ -1,0 +1,34 @@
+#chat .icon-btn {
+    background: none;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+    color: var(--text-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.15s, background 0.15s;
+}
+
+#chat .icon-btn:hover {
+    background: var(--black);
+}
+
+#chat .chat-input {
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    padding: 0.5em;
+    font-size: 1em;
+    outline: none;
+    color: var(--text-color);
+    background: var(--backgroundDark);
+    box-sizing: border-box;
+}
+
+#chat .bar {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0.5em;
+}

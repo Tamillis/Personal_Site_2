@@ -3,6 +3,7 @@ import { RouterView } from 'vue-router';
 import { onMounted } from 'vue';
 import { init } from './assets/bg.js'
 import Sidebar from './components/Sidebar.vue';
+import ChatWindow from './components/Chat/ChatWindow.vue';
 
 let showFrameRate = false;
 
@@ -33,6 +34,7 @@ function detectMob() {
   <canvas id="background-canvas" class="no-border"></canvas>
   <Sidebar />
   <RouterView />
+  <ChatWindow />
 </template>
 
 <style scoped>
