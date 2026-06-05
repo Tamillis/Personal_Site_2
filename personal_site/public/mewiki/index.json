@@ -1,0 +1,100 @@
+{
+	"Aarakocra": {
+		"aliases": [
+			"Tengu"
+		],
+		"description": "Eagle-raptor-folk, born of birds elevated by the first Gods of the Skies to dwell in the zephyrs and high clouds. The survivors of the Winged Wars's aftermath began a traditon asceticism and pacifism that many Aarakocra cary in their hearts to this day; wary of divine punishments. On the Three Isles they are known as Tengu, who hold dominion over the high places and rule openly in the Southern Isle.",
+		"page": "peoples/winged-races.md"
+	},
+	"Harpy": {
+		"description": "Distant descendants of First Men who gained the power of flight, their arms becoming wings and their feet talons, and whose souls learned to sing. Defeated and nearly exterminated in the Winged Wars long before the Cataclysm, the survivors scattered into three lines defined by where they fled: the Raven Harpies of the Shadow, the Dream Heralds of the Fey, and the Lost Harpies who hid in the material world. Many are mean-spirited and bitter, clinging to a spite that has become embedded deep in their blood. A rare few rise above this racial ennui to wander as adventurers.",
+		"page": "peoples/winged-races.md"
+	},
+	"Kenku": {
+		"description": "Aarakocra who shed innocent blood at the end of the Winged Wars and defied the Gods were struck down and cursed for it: stripped of wing, will, and the voice they never valued.. A flightless, mute race called the Kenku are who they became, a curse whose origins are all but forgotten. How could they, with no voice to tell it? Now known for thievery and skulduggery, they survive by mimicking the sounds they hear, standing as divine warning for the toll of pride.",
+		"page": "peoples/winged-races.md"
+	},
+	"Winged War": {
+		"description": "The legend of the pre-Shattering war between the Aarakocra and the Harpies over dominion of the skies, kindled by the birds' jealousy of the harpies' singing voice they were never made to have. The war was adjudicated by the divine of the skies and earth; both races bound to fight only with wing and claw and only in the air. After generations of slaughter the Aarakocra had won, no remaining harpies daring to reach into the sky, but the Aarakocra went too far. They pressed past victory into the extermination of innocents, smashing eggs on the ground, breaking the divine contract and earning divine punishment. The Harpies were scattered and embittered, the offending Aarakocra cursed into the voiceless Kenku, and only the few who forsook the fighting were spared.",
+		"page": "peoples/winged-races.md"
+	},
+	"First Men": {
+		"description": "When the three aspects of Sem the Creator gave themselves to the physical realms to start life, their lay upon the land all the Forms and Images of life. As life did the only thing it must: grow, the peoples of today came to be. But those first Forms of People, they were first men. Their legend and myth last unforgettable, and tales of heroes, leaders and explorers of the Eden age are passed from mouth to ear to this day.",
+		"page": null
+	},
+	"Elemental Air": {
+		"aliases": [],
+		"description": "TODO",
+		"page": null
+	},
+	"Celestia": {
+		"aliases": [],
+		"description": "TODO",
+		"page": null
+	},
+	"Shadowfell": {
+		"aliases": [
+			"Shadow Realm",
+			"Shadow Fel"
+		],
+		"description": "TODO",
+		"page": null
+	},
+	"Fey Wild": {
+		"aliases": [
+			"Faewyld"
+		],
+		"description": "TODO",
+		"page": null
+	},
+	"Symbolic Court": {
+		"description": "TODO",
+		"page": null
+	},
+	"Raven Queen": {
+		"description": "The sole God of the Shadow and the supreme Goddess of Death. She rules from the Skotite Throne in the Palace of Memories at the heart of the Shadow Realm. As ultimate curator of the sanctity of death, she sees that every soul is stripped of its earthly weight and weighed before it passes on along the Flow of Ideas toward the Beginning. Her servants the Shadar-Kai keep her realm and march to deal with those that would defy death, and her cohort of ferrymen, the Court of Shepherds, gathers souls from the shattered Shards so they descend in good order rather than gather and fester.",
+		"page": null
+	},
+	"Palace of Memories": {
+		"aliases": [
+			"the Palace of Memories",
+			"palaces of the raven"
+		],
+		"description": "TODO",
+		"page": null
+	},
+	"Shadar-Kai": {
+		"aliases": [
+			"Shadar-kai"
+		],
+		"description": "TODO",
+		"page": null
+	},
+	"Court of Shepherds": {
+		"description": "TODO",
+		"page": null
+	},
+	"Sun Spires": {
+		"aliases": [
+			"Sun Spire",
+			"Sun Mounts"
+		],
+		"description": "TODO",
+		"page": null
+	},
+	"Flow of Ideas": {
+		"aliases": [
+			"Cycle of Thought",
+			"Cycle of Thoughts"
+		],
+		"description": "TODO",
+		"page": null
+	},
+	"Shattering": {
+		"aliases": [
+			"Cataclysm"
+		],
+		"description": "TODO",
+		"page": null
+	}
+}

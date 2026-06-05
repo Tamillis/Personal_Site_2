@@ -35,14 +35,14 @@ Beyond the absolutes is The Beginning. The last and most pure heart of all thing
 The very edge of the universe, the Seal of Time and Space, is a thin sheen that binds the entire universe, woven by the First God as the First Act. It is the progenitor of all containment, and the ward. Without this immense working, time would not tick, and distance would be meaningless. The chaos beyond time, only through division of time and space from not-time and not-space, has birthed The Other/Outer One. The grand destroyer, that seeks to undo the universe, and bring everything back to unity in unfettered primordial chaos, including itself.
 
 ### Depiction
-The Great Wheel, as the name implies, is often represented as a wheel, one with spokes and layers. 
+The Great Wheel, as the name implies, is often represented as a wheel, one with spokes and layers.
 
 At its hub are the three physical worlds, normally abbreviated to the "Three Worlds" or the “Physical Realms". The centre of the hub is the Fey Wild, around it, taking up about half the area and oriented to the top left, is the body of the Material Realm, and around that is the Shadow Realm, a stretched out and dark place, the end of the material spiral. Around that hub are four braided bands, the elemental matters, swirling in their pseudo-chaos, forming, breaking and reforming into miniature realms based on their combinations. Beyond the braid are the Outer Planes. Sometimes they are represented simply as the 18 spokes of the Great Wheel leading to the rim that is the Space and Time Seal. Sometimes however the Wheel is represented by an outermost hexagon around a circle or nonagon of nine planes itself around an innermost inverse triangle; the outer, centre and inner firmaments, respectively.
 
 The Outer Firmament points upward traditionally, with the 9-point star of Good at its peak, the seven disordered points of Chaos to the upper left, the flame of Passion in the lower left, the undone triangle of Evil at the base, the isometric cube of Logic in the lower right, and the eye of knowing Reason between Good and Logic to the upper right. The Centre Firmament is then depicted with a circle with 9 equidistant planes or an inverted nonagon. Starting upper left-most and heading clockwise one finds; Good Reason, Logical Good, Reasoned Logic, Evil Logic, Logical Passion, Passionate Evil, Passionate Chaos, Passionate Good, and Chaotic Good. The Inner Firmament contains the tri-coloured planes of Arcadia (Good Reasoned Law) near the cosmological border of Material and Shadow, Gehenna (Passionate Evil Law) near the cosmological border of Fae and Shadow, and Ysgard (Passionate Chaotic Good) near the cosmological border of Fae and Material.
 
-The 6 points of the Outer Firmament are often referred to as the three cosmological axes. 
-- The Axis Of Morality: of Good-Evil to judge what is right (good for Life) and wrong (bad for Life), governed by Faith (the power to hear and teach what is right)
+The 6 points of the Outer Firmament are often referred to as the three cosmological axes.
+- The Axis Of Morality: of Good-Evil to judge what is right (good for Life) and wrong (bad for Life), governed by faith (the power to hear and teach what is right)
 - The Axis of Desire: of Passion-Reason to feel what is wanted (immediate urges vs long term plans), governed by charisma (the power to feel and to debate what ought be desired)
 - The Axis of Choice: of Logic-Chaos to determine how to proceed, governed by intelligence (the power to learn and figure out how-to).
 

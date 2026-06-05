@@ -31,61 +31,46 @@
             ]
         },
         {
-            "name": "Expanded",
-            "path": "/mewiki/Expanded",
+            "name": "Cosmos",
+            "path": "/mewiki/Cosmos",
             "type": "dir",
             "contents": [
                 {
                     "name": "BeliefsOfTheMateriae.md",
-                    "path": "/mewiki/Expanded/BeliefsOfTheMateriae.md",
+                    "path": "/mewiki/Cosmos/BeliefsOfTheMateriae.md",
                     "type": "file"
                 },
                 {
                     "name": "Beyond.md",
-                    "path": "/mewiki/Expanded/Beyond.md",
-                    "type": "file"
-                },
-                {
-                    "name": "CalendarsOfTheMateriae.md",
-                    "path": "/mewiki/Expanded/CalendarsOfTheMateriae.md",
+                    "path": "/mewiki/Cosmos/Beyond.md",
                     "type": "file"
                 },
                 {
                     "name": "Cosmology.md",
-                    "path": "/mewiki/Expanded/Cosmology.md",
-                    "type": "file"
-                },
-                {
-                    "name": "GiantkinGoliathsAndAncientTales.md",
-                    "path": "/mewiki/Expanded/GiantkinGoliathsAndAncientTales.md",
+                    "path": "/mewiki/Cosmos/Cosmology.md",
                     "type": "file"
                 },
                 {
                     "name": "TheElementalBraid.md",
-                    "path": "/mewiki/Expanded/TheElementalBraid.md",
+                    "path": "/mewiki/Cosmos/TheElementalBraid.md",
                     "type": "file"
                 },
                 {
                     "name": "TheFirmaments.md",
-                    "path": "/mewiki/Expanded/TheFirmaments.md",
+                    "path": "/mewiki/Cosmos/TheFirmaments.md",
                     "type": "file"
                 },
                 {
                     "name": "TheHomeConstellation.md",
-                    "path": "/mewiki/Expanded/TheHomeConstellation.md",
+                    "path": "/mewiki/Cosmos/TheHomeConstellation.md",
                     "type": "file"
                 },
                 {
                     "name": "TheThreeBodies.md",
-                    "path": "/mewiki/Expanded/TheThreeBodies.md",
+                    "path": "/mewiki/Cosmos/TheThreeBodies.md",
                     "type": "file"
                 }
             ]
-        },
-        {
-            "name": "mewiki-introduction.md",
-            "path": "/mewiki/mewiki-introduction.md",
-            "type": "file"
         },
         {
             "name": "Mitteland",
@@ -98,13 +83,23 @@
                     "type": "file"
                 },
                 {
+                    "name": "CalendarsAndTimekeeping.md",
+                    "path": "/mewiki/Mitteland/CalendarsAndTimekeeping.md",
+                    "type": "file"
+                },
+                {
                     "name": "DuchyOfSalsburry.md",
                     "path": "/mewiki/Mitteland/DuchyOfSalsburry.md",
                     "type": "file"
                 },
                 {
-                    "name": "IhleiskaMap.md",
-                    "path": "/mewiki/Mitteland/IhleiskaMap.md",
+                    "name": "Ihleiska.md",
+                    "path": "/mewiki/Mitteland/Ihleiska.md",
+                    "type": "file"
+                },
+                {
+                    "name": "ImperialHeartlands.md",
+                    "path": "/mewiki/Mitteland/ImperialHeartlands.md",
                     "type": "file"
                 },
                 {
@@ -118,13 +113,30 @@
                     "type": "file"
                 },
                 {
-                    "name": "MittelandMap.md",
-                    "path": "/mewiki/Mitteland/MittelandMap.md",
+                    "name": "TheChurchOfTheEverlight.md",
+                    "path": "/mewiki/Mitteland/TheChurchOfTheEverlight.md",
+                    "type": "file"
+                }
+            ]
+        },
+        {
+            "name": "Peoples",
+            "path": "/mewiki/Peoples",
+            "type": "dir",
+            "contents": [
+                {
+                    "name": "GiantkinGoliathsAndAncientTales.md",
+                    "path": "/mewiki/Peoples/GiantkinGoliathsAndAncientTales.md",
                     "type": "file"
                 },
                 {
-                    "name": "TheChurchOfTheEverlight.md",
-                    "path": "/mewiki/Mitteland/TheChurchOfTheEverlight.md",
+                    "name": "MenAndLittlePeople.md",
+                    "path": "/mewiki/Peoples/MenAndLittlePeople.md",
+                    "type": "file"
+                },
+                {
+                    "name": "WingedRaces.md",
+                    "path": "/mewiki/Peoples/WingedRaces.md",
                     "type": "file"
                 }
             ]

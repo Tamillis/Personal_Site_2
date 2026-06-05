@@ -11,7 +11,7 @@ def path_to_dict(path):
         d['contents'] = [
             path_to_dict(path+'/'+content) 
             for content in os.listdir(path) 
-            if os.path.isdir(path+'/'+content) or content.endswith('.md')
+            if os.path.isdir(path+'/'+content) or (content.endswith('.md') and not content.endswith('.gm.md'))
         ]
     else:
         d['type'] = 'file'

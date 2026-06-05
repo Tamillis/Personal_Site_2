@@ -1,18 +1,17 @@
 # Beliefs of the Materiae
 
-## Beliefs of the Materiae
 As with all cultures across time, an innumerable collection of ideas and understandings abound. However, some common threads can be found enough to the point where perhaps there's more to them than just folklore, superstition and local culture. The theories and thoughts of the materiae include the following.
 
 ## Physical Theory
-The fundamental forces of this universe cleave across two paradigms. The first is the understanding that there are four states of matter, which correspond to the four classical elements told of in Creation, and that magical practitioners call on to this day; Earth, Water, Air, and Fire. 
+The fundamental forces of this universe cleave across two paradigms. The first is the understanding that there are four states of matter, which correspond to the four elements that make up the braid above, told of in the tales of Creation. Magical practitioners call on them to this day; Earth, Water, Air, and Fire.
 
-Modern scholars prefer to describe these categories as Solid, Liquid, Gas and Energy respectively, to get away from the confusion between elemental Earth and dirt, Fire and heat or lack thereof, and so on.
+Modern scholars prefer to describe these categories as Solid, Liquid, Gas and Energy respectively, to get away from the confusion between elemental Earth and dirt, Fire and heat, or lack thereof, and so on. It certainly explains the propensity for fire elementals to come hand-in-hand with "ice" elementals - and the enmity they have from their water elemental kin.
 
-The other paradigm is the Realite Fondamentale, the fundamental different formations of matter as created by the Prime and discovered by man, each of which has a unique blend of properties such as; charge, magnetism, acidity, momentum, potential, mana, organic profile and so on. In descending order of frequency these properties carry weight across the four states of matter, with "Energy" being the least differentiated, and "Solids" being the most.
+The other paradigm is the Réalité Fondamentale, the fundamental different formations of matter as created by the Prime and discovered by man, each of which has a unique blend of properties such as; charge, magnetism, acidity, momentum, potential, mana, organic profile and so on. In descending order of frequency these properties carry weight across the four states of matter, with "Energy" being the least differentiated, and "Solids" being the most.
 
 However not all in the universe is made of matter. In fact, matter only mostly matters, pun intended, within the core of the universe. The closer to the edge one wanders the further “energy” begins to only matter. The physical energies, core to the function of matter, mean less and the importance of mystical energies takes over. Typically, these are classed also in two; positive energy and negative energy, two sides to the same coin. However, on a technical basis the raw force of arcane, confusingly labelled “Force”, is also a mystical force, making a trifecta. And as many know, 3 is the number of creation.
 
-The physical laws of this universe bring about all the effects seen, and when it comes to damage they are often organised in the following manner;
+The physical laws of this universe bring about all the effects seen, and when it comes to harm they are often organised in the following manner by healers and researchers alike;
 
 ### Physical
 - **Bludgeoning** - the damage of blunt force trauma

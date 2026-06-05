@@ -1,4 +1,4 @@
-# Calendars and Timekeeping <br/> <small>In the Materiae</small>
+# Calendars and Timekeeping
 
 Timekeeping is a crucial component of civilization, but the all encompassing chaos of the shattering rendered all old ways null and void. The knowledge of how those in Edenic times kept their calendars too was mostly lost, and for the privileged few who can notice, not even the flow of the seasons was unaffected. They coined the term 'seasonal topology' and used the seasons and astral positions of Shards to put together a map, and charted the various seasons of the Shards to find that in these times, season stilled seemed to 'flow', just with a lot more 'turbulence'.
 
