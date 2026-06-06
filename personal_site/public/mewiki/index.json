@@ -1,22 +1,158 @@
 {
+	"Materium Existentiae": {
+		"aliases": [
+			"M.E.",
+			"material plane"
+		],
+		"description": "What remains of the material plane after the Shattering: a vast field of drifting earthen Shards suspended in the Mists, each Materia a world unto itself. Once a single unbroken land known as Eden, it was torn asunder by the Cataclysm. Many also refer to the greater Cosmos as the Materium Existentiae.",
+		"page": "Core/CoreSetting.md"
+	},
+	"Materia": {
+		"aliases": [
+			"Shard",
+			"Materiae"
+		],
+		"description": "A single earthen fragment of the shattered Material Plane, adrift in the Mists. Materiae vary enormously in size, from continent-scale landmasses to chunks of earth barely large enough for a single village. Each is effectively a world unto itself, often with its own history, peoples, and understanding of the wider cosmos.",
+		"page": "Core/CoreSetting.md"
+	},
+	"Eden": {
+		"description": "The name given to the unbroken Material Plane that existed before the Cataclysm. Described as vast beyond imagining, it was the world in which the Gods walked freely and peoples lived in-tune with their creators. The Shards of today are all that remains, literal pieces of Eden afloat in the horrors of the Mists.",
+		"page": null
+	},
+	"Mitteland": {
+		"aliases": [
+			"Empire of Mitteland",
+			"The Empire"
+		],
+		"description": "One of the three known Great Materiae and the seat of the Empire of the same name (which claims to rule it all). Split by two mountain ranges, the Fold and the Spur, and the Great Rift that nearly sheared off the eastern portion into its own Shard, the Shard is naturally divided into four rough regions: The Imperial Heartlands, the Mid-West, the Many Kingdoms of Ihleiska and the Lochlands. Its history spans the formation of the Empire, the First Empire's multi-shard expansion, the catastrophe of the Godfall War, the Age of Strife, and the eventual reunification under the Second Empire.",
+		"page": "Core/CoreSetting.md"
+	},
+	"Great Materiae": {
+		"description": "A Materia of particularly great size, able to hold a plethora of kingdoms, peoples and places. There are three known Great Materiae in the Home Constellation: Mitteland, Patrie du Pape and the recently (last 1000 years) discovered Tlancayo.",
+		"page": null
+	},
+	"Warping Ships": {
+		"aliases": [
+			"warping vessel",
+			"warp ship",
+			"warp vessel"
+		],
+		"description": "Vessels propelled by powerful magical devices and navigator-magi capable of utilizing the Mists to propel a ship, \"Warp\" it, into the Eternal Calm beyond. Once there, it can navigate the quiet remains of the Astral Sea and warp back into and through the mists to entirely new Shards. Expensive to construct and difficult to operate, and always a dangerous journey, they nevertheless opened the Materiae to exploration, trade, and colonisation and proved the Shattering could, in some small part, be overcome.",
+		"page": "Core/CoreSetting.md"
+	},
+	"Patrie du Pape": {
+		"aliases": [
+			"Patrie du Republique"
+		],
+		"description": "One of the three known Great Materiae and home to the Kingdom of White and Blue, later Blue Republic, a powerful theocratic state whose authority rested on the Pope and the halfling Clergy. A long rival of the Empire of Mitteland, it was catastrophically weakened by the Deicide and the Hungering Tide that rose from the ranks of the devout, shattering its society and, in time, ushering in popular revolution.",
+		"page": null
+	},
+	"Kingdom of White and Blue": {
+		"description": "TODO - the Age of Wonder polity that ruled the Great Materia of Patrie du Pape",
+		"page": null
+	},
+	"Godfall War": {
+		"aliases": [
+			"Godfall",
+			"the war"
+		],
+		"description": "The climactic armed conflict between the Empire of Mitteland and the Kingdom of White and Blue that brought the Age of Wonder to an end, lasting from 1073AC to 1104AC across dozens of shards. It culminated in the Deicide, which devastated both powers and ended the war with no clear victor.",
+		"page": "Core/TheAges.md"
+	},
+	"Deicide": {
+		"description": "The event at 1104AC that ended the Godfall War. The Kingdom of White and Blue attempted to summon a divine avatar of their God into the heart of Mitteland as a final weapon, but the summoning failed catastrophically. The avatar smashed down half-formed, triggering massive earthquakes, releasing outsiders across Mitteland, and shattering the divine covenant between the Kingdom and its God — burning out the minds of the Kingdom's devout and transforming them into the Hungering Tide.",
+		"page": "Core/TheAges.md"
+	},
+	"Sorcerer King": {
+		"aliases": [
+			"Sorceress Kingdoms"
+		],
+		"description": "The magic-wielding despots who rose to power in Mitteland and the former Kingdom of White and Blue during the Age of Strife, following the collapse of both great powers after the Godfall War. Their rule was characterised by rampant magical experimentation as they entered a magical arms-race against each other (and the difficult environs of the period), and tyranny. The Sorcerer Kings generating widespread popular fear of magic that shapes the Age of Man.",
+		"page": "Core/TheAges.md"
+	},
+	"Second Empire": {
+		"aliases": [
+			"New Empire"
+		],
+		"description": "The reunified Empire of Mitteland established by Stannis Hauttergeit following the Age of Strife. Built on zealous faith, political acumen and military force, the Second Empire ended the era of Sorcerer Kings and introduced strict licensing and control of magic - and the Church of the Everlight.",
+		"page": "Core/TheAges.md"
+	},
+	"Stannis Hauttergeit": {
+		"aliases": [
+			"Stannis"
+		],
+		"description": "The Emperor who reunited Mitteland and declared the Second Empire, ending the Age of Strife. He is credited with the New Army, strict controls on the practice of magic, and the political cementing of the new faith of the Everlight.",
+		"page": null
+	},
+	"Eternal Calm": {
+		"aliases": [
+			"Astral Sea"
+		],
+		"description": "A calm mill-pond sea lying beyond the physical Shards and the Mists. Its sky is lit by countless fixed pearlescent stars in perpetual dusk-dawn twilight, with no sun and no shifting constellations. Warping Ships use it as a safer thoroughfare than direct Mist travel, navigating by the lost Moons that cleave its two halves. It has its own oddities and dangers, including settled denizens from other realms, astral reefs with rumoured settlements, and non-Euclidean geography.",
+		"page": "Core/CoreSetting.md"
+	},
+	"Mists": {
+		"aliases": [
+			"Mist wall"
+		],
+		"description": "The roiling remnants of the Astral Sea, sundered and churned by the Cataclysm into a corruptive magical maelstrom that flows between the Shards of the Materium Existentiae. Dangerous both for the twisted creatures it births and for its reality-warping effect on the lands it borders. It ebbs and flows unpredictably, leaving behind monsters, and treasures, when it receeds. Those that dare approach to make discoveries are known as Mistdivers.",
+		"page": "Core/CoreSetting.md"
+	},
+	"Mistdiver": {
+		"aliases": [
+			"mistdiver"
+		],
+		"description": "An infamous profession of opportunists, adventurers and desperadoes who scour the retreating Mist wall to scavenge for treasures, ancient artefacts, and arcane secrets. Mistdivers only consider themselves truly blooded only after gaining their first mutation. They are viewed with suspicion and fear by ordinary folk, who easily mistake a mutated diver for a Mist creature.",
+		"page": "Core/CoreSetting.md"
+	},
+	"Iman Z Hauttergeit": {
+		"description": "Emperor of Mitteland at the height of the First Empire, bearing a lengthy chain of titles. His reign represented the greatest extent of the First Empire's multi-shard power, which not even the Second Empire can yet claim (although it is earnestly trying).",
+		"page": null
+	},
+	"First Empire": {
+		"description": "The first unified imperial state of Mitteland, founded on the dominance of Elóna over the other two core kingdoms. Its primary goal of internal consolidation shifted rapidly to extra-shard expansion when Warping Ships were encountered, resulting in a vast multi-shard empire. It collapsed in the Godfall War.",
+		"page": null
+	},
+	"Bronze Rune Throne": {
+		"aliases": [
+			"Bronze Throne"
+		],
+		"description": "The name of the official throne of the Empire of Mitteland - an ancient Edenic device rumoured to posses great and esoteric power.",
+		"page": null
+	},
+	"Elona": {
+		"aliases": [
+			"Elóna"
+		],
+		"description": "One of the three core kingdoms of Mitteland and the dominant power that rose to lead the First Empire. Its name is rarely used beyond official documentation, and its territory mostly maps onto the modern Crownlands.",
+		"page": null
+	},
+	"Mage Hunters": {
+		"aliases": [
+			"Mage Hunter",
+			"licensed mage hunter"
+		],
+		"description": "Bounty hunters, ex-soldiers, and hardened individuals licensed by the Second Empire to track down and apprehend unlicensed or rogue magic users. A profession born from the popular fear of magic that emerged during the Age of Strife, and zealously enforced by the Second Empire as its back-channel for violent authority.",
+		"page": "Core/PlayerOptions.md"
+	},
 	"Aarakocra": {
 		"aliases": [
 			"Tengu"
 		],
 		"description": "Eagle-raptor-folk, born of birds elevated by the first Gods of the Skies to dwell in the zephyrs and high clouds. The survivors of the Winged Wars's aftermath began a traditon asceticism and pacifism that many Aarakocra cary in their hearts to this day; wary of divine punishments. On the Three Isles they are known as Tengu, who hold dominion over the high places and rule openly in the Southern Isle.",
-		"page": "peoples/winged-races.md"
+		"page": "Peoples/WingedRaces.md"
 	},
 	"Harpy": {
 		"description": "Distant descendants of First Men who gained the power of flight, their arms becoming wings and their feet talons, and whose souls learned to sing. Defeated and nearly exterminated in the Winged Wars long before the Cataclysm, the survivors scattered into three lines defined by where they fled: the Raven Harpies of the Shadow, the Dream Heralds of the Fey, and the Lost Harpies who hid in the material world. Many are mean-spirited and bitter, clinging to a spite that has become embedded deep in their blood. A rare few rise above this racial ennui to wander as adventurers.",
-		"page": "peoples/winged-races.md"
+		"page": "Peoples/WingedRaces.md"
 	},
 	"Kenku": {
 		"description": "Aarakocra who shed innocent blood at the end of the Winged Wars and defied the Gods were struck down and cursed for it: stripped of wing, will, and the voice they never valued.. A flightless, mute race called the Kenku are who they became, a curse whose origins are all but forgotten. How could they, with no voice to tell it? Now known for thievery and skulduggery, they survive by mimicking the sounds they hear, standing as divine warning for the toll of pride.",
-		"page": "peoples/winged-races.md"
+		"page": "Peoples/WingedRaces.md"
 	},
 	"Winged War": {
 		"description": "The legend of the pre-Shattering war between the Aarakocra and the Harpies over dominion of the skies, kindled by the birds' jealousy of the harpies' singing voice they were never made to have. The war was adjudicated by the divine of the skies and earth; both races bound to fight only with wing and claw and only in the air. After generations of slaughter the Aarakocra had won, no remaining harpies daring to reach into the sky, but the Aarakocra went too far. They pressed past victory into the extermination of innocents, smashing eggs on the ground, breaking the divine contract and earning divine punishment. The Harpies were scattered and embittered, the offending Aarakocra cursed into the voiceless Kenku, and only the few who forsook the fighting were spared.",
-		"page": "peoples/winged-races.md"
+		"page": "Peoples/WingedRaces.md"
 	},
 	"First Men": {
 		"description": "When the three aspects of Sem the Creator gave themselves to the physical realms to start life, their lay upon the land all the Forms and Images of life. As life did the only thing it must: grow, the peoples of today came to be. But those first Forms of People, they were first men. Their legend and myth last unforgettable, and tales of heroes, leaders and explorers of the Eden age are passed from mouth to ear to this day.",
@@ -42,7 +178,8 @@
 	},
 	"Fey Wild": {
 		"aliases": [
-			"Faewyld"
+			"Faewyld",
+			"Fractal Dream"
 		],
 		"description": "TODO",
 		"page": null
@@ -84,10 +221,10 @@
 	},
 	"Flow of Ideas": {
 		"aliases": [
-			"Cycle of Thought",
-			"Cycle of Thoughts"
+			"Journey of Ideas",
+			"Cycle of Thought"
 		],
-		"description": "TODO",
+		"description": "The passage of a soul from birth through life, death, judgement, and return to the Beginning. The individual's experience of the Cycle of Thought. It is understood by priest castes across Shards the Cosmos-over as the reason of mortal existence and some would say the purpose of existence entire.",
 		"page": null
 	},
 	"Shattering": {
@@ -96,5 +233,600 @@
 		],
 		"description": "TODO",
 		"page": null
+	},
+	"Mage Hunter": {
+		"description": "A background and profession for those licensed by the Empire to hunt down rogue and unlicensed magic users. Born from the popular fear of magic that accumulated across the Age of Strife, mage hunters are a diverse group — desperadoes, ex-soldiers, bounty hunters — united by official sanction and a shared body of anti-magic protocols.",
+		"page": "Core/PlayerOptions.md"
+	},
+	"Beast Races": {
+		"description": "Races created either by the divine awakening of an animal into sentience, or by the fusion of a human and a beast. Examples include Tortles (awakened), Aarakocra and Yuan-ti (fusion). All such peoples arose after the creation of the cosmos by Sem",
+		"page": null
+	},
+	"Life Force": {
+		"aliases": [
+			"lifeforce",
+			"ki"
+		],
+		"description": "The power of the soul, the energy that animates a living creature, and the verve that rails against the light, is called Lifeforce. This power is not fixed, and many know that through training and hardship Lifeforce can bind more tightly to a soul over time. Psychic powers are theorised to be life force projected outward, while Ki is life force channelled internally to empower the body and its feats. Many medical engineers will say a body has a certain \"Power Level\", measuring the magnitude of a person's life force.",
+		"page": null
+	},
+	"Mana": {
+		"aliases": [
+			"arcane power"
+		],
+		"description": "The magical energy that underlies spellcasting and arcane phenomena in the Materium Existentiae. Mana has both a Magnitude (commonly measured on a scale of 0–9) and a Mixture (a proportion of the five colours of magic: red, green, blue, black, and white). A Universal Force of Magic is theorised to exist beneath all its expressions, though no in-world scholar has yet produced a unifying theory.",
+		"page": null
+	},
+	"Black Anima": {
+		"description": "A darker counterpart to Lifeforce; described in hushed tones as a kind of anti-life force. Used by certain individuals and techniques as a source of dark power.",
+		"page": null
+	},
+	"Heartstone": {
+		"description": "A magical object capable of storing an individual's personal mana outside their body, up to a certain Mana Magnitude, which a trained mage can deposit into or draw from rapidly.",
+		"page": null
+	},
+	"Axes of Alignment": {
+		"aliases": [
+			"axis of morals",
+			"axis of desire",
+			"axis of choice"
+		],
+		"description": "The three orthogonal moral axes underpin the Materium Existentiae. The Axis of Morals concerns benefit versus harm (the what). The Axis of Desire concerns long-term rational group goals versus short-term individual instinct (the why). The Axis of Choice concerns spontaneity versus systematic approach (the how). Though any living creature will find themselvse somewhere within each spectrum, the beings of the absolute planes embodies the extreme end of each. The Palace of Memories judges all souls against these axes upon death, to see where they need to go to reach absolution and a return to the Beginning.",
+		"page": null
+	},
+	"First Fast Friendship": {
+		"description": "The ancient bond between Man and the Little One, formed when neither could accomplish alone what the Titan could do by himself. A relationship said to persist to the present day across many Shards.",
+		"page": null
+	},
+	"Mana Filtering": {
+		"description": "The ability of spellcasters in the Materium Existentiae to detect the Mana Magnitude and Mana Mixture of ambient or personal mana, attune their own mana to ambient conditions. This allows them to recover magical power, siphon it from other creatures, and store or draw it through a Heartstone.",
+		"page": "Core/PlayerOptions.md"
+	},
+	"Mist Mad": {
+		"description": "A Gnome subrace. It is well-known that many Gnomes fall afoul of 'Mist Madness', and venture willingly into the Mists. Some even come back out, those are the Mist Mad. They've survived deeply changed, bearing multiple major mutations that warp their bodies and grant unusual physical capabilities. Their relationship with time is also disturbed by their Mist exposure.",
+		"page": "Core/PlayerOptions.md"
+	},
+	"Bloodline": {
+		"aliases": [
+			"Touch",
+			"Touched"
+		],
+		"description": "The various peoples and families that, over the aeons, received the 'Touch' of the outside; through the actions of the Gods or other non-material forces, reshaping them into something beyond the baseline human or halfling. A Touch may come from long heritage, deliberate dynastic cultivation, or a single momentous event. It passes through bloodlines but is not guaranteed to manifest in every generation. The Church of the Everlight considers these corruptions, the nobles, sages and priests of the pantheon would say blessings. Both draw a distinct line between Bloodlines and direct descendants of the First Men and Littlepeople",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Wyldhand": {
+		"aliases": [
+			"Wyldhand Halfling"
+		],
+		"description": "The rare offspring of a Halfling and a Gnome. Analogous to the Half-Elves, Wyldhand Halflings possess similar keen senses and resistance to charm and magical sleep.",
+		"page": "Core/PlayerOptions.md"
+	},
+	"Impmen": {
+		"description": "A rare subrace of Halflings, those who carry the demonic Touch. Small and quick, they are marked by excellent night vision, fire resistance, and truly devilish luck",
+		"page": "Core/PlayerOptions.md"
+	},
+	"Ásarlings": {
+		"aliases": [
+			"Asarlings"
+		],
+		"description": "A rare subrace of Halflings, those who carry the celestial Touch. Small and charismatic, they are marked by excellent night vision, resistance to necrotic and radiant energies, their healing hands, and their supreme courage.",
+		"page": "Core/PlayerOptions.md"
+	},
+	"City Elves": {
+		"description": "An Elf subrace adapted to urban environments. City Elves are skilled climbers, dancers and courtiers, able to hide in crowds and urban obscurement, and possess a natural instinct for political and social manoeuvrings.",
+		"page": "Core/PlayerOptions.md"
+	},
+	"Goblinoid": {
+		"aliases": [
+			"Goblinkin"
+		],
+		"description": "The Goblinoid race is most often seen in its base form: the chaotic Goblin. Goblins struggle in their manic compulsions, typically towards acquiring shiny things and being vicious. Blessed by Maglubiyet strong or savvy goblins can evolve into advanced forms by meeting certain physical and mental thresholds. Bugbears are tall and strong with long arms able to hook in victims. Nilbogs turn that chaotic energy into lightning quick wit and an innate ability to resist mental magic. Those that evolve further become the infamous martial people: the Hobgoblins.",
+		"page": "Core/PlayerOptions.md"
+	},
+	"Age of Strife": {
+		"description": "The period from 1104AC to 1761AC following the Godfall War, during which both the shattered Empire of Mitteland and the collapsed Kingdom of White and Blue fractured into warring fiefdoms ruled by Sorcerer Kings, and in the latter's case - dealt with the Hungering Tide. Characterised by rampant magical experimentation, tyranny, and the influence of celestial horrors. It ended with Stannis Hauttergeit's reunification of Mitteland and the Patrie du Pape's Third Decree.",
+		"page": "Core/TheAges.md"
+	},
+	"Iron Exclave": {
+		"description": "A contested territory on the shard of Patrie du Pape, controlled by the Empire of Mitteland. It was where the imperial army and Emperor were stationed during the Godfall War, from which they were unable to return home.",
+		"page": null
+	},
+	"Age of Man": {
+		"description": "The period beginning around 1761AC, marked by the rise of popular political sentiment, strictly controlled and scientific study of magic and alchemy, and the invention of the gun. An era in which magic and technology blended to create machines, and the remnants of the old Sorcerer King order were finally extinguished.",
+		"page": "Core/TheAges.md"
+	},
+	"Legions of Terror": {
+		"description": "Gruumsh's legions of reavers, orcs fully given over to the Red Rage and gleefull in their plundering of the peoples of Eden. A force of great evil active during the Age of Eden, kept in check only by crusades and the Orange Army of Hobgoblins raised by Maglubiyet.",
+		"page": null
+	},
+	"Lolth": {
+		"description": "The deified creature of the Drow, responsible for the fall of the elves to Corellion, and their expulsion from the Fey Wild, the Green Flight, during the Age of Eden.",
+		"page": null
+	},
+	"Pope": {
+		"aliases": [
+			"Father"
+		],
+		"description": "The religious authority at the heart of the Kingdom of White and Blue's power, and later the most-important figure within the Republic of Blue and the re-establishment of the Church over the Shard, turning back the Hungering Tide. The collapse of the divine covenant during the Deicide destroyed the Pope and Clergy's authority, shattering the Kingdom's social and political foundations, creating a tension in the modern Republic between the Theocrats and the Yeomans* to this day.",
+		"page": null
+	},
+	"Humanity": {
+		"description": "A term covering all races and bloodlines descended from the First Men: Elves, Half-Elves, Dragonborn, Tieflings, Ásar, Harpies, Djinnis, and more. Treated by cosmology and the arcane weave as parts of a single greater whole. The Little Peoples are sometimes included under this umbrella in common usage, though scholars note this as technically erroneous. They are, in effect, their own \"First Men\"",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Human": {
+		"description": "The most widespread of peoples, found in virtually every Materia and tribal territory across the Materium Existentiae, including the wilds of Tlancayo. Considered by some, dogmatically by the Church of the Everlight, to be the purest and most direct descendants of the First Men, though others argue they are no less changed from that ideal than any other bloodline.",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Half-Elf": {
+		"aliases": [
+			"Half Elf",
+			"Fey Touched"
+		],
+		"description": "The most common and widespread of the Touched bloodlines, arising from fey influence on the human bloodline. Their prevalence expanded greatly following the Green Flight. In the cities of most Materiae, Grey Elves, Half-Elves and Humans have intermingled so thoroughly that they've formed a continuous spectrum to the point that a \"Half-Elf\" face is an urban face, and 'round-ear' has become a slur for peasants and people of rural origin.",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Tiefling": {
+		"description": "Those carrying the red blood of Hedonia, demonic heritage worked into the human bloodline. May belong to proud dynastic lines stretching back to the original sin of demon-cavorting, or may manifest suddenly in otherwise unremarkable families. Few Tieflings end up walking peacefully through life.",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Ásar": {
+		"aliases": [
+			"Aasimar"
+		],
+		"description": "Those carrying the white blood of Forum, celestial power infused into a human soul. May be born celestially charged from a heritage of such blood, or may have received the touch in a single fateful divine visitation during their lifetime.",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Djinn": {
+		"aliases": [
+			"Genasi"
+		],
+		"description": "Those into whose souls one of the four elements has reached and taken hold. Created when elemental forces fill a mortal soul to embody them, producing individuals with an elemental nature and attendant powers.",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Reforged": {
+		"aliases": [
+			"Warforged"
+		],
+		"description": "Those reforged by the logic of Mechanicus, their original form moulded into a work of artifice and machinery yet capable of housing a soul.",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Changeling": {
+		"aliases": [
+			"Changelings"
+		],
+		"description": "Those shaped by the nature of the Warp and its chaos, who as a consequence never settle on a single physical form. A bloodline reflecting the ever-shifting nature of chaotic influence. Few find it easy to trust one who has no steady face.",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Hedonia": {
+		"description": "TODO",
+		"page": null
+	},
+	"Forum": {
+		"description": "TODO",
+		"page": null
+	},
+	"Mechanicus": {
+		"description": "TODO",
+		"page": null
+	},
+	"Warp": {
+		"description": "TODO",
+		"page": null
+	},
+	"Little People": {
+		"aliases": [
+			"Halfling"
+		],
+		"description": "The pint-sized counterparts to humanity, known to humans as Halflings but calling themselves the Little People in their own tongue. Ubiquitous across the Materiae, sometimes more so than humans, they have worked alongside mankind since before the Shattering, and perhaps since the beginning of time itself, as told in the household tale of the First Fast Friendship. Their one notable absence is the Shard of the Three Isles.",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Gnome": {
+		"description": "The counterpart to Halflings as Elves are to Humans, Gnomes are also Little People but are defined by a compulsive wanderlust and curiosity rather than the Halfling tendency towards settled burrows and shire-life. Ever since leaving the Fractal Dream, they are prone to a palsy of restlessness if curiosity goes unsated, and are inevitably drawn towards borders, conflicts, and novelty: often to their peril. Many succumb to Mist Madness at the Mistal breaches, drawn in and consumed. A rare few are seen again: and even so have become the Mist Mad.",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Mist Madness": {
+		"description": "A compulsion that overcomes many Gnomes at the sight of the Mists, drawing them irresistibly into the Mistal breaches. Most who follow it are never seen again. The very few who return are inevitably changed, often arriving from different Materiae — or different times.",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Elf": {
+		"description": "First Men who settled the Fey Wild and were transformed by it, emerging with a physical resemblance to their counterpart races but a starkly alien countenance shaped by the fractal waking dream of the Wyld. After their ejection during the Green Flight, in the material world they split broadly between those who kept to primeval forest glades (the Wild Elves) and those drawn to cities and courts (the Grey Elves).",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Wild Elf": {
+		"aliases": [
+			"Wood Elf",
+			"High Elf"
+		],
+		"description": "Those Elves who maintained the primal way of life following their exodus from the Fey Wild, dwelling in treetop villages and secluded groves. Within these communities, Wood Elves serve as scouts, hunters, and rangers, while High Elves fill roles as administrators, soldiers, weavers, and crafters. The two typically live and work in close cooperation.",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Grey Elf": {
+		"aliases": [
+			"City Elf"
+		],
+		"description": "Elves who settled in the cities and courts of mortals. Generations of urban life have all but erased their affinity for the woods, replacing it with instincts for politics, crowds, and urban sprawl. After so much intermingling with city folk, most Grey Elves are more correctly 'Half-Elf' in heritage, and the line between Grey and Wild grows starker every generation. Gery Elves typically \"only\" have lifespans of a few hundred years, whereas Wild Elves seemingly do not age.",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Green Flight": {
+		"description": "TODO — a historical event where the elves were ejected from the Fey Wilds.",
+		"page": null
+	},
+	"Dwarf": {
+		"aliases": [
+			"Dwarven Family",
+			"Dwarven Clan"
+		],
+		"description": "A stocky, subterranean people of height between that of Men and Little People, who have always held themselves to have been crafted from the roots of mountains. Unlike all other races of the Materium Existentiae, they cannot form bloodlines with outside Touches, and have no known origin in the First Men. The Cataclysm shattered their ancient underground halls and destroyed most of their history and culture; the survivors surfaced, and after a thousand years of isolation their original heritage has faded almost entirely to myth, preserved only in the tens of thousands of immaculate stone ancestor-statues that fill their few remaining ancient halls.",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Tuskmen": {
+		"description": "The name taken by Orcs who have thrown off the Red Rage of Gruumsh and sought to build stable societies or join civilised ones. They consider \"Orc\" to be a slur, and strictly Taboo. They carry the stigma of their ancestors' legacy in the Legions of Terror, compounded by the ongoing threat of their raving kin. The way a Tuskman tackles the Red Rage is known as the War for the Orcheart, and it defines their people.",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Orc": {
+		"aliases": [
+			"Orcs"
+		],
+		"description": "The progeny of Gruumsh's bitter act of spite against the other Gods: First Men taken and 'blessed' into tall, savage, fast-breeding warriors, their minds twisted with rage equal to their maker's. Ancient orc hordes, the Legions of Terror, swept the world of Eden in great 'Crusades of Red'. Though the worst has passed, the Red Rage still blinds many orcs and makes civilised coexistence difficult or impossible.",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Red Rage": {
+		"description": "The curse of wrath embedded in Orc blood by Gruumsh, which corrupts and wilts the mind. Many Tuskmen struggle to contain it throughout their lives. Those orcs wholly consumed by it are capable only of raiding and slaughter in their god's name.",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Gruumsh": {
+		"description": "The God of Orcs. In an act of spite against the other Gods, Gruumsh took First Men and remade them into the Orcs, infusing them with his own rage and charging them to make the world fear his name. He is also credited with the wholesale corruption of the Ogres.",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Dragonborn": {
+		"aliases": [
+			"Dragon Curse",
+			"draconic bloodline"
+		],
+		"description": "Humans reshaped into draconic form by a dragon's primeval power, either by individual whim, jealous imitation between wyrms, or grant to some desperate petitioner. Those twisted by the dragon's curse, as that Touch is called, gain great physical and magical power, but many suffer the dragon madness — a hungering greed and hollowing emptiness said to echo the emptiness of the dead Three Creators. The curse runs true and strong: children of dragonborn and human unions are almost always fully dragonborn, and no other touch gains purchase.",
+		"page": "Peoples/MenAndLittlePeople.md"
+	},
+	"Chromatic Dragons": {
+		"description": "TODO — the colour-aligned draconic flight associated with destruction and the making of dragonborn in pre-Cataclysm and post-Cataclysm history. Gradually diminishing in number since the Shattering.",
+		"page": null
+	},
+	"Metallic Dragons": {
+		"description": "TODO — a draconic flight created or bound during the Edict. Some metallic dragonborn were made at this time. In the modern era, metallic dragonborn are roughly as common as chromatic (in that, they're both very rare).",
+		"page": null
+	},
+	"Religion of the Father": {
+		"aliases": [
+			"Church of the Father"
+		],
+		"description": "TODO — a faith that preaches the human race as the purest and most direct descendants of the First Men, and derives doctrine of human primacy from this claim. A predecessor and rival to the Everlight.",
+		"page": null
+	},
+	"Everlight": {
+		"aliases": [
+			"Church of the Everlight"
+		],
+		"description": "TODO — a faith that teaches the First Men as pure and perfect creations of the Creator Sendum, and interprets the Touched bloodlines as corruptions or divergences from that original image. Successor to or offshoot of the Religion of the Father.",
+		"page": null
+	},
+	"Sendum": {
+		"description": "TODO — the Creator referenced by the Church of the Everlight, from whose image the First Men are said to have stepped whole and complete.",
+		"page": null
+	},
+	"Shard of Three Isles": {
+		"aliases": [
+			"Three Isles"
+		],
+		"description": "A Great Materia notable for the complete and unexplained absence of the Little Peoples, and its total isolation. They call The Shattering, The Cataclysm - the end of eden. The Three Isles are the Jade Isle, The Sword Isle and the Tengu Isle of the south, where the Tengu hold dominion over its high places and rule openly.",
+		"page": null
+	},
+	"Giants": {
+		"alias": [
+			"Titankin"
+		],
+		"description": "Ancient beings bound to the elements who have dwelled in the high places of the world since before the Shattering, maintaining their own insular law-philosophy-religion known as the Ordnung. Not one of the known First Men peoples, they are often identified with the Titans of legend, but a comparison they actively resist. They keep to their ancient halls, of which most in Mitteland were destroyed or buried by the Shattering. The surviving giant-kin of Mitteland gathered at the ruin that became Cloudcrest.",
+		"page": "Peoples/GiantkinGoliathsAndAncientTales.md"
+	},
+	"Ordnung": {
+		"description": "The law-come-philosophy-come-religion of the Giants, an ancient and intrinsic code that governs their insular societies. Goliath clans also honour the Ordnung, maintaining the Giants' tongue and serving as their 'very little cousins' in the eyes of giantkind.",
+		"page": "Peoples/GiantkinGoliathsAndAncientTales.md"
+	},
+	"Titan": {
+		"description": "Legendary beings of the Age of Eden, said to be the progenitors of the Giants although they actively distance themselves from this association. The titans created the Ordnung and were one of the two wielders of the Words of Creation, the other being the Wyrm. Their conflict with the dragons is recorded in ancient rumour predating even the Winged War and the Shattering.",
+		"page": "Peoples/GiantkinGoliathsAndAncientTales.md"
+	},
+	"Words of Creation": {
+		"description": "The power of the Creators, inherrited by their children: the Wyrm and the Titan. Later lost by the Titans in their ancient conflict with Dragon, and lost by the Dargons in turn when bound by the Edict after the Shattering. The Edict was specifically written to prevent any mortal soul from wielding such raw creative forces again.",
+		"page": "Peoples/GiantkinGoliathsAndAncientTales.md"
+	},
+	"Cloudcrest": {
+		"description": "The city and heartland of the Giants of Mitteland, situated at the inaccessible confluence of the Fold and the Spur mountain ranges, thrust kilometres into the air by the upheaval of the Shattering, where the air is too thin for lesser folk. What was once a ruined settlement became the gathering point for the surviving giants of the various holds after the Shattering, and has since been built into a fortress beneath the stars.",
+		"page": "Peoples/GiantkinGoliathsAndAncientTales.md"
+	},
+	"Giganters Ambassade": {
+		"description": "An ancient giant-built structure in the heart of Var, once a diplomatic or administrative hall of the Giants. Long since converted into aristocratic apartments, a theatre, a fine-dining establishment, and a museum.",
+		"page": "Peoples/GiantkinGoliathsAndAncientTales.md"
+	},
+	"Var": {
+		"description": "TODO — a city in Mitteland, home to the Giganters Ambassade.",
+		"page": null
+	},
+	"Goliath": {
+		"description": "A tall, hardy people standing eight to nine feet, who claim giant heritage. Neither bound to the elements nor anywhere near the size of even smaller giants, Goliaths nevertheless honour the Ordnung in their clans, maintain the giants' tongue, and venerate ancestors believed to return to the Great Braid. Post-Shattering, the Goliaths of the home constellation developed an honour-based culture comparable to that of the Tuskmen, and are considered the giants' 'very little cousins'.",
+		"page": "Peoples/GiantkinGoliathsAndAncientTales.md"
+	},
+	"Firbolg": {
+		"description": "A somehow-giant-related humanoid people, nature-aligned, communally-minded, curiously prone to lycanthropy, and generally nurturing in disposition. Largely absent from the home constellation, known only through ancient footnotes and the presumed existence of isolated hidden villages.",
+		"page": "Peoples/GiantkinGoliathsAndAncientTales.md"
+	},
+	"Monstrous Giantkin": {
+		"aliases": [
+			"Cyclops",
+			"Ettin",
+			"Fomorian",
+			"Ogre",
+			"Oni",
+			"Troll"
+		],
+		"description": "Those with giant heritage twisted from its original form, often hostile: Cyclops, Ettins, Fomorians, Ogres, Oni, Trolls. Each have their own creation stories. Ettins and Ogres are rumoured to be creations or corruptions of other races by Gruumsh, and featured prominently in the Legions of Terror. The Oni are demon-blooded giantkin. The Trolls are those said to have allied with the Unseelie during the Fall of the Fomorians. The Cyclops are believed by some to be products of sorcerous experimentation, and were favoured constructs of certain Sorcerer Kings.",
+		"page": "Peoples/GiantkinGoliathsAndAncientTales.md"
+	},
+	"Oled the Cruel": {
+		"description": "A Sorcerer King known for his use of Cyclops as tools of war or labour, and for the cruel magical experimentation that birthed Cyclops and many other horros and mistakes.",
+		"page": "Peoples/GiantkinGoliathsAndAncientTales.md"
+	},
+	"Maglubiyet": {
+		"description": "The God of Struggle and Conquest, patron deity of the Goblinkin. Said to have recognised the first ambitious Goblin, Gnirsk, and granted his rabble the blessing of Kalgradyet, Metamorphosis, enabling Goblinkin to transform their bodies and minds through discipline and struggle into higher forms of Bugbear, Nilbog, and ultimately, Hobgoblins.",
+		"page": "Peoples/GiantkinGoliathsAndAncientTales.md"
+	},
+	"Kalgradyet": {
+		"description": "The divine blessing granted by Maglubiyet to the Goblinkin: the gift of Metamorphosis. Through Kalgradyet, a Goblin who disciplines their body may become a Bugbear, one who disciplines their mind a Nilbog, and one who achieves both may undergo the final metamorphosis into a Hobgoblin.",
+		"page": "Peoples/GiantkinGoliathsAndAncientTales.md"
+	},
+	"Gnirsk": {
+		"description": "The first Goblin said to have shown true ambition, recognised by Maglubiyet and granted the blessing of Kalgradyet. Gnirsk went on to become the first Hobgoblin and lead many Orange Armies to conquest in Maglubiyet's name. His saga is recounted around Goblinkin campfires to this day.",
+		"page": "Peoples/GiantkinGoliathsAndAncientTales.md"
+	},
+	"Imperial Heartlands": {
+		"aliases": [
+			"Imperial Core",
+			"Heartlands"
+		],
+		"description": "The western third of Mitteland, stretching from Czondazan in the north to Ludoro and the Desolation in the south. Bounded by the Fold to the east and the Wester Sea to the west, it is the historical seat of imperial power, housing the vast majority of the Empire's population. Its internal geography and long political history divide it broadly into Northern and Southern Heartlands, split at Lynol Bay.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Crownlands": {
+		"description": "The central heart of imperial power, comprising much of the old Kingdom of Elóna along the lower basin of the Lineé. Bordered by Czondazan to the north, Salsburry to the south, the Wester Sea to the west, and Vabaria to the southeast. The Capital sits at its heart on the banks of the Lineé.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Czondazan": {
+		"description": "The northern kingdom, the first to be subsumed into the Empire at its founding. Now divided between three duchies, Poznan, Volhynia, and Tchernigow; each named for its principal city. The Czondazani maintain a fierce national identity and are treated distinctly under imperial law in many cases.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Salsburry": {
+		"aliases": [
+			"Southern March"
+		],
+		"description": "Once the frontier march of Elóna, now the Duchy of Salsburry, named for its first imperial duke Willem Salsburry in 962AC. A broad band of fertile land stretching from Lynol Bay to the Upper Linneus, bounded to the south by the Salsburry Heights. A populous and productive region supplying grain and citizens to the Crownlands, shaped by a blended Elónan and Damaran culture.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Willem Salsburry": {
+		"description": "The first Imperial Duke of Salsburry, whose name was given to the newly titled duchy in 962AC, replacing the old title of Southern March.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Salsburry Heights": {
+		"description": "A line of ridgelines, lake-littered vales, and small mountains that form the southern border of the Duchy of Salsburry, containing Barlewck and Willemwell.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Vabaria": {
+		"description": "A duchy of three distinct regions: the Varian Highlands of the Spur, the Varian Plain to the southwest, and the Alta Terra Deorum plateau. Its capital Var is an ancient refuge city protected by a divine shell erected before the Cataclysm, commanding the intersection of the old Spur and the plains. The Varian Plain has suffered repeated calamities across history, making Var one of the most densely populated cities in the Empire.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Damaran-Olistia": {
+		"aliases": [
+			"D-O"
+		],
+		"description": "A large united kingdom in the southern Heartlands, formally allied with Elóna through royal marriage, which union brought about the First Empire. Olistia further contains the semi-independent city-state of Hus at its centre, making it a union of a union of a union. The only polity west of the Fold whose crown is not held by Emperor Stannis; nevertheless, they were a key bastion and anvil to Stannis' reconquest during the Second Empire's formation. Covers terrain from the Salsburry escarpment to the Viexes Corronas and includes the Erynraef river basin and the Hyarmendor Barca.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Damaran": {
+		"description": "One of the two constituent kingdoms of Damaran-Olistia, and one of the three core cultural groups of the Imperial Heartlands alongside Elóna and Czondazan.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Olistia": {
+		"description": "The second constituent kingdom of Damaran-Olistia, notable for being a doughnut state whose quasi-independent central city-state of Hus operates with significant autonomy and forming all of D-O's coastal territory.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Erynraef": {
+		"description": "A river basin within Damaran-Olistia, whose name translates as 'wood-lace'. Covers the upper and lower sections within D-O territory.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Hyarmendor Barca": {
+		"description": "The largest arid territory in the Heartlands, including stretches of dune-covered desert. Falls within the technical bounds of Damaran-Olistia, and lies north of the Viexes Corronas and the Desolation.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Duchy of Ainne": {
+		"aliases": [
+			"Ainne"
+		],
+		"description": "The youngest and most south-eastern duchy of the Heartlands, historically a frontier and forward base for imperial crusades into the outsider-blighted lands south of the Godfall Crater. Prosperous due to plentiful natural resources and the White Lake facilitating irrigation and transport, even as the proximity to the Desolation makes it dangerous. Its capital is the city of Ainne.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Bailiwick of Coers": {
+		"aliases": [
+			"Coers"
+		],
+		"description": "A small, ancient noble republic of majority halfling population, nestled in the Valleys of the Vine with a foothold in the Alta Terra Deorum and reclaimed portions of the Valley of the Gales. Renowned for its superb wine and olive production and for maintaining its republican government throughout the latter Age of Strife following the defeat of the Galeforce Wizard. Now an autonomous region of the Second Empire, contributing the Bailiwick Battalion, notable for its high proportion of halfling broom riders, to the New Army.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Galeforce Wizard": {
+		"description": "A Sorcerer King who held dominion over the region that would become the Bailiwick of Coers during the Age of Strife. His defeat by the halfling republic was the act that allowed the Bailiwick to maintain its independence through the remainder of that age.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Bailiwick Battalion": {
+		"description": "Military corps contributed by the Bailiwick of Coers to the New Army of the Second Empire. Known for its high proportion of halfling broom riders.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Ludoro": {
+		"description": "A fragmented polity beyond the Viexes Corronas, known for dangerous sea-inundated gold mines, prolific mercenary companies, mercantile savvy, and a piratical naval tradition. Its Sorcerer Kings of the Age of Strife nominally bent the knee to the Empire rather than truly surrendering power, and piracy persists in practice. The post-Deicide lowering of sea levels triggered a major gold rush across these shores.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Glades": {
+		"description": "A loose federation of Wild Elf polities spread across the Heartlands, each nominally aligned with the Empire to varying degrees. Named glades include Ghelron in Czondazan, Hus in Olistia, Vensi off the coast of Ludoro, Maeryn on the northern flank of the Spur, Gravewood in the Crownlands, and the Ebon Glade in Ainne.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Ghelron": {
+		"description": "Largest of the named Glades, located around the northern mountains and passes of Czondazan. Imperially aligned and holding significant strategic leverage over land trade with northern Czondazan. Considered the least 'wild' of the wild glades.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Hus": {
+		"aliases": [
+			"Wooded City of Spires",
+			"City of Spires"
+		],
+		"description": "Capital and heart of Olistia, and of the wider Damaran-Olistia kingdom. Operates as a quasi-independent city-state within Olistia. Unique as the only true example of a Wild Elven city in the Heartlands, and so rarely referred to as a glade despite technically being one.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Vensi": {
+		"description": "A glade of Wild Elves occupying a set of islands off the coast of Ludoro. Well known for island-hopping and ambush tactics from mangrove cover, and operate as privateers for the Empire, if not outright pirates in practice.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Maeryn": {
+		"description": "A glade situated in the northern foothills of the Spur. The Maeryn are renowned wanderers and botanical collectors, gathering flora from across the shard and beyond. Their high-altitude gardens are celebrated as wonders of the Empire, and Maeryn elves are found in surprising numbers as far afield as Guiezzia.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Gravewood": {
+		"aliases": [
+			"Alderwood"
+		],
+		"description": "A glade in the Crownlands, once known as the Alderwood, that has over many generations grown dark and murky. Now called the Gravewood or the Swars, its residents have gone silent. Folklore holds the marsh is growing, and old maps appear to support this, though scholars attribute it to cartographic imprecision.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Ebon Glade": {
+		"description": "A glade in the Duchy of Ainne, ruled by the ancient creature known as the Ebon Lady. Only nominally aligned with the Empire, it assists in catastrophes but is infamous for hunting down woodsmen who stray too deep into the Ebon Glade or the Mountroot Forest.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Ebon Lady": {
+		"description": "An ancient creature and sole ruler of the Ebon Glade in Ainne. Only nominally aligned with the Second Empire.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Fold": {
+		"description": "A massive mountain range formed during the violence of the Shattering, running north to south across Mitteland and dividing the Imperial Heartlands from the rest of the shard. Its scale has shaped Mitteland's history immeasurably. Only the Mountroot Forest to the south, a well-guarded Northern Pass, or the underground Khazmod Deeps offer passage through or under it. Its northern limit peters out, but the Kingdoms of Elóna and Czondazan built a wall between it and the northern Misted Peaks, to contain Ihleiska and the remaining Legions of Terror it once contained.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Spur": {
+		"description": "Remnants of an old mountain chain that dominated this region of Eden before the Shattering. Now crumbled into the Varian Highlands west of the Fold, it forms the dividing backbone between Ihleiska and the Mid-West until it collapses into the valleys of High Castle at the Rift.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Wester Sea": {
+		"description": "By far the largest body of water on the Mitteland shard, forming the western border of the Heartlands. Its western reaches blur into the Mist wall until sea and Mist become indistinguishable. The Wester Sea serves the Heartlands' rivers and coastal settlements, and has been a critical highway in maintaining imperial cohesion and enabling early imperial growth.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Lynol Bay": {
+		"description": "A large bay on the Wester Sea at Salsburry, narrowing the Heartlands geographically and historically marking the rough divide between its northern and southern cultural halves: Elónan to the north and Damaran to the south.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Drifting Isles": {
+		"description": "A set of islands north of Czondazan, frequently locked in ice and periodically swept and replaced by Mist surges. Completely unsettleable and exceptionally dangerous, but correspondingly lucrative territory for Mistdivers.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"White Lake": {
+		"description": "The largest lake and body of fresh water on the Mitteland shard, lying at the heart of the Duchy of Ainne and serving as the headwater of the Linneus. Named for its semi-frequent transformation to a white colour, a property celebrated by spa towns along its shores. Its significance grew after the White Crusades followed its sources into the blasted southern Desolation.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Linneus": {
+		"aliases": [
+			"Lineé"
+		],
+		"description": "The main river of the Empire. Flows from the White Lake north through the plains of Vabaria, tumbles down the falls of Steyncraw, winds east of Salsburry, and meanders westward through the Crownlands to its estuary at Guiezzia. The upper stretch is called the Linneus, the lower the Lineé. Capital sits on its banks.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Steyncraw": {
+		"description": "A small two-pole town in Vabaria that operates a magical gate-based set of locks allowing riverboats to traverse the falls that it is situated upon.",
+		"page": null
+	},
+	"Desolation": {
+		"aliases": [
+			"Godfall Crater"
+		],
+		"description": "The blasted zone surrounding the site of the Godfall impact in south-western Mitteland. A harsh desert-like environment where life-force consistently fails to take hold, haunted by stranded, torn and half-mad outer-planar creatures. Large portions of Ainne and Damaran were lost to it, and the target of the White Crusades launched from Ainne city to stem the tide of outsiders and the corruption of the White Lake and the Lineé.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"White Crusades": {
+		"aliases": [
+			"Crusades of White"
+		],
+		"description": "Imperial military campaigns launched in the name of The Way of White and Celestia. In the Empire's recent history, the cursades from Ainne city to retake the outsider-blighted lands of the Godfall Crater and Desolation are the most well known, but even now Crusader chapters are recuiting, this time looking to Czondazan's north-west and the mountains appearing there.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Viexes Corronas": {
+		"description": "A line of ancient mountains far to the south-west separating Ludoro from the rest of the Heartlands. Roughly half the height of the Fold, they are littered with Edenic ruins and lost souls. A handful of mapped routes exist but most travellers go north around them or sail. South of the Corronas lies only the hostile terrain of La Muerte Verde and Los Acantilados Embruxados.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Swars": {
+		"description": "A dark and growing marsh in the southern Crownlands, spreading inland from the Wester Sea. A place of black mana, missing souls, and the creatures that prey on both. Formerly the Alderwood, a Wild Elf glade, before a creeping darkness transformed it over many generations. Also known as the Gravewood - for no wild elves walk it anymore.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Capital": {
+		"aliases": [
+			"Yorlburgh",
+			"City of Three Hills"
+		],
+		"description": "Seat of the Empire, lying on the wide Lineé at the heart of the Crownlands. Built across three hills: Bronze Hill, home of the Imperial Palace and the Bronze Throne; Ivory Hill, the theological centre; and Parchment Hill, seat of magical education and administration. Sometimes called Yorlburgh after its old name, or erroneously referred to by the former kingdom name of Elóna.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Imperial Diet": {
+		"aliases": [
+			"Diet",
+			"Chamber of Princes"
+		],
+		"description": "The governing body of the Empire alongside the Emperor, composed of two chambers: the Diet of bureaucratic administrators, and the Chamber of Princes holding the Imperial family and landed aristocrats of the Empire both on the home shard and abroad. The Diet's member estates surround the Imperial Palace on Bronze Hill.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Parthenon": {
+		"aliases": [
+			"Panthodic Forum"
+		],
+		"description": "The administrative heart of the multi-faith temple complex that dominated Ivory Hill during the First Empire, serving as the centre of polytheistic worship across the Empire's many favoured gods. Demolished by Stannis Hauttergeit during the establishment of the Second Empire to make way for Everlight supremacy, an act that nearly triggered rebellion. Currently a great cathedral to the Everlight is being constructed in its place.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Imperial College": {
+		"aliases": [
+			"Biblias Magikum"
+		],
+		"description": "An institution on Parchment Hill in the Capital originally called the First Empire's Biblias Magikum. It's the centre of official magical education and taken over by the New Army circa 1760AC, reforged into an instrument of officer training, mage licensing, and rogue mage hunting. Its seizure prompted the displaced faculty to establish the New Academy of Civilian Arts across the river.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"New Academy": {
+		"aliases": [
+			"Naça",
+			"New Academy of Civilian Arts"
+		],
+		"description": "Academy of civilian magical arts established circa 1776AC across the river from the Imperial College in Capital's low-town, founded by those displaced when the New Army took over the Biblias Magikum. It is the sole issuer of non-military mage licenses in the Empire, and is quietly rumoured to be run by a vampire coven pair who conduct research into time and the soul, though this has never been formally investigated.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"New Army": {
+		"description": "The military force established by Stannis Hauttergeit that served as the instrument of his reunification of Mitteland and founding of the Second Empire. Zealous in its formation, tempered through the river purges and reconquest of Czondazan. Its tactics and weaponry, reliant on gunpowder and massed magic, and strict egalitarian officer corp and training, makes it stand apart from any army seen before. It controls the Imperial College and maintains the Training Grounds downstream of the Capital.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Guiezzia": {
+		"description": "A free city at the mouth of the Lineé estuary on the Wester Sea, where the river empties across tens of miles of estuary. It has maintained its Free City status from the First Empire and into the Second, and the Doge rules from a grand, opulant palace. During the Age of Strife it was the only connection between Mitteland and its old colonies. Its colonial mercantile influence is second to none",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Mountroot Forest": {
+		"description": "A large, dark and dangerous forest at the southern end of the Fold, forming one of the few overland routes around the mountains. Territory aggressively patrolled by the Ebon Lady, or worse.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Northern Pass": {
+		"description": "One of the few overland routes through the Fold, at its northern end. Well-guarded by the Kings Wall.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Khozmad Deeps": {
+		"description": "Traditional underground passage through the Fold, in use since the birth of the Empire. The primary sub-surface route connecting the Heartlands to the rest of the Mitteland shard.",
+		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Valleys of the Vine": {
+		"description": "The fertile valley region in which the Bailiwick of Coers is principally situated, known for viticulture and olive cultivation.",
+		"page": "Mitteland/ImperialHeartlands.md"
 	}
 }
