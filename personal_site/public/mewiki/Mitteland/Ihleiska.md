@@ -10,6 +10,13 @@ Now a conflict of three ideologies rears as times are changing in the arboreal v
     <img src="/mewiki/Ihleiska.png">
 </div>
 
+### The Populous South-West
+Across the history of Mitteland, the South-Western corner, its "safest", has always held the greatest portion of the region's population.
+
+<div class="img-wrap">
+    <img src="/mewiki/SouthwestIhleiska.png">
+</div>
+
 ## The Many Kingdoms of Ihleiska
 Tuskmen and Men, and some Goliaths, Dwarves and Goblinoids too, have made small territories called kingdoms - though fiefs would be a better word given the size and often vassal like relations between them - in the alpine forests and cave-littered rough land of Ihleiska. These are often about honour, treasure and control, a foil to their ancestrial rage, and to show a king any less respect than he is due is a recipe to be slain in one-on-one combat where that rage is allowed to come out. A few small elven glades of truly wild elves, their own definition of fief and honour alien to the others, and fortified craggy shires of halflings further colour the fabric of this fractured land.
 

@@ -18,8 +18,6 @@ Other locations beyond the big three in Salsburry include:
 - **Setfalls** – a small settlement situated on a lake whose northern rim, and the entire river that feeds it, falls into the Vasts below. Unsurprisingly it is well populated with dwarves as well as men and little peoples.
 - **The Swars** - as everyone knows, the swamp grows. If one were to consult hundred year old maps it would certainly seem so. In legend, the consequence of the hubris of the infamous sorcerer king Jorges the Absolute when he conquored and slaughtered the entire Glade that stood where the Swars now lurks. It is a dangerous place of black mana and missing souls, and those that prey and thrive on such things. Deep in the black swamp are rumoured to be the remains of a once thriving port city still full of treasure untraded, and the Woaden elves look longingly if fearfully at the depths of their ancestral home.
 
-[It is merry wee England, fertile farmland caught in the cultural fusion between German-inspired Crownlands, and the more latinised folk of Damaran-Olistia]
-
 <div class="img-wrap">
     <img src="/mewiki/Salsburry.png">
 </div>

@@ -20,6 +20,10 @@ And so the Cycle of Thought started and the great game of the Gods began, to see
 ### The Great Wheel
 The shape of the Universe is called The Great Wheel by scholars, and it encompasses all things, a great ordered work of the Prime, woven from the infinite primordial chaos.
 
+<div class="img-wrap">
+    <img src="/mewiki/TheGreatWheel.jpg">
+</div>
+
 At the centre of the universe are the Three Bodies, the Earthly Planes, the Physical Realms, the three planes of existence. Once intimately linked, since the shattering they are known as the "Fae Wild", the "Materium Existentiae", and the "Shadowfell". They are yet bound together at their cosmological roots by what many call the "Underneath", the "Underdark", or the "Place-between-places", where the things that are lost fall between the cracks to go, and at their cosmological ceiling by the Etherium, the land that never-was, the Ethereal Plane. 
 
 The physical realms are surrounded by a boundary of calm water known by the Warping Ship sailors and captains as the "Eternal Calm", although historically it is a relatively recent creation, the quiet aftermath that was the Astral Sea.
