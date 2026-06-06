@@ -1,34 +1,73 @@
 <template>
   <div class="section bg-black-transparent-0p3">
-    <h1 class="main-title">Materium Existentiae Wiki</h1>
-    <h2 class="subsubtitle text-centre no-decoration">My D&D Setting & Worldbuilding Project</h2>
-
-    <!-- List of articles on the wiki, doubling as route and link -->
-     <ul class="traingle-points">
-       <WikiRoutes :routes="routes" />
-     </ul>
-
-    <!-- Search bar for unique terms to jump to article it's associated to -->
-    <!-- <div class="flex gap-1r">
-      <input type="text" v-model="fileName">
-      <button class="btn inline" @click="">Go</button>
-    </div> -->
+    <h1 class="main-title">Materium Existentiae</h1>
+    <h2 class="subsubtitle text-centre no-decoration">A Wiki of my World Building</h2>
 
     <div class="main-text inset">
       <div id="wiki"></div>
     </div>
+
+    <div class="mx-2r">
+      <div class="flex justify-centre gap-1r">
+        <label class="label" for="wiki-search-term">Search: </label>
+        <input id="wiki-search-term" type="text" class="q flex-grow" v-model="searchTerm">
+      </div>
+      <p v-if="searchResults.matchedKeys.length">
+        <span style="color: var(--highlight)">Known terms</span>: {{ searchResults.matchedKeys.join(", ") }}
+      </p>
+    </div>
+
+    <ul class="traingle-points">
+      <WikiRoutes v-for="route in searchResults.filteredRoutes" :key="route.path" :routes="route" />
+    </ul>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { putMdinElement } from '../assets/functionality'
 import WikiRoutes from '../components/WikiRoutes.vue'
 
 import routes from '../assets/wikiroutes.json'
+import index from '../assets/index.json'
 
 onMounted(() => {
   putMdinElement("/mewiki-introduction.md", 'wiki')
+});
+
+const searchTerm = ref("");
+
+function filterNode(node, term, extraPaths = new Set()) {
+  if (node.type === "file") {
+    const nameMatch = node.name.toLowerCase().includes(term);
+    const indexMatch = extraPaths.has(node.path.toLowerCase());
+    return nameMatch || indexMatch ? node : null;
+  }
+  const children = node.contents.map(c => filterNode(c, term, extraPaths)).filter(Boolean)
+  return children.length ? { ...node, contents: children } : null
+}
+
+const searchResults = computed(() => {
+  const term = searchTerm.value.trim().toLowerCase()
+  if (!term) return { filteredRoutes: routes.contents, matchedKeys: [] }
+
+  const matchedEntries = Object.entries(index).filter(([key, obj]) =>
+    key.toLowerCase().includes(term) ||
+    obj.aliases?.some(a => a.toLowerCase().includes(term))
+  )
+
+  const extraPaths = new Set(
+    matchedEntries
+      .filter(([, val]) => val.page)
+      .map(([key, obj]) => `/mewiki/${obj.page.toLowerCase()}`)
+  )
+
+  const matchedKeys = matchedEntries.map(([key]) => key)
+  console.log(extraPaths)
+  return {
+    filteredRoutes: routes.contents.map(c => filterNode(c, term, extraPaths)).filter(Boolean),
+    matchedKeys
+  }
 });
 
 </script>

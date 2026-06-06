@@ -18,3 +18,7 @@ export function format(name) {
 
     return words.map(capitalize).join(" ");
 }
+
+export function formatPascal(name) {
+    return name.replace(/([A-Z])/g, ' $1').trim();
+}

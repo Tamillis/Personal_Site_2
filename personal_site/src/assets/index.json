@@ -507,9 +507,12 @@
 			"Church of the Everlight"
 		],
 		"description": "TODO — a faith that teaches the First Men as pure and perfect creations of the Creator Sendum, and interprets the Touched bloodlines as corruptions or divergences from that original image. Successor to or offshoot of the Religion of the Father.",
-		"page": null
+		"page": "Mitteland/TheChurchOfTheEverlight.md"
 	},
 	"Sendum": {
+		"aliases": [
+			"Prime"
+		],
 		"description": "TODO — the Creator referenced by the Church of the Everlight, from whose image the First Men are said to have stepped whole and complete.",
 		"page": null
 	},
