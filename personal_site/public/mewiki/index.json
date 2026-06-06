@@ -828,5 +828,124 @@
 	"Valleys of the Vine": {
 		"description": "The fertile valley region in which the Bailiwick of Coers is principally situated, known for viticulture and olive cultivation.",
 		"page": "Mitteland/ImperialHeartlands.md"
+	},
+	"Ihleiska": {
+		"aliases": [
+			"Many Kingdoms of Ihleiska"
+		],
+		"description": "A primeval, arboreal region of Mitteland, cupped to the south by the Spur, capped to the west by the Fold and its Northern Pass, bordered to the east by the Rift and to the north by an ebbing mistal no-man's land. Long a backwater of Mitteland, it is home to a fractured patchwork of small Tuskmen, human, Goliath, Dwarf, and Goblinoid kingdoms, fiefs in all but name, alongside wild elf glades and hardy halfling shires. Now the subject of growing imperial interest and a three-way ideological contest known as the War for the Orcheart.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"War for the Orcheart": {
+		"aliases": [
+			"Orcheart"
+		],
+		"description": "Both a local concept and the name given to the current ideological conflict reshaping Ihleiska. The orcheart is a Tuskman word for the question of how a person ought to live their life. The three loudest answers currently say: the old way of Gruumsh and the reaver life; the pacifist cultivation philosophy of A'Koeveteeshe; and the martial faith of the Everlight, championed by the Second Empire.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"A'Koeveteeshe": {
+		"description": "A religion of active pacifism originating in Ihleiska, founded on the teachings of Tuskman philosopher Muevelt Ember. Its adherents pursue the cultivation of humane virtues as a deliberate rejection of the reaver legacy of Gruumsh. Members are recognisable by the turtle shells they bear on their stomachs. The faith has fractured into as many sects as there are kingdoms in the region, but a consistent feature is its emphasis on child-rearing. Its adherents often run the creches and educational institutions of many a fief, filling young minds with their ideals.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"Muevelt Ember": {
+		"description": "A Tuskman philosopher and the founder of A'Koeveteeshe, whose teachings of active pacifism and humanist cultivation became the basis for a widespread religious and cultural movement across Ihleiska.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"Purified": {
+		"description": "Tuskmen who have undergone a secret ritual associated with a sect of the Everlight faith, reversing the physical changes inflicted by the Curse of Gruumsh: skin tone returns to human ochre, build reduces, mind sharpens, and amber eyes shift to brown-blue. Many officers of the New Army are Purified. The steps of the ritual are a state secret of the Second Empire.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"Eyes of the Reaver": {
+		"description": "TODO — a force or presence associated with Gruumsh that kept Orc rage constantly stoked prior to the Edict. The creation of the Edict allowed Orcs to finally throw off its influence, enabling the emergence of the Tuskmen over the following centuries.",
+		"page": null
+	},
+	"Confederation of Everlight Clans": {
+		"description": "A coalition of imperially aligned fiefs in the Old Farmlands of Ihleiska, united under the Everlight faith as their common point of identity. The dominant local power in western Ihleiska, its leadership is a balance between Imperial Commander Lord Fanebell, Everlight Bishop Beacon Glorius, King Mezoek Ura, and the aggregate Council of Elders of the five constituent fiefs.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"Lord Fanebell": {
+		"description": "Imperial Commander in Ihleiska and senior imperial advisor to the Confederation of Everlight Clans. A halfling noted to have lost all cheer. One of four figures sharing effective leadership of the Confederation.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"Beacon Glorius": {
+		"description": "Everlight Bishop and one of four leading figures of the Confederation of Everlight Clans in Ihleiska.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"Mezoek Ura": {
+		"description": "King and foremost ruler of the Confederation of Everlight Clans, to whom the other four kings of the confederation are nominal vassals.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"King's Fort": {
+		"description": "Imperial Army fief at the mouth of the Old Farmlands in Ihleiska, used for training, war games, and army exercises. Kept deliberately sparse in population, with a few curated surrounding settlements serving as supply and recruitment hubs.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"Old Farmlands": {
+		"description": "A depopulated arc of western Ihleiska, once painstakingly tilled farmland cleared by imperial settlers during the Age of Wonders. Scoured and largely abandoned after the New Legion of Gruumsh swept through it during the Age of Strife, it remains feral today, now dominated by the Confederation of Everlight Clans.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"New Legion": {
+		"description": "A legion of Tuskmen and Orcs raised by a fanatical Gruumsh cult during the Age of Strife, who bewtiched thousands back into orcs. It swept through Ihleiska — burning the Old Farmlands, breaking the King's Fort, and sacking Tchernigow — before finally being destroyed in the Rain of Glass in what became known as the Crimson Wood, as elves and men of the north fell on them.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"Rain of Glass": {
+		"description": "The battle or event in which the New Legion of Gruumsh was destroyed, fought in what became known as the Crimson Wood in eastern Czondazan. The legion had gorged on Czondazani lands and become mired when the elves and men of the north fell on them.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"Crimson Wood": {
+		"description": "A forest in eastern Czondazan, named for the Rain of Glass battle in which the New Legion was destroyed. Home to a non-aligned glade whose wardens are noted as one of the smaller unnamed glades of the region.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"Ravager": {
+		"description": "TODO — a title or aspect of Gruumsh under which the New Legion converted or forcibly brought much of Ihleiska during the Age of Strife.",
+		"page": null
+	},
+	"Farpeak Vales": {
+		"description": "A rise of mountains in the central north of Ihleiska, home to Tuskmen rumoured to be particularly adept at magic. The region appears to centre on one specific valley of note.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"Stormking's Folly": {
+		"aliases": [
+			"Stormking's Folley"
+		],
+		"description": "A valley in Ihleiska, all that remains associated with a figure of distant legend. Home to a blue dragonborn clan.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"Naenym Woods": {
+		"description": "An imperially neutral wild elf glade in Ihleiska, arguably the largest in the region.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"Clans of Night Elves": {
+		"description": "A network of surface-dwelling Drow and wild elf glades in Ihleiska, counted among the many non-aligned kingdoms of the region.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"Yondervale": {
+		"aliases": [
+			"Few Kingdoms"
+		],
+		"description": "The old far frontier of Ihleiska to the north-east, whose relatively stable and distant mistwall has allowed slow but steady development across the ages. Escaped the New Legion unscathed.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"Spurmark Hinterlands": {
+		"description": "Far eastern Ihleiska, near the Spur and the end of its High Castle. A long-settled land predating the Tuskmen spread from the west, home to native Spurmark Tuskmen, Hobgoblin holdfasts, dwarven fortresses, human riftsider towns, and wild elf strider caravans.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"An Kaismeachd Khada": {
+		"aliases": [
+			"Long March"
+		],
+		"description": "A network of underground Dwarf clan settlements running discontinuously from the northern Fold through the Spur to the Spurmark Hinterlands. In the hostile and largely unapproachable Spur, civilisation can only be found by going down — into these deeps.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"Misted Peaks": {
+		"description": "A range of unstable peaks rising at the northern edge of the Mitteland shard, bordering the Northern Pass. Their mercurial nature is implied by proximity to the mistal boundary.",
+		"page": "Mitteland/Ihleiska.md"
+	},
+	"Rift": {
+		"description": "TODO — the humongous eastern border feature of Ihleiska. An outpouring of mana from the Rift empowers monstrosities in the eastern reaches of the region.",
+		"page": null
+	},
+	"Tchernigow": {
+		"description": "One of the three duchy-capitals of Czondazan and an ancient fortress city described as built by the Gods. Sacked by the New Legion of Gruumsh during the Age of Strife, an event that marked the high-water point of that legion's rampage before its destruction at the Rain of Glass.",
+		"page": "Mitteland/Ihleiska.md"
 	}
 }

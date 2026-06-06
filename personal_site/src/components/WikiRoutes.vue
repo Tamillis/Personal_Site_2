@@ -2,7 +2,7 @@
       <li :class=" routes.type == 'dir' ? 'triangle-points-down' : 'triangle-points'" >
         <h3 v-if="routes.type=='dir'">{{ routes.name }}</h3>
         <ul v-if="routes.type=='dir'">
-          <WikiRoutes v-for="route in routes.contents" :routes="route" />
+          <WikiRoutes v-for="route in routes.contents.sort((c1, c2) => c1.name.localeCompare(c2.name))" :routes="route" />
         </ul>
         <RouterLink v-else class="intext-link" :to="configuredPath">{{routes.name.replace(".md", "")}}</RouterLink>
       </li>
