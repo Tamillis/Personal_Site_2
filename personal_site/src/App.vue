@@ -4,34 +4,21 @@ import { onMounted } from 'vue';
 import { init } from './assets/bg.js'
 import Sidebar from './components/Sidebar.vue';
 import ChatWindow from './components/Chat/ChatWindow.vue';
+import { isMobile } from './assets/functionality.js';
 
 let showFrameRate = false;
 
+const mobile = isMobile();
+
 onMounted(() => {
-  if (!detectMob()) {
+  if (!mobile) {
     init("background-canvas");
   }
 });
-
-function detectMob() {
-  const toMatch = [
-    /Android/i,
-    /webOS/i,
-    /iPhone/i,
-    /iPad/i,
-    /iPod/i,
-    /BlackBerry/i,
-    /Windows Phone/i
-  ];
-
-  return toMatch.some((toMatchItem) => {
-    return navigator.userAgent.match(toMatchItem);
-  });
-}
 </script>
 
 <template>
-  <canvas id="background-canvas" class="no-border"></canvas>
+  <canvas id="background-canvas" class="no-border" v-if="!mobile"></canvas>
   <Sidebar />
   <RouterView />
   <ChatWindow />

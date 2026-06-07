@@ -29,7 +29,7 @@ import { putMdinElement } from '../assets/functionality'
 import WikiRoutes from '../components/WikiRoutes.vue'
 
 import routes from '../assets/wikiroutes.json'
-import index from '../assets/index.json'
+import { searchTerms } from '@/composables/useHighlighter'
 
 onMounted(() => {
   putMdinElement("/mewiki-introduction.md", 'wiki')
@@ -48,22 +48,10 @@ function filterNode(node, term, extraPaths = new Set()) {
 }
 
 const searchResults = computed(() => {
-  const term = searchTerm.value.trim().toLowerCase()
-  if (!term) return { filteredRoutes: routes.contents, matchedKeys: [] }
+  if (!searchTerm.value || !searchTerm.value.trim()) return { filteredRoutes: routes.contents, matchedKeys: [] }
+  const term = searchTerm.value.trim().toLowerCase();
 
-  const matchedEntries = Object.entries(index).filter(([key, obj]) =>
-    key.toLowerCase().includes(term) ||
-    obj.aliases?.some(a => a.toLowerCase().includes(term))
-  )
-
-  const extraPaths = new Set(
-    matchedEntries
-      .filter(([, val]) => val.page)
-      .map(([key, obj]) => `/mewiki/${obj.page.toLowerCase()}`)
-  )
-
-  const matchedKeys = matchedEntries.map(([key]) => key)
-  console.log(extraPaths)
+  const { matchedKeys, extraPaths } = searchTerms(term)
   return {
     filteredRoutes: routes.contents.map(c => filterNode(c, term, extraPaths)).filter(Boolean),
     matchedKeys

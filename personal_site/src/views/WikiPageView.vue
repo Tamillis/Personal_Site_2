@@ -1,23 +1,40 @@
 <template>
-    <div class="section bg-black-transparent-0p3">
+    <TooltipContainer v-if="!isMobile()" ref="tooltips" />
+    <div class="section">
         <div class="main-text inset">
-            <li class="triangle-points-reverse back-link"><RouterLink class="intext-link" to="/mewiki">Back</RouterLink></li>
-            <div id="wiki-page"></div>
+            <li class="triangle-points-reverse back-link">
+                <RouterLink class="intext-link" to="/mewiki">Back</RouterLink>
+            </li>
+            <div id="wiki-page" ref="wikiPage"></div>
         </div>
     </div>
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
 import { useRoute, RouterLink } from 'vue-router';
-import { putMdinElement } from '../assets/functionality';
+import TooltipContainer from '../components/TooltipContainer.vue';
+import { useHighlighter } from '@/composables/useHighlighter';
+import { marked } from 'marked';
+import { isMobile } from '../assets/functionality.js';
 
-const basepath = '/mewiki/'
+const wikiPage = ref(null);
+const tooltips = ref(null);
 const route = useRoute();
-//setup this page to yoink the md filepath from the route parameter
-onMounted(() => {
-    let filepath = basepath + route.params.file.join("/") + ".md";
-    putMdinElement(filepath, "wiki-page")
+
+const putMdinElement = async (path, elementId) => {
+
+    document.getElementById(elementId)
+    window.dispatchEvent(MarkedDone);
+};
+
+onMounted(async () => {
+    const filepath = '/mewiki/' + route.params.file.join('/') + '.md';
+    const content = await (await fetch(filepath)).text();
+    useHighlighter(wikiPage.value, content,
+        (key, e) => tooltips.value.scheduleOpen(key, e, 0), // OnHover
+        () => tooltips.value.clearPending()                 // OnLeave
+    )
 });
 </script>
 
@@ -65,12 +82,12 @@ onMounted(() => {
     font-weight: 700;
 }
 
-#wiki-page img {
+.img-wrap img {
     border: 4px groove var(--color-highlight);
     width: 100%;
 }
 
-#wiki-page .img-wrap {
+.img-wrap {
     margin: 0px auto;
     text-indent: 0px;
     width: 100%;
