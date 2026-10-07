@@ -43,6 +43,7 @@ rm -rf "$TARGET_DIR"
 
 # Clean out the global npm cache downloads completely
 echo "Cleaning npm cache..."
+cd ~
 npm cache clean --force
 
 echo "Deployment complete"
