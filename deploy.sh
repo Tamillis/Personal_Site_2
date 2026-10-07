@@ -18,7 +18,7 @@ echo "Removing files from $TARGET_DIR"
 rm -rf "$TARGET_DIR"
 
 echo "Cloning repository..."
-git clone --depth 1 https://github.com/Tamillis/Personal_Site "$TARGET_DIR"
+git clone --depth 1 https://github.com/Tamillis/Personal_Site_2.git "$TARGET_DIR"
 
 cd "$TARGET_DIR/personal_site"
 
